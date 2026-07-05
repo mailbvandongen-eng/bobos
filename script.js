@@ -4,8 +4,10 @@ const APP_META = {
 };
 
 const DATA_PATHS = {
-    tiles: "data/tiles.json",
     news: "data/news.json",
+    sport: "data/sport.json",
+    detectie: "data/detectie.json",
+    vissen: "data/vissen.json",
 };
 
 const ASSET_PATHS = {
@@ -25,6 +27,50 @@ const DASHBOARD_CONFIG = {
     compactSummaryLength: 120,
     compactDomainLimit: 3,
 };
+
+const DASHBOARD_AGENT_TILES = [
+    {
+        key: "sport",
+        title: "Sport",
+        icon: "trophy",
+        status_fallback: "Sport op TV vandaag",
+        target_url: "https://mailbvandongen-eng.github.io/sport-op-tv/",
+        data_path: DATA_PATHS.sport,
+        external: true,
+        footer_label: "Open Sport op TV",
+    },
+    {
+        key: "detectie",
+        title: "Detectie",
+        icon: "map",
+        status_fallback: "Maandagcondities",
+        target_url: "https://mailbvandongen-eng.github.io/detect/",
+        data_path: DATA_PATHS.detectie,
+        external: true,
+        footer_label: "Open Detectie",
+    },
+    {
+        key: "vissen",
+        title: "Vissen",
+        icon: "fish",
+        status_fallback: "Viskansen vandaag",
+        target_url: "https://mailbvandongen-eng.github.io/visapp/",
+        data_path: DATA_PATHS.vissen,
+        external: true,
+        footer_label: "Open Visapp",
+    },
+    {
+        key: "meer",
+        title: "Meer...",
+        icon: "grid-2x2-plus",
+        status_fallback: "Ruimte voor toekomstige agents",
+        placeholder_lines: [
+            "Nieuwe tegel",
+            "Toekomstige agent",
+            "Nog leeg",
+        ],
+    },
+];
 
 const CATEGORY_ICON_MAP = {
     algemeen: "newspaper",
@@ -75,18 +121,13 @@ async function initDashboard() {
     greeting.textContent = getGreetingByLocalTime();
 
     try {
-        const [newsItems, tiles] = await Promise.all([
+        const [newsItems, tileDomains] = await Promise.all([
             fetchJson(DATA_PATHS.news),
-            fetchJson(DATA_PATHS.tiles),
+            Promise.all(DASHBOARD_AGENT_TILES.map(loadDashboardDomain)),
         ]);
 
         const normalizedNews = normalizeArray(newsItems);
         const headlineItems = pickHomepageItems(normalizedNews, DASHBOARD_CONFIG.dashboardNewsLimit);
-        const tileDomains = await Promise.all(
-            normalizeArray(tiles)
-                .filter((tile) => tile.key !== "news")
-                .map(loadDashboardDomain)
-        );
 
         renderCompactNews(newsList, headlineItems, false);
         renderDashboardTiles(tilesStack, tileDomains);
@@ -116,6 +157,10 @@ async function initNewsPage() {
 }
 
 async function loadDashboardDomain(tile) {
+    if (!tile.data_path) {
+        return { tile, payload: null, error: null };
+    }
+
     try {
         const payload = await fetchJson(tile.data_path);
         return { tile, payload, error: null };
@@ -303,31 +348,44 @@ function renderDashboardTiles(container, domains) {
     container.innerHTML = "";
 
     if (!Array.isArray(domains) || domains.length === 0) {
-        renderStatus(container, "Er zijn nog geen domeintegels beschikbaar.");
+        renderStatus(container, "Er zijn nog geen agenttegels beschikbaar.");
         return;
     }
 
     const fragment = document.createDocumentFragment();
 
     domains.forEach((domain) => {
-        fragment.appendChild(createDomainCard(domain, false));
+        fragment.appendChild(createAgentTile(domain));
     });
 
     container.appendChild(fragment);
 }
 
-function createDomainCard(domain, featured) {
-    const card = document.createElement("section");
-    card.className = featured ? "domain-card domain-card--featured" : "domain-card domain-card--tile";
+function createAgentTile(domain) {
+    const targetUrl = String(domain.tile.target_url || "").trim();
+    const tile = document.createElement(targetUrl ? "a" : "section");
+    tile.className = "agent-tile";
+
+    if (targetUrl) {
+        tile.classList.add("agent-tile--link");
+        tile.href = targetUrl;
+
+        if (domain.tile.external) {
+            tile.target = "_blank";
+            tile.rel = "noopener noreferrer";
+        }
+    } else {
+        tile.classList.add("agent-tile--placeholder");
+    }
 
     const header = document.createElement("div");
-    header.className = "domain-card-header";
+    header.className = "agent-tile-header";
 
-    const titleRow = document.createElement("div");
-    titleRow.className = "domain-card-title-row";
+    const top = document.createElement("div");
+    top.className = "agent-tile-top";
 
     const iconFrame = document.createElement("span");
-    iconFrame.className = "domain-card-icon";
+    iconFrame.className = "agent-tile-icon";
     iconFrame.setAttribute("aria-hidden", "true");
 
     const icon = document.createElement("i");
@@ -335,68 +393,48 @@ function createDomainCard(domain, featured) {
     iconFrame.appendChild(icon);
 
     const copy = document.createElement("div");
-    copy.className = "domain-card-copy";
+    copy.className = "agent-tile-copy";
 
-    const title = document.createElement(featured ? "h2" : "h3");
-    title.textContent = domain.tile.title || "Domein";
+    const title = document.createElement("h3");
+    title.textContent = domain.tile.title || "Agent";
 
     const status = document.createElement("p");
-    status.className = "domain-card-status";
+    status.className = "agent-tile-status";
     status.textContent = getDomainStatus(domain);
 
     copy.append(title, status);
-    titleRow.append(iconFrame, copy);
-    header.append(titleRow);
-
-    const action = createActionLink(domain.tile);
-    if (action) {
-        header.append(action);
-    }
+    top.append(iconFrame, copy);
+    header.append(top);
 
     const body = document.createElement("div");
-    body.className = "domain-card-body";
-    body.appendChild(createDomainBody(domain));
+    body.className = "agent-tile-body";
+    body.appendChild(createAgentTileBody(domain));
 
-    card.append(header, body);
-    return card;
-}
+    tile.append(header, body);
 
-function createActionLink(tile) {
-    const targetUrl = String(tile.target_url || "").trim();
-
-    if (!targetUrl) {
-        return null;
+    if (targetUrl && domain.tile.footer_label) {
+        const footer = document.createElement("span");
+        footer.className = "agent-tile-footer";
+        footer.textContent = domain.tile.footer_label;
+        tile.append(footer);
     }
 
-    const link = document.createElement("a");
-    link.className = "domain-card-action";
-    link.href = targetUrl;
-    link.textContent = tile.target_label || "Open";
-
-    if (tile.external) {
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-    }
-
-    return link;
+    return tile;
 }
 
-function createDomainBody(domain) {
+function createAgentTileBody(domain) {
+    if (domain.error) {
+        return createAgentFallback("Data tijdelijk niet beschikbaar.");
+    }
+
     switch (domain.tile.key) {
-        case "news":
-            return createNewsList(
-                normalizeArray(domain.payload),
-                DASHBOARD_CONFIG.dashboardNewsLimit,
-                false,
-                "news-tile-list"
-            );
         case "sport":
-            return createSportList(domain.payload);
+            return createSportMiniList(domain.payload);
         case "detectie":
         case "vissen":
-            return createConditionList(domain.payload);
+            return createConditionMiniList(domain.payload);
         default:
-            return createInlineStatus("Dit domein heeft nog geen weergave.");
+            return createPlaceholderMiniList(domain.tile.placeholder_lines);
     }
 }
 
@@ -456,36 +494,33 @@ function createNewsItem(item, showSummary) {
     return link;
 }
 
-function createSportList(payload) {
+function createSportMiniList(payload) {
     const items = normalizeArray(payload && payload.items);
 
     if (items.length === 0) {
-        return createInlineStatus("Nog geen sportitems beschikbaar.");
+        return createAgentFallback("Nog geen sportitems beschikbaar.");
     }
 
     const list = document.createElement("div");
-    list.className = "domain-list";
+    list.className = "agent-mini-list";
 
     items.slice(0, DASHBOARD_CONFIG.compactDomainLimit).forEach((item) => {
-        const row = document.createElement("a");
-        row.className = "domain-list-item";
-        row.href = item.url || payload.url || "#";
-        row.target = "_blank";
-        row.rel = "noopener noreferrer";
+        const row = document.createElement("div");
+        row.className = "agent-mini-row agent-mini-row--sport";
 
         const leading = document.createElement("span");
-        leading.className = "domain-list-leading";
+        leading.className = "agent-mini-leading";
         leading.textContent = item.time || "--:--";
 
         const text = document.createElement("div");
-        text.className = "domain-list-main";
+        text.className = "agent-mini-copy";
 
-        const title = document.createElement("p");
-        title.className = "domain-list-title";
+        const title = document.createElement("span");
+        title.className = "agent-mini-title";
         title.textContent = item.title || "Sportitem";
 
-        const meta = document.createElement("p");
-        meta.className = "domain-list-meta";
+        const meta = document.createElement("span");
+        meta.className = "agent-mini-meta";
         meta.textContent = item.category || "Sport";
 
         text.append(title, meta);
@@ -496,26 +531,26 @@ function createSportList(payload) {
     return list;
 }
 
-function createConditionList(payload) {
+function createConditionMiniList(payload) {
     const items = normalizeArray(payload && payload.items);
 
     if (items.length === 0) {
-        return createInlineStatus("Nog geen statusregels beschikbaar.");
+        return createAgentFallback("Nog geen statusregels beschikbaar.");
     }
 
     const list = document.createElement("div");
-    list.className = "value-list";
+    list.className = "agent-mini-list";
 
     items.slice(0, DASHBOARD_CONFIG.compactDomainLimit).forEach((item) => {
         const row = document.createElement("div");
-        row.className = "value-list-item";
+        row.className = "agent-mini-row";
 
         const label = document.createElement("span");
-        label.className = "value-list-label";
-        label.textContent = item.label || "Label";
+        label.className = "agent-mini-label";
+        label.textContent = `${item.label || "Label"}:`;
 
         const value = document.createElement("span");
-        value.className = "value-list-value";
+        value.className = "agent-mini-value";
         value.textContent = item.value || "-";
 
         row.append(label, value);
@@ -523,6 +558,31 @@ function createConditionList(payload) {
     });
 
     return list;
+}
+
+function createPlaceholderMiniList(lines) {
+    const list = document.createElement("div");
+    list.className = "agent-mini-list";
+
+    normalizeArray(lines).slice(0, DASHBOARD_CONFIG.compactDomainLimit).forEach((line) => {
+        const row = document.createElement("div");
+        row.className = "agent-mini-row agent-mini-row--placeholder";
+        row.textContent = line;
+        list.append(row);
+    });
+
+    if (!list.childElementCount) {
+        return createAgentFallback("Nog geen inhoud beschikbaar.");
+    }
+
+    return list;
+}
+
+function createAgentFallback(message) {
+    const note = document.createElement("div");
+    note.className = "agent-mini-empty";
+    note.textContent = message;
+    return note;
 }
 
 function createNewsMedia(item) {
