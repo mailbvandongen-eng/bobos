@@ -38,12 +38,29 @@
                 </div>
             </header>
 
-            <section id="dashboard-news-domain" class="dashboard-news-slot" aria-live="polite">
-                <div class="status-card">Nieuws wordt geladen...</div>
+            <section class="news-panel" aria-labelledby="dashboard-news-title">
+                <div class="section-heading">
+                    <h2 id="dashboard-news-title">Nieuws</h2>
+                </div>
+
+                <div id="dashboard-news-list" class="news-compact-list" aria-live="polite">
+                    <div class="status-card">Nieuws wordt geladen...</div>
+                </div>
+
+                <a class="more-news-link" href="news.html">Meer nieuws...</a>
             </section>
 
-            <section id="dashboard-domain-grid" class="dashboard-domain-grid" aria-live="polite">
-                <div class="status-card">Domeintegels worden geladen...</div>
+            <section class="apps-panel" aria-labelledby="dashboard-tiles-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-kicker">Domeinen</p>
+                        <h2 id="dashboard-tiles-title">Sport, Detectie en Vissen</h2>
+                    </div>
+                </div>
+
+                <div id="dashboard-tiles-stack" class="tiles-stack" aria-live="polite">
+                    <div class="status-card">Domeintegels worden geladen...</div>
+                </div>
             </section>
 
             <div class="dashboard-mark" aria-hidden="true">
