@@ -1,15 +1,16 @@
-name: Refresh news
+name: Refresh sport
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "30 5 * * *"
+    - cron: "0 15 * * *"
 
 permissions:
   contents: write
 
 jobs:
-  refresh-news:
+  refresh-sport:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,14 +25,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run NewsAgent
-        run: python agents/news_agent.py
+      - name: Run SportAgent
+        run: python agents/sport_agent.py
 
-      - name: Commit updated news data
+      - name: Commit updated sport data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/news.json
+          git add data/sport.json
           git diff --cached --quiet && exit 0
-          git commit -m "Refresh news data"
+          git commit -m "Refresh sport data"
           git push

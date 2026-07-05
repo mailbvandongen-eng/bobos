@@ -1,0 +1,25 @@
+{
+  "updated_at": "2026-07-05T19:59:58.043499Z",
+  "status": "Sport op TV vandaag",
+  "items": [
+    {
+      "time": "18:30",
+      "title": "Formule 1 Weekend Update",
+      "category": "Formule 1",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:00",
+      "title": "Premier League Darts",
+      "category": "Darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "21:00",
+      "title": "Avondwedstrijd Voetbal",
+      "category": "Voetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    }
+  ],
+  "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+}

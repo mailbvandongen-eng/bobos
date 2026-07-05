@@ -29,36 +29,21 @@
                         <i data-theme-icon data-lucide="sun"></i>
                     </button>
                 </div>
+
                 <div class="brand-lockup">
                     <div class="hero-copy">
                         <h1 id="dashboard-greeting">Goedemorgen Bob</h1>
+                        <p class="hero-tagline">Persoonlijke PIP voor nieuws, sport, detectie en vissen.</p>
                     </div>
                 </div>
             </header>
 
-            <section class="news-panel" aria-labelledby="dashboard-news-title">
-                <div class="section-heading">
-                    <h2 id="dashboard-news-title">Nieuws</h2>
-                </div>
-
-                <div id="dashboard-news-list" class="news-compact-list">
-                    <div class="status-card">Nieuws wordt geladen...</div>
-                </div>
-
-                <a class="more-news-link" href="news.html">Meer nieuws...</a>
+            <section id="dashboard-news-domain" class="dashboard-news-slot" aria-live="polite">
+                <div class="status-card">Nieuws wordt geladen...</div>
             </section>
 
-            <section class="apps-panel" aria-labelledby="apps-title">
-                <div class="section-heading">
-                    <div>
-                        <p class="section-kicker">Apps</p>
-                        <h2 id="apps-title">Snelle toegang</h2>
-                    </div>
-                </div>
-
-                <div id="tiles-grid" class="apps-grid">
-                    <div class="status-card">Apps worden geladen...</div>
-                </div>
+            <section id="dashboard-domain-grid" class="dashboard-domain-grid" aria-live="polite">
+                <div class="status-card">Domeintegels worden geladen...</div>
             </section>
 
             <div class="dashboard-mark" aria-hidden="true">
@@ -67,7 +52,7 @@
         </main>
 
         <footer class="app-footer">
-            <p class="app-version" data-app-version>Versie 0.1</p>
+            <p class="app-version" data-app-version>Versie 0.2</p>
         </footer>
     </div>
 </body>

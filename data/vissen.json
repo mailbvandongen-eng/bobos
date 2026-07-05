@@ -1,0 +1,19 @@
+{
+  "updated_at": "2026-07-05T19:59:06.399036Z",
+  "status": "Viskansen vandaag",
+  "items": [
+    {
+      "label": "Wind",
+      "value": "ZW 3 Bft"
+    },
+    {
+      "label": "Luchtdruk",
+      "value": "Stabiel"
+    },
+    {
+      "label": "Conclusie",
+      "value": "Redelijke avond"
+    }
+  ],
+  "url": "https://mailbvandongen-eng.github.io/visapp/"
+}

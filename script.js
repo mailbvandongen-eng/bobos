@@ -1,11 +1,11 @@
+const APP_META = {
+    name: "BobOS",
+    version: "0.2",
+};
+
 const DATA_PATHS = {
     tiles: "data/tiles.json",
     news: "data/news.json",
-};
-
-const APP_META = {
-    name: "BobOS",
-    version: "0.1",
 };
 
 const ASSET_PATHS = {
@@ -20,26 +20,30 @@ const STORAGE_KEYS = {
 };
 
 const DASHBOARD_CONFIG = {
-    homepageNewsLimit: 3,
-    newsSummaryLength: 120,
+    dashboardNewsLimit: 3,
+    detailNewsLimit: 50,
+    compactSummaryLength: 120,
+    compactDomainLimit: 3,
 };
 
 const CATEGORY_ICON_MAP = {
     algemeen: "newspaper",
     archeologie: "newspaper",
     darts: "trophy",
-    "formule 1": "flag",
+    detectie: "map",
     gadgets: "cpu",
+    "formule 1": "flag",
+    musea: "landmark",
+    natuurkunde: "atom",
     ruimte: "telescope",
+    ruimtevaart: "telescope",
+    scheikunde: "atom",
     sport: "trophy",
+    sterrenkunde: "telescope",
     technologie: "cpu",
+    vissen: "fish",
     voetbal: "goal",
     wetenschap: "atom",
-    ruimtevaart: "telescope",
-    sterrenkunde: "telescope",
-    natuurkunde: "atom",
-    scheikunde: "atom",
-    musea: "landmark",
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -60,32 +64,29 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function initDashboard() {
-    const newsList = document.getElementById("dashboard-news-list");
-    const tilesGrid = document.getElementById("tiles-grid");
     const greeting = document.getElementById("dashboard-greeting");
+    const newsSlot = document.getElementById("dashboard-news-domain");
+    const domainGrid = document.getElementById("dashboard-domain-grid");
 
-    if (!newsList || !tilesGrid || !greeting) {
+    if (!greeting || !newsSlot || !domainGrid) {
         return;
     }
 
     greeting.textContent = getGreetingByLocalTime();
 
     try {
-        const [newsItems, tiles] = await Promise.all([
-            fetchJson(DATA_PATHS.news),
-            fetchJson(DATA_PATHS.tiles),
-        ]);
+        const tiles = normalizeArray(await fetchJson(DATA_PATHS.tiles));
+        const domains = await Promise.all(tiles.map(loadDashboardDomain));
+        const newsDomain = domains.find((domain) => domain.tile.key === "news");
+        const otherDomains = domains.filter((domain) => domain.tile.key !== "news");
 
-        const normalizedNews = normalizeArray(newsItems);
-        const headlineItems = pickHomepageItems(normalizedNews, DASHBOARD_CONFIG.homepageNewsLimit);
-
-        renderCompactNews(newsList, headlineItems, false);
-        renderTiles(tilesGrid, tiles);
+        renderFeaturedDomain(newsSlot, newsDomain);
+        renderDomainGrid(domainGrid, otherDomains);
         replaceIcons();
     } catch (error) {
         console.error(error);
-        renderStatus(newsList, getLoadErrorMessage("Het nieuws"));
-        renderStatus(tilesGrid, getLoadErrorMessage("De apps"));
+        renderStatus(newsSlot, getLoadErrorMessage("Het dashboard"));
+        renderStatus(domainGrid, getLoadErrorMessage("De domeintegels"));
     }
 }
 
@@ -97,12 +98,22 @@ async function initNewsPage() {
     }
 
     try {
-        const items = await fetchJson(DATA_PATHS.news);
-        renderCompactNews(newsList, items, true);
+        const items = normalizeArray(await fetchJson(DATA_PATHS.news));
+        renderNewsDetailList(newsList, items);
         replaceIcons();
     } catch (error) {
         console.error(error);
         renderStatus(newsList, getLoadErrorMessage("De nieuwsberichten"));
+    }
+}
+
+async function loadDashboardDomain(tile) {
+    try {
+        const payload = await fetchJson(tile.data_path);
+        return { tile, payload, error: null };
+    } catch (error) {
+        console.error(`Kon ${tile.data_path} niet laden.`, error);
+        return { tile, payload: null, error };
     }
 }
 
@@ -116,14 +127,14 @@ async function fetchJson(path) {
     return response.json();
 }
 
-function normalizeArray(value) {
-    return Array.isArray(value) ? value : [];
-}
-
 function syncAppVersion() {
     document.querySelectorAll("[data-app-version]").forEach((node) => {
         node.textContent = `Versie ${APP_META.version}`;
     });
+}
+
+function normalizeArray(value) {
+    return Array.isArray(value) ? value : [];
 }
 
 function initTheme() {
@@ -228,41 +239,35 @@ function getGreetingByLocalTime(now = new Date()) {
     return "Goedenacht Bob";
 }
 
-function pickHomepageItems(items, limit) {
-    const selected = [];
-    const usedSources = new Set();
+function renderFeaturedDomain(container, domain) {
+    container.innerHTML = "";
 
-    for (const item of normalizeArray(items)) {
-        const sourceKey = String(item.source || "").trim().toLowerCase();
-
-        if (!sourceKey || usedSources.has(sourceKey)) {
-            continue;
-        }
-
-        selected.push(item);
-        usedSources.add(sourceKey);
-
-        if (selected.length === limit) {
-            return selected;
-        }
+    if (!domain) {
+        renderStatus(container, "De nieuwstegel is niet beschikbaar.");
+        return;
     }
 
-    for (const item of normalizeArray(items)) {
-        if (selected.includes(item)) {
-            continue;
-        }
-
-        selected.push(item);
-
-        if (selected.length === limit) {
-            break;
-        }
-    }
-
-    return selected;
+    container.appendChild(createDomainCard(domain, true));
 }
 
-function renderCompactNews(container, items, showSummary) {
+function renderDomainGrid(container, domains) {
+    container.innerHTML = "";
+
+    if (!Array.isArray(domains) || domains.length === 0) {
+        renderStatus(container, "Er zijn nog geen domeintegels beschikbaar.");
+        return;
+    }
+
+    const fragment = document.createDocumentFragment();
+
+    domains.forEach((domain) => {
+        fragment.appendChild(createDomainCard(domain, false));
+    });
+
+    container.appendChild(fragment);
+}
+
+function renderNewsDetailList(container, items) {
     container.innerHTML = "";
 
     if (!Array.isArray(items) || items.length === 0) {
@@ -270,45 +275,113 @@ function renderCompactNews(container, items, showSummary) {
         return;
     }
 
-    const fragment = document.createDocumentFragment();
-
-    items.forEach((item) => {
-        fragment.appendChild(createNewsItem(item, showSummary));
-    });
-
-    container.appendChild(fragment);
+    container.appendChild(
+        createNewsList(items, DASHBOARD_CONFIG.detailNewsLimit, true, "news-detail-list")
+    );
 }
 
-function renderTiles(container, tiles) {
-    container.innerHTML = "";
+function createDomainCard(domain, featured) {
+    const card = document.createElement("section");
+    card.className = featured ? "domain-card domain-card--featured" : "domain-card";
 
-    if (!Array.isArray(tiles) || tiles.length === 0) {
-        renderStatus(container, "Er zijn nog geen apps beschikbaar.");
-        return;
+    const header = document.createElement("div");
+    header.className = "domain-card-header";
+
+    const titleRow = document.createElement("div");
+    titleRow.className = "domain-card-title-row";
+
+    const iconFrame = document.createElement("span");
+    iconFrame.className = "domain-card-icon";
+    iconFrame.setAttribute("aria-hidden", "true");
+
+    const icon = document.createElement("i");
+    icon.dataset.lucide = resolveIconName(domain.tile.icon || "newspaper");
+    iconFrame.appendChild(icon);
+
+    const copy = document.createElement("div");
+    copy.className = "domain-card-copy";
+
+    const title = document.createElement(featured ? "h2" : "h3");
+    title.textContent = domain.tile.title || "Domein";
+
+    const status = document.createElement("p");
+    status.className = "domain-card-status";
+    status.textContent = getDomainStatus(domain);
+
+    copy.append(title, status);
+    titleRow.append(iconFrame, copy);
+    header.append(titleRow);
+
+    const action = createActionLink(domain.tile);
+    if (action) {
+        header.append(action);
     }
 
-    const fragment = document.createDocumentFragment();
+    const body = document.createElement("div");
+    body.className = "domain-card-body";
+    body.appendChild(createDomainBody(domain));
 
-    tiles.forEach((tile) => {
-        fragment.appendChild(createAppCard(tile));
-    });
-
-    container.appendChild(fragment);
+    card.append(header, body);
+    return card;
 }
 
-function renderStatus(container, message) {
-    container.innerHTML = "";
+function createActionLink(tile) {
+    const targetUrl = String(tile.target_url || "").trim();
 
-    const card = document.createElement("div");
-    card.className = "status-card";
-    card.textContent = message;
+    if (!targetUrl) {
+        return null;
+    }
 
-    container.appendChild(card);
+    const link = document.createElement("a");
+    link.className = "domain-card-action";
+    link.href = targetUrl;
+    link.textContent = tile.target_label || "Open";
+
+    if (tile.external) {
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+    }
+
+    return link;
+}
+
+function createDomainBody(domain) {
+    switch (domain.tile.key) {
+        case "news":
+            return createNewsList(
+                normalizeArray(domain.payload),
+                DASHBOARD_CONFIG.dashboardNewsLimit,
+                false,
+                "news-tile-list"
+            );
+        case "sport":
+            return createSportList(domain.payload);
+        case "detectie":
+        case "vissen":
+            return createConditionList(domain.payload);
+        default:
+            return createInlineStatus("Dit domein heeft nog geen weergave.");
+    }
+}
+
+function createNewsList(items, limit, showSummary, className) {
+    if (!Array.isArray(items) || items.length === 0) {
+        return createInlineStatus("Nog geen items beschikbaar.");
+    }
+
+    const list = document.createElement("div");
+    list.className = className;
+
+    items.slice(0, limit).forEach((item) => {
+        list.appendChild(createNewsItem(item, showSummary));
+    });
+
+    return list;
 }
 
 function createNewsItem(item, showSummary) {
     const link = document.createElement("a");
-    link.className = "news-item";
+    link.className = showSummary ? "news-item news-item--detail" : "news-item";
     link.href = item.url || "#";
     link.target = "_blank";
     link.rel = "noopener noreferrer";
@@ -327,13 +400,13 @@ function createNewsItem(item, showSummary) {
     meta.append(
         createMetaText(item.source || "Onbekende bron"),
         createMetaSeparator(),
-        createMetaText(formatDate(item.published || item.publishedAt, showSummary ? false : true)),
+        createMetaText(formatDate(item.published || item.publishedAt, !showSummary)),
     );
 
     body.append(title, meta);
 
     if (showSummary) {
-        const summaryText = truncateText(item.summary || "", DASHBOARD_CONFIG.newsSummaryLength);
+        const summaryText = truncateText(item.summary || "", DASHBOARD_CONFIG.compactSummaryLength);
 
         if (summaryText) {
             const summary = document.createElement("p");
@@ -345,6 +418,75 @@ function createNewsItem(item, showSummary) {
 
     link.append(media, body);
     return link;
+}
+
+function createSportList(payload) {
+    const items = normalizeArray(payload && payload.items);
+
+    if (items.length === 0) {
+        return createInlineStatus("Nog geen sportitems beschikbaar.");
+    }
+
+    const list = document.createElement("div");
+    list.className = "domain-list";
+
+    items.slice(0, DASHBOARD_CONFIG.compactDomainLimit).forEach((item) => {
+        const row = document.createElement("a");
+        row.className = "domain-list-item";
+        row.href = item.url || payload.url || "#";
+        row.target = "_blank";
+        row.rel = "noopener noreferrer";
+
+        const leading = document.createElement("span");
+        leading.className = "domain-list-leading";
+        leading.textContent = item.time || "--:--";
+
+        const text = document.createElement("div");
+        text.className = "domain-list-main";
+
+        const title = document.createElement("p");
+        title.className = "domain-list-title";
+        title.textContent = item.title || "Sportitem";
+
+        const meta = document.createElement("p");
+        meta.className = "domain-list-meta";
+        meta.textContent = item.category || "Sport";
+
+        text.append(title, meta);
+        row.append(leading, text);
+        list.append(row);
+    });
+
+    return list;
+}
+
+function createConditionList(payload) {
+    const items = normalizeArray(payload && payload.items);
+
+    if (items.length === 0) {
+        return createInlineStatus("Nog geen statusregels beschikbaar.");
+    }
+
+    const list = document.createElement("div");
+    list.className = "value-list";
+
+    items.slice(0, DASHBOARD_CONFIG.compactDomainLimit).forEach((item) => {
+        const row = document.createElement("div");
+        row.className = "value-list-item";
+
+        const label = document.createElement("span");
+        label.className = "value-list-label";
+        label.textContent = item.label || "Label";
+
+        const value = document.createElement("span");
+        value.className = "value-list-value";
+        value.textContent = item.value || "-";
+
+        row.append(label, value);
+        list.append(row);
+    });
+
+    return list;
 }
 
 function createNewsMedia(item) {
@@ -379,6 +521,44 @@ function createIconFrame(category) {
     return frame;
 }
 
+function getDomainStatus(domain) {
+    if (domain.tile.key === "news") {
+        return getNewsStatus(normalizeArray(domain.payload));
+    }
+
+    if (domain.payload && typeof domain.payload.status === "string" && domain.payload.status.trim()) {
+        return domain.payload.status.trim();
+    }
+
+    return domain.tile.status_fallback || "Nog niet bijgewerkt";
+}
+
+function getNewsStatus(items) {
+    if (!Array.isArray(items) || items.length === 0) {
+        return "Nog geen nieuws";
+    }
+
+    const latestItemDate = new Date(items[0].published || items[0].publishedAt || "");
+
+    if (Number.isNaN(latestItemDate.getTime())) {
+        return "Laatste update onbekend";
+    }
+
+    if (isSameLocalDay(latestItemDate, new Date())) {
+        return "Bijgewerkt vandaag";
+    }
+
+    return `Laatste update ${formatDate(latestItemDate.toISOString(), true)}`;
+}
+
+function isSameLocalDay(left, right) {
+    return (
+        left.getFullYear() === right.getFullYear() &&
+        left.getMonth() === right.getMonth() &&
+        left.getDate() === right.getDate()
+    );
+}
+
 function iconNameForCategory(category) {
     const normalized = normalizeCategory(category);
 
@@ -386,24 +566,16 @@ function iconNameForCategory(category) {
         return "flag";
     }
 
-    if (normalized.includes("voetbal")) {
+    if (normalized.includes("voetbal") || normalized.includes("manchester united")) {
         return "goal";
     }
 
-    if (normalized.includes("manchester united")) {
-        return "goal";
-    }
-
-    if (normalized.includes("wetenschap")) {
+    if (normalized.includes("wetenschap") || normalized.includes("natuurkunde") || normalized.includes("scheikunde")) {
         return "atom";
     }
 
     if (normalized.includes("ruimte") || normalized.includes("sterrenkunde")) {
         return "telescope";
-    }
-
-    if (normalized.includes("natuurkunde") || normalized.includes("scheikunde")) {
-        return "atom";
     }
 
     if (normalized.includes("musea")) {
@@ -416,6 +588,14 @@ function iconNameForCategory(category) {
 
     if (normalized.includes("sport")) {
         return "trophy";
+    }
+
+    if (normalized.includes("detectie")) {
+        return "map";
+    }
+
+    if (normalized.includes("vissen")) {
+        return "fish";
     }
 
     return CATEGORY_ICON_MAP[normalized] || "newspaper";
@@ -446,42 +626,16 @@ function fallbackIconName(iconName) {
     return fallbacks[iconName] || "newspaper";
 }
 
-function createAppCard(tile) {
-    const link = document.createElement("a");
-    const isPlaceholder = Boolean(tile.comingSoon);
+function renderStatus(container, message) {
+    container.innerHTML = "";
+    container.appendChild(createInlineStatus(message));
+}
 
-    link.className = "app-card";
-    link.href = isPlaceholder ? "#" : tile.url || "#";
-    link.setAttribute("aria-label", `${tile.title || "App"} - ${tile.description || ""}`);
-
-    if (isPlaceholder) {
-        link.classList.add("is-placeholder");
-        link.addEventListener("click", (event) => event.preventDefault());
-    }
-
-    const iconBadge = document.createElement("span");
-    iconBadge.className = "app-icon";
-    iconBadge.setAttribute("aria-hidden", "true");
-
-    const icon = document.createElement("i");
-    icon.dataset.lucide = resolveIconName(tile.icon || "grid-2x2-plus");
-    iconBadge.appendChild(icon);
-
-    const textBlock = document.createElement("div");
-    textBlock.className = "app-copy";
-
-    const title = document.createElement("h3");
-    title.className = "app-title";
-    title.textContent = tile.title || "Naamloze app";
-
-    const description = document.createElement("p");
-    description.className = "app-description";
-    description.textContent = tile.description || "Geen beschrijving beschikbaar.";
-
-    textBlock.append(title, description);
-    link.append(iconBadge, textBlock);
-
-    return link;
+function createInlineStatus(message) {
+    const card = document.createElement("div");
+    card.className = "status-card";
+    card.textContent = message;
+    return card;
 }
 
 function createMetaText(text) {

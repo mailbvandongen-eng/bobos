@@ -393,8 +393,15 @@ def save_items(items: list[dict[str, Any]]) -> None:
 
 def main() -> None:
     """Hoofdroute voor lokaal gebruik en GitHub Actions."""
-    sources = load_sources()
     collected_items: list[dict[str, Any]] = []
+
+    try:
+        sources = load_sources()
+    except Exception as error:  # pragma: no cover - defensieve bronfoutafhandeling
+        print(f"[WARN] Kon bronnen niet laden: {error}")
+        save_items([])
+        print(f"[DONE] 0 berichten opgeslagen in {OUTPUT_PATH}.")
+        return
 
     for source in sources:
         try:

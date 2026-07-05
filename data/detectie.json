@@ -1,0 +1,19 @@
+{
+  "updated_at": "2026-07-05T19:59:06.415039Z",
+  "status": "Maandagcondities",
+  "items": [
+    {
+      "label": "Weer",
+      "value": "Droog tot 14:00"
+    },
+    {
+      "label": "Bodem",
+      "value": "Vochtig, goed zoeken"
+    },
+    {
+      "label": "Conclusie",
+      "value": "Prima ochtend"
+    }
+  ],
+  "url": "https://mailbvandongen-eng.github.io/detect/"
+}

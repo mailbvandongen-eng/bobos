@@ -1,23 +1,22 @@
-# BobOS 0.1
+# BobOS v0.2
 
-BobOS is een persoonlijk dashboard voor dagelijks gebruik op mobiel. Het is bedoeld als snelle startpagina: compact, scanbaar en gericht op nieuws en vaste apps.
+BobOS is een persoonlijk dashboard en PIP voor dagelijks gebruik. Het is geen backendplatform en geen alles-in-een startscherm met een enkele "Vandaag"-tegel. BobOS verdeelt informatie bewust in losse domeinen, elk met een eigen status, eigen data en eigen doorklik.
 
 ## Live URL
 
 [https://mailbvandongen-eng.github.io/bobos](https://mailbvandongen-eng.github.io/bobos)
 
-## Wat deze versie doet
+## Uitgangspunten
 
-- toont een mobile-first dashboard met compacte nieuwsregels
-- leest appkaarten uit `data/tiles.json`
-- leest nieuwsberichten uit `data/news.json`
-- haalt RSS-nieuws op via `agents/news_agent.py`
-- gebruikt standaard Nederlandstalige RSS-feeds
-- filtert anderstalige berichten zo veel mogelijk weg
-- bewaart de licht/donker-keuze lokaal in `localStorage`
-- gebruikt alleen HTML, CSS en JavaScript
-
-Er is bewust geen backend, geen framework en geen buildstap.
+- mobile first
+- geschikt voor GitHub Pages
+- geen backend
+- geen database
+- geen login
+- externe links openen in een nieuw tabblad
+- volledige artikelen worden niet in BobOS getoond
+- licht/donker-thema blijft beschikbaar
+- het versienummer staat altijd onderaan in de app
 
 ## Werkwijze
 
@@ -25,7 +24,25 @@ Voor dit project geldt een vaste werkafspraak:
 
 - wijzigingen worden standaard gecommit
 - wijzigingen worden daarna ook direct gepusht
-- het versienummer staat altijd zichtbaar onderaan in de app
+- het versienummer blijft zichtbaar onderaan in de app
+
+## Architectuur
+
+Het dashboard leest alleen JSON-bestanden. De homepage haalt configuratie op uit `data/tiles.json` en leest per domein het bijbehorende databestand.
+
+De vier hoofdtegels zijn:
+
+- `Nieuws`
+- `Sport`
+- `Detectie`
+- `Vissen`
+
+Elke tegel heeft:
+
+- een eigen icoon
+- een statusregel
+- compacte items
+- een eigen doorklik
 
 ## Bestandsstructuur
 
@@ -36,96 +53,111 @@ style.css
 script.js
 README.md
 requirements.txt
-assets/
-|- bobos-logo-dark.svg
-|- bobos-logo-light.svg
+.github/
+\- workflows/
+   |- news.yml
+   |- sport.yml
+   |- detectie.yml
+   \- vissen.yml
 agents/
 |- news_agent.py
+|- sport_agent.py
+|- detectie_agent.py
+|- vissen_agent.py
 \- news_sources.json
+assets/
+|- bobos-logo-dark.svg
+\- bobos-logo-light.svg
 data/
+|- tiles.json
 |- news.json
-\- tiles.json
+|- sport.json
+|- detectie.json
+\- vissen.json
 ```
 
-## Apps beheren
+## Domeinbestanden
 
-De homepage leest de appkaarten uit `data/tiles.json`.
+BobOS leest de volgende databestanden:
 
-Apps openen bewust in dezelfde tab, zodat BobOS als startpagina blijft aanvoelen en niet als stapel losse browservensters.
+- `data/news.json`
+- `data/sport.json`
+- `data/detectie.json`
+- `data/vissen.json`
+- `data/tiles.json`
 
-Per app gebruik je:
+`news.json` bevat nieuwsitems.
 
-- `title`
-- `description`
-- `icon`
-- `url`
+`sport.json`, `detectie.json` en `vissen.json` bevatten statusregels en compacte domeinitems.
 
-Voor Lucide gebruik je bij `icon` de iconnaam, bijvoorbeeld `trophy`, `map`, `fish` of `grid-2x2-plus`.
+## Agents
 
-## Nieuws beheren
+De agents zijn lokaal uitvoerbaar:
 
-`agents/news_agent.py` haalt nieuws op uit RSS-feeds die in `agents/news_sources.json` staan. De standaardlijst bevat alleen Nederlandstalige bronnen die technisch zijn gecontroleerd. Die bronlijst gebruikt per feed:
+```powershell
+python agents/news_agent.py
+python agents/sport_agent.py
+python agents/detectie_agent.py
+python agents/vissen_agent.py
+```
 
-- `category`
-- `name`
-- `rss`
+Elke agent schrijft altijd geldige JSON, ook als externe data ontbreekt.
 
-Daarna schrijft de agent maximaal 50 berichten naar `data/news.json`.
+### NewsAgent
 
-Het dashboard en `news.html` lezen daarna alleen `data/news.json`. Nieuwsitems openen altijd de originele bron in een nieuwe tab.
+- gebruikt Nederlandstalige RSS-feeds
+- filtert anderstalige berichten zo veel mogelijk weg
+- schrijft maximaal 50 artikelen naar `data/news.json`
+- toont geen volledige artikelen in BobOS
 
-De agent gebruikt een lichte taalfilter:
+### SportAgent
 
-- feeds met taalcode `nl` mogen door
-- twijfelgevallen moeten genoeg Nederlandse stopwoorden bevatten
-- anderstalige berichten worden overgeslagen
+- schrijft voorbeelddata naar `data/sport.json`
+- houdt de structuur klaar voor latere koppeling aan Sport op TV-data
 
-Per bericht gebruikt BobOS:
+### DetectieAgent
 
-- `title`
-- `summary`
-- `source`
-- `published`
-- `category`
-- `image`
-- `url`
+- schrijft voorbeelddata naar `data/detectie.json`
+- focust in v0.2 op maandagcondities
+- gebruikt nog geen weer-API of kaartanalyse
 
-BobOS toont bewust alleen compacte nieuwsregels en geen volledige artikelteksten.
+### VissenAgent
 
-De homepage toont alleen titel, bron en datum. De nieuwspagina blijft ook compact en toont hooguit een korte afgekorte samenvatting.
+- schrijft voorbeelddata naar `data/vissen.json`
+- focust in v0.2 op wind, luchtdruk en een korte conclusie
+- gebruikt nog geen weer-API
 
-## Thema
+## GitHub Actions
+
+De agents draaien automatisch via GitHub Actions en kunnen ook handmatig gestart worden.
+
+Workflows:
+
+- `news.yml`
+- `sport.yml`
+- `detectie.yml`
+- `vissen.yml`
+
+Elke workflow:
+
+- ondersteunt `workflow_dispatch`
+- installeert Python
+- installeert dependencies uit `requirements.txt`
+- voert de juiste agent uit
+- commit alleen gewijzigde JSON-data
+- pusht terug naar de repository
+
+Handmatig starten kan via:
+
+`GitHub Actions -> Run workflow`
+
+## Thema en versie
 
 BobOS start standaard in donker thema.
 
-- de schakelaar staat rechtsboven
-- de keuze wordt lokaal opgeslagen in `localStorage`
-- de keuze geldt voor dashboard en nieuwspagina
-
-## Automatisch verversen
-
-De workflow `.github/workflows/news.yml` draait dagelijks op GitHub Actions en kan ook handmatig gestart worden.
-
-Die workflow:
-
-- installeert Python en de dependencies
-- voert `agents/news_agent.py` uit
-- commit `data/news.json` als er nieuws is veranderd
-
-## Overzicht bovenaan
-
-De kop van het dashboard wordt opgebouwd in `script.js`.
-
-Daar kun je later eenvoudig aanpassen:
-
-- de tijdsafhankelijke begroeting
-- hoeveel nieuwsberichten op de homepage getoond worden
-
-Het versienummer wordt ook centraal in `script.js` beheerd en onderaan in de app getoond.
-
-## Later slimmer vullen
-
-De huidige NewsAgent haalt feeds direct op en schrijft ze naar `data/news.json`. Later kan die agent slimmer worden in selectie, filtering en prioritering.
+- de themakeuze wordt lokaal opgeslagen in `localStorage`
+- het dashboard wisselt ook automatisch van logo per thema
+- het versienummer wordt centraal beheerd in `script.js`
 
 ## Lokaal testen
 
@@ -135,18 +167,6 @@ Een simpele lokale server werkt het prettigst:
 python -m http.server 8000
 ```
 
-Open daarna `http://localhost:8000/`.
+Open daarna:
 
-## Nog te controleren bronnen
-
-Deze bronnen zijn bewust nog niet als standaardfeed opgenomen, omdat de RSS-feed ontbrak, onzeker was of eerst nog gecontroleerd moet worden:
-
-- Rijksmuseum van Oudheden (RMO)
-- NEMO Kennislink
-- Sportvisserij Nederland
-- Visdeal blog
-- RCE Service
-- ADC Archeoprojecten
-- Dartsnieuws.com
-- Roofmeister YouTube RSS
-- betrouwbare Nederlandstalige feeds voor metaaldetectie en drones/S30 Pro
+[http://127.0.0.1:8000/index.html](http://127.0.0.1:8000/index.html)

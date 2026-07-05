@@ -1,27 +1,46 @@
 [
-    {
-        "title": "Sport op TV",
-        "description": "Vandaag snel naar het uitzendschema",
-        "icon": "trophy",
-        "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-        "title": "Detectorapp",
-        "description": "Direct naar kaarten en detectie",
-        "icon": "map",
-        "url": "https://mailbvandongen-eng.github.io/detect/"
-    },
-    {
-        "title": "Visapp",
-        "description": "Snelle toegang tot je visomgeving",
-        "icon": "fish",
-        "url": "https://mailbvandongen-eng.github.io/visapp/"
-    },
-    {
-        "title": "Meer...",
-        "description": "Ruimte voor toekomstige uitbreidingen",
-        "icon": "grid-2x2-plus",
-        "url": "#",
-        "comingSoon": true
-    }
+  {
+    "key": "news",
+    "title": "Nieuws",
+    "icon": "newspaper",
+    "data_path": "data/news.json",
+    "target_url": "news.html",
+    "target_label": "Meer nieuws",
+    "status_fallback": "Nog geen nieuws",
+    "external": false,
+    "featured": true
+  },
+  {
+    "key": "sport",
+    "title": "Sport",
+    "icon": "trophy",
+    "data_path": "data/sport.json",
+    "target_url": "https://mailbvandongen-eng.github.io/sport-op-tv/",
+    "target_label": "Open Sport op TV",
+    "status_fallback": "Sport op TV vandaag",
+    "external": true,
+    "featured": false
+  },
+  {
+    "key": "detectie",
+    "title": "Detectie",
+    "icon": "map",
+    "data_path": "data/detectie.json",
+    "target_url": "https://mailbvandongen-eng.github.io/detect/",
+    "target_label": "Open Detectie",
+    "status_fallback": "Maandagcondities",
+    "external": true,
+    "featured": false
+  },
+  {
+    "key": "vissen",
+    "title": "Vissen",
+    "icon": "fish",
+    "data_path": "data/vissen.json",
+    "target_url": "https://mailbvandongen-eng.github.io/visapp/",
+    "target_label": "Open Visapp",
+    "status_fallback": "Viskansen vandaag",
+    "external": true,
+    "featured": false
+  }
 ]
