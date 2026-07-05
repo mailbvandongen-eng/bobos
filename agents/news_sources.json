@@ -1,34 +1,62 @@
 [
   {
+    "category": "Algemeen",
     "name": "NOS Algemeen",
-    "url": "https://feeds.nos.nl/nosnieuwsalgemeen"
+    "rss": "https://feeds.nos.nl/nosnieuwsalgemeen"
   },
   {
-    "name": "Tweakers Nieuws",
-    "url": "https://tweakers.net/feeds/mixed.xml"
+    "category": "Sport",
+    "name": "NOS Sport",
+    "rss": "https://feeds.nos.nl/nossportalgemeen"
   },
   {
-    "name": "Roofmeister",
-    "url": "http://roofmeister.be/feed/"
+    "category": "Gadgets",
+    "name": "Tweakers",
+    "rss": "https://tweakers.net/feeds/mixed.xml"
   },
   {
-    "name": "Garmin Newsroom",
-    "url": "https://www.garmin.com/en-US/newsroom/feed/"
+    "category": "Gadgets",
+    "name": "Bright",
+    "rss": "https://www.bright.nl/feed/news.xml"
   },
   {
-    "name": "RCE Service",
-    "url": "https://www.cultureelerfgoed.nl/service/rss"
-  },
-  {
-    "name": "Archeologie Online",
-    "url": "https://archeologieonline.nl/feed"
-  },
-  {
-    "name": "ADC Archeoprojecten",
-    "url": "https://www.adc-archeoprojecten.nl/feed/"
-  },
-  {
+    "category": "Wetenschap",
     "name": "Scientias",
-    "url": "https://scientias.nl/feed/"
+    "rss": "https://scientias.nl/feed/"
+  },
+  {
+    "category": "Wetenschap",
+    "name": "National Geographic Nederland",
+    "rss": "https://www.nationalgeographic.nl/rss/default.xml"
+  },
+  {
+    "category": "Archeologie",
+    "name": "Archeologie Online",
+    "rss": "https://archeologieonline.nl/feed"
+  },
+  {
+    "category": "Musea",
+    "name": "Museumtijdschrift",
+    "rss": "https://museumtijdschrift.nl/feed/"
+  },
+  {
+    "category": "Formule 1",
+    "name": "Formule1.nl",
+    "rss": "https://www.formule1.nl/feed/"
+  },
+  {
+    "category": "Formule 1",
+    "name": "RacingNews365.nl",
+    "rss": "https://racingnews365.nl/feed/news.xml"
+  },
+  {
+    "category": "Voetbal",
+    "name": "Voetbal International",
+    "rss": "https://www.vi.nl/feed/news.xml"
+  },
+  {
+    "category": "Voetbal",
+    "name": "VoetbalPrimeur",
+    "rss": "https://www.voetbalprimeur.nl/feed/news.xml"
   }
 ]

@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#0b1014">
+    <meta name="theme-color" content="#091017">
     <title>BobOS</title>
+    <script>
+        (function () {
+            try {
+                const savedTheme = localStorage.getItem("bobos-theme");
+                document.documentElement.dataset.theme = savedTheme === "light" ? "light" : "dark";
+            } catch (error) {
+                document.documentElement.dataset.theme = "dark";
+            }
+        }());
+    </script>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
     <script src="script.js" defer></script>
@@ -13,27 +23,25 @@
     <div class="app-shell">
         <main class="dashboard-layout">
             <header class="hero-panel">
-                <p class="hero-kicker">BobOS</p>
-                <h1 id="dashboard-greeting">Goedemorgen Bob</h1>
-                <div id="dashboard-overview" class="overview-list" aria-label="Dagoverzicht">
-                    <div class="overview-pill">Overzicht wordt geladen...</div>
+                <div class="hero-top-row">
+                    <img class="brand-logo" src="assets/bobos-logo-dark.svg" data-bobos-logo alt="BobOS logo">
+                    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+                        <i data-theme-icon data-lucide="sun"></i>
+                    </button>
+                </div>
+                <div class="brand-lockup">
+                    <div class="hero-copy">
+                        <h1 id="dashboard-greeting">Goedemorgen Bob</h1>
+                    </div>
                 </div>
             </header>
 
             <section class="news-panel" aria-labelledby="dashboard-news-title">
                 <div class="section-heading">
-                    <div class="section-heading-main">
-                        <span class="icon-badge section-icon" aria-hidden="true">
-                            <i data-lucide="newspaper"></i>
-                        </span>
-                        <div>
-                            <p class="section-kicker">Nieuws</p>
-                            <h2 id="dashboard-news-title">Wat nu telt</h2>
-                        </div>
-                    </div>
+                    <h2 id="dashboard-news-title">Nieuws</h2>
                 </div>
 
-                <div id="dashboard-news-list" class="headline-list">
+                <div id="dashboard-news-list" class="news-compact-list">
                     <div class="status-card">Nieuws wordt geladen...</div>
                 </div>
 
@@ -44,7 +52,7 @@
                 <div class="section-heading">
                     <div>
                         <p class="section-kicker">Apps</p>
-                        <h2 id="apps-title">Snel naar je tools</h2>
+                        <h2 id="apps-title">Snelle toegang</h2>
                     </div>
                 </div>
 
@@ -52,6 +60,10 @@
                     <div class="status-card">Apps worden geladen...</div>
                 </div>
             </section>
+
+            <div class="dashboard-mark" aria-hidden="true">
+                <img class="dashboard-mark-logo" src="assets/bobos-logo-dark.svg" data-bobos-logo alt="">
+            </div>
         </main>
     </div>
 </body>

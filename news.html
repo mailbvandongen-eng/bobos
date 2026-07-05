@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#0b1014">
+    <meta name="theme-color" content="#091017">
     <title>BobOS Nieuws</title>
+    <script>
+        (function () {
+            try {
+                const savedTheme = localStorage.getItem("bobos-theme");
+                document.documentElement.dataset.theme = savedTheme === "light" ? "light" : "dark";
+            } catch (error) {
+                document.documentElement.dataset.theme = "dark";
+            }
+        }());
+    </script>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
     <script src="script.js" defer></script>
@@ -13,28 +23,26 @@
     <div class="app-shell">
         <main class="news-layout">
             <header class="page-panel">
-                <a class="back-link" href="./index.html">
-                    <span class="icon-badge small-icon" aria-hidden="true">
+                <div class="page-top-row">
+                    <a class="back-link" href="./index.html">
                         <i data-lucide="arrow-left"></i>
-                    </span>
-                    <span>Terug naar dashboard</span>
-                </a>
+                        <span>Terug</span>
+                    </a>
+                    <div class="page-actions">
+                        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+                            <i data-theme-icon data-lucide="sun"></i>
+                        </button>
+                        <img class="page-logo" src="assets/bobos-logo-dark.svg" data-bobos-logo alt="BobOS logo">
+                    </div>
+                </div>
 
                 <div class="page-heading">
-                    <div class="section-heading-main">
-                        <span class="icon-badge section-icon" aria-hidden="true">
-                            <i data-lucide="newspaper"></i>
-                        </span>
-                        <div>
-                            <p class="section-kicker">BobOS</p>
-                            <h1>Nieuws</h1>
-                        </div>
-                    </div>
-                    <p class="page-intro">Rustig overzicht van voorbeeldberichten, geoptimaliseerd voor mobiel lezen.</p>
+                    <h1>Meer nieuws</h1>
+                    <p class="page-intro">Compact overzicht. Elke regel opent direct de originele bron in een nieuwe tab.</p>
                 </div>
             </header>
 
-            <section id="news-list" class="news-list" aria-label="Nieuwsberichten">
+            <section id="news-list" class="news-full-list" aria-label="Nieuwsberichten">
                 <div class="status-card">Nieuws wordt geladen...</div>
             </section>
         </main>
