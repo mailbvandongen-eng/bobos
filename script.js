@@ -3,6 +3,11 @@ const DATA_PATHS = {
     news: "data/news.json",
 };
 
+const APP_META = {
+    name: "BobOS",
+    version: "0.1",
+};
+
 const ASSET_PATHS = {
     logos: {
         dark: "assets/bobos-logo-dark.svg",
@@ -38,6 +43,7 @@ const CATEGORY_ICON_MAP = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+    syncAppVersion();
     initTheme();
 
     const page = document.body.dataset.page;
@@ -112,6 +118,12 @@ async function fetchJson(path) {
 
 function normalizeArray(value) {
     return Array.isArray(value) ? value : [];
+}
+
+function syncAppVersion() {
+    document.querySelectorAll("[data-app-version]").forEach((node) => {
+        node.textContent = `Versie ${APP_META.version}`;
+    });
 }
 
 function initTheme() {

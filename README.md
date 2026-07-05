@@ -25,6 +25,7 @@ Voor dit project geldt een vaste werkafspraak:
 
 - wijzigingen worden standaard gecommit
 - wijzigingen worden daarna ook direct gepusht
+- het versienummer staat altijd zichtbaar onderaan in de app
 
 ## Bestandsstructuur
 
@@ -119,6 +120,8 @@ Daar kun je later eenvoudig aanpassen:
 
 - de tijdsafhankelijke begroeting
 - hoeveel nieuwsberichten op de homepage getoond worden
+
+Het versienummer wordt ook centraal in `script.js` beheerd en onderaan in de app getoond.
 
 ## Later slimmer vullen
 

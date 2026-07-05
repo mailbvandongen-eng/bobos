@@ -98,6 +98,19 @@ p {
     gap: 16px;
 }
 
+.app-footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px 4px 2px;
+}
+
+.app-version {
+    color: var(--muted);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
 .hero-panel,
 .news-panel,
 .apps-panel,
