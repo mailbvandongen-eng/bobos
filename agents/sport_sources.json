@@ -1,0 +1,46 @@
+{
+  "dashboard_url": "https://mailbvandongen-eng.github.io/sport-op-tv/",
+  "openfootball": {
+    "base_url": "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26",
+    "leagues": [
+      { "file": "nl.1.json", "name": "Eredivisie" },
+      { "file": "en.1.json", "name": "Premier League" },
+      { "file": "de.1.json", "name": "Bundesliga" },
+      { "file": "es.1.json", "name": "La Liga" },
+      { "file": "it.1.json", "name": "Serie A" },
+      { "file": "fr.1.json", "name": "Ligue 1" }
+    ]
+  },
+  "espn": {
+    "base_url": "https://site.api.espn.com/apis/site/v2/sports/soccer",
+    "competitions": [
+      { "slug": "uefa.champions", "name": "Champions League" },
+      { "slug": "uefa.europa", "name": "Europa League" },
+      { "slug": "uefa.europa.conf", "name": "Conference League" },
+      { "slug": "fifa.world", "name": "WK" },
+      { "slug": "uefa.euro", "name": "EK" },
+      { "slug": "uefa.nations", "name": "Nations League" },
+      { "slug": "fifa.worldq.uefa", "name": "WK Kwalificatie" },
+      { "slug": "uefa.euroq", "name": "EK Kwalificatie" },
+      { "slug": "fifa.friendly", "name": "Vriendschappelijk Internationaal" },
+      { "slug": "fifa.wwc", "name": "WK Vrouwen" },
+      { "slug": "uefa.weuro", "name": "EK Vrouwen" },
+      { "slug": "fifa.wworldq.uefa", "name": "WK Kwalificatie Vrouwen" },
+      { "slug": "uefa.w.nations", "name": "Nations League Vrouwen" },
+      { "slug": "fifa.friendly.w", "name": "Vriendschappelijk Internationaal Vrouwen" },
+      { "slug": "ned.cup", "name": "KNVB Beker" },
+      { "slug": "eng.fa", "name": "FA Cup" },
+      { "slug": "ger.dfb_pokal", "name": "DFB Pokal" },
+      { "slug": "esp.copa_del_rey", "name": "Copa del Rey" },
+      { "slug": "ita.coppa_italia", "name": "Coppa Italia" },
+      { "slug": "fra.coupe_de_france", "name": "Coupe de France" },
+      { "slug": "eng.league_cup", "name": "League Cup" }
+    ]
+  },
+  "openf1": {
+    "base_url": "https://api.openf1.org/v1"
+  },
+  "pdc": {
+    "fixtures_url": "https://fixtures.darts.web.gc.pdcservices.co.uk/v2?page.size=500"
+  }
+}

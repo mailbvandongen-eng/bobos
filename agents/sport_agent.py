@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -12,49 +13,11 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
+SOURCES_PATH = ROOT_DIR / "agents" / "sport_sources.json"
 OUTPUT_PATH = ROOT_DIR / "data" / "sport.json"
-SPORT_URL = "https://mailbvandongen-eng.github.io/sport-op-tv/"
+DEFAULT_DASHBOARD_URL = "https://mailbvandongen-eng.github.io/sport-op-tv/"
 USER_AGENT = "BobOS SportAgent/0.2"
 MAX_ITEMS = 3
-OPENFOOTBALL_BASE_URL = "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26"
-ESPN_API_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer"
-PDC_FIXTURES_URL = "https://fixtures.darts.web.gc.pdcservices.co.uk/v2?page.size=500"
-OPENF1_API_URL = "https://api.openf1.org/v1"
-
-# Deze lijsten volgen de echte bronset van de bestaande Sport op TV-app,
-# maar staan hier expliciet vast zodat de agent geen homepage-config hoeft te scrapen.
-OPENFOOTBALL_LEAGUES = [
-    {"file": "nl.1.json", "name": "Eredivisie"},
-    {"file": "en.1.json", "name": "Premier League"},
-    {"file": "de.1.json", "name": "Bundesliga"},
-    {"file": "es.1.json", "name": "La Liga"},
-    {"file": "it.1.json", "name": "Serie A"},
-    {"file": "fr.1.json", "name": "Ligue 1"},
-]
-
-ESPN_COMPETITIONS = [
-    {"slug": "uefa.champions", "name": "Champions League"},
-    {"slug": "uefa.europa", "name": "Europa League"},
-    {"slug": "uefa.europa.conf", "name": "Conference League"},
-    {"slug": "fifa.world", "name": "WK"},
-    {"slug": "uefa.euro", "name": "EK"},
-    {"slug": "uefa.nations", "name": "Nations League"},
-    {"slug": "fifa.worldq.uefa", "name": "WK Kwalificatie"},
-    {"slug": "uefa.euroq", "name": "EK Kwalificatie"},
-    {"slug": "fifa.friendly", "name": "Vriendschappelijk Internationaal"},
-    {"slug": "fifa.wwc", "name": "WK Vrouwen"},
-    {"slug": "uefa.weuro", "name": "EK Vrouwen"},
-    {"slug": "fifa.wworldq.uefa", "name": "WK Kwalificatie Vrouwen"},
-    {"slug": "uefa.w.nations", "name": "Nations League Vrouwen"},
-    {"slug": "fifa.friendly.w", "name": "Vriendschappelijk Internationaal Vrouwen"},
-    {"slug": "ned.cup", "name": "KNVB Beker"},
-    {"slug": "eng.fa", "name": "FA Cup"},
-    {"slug": "ger.dfb_pokal", "name": "DFB Pokal"},
-    {"slug": "esp.copa_del_rey", "name": "Copa del Rey"},
-    {"slug": "ita.coppa_italia", "name": "Coppa Italia"},
-    {"slug": "fra.coupe_de_france", "name": "Coupe de France"},
-    {"slug": "eng.league_cup", "name": "League Cup"},
-]
 
 try:
     TIMEZONE = ZoneInfo("Europe/Amsterdam")
@@ -75,6 +38,17 @@ class SportItem:
     @property
     def time(self) -> str:
         return self.start_at.astimezone(TIMEZONE).strftime("%H:%M")
+
+
+def load_sources() -> dict[str, object]:
+    """Lees alle sportbronnen uit een enkel configuratiebestand."""
+    with SOURCES_PATH.open("r", encoding="utf-8") as handle:
+        payload = json.load(handle)
+
+    if not isinstance(payload, dict):
+        raise ValueError("sport_sources.json heeft geen geldig object als basis.")
+
+    return payload
 
 
 def utc_now_iso() -> str:
@@ -170,17 +144,28 @@ def normalize_title(home: str, away: str, fallback: str) -> str:
     return fallback or "Sportitem"
 
 
-def fetch_openfootball_items() -> list[SportItem]:
+def fetch_openfootball_items(sources: dict[str, object]) -> list[SportItem]:
     """Lees voetbalwedstrijden uit OpenFootball, zoals de app dat ook doet."""
     items: list[SportItem] = []
 
-    for league in OPENFOOTBALL_LEAGUES:
-        filename = league["file"]
-        competition = league["name"]
+    openfootball = sources.get("openfootball") if isinstance(sources, dict) else {}
+    base_url = str((openfootball or {}).get("base_url", "")).rstrip("/")
+    leagues = (openfootball or {}).get("leagues") or []
+
+    if not base_url or not isinstance(leagues, list):
+        print("[WARN] OpenFootball-config ontbreekt of is ongeldig.")
+        return items
+
+    for league in leagues:
+        if not isinstance(league, dict):
+            continue
+
+        filename = str(league.get("file", "")).strip()
+        competition = str(league.get("name", "")).strip() or "Voetbal"
         if not filename:
             continue
 
-        url = f"{OPENFOOTBALL_BASE_URL}/{filename}"
+        url = f"{base_url}/{filename}"
 
         try:
             payload = fetch_json(url)
@@ -215,18 +200,31 @@ def fetch_openfootball_items() -> list[SportItem]:
     return items
 
 
-def fetch_espn_items() -> list[SportItem]:
+def fetch_espn_items(sources: dict[str, object]) -> list[SportItem]:
     """Lees voetbalwedstrijden uit ESPN, zoals de app dat ook doet."""
     items: list[SportItem] = []
+    espn = sources.get("espn") if isinstance(sources, dict) else {}
+    base_url = str((espn or {}).get("base_url", "")).rstrip("/")
+    competitions = (espn or {}).get("competitions") or []
+
+    if not base_url or not isinstance(competitions, list):
+        print("[WARN] ESPN-config ontbreekt of is ongeldig.")
+        return items
 
     today = today_local()
     start_key = (today - timedelta(days=1)).strftime("%Y%m%d")
     end_key = (today + timedelta(days=1)).strftime("%Y%m%d")
 
-    for competition in ESPN_COMPETITIONS:
-        slug = competition["slug"]
-        name = competition["name"]
-        url = f"{ESPN_API_URL}/{slug}/scoreboard?dates={start_key}-{end_key}&limit=1000"
+    for competition in competitions:
+        if not isinstance(competition, dict):
+            continue
+
+        slug = str(competition.get("slug", "")).strip()
+        name = str(competition.get("name", "")).strip() or "Voetbal"
+        if not slug:
+            continue
+
+        url = f"{base_url}/{slug}/scoreboard?dates={start_key}-{end_key}&limit=1000"
 
         try:
             payload = fetch_json(url)
@@ -273,10 +271,16 @@ def fetch_espn_items() -> list[SportItem]:
     return items
 
 
-def fetch_f1_items() -> list[SportItem]:
+def fetch_f1_items(sources: dict[str, object]) -> list[SportItem]:
     """Lees F1-sessies uit OpenF1, zoals de app dat ook doet."""
+    openf1 = sources.get("openf1") if isinstance(sources, dict) else {}
+    base_url = str((openf1 or {}).get("base_url", "")).rstrip("/")
+    if not base_url:
+        print("[WARN] OpenF1-config ontbreekt of is ongeldig.")
+        return []
+
     year = today_local().year
-    url = f"{OPENF1_API_URL}/sessions?year={year}"
+    url = f"{base_url}/sessions?year={year}"
 
     try:
         payload = fetch_json(url)
@@ -310,10 +314,16 @@ def fetch_f1_items() -> list[SportItem]:
     return items
 
 
-def fetch_pdc_items() -> list[SportItem]:
+def fetch_pdc_items(sources: dict[str, object]) -> list[SportItem]:
     """Lees dartswedstrijden uit de PDC-feed die de app gebruikt."""
+    pdc = sources.get("pdc") if isinstance(sources, dict) else {}
+    fixtures_url = str((pdc or {}).get("fixtures_url", "")).strip()
+    if not fixtures_url:
+        print("[WARN] PDC-config ontbreekt of is ongeldig.")
+        return []
+
     try:
-        payload = fetch_json(PDC_FIXTURES_URL)
+        payload = fetch_json(fixtures_url)
     except (HTTPError, URLError, TimeoutError, json.JSONDecodeError) as error:
         print(f"[WARN] PDC-feed mislukt: {error}")
         return []
@@ -372,7 +382,7 @@ def dedupe_and_limit(items: list[SportItem]) -> list[SportItem]:
     return list(unique.values())[:MAX_ITEMS]
 
 
-def build_payload(items: list[SportItem]) -> dict[str, object]:
+def build_payload(items: list[SportItem], dashboard_url: str) -> dict[str, object]:
     """Maak de vaste BobOS JSON-structuur voor het sportdomein."""
     status = "Sport op TV vandaag" if items else "Geen sport gevonden voor vandaag"
 
@@ -384,11 +394,11 @@ def build_payload(items: list[SportItem]) -> dict[str, object]:
                 "time": item.time,
                 "title": item.title,
                 "category": item.category,
-                "url": SPORT_URL,
+                "url": dashboard_url,
             }
             for item in items
         ],
-        "url": SPORT_URL,
+        "url": dashboard_url,
     }
 
 
@@ -403,11 +413,17 @@ def save_payload(payload: dict[str, object]) -> None:
 
 def build_items() -> list[SportItem]:
     """Haal echte sportitems op via de vaste JSON/API-bronnen van Sport op TV."""
-    print("[INFO] Bronnen gebruiken uit de vaste SportAgent-config.")
-    print(f"[INFO] OpenFootball bron: {OPENFOOTBALL_BASE_URL}")
-    print(f"[INFO] ESPN bron: {ESPN_API_URL}")
-    print(f"[INFO] OpenF1 bron: {OPENF1_API_URL}")
-    print(f"[INFO] PDC bron: {PDC_FIXTURES_URL}")
+    sources = load_sources()
+    openfootball = sources.get("openfootball") if isinstance(sources, dict) else {}
+    espn = sources.get("espn") if isinstance(sources, dict) else {}
+    openf1 = sources.get("openf1") if isinstance(sources, dict) else {}
+    pdc = sources.get("pdc") if isinstance(sources, dict) else {}
+
+    print(f"[INFO] Bronconfig geladen uit {SOURCES_PATH}.")
+    print(f"[INFO] OpenFootball bron: {str((openfootball or {}).get('base_url', '')).strip()}")
+    print(f"[INFO] ESPN bron: {str((espn or {}).get('base_url', '')).strip()}")
+    print(f"[INFO] OpenF1 bron: {str((openf1 or {}).get('base_url', '')).strip()}")
+    print(f"[INFO] PDC bron: {str((pdc or {}).get('fixtures_url', '')).strip()}")
     items: list[SportItem] = []
 
     for fetcher, label in (
@@ -416,7 +432,7 @@ def build_items() -> list[SportItem]:
         (fetch_f1_items, "OpenF1"),
         (fetch_pdc_items, "PDC"),
     ):
-        fetched = fetcher()
+        fetched = fetcher(sources)
         print(f"[INFO] {label}: {len(fetched)} item(s) voor vandaag gevonden.")
         items.extend(fetched)
 
@@ -429,15 +445,27 @@ def build_items() -> list[SportItem]:
     return selected
 
 
+def get_dashboard_url(sources: dict[str, object] | None = None) -> str:
+    """Lees de dashboardlink uit de bronconfig met een veilige fallback."""
+    source_map = sources if isinstance(sources, dict) else {}
+    return str(source_map.get("dashboard_url", "")).strip() or DEFAULT_DASHBOARD_URL
+
+
 def main() -> None:
     """Hoofdroute voor lokaal gebruik en GitHub Actions."""
+    try:
+        sources = load_sources()
+    except Exception as error:  # pragma: no cover - configfout mag geen kapotte JSON geven
+        print(f"[WARN] Bronconfig kon niet worden geladen: {error}")
+        sources = {"dashboard_url": DEFAULT_DASHBOARD_URL}
+
     try:
         items = build_items()
     except Exception as error:  # pragma: no cover - laatste vangnet voor geldige JSON
         print(f"[WARN] SportAgent viel terug naar lege output: {error}")
         items = []
 
-    payload = build_payload(items)
+    payload = build_payload(items, get_dashboard_url(sources))
     save_payload(payload)
     print(f"[DONE] Sportdata opgeslagen in {OUTPUT_PATH}.")
 
