@@ -1,23 +1,17 @@
 {
-  "updated_at": "2026-07-05T21:05:40Z",
+  "updated_at": "2026-07-05T22:59:23Z",
   "status": "Sport op TV vandaag",
   "items": [
     {
-      "time": "18:30",
-      "title": "Formule 1 Weekend Update",
-      "category": "Formule 1",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:00",
-      "title": "Premier League Darts",
-      "category": "Darts",
+      "time": "02:00",
+      "title": "Mexico - England",
+      "category": "WK",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
       "time": "21:00",
-      "title": "Avondwedstrijd Voetbal",
-      "category": "Voetbal",
+      "title": "Portugal - Spain",
+      "category": "WK",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     }
   ],
