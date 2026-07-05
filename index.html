@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0b1014">
+    <title>BobOS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="dashboard-page" data-page="dashboard">
+    <div class="app-shell">
+        <main class="dashboard-layout">
+            <header class="hero-panel">
+                <p class="hero-kicker">BobOS</p>
+                <h1 id="dashboard-greeting">Goedemorgen Bob</h1>
+                <div id="dashboard-overview" class="overview-list" aria-label="Dagoverzicht">
+                    <div class="overview-pill">Overzicht wordt geladen...</div>
+                </div>
+            </header>
+
+            <section class="news-panel" aria-labelledby="dashboard-news-title">
+                <div class="section-heading">
+                    <div class="section-heading-main">
+                        <span class="icon-badge section-icon" aria-hidden="true">
+                            <i data-lucide="newspaper"></i>
+                        </span>
+                        <div>
+                            <p class="section-kicker">Nieuws</p>
+                            <h2 id="dashboard-news-title">Wat nu telt</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dashboard-news-list" class="headline-list">
+                    <div class="status-card">Nieuws wordt geladen...</div>
+                </div>
+
+                <a class="more-news-link" href="news.html">Meer nieuws...</a>
+            </section>
+
+            <section class="apps-panel" aria-labelledby="apps-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-kicker">Apps</p>
+                        <h2 id="apps-title">Snel naar je tools</h2>
+                    </div>
+                </div>
+
+                <div id="tiles-grid" class="apps-grid">
+                    <div class="status-card">Apps worden geladen...</div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

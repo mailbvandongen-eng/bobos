@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0b1014">
+    <title>BobOS Nieuws</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="news-page" data-page="news">
+    <div class="app-shell">
+        <main class="news-layout">
+            <header class="page-panel">
+                <a class="back-link" href="./index.html">
+                    <span class="icon-badge small-icon" aria-hidden="true">
+                        <i data-lucide="arrow-left"></i>
+                    </span>
+                    <span>Terug naar dashboard</span>
+                </a>
+
+                <div class="page-heading">
+                    <div class="section-heading-main">
+                        <span class="icon-badge section-icon" aria-hidden="true">
+                            <i data-lucide="newspaper"></i>
+                        </span>
+                        <div>
+                            <p class="section-kicker">BobOS</p>
+                            <h1>Nieuws</h1>
+                        </div>
+                    </div>
+                    <p class="page-intro">Rustig overzicht van voorbeeldberichten, geoptimaliseerd voor mobiel lezen.</p>
+                </div>
+            </header>
+
+            <section id="news-list" class="news-list" aria-label="Nieuwsberichten">
+                <div class="status-card">Nieuws wordt geladen...</div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Sport op TV",
+        "description": "Vandaag snel naar het uitzendschema",
+        "icon": "trophy",
+        "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+        "title": "Detectorapp",
+        "description": "Direct naar kaarten en detectie",
+        "icon": "map",
+        "url": "https://mailbvandongen-eng.github.io/detect/"
+    },
+    {
+        "title": "Visapp",
+        "description": "Snelle toegang tot je visomgeving",
+        "icon": "fish",
+        "url": "https://mailbvandongen-eng.github.io/visapp/"
+    },
+    {
+        "title": "Meer...",
+        "description": "Ruimte voor toekomstige uitbreidingen",
+        "icon": "grid-2x2-plus",
+        "url": "#",
+        "comingSoon": true
+    }
+]

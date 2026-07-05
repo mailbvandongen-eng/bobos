@@ -1,0 +1,34 @@
+[
+  {
+    "name": "NOS Algemeen",
+    "url": "https://feeds.nos.nl/nosnieuwsalgemeen"
+  },
+  {
+    "name": "Tweakers Nieuws",
+    "url": "https://tweakers.net/feeds/mixed.xml"
+  },
+  {
+    "name": "Roofmeister",
+    "url": "http://roofmeister.be/feed/"
+  },
+  {
+    "name": "Garmin Newsroom",
+    "url": "https://www.garmin.com/en-US/newsroom/feed/"
+  },
+  {
+    "name": "RCE Service",
+    "url": "https://www.cultureelerfgoed.nl/service/rss"
+  },
+  {
+    "name": "Archeologie Online",
+    "url": "https://archeologieonline.nl/feed"
+  },
+  {
+    "name": "ADC Archeoprojecten",
+    "url": "https://www.adc-archeoprojecten.nl/feed/"
+  },
+  {
+    "name": "Scientias",
+    "url": "https://scientias.nl/feed/"
+  }
+]
