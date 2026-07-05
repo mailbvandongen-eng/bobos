@@ -112,8 +112,10 @@ Elke agent schrijft altijd geldige JSON, ook als externe data ontbreekt.
 
 ### SportAgent
 
-- schrijft voorbeelddata naar `data/sport.json`
-- houdt de structuur klaar voor latere koppeling aan Sport op TV-data
+- schrijft `data/sport.json`
+- gebruikt nu maximaal 3 voorbeelditems voor de Sport-tegel
+- kan lokaal draaien met `python agents/sport_agent.py`
+- kan later worden gekoppeld aan echte Sport op TV-data
 
 ### DetectieAgent
 
@@ -150,6 +152,10 @@ Elke workflow:
 Handmatig starten kan via:
 
 `GitHub Actions -> Run workflow`
+
+Voor Sport specifiek:
+
+`GitHub Actions -> SportAgent -> Run workflow`
 
 ## Thema en versie
 

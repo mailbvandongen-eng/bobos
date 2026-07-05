@@ -1,4 +1,4 @@
-"""Schrijf voorbeelddata voor het sportdomein van BobOS v0.2."""
+"""Schrijf sportdata voor het sportdomein van BobOS."""
 
 from __future__ import annotations
 
@@ -13,12 +13,17 @@ SPORT_URL = "https://mailbvandongen-eng.github.io/sport-op-tv/"
 
 
 def utc_now_iso() -> str:
-    """Geef een compacte UTC-tijd terug voor JSON-opslag."""
-    return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+    """Geef een UTC-tijd terug zonder fracties, passend voor JSON-opslag."""
+    return (
+        datetime.now(timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z")
+    )
 
 
 def build_items() -> list[dict[str, str]]:
-    """Geef drie voorbeelditems terug voor BobOS v0.2."""
+    """Geef maximaal drie compacte sportitems terug."""
     schedule = [
         {"time": "18:30", "title": "Formule 1 Weekend Update", "category": "Formule 1", "url": SPORT_URL},
         {"time": "20:00", "title": "Premier League Darts", "category": "Darts", "url": SPORT_URL},
