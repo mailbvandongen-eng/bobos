@@ -10,7 +10,7 @@ BobOS is een persoonlijk, mobiel dashboard met losse advies-agents voor nieuws, 
 
 - mobile first
 - geschikt voor GitHub Pages
-- geen backend
+- dashboard blijft statisch; de verversknoppen gebruiken optioneel een kleine refreshservice
 - geen database
 - geen login
 - geen AI-kosten of betaalde API's
@@ -46,7 +46,9 @@ detectie.html
 vissen.html
 meer.html
 style.css
+config.js
 script.js
+refresh_proxy.py
 README.md
 requirements.txt
 .github/
@@ -164,6 +166,20 @@ Handmatig starten kan via:
 
 `GitHub -> Actions -> kies workflow -> Run workflow`
 
+## Tokenloze verversknoppen
+
+De verversknoppen in BobOS praten niet meer direct met GitHub. Ze sturen een request naar een kleine refreshservice, zodat de browser geen token hoeft te kennen.
+
+Lokaal werkt dat zo:
+
+1. start de static site zoals je al deed
+2. start daarnaast `python refresh_proxy.py`
+3. de knoppen op `index.html`, `news.html`, `sport.html`, `detectie.html` en `vissen.html` posten dan automatisch naar `http://127.0.0.1:8787`
+
+De refreshservice gebruikt eerst je bestaande `gh`-login. Als `gh auth status` al goed is, hoef je geen extra token in te vullen.
+
+Voor een externe HTTPS-omgeving kun je in `config.js` een eigen `refreshServiceUrl` invullen en die service laten draaien met `BOBOS_GITHUB_TOKEN` als server-side secret.
+
 ## Thema en versie
 
 BobOS start standaard in donker thema.
@@ -177,6 +193,7 @@ Een simpele lokale server werkt het prettigst:
 
 ```powershell
 python -m http.server 8000
+python refresh_proxy.py
 ```
 
 Open daarna:

@@ -20,6 +20,7 @@
     </script>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="config.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body class="agent-page" data-page="agent-news">
@@ -69,11 +70,11 @@
                             <span class="agent-panel-kicker">Titel</span>
                             <h1>NewsAgent</h1>
                         </div>
-                        <a class="refresh-action-link" data-workflow-target="news" href="https://github.com/mailbvandongen-eng/bobos/actions/workflows/news.yml">
-                            <span>Ververs nu</span>
+                        <button class="refresh-action-button" type="button" data-workflow-target="news">
                             <i data-lucide="refresh-cw"></i>
-                        </a>
+                        </button>
                     </div>
+                    <p class="refresh-feedback" data-refresh-feedback="news" aria-live="polite" hidden></p>
                     <p class="agent-status-badge"><i data-lucide="activity"></i><span data-agent-status>Status: Nieuws laden...</span></p>
                     <p class="agent-score-line" data-agent-score hidden></p>
                 </div>

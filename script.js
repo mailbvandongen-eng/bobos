@@ -14,6 +14,10 @@ const STORAGE_KEYS = {
     theme: "bobos-theme",
 };
 
+const RUNTIME_CONFIG = window.BOBOS_CONFIG && typeof window.BOBOS_CONFIG === "object"
+    ? window.BOBOS_CONFIG
+    : {};
+
 const DASHBOARD_CONFIG = {
     dashboardNewsLimit: 5,
     detailNewsLimit: 12,
@@ -40,18 +44,24 @@ const NAVIGATION_LINKS = {
     },
 };
 
-const WORKFLOW_LINKS = {
+const DEFAULT_REFRESH_SERVICE = {
+    localBaseUrl: "http://127.0.0.1:8787",
+    productionBaseUrl: "",
+    timeoutMs: 15000,
+};
+
+const WORKFLOW_CONFIGS = {
     news: {
-        href: "https://github.com/mailbvandongen-eng/bobos/actions/workflows/news.yml",
+        label: "Nieuws",
     },
     sport: {
-        href: "https://github.com/mailbvandongen-eng/bobos/actions/workflows/sport.yml",
+        label: "Sport",
     },
     detectie: {
-        href: "https://github.com/mailbvandongen-eng/bobos/actions/workflows/detectie.yml",
+        label: "Detectie",
     },
     vissen: {
-        href: "https://github.com/mailbvandongen-eng/bobos/actions/workflows/vissen.yml",
+        label: "Vissen",
     },
 };
 
@@ -106,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
     syncAppVersion();
     initTheme();
     hydrateNavigationLinks();
-    hydrateWorkflowLinks();
+    bindWorkflowButtons();
 
     const page = document.body.dataset.page || "";
 
@@ -866,19 +876,171 @@ function hydrateNavigationLinks() {
     });
 }
 
-function hydrateWorkflowLinks() {
-    document.querySelectorAll("[data-workflow-target]").forEach((link) => {
-        const targetKey = String(link.dataset.workflowTarget || "").trim();
-        const config = WORKFLOW_LINKS[targetKey];
+function bindWorkflowButtons() {
+    document.querySelectorAll("[data-workflow-target]").forEach((button) => {
+        const targetKey = String(button.dataset.workflowTarget || "").trim();
+        const config = WORKFLOW_CONFIGS[targetKey];
 
-        if (!config || !config.href) {
+        if (!config) {
             return;
         }
 
-        link.setAttribute("href", config.href);
-        link.setAttribute("target", "_blank");
-        link.setAttribute("rel", "noopener noreferrer");
+        button.setAttribute("aria-label", `${config.label} verversen`);
+        button.setAttribute("title", `${config.label} verversen`);
+
+        if (button.dataset.bound === "true") {
+            return;
+        }
+
+        button.dataset.bound = "true";
+        button.addEventListener("click", () => {
+            void triggerWorkflowDispatch(targetKey, button);
+        });
     });
+}
+
+function normalizeRefreshServiceUrl(value) {
+    return String(value || "").trim().replace(/\/+$/, "");
+}
+
+function isLocalRefreshContext() {
+    return window.location.protocol === "http:"
+        && ["127.0.0.1", "localhost"].includes(window.location.hostname);
+}
+
+function getRefreshServiceBaseUrl() {
+    const configuredUrl = normalizeRefreshServiceUrl(RUNTIME_CONFIG.refreshServiceUrl);
+    if (configuredUrl) {
+        return configuredUrl;
+    }
+
+    if (isLocalRefreshContext()) {
+        return DEFAULT_REFRESH_SERVICE.localBaseUrl;
+    }
+
+    return normalizeRefreshServiceUrl(DEFAULT_REFRESH_SERVICE.productionBaseUrl);
+}
+
+function workflowDispatchUrl(targetKey) {
+    const baseUrl = getRefreshServiceBaseUrl();
+    if (!baseUrl) {
+        return "";
+    }
+
+    return `${baseUrl}/dispatch/${targetKey}`;
+}
+
+function getWorkflowFeedbackNode(targetKey) {
+    return document.querySelector(`[data-refresh-feedback="${targetKey}"]`);
+}
+
+function getRefreshServiceUnavailableMessage() {
+    return isLocalRefreshContext()
+        ? "Verversservice niet gevonden. Start python refresh_proxy.py."
+        : "Verversservice nog niet geconfigureerd voor de live site.";
+}
+
+function getRefreshServiceUnreachableMessage() {
+    return isLocalRefreshContext()
+        ? "Verversservice niet bereikbaar. Start python refresh_proxy.py en probeer opnieuw."
+        : "Verversservice niet bereikbaar.";
+}
+
+async function readWorkflowResponseMessage(response) {
+    try {
+        const payload = await response.json();
+        return String(payload.message || "").trim();
+    } catch (error) {
+        return "";
+    }
+}
+
+function setWorkflowButtonState(button, isRunning) {
+    button.disabled = isRunning;
+    button.classList.toggle("is-running", isRunning);
+    button.setAttribute("aria-busy", String(isRunning));
+}
+
+function setWorkflowFeedback(targetKey, message, state = "info") {
+    const feedbackNode = getWorkflowFeedbackNode(targetKey);
+    if (!feedbackNode) {
+        return;
+    }
+
+    feedbackNode.textContent = message || "";
+    feedbackNode.dataset.state = state;
+    feedbackNode.hidden = !message;
+}
+
+async function buildWorkflowError(response, label) {
+    const apiMessage = await readWorkflowResponseMessage(response);
+
+    if (response.status === 404) {
+        return apiMessage || `${label} kon niet worden gestart: onbekende workflow.`;
+    }
+
+    if (response.status === 403) {
+        return apiMessage || `${label} kon niet worden gestart: aanvraag geblokkeerd door de verversservice.`;
+    }
+
+    if (response.status === 502) {
+        return apiMessage || `${label} kon niet worden gestart via GitHub.`;
+    }
+
+    return apiMessage || `${label} kon niet worden gestart (${response.status}).`;
+}
+
+async function triggerWorkflowDispatch(targetKey, button) {
+    const config = WORKFLOW_CONFIGS[targetKey];
+    if (!config || button.disabled) {
+        return;
+    }
+
+    const dispatchUrl = workflowDispatchUrl(targetKey);
+    if (!dispatchUrl) {
+        setWorkflowFeedback(targetKey, getRefreshServiceUnavailableMessage(), "error");
+        return;
+    }
+
+    setWorkflowButtonState(button, true);
+    setWorkflowFeedback(targetKey, `${config.label} wordt gestart...`, "info");
+
+    const controller = new AbortController();
+    const timeoutId = window.setTimeout(() => controller.abort(), DEFAULT_REFRESH_SERVICE.timeoutMs);
+
+    try {
+        const response = await fetch(dispatchUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                source: "bobos-ui",
+                page: window.location.pathname,
+            }),
+            signal: controller.signal,
+        });
+
+        if (!response.ok) {
+            throw new Error(await buildWorkflowError(response, config.label));
+        }
+
+        const successMessage = await readWorkflowResponseMessage(response);
+        setWorkflowFeedback(targetKey, successMessage || `${config.label} gestart. Ververs BobOS over ongeveer een minuut.`, "success");
+    } catch (error) {
+        console.error(error);
+        const message = error instanceof DOMException && error.name === "AbortError"
+            ? "Verversservice reageert te traag."
+            : error instanceof TypeError
+                ? getRefreshServiceUnreachableMessage()
+                : error instanceof Error
+                    ? error.message
+                    : `${config.label} kon niet worden gestart.`;
+        setWorkflowFeedback(targetKey, message, "error");
+    } finally {
+        window.clearTimeout(timeoutId);
+        setWorkflowButtonState(button, false);
+    }
 }
 
 function pickHomepageItems(items, limit) {

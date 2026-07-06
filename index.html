@@ -20,6 +20,7 @@
     </script>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="config.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body class="dashboard-page" data-page="dashboard">
@@ -65,11 +66,11 @@
             <section class="news-panel" aria-labelledby="dashboard-news-title">
                 <div class="section-heading">
                     <h2 id="dashboard-news-title">Nieuws</h2>
-                    <a class="refresh-action-link" data-workflow-target="news" href="https://github.com/mailbvandongen-eng/bobos/actions/workflows/news.yml">
-                        <span>Ververs nu</span>
+                    <button class="refresh-action-button" type="button" data-workflow-target="news">
                         <i data-lucide="refresh-cw"></i>
-                    </a>
+                    </button>
                 </div>
+                <p class="refresh-feedback" data-refresh-feedback="news" aria-live="polite" hidden></p>
 
                 <div id="dashboard-news-list" class="news-compact-list" aria-live="polite">
                     <div class="status-card">Nieuws wordt geladen...</div>
