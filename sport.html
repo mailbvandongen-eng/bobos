@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#091017">
-    <title>BobOS</title>
+    <title>BobOS SportAgent</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,9 +22,9 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
     <script src="script.js" defer></script>
 </head>
-<body class="dashboard-page" data-page="dashboard">
+<body class="agent-page" data-page="agent-sport">
     <div class="app-shell">
-        <main class="dashboard-layout">
+        <main class="agent-layout">
             <header class="page-panel app-header">
                 <div class="page-top-row">
                     <a class="brand-home" href="index.html" aria-label="BobOS dashboard">
@@ -42,7 +42,7 @@
                             <span class="dashboard-nav-icon"><i data-lucide="newspaper"></i></span>
                             <span class="dashboard-nav-label">Nieuws</span>
                         </a>
-                        <a class="dashboard-nav-link dashboard-nav-link--sport" href="sport.html">
+                        <a class="dashboard-nav-link dashboard-nav-link--sport" href="sport.html" aria-current="page">
                             <span class="dashboard-nav-icon"><i data-lucide="trophy"></i></span>
                             <span class="dashboard-nav-label">Sport</span>
                         </a>
@@ -62,14 +62,34 @@
                 </div>
             </header>
 
-            <section class="news-panel" aria-labelledby="dashboard-news-title">
-                <div class="section-heading">
-                    <h2 id="dashboard-news-title">Nieuws</h2>
+            <section class="page-panel agent-panel agent-panel--sport">
+                <div class="agent-panel-head">
+                    <div class="agent-panel-title">
+                        <span class="agent-panel-kicker">Titel</span>
+                        <h1>SportAgent</h1>
+                    </div>
+                    <p class="agent-status-badge"><i data-lucide="activity"></i><span>Status: Vandaag op tv</span></p>
                 </div>
 
-                <div id="dashboard-news-list" class="news-compact-list" aria-live="polite">
-                    <div class="status-card">Nieuws wordt geladen...</div>
+                <div class="agent-section-grid">
+                    <article class="agent-section-card">
+                        <h2><i data-lucide="scan-search"></i><span>Analyse</span></h2>
+                        <p>Hier komt later een samenvatting van geselecteerde sportmomenten en relevante wedstrijden.</p>
+                    </article>
+                    <article class="agent-section-card">
+                        <h2><i data-lucide="lightbulb"></i><span>Advies</span></h2>
+                        <p>SportAgent wordt de tussenlaag die BobOS compact houdt en pas daarna doorstuurt naar Sport op TV.</p>
+                    </article>
+                    <article class="agent-section-card">
+                        <h2><i data-lucide="book-open"></i><span>Bronnen</span></h2>
+                        <p>Bronverwijzingen en gebruikte sportfeeds komen hier later als compacte bronlijst te staan.</p>
+                    </article>
                 </div>
+
+                <a class="agent-open-link" href="https://mailbvandongen-eng.github.io/sport-op-tv/" target="_blank" rel="noopener noreferrer">
+                    <span>Open oorspronkelijke app</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
             </section>
         </main>
 

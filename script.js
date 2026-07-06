@@ -10,19 +10,12 @@ const DATA_PATHS = {
     vissen: "data/vissen.json",
 };
 
-const ASSET_PATHS = {
-    logos: {
-        dark: "assets/bobos-logo-dark.svg",
-        light: "assets/bobos-logo-light.svg",
-    },
-};
-
 const STORAGE_KEYS = {
     theme: "bobos-theme",
 };
 
 const DASHBOARD_CONFIG = {
-    dashboardNewsLimit: 3,
+    dashboardNewsLimit: 5,
     detailNewsLimit: 50,
     compactSummaryLength: 120,
     compactDomainLimit: 3,
@@ -110,32 +103,21 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function initDashboard() {
-    const greeting = document.getElementById("dashboard-greeting");
     const newsList = document.getElementById("dashboard-news-list");
-    const tilesStack = document.getElementById("dashboard-tiles-stack");
 
-    if (!greeting || !newsList || !tilesStack) {
+    if (!newsList) {
         return;
     }
 
-    greeting.textContent = getGreetingByLocalTime();
-
     try {
-        const [newsItems, tileDomains] = await Promise.all([
-            fetchJson(DATA_PATHS.news),
-            Promise.all(DASHBOARD_AGENT_TILES.map(loadDashboardDomain)),
-        ]);
-
-        const normalizedNews = normalizeArray(newsItems);
+        const normalizedNews = normalizeArray(await fetchJson(DATA_PATHS.news));
         const headlineItems = pickHomepageItems(normalizedNews, DASHBOARD_CONFIG.dashboardNewsLimit);
 
         renderCompactNews(newsList, headlineItems, false);
-        renderDashboardTiles(tilesStack, tileDomains);
         replaceIcons();
     } catch (error) {
         console.error(error);
         renderStatus(newsList, getLoadErrorMessage("Het nieuws"));
-        renderStatus(tilesStack, getLoadErrorMessage("De domeintegels"));
     }
 }
 
@@ -209,7 +191,6 @@ function getStoredTheme() {
 function applyTheme(theme) {
     const nextTheme = theme === "light" ? "light" : "dark";
     document.documentElement.dataset.theme = nextTheme;
-    updateThemeLogos(nextTheme);
     updateThemeMetaColor(nextTheme);
     updateThemeToggleButtons(nextTheme);
 }
@@ -262,34 +243,6 @@ function updateThemeMetaColor(theme) {
     if (metaThemeColor) {
         metaThemeColor.setAttribute("content", themeColor);
     }
-}
-
-function updateThemeLogos(theme) {
-    const source = theme === "light" ? ASSET_PATHS.logos.light : ASSET_PATHS.logos.dark;
-
-    document.querySelectorAll("[data-bobos-logo]").forEach((image) => {
-        if (image.getAttribute("src") !== source) {
-            image.setAttribute("src", source);
-        }
-    });
-}
-
-function getGreetingByLocalTime(now = new Date()) {
-    const hour = now.getHours();
-
-    if (hour >= 5 && hour <= 11) {
-        return "Goedemorgen Bob";
-    }
-
-    if (hour >= 12 && hour <= 17) {
-        return "Goedemiddag Bob";
-    }
-
-    if (hour >= 18 && hour <= 23) {
-        return "Goedenavond Bob";
-    }
-
-    return "Goedenacht Bob";
 }
 
 function pickHomepageItems(items, limit) {
@@ -365,6 +318,12 @@ function createAgentTile(domain) {
     const targetUrl = String(domain.tile.target_url || "").trim();
     const tile = document.createElement(targetUrl ? "a" : "section");
     tile.className = "agent-tile";
+    tile.dataset.domain = domain.tile.key || "agent";
+
+    if (domain.tile.key) {
+        tile.classList.add(`agent-tile--${domain.tile.key}`);
+        tile.id = `agent-${domain.tile.key}`;
+    }
 
     if (targetUrl) {
         tile.classList.add("agent-tile--link");
@@ -620,6 +579,19 @@ function createIconFrame(category) {
 function getDomainStatus(domain) {
     if (domain.tile.key === "news") {
         return getNewsStatus(normalizeArray(domain.payload));
+    }
+
+    if (domain.tile.key === "detectie") {
+        const baseStatus = domain.payload && typeof domain.payload.status === "string" && domain.payload.status.trim()
+            ? domain.payload.status.trim()
+            : (domain.tile.status_fallback || "Nog niet bijgewerkt");
+        const score = Number(domain.payload && domain.payload.score);
+
+        if (Number.isFinite(score) && score > 0) {
+            return `${baseStatus} - Zoekconditie: ${Math.round(score)}/5`;
+        }
+
+        return baseStatus;
     }
 
     if (domain.payload && typeof domain.payload.status === "string" && domain.payload.status.trim()) {

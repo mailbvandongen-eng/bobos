@@ -1,19 +1,25 @@
 {
-  "updated_at": "2026-07-05T19:59:06.415039Z",
-  "status": "Maandagcondities",
+  "updated_at": "2026-07-06T11:27:33Z",
+  "status": "Maandagadvies",
+  "score": 4,
   "items": [
     {
-      "label": "Weer",
-      "value": "Droog tot 14:00"
+      "label": "Beste keuze",
+      "value": "Hoger zand / stroomrug"
     },
     {
-      "label": "Bodem",
-      "value": "Vochtig, goed zoeken"
+      "label": "Vermijd",
+      "value": "Lage natte klei"
     },
     {
-      "label": "Conclusie",
-      "value": "Prima ochtend"
+      "label": "Tip",
+      "value": "Steentijd op nat zand"
     }
+  ],
+  "details": [
+    "Regen in de afgelopen week maakt lage kleigronden minder aantrekkelijk.",
+    "Hoger gelegen zandgronden, rivierduinen, dekzandruggen en stroomruggen blijven interessant.",
+    "Betuwe niet uitsluiten: hoge stroomruggen en oude oeverwallen kunnen juist goed zijn."
   ],
   "url": "https://mailbvandongen-eng.github.io/detect/"
 }
