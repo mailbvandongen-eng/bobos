@@ -336,6 +336,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 12px;
     margin-bottom: 16px;
 }
@@ -512,6 +513,14 @@ p {
     gap: 14px;
 }
 
+.agent-panel-top-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
 .agent-panel-title {
     display: grid;
     gap: 6px;
@@ -605,6 +614,31 @@ p {
     font-weight: 600;
     line-height: 1.25;
     transition: border-color 120ms ease, transform 120ms ease, background-color 120ms ease;
+}
+
+.refresh-action-link {
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border: 1px solid color-mix(in srgb, var(--panel-accent) 36%, var(--border));
+    border-radius: var(--radius-sm);
+    background: color-mix(in srgb, var(--panel-accent) 8%, transparent);
+    color: var(--text);
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+    transition: border-color 120ms ease, transform 120ms ease, background-color 120ms ease, color 120ms ease;
+}
+
+.refresh-action-link svg {
+    width: 16px;
+    height: 16px;
+    color: var(--panel-accent);
+    stroke-width: 2;
 }
 
 .agent-open-link svg {
@@ -922,6 +956,8 @@ p {
 .news-item:focus-visible,
 .theme-toggle:hover,
 .theme-toggle:focus-visible,
+.refresh-action-link:hover,
+.refresh-action-link:focus-visible,
 .agent-tile--link:hover,
 .agent-tile--link:focus-visible,
 .agent-open-link:hover,
@@ -937,6 +973,8 @@ p {
 .news-item:focus-visible,
 .theme-toggle:hover,
 .theme-toggle:focus-visible,
+.refresh-action-link:hover,
+.refresh-action-link:focus-visible,
 .agent-tile--link:hover,
 .agent-tile--link:focus-visible,
 .agent-open-link:hover,

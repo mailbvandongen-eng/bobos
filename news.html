@@ -64,9 +64,15 @@
 
             <section class="page-panel agent-panel agent-panel--news" data-agent-key="news">
                 <div class="agent-panel-head">
-                    <div class="agent-panel-title">
-                        <span class="agent-panel-kicker">Titel</span>
-                        <h1>NewsAgent</h1>
+                    <div class="agent-panel-top-row">
+                        <div class="agent-panel-title">
+                            <span class="agent-panel-kicker">Titel</span>
+                            <h1>NewsAgent</h1>
+                        </div>
+                        <a class="refresh-action-link" data-workflow-target="news" href="https://github.com/mailbvandongen-eng/bobos/actions/workflows/news.yml">
+                            <span>Ververs nu</span>
+                            <i data-lucide="refresh-cw"></i>
+                        </a>
                     </div>
                     <p class="agent-status-badge"><i data-lucide="activity"></i><span data-agent-status>Status: Nieuws laden...</span></p>
                     <p class="agent-score-line" data-agent-score hidden></p>

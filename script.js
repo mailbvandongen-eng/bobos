@@ -40,6 +40,21 @@ const NAVIGATION_LINKS = {
     },
 };
 
+const WORKFLOW_LINKS = {
+    news: {
+        href: "https://github.com/mailbvandongen-eng/bobos/actions/workflows/news.yml",
+    },
+    sport: {
+        href: "https://github.com/mailbvandongen-eng/bobos/actions/workflows/sport.yml",
+    },
+    detectie: {
+        href: "https://github.com/mailbvandongen-eng/bobos/actions/workflows/detectie.yml",
+    },
+    vissen: {
+        href: "https://github.com/mailbvandongen-eng/bobos/actions/workflows/vissen.yml",
+    },
+};
+
 const AGENT_PAGE_CONFIGS = {
     news: {
         dataPath: DATA_PATHS.news,
@@ -91,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     syncAppVersion();
     initTheme();
     hydrateNavigationLinks();
+    hydrateWorkflowLinks();
 
     const page = document.body.dataset.page || "";
 
@@ -847,6 +863,21 @@ function hydrateNavigationLinks() {
             link.removeAttribute("target");
             link.removeAttribute("rel");
         }
+    });
+}
+
+function hydrateWorkflowLinks() {
+    document.querySelectorAll("[data-workflow-target]").forEach((link) => {
+        const targetKey = String(link.dataset.workflowTarget || "").trim();
+        const config = WORKFLOW_LINKS[targetKey];
+
+        if (!config || !config.href) {
+            return;
+        }
+
+        link.setAttribute("href", config.href);
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
     });
 }
 
