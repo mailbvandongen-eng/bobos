@@ -239,12 +239,13 @@ p {
 
 .agent-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
     gap: 12px;
 }
 
 .agent-tile {
     min-width: 0;
+    width: 100%;
     min-height: 192px;
     padding: 14px;
     border: 1px solid var(--border);
@@ -292,12 +293,14 @@ p {
 .agent-tile-copy h3 {
     font-size: 1rem;
     line-height: 1.12;
+    text-wrap: pretty;
 }
 
 .agent-tile-status {
     color: var(--muted);
     font-size: 0.82rem;
     line-height: 1.3;
+    text-wrap: pretty;
 }
 
 .agent-tile-body {
@@ -358,6 +361,7 @@ p {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    text-wrap: pretty;
 }
 
 .agent-mini-meta,
@@ -367,6 +371,7 @@ p {
     color: var(--muted);
     font-size: 0.76rem;
     line-height: 1.28;
+    text-wrap: pretty;
 }
 
 .agent-mini-label {
@@ -376,6 +381,28 @@ p {
 .agent-tile--placeholder .agent-mini-row {
     min-height: 44px;
     align-content: center;
+}
+
+@media (max-width: 699px) {
+    .agent-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .agent-tile {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .agent-mini-row--sport {
+        grid-template-columns: 64px minmax(0, 1fr);
+        gap: 12px;
+    }
+}
+
+@media (min-width: 700px) {
+    .agent-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 .domain-card {
