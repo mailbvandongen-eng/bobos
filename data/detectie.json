@@ -1,46 +1,49 @@
 {
-  "updated_at": "2026-07-06T21:02:33Z",
+  "updated_at": "2026-07-06T21:55:15Z",
   "status": "Maandagadvies",
   "score": 4,
   "items": [
     {
       "label": "Beste keuze",
-      "value": "Hoger zand / stroomrug"
+      "value": "Hoge oeverwal / klei-akker"
     },
     {
       "label": "Vermijd",
-      "value": "Lage natte klei"
+      "value": "Keiharde droge klei"
     },
     {
       "label": "Tip",
-      "value": "Steentijd op nat zand"
+      "value": "Let op stoppels / begaanbaarheid; focus ook op net geoogste graanpercelen zodra ze beschikbaar komen."
     }
   ],
   "details": [
     "Zomer: veel velden staan nog vol; focus vooral op net geoogste graanpercelen zodra ze vrijkomen.",
     "Mais, bieten en aardappels zijn meestal nog niet interessant; boomgaarden kunnen lokaal kansen bieden bij nieuwe aanplant of geroerde grond.",
-    "Een natte week maakt lage kleigronden minder aantrekkelijk en remt vooral slecht drainerende stukken.",
-    "Hoger zand, dekzandruggen, rivierduinen en hoge stroomruggen blijven dan de slimste keuze.",
-    "Voor steentijdzoeken kan nat zand juist helpen door extra glans en contrast in het oppervlak.",
-    "Afgelopen week: Natte week. Maandagverwachting wordt opnieuw gevuld zodra Open-Meteo weer bereikbaar is.",
-    "Beste landschapstype nu: Hoger zand / stroomrug.",
-    "Vermijden: Lage natte klei."
+    "Een droge week maakt sommige kleiakkers en hogere oeverwallen beter bereikbaar.",
+    "Droog zand geeft vaak minder contrast, terwijl keiharde klei minder prettig blijft voor signalen en graven.",
+    "Betuwe blijft interessant waar hoge stroomruggen, oude oeverwallen en droge akkerkoppen begaanbaar zijn.",
+    "Zomer: Zoek naar pas vrijgekomen graanpercelen, oude akkerkoppen en geroerde boomgaardstroken.",
+    "Afgelopen 7 dagen viel circa 1.0 mm regen (droge week). Voor maandag 2026-07-13 wordt ongeveer 0.0 mm verwacht. Verwachte maxtemp: 26.6 C. Windpiek: 19 km/u.",
+    "Beste landschapstype nu: Hoge oeverwal / klei-akker.",
+    "Vermijden: Keiharde droge klei.",
+    "Betuwe niet uitsluiten: hoge stroomruggen en oude oeverwallen blijven interessant als ze hoog en droog genoeg zijn.",
+    "Maandag lijkt relatief droog, waardoor hoge stroomruggen en droge oeverwallen extra aantrekkelijk worden."
   ],
   "profiles": [
     {
       "name": "Steentijd",
-      "score": 4,
-      "advice": "Nat zand, dekzandruggen en rivierduinen zijn extra interessant door glans en contrast."
+      "score": 2,
+      "advice": "Zoek hoger zand, maar verwacht minder glans en contrast dan na regen."
     },
     {
       "name": "Romeins",
-      "score": 4,
-      "advice": "Hoge stroomruggen en oeverwallen in het rivierengebied blijven interessant."
+      "score": 3,
+      "advice": "Hogere oeverwallen en stroomruggen blijven bruikbaar zolang de klei niet te hard uitslaat."
     },
     {
       "name": "Middeleeuws",
-      "score": 2,
-      "advice": "Akkers rond oude bewoning zijn pas echt goed als ze geoogst of goed begaanbaar zijn."
+      "score": 3,
+      "advice": "Droge akkers rond oude bewoning kunnen beter bereikbaar zijn, mits de grond niet keihard is."
     }
   ],
   "context": {
@@ -48,12 +51,12 @@
     "season": "zomer",
     "season_label": "Zomer",
     "field_access": "Zoek naar pas vrijgekomen graanpercelen, oude akkerkoppen en geroerde boomgaardstroken.",
-    "rain_last_7_days_mm": null,
-    "week_condition": "natte_week",
+    "rain_last_7_days_mm": 1.0,
+    "week_condition": "droge_week",
     "monday_date": "2026-07-13",
-    "monday_precipitation_mm": null,
-    "monday_temperature_max_c": null,
-    "monday_wind_max_kmh": null
+    "monday_precipitation_mm": 0.0,
+    "monday_temperature_max_c": 26.6,
+    "monday_wind_max_kmh": 18.6
   },
   "sources": [
     {
