@@ -21,9 +21,22 @@ const RUNTIME_CONFIG = window.BOBOS_CONFIG && typeof window.BOBOS_CONFIG === "ob
 const DASHBOARD_CONFIG = {
     dashboardNewsLimit: 5,
     detailNewsLimit: 12,
+    newsExplorerInitialBatch: 12,
+    newsExplorerBatchSize: 10,
     compactSummaryLength: 120,
     compactSourceLimit: 6,
 };
+
+const NEWS_CATEGORY_PREFERRED_ORDER = [
+    "Alle",
+    "Archeologie",
+    "Wetenschap",
+    "Sport",
+    "Voetbal",
+    "Formule 1",
+    "Gadgets",
+    "Algemeen",
+];
 
 const NAVIGATION_LINKS = {
     sport: {
@@ -185,8 +198,7 @@ function buildAgentPageModel(agentKey, rawPayload, config) {
 
 function buildNewsPageModel(rawPayload, config) {
     const items = normalizeArray(rawPayload);
-    const visibleItems = items.slice(0, DASHBOARD_CONFIG.detailNewsLimit);
-    const latestItem = visibleItems[0] || null;
+    const latestItem = items[0] || null;
     const sourceSummary = summarizeNewsSources(items);
     const categorySummary = uniqueTextValues(items.map((item) => item.category)).slice(0, 5);
 
@@ -197,7 +209,7 @@ function buildNewsPageModel(rawPayload, config) {
         score: null,
         scoreLabel: config.scoreLabel,
         itemMode: "news",
-        items: visibleItems,
+        items: items,
         analysis: [
             latestItem
                 ? `Laatste bronupdate: ${formatDate(latestItem.published || latestItem.publishedAt, false)}.`
@@ -211,7 +223,8 @@ function buildNewsPageModel(rawPayload, config) {
         ],
         advice: [
             "Gebruik deze selectie voor snelle orientatie en open daarna de originele bron voor de volledige context.",
-            "De homepage blijft bewust compact; deze pagina toont meer berichten tegelijk zonder volledige artikelen op te slaan.",
+            "Gebruik de categorieknoppen bovenaan om sneller door archeologie, wetenschap, sport en andere clusters te bladeren.",
+            "De homepage blijft bewust compact; deze pagina toont de volledige selectie zonder volledige artikelen op te slaan.",
         ],
         sources: sourceSummary,
         openUrl: latestItem && latestItem.url ? latestItem.url : config.defaultOpenUrl,
@@ -401,7 +414,11 @@ function renderAgentPage(panel, model, config) {
     }
 
     if (itemsNode) {
-        renderAgentItems(itemsNode, model);
+        if (model.itemMode === "news" && panel.dataset.agentKey === "news") {
+            renderNewsExplorer(panel, itemsNode, model);
+        } else {
+            renderAgentItems(itemsNode, model);
+        }
     }
 
     if (analysisNode) {
@@ -448,6 +465,8 @@ function renderAgentPageError(panel, agentKey, config) {
     const sourcesNode = panel.querySelector("[data-agent-sources]");
     const openLink = panel.querySelector("[data-agent-open-link]");
     const openLabel = panel.querySelector("[data-agent-open-label]");
+
+    resetNewsExplorer(panel);
 
     if (statusNode) {
         statusNode.textContent = "Status: Data tijdelijk niet beschikbaar";
@@ -547,6 +566,286 @@ function renderAgentItems(container, model) {
     }
 
     container.appendChild(createConditionMiniList({ items: conditionItems }));
+}
+
+function renderNewsExplorer(panel, container, model) {
+    resetNewsExplorer(panel);
+
+    const items = normalizeArray(model.items);
+    const categoryNode = panel.querySelector("[data-news-categories]");
+    const metaNode = panel.querySelector("[data-news-feed-meta]");
+
+    if (!items.length) {
+        if (categoryNode) {
+            categoryNode.innerHTML = "";
+        }
+
+        if (metaNode) {
+            metaNode.textContent = "Nog geen nieuwsberichten beschikbaar.";
+        }
+
+        renderStatus(container, "Nog geen nieuwsitems beschikbaar.");
+        return;
+    }
+
+    const categoryOptions = buildNewsCategoryOptions(items);
+    const requestedCategory = readRequestedNewsCategory(categoryOptions);
+    const listNode = document.createElement("div");
+    listNode.className = "news-detail-list news-feed-list";
+
+    const sentinelNode = document.createElement("div");
+    sentinelNode.className = "news-feed-sentinel";
+    sentinelNode.setAttribute("aria-hidden", "true");
+
+    const endNode = document.createElement("p");
+    endNode.className = "news-feed-end";
+    endNode.hidden = true;
+
+    container.innerHTML = "";
+    container.append(listNode, sentinelNode, endNode);
+
+    const state = {
+        panel,
+        container,
+        categoryNode,
+        metaNode,
+        listNode,
+        sentinelNode,
+        endNode,
+        allItems: items,
+        categoryOptions,
+        activeCategory: requestedCategory,
+        filteredItems: [],
+        visibleCount: 0,
+        supportsInfiniteScroll: "IntersectionObserver" in window,
+        observer: null,
+        isRendering: false,
+    };
+
+    panel.__newsExplorerState = state;
+    renderNewsCategoryButtons(state);
+    applyNewsCategory(state, requestedCategory);
+}
+
+function resetNewsExplorer(panel) {
+    const state = panel && panel.__newsExplorerState;
+    if (!state) {
+        const categoryNode = panel ? panel.querySelector("[data-news-categories]") : null;
+        const metaNode = panel ? panel.querySelector("[data-news-feed-meta]") : null;
+
+        if (categoryNode) {
+            categoryNode.innerHTML = "";
+        }
+
+        if (metaNode) {
+            metaNode.textContent = "";
+        }
+        return;
+    }
+
+    if (state.observer) {
+        state.observer.disconnect();
+    }
+
+    if (state.categoryNode) {
+        state.categoryNode.innerHTML = "";
+    }
+
+    if (state.metaNode) {
+        state.metaNode.textContent = "";
+    }
+
+    delete panel.__newsExplorerState;
+}
+
+function buildNewsCategoryOptions(items) {
+    const categories = uniqueTextValues(items.map((item) => item.category));
+    const lowerSet = new Set(categories.map((category) => category.toLowerCase()));
+    const ordered = [];
+
+    NEWS_CATEGORY_PREFERRED_ORDER.forEach((category) => {
+        if (category === "Alle") {
+            ordered.push(category);
+            return;
+        }
+
+        if (lowerSet.has(category.toLowerCase())) {
+            ordered.push(categories.find((item) => item.toLowerCase() === category.toLowerCase()) || category);
+        }
+    });
+
+    categories
+        .filter((category) => !ordered.some((item) => item.toLowerCase() === category.toLowerCase()))
+        .sort((left, right) => left.localeCompare(right, "nl"))
+        .forEach((category) => ordered.push(category));
+
+    return ordered;
+}
+
+function readRequestedNewsCategory(categoryOptions) {
+    const params = new URLSearchParams(window.location.search);
+    const requested = String(params.get("category") || "").trim().toLowerCase();
+
+    if (!requested) {
+        return "Alle";
+    }
+
+    return categoryOptions.find((category) => category.toLowerCase() === requested) || "Alle";
+}
+
+function renderNewsCategoryButtons(state) {
+    if (!state.categoryNode) {
+        return;
+    }
+
+    state.categoryNode.innerHTML = "";
+
+    state.categoryOptions.forEach((category) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "news-category-button";
+        button.textContent = category;
+
+        if (category.toLowerCase() === state.activeCategory.toLowerCase()) {
+            button.classList.add("is-active");
+            button.setAttribute("aria-pressed", "true");
+        } else {
+            button.setAttribute("aria-pressed", "false");
+        }
+
+        button.addEventListener("click", () => {
+            applyNewsCategory(state, category);
+        });
+
+        state.categoryNode.appendChild(button);
+    });
+}
+
+function applyNewsCategory(state, category) {
+    state.activeCategory = category;
+    state.filteredItems = filterNewsItemsByCategory(state.allItems, category);
+    state.visibleCount = 0;
+    state.listNode.innerHTML = "";
+    state.endNode.hidden = true;
+    state.endNode.textContent = "";
+
+    renderNewsCategoryButtons(state);
+    syncNewsCategoryQuery(category);
+    ensureNewsExplorerObserver(state);
+    renderNextNewsBatch(
+        state,
+        state.supportsInfiniteScroll
+            ? DASHBOARD_CONFIG.newsExplorerInitialBatch
+            : state.filteredItems.length
+    );
+}
+
+function filterNewsItemsByCategory(items, category) {
+    if (String(category || "").trim().toLowerCase() === "alle") {
+        return normalizeArray(items);
+    }
+
+    return normalizeArray(items).filter((item) => {
+        return normalizeCategory(item.category) === normalizeCategory(category);
+    });
+}
+
+function ensureNewsExplorerObserver(state) {
+    if (!state.sentinelNode) {
+        return;
+    }
+
+    if (!state.supportsInfiniteScroll) {
+        state.sentinelNode.hidden = true;
+        return;
+    }
+
+    if (state.observer) {
+        state.observer.disconnect();
+    }
+
+    state.observer = new IntersectionObserver((entries) => {
+        const shouldLoadMore = entries.some((entry) => entry.isIntersecting);
+        if (shouldLoadMore) {
+            renderNextNewsBatch(state, DASHBOARD_CONFIG.newsExplorerBatchSize);
+        }
+    }, {
+        rootMargin: "280px 0px 280px 0px",
+    });
+
+    state.observer.observe(state.sentinelNode);
+}
+
+function renderNextNewsBatch(state, batchSize) {
+    if (state.isRendering) {
+        return;
+    }
+
+    state.isRendering = true;
+
+    const nextItems = state.filteredItems.slice(state.visibleCount, state.visibleCount + batchSize);
+
+    if (!nextItems.length && !state.visibleCount) {
+        state.listNode.innerHTML = "";
+        state.listNode.appendChild(createInlineStatus("Geen nieuwsberichten in deze categorie."));
+        state.sentinelNode.hidden = true;
+        state.endNode.hidden = true;
+        updateNewsFeedMeta(state);
+        state.isRendering = false;
+        return;
+    }
+
+    nextItems.forEach((item) => {
+        state.listNode.appendChild(createNewsItem(item, true));
+    });
+
+    state.visibleCount += nextItems.length;
+
+    const hasMore = state.visibleCount < state.filteredItems.length;
+    state.sentinelNode.hidden = !hasMore;
+    state.endNode.hidden = hasMore || !state.filteredItems.length;
+    state.endNode.textContent = hasMore
+        ? ""
+        : `Alle ${state.filteredItems.length} berichten${state.activeCategory === "Alle" ? "" : ` in ${state.activeCategory.toLowerCase()}`} zijn geladen.`;
+
+    updateNewsFeedMeta(state);
+    replaceIcons();
+    state.isRendering = false;
+}
+
+function updateNewsFeedMeta(state) {
+    if (!state.metaNode) {
+        return;
+    }
+
+    const total = state.filteredItems.length;
+    const visible = Math.min(state.visibleCount, total);
+
+    if (!total) {
+        state.metaNode.textContent = state.activeCategory === "Alle"
+            ? "Geen nieuwsberichten beschikbaar."
+            : `Geen nieuwsberichten in ${state.activeCategory.toLowerCase()}.`;
+        return;
+    }
+
+    state.metaNode.textContent = state.activeCategory === "Alle"
+        ? `${visible} van ${total} berichten zichtbaar.${state.supportsInfiniteScroll && visible < total ? " Scroll verder voor meer." : ""}`
+        : `${visible} van ${total} berichten zichtbaar in ${state.activeCategory.toLowerCase()}.${state.supportsInfiniteScroll && visible < total ? " Scroll verder voor meer." : ""}`;
+}
+
+function syncNewsCategoryQuery(category) {
+    if (!window.history || !window.history.replaceState) {
+        return;
+    }
+
+    const url = new URL(window.location.href);
+    if (String(category || "").trim().toLowerCase() === "alle") {
+        url.searchParams.delete("category");
+    } else {
+        url.searchParams.set("category", category);
+    }
+
+    window.history.replaceState({}, "", url);
 }
 
 function renderLineBlock(container, lines, fallbackMessage) {
