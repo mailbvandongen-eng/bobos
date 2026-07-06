@@ -29,7 +29,7 @@
                 <div class="page-top-row">
                     <a class="brand-home" href="index.html" aria-label="BobOS dashboard">
                         <span class="brand-wordmark">Bob<span>OS</span></span>
-                        <span class="brand-subtitle">Dashboard &amp; Nieuwsfeed</span>
+                        <span class="brand-subtitle">Persoonlijk dashboard</span>
                     </a>
                     <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
                         <i data-theme-icon data-lucide="sun"></i>
@@ -38,56 +38,69 @@
 
                 <div class="dashboard-nav-wrap">
                     <nav class="dashboard-nav" aria-label="Agentnavigatie">
-                        <a class="dashboard-nav-link dashboard-nav-link--news" href="news.html">
-                            <span class="dashboard-nav-icon"><i data-lucide="newspaper"></i></span>
-                            <span class="dashboard-nav-label">Nieuws</span>
-                        </a>
-                        <a class="dashboard-nav-link dashboard-nav-link--sport" href="sport.html">
+                        <a class="dashboard-nav-link dashboard-nav-link--sport" href="sport.html" data-nav-target="sport">
                             <span class="dashboard-nav-icon"><i data-lucide="trophy"></i></span>
                             <span class="dashboard-nav-label">Sport</span>
                         </a>
-                        <a class="dashboard-nav-link dashboard-nav-link--detectie" href="detectie.html" aria-current="page">
+                        <a class="dashboard-nav-link dashboard-nav-link--detectie" href="detectie.html" data-nav-target="detectie" aria-current="page">
                             <span class="dashboard-nav-icon"><i data-lucide="map"></i></span>
                             <span class="dashboard-nav-label">Detectie</span>
                         </a>
-                        <a class="dashboard-nav-link dashboard-nav-link--vissen" href="vissen.html">
+                        <a class="dashboard-nav-link dashboard-nav-link--vissen" href="vissen.html" data-nav-target="vissen">
                             <span class="dashboard-nav-icon"><i data-lucide="fish"></i></span>
                             <span class="dashboard-nav-label">Vissen</span>
                         </a>
-                        <a class="dashboard-nav-link dashboard-nav-link--steentijd" href="steentijd.html">
+                        <a class="dashboard-nav-link dashboard-nav-link--steentijd" href="https://steentijd-app.pages.dev/" data-nav-target="steentijd">
                             <span class="dashboard-nav-icon"><i data-lucide="landmark"></i></span>
                             <span class="dashboard-nav-label">Steentijd</span>
+                        </a>
+                        <a class="dashboard-nav-link dashboard-nav-link--more" href="meer.html" data-nav-target="meer">
+                            <span class="dashboard-nav-icon"><i data-lucide="grid-2x2-plus"></i></span>
+                            <span class="dashboard-nav-label">Meer</span>
                         </a>
                     </nav>
                 </div>
             </header>
 
-            <section class="page-panel agent-panel agent-panel--detectie">
+            <section class="page-panel agent-panel agent-panel--detectie" data-agent-key="detectie">
                 <div class="agent-panel-head">
                     <div class="agent-panel-title">
                         <span class="agent-panel-kicker">Titel</span>
                         <h1>DetectieAgent</h1>
                     </div>
-                    <p class="agent-status-badge"><i data-lucide="activity"></i><span>Status: Zoekcondities</span></p>
+                    <p class="agent-status-badge"><i data-lucide="activity"></i><span data-agent-status>Status: Detectiedata laden...</span></p>
+                    <p class="agent-score-line" data-agent-score hidden></p>
                 </div>
 
                 <div class="agent-section-grid">
                     <article class="agent-section-card">
+                        <h2><i data-lucide="list"></i><span>Actuele data</span></h2>
+                        <div data-agent-items>
+                            <p>Detectieregels worden geladen...</p>
+                        </div>
+                    </article>
+                    <article class="agent-section-card">
                         <h2><i data-lucide="scan-search"></i><span>Analyse</span></h2>
-                        <p>Deze agentpagina wordt de plek voor de compacte beoordeling voordat je doorstuurt naar de Detectorapp.</p>
+                        <div data-agent-analysis>
+                            <p>Analyse wordt geladen...</p>
+                        </div>
                     </article>
                     <article class="agent-section-card">
                         <h2><i data-lucide="lightbulb"></i><span>Advies</span></h2>
-                        <p>DetectieAgent blijft de rustiger tussenlaag met analyse, advies en daarna pas de doorklik naar de app.</p>
+                        <div data-agent-advice>
+                            <p>Advies wordt geladen...</p>
+                        </div>
                     </article>
                     <article class="agent-section-card">
                         <h2><i data-lucide="book-open"></i><span>Bronnen</span></h2>
-                        <p>Hier komen later de gebruikte regels, context en verwijzingen die het advies ondersteunen.</p>
+                        <div data-agent-sources>
+                            <p>Bronnen worden geladen...</p>
+                        </div>
                     </article>
                 </div>
 
-                <a class="agent-open-link" href="https://mailbvandongen-eng.github.io/detect/" target="_blank" rel="noopener noreferrer">
-                    <span>Open oorspronkelijke app</span>
+                <a class="agent-open-link" data-agent-open-link href="https://mailbvandongen-eng.github.io/detect/" target="_blank" rel="noopener noreferrer">
+                    <span data-agent-open-label>Open Detectorapp</span>
                     <i data-lucide="arrow-up-right"></i>
                 </a>
             </section>

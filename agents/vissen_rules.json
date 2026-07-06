@@ -1,0 +1,62 @@
+[
+  {
+    "condition": "lage_wind",
+    "slot": "detail",
+    "advice": "Rustig water maakt gericht vissen op roofvis makkelijker, maar aasvis kan minder samenklonteren."
+  },
+  {
+    "condition": "matige_wind",
+    "slot": "detail",
+    "advice": "Lichte golfslag helpt vaak voor actieve roofvis en houdt de algemene viskans levendig."
+  },
+  {
+    "condition": "harde_wind",
+    "slot": "detail",
+    "advice": "Harde wind maakt mobiel vissen slimmer; zoek luwte, bruggen of diepere gaten op."
+  },
+  {
+    "condition": "stabiele_druk",
+    "slot": "detail",
+    "advice": "Een stabiele luchtdruk houdt het patroon vaak voorspelbaar voor een avondsessie."
+  },
+  {
+    "condition": "dalende_druk",
+    "slot": "detail",
+    "advice": "Een licht dalende druk kan meerval en actieve roofvis losmaken richting schemer."
+  },
+  {
+    "condition": "stijgende_druk",
+    "slot": "detail",
+    "advice": "Stijgende druk houdt het weer vaak netter, maar de aanbeten kunnen wat voorzichtiger zijn."
+  },
+  {
+    "condition": "droge_avond",
+    "slot": "detail",
+    "advice": "Een grotendeels droge avond maakt langere sessies en actief zoeken makkelijker."
+  },
+  {
+    "condition": "natte_avond",
+    "slot": "detail",
+    "advice": "Veel neerslag vraagt om kortere sessies en scherp kiezen van droge vensters."
+  },
+  {
+    "condition": "warme_avond",
+    "slot": "tip",
+    "advice": "Warme avond: focus op roofvis en meerval rond schemer."
+  },
+  {
+    "condition": "koele_avond",
+    "slot": "tip",
+    "advice": "Koelere avond: vis trager en pak vooral de overgang naar donker."
+  },
+  {
+    "condition": "harde_wind",
+    "slot": "tip",
+    "advice": "Zoek luwte of dieper water."
+  },
+  {
+    "condition": "natte_avond",
+    "slot": "tip",
+    "advice": "Vis mobiel tussen buien door."
+  }
+]

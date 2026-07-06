@@ -1,4 +1,4 @@
-"""Haal nieuws op uit RSS-feeds en schrijf het weg naar data/news.json."""
+"""Haal Nederlandstalig nieuws op en schrijf het weg naar data/news.json."""
 
 from __future__ import annotations
 
@@ -13,12 +13,15 @@ from urllib.parse import urlsplit, urlunsplit
 
 import feedparser
 
+from json_store import load_json, save_json_if_changed
+
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 SOURCES_PATH = ROOT_DIR / "agents" / "news_sources.json"
 OUTPUT_PATH = ROOT_DIR / "data" / "news.json"
 MAX_ITEMS = 50
 MAX_SUMMARY_LENGTH = 220
+DUTCH_WORD_PATTERN = re.compile(r"[a-z\u00e0-\u00ff]+")
 DUTCH_STOPWORDS = {
     "aan",
     "als",
@@ -53,15 +56,15 @@ DUTCH_STOPWORDS = {
 def load_sources() -> list[dict[str, Any]]:
     """Lees de geconfigureerde nieuwsbronnen."""
     with SOURCES_PATH.open("r", encoding="utf-8") as handle:
-        data = json.load(handle)
+        payload = json.load(handle)
 
-    if not isinstance(data, list):
+    if not isinstance(payload, list):
         raise ValueError("news_sources.json moet een lijst met bronnen bevatten.")
 
-    return data
+    return payload
 
 
-def fetch_feed_items(source: dict[str, Any]) -> list[dict[str, Any]]:
+def fetch_feed_items(source: dict[str, Any]) -> tuple[list[dict[str, Any]], bool]:
     """Lees een feed uit en zet entries om naar het BobOS-formaat."""
     source_name = str(source.get("name", "Onbekende bron")).strip()
     source_category = str(source.get("category", "Algemeen")).strip() or "Algemeen"
@@ -69,7 +72,7 @@ def fetch_feed_items(source: dict[str, Any]) -> list[dict[str, Any]]:
 
     if not feed_url:
         print(f"[SKIP] {source_name}: geen feed-URL opgegeven.")
-        return []
+        return [], False
 
     print(f"[LOAD] {source_name}: {feed_url}")
     feed = feedparser.parse(feed_url)
@@ -77,7 +80,7 @@ def fetch_feed_items(source: dict[str, Any]) -> list[dict[str, Any]]:
     if getattr(feed, "bozo", False) and not feed.entries:
         problem = getattr(feed, "bozo_exception", "onbekende feedfout")
         print(f"[SKIP] {source_name}: {problem}")
-        return []
+        return [], False
 
     items: list[dict[str, Any]] = []
     feed_language = extract_language(feed.feed)
@@ -111,7 +114,7 @@ def fetch_feed_items(source: dict[str, Any]) -> list[dict[str, Any]]:
         f"[OK] {source_name}: {len(items)} berichten gevonden, "
         f"{skipped_for_language} overgeslagen op taal."
     )
-    return items
+    return items, True
 
 
 def should_keep_entry(
@@ -132,7 +135,7 @@ def should_keep_entry(
 
 
 def extract_language(value: Any) -> str:
-    """Lees taal uit feedparser-velden als die beschikbaar zijn."""
+    """Lees een taalcode uit feedparser-velden."""
     if isinstance(value, dict):
         for field_name in ("language", "lang", "dc_language"):
             field_value = value.get(field_name)
@@ -157,15 +160,13 @@ def is_dutch_language(value: str) -> bool:
 
 def is_probably_dutch(text: str) -> bool:
     """Gebruik simpele Nederlandse stopwoorden als lichte taaltest."""
-    words = re.findall(r"[a-zà-ÿ]+", str(text).lower())
+    words = DUTCH_WORD_PATTERN.findall(str(text).lower())
 
     if not words:
         return False
 
     matches = [word for word in words if word in DUTCH_STOPWORDS]
-    unique_matches = set(matches)
-
-    return len(unique_matches) >= 2 or len(matches) >= 3
+    return len(set(matches)) >= 2 or len(matches) >= 3
 
 
 def extract_summary(entry: dict[str, Any]) -> str:
@@ -179,8 +180,7 @@ def extract_image(entry: dict[str, Any]) -> str:
     candidates: list[str] = []
 
     for field_name in ("media_thumbnail", "media_content", "enclosures"):
-        field_value = entry.get(field_name)
-        candidates.extend(extract_urls_from_field(field_value))
+        candidates.extend(extract_urls_from_field(entry.get(field_name)))
 
     for link in entry.get("links", []):
         if not isinstance(link, dict):
@@ -188,12 +188,10 @@ def extract_image(entry: dict[str, Any]) -> str:
 
         link_type = str(link.get("type", "")).lower()
         link_rel = str(link.get("rel", "")).lower()
-
         if link_type.startswith("image/") or link_rel == "enclosure":
             candidates.extend(extract_urls_from_field(link))
 
-    image_field = entry.get("image")
-    candidates.extend(extract_urls_from_field(image_field))
+    candidates.extend(extract_urls_from_field(entry.get("image")))
 
     html_candidates = (
         entry.get("summary")
@@ -243,10 +241,9 @@ def is_probable_image_url(value: str) -> bool:
     if not (value.startswith("http://") or value.startswith("https://")):
         return False
 
-    path = urlsplit(value).path.lower()
-    image_extensions = (".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif", ".svg")
-
-    return path.endswith(image_extensions)
+    return urlsplit(value).path.lower().endswith(
+        (".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif", ".svg")
+    )
 
 
 def extract_content_html(value: Any) -> str:
@@ -261,15 +258,12 @@ def extract_content_html(value: Any) -> str:
 
 def parse_entry_datetime(entry: dict[str, Any]) -> datetime | None:
     """Zoek een bruikbare publicatiedatum in de feed-entry."""
-    parsed_fields = ("published_parsed", "updated_parsed", "created_parsed")
-    raw_fields = ("published", "updated", "created")
-
-    for field_name in parsed_fields:
+    for field_name in ("published_parsed", "updated_parsed", "created_parsed"):
         value = entry.get(field_name)
         if value:
             return datetime(*value[:6], tzinfo=timezone.utc)
 
-    for field_name in raw_fields:
+    for field_name in ("published", "updated", "created"):
         raw_value = entry.get(field_name)
         if not raw_value:
             continue
@@ -343,11 +337,9 @@ def repair_mojibake(value: str) -> str:
 
     for encoding in ("cp1252", "latin-1"):
         try:
-            repaired = value.encode(encoding).decode("utf-8")
+            return value.encode(encoding).decode("utf-8")
         except (UnicodeEncodeError, UnicodeDecodeError):
             continue
-
-        return repaired
 
     return value
 
@@ -360,20 +352,10 @@ def dedupe_and_sort(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         url = item["url"]
         current = unique_items.get(url)
 
-        if current is None:
-            unique_items[url] = item
-            continue
-
-        if item["published"] > current["published"]:
+        if current is None or item["published"] > current["published"]:
             unique_items[url] = item
 
-    sorted_items = sorted(
-        unique_items.values(),
-        key=sort_key,
-        reverse=True,
-    )
-
-    return sorted_items[:MAX_ITEMS]
+    return sorted(unique_items.values(), key=sort_key, reverse=True)[:MAX_ITEMS]
 
 
 def sort_key(item: dict[str, Any]) -> tuple[int, str]:
@@ -382,37 +364,52 @@ def sort_key(item: dict[str, Any]) -> tuple[int, str]:
     return (1 if published else 0, published)
 
 
-def save_items(items: list[dict[str, Any]]) -> None:
-    """Schrijf het resultaat naar data/news.json."""
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-
-    with OUTPUT_PATH.open("w", encoding="utf-8") as handle:
-        json.dump(items, handle, ensure_ascii=False, indent=2)
-        handle.write("\n")
+def save_items(items: list[dict[str, Any]]) -> bool:
+    """Schrijf het resultaat naar data/news.json als de inhoud is gewijzigd."""
+    return save_json_if_changed(OUTPUT_PATH, items)
 
 
 def main() -> None:
     """Hoofdroute voor lokaal gebruik en GitHub Actions."""
     collected_items: list[dict[str, Any]] = []
+    reachable_sources = 0
 
     try:
         sources = load_sources()
-    except Exception as error:  # pragma: no cover - defensieve bronfoutafhandeling
+    except Exception as error:  # pragma: no cover
         print(f"[WARN] Kon bronnen niet laden: {error}")
-        save_items([])
-        print(f"[DONE] 0 berichten opgeslagen in {OUTPUT_PATH}.")
+        changed = save_items([])
+        print(
+            f"[DONE] 0 berichten gecontroleerd in {OUTPUT_PATH} "
+            f"({'gewijzigd' if changed else 'ongewijzigd'})."
+        )
         return
 
     for source in sources:
         try:
-            collected_items.extend(fetch_feed_items(source))
-        except Exception as error:  # pragma: no cover - defensieve feedfoutafhandeling
+            source_items, reachable = fetch_feed_items(source)
+            collected_items.extend(source_items)
+            if reachable:
+                reachable_sources += 1
+        except Exception as error:  # pragma: no cover
             source_name = str(source.get("name", "Onbekende bron")).strip()
             print(f"[SKIP] {source_name}: {error}")
 
+    if reachable_sources == 0:
+        current_payload = load_json(OUTPUT_PATH)
+        if isinstance(current_payload, list):
+            print(
+                f"[DONE] Geen feeds bereikbaar; bestaand {OUTPUT_PATH} blijft staan "
+                "(ongewijzigd)."
+            )
+            return
+
     final_items = dedupe_and_sort(collected_items)
-    save_items(final_items)
-    print(f"[DONE] {len(final_items)} berichten opgeslagen in {OUTPUT_PATH}.")
+    changed = save_items(final_items)
+    print(
+        f"[DONE] {len(final_items)} berichten gecontroleerd in {OUTPUT_PATH} "
+        f"({'gewijzigd' if changed else 'ongewijzigd'})."
+    )
 
 
 if __name__ == "__main__":

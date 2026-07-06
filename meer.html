@@ -29,7 +29,7 @@
                 <div class="page-top-row">
                     <a class="brand-home" href="index.html" aria-label="BobOS dashboard">
                         <span class="brand-wordmark">Bob<span>OS</span></span>
-                        <span class="brand-subtitle">Dashboard &amp; Nieuwsfeed</span>
+                        <span class="brand-subtitle">Persoonlijk dashboard</span>
                     </a>
                     <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
                         <i data-theme-icon data-lucide="sun"></i>
@@ -38,25 +38,25 @@
 
                 <div class="dashboard-nav-wrap">
                     <nav class="dashboard-nav" aria-label="Agentnavigatie">
-                        <a class="dashboard-nav-link dashboard-nav-link--news" href="news.html">
-                            <span class="dashboard-nav-icon"><i data-lucide="newspaper"></i></span>
-                            <span class="dashboard-nav-label">Nieuws</span>
-                        </a>
-                        <a class="dashboard-nav-link dashboard-nav-link--sport" href="sport.html">
+                        <a class="dashboard-nav-link dashboard-nav-link--sport" href="sport.html" data-nav-target="sport">
                             <span class="dashboard-nav-icon"><i data-lucide="trophy"></i></span>
                             <span class="dashboard-nav-label">Sport</span>
                         </a>
-                        <a class="dashboard-nav-link dashboard-nav-link--detectie" href="detectie.html">
+                        <a class="dashboard-nav-link dashboard-nav-link--detectie" href="detectie.html" data-nav-target="detectie">
                             <span class="dashboard-nav-icon"><i data-lucide="map"></i></span>
                             <span class="dashboard-nav-label">Detectie</span>
                         </a>
-                        <a class="dashboard-nav-link dashboard-nav-link--vissen" href="vissen.html">
+                        <a class="dashboard-nav-link dashboard-nav-link--vissen" href="vissen.html" data-nav-target="vissen">
                             <span class="dashboard-nav-icon"><i data-lucide="fish"></i></span>
                             <span class="dashboard-nav-label">Vissen</span>
                         </a>
-                        <a class="dashboard-nav-link dashboard-nav-link--steentijd" href="steentijd.html">
+                        <a class="dashboard-nav-link dashboard-nav-link--steentijd" href="https://steentijd-app.pages.dev/" data-nav-target="steentijd">
                             <span class="dashboard-nav-icon"><i data-lucide="landmark"></i></span>
                             <span class="dashboard-nav-label">Steentijd</span>
+                        </a>
+                        <a class="dashboard-nav-link dashboard-nav-link--more" href="meer.html" data-nav-target="meer" aria-current="page">
+                            <span class="dashboard-nav-icon"><i data-lucide="grid-2x2-plus"></i></span>
+                            <span class="dashboard-nav-label">Meer</span>
                         </a>
                     </nav>
                 </div>
@@ -78,7 +78,7 @@
                     </article>
                     <article class="agent-section-card">
                         <h2><i data-lucide="lightbulb"></i><span>Advies</span></h2>
-                        <p>De navigatie toont Meer nu bewust niet meer op de homepage, maar de pagina staat klaar voor later gebruik.</p>
+                        <p>Gebruik deze plek later voor extra modules, experimenten of nieuwe agents buiten de hoofdgroepen.</p>
                     </article>
                     <article class="agent-section-card">
                         <h2><i data-lucide="book-open"></i><span>Bronnen</span></h2>
@@ -87,8 +87,8 @@
                 </div>
 
                 <a class="agent-open-link" href="index.html">
-                    <span>Open oorspronkelijke app</span>
-                    <i data-lucide="arrow-right"></i>
+                    <span>Terug naar homepage</span>
+                    <i data-lucide="arrow-left"></i>
                 </a>
             </section>
         </main>

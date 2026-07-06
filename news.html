@@ -29,7 +29,7 @@
                 <div class="page-top-row">
                     <a class="brand-home" href="index.html" aria-label="BobOS dashboard">
                         <span class="brand-wordmark">Bob<span>OS</span></span>
-                        <span class="brand-subtitle">Dashboard &amp; Nieuwsfeed</span>
+                        <span class="brand-subtitle">Persoonlijk dashboard</span>
                     </a>
                     <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
                         <i data-theme-icon data-lucide="sun"></i>
@@ -38,63 +38,76 @@
 
                 <div class="dashboard-nav-wrap">
                     <nav class="dashboard-nav" aria-label="Agentnavigatie">
-                        <a class="dashboard-nav-link dashboard-nav-link--news" href="news.html" aria-current="page">
-                            <span class="dashboard-nav-icon"><i data-lucide="newspaper"></i></span>
-                            <span class="dashboard-nav-label">Nieuws</span>
-                        </a>
-                        <a class="dashboard-nav-link dashboard-nav-link--sport" href="sport.html">
+                        <a class="dashboard-nav-link dashboard-nav-link--sport" href="sport.html" data-nav-target="sport">
                             <span class="dashboard-nav-icon"><i data-lucide="trophy"></i></span>
                             <span class="dashboard-nav-label">Sport</span>
                         </a>
-                        <a class="dashboard-nav-link dashboard-nav-link--detectie" href="detectie.html">
+                        <a class="dashboard-nav-link dashboard-nav-link--detectie" href="detectie.html" data-nav-target="detectie">
                             <span class="dashboard-nav-icon"><i data-lucide="map"></i></span>
                             <span class="dashboard-nav-label">Detectie</span>
                         </a>
-                        <a class="dashboard-nav-link dashboard-nav-link--vissen" href="vissen.html">
+                        <a class="dashboard-nav-link dashboard-nav-link--vissen" href="vissen.html" data-nav-target="vissen">
                             <span class="dashboard-nav-icon"><i data-lucide="fish"></i></span>
                             <span class="dashboard-nav-label">Vissen</span>
                         </a>
-                        <a class="dashboard-nav-link dashboard-nav-link--steentijd" href="steentijd.html">
+                        <a class="dashboard-nav-link dashboard-nav-link--steentijd" href="https://steentijd-app.pages.dev/" data-nav-target="steentijd">
                             <span class="dashboard-nav-icon"><i data-lucide="landmark"></i></span>
                             <span class="dashboard-nav-label">Steentijd</span>
+                        </a>
+                        <a class="dashboard-nav-link dashboard-nav-link--more" href="meer.html" data-nav-target="meer">
+                            <span class="dashboard-nav-icon"><i data-lucide="grid-2x2-plus"></i></span>
+                            <span class="dashboard-nav-label">Meer</span>
                         </a>
                     </nav>
                 </div>
             </header>
 
-            <section class="page-panel agent-panel agent-panel--news">
+            <section class="page-panel agent-panel agent-panel--news" data-agent-key="news">
                 <div class="agent-panel-head">
                     <div class="agent-panel-title">
                         <span class="agent-panel-kicker">Titel</span>
                         <h1>NewsAgent</h1>
                     </div>
-                    <p class="agent-status-badge"><i data-lucide="activity"></i><span>Status: Meer nieuws en bronnen</span></p>
+                    <p class="agent-status-badge"><i data-lucide="activity"></i><span data-agent-status>Status: Nieuws laden...</span></p>
+                    <p class="agent-score-line" data-agent-score hidden></p>
                 </div>
 
                 <div class="agent-section-grid">
                     <article class="agent-section-card">
+                        <h2><i data-lucide="list"></i><span>Actuele data</span></h2>
+                        <div data-agent-items>
+                            <p>Nieuwsberichten worden geladen...</p>
+                        </div>
+                    </article>
+                    <article class="agent-section-card">
                         <h2><i data-lucide="scan-search"></i><span>Analyse</span></h2>
-                        <p>Deze pagina wordt de compacte tussenlaag tussen BobOS en de nieuwsbronnen.</p>
+                        <div data-agent-analysis>
+                            <p>Analyse wordt geladen...</p>
+                        </div>
                     </article>
                     <article class="agent-section-card">
                         <h2><i data-lucide="lightbulb"></i><span>Advies</span></h2>
-                        <p>Gebruik NewsAgent straks voor duiding, selectie en doorklik naar meer nieuws.</p>
+                        <div data-agent-advice>
+                            <p>Advies wordt geladen...</p>
+                        </div>
                     </article>
                     <article class="agent-section-card">
                         <h2><i data-lucide="book-open"></i><span>Bronnen</span></h2>
-                        <p>Originele bronnen blijven leidend. Hier komt later een overzicht van geselecteerde nieuwsbronnen.</p>
+                        <div data-agent-sources>
+                            <p>Bronnen worden geladen...</p>
+                        </div>
                     </article>
                 </div>
 
-                <a class="agent-open-link" href="https://news.google.com/home?hl=nl&gl=NL&ceid=NL:nl" target="_blank" rel="noopener noreferrer">
-                    <span>Open oorspronkelijke app</span>
+                <a class="agent-open-link" data-agent-open-link href="https://news.google.com/home?hl=nl&gl=NL&ceid=NL:nl" target="_blank" rel="noopener noreferrer">
+                    <span data-agent-open-label>Open Google Nieuws</span>
                     <i data-lucide="arrow-up-right"></i>
                 </a>
             </section>
         </main>
 
         <footer class="app-footer">
-            <p class="app-version" data-app-version>Versie 0.2</p>
+            <p class="app-version" data-app-version>Versie 0.3</p>
         </footer>
     </div>
 </body>

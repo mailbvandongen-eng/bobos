@@ -1,0 +1,107 @@
+[
+  {
+    "condition": "veel_regen",
+    "slot": "score",
+    "value": 2
+  },
+  {
+    "condition": "veel_regen",
+    "slot": "best_choice",
+    "advice": "Hoger zand / droge stroomrug"
+  },
+  {
+    "condition": "veel_regen",
+    "slot": "avoid_choice",
+    "advice": "Lage natte klei"
+  },
+  {
+    "condition": "veel_regen",
+    "slot": "tip",
+    "advice": "Zoek hoger en droger"
+  },
+  {
+    "condition": "veel_regen",
+    "slot": "detail",
+    "advice": "Door veel regen zijn lage kleigronden en slecht drainerende komgebieden minder aantrekkelijk."
+  },
+  {
+    "condition": "veel_regen",
+    "slot": "detail",
+    "advice": "Richt je op hoger gelegen zandgronden, dekzandruggen, rivierduinen en hoge stroomruggen."
+  },
+  {
+    "condition": "veel_regen",
+    "slot": "detail",
+    "advice": "Betuwe niet uitsluiten: hoge stroomruggen en oude oeverwallen kunnen juist goed zijn als ze droog genoeg blijven."
+  },
+  {
+    "condition": "natte_week",
+    "slot": "score",
+    "value": 4
+  },
+  {
+    "condition": "natte_week",
+    "slot": "best_choice",
+    "advice": "Hoger zand / stroomrug"
+  },
+  {
+    "condition": "natte_week",
+    "slot": "avoid_choice",
+    "advice": "Lage natte klei"
+  },
+  {
+    "condition": "natte_week",
+    "slot": "tip",
+    "advice": "Steentijd op nat zand"
+  },
+  {
+    "condition": "natte_week",
+    "slot": "detail",
+    "advice": "Een natte week maakt lage kleigronden minder aantrekkelijk en remt vooral slecht drainerende stukken."
+  },
+  {
+    "condition": "natte_week",
+    "slot": "detail",
+    "advice": "Hoger zand, dekzandruggen, rivierduinen en hoge stroomruggen blijven dan de slimste keuze."
+  },
+  {
+    "condition": "natte_week",
+    "slot": "detail",
+    "advice": "Voor steentijdzoeken kan nat zand juist helpen door extra glans en contrast in het oppervlak."
+  },
+  {
+    "condition": "droge_week",
+    "slot": "score",
+    "value": 3
+  },
+  {
+    "condition": "droge_week",
+    "slot": "best_choice",
+    "advice": "Hoge oeverwal / klei-akker"
+  },
+  {
+    "condition": "droge_week",
+    "slot": "avoid_choice",
+    "advice": "Keiharde droge klei"
+  },
+  {
+    "condition": "droge_week",
+    "slot": "tip",
+    "advice": "Let op stoppels / begaanbaarheid"
+  },
+  {
+    "condition": "droge_week",
+    "slot": "detail",
+    "advice": "Een droge week maakt sommige kleiakkers en hogere oeverwallen beter bereikbaar."
+  },
+  {
+    "condition": "droge_week",
+    "slot": "detail",
+    "advice": "Keiharde droge klei blijft minder prettig voor signalen, prikken en graven."
+  },
+  {
+    "condition": "droge_week",
+    "slot": "detail",
+    "advice": "Betuwe blijft interessant waar hoge stroomruggen, oude oeverwallen en droge akkerkoppen begaanbaar zijn."
+  }
+]

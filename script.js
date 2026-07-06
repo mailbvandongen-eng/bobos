@@ -1,6 +1,6 @@
 const APP_META = {
     name: "BobOS",
-    version: "0.2",
+    version: "0.3",
 };
 
 const DATA_PATHS = {
@@ -16,54 +16,56 @@ const STORAGE_KEYS = {
 
 const DASHBOARD_CONFIG = {
     dashboardNewsLimit: 5,
-    detailNewsLimit: 50,
+    detailNewsLimit: 12,
     compactSummaryLength: 120,
-    compactDomainLimit: 3,
+    compactSourceLimit: 6,
 };
 
-const DASHBOARD_AGENT_TILES = [
-    {
-        key: "sport",
-        title: "Sport",
-        icon: "trophy",
-        status_fallback: "Sport op TV vandaag",
-        target_url: "https://mailbvandongen-eng.github.io/sport-op-tv/",
-        data_path: DATA_PATHS.sport,
+const NAVIGATION_LINKS = {
+    sport: {
+        href: "sport.html",
+    },
+    detectie: {
+        href: "detectie.html",
+    },
+    vissen: {
+        href: "vissen.html",
+    },
+    steentijd: {
+        href: "https://steentijd-app.pages.dev/",
         external: true,
-        footer_label: "Open Sport op TV",
     },
-    {
-        key: "detectie",
-        title: "Detectie",
-        icon: "map",
-        status_fallback: "Maandagcondities",
-        target_url: "https://mailbvandongen-eng.github.io/detect/",
-        data_path: DATA_PATHS.detectie,
-        external: true,
-        footer_label: "Open Detectie",
+    meer: {
+        href: "meer.html",
     },
-    {
-        key: "vissen",
-        title: "Vissen",
-        icon: "fish",
-        status_fallback: "Viskansen vandaag",
-        target_url: "https://mailbvandongen-eng.github.io/visapp/",
-        data_path: DATA_PATHS.vissen,
-        external: true,
-        footer_label: "Open Visapp",
+};
+
+const AGENT_PAGE_CONFIGS = {
+    news: {
+        dataPath: DATA_PATHS.news,
+        defaultOpenUrl: "https://news.google.com/home?hl=nl&gl=NL&ceid=NL:nl",
+        defaultOpenLabel: "Open Google Nieuws",
+        scoreLabel: "",
     },
-    {
-        key: "meer",
-        title: "Meer...",
-        icon: "grid-2x2-plus",
-        status_fallback: "Ruimte voor toekomstige agents",
-        placeholder_lines: [
-            "Nieuwe tegel",
-            "Toekomstige agent",
-            "Nog leeg",
-        ],
+    sport: {
+        dataPath: DATA_PATHS.sport,
+        defaultOpenUrl: "https://mailbvandongen-eng.github.io/sport-op-tv/",
+        defaultOpenLabel: "Open Sport op TV",
+        scoreLabel: "",
     },
-];
+    detectie: {
+        dataPath: DATA_PATHS.detectie,
+        defaultOpenUrl: "https://mailbvandongen-eng.github.io/detect/",
+        defaultOpenLabel: "Open Detectorapp",
+        scoreLabel: "Zoekconditie",
+    },
+    vissen: {
+        dataPath: DATA_PATHS.vissen,
+        defaultOpenUrl: "https://mailbvandongen-eng.github.io/visapp/",
+        defaultOpenLabel: "Open Visapp",
+        scoreLabel: "Visscore",
+    },
+};
 
 const CATEGORY_ICON_MAP = {
     algemeen: "newspaper",
@@ -88,15 +90,16 @@ const CATEGORY_ICON_MAP = {
 document.addEventListener("DOMContentLoaded", () => {
     syncAppVersion();
     initTheme();
+    hydrateNavigationLinks();
 
-    const page = document.body.dataset.page;
+    const page = document.body.dataset.page || "";
 
     if (page === "dashboard") {
         initDashboard();
     }
 
-    if (page === "news") {
-        initNewsPage();
+    if (page.startsWith("agent-")) {
+        initAgentPage(page.replace("agent-", ""));
     }
 
     replaceIcons();
@@ -110,9 +113,8 @@ async function initDashboard() {
     }
 
     try {
-        const normalizedNews = normalizeArray(await fetchJson(DATA_PATHS.news));
-        const headlineItems = pickHomepageItems(normalizedNews, DASHBOARD_CONFIG.dashboardNewsLimit);
-
+        const items = normalizeArray(await fetchJson(DATA_PATHS.news));
+        const headlineItems = pickHomepageItems(items, DASHBOARD_CONFIG.dashboardNewsLimit);
         renderCompactNews(newsList, headlineItems, false);
         replaceIcons();
     } catch (error) {
@@ -121,35 +123,393 @@ async function initDashboard() {
     }
 }
 
-async function initNewsPage() {
-    const newsList = document.getElementById("news-list");
+async function initAgentPage(agentKey) {
+    const panel = document.querySelector("[data-agent-key]");
+    const config = AGENT_PAGE_CONFIGS[agentKey];
 
-    if (!newsList) {
+    if (!panel || !config) {
         return;
     }
 
     try {
-        const items = normalizeArray(await fetchJson(DATA_PATHS.news));
-        renderCompactNews(newsList, items, true);
+        const rawPayload = await fetchJson(config.dataPath);
+        const model = buildAgentPageModel(agentKey, rawPayload, config);
+        renderAgentPage(panel, model, config);
         replaceIcons();
     } catch (error) {
         console.error(error);
-        renderStatus(newsList, getLoadErrorMessage("De nieuwsberichten"));
+        renderAgentPageError(panel, agentKey, config);
     }
 }
 
-async function loadDashboardDomain(tile) {
-    if (!tile.data_path) {
-        return { tile, payload: null, error: null };
+function buildAgentPageModel(agentKey, rawPayload, config) {
+    switch (agentKey) {
+        case "news":
+            return buildNewsPageModel(rawPayload, config);
+        case "sport":
+            return buildSportPageModel(rawPayload, config);
+        case "detectie":
+            return buildDetectiePageModel(rawPayload, config);
+        case "vissen":
+            return buildVissenPageModel(rawPayload, config);
+        default:
+            throw new Error(`Onbekende agentpagina: ${agentKey}`);
+    }
+}
+
+function buildNewsPageModel(rawPayload, config) {
+    const items = normalizeArray(rawPayload);
+    const visibleItems = items.slice(0, DASHBOARD_CONFIG.detailNewsLimit);
+    const latestItem = visibleItems[0] || null;
+    const sourceSummary = summarizeNewsSources(items);
+    const categorySummary = uniqueTextValues(items.map((item) => item.category)).slice(0, 5);
+
+    return {
+        status: latestItem
+            ? `${items.length} nieuwsbericht(en) geladen`
+            : "Geen nieuws beschikbaar",
+        score: null,
+        scoreLabel: config.scoreLabel,
+        itemMode: "news",
+        items: visibleItems,
+        analysis: [
+            latestItem
+                ? `Laatste bronupdate: ${formatDate(latestItem.published || latestItem.publishedAt, false)}.`
+                : "Er is nog geen recente update beschikbaar.",
+            sourceSummary.length
+                ? `${sourceSummary.length} Nederlandstalige bron(nen) actief in deze selectie.`
+                : "Er zijn nog geen actieve bronnen in de selectie.",
+            categorySummary.length
+                ? `Categorieen in beeld: ${categorySummary.join(", ")}.`
+                : "Er zijn nog geen categorieen in beeld.",
+        ],
+        advice: [
+            "Gebruik deze selectie voor snelle orientatie en open daarna de originele bron voor de volledige context.",
+            "De homepage blijft bewust compact; deze pagina toont meer berichten tegelijk zonder volledige artikelen op te slaan.",
+        ],
+        sources: sourceSummary,
+        openUrl: latestItem && latestItem.url ? latestItem.url : config.defaultOpenUrl,
+        openLabel: latestItem && latestItem.url ? "Open laatste bron" : config.defaultOpenLabel,
+        openExternal: true,
+    };
+}
+
+function buildSportPageModel(rawPayload, config) {
+    const payload = isPlainObject(rawPayload) ? rawPayload : {};
+    const items = normalizeArray(payload.items).map((item) => ({
+        time: String(item.time || "--:--").trim(),
+        title: String(item.title || "Sportitem").trim(),
+        category: String(item.category || "Sport").trim(),
+        source: String(item.source || "").trim(),
+    }));
+    const categories = uniqueTextValues(items.map((item) => item.category));
+    const sourceSummary = normalizeSourceItems(payload.sources, [
+        { label: "OpenFootball", value: "Voetbalbron" },
+        { label: "ESPN", value: "Scoreboard" },
+        { label: "OpenF1", value: "Sessies" },
+        { label: "PDC", value: "Dartsfixtures" },
+    ]);
+
+    return {
+        status: String(payload.status || "Geen sport gevonden voor vandaag").trim(),
+        score: null,
+        scoreLabel: config.scoreLabel,
+        itemMode: "sport",
+        items,
+        analysis: normalizeStringArray(payload.details, [
+            items.length
+                ? `${items.length} sportitem(s) gevonden voor vandaag.`
+                : "Er zijn geen voetbal-, darts- of F1-items gevonden voor vandaag.",
+            categories.length
+                ? `Categorieen vandaag: ${categories.join(", ")}.`
+                : "Er zijn geen sportcategorieen beschikbaar.",
+            "Bronnen die tijdelijk niet reageren worden overgeslagen.",
+        ]),
+        advice: items.length
+            ? [
+                "Gebruik SportAgent als snelle voorselectie voordat je de volledige Sport op TV-pagina opent.",
+                "Open Sport op TV voor alle zenders, extra wedstrijden en eventuele latere aanvullingen.",
+            ]
+            : [
+                "Later opnieuw proberen kan nieuwe wedstrijden, darts of F1-sessies opleveren.",
+                "Alleen voetbal, darts en Formule 1 tellen mee voor deze selectie.",
+            ],
+        sources: sourceSummary,
+        openUrl: String(payload.url || config.defaultOpenUrl).trim() || config.defaultOpenUrl,
+        openLabel: config.defaultOpenLabel,
+        openExternal: true,
+    };
+}
+
+function buildDetectiePageModel(rawPayload, config) {
+    const payload = isPlainObject(rawPayload) ? rawPayload : {};
+    const items = normalizeConditionItems(payload.items);
+    const context = isPlainObject(payload.context) ? payload.context : {};
+    const rainfall = safeNumber(context.rain_last_7_days_mm);
+    const mondayDate = String(context.monday_date || "").trim();
+    const mondayPrecipitation = safeNumber(context.monday_precipitation_mm);
+    const sourceSummary = normalizeSourceItems(payload.sources, [
+        { label: "Open-Meteo", value: "Weerdata" },
+        { label: "Detectieregels", value: "Lokale regelset" },
+    ]);
+
+    const contextLine = rainfall !== null && mondayDate
+        ? `Referentie: ${rainfall.toFixed(1)} mm regen in de afgelopen 7 dagen, maandag ${mondayDate} circa ${formatNumericValue(mondayPrecipitation, "mm")}.`
+        : "";
+
+    return {
+        status: String(payload.status || "Maandagadvies").trim(),
+        score: clampScore(payload.score),
+        scoreLabel: config.scoreLabel,
+        itemMode: "condition",
+        items,
+        analysis: compactLines(
+            normalizeStringArray(payload.details),
+            contextLine ? [contextLine] : []
+        ),
+        advice: buildAdviceLinesFromItems(items, {
+            "Beste keuze": "Beste terrein",
+            "Vermijd": "Vermijd",
+            "Tip": "Tip",
+        }),
+        sources: sourceSummary,
+        openUrl: String(payload.url || config.defaultOpenUrl).trim() || config.defaultOpenUrl,
+        openLabel: config.defaultOpenLabel,
+        openExternal: true,
+    };
+}
+
+function buildVissenPageModel(rawPayload, config) {
+    const payload = isPlainObject(rawPayload) ? rawPayload : {};
+    const items = normalizeConditionItems(payload.items);
+    const context = isPlainObject(payload.context) ? payload.context : {};
+    const windValue = safeNumber(context.wind_avg_kmh);
+    const pressureValue = safeNumber(context.pressure_avg_hpa);
+    const eveningPrecipitation = safeNumber(context.evening_precipitation_mm);
+    const sourceSummary = normalizeSourceItems(payload.sources, [
+        { label: "Open-Meteo", value: "Weerdata" },
+        { label: "Visregels", value: "Lokale regelset" },
+    ]);
+
+    const contextLine = windValue !== null && pressureValue !== null
+        ? `Referentie: wind gemiddeld ${windValue.toFixed(1)} km/u, luchtdruk rond ${pressureValue.toFixed(1)} hPa en neerslag vanavond circa ${formatNumericValue(eveningPrecipitation, "mm")}.`
+        : "";
+
+    return {
+        status: String(payload.status || "Viscondities vandaag").trim(),
+        score: clampScore(payload.score),
+        scoreLabel: config.scoreLabel,
+        itemMode: "condition",
+        items,
+        analysis: compactLines(
+            normalizeStringArray(payload.details),
+            contextLine ? [contextLine] : []
+        ),
+        advice: buildAdviceLinesFromItems(items, {
+            "Wind": "Windbeeld",
+            "Luchtdruk": "Drukbeeld",
+            "Beste tijd": "Beste moment",
+            "Tip": "Tip",
+        }),
+        sources: sourceSummary,
+        openUrl: String(payload.url || config.defaultOpenUrl).trim() || config.defaultOpenUrl,
+        openLabel: config.defaultOpenLabel,
+        openExternal: true,
+    };
+}
+
+function renderAgentPage(panel, model, config) {
+    const statusNode = panel.querySelector("[data-agent-status]");
+    const scoreNode = panel.querySelector("[data-agent-score]");
+    const itemsNode = panel.querySelector("[data-agent-items]");
+    const analysisNode = panel.querySelector("[data-agent-analysis]");
+    const adviceNode = panel.querySelector("[data-agent-advice]");
+    const sourcesNode = panel.querySelector("[data-agent-sources]");
+    const openLink = panel.querySelector("[data-agent-open-link]");
+    const openLabel = panel.querySelector("[data-agent-open-label]");
+
+    if (statusNode) {
+        statusNode.textContent = `Status: ${model.status}`;
     }
 
-    try {
-        const payload = await fetchJson(tile.data_path);
-        return { tile, payload, error: null };
-    } catch (error) {
-        console.error(`Kon ${tile.data_path} niet laden.`, error);
-        return { tile, payload: null, error };
+    if (scoreNode) {
+        if (Number.isFinite(model.score) && model.score > 0 && model.scoreLabel) {
+            scoreNode.hidden = false;
+            scoreNode.textContent = `${model.scoreLabel}: ${Math.round(model.score)}/5`;
+        } else {
+            scoreNode.hidden = true;
+            scoreNode.textContent = "";
+        }
     }
+
+    if (itemsNode) {
+        renderAgentItems(itemsNode, model);
+    }
+
+    if (analysisNode) {
+        renderLineBlock(analysisNode, model.analysis, "Nog geen analyse beschikbaar.");
+    }
+
+    if (adviceNode) {
+        renderLineBlock(adviceNode, model.advice, "Nog geen advies beschikbaar.");
+    }
+
+    if (sourcesNode) {
+        renderSourceBlock(sourcesNode, model.sources);
+    }
+
+    if (openLink) {
+        const href = String(model.openUrl || config.defaultOpenUrl).trim() || "#";
+        openLink.setAttribute("href", href);
+
+        if (model.openExternal) {
+            openLink.setAttribute("target", "_blank");
+            openLink.setAttribute("rel", "noopener noreferrer");
+        } else {
+            openLink.removeAttribute("target");
+            openLink.removeAttribute("rel");
+        }
+    }
+
+    if (openLabel) {
+        openLabel.textContent = model.openLabel || config.defaultOpenLabel;
+    }
+}
+
+function renderAgentPageError(panel, agentKey, config) {
+    const statusNode = panel.querySelector("[data-agent-status]");
+    const scoreNode = panel.querySelector("[data-agent-score]");
+    const itemsNode = panel.querySelector("[data-agent-items]");
+    const analysisNode = panel.querySelector("[data-agent-analysis]");
+    const adviceNode = panel.querySelector("[data-agent-advice]");
+    const sourcesNode = panel.querySelector("[data-agent-sources]");
+    const openLink = panel.querySelector("[data-agent-open-link]");
+    const openLabel = panel.querySelector("[data-agent-open-label]");
+
+    if (statusNode) {
+        statusNode.textContent = "Status: Data tijdelijk niet beschikbaar";
+    }
+
+    if (scoreNode) {
+        scoreNode.hidden = true;
+        scoreNode.textContent = "";
+    }
+
+    if (itemsNode) {
+        renderStatus(itemsNode, "Nog geen actuele data beschikbaar.");
+    }
+
+    if (analysisNode) {
+        renderLineBlock(
+            analysisNode,
+            [`De bron voor ${agentKey} kon niet worden geladen.`],
+            "Bron tijdelijk niet beschikbaar."
+        );
+    }
+
+    if (adviceNode) {
+        renderLineBlock(
+            adviceNode,
+            ["Probeer later opnieuw; falende bronnen worden bewust overgeslagen."],
+            "Nog geen advies beschikbaar."
+        );
+    }
+
+    if (sourcesNode) {
+        renderLineBlock(
+            sourcesNode,
+            ["Lokale pagina blijft bruikbaar, maar de JSON-bron was nu niet leesbaar."],
+            "Nog geen bronnen beschikbaar."
+        );
+    }
+
+    if (openLink) {
+        openLink.setAttribute("href", config.defaultOpenUrl || "#");
+        openLink.setAttribute("target", "_blank");
+        openLink.setAttribute("rel", "noopener noreferrer");
+    }
+
+    if (openLabel) {
+        openLabel.textContent = config.defaultOpenLabel;
+    }
+}
+
+function renderAgentItems(container, model) {
+    container.innerHTML = "";
+
+    if (model.itemMode === "news") {
+        const newsItems = normalizeArray(model.items);
+
+        if (!newsItems.length) {
+            renderStatus(container, "Nog geen nieuwsitems beschikbaar.");
+            return;
+        }
+
+        container.appendChild(
+            createNewsList(
+                newsItems,
+                DASHBOARD_CONFIG.detailNewsLimit,
+                true,
+                "news-detail-list"
+            )
+        );
+        return;
+    }
+
+    if (model.itemMode === "sport") {
+        const sportItems = normalizeArray(model.items);
+
+        if (!sportItems.length) {
+            renderStatus(container, "Geen sportitems gevonden voor vandaag.");
+            return;
+        }
+
+        container.appendChild(createSportMiniList({ items: sportItems }));
+        return;
+    }
+
+    const conditionItems = normalizeConditionItems(model.items);
+
+    if (!conditionItems.length) {
+        renderStatus(container, "Nog geen regels beschikbaar.");
+        return;
+    }
+
+    container.appendChild(createConditionMiniList({ items: conditionItems }));
+}
+
+function renderLineBlock(container, lines, fallbackMessage) {
+    container.innerHTML = "";
+
+    const entries = normalizeStringArray(lines);
+    if (!entries.length) {
+        renderStatus(container, fallbackMessage);
+        return;
+    }
+
+    const list = document.createElement("ul");
+    list.className = "agent-detail-list";
+
+    entries.forEach((line) => {
+        const item = document.createElement("li");
+        item.className = "agent-detail-item";
+        item.textContent = line;
+        list.appendChild(item);
+    });
+
+    container.appendChild(list);
+}
+
+function renderSourceBlock(container, sources) {
+    container.innerHTML = "";
+
+    const entries = normalizeConditionItems(sources);
+    if (!entries.length) {
+        renderStatus(container, "Nog geen bronnen beschikbaar.");
+        return;
+    }
+
+    container.appendChild(createConditionMiniList({ items: entries }));
 }
 
 async function fetchJson(path) {
@@ -170,6 +530,154 @@ function syncAppVersion() {
 
 function normalizeArray(value) {
     return Array.isArray(value) ? value : [];
+}
+
+function isPlainObject(value) {
+    return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function safeNumber(value) {
+    const parsed = Number(value);
+    return Number.isFinite(parsed) ? parsed : null;
+}
+
+function clampScore(value) {
+    const parsed = safeNumber(value);
+    if (parsed === null) {
+        return null;
+    }
+
+    return Math.max(1, Math.min(5, Math.round(parsed)));
+}
+
+function formatNumericValue(value, unit) {
+    const parsed = safeNumber(value);
+    if (parsed === null) {
+        return "onbekend";
+    }
+
+    return `${parsed.toFixed(1)} ${unit}`;
+}
+
+function normalizeConditionItems(items) {
+    return normalizeArray(items)
+        .map((item) => ({
+            label: String(item && item.label ? item.label : "").trim(),
+            value: String(item && item.value ? item.value : "").trim(),
+        }))
+        .filter((item) => item.label && item.value);
+}
+
+function normalizeSourceItems(items, fallbackItems = []) {
+    const sourceItems = normalizeArray(items)
+        .map((item) => {
+            if (isPlainObject(item)) {
+                const name = String(item.name || item.label || "").trim();
+                const url = String(item.url || "").trim();
+                const note = String(item.note || "").trim();
+
+                return {
+                    label: name || "Bron",
+                    value: note || summarizeUrl(url) || "Beschikbaar",
+                };
+            }
+
+            if (typeof item === "string") {
+                return {
+                    label: item.trim() || "Bron",
+                    value: "Beschikbaar",
+                };
+            }
+
+            return null;
+        })
+        .filter(Boolean);
+
+    if (sourceItems.length) {
+        return sourceItems;
+    }
+
+    return normalizeConditionItems(fallbackItems);
+}
+
+function summarizeUrl(url) {
+    try {
+        return new URL(url).hostname.replace(/^www\./, "");
+    } catch (error) {
+        return "";
+    }
+}
+
+function summarizeNewsSources(items) {
+    const sourceMap = new Map();
+
+    normalizeArray(items).forEach((item) => {
+        const source = String(item && item.source ? item.source : "").trim();
+        if (!source) {
+            return;
+        }
+
+        const current = sourceMap.get(source) || { count: 0, url: "" };
+        current.count += 1;
+
+        if (!current.url && item && item.url) {
+            current.url = String(item.url).trim();
+        }
+
+        sourceMap.set(source, current);
+    });
+
+    return Array.from(sourceMap.entries())
+        .sort((left, right) => right[1].count - left[1].count || left[0].localeCompare(right[0], "nl"))
+        .slice(0, DASHBOARD_CONFIG.compactSourceLimit)
+        .map(([label, meta]) => ({
+            label,
+            value: `${meta.count} bericht(en)`,
+        }));
+}
+
+function uniqueTextValues(values) {
+    const seen = new Set();
+    const unique = [];
+
+    values.forEach((value) => {
+        const text = String(value || "").trim();
+        const key = text.toLowerCase();
+
+        if (!text || seen.has(key)) {
+            return;
+        }
+
+        seen.add(key);
+        unique.push(text);
+    });
+
+    return unique;
+}
+
+function compactLines(primaryLines, secondaryLines = []) {
+    return normalizeStringArray([...normalizeStringArray(primaryLines), ...normalizeStringArray(secondaryLines)]);
+}
+
+function normalizeStringArray(values, fallback = []) {
+    const base = normalizeArray(values)
+        .map((value) => String(value || "").trim())
+        .filter(Boolean);
+
+    if (base.length) {
+        return base;
+    }
+
+    return normalizeArray(fallback)
+        .map((value) => String(value || "").trim())
+        .filter(Boolean);
+}
+
+function buildAdviceLinesFromItems(items, labels) {
+    return normalizeConditionItems(items).map((item) => {
+        const prefix = labels[item.label] || item.label;
+        return `${prefix}: ${item.value}.`;
+    });
 }
 
 function initTheme() {
@@ -227,7 +735,6 @@ function updateThemeToggleButtons(theme) {
         button.title = nextModeLabel;
 
         const icon = button.querySelector("[data-theme-icon]");
-
         if (icon) {
             icon.dataset.lucide = nextModeIcon;
         }
@@ -243,6 +750,27 @@ function updateThemeMetaColor(theme) {
     if (metaThemeColor) {
         metaThemeColor.setAttribute("content", themeColor);
     }
+}
+
+function hydrateNavigationLinks() {
+    document.querySelectorAll("[data-nav-target]").forEach((link) => {
+        const targetKey = String(link.dataset.navTarget || "").trim();
+        const config = NAVIGATION_LINKS[targetKey];
+
+        if (!config || !config.href) {
+            return;
+        }
+
+        link.setAttribute("href", config.href);
+
+        if (config.external) {
+            link.setAttribute("target", "_blank");
+            link.setAttribute("rel", "noopener noreferrer");
+        } else {
+            link.removeAttribute("target");
+            link.removeAttribute("rel");
+        }
+    });
 }
 
 function pickHomepageItems(items, limit) {
@@ -270,7 +798,6 @@ function pickHomepageItems(items, limit) {
         }
 
         selected.push(item);
-
         if (selected.length === limit) {
             break;
         }
@@ -295,106 +822,6 @@ function renderCompactNews(container, items, showSummary) {
             showSummary ? "news-detail-list" : "news-compact-list"
         )
     );
-}
-
-function renderDashboardTiles(container, domains) {
-    container.innerHTML = "";
-
-    if (!Array.isArray(domains) || domains.length === 0) {
-        renderStatus(container, "Er zijn nog geen agenttegels beschikbaar.");
-        return;
-    }
-
-    const fragment = document.createDocumentFragment();
-
-    domains.forEach((domain) => {
-        fragment.appendChild(createAgentTile(domain));
-    });
-
-    container.appendChild(fragment);
-}
-
-function createAgentTile(domain) {
-    const targetUrl = String(domain.tile.target_url || "").trim();
-    const tile = document.createElement(targetUrl ? "a" : "section");
-    tile.className = "agent-tile";
-    tile.dataset.domain = domain.tile.key || "agent";
-
-    if (domain.tile.key) {
-        tile.classList.add(`agent-tile--${domain.tile.key}`);
-        tile.id = `agent-${domain.tile.key}`;
-    }
-
-    if (targetUrl) {
-        tile.classList.add("agent-tile--link");
-        tile.href = targetUrl;
-
-        if (domain.tile.external) {
-            tile.target = "_blank";
-            tile.rel = "noopener noreferrer";
-        }
-    } else {
-        tile.classList.add("agent-tile--placeholder");
-    }
-
-    const header = document.createElement("div");
-    header.className = "agent-tile-header";
-
-    const top = document.createElement("div");
-    top.className = "agent-tile-top";
-
-    const iconFrame = document.createElement("span");
-    iconFrame.className = "agent-tile-icon";
-    iconFrame.setAttribute("aria-hidden", "true");
-
-    const icon = document.createElement("i");
-    icon.dataset.lucide = resolveIconName(domain.tile.icon || "newspaper");
-    iconFrame.appendChild(icon);
-
-    const copy = document.createElement("div");
-    copy.className = "agent-tile-copy";
-
-    const title = document.createElement("h3");
-    title.textContent = domain.tile.title || "Agent";
-
-    const status = document.createElement("p");
-    status.className = "agent-tile-status";
-    status.textContent = getDomainStatus(domain);
-
-    copy.append(title, status);
-    top.append(iconFrame, copy);
-    header.append(top);
-
-    const body = document.createElement("div");
-    body.className = "agent-tile-body";
-    body.appendChild(createAgentTileBody(domain));
-
-    tile.append(header, body);
-
-    if (targetUrl && domain.tile.footer_label) {
-        const footer = document.createElement("span");
-        footer.className = "agent-tile-footer";
-        footer.textContent = domain.tile.footer_label;
-        tile.append(footer);
-    }
-
-    return tile;
-}
-
-function createAgentTileBody(domain) {
-    if (domain.error) {
-        return createAgentFallback("Data tijdelijk niet beschikbaar.");
-    }
-
-    switch (domain.tile.key) {
-        case "sport":
-            return createSportMiniList(domain.payload);
-        case "detectie":
-        case "vissen":
-            return createConditionMiniList(domain.payload);
-        default:
-            return createPlaceholderMiniList(domain.tile.placeholder_lines);
-    }
 }
 
 function createNewsList(items, limit, showSummary, className) {
@@ -433,7 +860,7 @@ function createNewsItem(item, showSummary) {
     meta.append(
         createMetaText(item.source || "Onbekende bron"),
         createMetaSeparator(),
-        createMetaText(formatDate(item.published || item.publishedAt, !showSummary)),
+        createMetaText(formatDate(item.published || item.publishedAt, !showSummary))
     );
 
     body.append(title, meta);
@@ -456,14 +883,14 @@ function createNewsItem(item, showSummary) {
 function createSportMiniList(payload) {
     const items = normalizeArray(payload && payload.items);
 
-    if (items.length === 0) {
-        return createAgentFallback("Nog geen sportitems beschikbaar.");
+    if (!items.length) {
+        return createInlineStatus("Nog geen sportitems beschikbaar.");
     }
 
     const list = document.createElement("div");
     list.className = "agent-mini-list";
 
-    items.slice(0, DASHBOARD_CONFIG.compactDomainLimit).forEach((item) => {
+    items.forEach((item) => {
         const row = document.createElement("div");
         row.className = "agent-mini-row agent-mini-row--sport";
 
@@ -480,7 +907,7 @@ function createSportMiniList(payload) {
 
         const meta = document.createElement("span");
         meta.className = "agent-mini-meta";
-        meta.textContent = item.category || "Sport";
+        meta.textContent = [item.category, item.source].filter(Boolean).join(" | ") || "Sport";
 
         text.append(title, meta);
         row.append(leading, text);
@@ -493,14 +920,14 @@ function createSportMiniList(payload) {
 function createConditionMiniList(payload) {
     const items = normalizeArray(payload && payload.items);
 
-    if (items.length === 0) {
-        return createAgentFallback("Nog geen statusregels beschikbaar.");
+    if (!items.length) {
+        return createInlineStatus("Nog geen statusregels beschikbaar.");
     }
 
     const list = document.createElement("div");
     list.className = "agent-mini-list";
 
-    items.slice(0, DASHBOARD_CONFIG.compactDomainLimit).forEach((item) => {
+    items.forEach((item) => {
         const row = document.createElement("div");
         row.className = "agent-mini-row";
 
@@ -517,31 +944,6 @@ function createConditionMiniList(payload) {
     });
 
     return list;
-}
-
-function createPlaceholderMiniList(lines) {
-    const list = document.createElement("div");
-    list.className = "agent-mini-list";
-
-    normalizeArray(lines).slice(0, DASHBOARD_CONFIG.compactDomainLimit).forEach((line) => {
-        const row = document.createElement("div");
-        row.className = "agent-mini-row agent-mini-row--placeholder";
-        row.textContent = line;
-        list.append(row);
-    });
-
-    if (!list.childElementCount) {
-        return createAgentFallback("Nog geen inhoud beschikbaar.");
-    }
-
-    return list;
-}
-
-function createAgentFallback(message) {
-    const note = document.createElement("div");
-    note.className = "agent-mini-empty";
-    note.textContent = message;
-    return note;
 }
 
 function createNewsMedia(item) {
@@ -574,57 +976,6 @@ function createIconFrame(category) {
     frame.appendChild(icon);
 
     return frame;
-}
-
-function getDomainStatus(domain) {
-    if (domain.tile.key === "news") {
-        return getNewsStatus(normalizeArray(domain.payload));
-    }
-
-    if (domain.tile.key === "detectie") {
-        const baseStatus = domain.payload && typeof domain.payload.status === "string" && domain.payload.status.trim()
-            ? domain.payload.status.trim()
-            : (domain.tile.status_fallback || "Nog niet bijgewerkt");
-        const score = Number(domain.payload && domain.payload.score);
-
-        if (Number.isFinite(score) && score > 0) {
-            return `${baseStatus} - Zoekconditie: ${Math.round(score)}/5`;
-        }
-
-        return baseStatus;
-    }
-
-    if (domain.payload && typeof domain.payload.status === "string" && domain.payload.status.trim()) {
-        return domain.payload.status.trim();
-    }
-
-    return domain.tile.status_fallback || "Nog niet bijgewerkt";
-}
-
-function getNewsStatus(items) {
-    if (!Array.isArray(items) || items.length === 0) {
-        return "Nog geen nieuws";
-    }
-
-    const latestItemDate = new Date(items[0].published || items[0].publishedAt || "");
-
-    if (Number.isNaN(latestItemDate.getTime())) {
-        return "Laatste update onbekend";
-    }
-
-    if (isSameLocalDay(latestItemDate, new Date())) {
-        return "Bijgewerkt vandaag";
-    }
-
-    return `Laatste update ${formatDate(latestItemDate.toISOString(), true)}`;
-}
-
-function isSameLocalDay(left, right) {
-    return (
-        left.getFullYear() === right.getFullYear() &&
-        left.getMonth() === right.getMonth() &&
-        left.getDate() === right.getDate()
-    );
 }
 
 function iconNameForCategory(category) {
