@@ -1,4 +1,4 @@
-"""Haal echte sportitems op voor voetbal, darts en Formule 1."""
+"""Haal echte sportitems op en rangschik ze als praktisch kijkadvies."""
 
 from __future__ import annotations
 
@@ -19,8 +19,47 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 SOURCES_PATH = ROOT_DIR / "agents" / "sport_sources.json"
 OUTPUT_PATH = ROOT_DIR / "data" / "sport.json"
 DEFAULT_DASHBOARD_URL = "https://mailbvandongen-eng.github.io/sport-op-tv/"
-USER_AGENT = "BobOS SportAgent/0.3"
+USER_AGENT = "BobOS SportAgent/0.4"
 MAX_ITEMS = 12
+
+HIGH_PRIORITY_FOOTBALL = (
+    "wk",
+    "world cup",
+    "champions league",
+    "europa league",
+    "conference league",
+    "premier league",
+    "eredivisie",
+    "fa cup",
+    "knvb beker",
+    "beker",
+)
+EXTRA_PRIORITY_KEYWORDS = {
+    "finale": ("finale", 2),
+    "final": ("finale", 2),
+    "halve finale": ("halve finale", 2),
+    "semifinal": ("halve finale", 2),
+    "kwartfinale": ("knock-out", 1),
+    "quarterfinal": ("knock-out", 1),
+    "kwalificatie": ("kwalificatie", 1),
+    "qualifying": ("kwalificatie", 1),
+    "race": ("race", 1),
+    "derby": ("derby", 2),
+    "titel": ("titelstrijd", 1),
+    "kampioen": ("titelstrijd", 1),
+}
+LOW_PRIORITY_KEYWORDS = (
+    "herhaling",
+    "replay",
+    "samenvatting",
+    "studio",
+    "nabeschouwing",
+    "voorbeschouwing",
+    "talk",
+    "highlights",
+    "vrije training",
+    "practice",
+)
 
 try:
     TIMEZONE = ZoneInfo("Europe/Amsterdam")
@@ -30,12 +69,29 @@ except ZoneInfoNotFoundError:
 
 @dataclass(frozen=True)
 class SportItem:
-    """Compact sportitem voor BobOS."""
+    """Ruw sportitem uit een bron."""
 
     start_at: datetime
     title: str
     category: str
     source: str
+
+    @property
+    def time(self) -> str:
+        return self.start_at.astimezone(TIMEZONE).strftime("%H:%M")
+
+
+@dataclass(frozen=True)
+class RankedSportItem:
+    """Sportitem met praktisch kijkadvies."""
+
+    start_at: datetime
+    title: str
+    category: str
+    source: str
+    score: int
+    must_watch: bool
+    reason: str
 
     @property
     def time(self) -> str:
@@ -376,8 +432,108 @@ def fetch_pdc_items(sources: dict[str, Any]) -> list[SportItem]:
     return items
 
 
-def dedupe_and_limit(items: list[SportItem]) -> list[SportItem]:
-    """Houd de lijst compact, uniek en op tijd gesorteerd."""
+def normalize_text(*parts: str) -> str:
+    """Maak een genormaliseerde tekstlaag voor ranking."""
+    joined = " ".join(parts).lower()
+    return re.sub(r"\s+", " ", joined).strip()
+
+
+def score_from_points(points: int) -> int:
+    """Vertaal ruwe prioriteitspunten naar een score van 1 tot 5."""
+    if points >= 6:
+        return 5
+    if points >= 4:
+        return 4
+    if points >= 2:
+        return 3
+    if points >= 1:
+        return 2
+    return 1
+
+
+def pick_reason(reasons: list[str], fallback: str) -> str:
+    """Maak een leesbare reden zonder dubbele labels."""
+    unique_reasons: list[str] = []
+    seen: set[str] = set()
+
+    for reason in reasons:
+        normalized = reason.strip().lower()
+        if not normalized or normalized in seen:
+            continue
+        seen.add(normalized)
+        unique_reasons.append(reason.strip())
+
+    if not unique_reasons:
+        return fallback
+
+    if len(unique_reasons) == 1:
+        return unique_reasons[0]
+
+    return " en ".join(unique_reasons[:2])
+
+
+def rank_item(item: SportItem) -> RankedSportItem:
+    """Geef een sportitem een praktische prioriteitsscore."""
+    haystack = normalize_text(item.title, item.category, item.source)
+    points = 0
+    positive_reasons: list[str] = []
+    negative_reasons: list[str] = []
+
+    if "manchester united" in haystack:
+        points += 4
+        positive_reasons.append("Manchester United")
+
+    if any(keyword in haystack for keyword in ("formule 1", "grand prix", "gp ", "f1")):
+        points += 5
+        positive_reasons.append("Formule 1")
+
+    if "darts" in haystack or "pdc" in haystack:
+        points += 5
+        positive_reasons.append("darts")
+
+    if "wk" in haystack or "world cup" in haystack:
+        points += 5
+        positive_reasons.append("WK-voetbal")
+    elif any(keyword in haystack for keyword in HIGH_PRIORITY_FOOTBALL):
+        points += 4
+        positive_reasons.append("topvoetbal")
+    elif "voetbal" in haystack:
+        points += 1
+        positive_reasons.append("voetbal")
+
+    for keyword, (label, bonus) in EXTRA_PRIORITY_KEYWORDS.items():
+        if keyword in haystack:
+            points += bonus
+            positive_reasons.append(label)
+
+    if "sprint" in haystack:
+        points += 1
+        positive_reasons.append("sprint")
+
+    for keyword in LOW_PRIORITY_KEYWORDS:
+        if keyword in haystack:
+            points -= 3
+            negative_reasons.append("lagere live-prioriteit")
+            break
+
+    score = score_from_points(points)
+    must_watch = score >= 5
+    fallback_reason = negative_reasons[0] if negative_reasons else "Vandaag bruikbaar"
+    reason = pick_reason(positive_reasons, fallback_reason)
+
+    return RankedSportItem(
+        start_at=item.start_at,
+        title=item.title,
+        category=item.category,
+        source=item.source,
+        score=score,
+        must_watch=must_watch,
+        reason=reason,
+    )
+
+
+def dedupe_items(items: list[SportItem]) -> list[SportItem]:
+    """Houd bronitems compact en uniek."""
     unique: dict[tuple[str, str, str], SportItem] = {}
 
     for item in sorted(items, key=lambda row: row.start_at):
@@ -388,7 +544,15 @@ def dedupe_and_limit(items: list[SportItem]) -> list[SportItem]:
         )
         unique.setdefault(key, item)
 
-    return list(unique.values())[:MAX_ITEMS]
+    return list(unique.values())
+
+
+def sort_ranked_items(items: list[RankedSportItem]) -> list[RankedSportItem]:
+    """Sorteer op relevantie en daarna op tijd."""
+    return sorted(
+        items,
+        key=lambda item: (-item.must_watch, -item.score, item.start_at, item.title.lower()),
+    )[:MAX_ITEMS]
 
 
 def build_source_list(sources: dict[str, Any]) -> list[dict[str, str]]:
@@ -408,8 +572,8 @@ def build_source_list(sources: dict[str, Any]) -> list[dict[str, str]]:
     return [row for row in source_rows if row["url"]]
 
 
-def build_details(items: list[SportItem], sources_reachable: bool) -> list[str]:
-    """Maak enkele compacte analyse-regels voor de agentpagina."""
+def build_details(items: list[RankedSportItem], sources_reachable: bool) -> list[str]:
+    """Maak compacte analyse-regels voor de agentpagina."""
     if not items:
         if not sources_reachable:
             return [
@@ -422,18 +586,29 @@ def build_details(items: list[SportItem], sources_reachable: bool) -> list[str]:
             "Bronnen die tijdelijk niet reageren worden overgeslagen; later opnieuw draaien kan nieuwe items opleveren.",
         ]
 
+    top_item = items[0]
+    must_watch_count = sum(1 for item in items if item.must_watch)
     categories = sorted({item.category for item in items})
-    detail_lines = [
-        f"{len(items)} sportitem(s) gevonden voor vandaag.",
-        f"Categorieen vandaag: {', '.join(categories)}.",
-        "Alleen voetbal, darts en Formule 1 worden meegenomen in BobOS.",
-    ]
 
-    return detail_lines
+    details = [
+        f"Topkeuze vandaag: {top_item.title} ({top_item.score}/5) door {top_item.reason.lower()}.",
+        f"{must_watch_count} must-see item(s) en {len(items)} relevante sportitem(s) gevonden.",
+        f"Categorieen vandaag: {', '.join(categories)}.",
+    ]
+    details.append(
+        "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
+    )
+    return details
+
+
+def get_dashboard_url(sources: dict[str, Any] | None = None) -> str:
+    """Lees de dashboardlink uit de bronconfig met een veilige fallback."""
+    source_map = sources if isinstance(sources, dict) else {}
+    return str(source_map.get("dashboard_url", "")).strip() or DEFAULT_DASHBOARD_URL
 
 
 def build_payload(
-    items: list[SportItem],
+    items: list[RankedSportItem],
     sources: dict[str, Any],
     *,
     sources_reachable: bool,
@@ -441,7 +616,7 @@ def build_payload(
     """Maak de vaste BobOS JSON-structuur voor het sportdomein."""
     dashboard_url = get_dashboard_url(sources)
     if items:
-        status = "Sport op TV vandaag"
+        status = "Vandaag interessant"
     elif sources_reachable:
         status = "Geen sport gevonden voor vandaag"
     else:
@@ -456,6 +631,9 @@ def build_payload(
                 "title": item.title,
                 "category": item.category,
                 "source": item.source,
+                "score": item.score,
+                "must_watch": item.must_watch,
+                "reason": item.reason,
                 "url": dashboard_url,
             }
             for item in items
@@ -466,18 +644,61 @@ def build_payload(
     }
 
 
+def payload_has_ranked_items(payload: Any) -> bool:
+    """Controleer of bestaand JSON al de verrijkte sportvelden bevat."""
+    if not isinstance(payload, dict):
+        return False
+
+    items = payload.get("items")
+    if not isinstance(items, list):
+        return False
+
+    for item in items:
+        if not isinstance(item, dict):
+            return False
+        if not {"score", "reason", "must_watch"}.issubset(item):
+            return False
+
+    return True
+
+
+def migrate_existing_payload(payload: Any, sources: dict[str, Any]) -> dict[str, Any] | None:
+    """Zet oudere sportdata om naar de rijkere v0.4-structuur."""
+    if not isinstance(payload, dict):
+        return None
+
+    raw_items = payload.get("items")
+    if not isinstance(raw_items, list):
+        return None
+
+    migrated_items: list[SportItem] = []
+    today = today_local().isoformat()
+
+    for raw_item in raw_items:
+        if not isinstance(raw_item, dict):
+            continue
+
+        time_value = str(raw_item.get("time") or "12:00").strip()
+        start_at = parse_local_datetime(today, time_value) or datetime.now(TIMEZONE)
+        migrated_items.append(
+            SportItem(
+                start_at=start_at,
+                title=str(raw_item.get("title") or "Sportitem").strip(),
+                category=str(raw_item.get("category") or "Sport").strip(),
+                source=str(raw_item.get("source") or "Bestaande snapshot").strip(),
+            )
+        )
+
+    ranked_items = sort_ranked_items([rank_item(item) for item in dedupe_items(migrated_items)])
+    return build_payload(ranked_items, sources, sources_reachable=bool(ranked_items))
+
+
 def save_payload(payload: dict[str, Any]) -> bool:
     """Schrijf het JSON-bestand alleen weg als de inhoud echt is gewijzigd."""
     return save_json_if_changed(OUTPUT_PATH, payload, ignored_keys={"updated_at"})
 
 
-def has_existing_payload() -> bool:
-    """Controleer of er al bruikbare sportdata op schijf staat."""
-    current_payload = load_json(OUTPUT_PATH)
-    return isinstance(current_payload, dict)
-
-
-def collect_items(sources: dict[str, Any]) -> tuple[list[SportItem], bool]:
+def collect_items(sources: dict[str, Any]) -> tuple[list[RankedSportItem], bool]:
     """Haal echte sportitems op via de vaste JSON/API-bronnen."""
     items: list[SportItem] = []
     sources_reachable = False
@@ -493,18 +714,15 @@ def collect_items(sources: dict[str, Any]) -> tuple[list[SportItem], bool]:
         print(f"[INFO] {label}: {len(fetched)} item(s) voor vandaag gevonden.")
         items.extend(fetched)
 
-    selected = dedupe_and_limit(items)
-    print(f"[INFO] Geselecteerde bronitems: {len(selected)}")
-    for item in selected:
-        print(f"[INFO] {item.time} | {item.category} | {item.title} | bron={item.source}")
+    ranked_items = sort_ranked_items([rank_item(item) for item in dedupe_items(items)])
+    print(f"[INFO] Geselecteerde bronitems: {len(ranked_items)}")
+    for item in ranked_items:
+        print(
+            f"[INFO] {item.time} | {item.category} | {item.title} | "
+            f"score={item.score} | must_watch={item.must_watch}"
+        )
 
-    return selected, sources_reachable
-
-
-def get_dashboard_url(sources: dict[str, Any] | None = None) -> str:
-    """Lees de dashboardlink uit de bronconfig met een veilige fallback."""
-    source_map = sources if isinstance(sources, dict) else {}
-    return str(source_map.get("dashboard_url", "")).strip() or DEFAULT_DASHBOARD_URL
+    return ranked_items, sources_reachable
 
 
 def main() -> None:
@@ -522,12 +740,23 @@ def main() -> None:
         items = []
         sources_reachable = False
 
-    if not sources_reachable and has_existing_payload():
-        print(
-            f"[DONE] Geen sportbron bereikbaar; bestaand {OUTPUT_PATH} blijft staan "
-            "(ongewijzigd)."
-        )
-        return
+    current_payload = load_json(OUTPUT_PATH)
+    if not sources_reachable and current_payload is not None:
+        migrated_payload = migrate_existing_payload(current_payload, sources)
+        if migrated_payload is not None:
+            changed = save_payload(migrated_payload)
+            print(
+                f"[DONE] Bestaande sportdata bijgewerkt in {OUTPUT_PATH} "
+                f"({'gewijzigd' if changed else 'ongewijzigd'})."
+            )
+            return
+
+        if payload_has_ranked_items(current_payload):
+            print(
+                f"[DONE] Geen sportbron bereikbaar; bestaand {OUTPUT_PATH} blijft staan "
+                "(ongewijzigd)."
+            )
+            return
 
     payload = build_payload(items, sources, sources_reachable=sources_reachable)
     changed = save_payload(payload)

@@ -1,1 +1,69 @@
-{   "updated_at": "2026-07-06T11:27:33Z",   "status": "Maandagadvies",   "score": 4,   "items": [     {       "label": "Beste keuze",       "value": "Hoger zand / stroomrug"     },     {       "label": "Vermijd",       "value": "Lage natte klei"     },     {       "label": "Tip",       "value": "Steentijd op nat zand"     }   ],   "details": [     "Regen in de afgelopen week maakt lage kleigronden minder aantrekkelijk.",     "Hoger gelegen zandgronden, rivierduinen, dekzandruggen en stroomruggen blijven interessant.",     "Betuwe niet uitsluiten: hoge stroomruggen en oude oeverwallen kunnen juist goed zijn."   ],   "url": "https://mailbvandongen-eng.github.io/detect/" }
+{
+  "updated_at": "2026-07-06T21:02:33Z",
+  "status": "Maandagadvies",
+  "score": 4,
+  "items": [
+    {
+      "label": "Beste keuze",
+      "value": "Hoger zand / stroomrug"
+    },
+    {
+      "label": "Vermijd",
+      "value": "Lage natte klei"
+    },
+    {
+      "label": "Tip",
+      "value": "Steentijd op nat zand"
+    }
+  ],
+  "details": [
+    "Zomer: veel velden staan nog vol; focus vooral op net geoogste graanpercelen zodra ze vrijkomen.",
+    "Mais, bieten en aardappels zijn meestal nog niet interessant; boomgaarden kunnen lokaal kansen bieden bij nieuwe aanplant of geroerde grond.",
+    "Een natte week maakt lage kleigronden minder aantrekkelijk en remt vooral slecht drainerende stukken.",
+    "Hoger zand, dekzandruggen, rivierduinen en hoge stroomruggen blijven dan de slimste keuze.",
+    "Voor steentijdzoeken kan nat zand juist helpen door extra glans en contrast in het oppervlak.",
+    "Afgelopen week: Natte week. Maandagverwachting wordt opnieuw gevuld zodra Open-Meteo weer bereikbaar is.",
+    "Beste landschapstype nu: Hoger zand / stroomrug.",
+    "Vermijden: Lage natte klei."
+  ],
+  "profiles": [
+    {
+      "name": "Steentijd",
+      "score": 4,
+      "advice": "Nat zand, dekzandruggen en rivierduinen zijn extra interessant door glans en contrast."
+    },
+    {
+      "name": "Romeins",
+      "score": 4,
+      "advice": "Hoge stroomruggen en oeverwallen in het rivierengebied blijven interessant."
+    },
+    {
+      "name": "Middeleeuws",
+      "score": 2,
+      "advice": "Akkers rond oude bewoning zijn pas echt goed als ze geoogst of goed begaanbaar zijn."
+    }
+  ],
+  "context": {
+    "reference_location": "Midden-Nederland",
+    "season": "zomer",
+    "season_label": "Zomer",
+    "field_access": "Zoek naar pas vrijgekomen graanpercelen, oude akkerkoppen en geroerde boomgaardstroken.",
+    "rain_last_7_days_mm": null,
+    "week_condition": "natte_week",
+    "monday_date": "2026-07-13",
+    "monday_precipitation_mm": null,
+    "monday_temperature_max_c": null,
+    "monday_wind_max_kmh": null
+  },
+  "sources": [
+    {
+      "name": "Open-Meteo Forecast API",
+      "url": "https://open-meteo.com/en/docs"
+    },
+    {
+      "name": "Detectieregels",
+      "note": "agents/detectie_rules.json"
+    }
+  ],
+  "url": "https://mailbvandongen-eng.github.io/detect/"
+}

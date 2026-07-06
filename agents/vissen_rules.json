@@ -2,32 +2,57 @@
   {
     "condition": "lage_wind",
     "slot": "detail",
-    "advice": "Rustig water maakt gericht vissen op roofvis makkelijker, maar aasvis kan minder samenklonteren."
+    "advice": "Rustig water maakt precies vissen makkelijker, maar het water kan ook stiller en minder actief ogen."
   },
   {
     "condition": "matige_wind",
     "slot": "detail",
-    "advice": "Lichte golfslag helpt vaak voor actieve roofvis en houdt de algemene viskans levendig."
+    "advice": "Matige wind geeft vaak net genoeg golfslag voor actieve roofvis zonder dat het onrustig wordt."
   },
   {
     "condition": "harde_wind",
     "slot": "detail",
-    "advice": "Harde wind maakt mobiel vissen slimmer; zoek luwte, bruggen of diepere gaten op."
+    "advice": "Harde wind maakt vissen lastiger; kies luwte, bruggen, havens of diepere beschutte stukken."
+  },
+  {
+    "condition": "harde_wind",
+    "slot": "tip",
+    "advice": "Zoek luwte en verkort je sessie als de wind doorzet."
   },
   {
     "condition": "stabiele_druk",
     "slot": "detail",
-    "advice": "Een stabiele luchtdruk houdt het patroon vaak voorspelbaar voor een avondsessie."
+    "advice": "Stabiele luchtdruk is meestal gunstig voor voorspelbaar zoetwatervissen."
   },
   {
     "condition": "dalende_druk",
     "slot": "detail",
-    "advice": "Een licht dalende druk kan meerval en actieve roofvis losmaken richting schemer."
+    "advice": "Licht dalende druk kan roofvis en meerval losmaken, maar houd de wisselvalligheid in de gaten."
   },
   {
     "condition": "stijgende_druk",
     "slot": "detail",
-    "advice": "Stijgende druk houdt het weer vaak netter, maar de aanbeten kunnen wat voorzichtiger zijn."
+    "advice": "Stijgende druk houdt het weer vaak netter, maar aanbeten kunnen wat voorzichtiger worden."
+  },
+  {
+    "condition": "instabiele_druk",
+    "slot": "detail",
+    "advice": "Sterk schommelende druk maakt het visbeeld onrustiger; kies daarom korter en gerichter."
+  },
+  {
+    "condition": "lichte_regen",
+    "slot": "detail",
+    "advice": "Lichte regen hoeft geen probleem te zijn en kan een avondsessie zelfs aantrekkelijker maken."
+  },
+  {
+    "condition": "zware_regen",
+    "slot": "detail",
+    "advice": "Zware regen drukt de comfort- en zichtcondities; vis liever rond droge vensters."
+  },
+  {
+    "condition": "zware_regen",
+    "slot": "tip",
+    "advice": "Wacht op een droog venster of verkort de sessie."
   },
   {
     "condition": "droge_avond",
@@ -35,28 +60,68 @@
     "advice": "Een grotendeels droge avond maakt langere sessies en actief zoeken makkelijker."
   },
   {
-    "condition": "natte_avond",
+    "condition": "onweer_risico",
     "slot": "detail",
-    "advice": "Veel neerslag vraagt om kortere sessies en scherp kiezen van droge vensters."
+    "advice": "Onweerskans is een duidelijke rem: veiligheid eerst en geen open water tijdens buien."
   },
   {
-    "condition": "warme_avond",
+    "condition": "onweer_risico",
     "slot": "tip",
-    "advice": "Warme avond: focus op roofvis en meerval rond schemer."
+    "advice": "Bij onweerrisico liever uitstellen dan doordrukken."
   },
   {
-    "condition": "koele_avond",
-    "slot": "tip",
-    "advice": "Koelere avond: vis trager en pak vooral de overgang naar donker."
+    "condition": "temperatuurdaling",
+    "slot": "detail",
+    "advice": "Een plotselinge temperatuurdaling maakt het visgedrag vaak terughoudender."
   },
   {
-    "condition": "harde_wind",
-    "slot": "tip",
-    "advice": "Zoek luwte of dieper water."
+    "condition": "stabiele_temperatuur",
+    "slot": "detail",
+    "advice": "Een stabiel temperatuursverloop helpt om het visgedrag beter voorspelbaar te houden."
   },
   {
-    "condition": "natte_avond",
+    "condition": "temperatuurstijging",
+    "slot": "detail",
+    "advice": "Geleidelijke opwarming kan vis actiever maken, zeker later op de dag."
+  },
+  {
+    "condition": "winter",
+    "slot": "detail",
+    "advice": "Winter: vis trager, dieper en compacter; verwacht minder agressieve aanbeten."
+  },
+  {
+    "condition": "winter",
     "slot": "tip",
-    "advice": "Vis mobiel tussen buien door."
+    "advice": "Kies diepere plekken en een kortere, preciezere aanpak."
+  },
+  {
+    "condition": "lente",
+    "slot": "detail",
+    "advice": "Lente: houd rekening met paai en eventuele sluiting van soorten; forceer geen roofvispatroon."
+  },
+  {
+    "condition": "lente",
+    "slot": "tip",
+    "advice": "Controleer paai- en sluitingsregels en focus op rustige overgangsuren."
+  },
+  {
+    "condition": "zomer",
+    "slot": "detail",
+    "advice": "Zomer: avond en nacht zijn vaak de interessantste vensters, vooral voor roofvis en meerval."
+  },
+  {
+    "condition": "zomer",
+    "slot": "tip",
+    "advice": "Richt je op schemer en nacht als hoofdvenster."
+  },
+  {
+    "condition": "herfst",
+    "slot": "detail",
+    "advice": "Herfst: roofvis wordt vaak actiever en wisselvallig weer kan juist interessante pieken geven."
+  },
+  {
+    "condition": "herfst",
+    "slot": "tip",
+    "advice": "Gebruik de actieve najaarsperiode voor roofvis rond wind en structuur."
   }
 ]

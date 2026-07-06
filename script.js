@@ -201,6 +201,9 @@ function buildSportPageModel(rawPayload, config) {
         title: String(item.title || "Sportitem").trim(),
         category: String(item.category || "Sport").trim(),
         source: String(item.source || "").trim(),
+        score: clampScore(item.score) || 1,
+        must_watch: Boolean(item.must_watch),
+        reason: String(item.reason || "").trim(),
     }));
     const categories = uniqueTextValues(items.map((item) => item.category));
     const sourceSummary = normalizeSourceItems(payload.sources, [
@@ -209,9 +212,11 @@ function buildSportPageModel(rawPayload, config) {
         { label: "OpenF1", value: "Sessies" },
         { label: "PDC", value: "Dartsfixtures" },
     ]);
+    const mustWatchCount = items.filter((item) => item.must_watch).length;
+    const topItem = items[0] || null;
 
     return {
-        status: String(payload.status || "Geen sport gevonden voor vandaag").trim(),
+        status: String(payload.status || (items.length ? "Vandaag interessant" : "Geen sport gevonden voor vandaag")).trim(),
         score: null,
         scoreLabel: config.scoreLabel,
         itemMode: "sport",
@@ -227,13 +232,18 @@ function buildSportPageModel(rawPayload, config) {
         ]),
         advice: items.length
             ? [
-                "Gebruik SportAgent als snelle voorselectie voordat je de volledige Sport op TV-pagina opent.",
-                "Open Sport op TV voor alle zenders, extra wedstrijden en eventuele latere aanvullingen.",
+                topItem
+                    ? `Topkeuze: ${topItem.title} (${topItem.score}/5) - ${topItem.reason || "hoogste prioriteit"}.`
+                    : "Gebruik de hoogste score als startpunt.",
+                mustWatchCount
+                    ? `${mustWatchCount} item(s) vallen in de categorie Must see.`
+                    : "Er is geen directe must-see, maar de hoogste scores blijven het meest relevant.",
             ]
             : [
                 "Later opnieuw proberen kan nieuwe wedstrijden, darts of F1-sessies opleveren.",
                 "Alleen voetbal, darts en Formule 1 tellen mee voor deze selectie.",
             ],
+        profiles: [],
         sources: sourceSummary,
         openUrl: String(payload.url || config.defaultOpenUrl).trim() || config.defaultOpenUrl,
         openLabel: config.defaultOpenLabel,
@@ -244,10 +254,13 @@ function buildSportPageModel(rawPayload, config) {
 function buildDetectiePageModel(rawPayload, config) {
     const payload = isPlainObject(rawPayload) ? rawPayload : {};
     const items = normalizeConditionItems(payload.items);
+    const profiles = normalizeProfileItems(payload.profiles);
     const context = isPlainObject(payload.context) ? payload.context : {};
     const rainfall = safeNumber(context.rain_last_7_days_mm);
     const mondayDate = String(context.monday_date || "").trim();
     const mondayPrecipitation = safeNumber(context.monday_precipitation_mm);
+    const seasonLabel = String(context.season_label || "").trim();
+    const fieldAccess = String(context.field_access || "").trim();
     const sourceSummary = normalizeSourceItems(payload.sources, [
         { label: "Open-Meteo", value: "Weerdata" },
         { label: "Detectieregels", value: "Lokale regelset" },
@@ -256,6 +269,7 @@ function buildDetectiePageModel(rawPayload, config) {
     const contextLine = rainfall !== null && mondayDate
         ? `Referentie: ${rainfall.toFixed(1)} mm regen in de afgelopen 7 dagen, maandag ${mondayDate} circa ${formatNumericValue(mondayPrecipitation, "mm")}.`
         : "";
+    const seasonLine = seasonLabel ? `${seasonLabel}: ${fieldAccess || "Kijk vooral naar bereikbare en vrijliggende percelen."}` : "";
 
     return {
         status: String(payload.status || "Maandagadvies").trim(),
@@ -265,13 +279,17 @@ function buildDetectiePageModel(rawPayload, config) {
         items,
         analysis: compactLines(
             normalizeStringArray(payload.details),
-            contextLine ? [contextLine] : []
+            [
+                ...(seasonLine ? [seasonLine] : []),
+                ...(contextLine ? [contextLine] : []),
+            ]
         ),
         advice: buildAdviceLinesFromItems(items, {
             "Beste keuze": "Beste terrein",
             "Vermijd": "Vermijd",
             "Tip": "Tip",
         }),
+        profiles,
         sources: sourceSummary,
         openUrl: String(payload.url || config.defaultOpenUrl).trim() || config.defaultOpenUrl,
         openLabel: config.defaultOpenLabel,
@@ -282,10 +300,14 @@ function buildDetectiePageModel(rawPayload, config) {
 function buildVissenPageModel(rawPayload, config) {
     const payload = isPlainObject(rawPayload) ? rawPayload : {};
     const items = normalizeConditionItems(payload.items);
+    const profiles = normalizeProfileItems(payload.profiles);
     const context = isPlainObject(payload.context) ? payload.context : {};
     const windValue = safeNumber(context.wind_avg_kmh);
     const pressureValue = safeNumber(context.pressure_avg_hpa);
     const eveningPrecipitation = safeNumber(context.evening_precipitation_mm);
+    const seasonLabel = String(context.season_label || "").trim();
+    const pressureTrend = safeNumber(context.pressure_delta_48h_hpa);
+    const temperatureDelta = safeNumber(context.temperature_delta_c);
     const sourceSummary = normalizeSourceItems(payload.sources, [
         { label: "Open-Meteo", value: "Weerdata" },
         { label: "Visregels", value: "Lokale regelset" },
@@ -294,16 +316,24 @@ function buildVissenPageModel(rawPayload, config) {
     const contextLine = windValue !== null && pressureValue !== null
         ? `Referentie: wind gemiddeld ${windValue.toFixed(1)} km/u, luchtdruk rond ${pressureValue.toFixed(1)} hPa en neerslag vanavond circa ${formatNumericValue(eveningPrecipitation, "mm")}.`
         : "";
+    const trendLine = pressureTrend !== null || temperatureDelta !== null
+        ? `Trend: luchtdruk ${formatSignedValue(pressureTrend, "hPa")} en temperatuur ${formatSignedValue(temperatureDelta, "C")}.`
+        : "";
+    const seasonLine = seasonLabel ? `${seasonLabel}: schemer en seizoensritme wegen mee in het advies.` : "";
 
     return {
-        status: String(payload.status || "Viscondities vandaag").trim(),
+        status: String(payload.status || "Visadvies vandaag").trim(),
         score: clampScore(payload.score),
         scoreLabel: config.scoreLabel,
         itemMode: "condition",
         items,
         analysis: compactLines(
             normalizeStringArray(payload.details),
-            contextLine ? [contextLine] : []
+            [
+                ...(seasonLine ? [seasonLine] : []),
+                ...(trendLine ? [trendLine] : []),
+                ...(contextLine ? [contextLine] : []),
+            ]
         ),
         advice: buildAdviceLinesFromItems(items, {
             "Wind": "Windbeeld",
@@ -311,6 +341,7 @@ function buildVissenPageModel(rawPayload, config) {
             "Beste tijd": "Beste moment",
             "Tip": "Tip",
         }),
+        profiles,
         sources: sourceSummary,
         openUrl: String(payload.url || config.defaultOpenUrl).trim() || config.defaultOpenUrl,
         openLabel: config.defaultOpenLabel,
@@ -324,6 +355,7 @@ function renderAgentPage(panel, model, config) {
     const itemsNode = panel.querySelector("[data-agent-items]");
     const analysisNode = panel.querySelector("[data-agent-analysis]");
     const adviceNode = panel.querySelector("[data-agent-advice]");
+    const profilesNode = panel.querySelector("[data-agent-profiles]");
     const sourcesNode = panel.querySelector("[data-agent-sources]");
     const openLink = panel.querySelector("[data-agent-open-link]");
     const openLabel = panel.querySelector("[data-agent-open-label]");
@@ -354,6 +386,10 @@ function renderAgentPage(panel, model, config) {
         renderLineBlock(adviceNode, model.advice, "Nog geen advies beschikbaar.");
     }
 
+    if (profilesNode) {
+        renderProfileBlock(profilesNode, model.profiles);
+    }
+
     if (sourcesNode) {
         renderSourceBlock(sourcesNode, model.sources);
     }
@@ -382,6 +418,7 @@ function renderAgentPageError(panel, agentKey, config) {
     const itemsNode = panel.querySelector("[data-agent-items]");
     const analysisNode = panel.querySelector("[data-agent-analysis]");
     const adviceNode = panel.querySelector("[data-agent-advice]");
+    const profilesNode = panel.querySelector("[data-agent-profiles]");
     const sourcesNode = panel.querySelector("[data-agent-sources]");
     const openLink = panel.querySelector("[data-agent-open-link]");
     const openLabel = panel.querySelector("[data-agent-open-label]");
@@ -412,6 +449,14 @@ function renderAgentPageError(panel, agentKey, config) {
             adviceNode,
             ["Probeer later opnieuw; falende bronnen worden bewust overgeslagen."],
             "Nog geen advies beschikbaar."
+        );
+    }
+
+    if (profilesNode) {
+        renderLineBlock(
+            profilesNode,
+            ["Profielscores worden zichtbaar zodra de verrijkte brondata weer beschikbaar is."],
+            "Nog geen profielen beschikbaar."
         );
     }
 
@@ -512,6 +557,18 @@ function renderSourceBlock(container, sources) {
     container.appendChild(createConditionMiniList({ items: entries }));
 }
 
+function renderProfileBlock(container, profiles) {
+    container.innerHTML = "";
+
+    const entries = normalizeProfileItems(profiles);
+    if (!entries.length) {
+        renderStatus(container, "Nog geen profielen beschikbaar.");
+        return;
+    }
+
+    container.appendChild(createProfileList(entries));
+}
+
 async function fetchJson(path) {
     const response = await fetch(path, { cache: "no-store" });
 
@@ -550,6 +607,15 @@ function clampScore(value) {
     return Math.max(1, Math.min(5, Math.round(parsed)));
 }
 
+function formatSignedValue(value, unit) {
+    const parsed = safeNumber(value);
+    if (parsed === null) {
+        return "onbekend";
+    }
+
+    return `${parsed >= 0 ? "+" : ""}${parsed.toFixed(1)} ${unit}`;
+}
+
 function formatNumericValue(value, unit) {
     const parsed = safeNumber(value);
     if (parsed === null) {
@@ -566,6 +632,16 @@ function normalizeConditionItems(items) {
             value: String(item && item.value ? item.value : "").trim(),
         }))
         .filter((item) => item.label && item.value);
+}
+
+function normalizeProfileItems(items) {
+    return normalizeArray(items)
+        .map((item) => ({
+            name: String(item && item.name ? item.name : "").trim(),
+            score: clampScore(item && item.score),
+            advice: String(item && item.advice ? item.advice : "").trim(),
+        }))
+        .filter((item) => item.name && item.score && item.advice);
 }
 
 function normalizeSourceItems(items, fallbackItems = []) {
@@ -676,7 +752,8 @@ function normalizeStringArray(values, fallback = []) {
 function buildAdviceLinesFromItems(items, labels) {
     return normalizeConditionItems(items).map((item) => {
         const prefix = labels[item.label] || item.label;
-        return `${prefix}: ${item.value}.`;
+        const value = /[.!?]$/.test(item.value) ? item.value : `${item.value}.`;
+        return `${prefix}: ${value}`;
     });
 }
 
@@ -892,7 +969,7 @@ function createSportMiniList(payload) {
 
     items.forEach((item) => {
         const row = document.createElement("div");
-        row.className = "agent-mini-row agent-mini-row--sport";
+        row.className = "agent-mini-row agent-mini-row--sport agent-mini-row--sport-ranked";
 
         const leading = document.createElement("span");
         leading.className = "agent-mini-leading";
@@ -909,8 +986,49 @@ function createSportMiniList(payload) {
         meta.className = "agent-mini-meta";
         meta.textContent = [item.category, item.source].filter(Boolean).join(" | ") || "Sport";
 
-        text.append(title, meta);
+        const score = document.createElement("span");
+        score.className = "agent-mini-score";
+        score.textContent = item.must_watch
+            ? `Must see ${item.score || 1}/5`
+            : `Score ${item.score || 1}/5`;
+
+        const reason = document.createElement("span");
+        reason.className = "agent-mini-reason";
+        reason.textContent = item.reason || "Vandaag relevant";
+
+        text.append(title, meta, score, reason);
         row.append(leading, text);
+        list.append(row);
+    });
+
+    return list;
+}
+
+function createProfileList(items) {
+    const list = document.createElement("div");
+    list.className = "agent-profile-list";
+
+    items.forEach((item) => {
+        const row = document.createElement("div");
+        row.className = "agent-profile-item";
+
+        const heading = document.createElement("div");
+        heading.className = "agent-profile-heading";
+
+        const name = document.createElement("span");
+        name.className = "agent-profile-name";
+        name.textContent = item.name;
+
+        const score = document.createElement("span");
+        score.className = "agent-profile-score";
+        score.textContent = `${item.score}/5`;
+
+        const advice = document.createElement("p");
+        advice.className = "agent-profile-advice";
+        advice.textContent = item.advice;
+
+        heading.append(name, score);
+        row.append(heading, advice);
         list.append(row);
     });
 

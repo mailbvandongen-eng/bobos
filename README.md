@@ -1,6 +1,6 @@
-# BobOS v0.2
+# BobOS v0.3
 
-BobOS is een persoonlijk dashboard en PIP voor dagelijks gebruik. Het is geen backendplatform en geen alles-in-een startscherm met een enkele "Vandaag"-tegel. BobOS verdeelt informatie bewust in losse domeinen, elk met een eigen status, eigen data en eigen doorklik.
+BobOS is een persoonlijk, mobiel dashboard met losse advies-agents voor nieuws, sport, detectie en vissen. De homepage blijft bewust compact; de agentpagina's geven de diepere analyse en linken daarna door naar de bestaande apps.
 
 ## Live URL
 
@@ -13,42 +13,38 @@ BobOS is een persoonlijk dashboard en PIP voor dagelijks gebruik. Het is geen ba
 - geen backend
 - geen database
 - geen login
+- geen AI-kosten of betaalde API's
 - externe links openen in een nieuw tabblad
 - volledige artikelen worden niet in BobOS getoond
 - licht/donker-thema blijft beschikbaar
 - het versienummer staat altijd onderaan in de app
 
-## Werkwijze
-
-Voor dit project geldt een vaste werkafspraak:
-
-- wijzigingen worden standaard gecommit
-- wijzigingen worden daarna ook direct gepusht
-- het versienummer blijft zichtbaar onderaan in de app
-
 ## Architectuur
 
-Het dashboard leest alleen JSON-bestanden. De homepage haalt configuratie op uit `data/tiles.json` en leest per domein het bijbehorende databestand.
+BobOS leest alleen JSON-bestanden uit `data/`.
 
-De vier hoofdtegels zijn:
+De huidige flow is:
 
-- `Nieuws`
-- `Sport`
-- `Detectie`
-- `Vissen`
+`Homepage -> Agentpagina -> Oorspronkelijke app`
 
-Elke tegel heeft:
+De homepage toont nu alleen:
 
-- een eigen icoon
-- een statusregel
-- compacte items
-- een eigen doorklik
+- header
+- horizontale agentnavigatie
+- compact nieuwsblok
+- versienummer
+
+Sport, Detectie en Vissen openen hun eigen agentpagina met uitgebreidere uitleg. Steentijd blijft een directe link naar de externe tool.
 
 ## Bestandsstructuur
 
 ```text
 index.html
 news.html
+sport.html
+detectie.html
+vissen.html
+meer.html
 style.css
 script.js
 README.md
@@ -64,10 +60,11 @@ agents/
 |- sport_agent.py
 |- detectie_agent.py
 |- vissen_agent.py
-\- news_sources.json
-assets/
-|- bobos-logo-dark.svg
-\- bobos-logo-light.svg
+|- json_store.py
+|- news_sources.json
+|- sport_sources.json
+|- detectie_rules.json
+\- vissen_rules.json
 data/
 |- tiles.json
 |- news.json
@@ -84,11 +81,10 @@ BobOS leest de volgende databestanden:
 - `data/sport.json`
 - `data/detectie.json`
 - `data/vissen.json`
-- `data/tiles.json`
 
 `news.json` bevat nieuwsitems.
 
-`sport.json`, `detectie.json` en `vissen.json` bevatten statusregels en compacte domeinitems.
+`sport.json`, `detectie.json` en `vissen.json` bevatten compacte tegeldata voor de app en uitgebreidere data voor de agentpagina's.
 
 ## Agents
 
@@ -101,33 +97,48 @@ python agents/detectie_agent.py
 python agents/vissen_agent.py
 ```
 
-Elke agent schrijft altijd geldige JSON, ook als externe data ontbreekt.
+Elke agent schrijft altijd geldige JSON. Als een externe bron tijdelijk faalt, blijft de laatste bruikbare JSON-snapshot staan zodat BobOS niet terugvalt naar lege of kapotte schermen.
 
 ### NewsAgent
 
-- gebruikt Nederlandstalige RSS-feeds
+- gebruikt Nederlandstalige RSS-feeds uit `agents/news_sources.json`
 - filtert anderstalige berichten zo veel mogelijk weg
 - schrijft maximaal 50 artikelen naar `data/news.json`
 - toont geen volledige artikelen in BobOS
 
 ### SportAgent
 
-- schrijft `data/sport.json`
-- gebruikt nu maximaal 3 voorbeelditems voor de Sport-tegel
-- kan lokaal draaien met `python agents/sport_agent.py`
-- kan later worden gekoppeld aan echte Sport op TV-data
+- gebruikt OpenFootball, ESPN Scoreboard, OpenF1 en PDC
+- filtert op vandaag
+- rangschikt items inhoudelijk met `score`, `reason` en `must_watch`
+- geeft extra prioriteit aan Formule 1, darts, WK/topvoetbal en Manchester United
+- zet herhalingen en praatformats lager als die ooit in de feed terechtkomen
 
 ### DetectieAgent
 
-- schrijft voorbeelddata naar `data/detectie.json`
-- focust in v0.2 op maandagcondities
-- gebruikt nog geen weer-API of kaartanalyse
+- gebruikt Open-Meteo voor neerslag van de afgelopen 7 dagen
+- gebruikt Open-Meteo voor de verwachting van komende maandag
+- combineert dat met vaste kennisregels uit `agents/detectie_rules.json`
+- geeft zoekstrategie op landschapstype in plaats van geheime locaties
+- bouwt profielscores op voor `Steentijd`, `Romeins` en `Middeleeuws`
+- weegt ook seizoen en akker-toegankelijkheid mee
 
-### VissenAgent
+Toekomstige databronnen voor Detectie:
 
-- schrijft voorbeelddata naar `data/vissen.json`
-- focust in v0.2 op wind, luchtdruk en een korte conclusie
-- gebruikt nog geen weer-API
+- BoerenBunder / perceeldata voor geoogste akkers
+- boomgaarden / nieuwe aanplant
+- AHN / PDOK / stroomruggen
+
+Deze bronnen zijn nu alleen genoteerd en nog niet geïmplementeerd.
+
+### VisAgent
+
+- gebruikt Open-Meteo voor wind, luchtdruk, temperatuur, neerslag en CAPE
+- kijkt naar luchtdruktrend over ongeveer 48 uur
+- gebruikt vaste regels uit `agents/vissen_rules.json`
+- bouwt profielscores op voor `Roofvis`, `Meerval` en `Zee`
+- gebruikt seizoen, stabiliteit en visbaarheid als hoofdfactoren
+- gebruikt bewust nog geen maanstand voor standaard zoetwatervissen
 
 ## GitHub Actions
 
@@ -151,18 +162,13 @@ Elke workflow:
 
 Handmatig starten kan via:
 
-`GitHub Actions -> Run workflow`
-
-Voor Sport specifiek:
-
-`GitHub Actions -> SportAgent -> Run workflow`
+`GitHub -> Actions -> kies workflow -> Run workflow`
 
 ## Thema en versie
 
 BobOS start standaard in donker thema.
 
 - de themakeuze wordt lokaal opgeslagen in `localStorage`
-- het dashboard wisselt ook automatisch van logo per thema
 - het versienummer wordt centraal beheerd in `script.js`
 
 ## Lokaal testen

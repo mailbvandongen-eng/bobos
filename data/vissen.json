@@ -1,1 +1,76 @@
-{   "updated_at": "2026-07-06T11:02:40.730236Z",   "status": "Viskansen vandaag",   "items": [     {       "label": "Wind",       "value": "ZW 3 Bft"     },     {       "label": "Luchtdruk",       "value": "Stabiel"     },     {       "label": "Conclusie",       "value": "Redelijke avond"     }   ],   "url": "https://mailbvandongen-eng.github.io/visapp/" }
+{
+  "updated_at": "2026-07-06T21:07:46Z",
+  "status": "Visadvies vandaag",
+  "score": 5,
+  "items": [
+    {
+      "label": "Wind",
+      "value": "ZW 3 Bft"
+    },
+    {
+      "label": "Luchtdruk",
+      "value": "Stabiel"
+    },
+    {
+      "label": "Beste tijd",
+      "value": "Avond / nacht"
+    },
+    {
+      "label": "Tip",
+      "value": "Richt je op schemer en nacht als hoofdvenster."
+    }
+  ],
+  "details": [
+    "Zomer: avond en nacht zijn vaak de interessantste vensters, vooral voor roofvis en meerval.",
+    "Stabiele luchtdruk is meestal gunstig voor voorspelbaar zoetwatervissen.",
+    "Matige wind geeft vaak net genoeg golfslag voor actieve roofvis zonder dat het onrustig wordt.",
+    "Een grotendeels droge avond maakt langere sessies en actief zoeken makkelijker.",
+    "Luchtdruktrend over 48 uur: +0.0 hPa, schommeling circa 0.0 hPa.",
+    "Temperatuurtrend: +0.0 C; wind gemiddeld 18 km/u.",
+    "Vanmiddag naar vanavond wordt circa 0.0 mm neerslag verwacht; CAPE-piek rond 0 J/kg."
+  ],
+  "profiles": [
+    {
+      "name": "Roofvis",
+      "score": 5,
+      "advice": "Stabiele druk en structuurwater maken roofvis interessanter."
+    },
+    {
+      "name": "Meerval",
+      "score": 5,
+      "advice": "Warme zomeravond en nacht blijven de beste kans voor meerval."
+    },
+    {
+      "name": "Zee",
+      "score": 2,
+      "advice": "Nog geen getijdata gekoppeld; zee blijft voorlopig een voorzichtig profiel."
+    }
+  ],
+  "context": {
+    "reference_location": "Midden-Nederland",
+    "season": "zomer",
+    "season_label": "Zomer",
+    "pressure_state": "stabiele_druk",
+    "temperature_state": "stabiele_temperatuur",
+    "wind_state": "matige_wind",
+    "rain_state": "droge_avond",
+    "thunder_state": null,
+    "pressure_delta_48h_hpa": null,
+    "pressure_range_48h_hpa": null,
+    "temperature_delta_c": null,
+    "wind_avg_kmh": null,
+    "evening_precipitation_mm": null,
+    "max_cape_j_kg": null
+  },
+  "sources": [
+    {
+      "name": "Open-Meteo Forecast API",
+      "url": "https://open-meteo.com/en/docs"
+    },
+    {
+      "name": "Visregels",
+      "note": "agents/vissen_rules.json"
+    }
+  ],
+  "url": "https://mailbvandongen-eng.github.io/visapp/"
+}

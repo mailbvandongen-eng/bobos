@@ -22,7 +22,7 @@
   {
     "condition": "veel_regen",
     "slot": "detail",
-    "advice": "Door veel regen zijn lage kleigronden en slecht drainerende komgebieden minder aantrekkelijk."
+    "advice": "Door veel regen zijn lage kleigronden, komklei en slecht drainerende percelen minder aantrekkelijk."
   },
   {
     "condition": "veel_regen",
@@ -33,6 +33,21 @@
     "condition": "veel_regen",
     "slot": "detail",
     "advice": "Betuwe niet uitsluiten: hoge stroomruggen en oude oeverwallen kunnen juist goed zijn als ze droog genoeg blijven."
+  },
+  {
+    "condition": "veel_regen",
+    "slot": "profile_steentijd",
+    "advice": "Nat zand, dekzandruggen en rivierduinen zijn kansrijk voor steentijdmateriaal."
+  },
+  {
+    "condition": "veel_regen",
+    "slot": "profile_romeins",
+    "advice": "Hoge stroomruggen en oeverwallen blijven zoekbaar zolang ze niet dichtslibben of te nat worden."
+  },
+  {
+    "condition": "veel_regen",
+    "slot": "profile_middeleeuws",
+    "advice": "Kies alleen begaanbare akkers rond oude bewoning; lage klei liever nog even laten liggen."
   },
   {
     "condition": "natte_week",
@@ -70,6 +85,21 @@
     "advice": "Voor steentijdzoeken kan nat zand juist helpen door extra glans en contrast in het oppervlak."
   },
   {
+    "condition": "natte_week",
+    "slot": "profile_steentijd",
+    "advice": "Nat zand, dekzandruggen en rivierduinen zijn extra interessant door glans en contrast."
+  },
+  {
+    "condition": "natte_week",
+    "slot": "profile_romeins",
+    "advice": "Hoge stroomruggen en oeverwallen in het rivierengebied blijven interessant."
+  },
+  {
+    "condition": "natte_week",
+    "slot": "profile_middeleeuws",
+    "advice": "Akkers rond oude bewoning zijn pas echt goed als ze geoogst of goed begaanbaar zijn."
+  },
+  {
     "condition": "droge_week",
     "slot": "score",
     "value": 3
@@ -97,11 +127,71 @@
   {
     "condition": "droge_week",
     "slot": "detail",
-    "advice": "Keiharde droge klei blijft minder prettig voor signalen, prikken en graven."
+    "advice": "Droog zand geeft vaak minder contrast, terwijl keiharde klei minder prettig blijft voor signalen en graven."
   },
   {
     "condition": "droge_week",
     "slot": "detail",
     "advice": "Betuwe blijft interessant waar hoge stroomruggen, oude oeverwallen en droge akkerkoppen begaanbaar zijn."
+  },
+  {
+    "condition": "droge_week",
+    "slot": "profile_steentijd",
+    "advice": "Zoek hoger zand, maar verwacht minder glans en contrast dan na regen."
+  },
+  {
+    "condition": "droge_week",
+    "slot": "profile_romeins",
+    "advice": "Hogere oeverwallen en stroomruggen blijven bruikbaar zolang de klei niet te hard uitslaat."
+  },
+  {
+    "condition": "droge_week",
+    "slot": "profile_middeleeuws",
+    "advice": "Droge akkers rond oude bewoning kunnen beter bereikbaar zijn, mits de grond niet keihard is."
+  },
+  {
+    "condition": "season_zomer",
+    "slot": "detail",
+    "advice": "Zomer: veel velden staan nog vol; focus vooral op net geoogste graanpercelen zodra ze vrijkomen."
+  },
+  {
+    "condition": "season_zomer",
+    "slot": "detail",
+    "advice": "Mais, bieten en aardappels zijn meestal nog niet interessant; boomgaarden kunnen lokaal kansen bieden bij nieuwe aanplant of geroerde grond."
+  },
+  {
+    "condition": "season_zomer",
+    "slot": "field_access",
+    "advice": "Zoek naar pas vrijgekomen graanpercelen, oude akkerkoppen en geroerde boomgaardstroken."
+  },
+  {
+    "condition": "season_herfst",
+    "slot": "detail",
+    "advice": "Herfst: meer akkers komen vrij en dit is vaak een van de beste detectieperiodes van het jaar."
+  },
+  {
+    "condition": "season_herfst",
+    "slot": "field_access",
+    "advice": "Profiteer van vrijgekomen akkers, vooral op stroomruggen, oeverwallen en hoger zand."
+  },
+  {
+    "condition": "season_winter",
+    "slot": "detail",
+    "advice": "Winter: veel akkers liggen open, maar vooral klei kan zwaar en nat worden."
+  },
+  {
+    "condition": "season_winter",
+    "slot": "field_access",
+    "advice": "Kies percelen vooral op begaanbaarheid; hoger zand en ruggen zijn vaak betrouwbaarder dan natte klei."
+  },
+  {
+    "condition": "season_lente",
+    "slot": "detail",
+    "advice": "Lente: ingezaaide velden en jonge gewassen liever vermijden; zoek vooral vrijliggende of net geroerde stukken."
+  },
+  {
+    "condition": "season_lente",
+    "slot": "field_access",
+    "advice": "Blijf weg van ingezaaide akkers en kies alleen vrijliggende, geoogste of duidelijk geroerde percelen."
   }
 ]

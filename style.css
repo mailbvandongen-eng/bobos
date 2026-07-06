@@ -766,6 +766,10 @@ p {
     align-items: start;
 }
 
+.agent-mini-row--sport-ranked {
+    align-items: stretch;
+}
+
 .agent-mini-leading {
     color: var(--tile-accent);
     font-size: 0.95rem;
@@ -805,6 +809,20 @@ p {
     font-weight: 600;
 }
 
+.agent-mini-score {
+    color: var(--panel-accent);
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.agent-mini-reason {
+    color: var(--muted);
+    font-size: 0.84rem;
+    line-height: 1.46;
+    text-wrap: pretty;
+}
+
 .agent-tile--placeholder .agent-mini-row {
     min-height: 52px;
     grid-template-columns: 1fr;
@@ -842,6 +860,49 @@ p {
     height: 6px;
     border-radius: 999px;
     background: var(--panel-accent);
+}
+
+.agent-profile-list {
+    display: grid;
+    gap: 10px;
+}
+
+.agent-profile-item {
+    display: grid;
+    gap: 8px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--panel);
+}
+
+.agent-profile-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.agent-profile-name {
+    color: var(--text);
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.agent-profile-score {
+    color: var(--panel-accent);
+    font-size: 0.86rem;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.agent-profile-advice {
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.5;
+    text-wrap: pretty;
 }
 
 .app-footer {
