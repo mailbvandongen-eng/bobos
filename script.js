@@ -258,6 +258,7 @@ function buildSportPageModel(rawPayload, config) {
         status: String(payload.status || (items.length ? "Vandaag interessant" : "Geen sport gevonden voor vandaag")).trim(),
         score: null,
         scoreLabel: config.scoreLabel,
+        scoreMode: "default",
         itemMode: "sport",
         items,
         analysis: normalizeStringArray(payload.details, [
@@ -314,6 +315,7 @@ function buildDetectiePageModel(rawPayload, config) {
         status: String(payload.status || "Maandagadvies").trim(),
         score: clampScore(payload.score),
         scoreLabel: config.scoreLabel,
+        scoreMode: "default",
         itemMode: "condition",
         items,
         analysis: compactLines(
@@ -341,6 +343,10 @@ function buildVissenPageModel(rawPayload, config) {
     const items = normalizeConditionItems(payload.items);
     const profiles = normalizeProfileItems(payload.profiles);
     const context = isPlainObject(payload.context) ? payload.context : {};
+    const details = normalizeStringArray(payload.details);
+    const windItemValue = getConditionItemValue(items, "Wind");
+    const pressureItemValue = getConditionItemValue(items, "Luchtdruk");
+    const bestTime = getConditionItemValue(items, "Beste tijd");
     const windValue = safeNumber(context.wind_avg_kmh);
     const pressureValue = safeNumber(context.pressure_avg_hpa);
     const eveningPrecipitation = safeNumber(context.evening_precipitation_mm);
@@ -364,10 +370,11 @@ function buildVissenPageModel(rawPayload, config) {
         status: String(payload.status || "Visadvies vandaag").trim(),
         score: clampScore(payload.score),
         scoreLabel: config.scoreLabel,
+        scoreMode: "fish",
         itemMode: "condition",
         items,
         analysis: compactLines(
-            normalizeStringArray(payload.details),
+            details,
             [
                 ...(seasonLine ? [seasonLine] : []),
                 ...(trendLine ? [trendLine] : []),
@@ -381,6 +388,13 @@ function buildVissenPageModel(rawPayload, config) {
             "Tip": "Tip",
         }),
         profiles,
+        chart: buildFishingChartModel({
+            context,
+            details,
+            windItemValue,
+            pressureItemValue,
+            bestTime,
+        }),
         sources: sourceSummary,
         openUrl: String(payload.url || config.defaultOpenUrl).trim() || config.defaultOpenUrl,
         openLabel: config.defaultOpenLabel,
@@ -388,10 +402,187 @@ function buildVissenPageModel(rawPayload, config) {
     };
 }
 
+function getConditionItemValue(items, label) {
+    const match = normalizeConditionItems(items).find((item) => item.label.toLowerCase() === String(label || "").trim().toLowerCase());
+    return match ? match.value : "";
+}
+
+function buildFishingChartModel({ context, details, windItemValue, pressureItemValue, bestTime }) {
+    const windSpeed = safeNumber(context.wind_avg_kmh) ?? extractWindSpeedFromText(windItemValue);
+    const pressure = safeNumber(context.pressure_avg_hpa) ?? extractPressureFromText(pressureItemValue);
+    const precipitation = safeNumber(context.evening_precipitation_mm) ?? extractPrecipitationFromDetails(details);
+    const temperature = safeNumber(context.evening_temperature_c);
+    const directionDegrees = safeNumber(context.wind_direction_deg);
+    const directionLabel = String(context.wind_direction_label || "").trim() || extractWindDirectionLabel(windItemValue) || degreesToWindLabel(directionDegrees);
+    const safeDirectionDegrees = directionDegrees ?? windLabelToDegrees(directionLabel);
+    const metrics = [];
+
+    if (pressure !== null) {
+        metrics.push({
+            label: "Luchtdruk",
+            value: `${pressure.toFixed(0)} hPa`,
+            ratio: normalizeMetricValue(pressure, 995, 1035),
+        });
+    }
+
+    if (windSpeed !== null) {
+        metrics.push({
+            label: "Wind",
+            value: `${windSpeed.toFixed(0)} km/u`,
+            ratio: normalizeMetricValue(windSpeed, 0, 40),
+        });
+    }
+
+    if (precipitation !== null) {
+        metrics.push({
+            label: "Neerslag",
+            value: `${precipitation.toFixed(1)} mm`,
+            ratio: normalizeMetricValue(precipitation, 0, 8),
+        });
+    }
+
+    if (temperature !== null) {
+        metrics.push({
+            label: "Temp",
+            value: `${temperature.toFixed(0)} C`,
+            ratio: normalizeMetricValue(temperature, 8, 28),
+        });
+    }
+
+    if (!metrics.length && !directionLabel && !bestTime) {
+        return null;
+    }
+
+    return {
+        metrics,
+        directionLabel: directionLabel || "Onbekend",
+        directionDegrees: safeDirectionDegrees ?? 0,
+        bestTime: String(bestTime || "").trim(),
+    };
+}
+
+function extractNumericMatch(text, pattern) {
+    const match = String(text || "").match(pattern);
+    if (!match) {
+        return null;
+    }
+
+    const normalized = match[1].replace(",", ".");
+    const parsed = Number(normalized);
+    return Number.isFinite(parsed) ? parsed : null;
+}
+
+function extractWindSpeedFromText(text) {
+    const directValue = extractNumericMatch(text, /(\d+(?:[.,]\d+)?)\s*km\/u/i);
+    if (directValue !== null) {
+        return directValue;
+    }
+
+    const bftValue = extractNumericMatch(text, /(\d+(?:[.,]\d+)?)\s*Bft/i);
+    if (bftValue === null) {
+        return null;
+    }
+
+    return beaufortToApproxKmh(bftValue);
+}
+
+function extractPressureFromText(text) {
+    return extractNumericMatch(text, /(\d+(?:[.,]\d+)?)\s*hPa/i);
+}
+
+function extractPrecipitationFromDetails(details) {
+    for (const detail of normalizeStringArray(details)) {
+        const directMatch = extractNumericMatch(detail, /(\d+(?:[.,]\d+)?)\s*mm\s*neerslag/i);
+        if (directMatch !== null) {
+            return directMatch;
+        }
+    }
+
+    return null;
+}
+
+function extractWindDirectionLabel(text) {
+    const match = String(text || "").trim().match(/\b(NNO|ONO|ZZO|WZW|WNW|NNW|OZO|ZZW|NO|ZO|ZW|NW|N|O|Z|W)\b/i);
+    return match ? match[1].toUpperCase() : "";
+}
+
+function normalizeMetricValue(value, min, max) {
+    if (!Number.isFinite(value)) {
+        return 0;
+    }
+
+    const normalized = (value - min) / (max - min);
+    return Math.max(0.08, Math.min(1, normalized));
+}
+
+function beaufortToApproxKmh(bftValue) {
+    const table = [0, 3, 8, 15, 24, 34, 45, 56, 68, 82, 96, 110, 125];
+    const safeIndex = Math.max(0, Math.min(table.length - 1, Math.round(bftValue)));
+    return table[safeIndex];
+}
+
+function degreesToWindLabel(degrees) {
+    if (!Number.isFinite(degrees)) {
+        return "";
+    }
+
+    const labels = ["N", "NO", "O", "ZO", "Z", "ZW", "W", "NW"];
+    const normalized = ((degrees % 360) + 360) % 360;
+    const index = Math.round(normalized / 45) % labels.length;
+    return labels[index];
+}
+
+function windLabelToDegrees(label) {
+    const mapping = {
+        N: 0,
+        NNO: 22.5,
+        NO: 45,
+        ONO: 67.5,
+        O: 90,
+        OZO: 112.5,
+        ZO: 135,
+        ZZO: 157.5,
+        Z: 180,
+        ZZW: 202.5,
+        ZW: 225,
+        WZW: 247.5,
+        W: 270,
+        WNW: 292.5,
+        NW: 315,
+        NNW: 337.5,
+    };
+
+    return Object.prototype.hasOwnProperty.call(mapping, label) ? mapping[label] : null;
+}
+
+function scoreToFishUnits(score) {
+    const normalized = clampScore(score) ?? 1;
+    const mapping = {
+        1: 0,
+        2: 0.5,
+        3: 1,
+        4: 1.5,
+        5: 3,
+    };
+
+    return mapping[normalized] ?? 0;
+}
+
+function formatFishUnitsLabel(units) {
+    if (units <= 0) {
+        return "Visgraat";
+    }
+
+    const display = Number.isInteger(units) ? `${units}` : `${String(units).replace(".", ",")}`;
+    return `${display} vis${units === 1 ? "" : "jes"}`;
+}
+
 function renderAgentPage(panel, model, config) {
     const statusNode = panel.querySelector("[data-agent-status]");
     const scoreNode = panel.querySelector("[data-agent-score]");
     const itemsNode = panel.querySelector("[data-agent-items]");
+    const chartNode = panel.querySelector("[data-agent-chart]");
+    const chartCard = panel.querySelector("[data-agent-chart-card]");
     const analysisNode = panel.querySelector("[data-agent-analysis]");
     const adviceNode = panel.querySelector("[data-agent-advice]");
     const profilesNode = panel.querySelector("[data-agent-profiles]");
@@ -400,18 +591,10 @@ function renderAgentPage(panel, model, config) {
     const openLabel = panel.querySelector("[data-agent-open-label]");
 
     if (statusNode) {
-        statusNode.textContent = `Status: ${model.status}`;
+        statusNode.textContent = model.status;
     }
 
-    if (scoreNode) {
-        if (Number.isFinite(model.score) && model.score > 0 && model.scoreLabel) {
-            scoreNode.hidden = false;
-            scoreNode.textContent = `${model.scoreLabel}: ${Math.round(model.score)}/5`;
-        } else {
-            scoreNode.hidden = true;
-            scoreNode.textContent = "";
-        }
-    }
+    renderAgentScore(scoreNode, model);
 
     if (itemsNode) {
         if (model.itemMode === "news" && panel.dataset.agentKey === "news") {
@@ -420,6 +603,8 @@ function renderAgentPage(panel, model, config) {
             renderAgentItems(itemsNode, model);
         }
     }
+
+    renderAgentChart(chartCard, chartNode, model);
 
     if (analysisNode) {
         renderLineBlock(analysisNode, model.analysis, "Nog geen analyse beschikbaar.");
@@ -459,6 +644,8 @@ function renderAgentPageError(panel, agentKey, config) {
     const statusNode = panel.querySelector("[data-agent-status]");
     const scoreNode = panel.querySelector("[data-agent-score]");
     const itemsNode = panel.querySelector("[data-agent-items]");
+    const chartNode = panel.querySelector("[data-agent-chart]");
+    const chartCard = panel.querySelector("[data-agent-chart-card]");
     const analysisNode = panel.querySelector("[data-agent-analysis]");
     const adviceNode = panel.querySelector("[data-agent-advice]");
     const profilesNode = panel.querySelector("[data-agent-profiles]");
@@ -469,16 +656,24 @@ function renderAgentPageError(panel, agentKey, config) {
     resetNewsExplorer(panel);
 
     if (statusNode) {
-        statusNode.textContent = "Status: Data tijdelijk niet beschikbaar";
+        statusNode.textContent = "Data tijdelijk niet beschikbaar";
     }
 
     if (scoreNode) {
         scoreNode.hidden = true;
-        scoreNode.textContent = "";
+        scoreNode.innerHTML = "";
     }
 
     if (itemsNode) {
         renderStatus(itemsNode, "Nog geen actuele data beschikbaar.");
+    }
+
+    if (chartCard) {
+        chartCard.hidden = true;
+    }
+
+    if (chartNode) {
+        chartNode.innerHTML = "";
     }
 
     if (analysisNode) {
@@ -524,6 +719,46 @@ function renderAgentPageError(panel, agentKey, config) {
     }
 }
 
+function renderAgentScore(container, model) {
+    if (!container) {
+        return;
+    }
+
+    const score = clampScore(model.score);
+    if (!score || !model.scoreLabel) {
+        container.hidden = true;
+        container.innerHTML = "";
+        return;
+    }
+
+    container.hidden = false;
+    container.innerHTML = "";
+
+    if (model.scoreMode === "fish") {
+        container.appendChild(createFishScoreDisplay(model.scoreLabel, score));
+        replaceIcons();
+        return;
+    }
+
+    container.textContent = `${model.scoreLabel}: ${score}/5`;
+}
+
+function renderAgentChart(card, container, model) {
+    if (!card || !container) {
+        return;
+    }
+
+    if (!model.chart) {
+        card.hidden = true;
+        container.innerHTML = "";
+        return;
+    }
+
+    card.hidden = false;
+    container.innerHTML = "";
+    container.appendChild(createFishingChart(model.chart));
+}
+
 function renderAgentItems(container, model) {
     container.innerHTML = "";
 
@@ -566,6 +801,115 @@ function renderAgentItems(container, model) {
     }
 
     container.appendChild(createConditionMiniList({ items: conditionItems }));
+}
+
+function createFishScoreDisplay(label, score) {
+    const wrapper = document.createElement("div");
+    wrapper.className = "agent-score-row";
+
+    const scoreText = document.createElement("span");
+    scoreText.textContent = `${label}: ${score}/5`;
+
+    const fishBlock = document.createElement("span");
+    fishBlock.className = "agent-score-fish";
+
+    const units = scoreToFishUnits(score);
+    const fishLabel = document.createElement("span");
+    fishLabel.className = "agent-score-fish-label";
+    fishLabel.textContent = units <= 0 ? "Slecht" : formatFishUnitsLabel(units);
+
+    const fishRating = document.createElement("span");
+    fishRating.className = "fish-rating";
+
+    if (units <= 0) {
+        fishRating.classList.add("fish-rating--empty");
+        const emptyText = document.createElement("span");
+        emptyText.className = "fish-rating-text";
+        emptyText.textContent = "visgraat";
+        fishRating.appendChild(emptyText);
+    } else {
+        for (let index = 0; index < 3; index += 1) {
+            const slot = document.createElement("span");
+            slot.className = "fish-rating-slot";
+            const remaining = units - index;
+
+            if (remaining >= 1) {
+                slot.classList.add("is-filled");
+            } else if (remaining >= 0.5) {
+                slot.classList.add("is-half");
+            }
+
+            const icon = document.createElement("i");
+            icon.dataset.lucide = "fish";
+            slot.appendChild(icon);
+            fishRating.appendChild(slot);
+        }
+    }
+
+    fishBlock.append(fishLabel, fishRating);
+    wrapper.append(scoreText, fishBlock);
+    return wrapper;
+}
+
+function createFishingChart(chart) {
+    const wrapper = document.createElement("div");
+    wrapper.className = "fish-chart";
+
+    const metricsGrid = document.createElement("div");
+    metricsGrid.className = "fish-chart-grid";
+
+    normalizeArray(chart.metrics).forEach((metric) => {
+        const metricNode = document.createElement("div");
+        metricNode.className = "fish-chart-metric";
+
+        const meta = document.createElement("div");
+        meta.className = "fish-chart-meta";
+
+        const label = document.createElement("span");
+        label.className = "fish-chart-label";
+        label.textContent = metric.label;
+
+        const value = document.createElement("span");
+        value.className = "fish-chart-value";
+        value.textContent = metric.value;
+
+        const bar = document.createElement("div");
+        bar.className = "fish-chart-bar";
+
+        const fill = document.createElement("span");
+        fill.style.width = `${Math.round((Number(metric.ratio) || 0) * 100)}%`;
+        bar.appendChild(fill);
+
+        meta.append(label, value);
+        metricNode.append(meta, bar);
+        metricsGrid.appendChild(metricNode);
+    });
+
+    wrapper.appendChild(metricsGrid);
+
+    const compass = document.createElement("div");
+    compass.className = "fish-chart-compass";
+
+    const compassRing = document.createElement("span");
+    compassRing.className = "fish-chart-compass-ring";
+    compassRing.style.setProperty("--wind-angle", `${Number(chart.directionDegrees) || 0}deg`);
+
+    const compassValue = document.createElement("span");
+    compassValue.className = "fish-chart-value";
+    compassValue.textContent = `Windrichting ${chart.directionLabel || "Onbekend"}`;
+
+    compass.append(compassRing, compassValue);
+    wrapper.appendChild(compass);
+
+    if (chart.bestTime) {
+        const context = document.createElement("p");
+        context.className = "fish-chart-context";
+        context.textContent = `Beste tijd: ${chart.bestTime}.`;
+        wrapper.appendChild(context);
+    }
+
+    replaceIcons();
+    return wrapper;
 }
 
 function renderNewsExplorer(panel, container, model) {

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import math
 import re
 from dataclasses import dataclass
 from datetime import date, datetime, time, timedelta, timezone
@@ -47,6 +48,7 @@ class WeatherPoint:
 
     timestamp: datetime
     wind_speed_kmh: float
+    wind_direction_deg: float
     pressure_hpa: float
     temperature_c: float
     precipitation_mm: float
@@ -149,6 +151,7 @@ def fetch_weather_points(start_date: date, end_date: date) -> list[WeatherPoint]
             "wind_speed_unit": "kmh",
             "hourly": [
                 "wind_speed_10m",
+                "wind_direction_10m",
                 "pressure_msl",
                 "temperature_2m",
                 "precipitation",
@@ -162,27 +165,30 @@ def fetch_weather_points(start_date: date, end_date: date) -> list[WeatherPoint]
     hourly = payload.get("hourly") if isinstance(payload, dict) else {}
     times = hourly.get("time") if isinstance(hourly, dict) else []
     wind_values = hourly.get("wind_speed_10m") if isinstance(hourly, dict) else []
+    direction_values = hourly.get("wind_direction_10m") if isinstance(hourly, dict) else []
     pressure_values = hourly.get("pressure_msl") if isinstance(hourly, dict) else []
     temperature_values = hourly.get("temperature_2m") if isinstance(hourly, dict) else []
     precipitation_values = hourly.get("precipitation") if isinstance(hourly, dict) else []
     cape_values = hourly.get("cape") if isinstance(hourly, dict) else []
 
     points: list[WeatherPoint] = []
-    for raw_time, raw_wind, raw_pressure, raw_temp, raw_precip, raw_cape in zip(
+    for raw_time, raw_wind, raw_direction, raw_pressure, raw_temp, raw_precip, raw_cape in zip(
         times or [],
         wind_values or [],
+        direction_values or [],
         pressure_values or [],
         temperature_values or [],
         precipitation_values or [],
         cape_values or [],
     ):
         wind_speed_kmh = to_float(raw_wind)
+        wind_direction_deg = to_float(raw_direction)
         pressure_hpa = to_float(raw_pressure)
         temperature_c = to_float(raw_temp)
         precipitation_mm = to_float(raw_precip)
         cape_j_kg = to_float(raw_cape)
 
-        if None in (wind_speed_kmh, pressure_hpa, temperature_c, precipitation_mm, cape_j_kg):
+        if None in (wind_speed_kmh, wind_direction_deg, pressure_hpa, temperature_c, precipitation_mm, cape_j_kg):
             continue
 
         try:
@@ -194,6 +200,7 @@ def fetch_weather_points(start_date: date, end_date: date) -> list[WeatherPoint]
             WeatherPoint(
                 timestamp=timestamp.replace(tzinfo=TIMEZONE),
                 wind_speed_kmh=float(wind_speed_kmh),
+                wind_direction_deg=float(wind_direction_deg),
                 pressure_hpa=float(pressure_hpa),
                 temperature_c=float(temperature_c),
                 precipitation_mm=float(precipitation_mm),
@@ -234,6 +241,22 @@ def average_value(points: list[WeatherPoint], field_name: str) -> float | None:
     return float(mean(values))
 
 
+def average_wind_direction(points: list[WeatherPoint]) -> float | None:
+    """Bepaal gemiddelde windrichting met vectoren."""
+    directions = [math.radians(point.wind_direction_deg) for point in points]
+    if not directions:
+        return None
+
+    x_component = mean(math.cos(value) for value in directions)
+    y_component = mean(math.sin(value) for value in directions)
+
+    if x_component == 0 and y_component == 0:
+        return None
+
+    angle = math.degrees(math.atan2(y_component, x_component))
+    return round((angle + 360) % 360, 1)
+
+
 def total_precipitation(points: list[WeatherPoint]) -> float:
     """Tel neerslag in een puntreeks op."""
     return round(sum(point.precipitation_mm for point in points), 1)
@@ -254,6 +277,21 @@ def bft_from_kmh(wind_speed_kmh: float) -> int:
         if wind_speed_kmh <= threshold:
             return index
     return 12
+
+
+def wind_label_from_degrees(wind_direction_deg: float | None) -> str:
+    """Zet graden om naar korte windstreek."""
+    if wind_direction_deg is None:
+        return "Onbekend"
+
+    labels = [
+        "N", "NNO", "NO", "ONO",
+        "O", "OZO", "ZO", "ZZO",
+        "Z", "ZZW", "ZW", "WZW",
+        "W", "WNW", "NW", "NNW",
+    ]
+    index = int(((wind_direction_deg % 360) + 11.25) // 22.5) % len(labels)
+    return labels[index]
 
 
 def wind_condition(wind_speed_kmh: float) -> str:
@@ -593,9 +631,19 @@ def migrate_existing_payload(payload: Any) -> dict[str, Any] | None:
     wind_text = item_map.get("Wind", "ZW 3 Bft")
     pressure_text = item_map.get("Luchtdruk", "Stabiel")
     best_time = item_map.get("Beste tijd", season_best_time(season_key, "droge_avond", None))
+    pressure_match = re.search(r"(\d+(?:[.,]\d+)?)\s*hPa", pressure_text, flags=re.IGNORECASE)
+    pressure_avg_hpa = float(pressure_match.group(1).replace(",", ".")) if pressure_match else None
 
     bft = extract_bft(wind_text) or 3
     wind_state = "harde_wind" if bft >= 6 else "matige_wind"
+    wind_direction_label = re.search(r"\b(NNO|ONO|ZZO|WZW|WNW|NNW|OZO|ZZW|NO|ZO|ZW|NW|N|O|Z|W)\b", wind_text, flags=re.IGNORECASE)
+    normalized_direction = wind_direction_label.group(1).upper() if wind_direction_label else "ZW"
+    direction_map = {
+        "N": 0.0, "NNO": 22.5, "NO": 45.0, "ONO": 67.5,
+        "O": 90.0, "OZO": 112.5, "ZO": 135.0, "ZZO": 157.5,
+        "Z": 180.0, "ZZW": 202.5, "ZW": 225.0, "WZW": 247.5,
+        "W": 270.0, "WNW": 292.5, "NW": 315.0, "NNW": 337.5,
+    }
     normalized_pressure = pressure_text.lower()
     if "dalend" in normalized_pressure:
         pressure_state = "dalende_druk"
@@ -673,9 +721,13 @@ def migrate_existing_payload(payload: Any) -> dict[str, Any] | None:
             "pressure_delta_48h_hpa": None,
             "pressure_range_48h_hpa": None,
             "temperature_delta_c": None,
-            "wind_avg_kmh": None,
-            "evening_precipitation_mm": None,
-            "max_cape_j_kg": None,
+            "wind_avg_kmh": 18.0,
+            "wind_direction_deg": direction_map.get(normalized_direction, 225.0),
+            "wind_direction_label": normalized_direction,
+            "pressure_avg_hpa": pressure_avg_hpa,
+            "evening_precipitation_mm": 0.0,
+            "evening_temperature_c": None,
+            "max_cape_j_kg": 0.0,
         },
         "sources": [
             {"name": "Open-Meteo Forecast API", "url": OPEN_METEO_DOCS_URL},
@@ -714,6 +766,7 @@ def build_advice() -> VisAdvice:
     temperature_delta_c = round(recent_temp - previous_temp, 1)
 
     wind_avg_kmh = average_value(active_window, "wind_speed_kmh") or 0.0
+    wind_direction_deg = average_wind_direction(active_window)
     pressure_avg_hpa = average_value(active_window, "pressure_hpa") or 0.0
     evening_precip_mm = total_precipitation(evening_points or active_window)
     max_cape_j_kg = maximum_value(active_window, "cape_j_kg") or 0.0
@@ -781,6 +834,8 @@ def build_advice() -> VisAdvice:
             "pressure_range_48h_hpa": round(pressure_range, 1),
             "temperature_delta_c": temperature_delta_c,
             "wind_avg_kmh": round(wind_avg_kmh, 1),
+            "wind_direction_deg": wind_direction_deg,
+            "wind_direction_label": wind_label_from_degrees(wind_direction_deg),
             "pressure_avg_hpa": round(pressure_avg_hpa, 1),
             "evening_precipitation_mm": evening_precip_mm,
             "evening_temperature_c": round(evening_temperature_c, 1),
@@ -814,6 +869,10 @@ def build_fallback_payload(error: Exception) -> dict[str, Any]:
             {"name": "Open-Meteo Forecast API", "url": OPEN_METEO_DOCS_URL},
             {"name": "Visregels", "note": "Lokaal kennisbestand"},
         ],
+        "context": {
+            "reference_location": REFERENCE_LOCATION["label"],
+            "wind_direction_label": "Onbekend",
+        },
         "url": VISSEN_URL,
     }
 
