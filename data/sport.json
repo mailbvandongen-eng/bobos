@@ -1,1 +1,114 @@
-{   "updated_at": "2026-07-06T09:35:17Z",   "status": "Sport op TV vandaag",   "items": [     {       "time": "03:00",       "title": "Mexico - England",       "category": "WK",       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"     },     {       "time": "21:00",       "title": "Portugal - Spain",       "category": "WK",       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"     }   ],   "url": "https://mailbvandongen-eng.github.io/sport-op-tv/" }
+{
+  "updated_at": "2026-07-06T17:44:30Z",
+  "status": "Sport op TV vandaag",
+  "items": [
+    {
+      "time": "03:00",
+      "title": "Mexico - England",
+      "category": "WK",
+      "source": "ESPN (WK)",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "14:04",
+      "title": "{'participantID': '876', 'firstName': 'Stephen', 'lastName': 'Bunting', 'nickname': 'The Bullet', 'countryCode': 'GB-ENG', 'media': {'image': '782f1b70-f21a-11f0-8e4e-4b7ed58fd19c.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36640', 'firstName': 'Beau', 'lastName': 'Greaves', 'nickname': 'Beau & Arrow', 'countryCode': 'GB-ENG', 'media': {'image': '63a3fbe0-f2e1-11f0-b0b9-318ff8bc1aee.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 23",
+      "source": "PDC",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "14:06",
+      "title": "{'participantID': '22', 'firstName': 'James', 'lastName': 'Wade', 'nickname': 'The Machine', 'countryCode': 'GB-ENG', 'media': {'image': 'f5e0ce10-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '4', 'firstName': 'Gary', 'lastName': 'Anderson', 'nickname': 'Flying Scotsman', 'countryCode': 'GB-SCT', 'media': {'image': 'f5b948e0-f233-11f0-8720-17283098ea9c.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 23",
+      "source": "PDC",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "14:26",
+      "title": "{'participantID': '31028', 'firstName': 'Ritchie', 'lastName': 'Edhouse', 'nickname': 'Madhouse', 'countryCode': 'GB-ENG', 'media': {'image': 'f5c41e50-f233-11f0-9271-c5de74c014fe.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32951', 'firstName': 'Shane', 'lastName': 'McGuirk', 'nickname': 'The Arrow', 'countryCode': 'IE', 'media': {'image': 'd5aec490-1181-11f1-8fc6-1d2a36a04b0d.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 23",
+      "source": "PDC",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "14:29",
+      "title": "{'participantID': '33070', 'firstName': 'Marvin', 'lastName': 'van Velzen', 'nickname': 'Terminator', 'countryCode': 'NL', 'media': {'image': 'ae6968f0-f312-11f0-8c4a-b954b434431a.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36368', 'firstName': 'Dennie', 'lastName': 'Olde Kalter', 'nickname': None, 'countryCode': 'NL', 'media': {'image': '643bf620-f2e1-11f0-b0b9-318ff8bc1aee.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 23",
+      "source": "PDC",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "14:47",
+      "title": "{'participantID': '142', 'firstName': 'Dave', 'lastName': 'Chisnall', 'nickname': 'Chizzy', 'countryCode': 'GB-ENG', 'media': {'image': 'f58e8f60-f233-11f0-8f68-e98be9e2ec48.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '43829', 'firstName': 'Tom', 'lastName': 'Bissell', 'nickname': 'Business', 'countryCode': 'GB-ENG', 'media': {'image': '643d2ea0-f2e1-11f0-a505-190ffc5459ee.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 23",
+      "source": "PDC",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "14:57",
+      "title": "{'participantID': '153', 'firstName': 'William', 'lastName': \"O'Connor\", 'nickname': 'The Magpie', 'countryCode': 'IE', 'media': {'image': 'f5eb0740-f233-11f0-ad9a-4f9b38b63926.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '139', 'firstName': 'Peter', 'lastName': 'Wright', 'nickname': 'Snakebite', 'countryCode': 'GB-SCT', 'media': {'image': '1e2e1630-2c62-11f1-8069-ed1f94464a0f.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 23",
+      "source": "PDC",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "15:16",
+      "title": "{'participantID': '32526', 'firstName': 'Niall', 'lastName': 'Culleton', 'nickname': 'Cully', 'countryCode': 'IE', 'media': {'image': '76839cb0-2c62-11f1-8069-ed1f94464a0f.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '35168', 'firstName': 'Adam', 'lastName': 'Gawlas', 'nickname': 'Flawlas', 'countryCode': 'CZ', 'media': {'image': '6360b150-f2e1-11f0-b0b9-318ff8bc1aee.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 23",
+      "source": "PDC",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "15:29",
+      "title": "{'participantID': '104', 'firstName': 'Michael', 'lastName': 'Smith', 'nickname': 'Bully Boy', 'countryCode': 'GB-ENG', 'media': {'image': 'f657f9e0-f233-11f0-b80f-217d371c8b79.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32612', 'firstName': 'Tommy', 'lastName': 'Lishman', 'nickname': None, 'countryCode': 'GB-ENG'}",
+      "category": "2026 Players Championship 23",
+      "source": "PDC",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "15:48",
+      "title": "{'participantID': '38552', 'firstName': 'Josh', 'lastName': 'Rock', 'nickname': 'Rocky', 'countryCode': 'GB-NIR', 'media': {'image': 'f5db4fd0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '317', 'firstName': 'Raymond', 'lastName': 'van Barneveld', 'nickname': 'Barney', 'countryCode': 'NL', 'media': {'image': 'f5c92760-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 23",
+      "source": "PDC",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "15:54",
+      "title": "{'participantID': '32956', 'firstName': 'Wessel', 'lastName': 'Nijman', 'nickname': '', 'countryCode': 'NL', 'media': {'image': 'f5add730-f233-11f0-be26-73a99dbbe585.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33998', 'firstName': 'Jeffrey', 'lastName': 'Sparidaans', 'nickname': 'Jefke', 'countryCode': 'NL', 'media': {'image': '17f49c80-2c62-11f1-b590-8bde8bea5f9f.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 23",
+      "source": "PDC",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:06",
+      "title": "{'participantID': '81', 'firstName': 'Joe', 'lastName': 'Cullen', 'nickname': 'The Rockstar', 'countryCode': 'GB-ENG', 'media': {'image': 'f517ffd0-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '581', 'firstName': 'Jack', 'lastName': 'Tweddell', 'nickname': '', 'countryCode': 'GB-ENG'}",
+      "category": "2026 Players Championship 23",
+      "source": "PDC",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    }
+  ],
+  "details": [
+    "12 sportitem(s) gevonden voor vandaag.",
+    "Categorieen vandaag: 2026 Players Championship 23, WK.",
+    "Alleen voetbal, darts en Formule 1 worden meegenomen in BobOS."
+  ],
+  "sources": [
+    {
+      "name": "OpenFootball",
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26"
+    },
+    {
+      "name": "ESPN Scoreboard",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer"
+    },
+    {
+      "name": "OpenF1",
+      "url": "https://api.openf1.org/v1"
+    },
+    {
+      "name": "PDC Fixtures",
+      "url": "https://fixtures.darts.web.gc.pdcservices.co.uk/v2?page.size=500"
+    }
+  ],
+  "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+}
