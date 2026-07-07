@@ -1,7 +1,77 @@
 {
-  "updated_at": "2026-07-07T08:49:14Z",
+  "updated_at": "2026-07-07T17:15:29Z",
   "status": "Vandaag interessant",
   "items": [
+    {
+      "time": "14:02",
+      "title": "{'participantID': '156', 'firstName': 'Kim', 'lastName': 'Huybrechts', 'nickname': 'The Hurricane', 'countryCode': 'BE', 'media': {'image': 'f56b01d0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33998', 'firstName': 'Jeffrey', 'lastName': 'Sparidaans', 'nickname': 'Jefke', 'countryCode': 'NL', 'media': {'image': '17f49c80-2c62-11f1-b590-8bde8bea5f9f.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 24",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "14:29",
+      "title": "{'participantID': '36373', 'firstName': 'James', 'lastName': 'Hurrell', 'nickname': 'Hillbilly', 'countryCode': 'GB-ENG', 'media': {'image': '3b90f990-2c62-11f1-8069-ed1f94464a0f.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '139', 'firstName': 'Peter', 'lastName': 'Wright', 'nickname': 'Snakebite', 'countryCode': 'GB-SCT', 'media': {'image': '1e2e1630-2c62-11f1-8069-ed1f94464a0f.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 24",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "14:46",
+      "title": "{'participantID': '32895', 'firstName': 'Kevin', 'lastName': 'Doets', 'nickname': 'Hawk Eye', 'countryCode': 'NL', 'media': {'image': 'f50ae070-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '30992', 'firstName': 'Tytus', 'lastName': 'Kanik', 'nickname': 'Tito', 'countryCode': 'PL', 'media': {'image': '6431e400-f2e1-11f0-a1a8-890a8a4f9ed0.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 24",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "darts en WK-voetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "15:07",
+      "title": "{'participantID': '76', 'firstName': 'Ian', 'lastName': 'White', 'nickname': 'Diamond', 'countryCode': 'GB-ENG', 'media': {'image': 'f58da500-f233-11f0-916f-9317f3943d29.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32846', 'firstName': 'David', 'lastName': 'Sharp', 'nickname': 'Razor', 'countryCode': 'GB-SCT', 'media': {'image': '18187830-2c62-11f1-8b41-1bc10bd101a4.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 24",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "15:16",
+      "title": "{'participantID': '271', 'firstName': 'Ricky', 'lastName': 'Evans', 'nickname': 'Rapid', 'countryCode': 'GB-ENG', 'media': {'image': '1663ea60-2c62-11f1-8996-1f54684de03c.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33558', 'firstName': 'Joe', 'lastName': 'Hunt', 'nickname': 'Joe Boy', 'countryCode': 'GB-ENG'}",
+      "category": "2026 Players Championship 24",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:08",
+      "title": "{'participantID': '38552', 'firstName': 'Josh', 'lastName': 'Rock', 'nickname': 'Rocky', 'countryCode': 'GB-NIR', 'media': {'image': 'f5db4fd0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33598', 'firstName': 'Darryl', 'lastName': 'Pilgrim', 'nickname': 'Mr P', 'countryCode': 'GB-ENG', 'media': {'image': 'ea1376b0-2c61-11f1-8996-1f54684de03c.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 24",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "17:32",
+      "title": "{'participantID': '668', 'firstName': 'Jeffrey', 'lastName': 'De Zwaan', 'nickname': 'The Black Cobra', 'countryCode': 'NL', 'media': {'image': '183a5810-2c62-11f1-a92a-33f1adb513f9.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33091', 'firstName': 'Gian', 'lastName': 'van Veen', 'nickname': 'The Giant', 'countryCode': 'NL', 'media': {'image': 'f5b2b930-f233-11f0-9c7f-3f5eeb7c3f65.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 24",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
     {
       "time": "02:00",
       "title": "USA - Belgium",
@@ -13,30 +83,50 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "18:00",
-      "title": "Argentina - Egypt",
-      "category": "WK",
-      "source": "ESPN (WK)",
+      "time": "14:02",
+      "title": "{'participantID': '19', 'firstName': 'Michael', 'lastName': 'van Gerwen', 'nickname': 'Mighty Mike', 'countryCode': 'NL', 'media': {'image': 'f62e2ac0-f233-11f0-b992-c9679735a32e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '43829', 'firstName': 'Tom', 'lastName': 'Bissell', 'nickname': 'Business', 'countryCode': 'GB-ENG', 'media': {'image': '643d2ea0-f2e1-11f0-a505-190ffc5459ee.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 24",
+      "source": "PDC",
       "score": 4,
       "must_watch": false,
-      "reason": "WK-voetbal",
+      "reason": "darts",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "22:00",
-      "title": "Switzerland - Colombia",
-      "category": "WK",
-      "source": "ESPN (WK)",
+      "time": "14:24",
+      "title": "{'participantID': '11156', 'firstName': 'Gabriel', 'lastName': 'Clemens', 'nickname': 'German Giant', 'countryCode': 'DE', 'media': {'image': 'f4b398b0-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32497', 'firstName': 'Thomas', 'lastName': 'Lovely', 'nickname': 'Simply', 'countryCode': 'GB-ENG', 'media': {'image': '64cd60b0-f2e1-11f0-a798-91ff7fdabd0d.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 24",
+      "source": "PDC",
       "score": 4,
       "must_watch": false,
-      "reason": "WK-voetbal",
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "14:55",
+      "title": "{'participantID': '30844', 'firstName': 'Jermaine', 'lastName': 'Wattimena', 'nickname': 'The Machine Gun', 'countryCode': 'NL', 'media': {'image': 'f63ef3a0-f233-11f0-8a3d-fdaf0a5c6112.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33144', 'firstName': 'Keane', 'lastName': 'Barry', 'nickname': 'Dynamite', 'countryCode': 'IE', 'media': {'image': 'f5945bc0-f233-11f0-ac11-834d30e1892a.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 24",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "15:49",
+      "title": "{'participantID': '142', 'firstName': 'Dave', 'lastName': 'Chisnall', 'nickname': 'Chizzy', 'countryCode': 'GB-ENG', 'media': {'image': 'f58e8f60-f233-11f0-8f68-e98be9e2ec48.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36712', 'firstName': 'Scott', 'lastName': 'Williams', 'nickname': 'Shaggy', 'countryCode': 'GB-ENG', 'media': {'image': 'f5f2cf70-f233-11f0-a1f6-49664dee8666.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 24",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     }
   ],
   "details": [
-    "Topkeuze vandaag: USA - Belgium (4/5) door wk-voetbal.",
-    "0 must-see item(s) en 3 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: WK.",
+    "Topkeuze vandaag: {'participantID': '156', 'firstName': 'Kim', 'lastName': 'Huybrechts', 'nickname': 'The Hurricane', 'countryCode': 'BE', 'media': {'image': 'f56b01d0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33998', 'firstName': 'Jeffrey', 'lastName': 'Sparidaans', 'nickname': 'Jefke', 'countryCode': 'NL', 'media': {'image': '17f49c80-2c62-11f1-b590-8bde8bea5f9f.png', 'type': 'profile', 'meta': {'side': ''}}} (5/5) door formule 1 en darts.",
+    "7 must-see item(s) en 12 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: 2026 Players Championship 24, WK.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
