@@ -1,22 +1,32 @@
 {
-  "updated_at": "2026-07-06T21:07:46Z",
+  "updated_at": "2026-07-07T08:49:14Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "03:00",
-      "title": "Mexico - England",
+      "time": "02:00",
+      "title": "USA - Belgium",
       "category": "WK",
-      "source": "Bestaande snapshot",
+      "source": "ESPN (WK)",
       "score": 4,
       "must_watch": false,
       "reason": "WK-voetbal",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "21:00",
-      "title": "Portugal - Spain",
+      "time": "18:00",
+      "title": "Argentina - Egypt",
       "category": "WK",
-      "source": "Bestaande snapshot",
+      "source": "ESPN (WK)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "WK-voetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "22:00",
+      "title": "Switzerland - Colombia",
+      "category": "WK",
+      "source": "ESPN (WK)",
       "score": 4,
       "must_watch": false,
       "reason": "WK-voetbal",
@@ -24,8 +34,8 @@
     }
   ],
   "details": [
-    "Topkeuze vandaag: Mexico - England (4/5) door wk-voetbal.",
-    "0 must-see item(s) en 2 relevante sportitem(s) gevonden.",
+    "Topkeuze vandaag: USA - Belgium (4/5) door wk-voetbal.",
+    "0 must-see item(s) en 3 relevante sportitem(s) gevonden.",
     "Categorieen vandaag: WK.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
