@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-08T08:43:58Z",
+  "updated_at": "2026-07-09T09:57:28Z",
   "status": "Visadvies vandaag",
-  "score": 3,
+  "score": 5,
   "items": [
     {
       "label": "Wind",
@@ -9,7 +9,7 @@
     },
     {
       "label": "Luchtdruk",
-      "value": "1019 hPa (instabiele druk)"
+      "value": "1018 hPa (stabiele druk)"
     },
     {
       "label": "Beste tijd",
@@ -22,23 +22,23 @@
   ],
   "details": [
     "Zomer: avond en nacht zijn vaak de interessantste vensters, vooral voor roofvis en meerval.",
-    "Sterk schommelende druk maakt het visbeeld onrustiger; kies daarom korter en gerichter.",
+    "Stabiele luchtdruk is meestal gunstig voor voorspelbaar zoetwatervissen.",
     "Geleidelijke opwarming kan vis actiever maken, zeker later op de dag.",
     "Matige wind geeft vaak net genoeg golfslag voor actieve roofvis zonder dat het onrustig wordt.",
     "Een grotendeels droge avond maakt langere sessies en actief zoeken makkelijker.",
-    "Luchtdruktrend over 48 uur: +5.4 hPa, schommeling circa 6.8 hPa.",
-    "Temperatuurtrend: +3.4 C; wind gemiddeld 11 km/u.",
+    "Luchtdruktrend over 48 uur: +1.9 hPa, schommeling circa 3.7 hPa.",
+    "Temperatuurtrend: +6.4 C; wind gemiddeld 11 km/u.",
     "Vanmiddag naar vanavond wordt circa 0.0 mm neerslag verwacht; CAPE-piek rond 0 J/kg."
   ],
   "profiles": [
     {
       "name": "Roofvis",
-      "score": 3,
-      "advice": "Roofvis vraagt nu om strakker kiezen van tijd en beschutting."
+      "score": 5,
+      "advice": "Stabiele druk en structuurwater maken roofvis interessanter."
     },
     {
       "name": "Meerval",
-      "score": 4,
+      "score": 5,
       "advice": "Warme zomeravond en nacht blijven de beste kans voor meerval."
     },
     {
@@ -51,20 +51,20 @@
     "reference_location": "Midden-Nederland",
     "season": "zomer",
     "season_label": "Zomer",
-    "pressure_state": "instabiele_druk",
+    "pressure_state": "stabiele_druk",
     "temperature_state": "temperatuurstijging",
     "wind_state": "matige_wind",
     "rain_state": "droge_avond",
     "thunder_state": null,
-    "pressure_delta_48h_hpa": 5.4,
-    "pressure_range_48h_hpa": 6.8,
-    "temperature_delta_c": 3.4,
-    "wind_avg_kmh": 10.9,
-    "wind_direction_deg": 343.0,
-    "wind_direction_label": "NNW",
-    "pressure_avg_hpa": 1019.4,
+    "pressure_delta_48h_hpa": 1.9,
+    "pressure_range_48h_hpa": 3.7,
+    "temperature_delta_c": 6.4,
+    "wind_avg_kmh": 11.2,
+    "wind_direction_deg": 26.8,
+    "wind_direction_label": "NNO",
+    "pressure_avg_hpa": 1018.2,
     "evening_precipitation_mm": 0.0,
-    "evening_temperature_c": 22.7,
+    "evening_temperature_c": 24.0,
     "max_cape_j_kg": 0.0
   },
   "sources": [
