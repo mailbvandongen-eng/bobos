@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-07-11T07:24:06Z",
+  "updated_at": "2026-07-11T15:57:13Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "16:00",
+      "time": "16:01",
       "title": "{'participantID': '32956', 'firstName': 'Wessel', 'lastName': 'Nijman', 'nickname': '', 'countryCode': 'NL', 'media': {'image': 'f5add730-f233-11f0-be26-73a99dbbe585.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32078', 'firstName': 'Bradley', 'lastName': 'Brooks', 'nickname': 'Bam Bam', 'countryCode': 'GB-ENG', 'media': {'image': '168e07a0-2c62-11f1-b0da-37dc355bde8e.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET10 - European Darts Open",
       "source": "PDC",
@@ -33,7 +33,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "13:00",
+      "time": "13:08",
       "title": "{'participantID': '36314', 'firstName': 'Damon', 'lastName': 'Heta', 'nickname': 'The Heat', 'countryCode': 'AU', 'media': {'image': 'f4c3ec60-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '11795', 'firstName': 'Rob', 'lastName': 'Owen', 'nickname': 'Stackattack', 'countryCode': 'GB-WLS', 'media': {'image': 'f5be51f0-f233-11f0-916f-9317f3943d29.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET10 - European Darts Open",
       "source": "PDC",
@@ -43,7 +43,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "13:30",
+      "time": "13:42",
       "title": "{'participantID': '30829', 'firstName': 'Mike', 'lastName': 'De Decker', 'nickname': 'Real Deal', 'countryCode': 'BE', 'media': {'image': 'f5e14340-f233-11f0-8f68-e98be9e2ec48.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '40703', 'firstName': 'Jan', 'lastName': 'Schmidt', 'nickname': 'Lightning', 'countryCode': 'DE'}",
       "category": "2026 ET10 - European Darts Open",
       "source": "PDC",
@@ -53,7 +53,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "14:00",
+      "time": "14:19",
       "title": "{'participantID': '11804', 'firstName': 'Luke', 'lastName': 'Woodhouse', 'nickname': 'Woody', 'countryCode': 'GB-ENG', 'media': {'image': 'f5971ae0-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '11168', 'firstName': 'Dragutin', 'lastName': 'Horvat', 'nickname': 'Herkules', 'countryCode': 'DE'}",
       "category": "2026 ET10 - European Darts Open",
       "source": "PDC",
@@ -63,7 +63,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "14:30",
+      "time": "14:43",
       "title": "{'participantID': '31356', 'firstName': 'Danny', 'lastName': 'Noppert', 'nickname': 'The Freeze', 'countryCode': 'NL', 'media': {'image': '7847d390-f21a-11f0-9fa0-0dd7c602545d.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36287', 'firstName': 'Sebastian', 'lastName': 'Bialecki', 'nickname': 'The Bolt', 'countryCode': 'PL', 'media': {'image': 'f4f29d80-f233-11f0-8f68-e98be9e2ec48.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET10 - European Darts Open",
       "source": "PDC",
@@ -73,7 +73,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "15:00",
+      "time": "15:12",
       "title": "{'participantID': '30844', 'firstName': 'Jermaine', 'lastName': 'Wattimena', 'nickname': 'The Machine Gun', 'countryCode': 'NL', 'media': {'image': 'f63ef3a0-f233-11f0-8a3d-fdaf0a5c6112.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '156', 'firstName': 'Kim', 'lastName': 'Huybrechts', 'nickname': 'The Hurricane', 'countryCode': 'BE', 'media': {'image': 'f56b01d0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET10 - European Darts Open",
       "source": "PDC",
@@ -83,7 +83,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "15:30",
+      "time": "15:34",
       "title": "{'participantID': '11843', 'firstName': 'Chris', 'lastName': 'Dobey', 'nickname': 'Hollywood', 'countryCode': 'GB-ENG', 'media': {'image': 'f5267ec0-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '246', 'firstName': 'Dirk', 'lastName': 'van Duijvenbode', 'nickname': 'Aubergenius', 'countryCode': 'NL', 'media': {'image': 'f4f9a260-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET10 - European Darts Open",
       "source": "PDC",
@@ -93,7 +93,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "16:30",
+      "time": "16:27",
       "title": "{'participantID': '224', 'firstName': 'Krzysztof', 'lastName': 'Ratajski', 'nickname': 'The Polish Eagle', 'countryCode': 'PL', 'media': {'image': 'f6327080-f233-11f0-8d93-954f41e7832e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '585', 'firstName': 'Max', 'lastName': 'Hopp', 'nickname': 'Maximiser', 'countryCode': 'DE', 'media': {'image': '632d9360-f2e1-11f0-87ab-6bf4b74de484.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET10 - European Darts Open",
       "source": "PDC",
