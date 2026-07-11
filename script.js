@@ -935,7 +935,7 @@ function renderNewsExplorer(panel, container, model) {
     const categoryOptions = buildNewsCategoryOptions(items);
     const requestedCategory = readRequestedNewsCategory(categoryOptions);
     const listNode = document.createElement("div");
-    listNode.className = "news-detail-list news-feed-list";
+    listNode.className = "news-compact-list news-feed-list";
 
     const sentinelNode = document.createElement("div");
     sentinelNode.className = "news-feed-sentinel";
@@ -1004,17 +1004,11 @@ function resetNewsExplorer(panel) {
 
 function buildNewsCategoryOptions(items) {
     const categories = uniqueTextValues(items.map((item) => item.category));
-    const lowerSet = new Set(categories.map((category) => category.toLowerCase()));
     const ordered = [];
 
     NEWS_CATEGORY_PREFERRED_ORDER.forEach((category) => {
-        if (category === "Alle") {
+        if (!ordered.some((item) => item.toLowerCase() === category.toLowerCase())) {
             ordered.push(category);
-            return;
-        }
-
-        if (lowerSet.has(category.toLowerCase())) {
-            ordered.push(categories.find((item) => item.toLowerCase() === category.toLowerCase()) || category);
         }
     });
 
@@ -1140,7 +1134,7 @@ function renderNextNewsBatch(state, batchSize) {
     }
 
     nextItems.forEach((item) => {
-        state.listNode.appendChild(createNewsItem(item, true));
+        state.listNode.appendChild(createNewsItem(item, false));
     });
 
     state.visibleCount += nextItems.length;

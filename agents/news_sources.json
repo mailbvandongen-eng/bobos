@@ -35,6 +35,21 @@
     "rss": "https://archeologieonline.nl/feed"
   },
   {
+    "category": "Archeologie",
+    "name": "Historianet",
+    "rss": "https://historianet.nl/feed/rss"
+  },
+  {
+    "category": "Archeologie",
+    "name": "Rijksdienst voor het Cultureel Erfgoed",
+    "url": "https://www.cultureelerfgoed.nl/rss"
+  },
+  {
+    "category": "Archeologie",
+    "name": "The Past",
+    "rss": "https://the-past.com/feed/"
+  },
+  {
     "category": "Musea",
     "name": "Museumtijdschrift",
     "rss": "https://museumtijdschrift.nl/feed/"

@@ -1,15 +1,17 @@
-"""Haal Nederlandstalig nieuws op en schrijf het weg naar data/news.json."""
+"""Haal BobOS-nieuws op en schrijf het weg naar data/news.json."""
 
 from __future__ import annotations
 
 import json
 import re
+from collections import Counter
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlsplit, urlunsplit
+from urllib.parse import urljoin, urlsplit, urlunsplit
+from urllib.request import Request, urlopen
 
 import feedparser
 
@@ -19,8 +21,17 @@ from json_store import load_json, save_json_if_changed
 ROOT_DIR = Path(__file__).resolve().parent.parent
 SOURCES_PATH = ROOT_DIR / "agents" / "news_sources.json"
 OUTPUT_PATH = ROOT_DIR / "data" / "news.json"
-MAX_ITEMS = 50
+MAX_ITEMS = 120
 MAX_SUMMARY_LENGTH = 220
+USER_AGENT = "Mozilla/5.0 (compatible; BobOS NewsAgent/0.3)"
+MIN_ITEMS_PER_CATEGORY = {
+    "Archeologie": 6,
+}
+MIN_ITEMS_PER_SOURCE = {
+    "Archeologie Online": 2,
+    "Historianet": 2,
+    "The Past": 2,
+}
 DUTCH_WORD_PATTERN = re.compile(r"[a-z\u00e0-\u00ff]+")
 DUTCH_STOPWORDS = {
     "aan",
@@ -51,6 +62,63 @@ DUTCH_STOPWORDS = {
     "wordt",
     "zijn",
 }
+ENGLISH_STOPWORDS = {
+    "a",
+    "after",
+    "and",
+    "are",
+    "by",
+    "for",
+    "from",
+    "in",
+    "into",
+    "is",
+    "new",
+    "of",
+    "on",
+    "that",
+    "the",
+    "this",
+    "to",
+    "with",
+}
+ARCHAEOLOGY_KEYWORDS = (
+    "ancient dna",
+    "archaeolog",
+    "artefact",
+    "artifact",
+    "archeolog",
+    "bronstijd",
+    "burial",
+    "dekzand",
+    "dna-onderzoek",
+    "early human",
+    "erfgoed",
+    "excavation",
+    "fossiele",
+    "grafveld",
+    "grave",
+    "ijzertijd",
+    "neanderthal",
+    "neanderthaler",
+    "oeverwal",
+    "opgraving",
+    "prehistor",
+    "rivierduin",
+    "romeins",
+    "skeleton",
+    "skelet",
+    "steentijd",
+    "stroomrug",
+    "urnenveld",
+    "vondst",
+)
+HTML_FEED_LINK_PATTERN = re.compile(
+    r"""href=["']([^"']+)["'][^>]+type=["'](?:application/(?:rss|atom)\+xml|application/xml|text/xml)["']
+    |type=["'](?:application/(?:rss|atom)\+xml|application/xml|text/xml)["'][^>]+href=["']([^"']+)["']""",
+    re.IGNORECASE | re.VERBOSE,
+)
+INLINE_FEED_URL_PATTERN = re.compile(r"https?://[^\"'\s>]+(?:rss|feed)[^\"'\s<]*", re.IGNORECASE)
 
 
 def load_sources() -> list[dict[str, Any]]:
@@ -65,56 +133,85 @@ def load_sources() -> list[dict[str, Any]]:
 
 
 def fetch_feed_items(source: dict[str, Any]) -> tuple[list[dict[str, Any]], bool]:
-    """Lees een feed uit en zet entries om naar het BobOS-formaat."""
+    """Lees een bron uit en zet entries om naar het BobOS-formaat."""
     source_name = str(source.get("name", "Onbekende bron")).strip()
     source_category = str(source.get("category", "Algemeen")).strip() or "Algemeen"
-    feed_url = str(source.get("rss") or source.get("url") or "").strip()
+    feed_urls = discover_source_feed_urls(source)
 
-    if not feed_url:
+    if not feed_urls:
         print(f"[SKIP] {source_name}: geen feed-URL opgegeven.")
         return [], False
 
-    print(f"[LOAD] {source_name}: {feed_url}")
-    feed = feedparser.parse(feed_url)
+    reachable = False
+    last_problem = "geen bruikbare feed gevonden"
 
-    if getattr(feed, "bozo", False) and not feed.entries:
-        problem = getattr(feed, "bozo_exception", "onbekende feedfout")
-        print(f"[SKIP] {source_name}: {problem}")
-        return [], False
+    for feed_url in feed_urls:
+        print(f"[LOAD] {source_name}: {feed_url}")
+        feed = feedparser.parse(feed_url, agent=USER_AGENT)
 
-    items: list[dict[str, Any]] = []
-    feed_language = extract_language(feed.feed)
-    skipped_for_language = 0
-
-    for entry in feed.entries:
-        url = normalize_url(entry.get("link") or entry.get("id") or "")
-        title = clean_text(entry.get("title", ""))
-        summary = extract_summary(entry)
-
-        if not url or not title:
+        if getattr(feed, "bozo", False) and not feed.entries:
+            last_problem = str(getattr(feed, "bozo_exception", "onbekende feedfout"))
             continue
 
-        if not should_keep_entry(entry, title, summary, feed_language):
-            skipped_for_language += 1
+        reachable = True
+
+        if not feed.entries:
+            last_problem = "lege feed of HTML-overzicht zonder items"
             continue
 
-        items.append(
-            {
-                "title": title,
-                "summary": summary,
-                "source": source_name,
-                "published": format_datetime(parse_entry_datetime(entry)),
-                "category": source_category,
-                "image": extract_image(entry),
-                "url": url,
-            }
+        items: list[dict[str, Any]] = []
+        feed_language = extract_language(feed.feed)
+        skipped_for_language = 0
+        skipped_for_topic = 0
+
+        for entry in feed.entries:
+            url = normalize_url(entry.get("link") or entry.get("id") or "")
+            title = clean_text(entry.get("title", ""))
+            summary = extract_summary(entry)
+
+            if not url or not title:
+                continue
+
+            keep_result = should_keep_entry(
+                entry=entry,
+                title=title,
+                summary=summary,
+                feed_language=feed_language,
+                source_category=source_category,
+            )
+            if keep_result == "language":
+                skipped_for_language += 1
+                continue
+
+            if keep_result == "topic":
+                skipped_for_topic += 1
+                continue
+
+            items.append(
+                {
+                    "title": title,
+                    "summary": summary,
+                    "source": source_name,
+                    "published": format_datetime(parse_entry_datetime(entry)),
+                    "category": source_category,
+                    "image": extract_image(entry),
+                    "url": url,
+                }
+            )
+
+        print(
+            f"[OK] {source_name}: {len(items)} berichten gevonden, "
+            f"{skipped_for_language} overgeslagen op taal, "
+            f"{skipped_for_topic} op onderwerp."
         )
+        return items, True
 
-    print(
-        f"[OK] {source_name}: {len(items)} berichten gevonden, "
-        f"{skipped_for_language} overgeslagen op taal."
-    )
-    return items, True
+    if reachable:
+        print(f"[OK] {source_name}: bron bereikbaar, maar geen bruikbare items na filtering.")
+        return [], True
+
+    print(f"[SKIP] {source_name}: {last_problem}")
+    return [], False
 
 
 def should_keep_entry(
@@ -122,16 +219,36 @@ def should_keep_entry(
     title: str,
     summary: str,
     feed_language: str,
-) -> bool:
-    """Laat alleen Nederlandstalige items door naar het dashboard."""
-    if is_dutch_language(extract_language(entry)):
-        return True
-
-    if is_dutch_language(feed_language):
-        return True
-
+    source_category: str,
+) -> str:
+    """Laat alleen toegestane talen en relevante archeologie-items door."""
     combined_text = " ".join(part for part in (title, summary) if part).strip()
-    return is_probably_dutch(combined_text)
+    entry_language = extract_language(entry)
+
+    if entry_language and not is_allowed_language(entry_language, source_category):
+        return "language"
+
+    if not entry_language and feed_language and not is_allowed_language(feed_language, source_category):
+        return "language"
+
+    if is_archaeology_category(source_category):
+        if not (
+            is_probably_dutch(combined_text)
+            or is_probably_english(combined_text)
+            or is_english_language(entry_language)
+            or is_english_language(feed_language)
+        ):
+            return "language"
+
+        if not looks_like_archaeology_story(combined_text):
+            return "topic"
+
+        return "keep"
+
+    if entry_language or feed_language:
+        return "keep"
+
+    return "keep" if is_probably_dutch(combined_text) else "language"
 
 
 def extract_language(value: Any) -> str:
@@ -153,9 +270,37 @@ def normalize_language(value: Any) -> str:
     return str(value or "").strip().lower().replace("_", "-")
 
 
+def normalize_category(value: str) -> str:
+    """Maak categoriewaarden vergelijkbaar."""
+    return str(value or "").strip().lower()
+
+
+def normalize_source_name(value: str) -> str:
+    """Maak bronnamen vergelijkbaar."""
+    return str(value or "").strip().lower()
+
+
 def is_dutch_language(value: str) -> bool:
     """Controleer of een taalcode wijst op Nederlands."""
     return normalize_language(value).startswith("nl")
+
+
+def is_english_language(value: str) -> bool:
+    """Controleer of een taalcode wijst op Engels."""
+    return normalize_language(value).startswith("en")
+
+
+def is_archaeology_category(value: str) -> bool:
+    """Controleer of een bron onder archeologie valt."""
+    return normalize_category(value) == "archeologie"
+
+
+def is_allowed_language(value: str, source_category: str) -> bool:
+    """Sta Nederlands altijd toe en Engels alleen voor archeologie."""
+    if is_dutch_language(value):
+        return True
+
+    return is_archaeology_category(source_category) and is_english_language(value)
 
 
 def is_probably_dutch(text: str) -> bool:
@@ -167,6 +312,90 @@ def is_probably_dutch(text: str) -> bool:
 
     matches = [word for word in words if word in DUTCH_STOPWORDS]
     return len(set(matches)) >= 2 or len(matches) >= 3
+
+
+def is_probably_english(text: str) -> bool:
+    """Gebruik simpele Engelse stopwoorden als lichte taaltest."""
+    words = DUTCH_WORD_PATTERN.findall(str(text).lower())
+
+    if not words:
+        return False
+
+    matches = [word for word in words if word in ENGLISH_STOPWORDS]
+    return len(set(matches)) >= 2 or len(matches) >= 3
+
+
+def looks_like_archaeology_story(text: str) -> bool:
+    """Laat archeologiebronnen alleen door bij duidelijke archeologie-signalen."""
+    lowered = str(text or "").lower()
+    return any(keyword in lowered for keyword in ARCHAEOLOGY_KEYWORDS)
+
+
+def discover_source_feed_urls(source: dict[str, Any]) -> list[str]:
+    """Verzamel directe en via HTML ontdekte feed-URLs voor een bron."""
+    discovered: list[str] = []
+
+    direct_url = str(source.get("rss") or "").strip()
+    source_url = str(source.get("url") or "").strip()
+
+    if direct_url:
+        discovered.append(normalize_url(direct_url))
+
+    if source_url:
+        normalized_source_url = normalize_url(source_url)
+        if looks_like_feed_url(normalized_source_url):
+            discovered.append(normalize_url(normalized_source_url))
+        discovered.extend(discover_feed_urls_from_page(normalized_source_url))
+
+    return dedupe_urls(discovered)
+
+
+def looks_like_feed_url(value: str) -> bool:
+    """Herken directe RSS-, Atom- of XML-feed-URLs grofmazig."""
+    lowered = str(value or "").lower()
+    return lowered.endswith((".xml", ".rss", ".atom")) or "/feed" in lowered or "rss" in lowered
+
+
+def discover_feed_urls_from_page(page_url: str) -> list[str]:
+    """Zoek RSS- of Atom-links op een HTML-pagina."""
+    try:
+        request = Request(page_url, headers={"User-Agent": USER_AGENT})
+        with urlopen(request, timeout=20) as response:
+            raw_bytes = response.read()
+    except Exception:
+        return []
+
+    html = raw_bytes.decode("utf-8", errors="replace")
+    lowered = html.lower()
+    if "<rss" in lowered or "<feed" in lowered:
+        return [normalize_url(page_url)]
+
+    candidates: list[str] = []
+
+    for match in HTML_FEED_LINK_PATTERN.finditer(html):
+        href = match.group(1) or match.group(2) or ""
+        if href:
+            candidates.append(normalize_url(urljoin(page_url, href)))
+
+    for url in INLINE_FEED_URL_PATTERN.findall(html):
+        candidates.append(normalize_url(urljoin(page_url, url)))
+
+    return dedupe_urls(candidates)
+
+
+def dedupe_urls(urls: list[str]) -> list[str]:
+    """Verwijder lege of dubbele URLs en bewaar de volgorde."""
+    seen: set[str] = set()
+    result: list[str] = []
+
+    for url in urls:
+        normalized = normalize_url(url)
+        if not normalized or normalized in seen:
+            continue
+        seen.add(normalized)
+        result.append(normalized)
+
+    return result
 
 
 def extract_summary(entry: dict[str, Any]) -> str:
@@ -355,7 +584,133 @@ def dedupe_and_sort(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         if current is None or item["published"] > current["published"]:
             unique_items[url] = item
 
-    return sorted(unique_items.values(), key=sort_key, reverse=True)[:MAX_ITEMS]
+    sorted_items = sorted(unique_items.values(), key=sort_key, reverse=True)
+    selected_items = sorted_items[:MAX_ITEMS]
+    balanced_items = rebalance_category_coverage(selected_items, sorted_items)
+    return rebalance_source_coverage(balanced_items, sorted_items)
+
+
+def rebalance_category_coverage(
+    selected_items: list[dict[str, Any]],
+    sorted_items: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Bewaar een recente feed, maar reserveer ruimte voor ondervertegenwoordigde categorieen."""
+    if not selected_items:
+        return selected_items
+
+    protected_minimums = {
+        normalize_category(category): minimum
+        for category, minimum in MIN_ITEMS_PER_CATEGORY.items()
+        if minimum > 0
+    }
+    if not protected_minimums:
+        return selected_items
+
+    balanced = list(selected_items)
+    selected_urls = {item["url"] for item in balanced}
+
+    for category, minimum in protected_minimums.items():
+        current_count = sum(
+            1 for item in balanced if normalize_category(item.get("category", "")) == category
+        )
+        if current_count >= minimum:
+            continue
+
+        extras = [
+            item
+            for item in sorted_items
+            if item["url"] not in selected_urls
+            and normalize_category(item.get("category", "")) == category
+        ][: minimum - current_count]
+
+        for item in extras:
+            balanced.append(item)
+            selected_urls.add(item["url"])
+
+    while len(balanced) > MAX_ITEMS:
+        removal_index = find_removable_index(balanced, protected_minimums, {})
+        if removal_index is None:
+            break
+        balanced.pop(removal_index)
+
+    return balanced[:MAX_ITEMS]
+
+
+def rebalance_source_coverage(
+    selected_items: list[dict[str, Any]],
+    sorted_items: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Bewaar ook bronspreiding voor archeologie, zodat de categorie niet op een feed leunt."""
+    if not selected_items:
+        return selected_items
+
+    protected_categories = {
+        normalize_category(category): minimum
+        for category, minimum in MIN_ITEMS_PER_CATEGORY.items()
+        if minimum > 0
+    }
+    protected_sources = {
+        normalize_source_name(source): minimum
+        for source, minimum in MIN_ITEMS_PER_SOURCE.items()
+        if minimum > 0
+    }
+    if not protected_sources:
+        return selected_items
+
+    balanced = list(selected_items)
+    selected_urls = {item["url"] for item in balanced}
+
+    for source_name, minimum in protected_sources.items():
+        current_count = sum(
+            1 for item in balanced if normalize_source_name(item.get("source", "")) == source_name
+        )
+        if current_count >= minimum:
+            continue
+
+        extras = [
+            item
+            for item in sorted_items
+            if item["url"] not in selected_urls
+            and normalize_source_name(item.get("source", "")) == source_name
+        ][: minimum - current_count]
+
+        for item in extras:
+            balanced.append(item)
+            selected_urls.add(item["url"])
+
+    while len(balanced) > MAX_ITEMS:
+        removal_index = find_removable_index(balanced, protected_categories, protected_sources)
+        if removal_index is None:
+            break
+        balanced.pop(removal_index)
+
+    return balanced[:MAX_ITEMS]
+
+
+def find_removable_index(
+    items: list[dict[str, Any]],
+    protected_minimums: dict[str, int],
+    protected_sources: dict[str, int],
+) -> int | None:
+    """Verwijder bij voorkeur de oudste items buiten beschermde minima."""
+    category_counts = Counter(
+        normalize_category(item.get("category", ""))
+        for item in items
+    )
+    source_counts = Counter(
+        normalize_source_name(item.get("source", ""))
+        for item in items
+    )
+
+    for index in range(len(items) - 1, -1, -1):
+        category = normalize_category(items[index].get("category", ""))
+        source_name = normalize_source_name(items[index].get("source", ""))
+        category_minimum = protected_minimums.get(category, 0)
+        source_minimum = protected_sources.get(source_name, 0)
+        if category_counts[category] > category_minimum and source_counts[source_name] > source_minimum:
+            return index
+
+    return None
 
 
 def sort_key(item: dict[str, Any]) -> tuple[int, str]:
