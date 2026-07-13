@@ -23,6 +23,9 @@ const DASHBOARD_CONFIG = {
     detailNewsLimit: 12,
     newsExplorerInitialBatch: 12,
     newsExplorerBatchSize: 10,
+    newsEndlessCooldownMs: 60000,
+    newsEndlessPollIntervalMs: 10000,
+    newsEndlessPollTimeoutMs: 90000,
     compactSummaryLength: 120,
     compactSourceLimit: 6,
 };
@@ -964,6 +967,9 @@ function renderNewsExplorer(panel, container, model) {
         supportsInfiniteScroll: "IntersectionObserver" in window,
         observer: null,
         isRendering: false,
+        isDisposed: false,
+        endlessSearchInFlight: false,
+        lastEndlessSearchAt: 0,
     };
 
     panel.__newsExplorerState = state;
@@ -990,6 +996,8 @@ function resetNewsExplorer(panel) {
     if (state.observer) {
         state.observer.disconnect();
     }
+
+    state.isDisposed = true;
 
     if (state.categoryNode) {
         state.categoryNode.innerHTML = "";
@@ -1115,7 +1123,7 @@ function ensureNewsExplorerObserver(state) {
 }
 
 function renderNextNewsBatch(state, batchSize) {
-    if (state.isRendering) {
+    if (state.isDisposed || state.isRendering) {
         return;
     }
 
@@ -1149,6 +1157,10 @@ function renderNextNewsBatch(state, batchSize) {
     updateNewsFeedMeta(state);
     replaceIcons();
     state.isRendering = false;
+
+    if (!hasMore && state.filteredItems.length) {
+        void maybeSearchForMoreNews(state);
+    }
 }
 
 function updateNewsFeedMeta(state) {
@@ -1240,6 +1252,226 @@ async function fetchJson(path) {
     }
 
     return response.json();
+}
+
+function newsItemIdentity(item) {
+    const url = String(item && item.url || "").trim();
+    if (url) {
+        return url;
+    }
+
+    const title = String(item && item.title || "").trim();
+    const published = String(item && (item.published || item.publishedAt) || "").trim();
+    return `${title}|${published}`;
+}
+
+function mergeIncomingNewsItems(existingItems, incomingItems) {
+    const currentItems = normalizeArray(existingItems);
+    const seen = new Set(currentItems.map((item) => newsItemIdentity(item)).filter(Boolean));
+    const appended = [];
+
+    normalizeArray(incomingItems).forEach((item) => {
+        const identity = newsItemIdentity(item);
+        if (!identity || seen.has(identity)) {
+            return;
+        }
+
+        seen.add(identity);
+        appended.push(item);
+    });
+
+    return {
+        items: currentItems.concat(appended),
+        appended,
+    };
+}
+
+async function fetchLatestNewsItems() {
+    const cacheBustPath = `${DATA_PATHS.news}?ts=${Date.now()}`;
+    return normalizeArray(await fetchJson(cacheBustPath));
+}
+
+function applyIncomingNewsItems(state, incomingItems) {
+    if (!state || state.isDisposed) {
+        return { totalNew: 0, visibleNew: 0 };
+    }
+
+    const beforeFilteredCount = state.filteredItems.length;
+    const merged = mergeIncomingNewsItems(state.allItems, incomingItems);
+
+    if (!merged.appended.length) {
+        return { totalNew: 0, visibleNew: 0 };
+    }
+
+    state.allItems = merged.items;
+    state.categoryOptions = buildNewsCategoryOptions(state.allItems);
+    state.filteredItems = filterNewsItemsByCategory(state.allItems, state.activeCategory);
+    renderNewsCategoryButtons(state);
+
+    const visibleNew = Math.max(0, state.filteredItems.length - beforeFilteredCount);
+    if (visibleNew > 0) {
+        renderNextNewsBatch(state, visibleNew);
+    } else {
+        updateNewsFeedMeta(state);
+    }
+
+    return {
+        totalNew: merged.appended.length,
+        visibleNew,
+    };
+}
+
+function sleep(ms) {
+    return new Promise((resolve) => {
+        window.setTimeout(resolve, ms);
+    });
+}
+
+async function dispatchWorkflowTarget(targetKey) {
+    const config = WORKFLOW_CONFIGS[targetKey];
+    if (!config) {
+        throw new Error("Onbekende workflow.");
+    }
+
+    const dispatchUrl = workflowDispatchUrl(targetKey);
+    if (!dispatchUrl) {
+        throw new Error(getRefreshServiceUnavailableMessage());
+    }
+
+    const controller = new AbortController();
+    const timeoutId = window.setTimeout(() => controller.abort(), DEFAULT_REFRESH_SERVICE.timeoutMs);
+
+    try {
+        const response = await fetch(dispatchUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                source: "bobos-ui",
+                page: window.location.pathname,
+            }),
+            signal: controller.signal,
+        });
+
+        if (!response.ok) {
+            throw new Error(await buildWorkflowError(response, config.label));
+        }
+
+        return await readWorkflowResponseMessage(response)
+            || `${config.label} gestart. Ververs BobOS over ongeveer een minuut.`;
+    } catch (error) {
+        if (error instanceof DOMException && error.name === "AbortError") {
+            throw new Error("Verversservice reageert te traag.");
+        }
+
+        if (error instanceof TypeError) {
+            throw new Error(getRefreshServiceUnreachableMessage());
+        }
+
+        if (error instanceof Error) {
+            throw error;
+        }
+
+        throw new Error(`${config.label} kon niet worden gestart.`);
+    } finally {
+        window.clearTimeout(timeoutId);
+    }
+}
+
+async function probeForNewNews(state) {
+    try {
+        const incomingItems = await fetchLatestNewsItems();
+        return applyIncomingNewsItems(state, incomingItems);
+    } catch (error) {
+        console.error(error);
+        return { totalNew: 0, visibleNew: 0 };
+    }
+}
+
+async function waitForMoreNews(state) {
+    const startedAt = Date.now();
+
+    while (!state.isDisposed && Date.now() - startedAt < DASHBOARD_CONFIG.newsEndlessPollTimeoutMs) {
+        await sleep(DASHBOARD_CONFIG.newsEndlessPollIntervalMs);
+        const result = await probeForNewNews(state);
+        if (result.totalNew > 0) {
+            return result;
+        }
+    }
+
+    return { totalNew: 0, visibleNew: 0 };
+}
+
+function buildNewsRefreshResultMessage(state, result) {
+    if (!result.totalNew) {
+        return "Nog geen nieuwe berichten gevonden. Probeer het straks opnieuw.";
+    }
+
+    if (result.visibleNew > 0) {
+        return `${result.visibleNew} nieuwe berichten toegevoegd. Scroll verder voor meer.`;
+    }
+
+    return `${result.totalNew} nieuwe berichten opgehaald, maar niet in ${state.activeCategory.toLowerCase()}.`;
+}
+
+async function maybeSearchForMoreNews(state) {
+    if (
+        !state
+        || state.isDisposed
+        || state.endlessSearchInFlight
+        || !state.filteredItems.length
+        || state.visibleCount < state.filteredItems.length
+    ) {
+        return;
+    }
+
+    state.endlessSearchInFlight = true;
+
+    try {
+        const probeResult = await probeForNewNews(state);
+        if (probeResult.totalNew > 0) {
+            state.lastEndlessSearchAt = Date.now();
+            state.endNode.hidden = false;
+            state.endNode.textContent = buildNewsRefreshResultMessage(state, probeResult);
+            return;
+        }
+
+        const dispatchUrl = workflowDispatchUrl("news");
+        if (!dispatchUrl) {
+            state.endNode.hidden = false;
+            state.endNode.textContent = `Alle ${state.filteredItems.length} berichten geladen. Live bijzoeken is hier nu niet beschikbaar.`;
+            return;
+        }
+
+        const elapsed = Date.now() - state.lastEndlessSearchAt;
+        if (elapsed < DASHBOARD_CONFIG.newsEndlessCooldownMs) {
+            const secondsLeft = Math.max(1, Math.ceil((DASHBOARD_CONFIG.newsEndlessCooldownMs - elapsed) / 1000));
+            state.endNode.hidden = false;
+            state.endNode.textContent = `Alle ${state.filteredItems.length} berichten geladen. Nieuwe zoekpoging over ${secondsLeft}s.`;
+            return;
+        }
+
+        state.lastEndlessSearchAt = Date.now();
+        state.endNode.hidden = false;
+        state.endNode.textContent = `${state.filteredItems.length} berichten gelezen. Zoeken naar nieuwe berichten...`;
+
+        const message = await dispatchWorkflowTarget("news");
+        setWorkflowFeedback("news", message, "success");
+        const refreshResult = await waitForMoreNews(state);
+        if (!state.isDisposed) {
+            state.endNode.textContent = buildNewsRefreshResultMessage(state, refreshResult);
+        }
+    } catch (error) {
+        console.error(error);
+        if (!state.isDisposed) {
+            state.endNode.textContent = error instanceof Error
+                ? error.message
+                : "Nieuwe berichten zoeken is mislukt.";
+        }
+    } finally {
+        state.endlessSearchInFlight = false;
+    }
 }
 
 function syncAppVersion() {
@@ -1642,40 +1874,16 @@ async function triggerWorkflowDispatch(targetKey, button) {
     setWorkflowButtonState(button, true);
     setWorkflowFeedback(targetKey, `${config.label} wordt gestart...`, "info");
 
-    const controller = new AbortController();
-    const timeoutId = window.setTimeout(() => controller.abort(), DEFAULT_REFRESH_SERVICE.timeoutMs);
-
     try {
-        const response = await fetch(dispatchUrl, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                source: "bobos-ui",
-                page: window.location.pathname,
-            }),
-            signal: controller.signal,
-        });
-
-        if (!response.ok) {
-            throw new Error(await buildWorkflowError(response, config.label));
-        }
-
-        const successMessage = await readWorkflowResponseMessage(response);
-        setWorkflowFeedback(targetKey, successMessage || `${config.label} gestart. Ververs BobOS over ongeveer een minuut.`, "success");
+        const successMessage = await dispatchWorkflowTarget(targetKey);
+        setWorkflowFeedback(targetKey, successMessage, "success");
     } catch (error) {
         console.error(error);
-        const message = error instanceof DOMException && error.name === "AbortError"
-            ? "Verversservice reageert te traag."
-            : error instanceof TypeError
-                ? getRefreshServiceUnreachableMessage()
-                : error instanceof Error
-                    ? error.message
-                    : `${config.label} kon niet worden gestart.`;
+        const message = error instanceof Error
+            ? error.message
+            : `${config.label} kon niet worden gestart.`;
         setWorkflowFeedback(targetKey, message, "error");
     } finally {
-        window.clearTimeout(timeoutId);
         setWorkflowButtonState(button, false);
     }
 }
