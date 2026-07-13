@@ -69,9 +69,15 @@
                         <div class="agent-panel-title">
                             <h1>DetectieAgent</h1>
                         </div>
-                        <button class="refresh-action-button" type="button" data-workflow-target="detectie">
-                            <i data-lucide="refresh-cw"></i>
-                        </button>
+                        <div class="agent-panel-actions">
+                            <a class="agent-open-link agent-open-link--inline" data-agent-open-link href="https://mailbvandongen-eng.github.io/detect/" target="_blank" rel="noopener noreferrer">
+                                <span data-agent-open-label>Open Detectorapp</span>
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                            <button class="refresh-action-button" type="button" data-workflow-target="detectie" aria-label="Detectie verversen">
+                                <i data-lucide="refresh-cw"></i>
+                            </button>
+                        </div>
                     </div>
                     <p class="refresh-feedback" data-refresh-feedback="detectie" aria-live="polite" hidden></p>
                     <p class="agent-status-badge"><i data-lucide="activity"></i><span data-agent-status>Detectiedata laden...</span></p>
@@ -105,10 +111,6 @@
                     </article>
                 </div>
 
-                <a class="agent-open-link" data-agent-open-link href="https://mailbvandongen-eng.github.io/detect/" target="_blank" rel="noopener noreferrer">
-                    <span data-agent-open-label>Open Detectorapp</span>
-                    <i data-lucide="arrow-up-right"></i>
-                </a>
             </section>
         </main>
 

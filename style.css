@@ -618,6 +618,14 @@ p {
     text-wrap: balance;
 }
 
+.agent-panel-actions {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 .agent-status-badge {
     width: fit-content;
     display: inline-flex;
@@ -697,6 +705,12 @@ p {
     font-weight: 600;
     line-height: 1.25;
     transition: border-color 120ms ease, transform 120ms ease, background-color 120ms ease;
+}
+
+.agent-open-link--inline {
+    padding: 8px 12px;
+    font-size: 0.88rem;
+    white-space: nowrap;
 }
 
 .refresh-action-button {
