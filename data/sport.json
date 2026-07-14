@@ -1,10 +1,23 @@
 {
-  "updated_at": "2026-07-13T08:31:43Z",
-  "status": "Geen sport gevonden voor vandaag",
-  "items": [],
+  "updated_at": "2026-07-14T07:24:44Z",
+  "status": "Vandaag interessant",
+  "items": [
+    {
+      "time": "21:00",
+      "title": "France - Spain",
+      "category": "WK",
+      "source": "ESPN (WK)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "WK-voetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    }
+  ],
   "details": [
-    "Er zijn vandaag geen voetbal-, darts- of F1-items gevonden in de actieve bronnen.",
-    "Bronnen die tijdelijk niet reageren worden overgeslagen; later opnieuw draaien kan nieuwe items opleveren."
+    "Topkeuze vandaag: France - Spain (4/5) door wk-voetbal.",
+    "0 must-see item(s) en 1 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: WK.",
+    "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
     {
