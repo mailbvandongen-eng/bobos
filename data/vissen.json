@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-13T09:47:29Z",
+  "updated_at": "2026-07-14T08:27:56Z",
   "status": "Visadvies vandaag",
   "score": 3,
   "items": [
     {
       "label": "Wind",
-      "value": "13 km/u (3 Bft)"
+      "value": "18 km/u (3 Bft)"
     },
     {
       "label": "Luchtdruk",
-      "value": "1019 hPa (instabiele druk)"
+      "value": "1020 hPa (instabiele druk)"
     },
     {
       "label": "Beste tijd",
@@ -26,9 +26,9 @@
     "Geleidelijke opwarming kan vis actiever maken, zeker later op de dag.",
     "Matige wind geeft vaak net genoeg golfslag voor actieve roofvis zonder dat het onrustig wordt.",
     "Een grotendeels droge avond maakt langere sessies en actief zoeken makkelijker.",
-    "Luchtdruktrend over 48 uur: -3.2 hPa, schommeling circa 6.1 hPa.",
-    "Temperatuurtrend: +8.0 C; wind gemiddeld 13 km/u.",
-    "Vanmiddag naar vanavond wordt circa 0.0 mm neerslag verwacht; CAPE-piek rond 410 J/kg."
+    "Luchtdruktrend over 48 uur: -3.3 hPa, schommeling circa 6.2 hPa.",
+    "Temperatuurtrend: +8.2 C; wind gemiddeld 18 km/u.",
+    "Vanmiddag naar vanavond wordt circa 0.0 mm neerslag verwacht; CAPE-piek rond 130 J/kg."
   ],
   "profiles": [
     {
@@ -56,16 +56,16 @@
     "wind_state": "matige_wind",
     "rain_state": "droge_avond",
     "thunder_state": null,
-    "pressure_delta_48h_hpa": -3.2,
-    "pressure_range_48h_hpa": 6.1,
-    "temperature_delta_c": 8.0,
-    "wind_avg_kmh": 13.2,
-    "wind_direction_deg": 14.6,
-    "wind_direction_label": "NNO",
-    "pressure_avg_hpa": 1018.7,
+    "pressure_delta_48h_hpa": -3.3,
+    "pressure_range_48h_hpa": 6.2,
+    "temperature_delta_c": 8.2,
+    "wind_avg_kmh": 18.2,
+    "wind_direction_deg": 38.3,
+    "wind_direction_label": "NO",
+    "pressure_avg_hpa": 1020.0,
     "evening_precipitation_mm": 0.0,
-    "evening_temperature_c": 26.0,
-    "max_cape_j_kg": 410.0
+    "evening_temperature_c": 28.1,
+    "max_cape_j_kg": 130.0
   },
   "sources": [
     {
