@@ -23,6 +23,12 @@ OUTPUT_PATH = ROOT_DIR / "data" / "vissen.json"
 VISSEN_URL = "https://mailbvandongen-eng.github.io/visapp/"
 OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast"
 OPEN_METEO_DOCS_URL = "https://open-meteo.com/en/docs"
+WATERINFO_API_BASE = "https://waterinfo.rws.nl/api"
+WATERINFO_TIDE_VIEW_URL = "https://waterinfo.rws.nl/publiek/astronomische-getij/"
+TIDE_REFERENCE_STATION = {
+    "label": "IJmuiden, buitenhaven",
+    "location_code": "ijmuiden.buitenhaven",
+}
 REFERENCE_LOCATION = {
     "label": "Midden-Nederland",
     "latitude": 52.09,
@@ -53,6 +59,39 @@ class WeatherPoint:
     temperature_c: float
     precipitation_mm: float
     cape_j_kg: float
+
+
+@dataclass(frozen=True)
+class TidePoint:
+    """Enkel getijdedatapunt voor zoutwateradvies."""
+
+    timestamp: datetime
+    level_cm: float
+
+
+@dataclass(frozen=True)
+class TideExtreme:
+    """Gedetecteerd hoog- of laagwatermoment."""
+
+    kind: str
+    timestamp: datetime
+    level_cm: float
+
+
+@dataclass(frozen=True)
+class TideSummary:
+    """Samenvatting van de eerstvolgende getijmomenten."""
+
+    location_label: str
+    location_code: str
+    reference_plane: str
+    timezone_identifier: str
+    range_value: str
+    current_level_cm: float | None
+    next_extreme: TideExtreme | None
+    following_extreme: TideExtreme | None
+    amplitude_cm: float
+    active_window_label: str | None
 
 
 @dataclass(frozen=True)
@@ -113,6 +152,188 @@ def fetch_json(base_url: str, params: dict[str, Any]) -> dict[str, Any]:
 
     with urlopen(request, timeout=20) as response:
         return json.load(response)
+
+
+def parse_api_timestamp(value: str) -> datetime:
+    """Zet een API-tijd veilig om naar een timezone-aware datetime."""
+    cleaned = str(value).strip()
+    if cleaned.endswith("Z"):
+        cleaned = cleaned[:-1] + "+00:00"
+    return datetime.fromisoformat(cleaned).astimezone(TIMEZONE)
+
+
+def format_local_timestamp(value: datetime | None) -> str:
+    """Formatteer lokale datum+tijd compact voor adviesregels."""
+    if value is None:
+        return "onbekend"
+    return value.astimezone(TIMEZONE).strftime("%a %H:%M").replace("Mon", "ma").replace("Tue", "di").replace("Wed", "wo").replace("Thu", "do").replace("Fri", "vr").replace("Sat", "za").replace("Sun", "zo")
+
+
+def fetch_tide_detail(location_code: str) -> dict[str, Any]:
+    """Lees detailinformatie van de publieke Waterinfo getijviewer."""
+    return fetch_json(
+        f"{WATERINFO_API_BASE}/detail/get",
+        {
+            "locationCode": location_code,
+            "mapType": "astronomische-getij",
+        },
+    )
+
+
+def select_tide_range_value(detail: dict[str, Any]) -> str:
+    """Pak bij voorkeur de 24-uurs voorspelling uit de range-opties."""
+    ranges = detail.get("range")
+    if isinstance(ranges, list):
+        for item in ranges:
+            if not isinstance(item, dict):
+                continue
+            if str(item.get("label", "")).strip().lower() == "1 dag vooruit":
+                value = str(item.get("value", "")).strip()
+                if value:
+                    return value
+        for item in ranges:
+            value = str(item.get("value", "")).strip()
+            if value.startswith("0,"):
+                return value
+    return "0,24"
+
+
+def fetch_tide_points(
+    *,
+    location_code: str,
+    range_value: str,
+    reference_plane: str,
+    timezone_identifier: str,
+) -> list[TidePoint]:
+    """Lees een 24-uurs getijcurve op uit Waterinfo."""
+    payload = fetch_json(
+        f"{WATERINFO_API_BASE}/chart/get",
+        {
+            "mapType": "astronomische-getij",
+            "locationCodes": [location_code],
+            "values": range_value,
+            "getijReference": reference_plane,
+            "timeZone": timezone_identifier,
+        },
+    )
+    series = payload.get("series") if isinstance(payload, dict) else None
+    if not isinstance(series, list) or not series:
+        return []
+
+    data = series[0].get("data") if isinstance(series[0], dict) else None
+    if not isinstance(data, list):
+        return []
+
+    points: list[TidePoint] = []
+    for item in data:
+        if not isinstance(item, dict):
+            continue
+        timestamp_raw = item.get("dateTime")
+        level_cm = to_float(item.get("value"))
+        if level_cm is None or not timestamp_raw:
+            continue
+        try:
+            timestamp = parse_api_timestamp(str(timestamp_raw))
+        except ValueError:
+            continue
+        points.append(TidePoint(timestamp=timestamp, level_cm=float(level_cm)))
+
+    return points
+
+
+def detect_tide_extremes(points: list[TidePoint]) -> list[TideExtreme]:
+    """Zoek eenvoudige hoog- en laagwatermomenten uit een tijreeks."""
+    if len(points) < 3:
+        return []
+
+    extremes: list[TideExtreme] = []
+    previous_sign: int | None = None
+
+    for index in range(1, len(points)):
+        delta = points[index].level_cm - points[index - 1].level_cm
+        sign = 1 if delta > 0 else -1 if delta < 0 else 0
+        if sign == 0:
+            continue
+        if previous_sign is None:
+            previous_sign = sign
+            continue
+        if sign == previous_sign:
+            continue
+
+        turning_point = points[index - 1]
+        kind = "hoogwater" if previous_sign > 0 and sign < 0 else "laagwater"
+        if not extremes or extremes[-1].timestamp != turning_point.timestamp:
+            extremes.append(
+                TideExtreme(
+                    kind=kind,
+                    timestamp=turning_point.timestamp,
+                    level_cm=turning_point.level_cm,
+                )
+            )
+        previous_sign = sign
+
+    return extremes
+
+
+def build_tide_window_label(extreme: TideExtreme | None) -> str | None:
+    """Omschrijf het beste venster rond een kentering compact."""
+    if extreme is None:
+        return None
+    start = extreme.timestamp - timedelta(hours=1, minutes=30)
+    end = extreme.timestamp + timedelta(hours=1)
+    return (
+        f"{start.astimezone(TIMEZONE).strftime('%H:%M')}-"
+        f"{end.astimezone(TIMEZONE).strftime('%H:%M')} rond {extreme.kind}"
+    )
+
+
+def build_tide_summary(now: datetime) -> TideSummary:
+    """Bouw een compacte samenvatting uit publieke Waterinfo-getijdata."""
+    detail = fetch_tide_detail(TIDE_REFERENCE_STATION["location_code"])
+    getij = detail.get("getij") if isinstance(detail, dict) else {}
+    default_reference = "NAP"
+    if isinstance(getij, dict):
+        default_reference = str(getij.get("defaultReferencePlane", "NAP")).strip() or "NAP"
+
+    timezone_identifier = "GMT"
+    if isinstance(getij, dict):
+        timezones = getij.get("timezones")
+        if isinstance(timezones, list) and timezones:
+            first_timezone = timezones[0]
+            if isinstance(first_timezone, dict):
+                timezone_identifier = str(first_timezone.get("identifier", "GMT")).strip() or "GMT"
+
+    range_value = select_tide_range_value(detail)
+    location_label = str(detail.get("location", TIDE_REFERENCE_STATION["label"])).strip() or TIDE_REFERENCE_STATION["label"]
+    points = fetch_tide_points(
+        location_code=TIDE_REFERENCE_STATION["location_code"],
+        range_value=range_value,
+        reference_plane=default_reference,
+        timezone_identifier=timezone_identifier,
+    )
+
+    if not points:
+        raise RuntimeError("Waterinfo gaf geen getijpunten terug.")
+
+    current_level_cm = points[0].level_cm
+    amplitude_cm = round(max(point.level_cm for point in points) - min(point.level_cm for point in points), 1)
+    upcoming_extremes = [extreme for extreme in detect_tide_extremes(points) if extreme.timestamp >= now]
+
+    next_extreme = upcoming_extremes[0] if upcoming_extremes else None
+    following_extreme = upcoming_extremes[1] if len(upcoming_extremes) > 1 else None
+
+    return TideSummary(
+        location_label=location_label,
+        location_code=TIDE_REFERENCE_STATION["location_code"],
+        reference_plane=default_reference,
+        timezone_identifier=timezone_identifier,
+        range_value=range_value,
+        current_level_cm=current_level_cm,
+        next_extreme=next_extreme,
+        following_extreme=following_extreme,
+        amplitude_cm=amplitude_cm,
+        active_window_label=build_tide_window_label(next_extreme),
+    )
 
 
 def local_now() -> datetime:
@@ -442,7 +663,71 @@ def build_tip(
     return "Vis compacter en kies beschutte stekken."
 
 
-def build_profile_advice(profile_name: str, season_key: str, pressure_state: str) -> str:
+def build_sea_score(
+    *,
+    tide_summary: TideSummary | None,
+    pressure_state: str,
+    wind_state: str,
+    thunder_state: str | None,
+) -> int:
+    """Schat een compacte score voor zee op basis van getij en weer."""
+    score = 2
+
+    if pressure_state in {"stabiele_druk", "dalende_druk"}:
+        score += 1
+    if wind_state == "harde_wind":
+        score -= 1
+    if thunder_state == "onweer_risico":
+        score -= 1
+
+    if tide_summary is None:
+        return clamp_score(score)
+
+    if tide_summary.amplitude_cm >= 140:
+        score += 1
+    elif tide_summary.amplitude_cm < 80:
+        score -= 1
+
+    if tide_summary.next_extreme is not None:
+        hours_until = (tide_summary.next_extreme.timestamp - local_now()).total_seconds() / 3600
+        if 0 <= hours_until <= 3:
+            score += 1
+
+    return clamp_score(score)
+
+
+def build_sea_profile_advice(
+    tide_summary: TideSummary | None,
+    wind_state: str,
+    thunder_state: str | None,
+) -> str:
+    """Maak een korte zee-adviesregel met getijverwijzing."""
+    if tide_summary is None or tide_summary.next_extreme is None:
+        return "Getijbron tijdelijk niet bereikbaar; beoordeel zee later opnieuw rond kentering."
+
+    next_extreme = tide_summary.next_extreme
+    window_label = tide_summary.active_window_label or f"rond {format_local_timestamp(next_extreme.timestamp)}"
+    advice = (
+        f"{tide_summary.location_label} geeft {next_extreme.kind} {format_local_timestamp(next_extreme.timestamp)} "
+        f"({next_extreme.level_cm:+.0f} cm {tide_summary.reference_plane}); vis vooral {window_label}."
+    )
+
+    if thunder_state == "onweer_risico":
+        return f"{advice} Houd wel rekening met onweerskans op open water."
+    if wind_state == "harde_wind":
+        return f"{advice} Kies bij stevige wind een beschutte pier of havenmond."
+    return advice
+
+
+def build_profile_advice(
+    profile_name: str,
+    season_key: str,
+    pressure_state: str,
+    *,
+    tide_summary: TideSummary | None = None,
+    wind_state: str = "matige_wind",
+    thunder_state: str | None = None,
+) -> str:
     """Maak een korte adviesregel per visprofiel."""
     if profile_name == "Roofvis":
         if pressure_state == "stabiele_druk":
@@ -456,7 +741,7 @@ def build_profile_advice(profile_name: str, season_key: str, pressure_state: str
             return "Warme zomeravond en nacht blijven de beste kans voor meerval."
         return "Meerval wordt interessanter zodra temperatuur en nachtactiviteit oplopen."
 
-    return "Nog geen getijdata gekoppeld; zee blijft voorlopig een voorzichtig profiel."
+    return build_sea_profile_advice(tide_summary, wind_state, thunder_state)
 
 
 def build_profiles(
@@ -467,6 +752,7 @@ def build_profiles(
     wind_state: str,
     thunder_state: str | None,
     warm_evening: bool,
+    tide_summary: TideSummary | None = None,
 ) -> list[VisProfile]:
     """Bouw compacte profielscores op voor drie visrichtingen."""
     roofvis_score = overall_score
@@ -489,21 +775,49 @@ def build_profiles(
     if thunder_state == "onweer_risico":
         meerval_score -= 1
 
+    sea_score = build_sea_score(
+        tide_summary=tide_summary,
+        pressure_state=pressure_state,
+        wind_state=wind_state,
+        thunder_state=thunder_state,
+    )
+
     return [
         VisProfile(
             name="Roofvis",
             score=clamp_score(roofvis_score),
-            advice=build_profile_advice("Roofvis", season_key, pressure_state),
+            advice=build_profile_advice(
+                "Roofvis",
+                season_key,
+                pressure_state,
+                tide_summary=tide_summary,
+                wind_state=wind_state,
+                thunder_state=thunder_state,
+            ),
         ),
         VisProfile(
             name="Meerval",
             score=clamp_score(meerval_score),
-            advice=build_profile_advice("Meerval", season_key, pressure_state),
+            advice=build_profile_advice(
+                "Meerval",
+                season_key,
+                pressure_state,
+                tide_summary=tide_summary,
+                wind_state=wind_state,
+                thunder_state=thunder_state,
+            ),
         ),
         VisProfile(
             name="Zee",
-            score=2,
-            advice=build_profile_advice("Zee", season_key, pressure_state),
+            score=sea_score,
+            advice=build_profile_advice(
+                "Zee",
+                season_key,
+                pressure_state,
+                tide_summary=tide_summary,
+                wind_state=wind_state,
+                thunder_state=thunder_state,
+            ),
         ),
     ]
 
@@ -519,6 +833,8 @@ def build_details(
     evening_precip_mm: float,
     max_cape_j_kg: float,
     season_label: str,
+    tide_summary: TideSummary | None = None,
+    tide_error: str | None = None,
 ) -> list[str]:
     """Maak compacte analyse-regels voor de agentpagina."""
     details: list[str] = []
@@ -544,7 +860,52 @@ def build_details(
         f"CAPE-piek rond {max_cape_j_kg:.0f} J/kg."
     )
 
+    if tide_summary is not None and tide_summary.next_extreme is not None:
+        next_extreme = tide_summary.next_extreme
+        next_label = (
+            f"RWS getij ({tide_summary.location_label}): {next_extreme.kind} "
+            f"{format_local_timestamp(next_extreme.timestamp)} op {next_extreme.level_cm:+.0f} cm "
+            f"{tide_summary.reference_plane}."
+        )
+        details.append(next_label)
+        if tide_summary.following_extreme is not None:
+            following = tide_summary.following_extreme
+            details.append(
+                f"Daarna volgt {following.kind} {format_local_timestamp(following.timestamp)}; "
+                f"tijslag komende 24 uur circa {tide_summary.amplitude_cm:.0f} cm."
+            )
+        elif tide_summary.active_window_label:
+            details.append(
+                f"Actief zeevenster vooral {tide_summary.active_window_label}; "
+                f"tijslag circa {tide_summary.amplitude_cm:.0f} cm."
+            )
+    elif tide_error:
+        details.append("Getijdata van Rijkswaterstaat was tijdelijk niet bereikbaar; zeeadvies draait nu alleen op weercondities.")
+
     return details
+
+
+def tide_best_time(tide_summary: TideSummary | None) -> str | None:
+    """Vertaal een tijvenster naar een compacte Beste tijd-tekst."""
+    if tide_summary is None or tide_summary.next_extreme is None:
+        return None
+    if tide_summary.active_window_label:
+        return f"{tide_summary.active_window_label} (zee)"
+    return f"Rond {tide_summary.next_extreme.kind} {format_local_timestamp(tide_summary.next_extreme.timestamp)}"
+
+
+def blend_tip_with_tide_tip(base_tip: str, tide_summary: TideSummary | None) -> str:
+    """Voeg een korte getijhaak toe als die echt helpt."""
+    if tide_summary is None or tide_summary.next_extreme is None:
+        return base_tip
+
+    hours_until = (tide_summary.next_extreme.timestamp - local_now()).total_seconds() / 3600
+    if 0 <= hours_until <= 4:
+        return (
+            f"{base_tip} Voor zout is {tide_summary.active_window_label or 'de kentering'} "
+            f"bij {tide_summary.location_label} extra interessant."
+        )
+    return base_tip
 
 
 def extract_bft(value: str) -> int | None:
@@ -731,6 +1092,7 @@ def migrate_existing_payload(payload: Any) -> dict[str, Any] | None:
         },
         "sources": [
             {"name": "Open-Meteo Forecast API", "url": OPEN_METEO_DOCS_URL},
+            {"name": "Rijkswaterstaat Waterinfo", "url": WATERINFO_TIDE_VIEW_URL},
             {"name": "Visregels", "note": "agents/vissen_rules.json"},
         ],
         "url": VISSEN_URL,
@@ -748,6 +1110,13 @@ def build_advice() -> VisAdvice:
 
     if not points:
         raise RuntimeError("Geen uurlijkse weerdata ontvangen van Open-Meteo.")
+
+    tide_summary: TideSummary | None = None
+    tide_error: str | None = None
+    try:
+        tide_summary = build_tide_summary(now)
+    except Exception as error:
+        tide_error = str(error)
 
     future_points = [point for point in points if point.timestamp.astimezone(TIMEZONE) >= now]
     evening_points = points_between(points, 17, 23, after=now)
@@ -791,7 +1160,13 @@ def build_advice() -> VisAdvice:
         season_key=season_key,
     )
     best_time = season_best_time(season_key, rain_state, thunder_state)
-    tip = build_tip(rules, ordered_conditions, season_key, score)
+    if tide_summary is not None and tide_summary.next_extreme is not None:
+        hours_until_tide = (tide_summary.next_extreme.timestamp - now).total_seconds() / 3600
+        tide_window = tide_best_time(tide_summary)
+        if tide_window and 0 <= hours_until_tide <= 5:
+            best_time = tide_window
+
+    tip = blend_tip_with_tide_tip(build_tip(rules, ordered_conditions, season_key, score), tide_summary)
     profiles = build_profiles(
         overall_score=score,
         season_key=season_key,
@@ -799,6 +1174,7 @@ def build_advice() -> VisAdvice:
         wind_state=wind_state,
         thunder_state=thunder_state,
         warm_evening=evening_temperature_c >= 18,
+        tide_summary=tide_summary,
     )
     details = build_details(
         rules,
@@ -810,6 +1186,8 @@ def build_advice() -> VisAdvice:
         evening_precip_mm=evening_precip_mm,
         max_cape_j_kg=max_cape_j_kg,
         season_label=season_label,
+        tide_summary=tide_summary,
+        tide_error=tide_error,
     )
 
     return VisAdvice(
@@ -840,6 +1218,34 @@ def build_advice() -> VisAdvice:
             "evening_precipitation_mm": evening_precip_mm,
             "evening_temperature_c": round(evening_temperature_c, 1),
             "max_cape_j_kg": round(max_cape_j_kg, 1),
+            "tide_available": tide_summary is not None,
+            "tide_error": tide_error,
+            "tide_location": tide_summary.location_label if tide_summary else TIDE_REFERENCE_STATION["label"],
+            "tide_location_code": tide_summary.location_code if tide_summary else TIDE_REFERENCE_STATION["location_code"],
+            "tide_reference_plane": tide_summary.reference_plane if tide_summary else "NAP",
+            "tide_timezone": tide_summary.timezone_identifier if tide_summary else None,
+            "tide_range_value": tide_summary.range_value if tide_summary else None,
+            "tide_amplitude_cm": tide_summary.amplitude_cm if tide_summary else None,
+            "tide_active_window": tide_summary.active_window_label if tide_summary else None,
+            "tide_current_level_cm": tide_summary.current_level_cm if tide_summary else None,
+            "tide_next_extreme": (
+                {
+                    "kind": tide_summary.next_extreme.kind,
+                    "time": tide_summary.next_extreme.timestamp.isoformat(),
+                    "level_cm": tide_summary.next_extreme.level_cm,
+                }
+                if tide_summary and tide_summary.next_extreme
+                else None
+            ),
+            "tide_following_extreme": (
+                {
+                    "kind": tide_summary.following_extreme.kind,
+                    "time": tide_summary.following_extreme.timestamp.isoformat(),
+                    "level_cm": tide_summary.following_extreme.level_cm,
+                }
+                if tide_summary and tide_summary.following_extreme
+                else None
+            ),
         },
     )
 
@@ -867,6 +1273,7 @@ def build_fallback_payload(error: Exception) -> dict[str, Any]:
         ],
         "sources": [
             {"name": "Open-Meteo Forecast API", "url": OPEN_METEO_DOCS_URL},
+            {"name": "Rijkswaterstaat Waterinfo", "url": WATERINFO_TIDE_VIEW_URL},
             {"name": "Visregels", "note": "Lokaal kennisbestand"},
         ],
         "context": {
@@ -901,6 +1308,7 @@ def build_payload(advice: VisAdvice) -> dict[str, Any]:
         "context": advice.context,
         "sources": [
             {"name": "Open-Meteo Forecast API", "url": OPEN_METEO_DOCS_URL},
+            {"name": "Rijkswaterstaat Waterinfo", "url": WATERINFO_TIDE_VIEW_URL},
             {"name": "Visregels", "note": "agents/vissen_rules.json"},
         ],
         "url": VISSEN_URL,
