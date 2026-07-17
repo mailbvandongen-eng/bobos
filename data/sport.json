@@ -1,10 +1,33 @@
 {
-  "updated_at": "2026-07-16T07:35:55Z",
-  "status": "Geen sport gevonden voor vandaag",
-  "items": [],
+  "updated_at": "2026-07-17T07:32:37Z",
+  "status": "Vandaag interessant",
+  "items": [
+    {
+      "time": "13:30",
+      "title": "Practice 1",
+      "category": "GP Belgium",
+      "source": "OpenF1",
+      "score": 3,
+      "must_watch": false,
+      "reason": "Formule 1",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "17:00",
+      "title": "Practice 2",
+      "category": "GP Belgium",
+      "source": "OpenF1",
+      "score": 3,
+      "must_watch": false,
+      "reason": "Formule 1",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    }
+  ],
   "details": [
-    "Er zijn vandaag geen voetbal-, darts- of F1-items gevonden in de actieve bronnen.",
-    "Bronnen die tijdelijk niet reageren worden overgeslagen; later opnieuw draaien kan nieuwe items opleveren."
+    "Topkeuze vandaag: Practice 1 (3/5) door formule 1.",
+    "0 must-see item(s) en 2 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: GP Belgium.",
+    "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
     {
