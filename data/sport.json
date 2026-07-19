@@ -1,40 +1,20 @@
 {
-  "updated_at": "2026-07-18T07:13:58Z",
+  "updated_at": "2026-07-19T07:39:05Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "16:00",
-      "title": "Qualifying",
+      "time": "15:00",
+      "title": "Race",
       "category": "GP Belgium",
       "source": "OpenF1",
       "score": 5,
       "must_watch": true,
-      "reason": "Formule 1 en kwalificatie",
+      "reason": "Formule 1 en race",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "21:00",
-      "title": "{'participantID': '876', 'firstName': 'Stephen', 'lastName': 'Bunting', 'nickname': 'The Bullet', 'countryCode': 'GB-ENG', 'media': {'image': '782f1b70-f21a-11f0-8e4e-4b7ed58fd19c.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33014', 'firstName': 'Niels', 'lastName': 'Zonneveld', 'nickname': 'Triple Z', 'countryCode': 'NL', 'media': {'image': 'f5607a80-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 World Matchplay",
-      "source": "PDC",
-      "score": 5,
-      "must_watch": true,
-      "reason": "Formule 1 en darts",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "22:00",
-      "title": "{'participantID': '40676', 'firstName': 'Luke', 'lastName': 'Littler', 'nickname': 'The Nuke', 'countryCode': 'GB-ENG', 'media': {'image': '7843dbf0-f21a-11f0-a2b2-337f630ef140.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '34874', 'firstName': 'Niko', 'lastName': 'Springer', 'nickname': 'Meenzer Bub', 'countryCode': 'DE', 'media': {'image': 'f54a5a70-f233-11f0-916f-9317f3943d29.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 World Matchplay",
-      "source": "PDC",
-      "score": 5,
-      "must_watch": true,
-      "reason": "Formule 1 en darts",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:00",
-      "title": "{'participantID': '38552', 'firstName': 'Josh', 'lastName': 'Rock', 'nickname': 'Rocky', 'countryCode': 'GB-NIR', 'media': {'image': 'f5db4fd0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '11804', 'firstName': 'Luke', 'lastName': 'Woodhouse', 'nickname': 'Woody', 'countryCode': 'GB-ENG', 'media': {'image': 'f5971ae0-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "time": "14:00",
+      "title": "{'participantID': '11843', 'firstName': 'Chris', 'lastName': 'Dobey', 'nickname': 'Hollywood', 'countryCode': 'GB-ENG', 'media': {'image': 'f5267ec0-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '246', 'firstName': 'Dirk', 'lastName': 'van Duijvenbode', 'nickname': 'Aubergenius', 'countryCode': 'NL', 'media': {'image': 'f4f9a260-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 World Matchplay",
       "source": "PDC",
       "score": 4,
@@ -43,8 +23,48 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "23:00",
-      "title": "France - England",
+      "time": "15:00",
+      "title": "{'participantID': '4', 'firstName': 'Gary', 'lastName': 'Anderson', 'nickname': 'Flying Scotsman', 'countryCode': 'GB-SCT', 'media': {'image': 'f5b948e0-f233-11f0-8720-17283098ea9c.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '31501', 'firstName': 'Ryan', 'lastName': 'Joyce', 'nickname': 'Relentless', 'countryCode': 'GB-ENG', 'media': {'image': 'f648b7a0-f233-11f0-b6df-51058ea1fe5e.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 World Matchplay",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:00",
+      "title": "{'participantID': '19', 'firstName': 'Michael', 'lastName': 'van Gerwen', 'nickname': 'Mighty Mike', 'countryCode': 'NL', 'media': {'image': 'f62e2ac0-f233-11f0-b992-c9679735a32e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '231', 'firstName': 'Andrew', 'lastName': 'Gilding', 'nickname': 'Goldfinger', 'countryCode': 'GB-ENG', 'media': {'image': 'f547e970-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 World Matchplay",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "17:00",
+      "title": "{'participantID': '30859', 'firstName': 'Jonny', 'lastName': 'Clayton', 'nickname': 'The Ferret', 'countryCode': 'GB-WLS', 'media': {'image': 'f6647d00-f233-11f0-bdca-133e2e51708a.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36314', 'firstName': 'Damon', 'lastName': 'Heta', 'nickname': 'The Heat', 'countryCode': 'AU', 'media': {'image': 'f4c3ec60-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 World Matchplay",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:00",
+      "title": "{'participantID': '32037', 'firstName': 'Ryan', 'lastName': 'Searle', 'nickname': 'Heavy Metal', 'countryCode': 'GB-ENG', 'media': {'image': 'f6071ac0-f233-11f0-828f-515099993409.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '153', 'firstName': 'William', 'lastName': \"O'Connor\", 'nickname': 'The Magpie', 'countryCode': 'IE', 'media': {'image': 'f5eb0740-f233-11f0-ad9a-4f9b38b63926.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 World Matchplay",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "21:00",
+      "title": "Spain - Argentina",
       "category": "WK",
       "source": "ESPN (WK)",
       "score": 4,
@@ -53,8 +73,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "23:00",
-      "title": "{'participantID': '11821', 'firstName': 'Nathan', 'lastName': 'Aspinall', 'nickname': 'The Asp', 'countryCode': 'GB-ENG', 'media': {'image': 'f6372b70-f233-11f0-9303-5182eef97cd9.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '81', 'firstName': 'Joe', 'lastName': 'Cullen', 'nickname': 'The Rockstar', 'countryCode': 'GB-ENG', 'media': {'image': 'f517ffd0-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "time": "21:00",
+      "title": "{'participantID': '22', 'firstName': 'James', 'lastName': 'Wade', 'nickname': 'The Machine', 'countryCode': 'GB-ENG', 'media': {'image': 'f5e0ce10-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '30844', 'firstName': 'Jermaine', 'lastName': 'Wattimena', 'nickname': 'The Machine Gun', 'countryCode': 'NL', 'media': {'image': 'f63ef3a0-f233-11f0-8a3d-fdaf0a5c6112.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 World Matchplay",
       "source": "PDC",
       "score": 4,
@@ -63,19 +83,29 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "12:30",
-      "title": "Practice 3",
-      "category": "GP Belgium",
-      "source": "OpenF1",
-      "score": 3,
+      "time": "22:00",
+      "title": "{'participantID': '33091', 'firstName': 'Gian', 'lastName': 'van Veen', 'nickname': 'The Giant', 'countryCode': 'NL', 'media': {'image': 'f5b2b930-f233-11f0-9c7f-3f5eeb7c3f65.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '224', 'firstName': 'Krzysztof', 'lastName': 'Ratajski', 'nickname': 'The Polish Eagle', 'countryCode': 'PL', 'media': {'image': 'f6327080-f233-11f0-8d93-954f41e7832e.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 World Matchplay",
+      "source": "PDC",
+      "score": 4,
       "must_watch": false,
-      "reason": "Formule 1",
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "23:00",
+      "title": "{'participantID': '32956', 'firstName': 'Wessel', 'lastName': 'Nijman', 'nickname': '', 'countryCode': 'NL', 'media': {'image': 'f5add730-f233-11f0-be26-73a99dbbe585.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '142', 'firstName': 'Dave', 'lastName': 'Chisnall', 'nickname': 'Chizzy', 'countryCode': 'GB-ENG', 'media': {'image': 'f58e8f60-f233-11f0-8f68-e98be9e2ec48.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 World Matchplay",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     }
   ],
   "details": [
-    "Topkeuze vandaag: Qualifying (5/5) door formule 1 en kwalificatie.",
-    "3 must-see item(s) en 7 relevante sportitem(s) gevonden.",
+    "Topkeuze vandaag: Race (5/5) door formule 1 en race.",
+    "1 must-see item(s) en 10 relevante sportitem(s) gevonden.",
     "Categorieen vandaag: 2026 World Matchplay, GP Belgium, WK.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
