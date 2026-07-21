@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-07-20T08:23:57Z",
+  "updated_at": "2026-07-21T07:53:59Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "20:15",
-      "title": "{'participantID': '754', 'firstName': 'Ross', 'lastName': 'Smith', 'nickname': 'Smudger', 'countryCode': 'GB-ENG', 'media': {'image': 'f4fbec50-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32895', 'firstName': 'Kevin', 'lastName': 'Doets', 'nickname': 'Hawk Eye', 'countryCode': 'NL', 'media': {'image': 'f50ae070-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "time": "22:15",
+      "title": "{'participantID': '40676', 'firstName': 'Luke', 'lastName': 'Littler', 'nickname': 'The Nuke', 'countryCode': 'GB-ENG', 'media': {'image': '7843dbf0-f21a-11f0-a2b2-337f630ef140.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '11821', 'firstName': 'Nathan', 'lastName': 'Aspinall', 'nickname': 'The Asp', 'countryCode': 'GB-ENG', 'media': {'image': 'f6372b70-f233-11f0-9303-5182eef97cd9.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 World Matchplay",
       "source": "PDC",
       "score": 5,
       "must_watch": true,
-      "reason": "darts en WK-voetbal",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "21:15",
-      "title": "{'participantID': '11788', 'firstName': 'Gerwyn', 'lastName': 'Price', 'nickname': 'The Iceman', 'countryCode': 'GB-WLS', 'media': {'image': 'f5a3ec20-f233-11f0-a1f6-49664dee8666.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '11902', 'firstName': 'Martin', 'lastName': 'Schindler', 'nickname': 'The Wall', 'countryCode': 'DE', 'media': {'image': 'f57d9f70-f233-11f0-9987-f7a824897129.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 World Matchplay",
-      "source": "PDC",
-      "score": 4,
-      "must_watch": false,
-      "reason": "darts",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "22:15",
-      "title": "{'participantID': '32102', 'firstName': 'Luke', 'lastName': 'Humphries', 'nickname': 'Cool Hand', 'countryCode': 'GB-ENG', 'media': {'image': 'f62be0d0-f233-11f0-b703-63c53945660f.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '2040', 'firstName': 'Cameron', 'lastName': 'Menzies', 'nickname': 'Cammy', 'countryCode': 'GB-SCT', 'media': {'image': 'f659cea0-f233-11f0-9f86-5be6727c0d18.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 World Matchplay",
-      "source": "PDC",
-      "score": 4,
-      "must_watch": false,
-      "reason": "darts",
+      "reason": "Formule 1 en darts",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
       "time": "23:15",
-      "title": "{'participantID': '31356', 'firstName': 'Danny', 'lastName': 'Noppert', 'nickname': 'The Freeze', 'countryCode': 'NL', 'media': {'image': '7847d390-f21a-11f0-9fa0-0dd7c602545d.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '31041', 'firstName': 'Rob', 'lastName': 'Cross', 'nickname': 'Voltage', 'countryCode': 'GB-ENG', 'media': {'image': 'f5de3600-f233-11f0-897c-cda35cd4c727.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "title": "{'participantID': '38552', 'firstName': 'Josh', 'lastName': 'Rock', 'nickname': 'Rocky', 'countryCode': 'GB-NIR', 'media': {'image': 'f5db4fd0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '876', 'firstName': 'Stephen', 'lastName': 'Bunting', 'nickname': 'The Bullet', 'countryCode': 'GB-ENG', 'media': {'image': '782f1b70-f21a-11f0-8e4e-4b7ed58fd19c.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 World Matchplay",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:15",
+      "title": "{'participantID': '30859', 'firstName': 'Jonny', 'lastName': 'Clayton', 'nickname': 'The Ferret', 'countryCode': 'GB-WLS', 'media': {'image': 'f6647d00-f233-11f0-bdca-133e2e51708a.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '4', 'firstName': 'Gary', 'lastName': 'Anderson', 'nickname': 'Flying Scotsman', 'countryCode': 'GB-SCT', 'media': {'image': 'f5b948e0-f233-11f0-8720-17283098ea9c.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 World Matchplay",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "21:15",
+      "title": "{'participantID': '19', 'firstName': 'Michael', 'lastName': 'van Gerwen', 'nickname': 'Mighty Mike', 'countryCode': 'NL', 'media': {'image': 'f62e2ac0-f233-11f0-b992-c9679735a32e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '246', 'firstName': 'Dirk', 'lastName': 'van Duijvenbode', 'nickname': 'Aubergenius', 'countryCode': 'NL', 'media': {'image': 'f4f9a260-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 World Matchplay",
       "source": "PDC",
       "score": 4,
@@ -44,8 +44,8 @@
     }
   ],
   "details": [
-    "Topkeuze vandaag: {'participantID': '754', 'firstName': 'Ross', 'lastName': 'Smith', 'nickname': 'Smudger', 'countryCode': 'GB-ENG', 'media': {'image': 'f4fbec50-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32895', 'firstName': 'Kevin', 'lastName': 'Doets', 'nickname': 'Hawk Eye', 'countryCode': 'NL', 'media': {'image': 'f50ae070-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} (5/5) door darts en wk-voetbal.",
-    "1 must-see item(s) en 4 relevante sportitem(s) gevonden.",
+    "Topkeuze vandaag: {'participantID': '40676', 'firstName': 'Luke', 'lastName': 'Littler', 'nickname': 'The Nuke', 'countryCode': 'GB-ENG', 'media': {'image': '7843dbf0-f21a-11f0-a2b2-337f630ef140.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '11821', 'firstName': 'Nathan', 'lastName': 'Aspinall', 'nickname': 'The Asp', 'countryCode': 'GB-ENG', 'media': {'image': 'f6372b70-f233-11f0-9303-5182eef97cd9.png', 'type': 'profile', 'meta': {'side': ''}}} (5/5) door formule 1 en darts.",
+    "2 must-see item(s) en 4 relevante sportitem(s) gevonden.",
     "Categorieen vandaag: 2026 World Matchplay.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
