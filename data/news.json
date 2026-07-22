@@ -1,678 +1,1029 @@
 [
   {
-    "title": "Hugging Face gehackt door autonome AI-agent",
-    "summary": "Het is de absolute nachtmerrie van elke cybersecurity-expert: een aanval die niet wordt uitgevoerd door menselijke hackers achter een scherm, maar door een autonoom zwermpje van AI-agenten. Het overkwam Hugging Face,...",
-    "source": "Bright",
-    "published": "2026-07-21T08:00:13Z",
-    "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/20/edc8bb3a12385c18bf03c30ec075686d6f215267.png?width=1200",
-    "url": "https://www.bright.nl/nieuws/2114267/hugging-face-gehackt-door-autonome-ai-agent.html"
+    "title": "Perisic aast weer op hereniging met Inter: 'PSV is geen liefdadigheidsinstelling'",
+    "summary": "Ivan Perisic flirt ook deze transferperiode openlijk met een terugkeer bij Internazionale. Dat is niet de eerste keer en voor oud-voetballer Timo Letschert ook begrijpelijk. Toch in de conclusie in #DoneDeal de...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T08:05:04Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/videofeed/previews/2026-07-22t095501-perisic-aast-weer-op-transfer-psv-is-geen-liefdadigheidsinstelling.png?width=1200",
+    "url": "https://www.voetbalprimeur.nl/videos/2114799/perisic-hoopt-op-transfer-naar-inter.html"
   },
   {
-    "title": "FIA-president geeft fouten met controversiële F1-motor toe",
-    "summary": "De motorreglementen die dit jaar zijn ingevoerd zorgen nog altijd voor de nodige kritiek. FIA-president Mohammed Ben Sulayem geeft toe dat de FIA hierin fouten heeft gemaakt, maar benadrukt ook dat het zijn best doet om...",
+    "title": "Toptransfer voor Van Asten (19): talent van Ajax naar Barcelona",
+    "summary": "Renee van Asten maakt een toptransfer naar Champions League-winnaar FC Barcelona. De 19-jarige Nederlandse verdediger komt over van Ajax en heeft in Catalonië een contract tot en met 2030 getekend. Het is de laatste...",
+    "source": "NOS Sport",
+    "published": "2026-07-22T08:01:02Z",
+    "category": "Sport",
+    "image": "https://cdn.nos.nl/image/2026/07/22/1388950/1024x576a.jpg",
+    "url": "https://nos.nl/l/2623958"
+  },
+  {
+    "title": "Telkens een andere gedaante – Sin Wai Kin in Frans Hals Museum",
+    "summary": "Het bericht Telkens een andere gedaante – Sin Wai Kin in Frans Hals Museum verscheen eerst op Museumtijdschrift .",
+    "source": "Museumtijdschrift",
+    "published": "2026-07-22T08:00:03Z",
+    "category": "Musea",
+    "image": "",
+    "url": "https://museumtijdschrift.nl/artikelen/recensies/telkens-een-andere-gedaante/"
+  },
+  {
+    "title": "Software-update - OPNSense 26.7.1",
+    "summary": "Het pakket OPNsense is een firewall met uitgebreide mogelijkheden. Het is gebaseerd op het besturingssysteem FreeBSD en is oorspronkelijk een fork van m0n0wall en pfSense. Het pakket kan volledig via een webinterface...",
+    "source": "Tweakers",
+    "published": "2026-07-22T08:00:00Z",
+    "category": "Gadgets",
+    "image": "",
+    "url": "https://tweakers.net/downloads/77642/opnsense-2671.html"
+  },
+  {
+    "title": "Charles Leclerc ‘voorzichtig’ met voorspellingen GP Hongarije: ‘Monaco was ook ondermaats’",
+    "summary": "Charles Leclerc wil de verwachtingen bij Ferrari temperen richting de GP van Hongarije. De Scuderia was opvallend snel tijdens de afgelopen raceweekenden op Silverstone en Spa-Francorchamps, twee snelle circuits waar...",
+    "source": "Formule1.nl",
+    "published": "2026-07-22T08:00:00Z",
+    "category": "Formule 1",
+    "image": "https://www.formule1.nl/app/uploads/2026/07/GettyImages-2286424137-600x346.jpg",
+    "url": "https://www.formule1.nl/nieuws/charles-leclerc-voorzichtig-voorspellingen-gp-hongarije-monaco-ondermaats/"
+  },
+  {
+    "title": "In Liverpool, Hamburg en Newcastle sterft Kevin Keegan nooit",
+    "summary": "Met de deze week op 75-jarige leeftijd overleden Kevin Keegan is het Engelse voetbal één van zijn gezichtsbepalende figuren verloren. Het aanstekelijke enthousiasme van de kleine, vinnige aanvaller stuwde Liverpool en...",
+    "source": "Voetbal International",
+    "published": "2026-07-22T08:00:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/22/7e89a2a3a7aed39db776e77310cfd1ea1c9bb3ee.jpg?width=1200",
+    "url": "https://www.vi.nl/pro/in-liverpool-hamburg-en-newcastle-sterft-kevin-keegan-nooit"
+  },
+  {
+    "title": "Grote natuurbrand tussen Marseille en Nice, zeker 400 mensen geëvacueerd",
+    "summary": "In het Zuid-Franse departement Var, tussen Marseille en Nice, woedt een grote natuurbrand. Zo'n vierhonderd bewoners van het gebied zijn gevlucht, meer dan 2500 hectare natuur is verwoest. Een onbekend aantal bewoners...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-22T07:52:06Z",
+    "category": "Algemeen",
+    "image": "https://cdn.nos.nl/image/2026/07/22/1388942/1024x576a.jpg",
+    "url": "https://nos.nl/l/2623956"
+  },
+  {
+    "title": "Jeff Bezos wordt mogelijk mede-eigenaar van Liverpool",
+    "summary": "Jeff Bezos is in gesprek om toe te treden tot een groep die een minderheidsbelang in Liverpool wil kopen. Dat melden Sky N ews en The Financial Times . De voormalig CEO van Amazon is momenteel de vierde rijkste persoon...",
+    "source": "Voetbal International",
+    "published": "2026-07-22T07:45:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/22/b206d24b6660ac8b42dee5db8974d2ddff40f746.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/jeff-bezos-wordt-mogelijk-mede-eigenaar-van-liverpool"
+  },
+  {
+    "title": "Verhuisdozen met ivoren sieraden, 5800 verboden objecten anoniem ingeleverd",
+    "summary": "Ruim 5800 voorwerpen van beschermde planten en diersoorten zijn vorig jaar in Nederland ingeleverd. Dat is meer dan het jaar ervoor. Toen werden er zo'n 1100 voorwerpen ingeleverd, zegt de Rijksdienst voor Ondernemend...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-22T07:41:47Z",
+    "category": "Algemeen",
+    "image": "https://cdn.nos.nl/image/2026/07/22/1388935/1024x576a.jpg",
+    "url": "https://nos.nl/l/2623955"
+  },
+  {
+    "title": "Eredivisie-talent twijfelde enorm over stap naar PSV: 'Had goed gesprek met Bosz'",
+    "summary": "Aan interesse was er afgelopen maanden geen gebrek voor Ruud Nijstad. Toch besloot de verdediger om zijn contract bij FC Twente te verlengen. Tegenover Voetbal International legt Nijstad uit hoe hij tot deze keuze kwam.",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T07:35:50Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/03/02/94359d7836dd3abc3d03f78745562eacdaf2be62.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114785/nijstad-twijfelde-enorm-tussen-psv-en-twente.html"
+  },
+  {
+    "title": "Geen scherm, wel alle data: Garmin onthult de CIRQA Smart Band",
+    "summary": "In een wereld waarin wearables ons dagelijks overspoelen met meldingen, trillingen en oplichtende displays, kiest Garmin voor een opvallende tegenbeweging. Het merk kondigt de CIRQA Smart Band aan: de allereerste...",
+    "source": "Bright",
+    "published": "2026-07-22T07:33:57Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/21/cba53126793ffbf795f388a16981e3da7a36d8df.jpg?width=1200",
+    "url": "https://www.bright.nl/plusplus/2114595/geen-scherm-wel-alle-data-garmin-onthult-de-cirqa-smart-band.html"
+  },
+  {
+    "title": "De bloedige guerrillastrijd op Texel: hoe Georgische soldaten in opstand kwamen tegen de nazi’s",
+    "summary": "In april 1945 kwamen Georgische soldaten op Texel in opstand tegen hun Duitse officieren. Waarom keerden zij zich aan het eind van de oorlog tegen de nazi’s?",
+    "source": "National Geographic Nederland",
+    "published": "2026-07-22T07:30:00Z",
+    "category": "Wetenschap",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/ea781c7a-3609-40c9-a72d-5f6bb9ccd417.jpg",
+    "url": "https://www.nationalgeographic.nl/geschiedenis-archeologie/a73202217/georgische-opstand-texel-tweede-wereldoorlog"
+  },
+  {
+    "title": "Video: Red Bull slaagt in ultiem huzarenstukje met kapotte auto Verstappen",
+    "summary": "De Grand Prix van Hongarije 2020. Max Verstappen crasht op een natte baan op weg naar de grid. Met gehavende neus en wielophanging arriveert de Nederlander bij zijn startpositie en wat volgt is een race tegen de klok om...",
     "source": "RacingNews365.nl",
-    "published": "2026-07-21T08:00:00Z",
+    "published": "2026-07-22T07:30:00Z",
     "category": "Formule 1",
     "image": "",
-    "url": "https://racingnews365.nl/fia-president-geeft-fouten-met-controversiele-f1-motor-toe"
+    "url": "https://racingnews365.nl/video-red-bull-slaagt-in-ultiem-huzarenstukje-met-kapotte-auto-verstappen"
   },
   {
-    "title": "'Míchel mag de lat wel wat hoger leggen bij Ajax'",
-    "summary": "Hans Kraay Junior. Van speler, tot amateurtrainer, tot ESPN-analyticus. Altijd op de hoogte van de laatste ontwikkelingen, met immer een uitgesproken mening neemt hij wekelijks in zijn column de actualiteit door met...",
-    "source": "Voetbal International",
-    "published": "2026-07-21T08:00:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/20/f79b77cf7ef19e14702d2b2fe0037d071431ee75.jpg?width=1200",
-    "url": "https://www.vi.nl/pro/michel-mag-de-lat-wel-wat-hoger-leggen-bij-ajax"
-  },
-  {
-    "title": "Argentijnse spelers warm ontvangen in thuisland: Messi ontbreekt na WK-finale",
-    "summary": "De Argentijnse spelers zijn maandag vol trots ontvangen door hun landgenoten. Na de verloren WK-finale lieten de inwoners van Buenos Aires zien trots te zijn op hun selectie.",
+    "title": "'Een van rijkste mensen ter wereld in beeld rond investering in Liverpool'",
+    "summary": "Jeff Bezos, een van de rijkste mensen ter wereld, is benaderd om zich aan te sluiten bij een investeringsgroep die een minderheidsbelang in Liverpool wil kopen. Dat bevestigt eigenaar Fenway Sports Group (FSG) aan Sky...",
     "source": "VoetbalPrimeur",
-    "published": "2026-07-21T07:59:46Z",
+    "published": "2026-07-22T07:15:00Z",
     "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/videofeed/previews/2026-07-21t094739-argentijnse-spelers-met-warm-welkom-ontvangen-na-het-wk.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114476/argentijnse-spelers-warm-ontvangen-na-verloren-wk-finale.html"
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/22/828706cf5dd905a95945f170b293eb34cf398470.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114781/jeff-bezos-in-beeld-bij-investering-rond-liverpool.html"
   },
   {
-    "title": "'Transfersoap bij PSV: uitgaande miljoenendeal staat plots op losse schroeven'",
-    "summary": "Opnieuw lijkt een transfersoap te ontstaan bij PSV. Ditmaal dreigt de transfer van Adamo Nagalo op het laatste moment af te ketsen. Dat meldt het Eindhovens Dagblad in navolging van Turkse bronnen.",
+    "title": "Omzet Randstad stijgt, vooral door uitzendkrachten in meer Amerikaanse datacenters",
+    "summary": "Het groeiende aantal datacenters in de Verenigde Staten zorgt daar voor een flinke vraag naar uitzendkrachten. Dat blijkt uit de kwartaalcijfers van uitzendbureau Randstad. De wereldwijde omzet van het uitzendbureau nam...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-22T07:14:54Z",
+    "category": "Algemeen",
+    "image": "https://cdn.nos.nl/image/2026/07/22/1388928/1024x576a.jpg",
+    "url": "https://nos.nl/l/2623953"
+  },
+  {
+    "title": "Met klaptelefoon Light Flip ga je terug in de tijd met moderne extra’s",
+    "summary": "Fabrikant Light, wellicht bekend van de Light Phone, komt nu met een eigen klaptelefoon : de Light Flip. Dit is een smartphone die je bereikbaar moet houden, maar je niet afleidt. Dat betekent geen ruimte voor sociale...",
+    "source": "Bright",
+    "published": "2026-07-22T07:14:11Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/22/d6b4e863c79120d8f0fe23392e5d1f0e66d43172.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2114783/met-klaptelefoon-light-flip-ga-je-terug-in-de-tijd-met-moderne-extra-s.html"
+  },
+  {
+    "title": "'Barcelona vreest voor De Jong, zware blessure en maandenlange revalidatie lonkt'",
+    "summary": "Frenkie de Jong keert woensdag of donderdag terug bij FC Barcelona. De Catalanen zijn nog altijd bezig met tests over de blessure van de middenvelders, maar het ergste wordt inmiddels gevreesd. Dat meldt Mundo Deportivo...",
     "source": "VoetbalPrimeur",
-    "published": "2026-07-21T07:57:57Z",
+    "published": "2026-07-22T07:11:53Z",
     "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/16/f3b1589264cd6c5fb83addbd70ebb2f3aa56ee9d.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114421/transfer-adamo-nagalo-naar-corum-fk-dreigt-af-te-ketsen-bij-psv.html"
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/22/63c005b9a24e415db21029dbba38245acd0ac7b8.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114779/barcelona-vreest-voor-zware-blessure-de-jong.html"
   },
   {
-    "title": "Nu of nooit: Italiaanse droom Guardiola domineert voorpagina's",
-    "summary": "Pep Guardiola domineert dinsdag de voorpagina's van de grote Italiaanse sportkranten. Namens de Italiaanse voetbalbond spraken technisch directeur Paolo Maldini en diens adviseur Leonardo in Barcelona met de Catalaanse...",
+    "title": "Fabrizio Romano deelt 'here we go': Van Bommel wordt bondscoach van België",
+    "summary": "Mark van Bommel lijkt de nieuwe bondscoach van de Rode Duivels te worden. Nadat eerder al uitlekte dat de voormalige trainer van Royal Antwerp FC op weg was naar de Belgische nationale ploeg, heeft transferjournalist...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T07:09:45Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/21/d141a6438eed9051ebd83b44f08dc76e127982ff.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114777/here-we-go-van-romano-over-van-bommel-en-rode-duivels.html"
+  },
+  {
+    "title": "Transfers PSV: Pepi bespreekt toekomst, Nijstad vertelt over belletje met Bosz",
+    "summary": "VI volgt het transfernieuws bij PSV op de voet. De doelwitten van de Eindhovenaren, duiding van de clubwatcher, of aandacht in buitenlandse media. We verzamelen alles hier.",
     "source": "Voetbal International",
-    "published": "2026-07-21T07:52:29Z",
+    "published": "2026-07-22T07:08:09Z",
     "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/538b94b2db361555d6f67e5ba924078e0b7a51ba.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/nu-of-nooit-italiaanse-droom-guardiola-domineert-voorpagina-s"
+    "image": "https://webp.vi.cdn.pxr.nl/news/2025/08/02/ca11a6e4-7865-41dd-b98b-a3e0b8e278bb.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/transfers-psv-pepi-ziet-langer-verblijf-best-zitten"
   },
   {
-    "title": "TT Circuit Assen zet streep door Formule 1-plannen: ‘Kans op toewijzing Grand Prix is klein’",
-    "summary": "Er komt voorlopig geen Nederlandse Grand Prix op het TT Circuit Assen. Dat maakt TT-directeur Mark van Aalderen bekend. De directie van het circuit in Drenthe heeft besloten niet de noodzakelijke miljoeneninvesteringen...",
-    "source": "Formule1.nl",
-    "published": "2026-07-21T07:45:53Z",
+    "title": "Vrachtwagen verliest loodzware balken op snelweg bij Veldhoven",
+    "summary": "Op de oprit naar de A67 bij Veldhoven, in Brabant, is een vrachtwagen drie betonnen constructiebalken verloren. De oprit naar de snelweg zal enkele uren afgesloten zijn, meldt Rijkswaterstaat. De loodzware balken zaten...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-22T07:03:36Z",
+    "category": "Algemeen",
+    "image": "https://cdn.nos.nl/image/2026/07/22/1388923/1024x576a.jpg",
+    "url": "https://nos.nl/l/2623951"
+  },
+  {
+    "title": "Waarom Ruud Nijstad (18) Twente verkiest boven PSV en het buitenland",
+    "summary": "Ruud Nijstad (18) wordt al jarenlang begeerd door Nederlandse en internationale topclubs, maar kiest voor de weg der geleidelijkheid. De centrale verdediger wil zich verder ontwikkelen bij FC Twente, met hulp van onder...",
+    "source": "Voetbal International",
+    "published": "2026-07-22T07:00:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/20/d4728c657b089760bfd0689f4fc8f26e98c30a44.jpg?width=1200",
+    "url": "https://www.vi.nl/pro/waarom-ruud-nijstad-18-twente-verkiest-boven-psv-en-het-buitenland"
+  },
+  {
+    "title": "Gavi verrast na WK-opstootje: 'Paredes moet niet geschorst worden'",
+    "summary": "Gavi belandde na de gewonnen WK-finale tegen Argentinië in een hevig opstootje met Leandro Paredes. De Spaanse middenvelder werd flink belaagd, maar pleit toch niet voor een schorsing van de Argentijnse gifkikker.",
+    "source": "Voetbal International",
+    "published": "2026-07-22T06:58:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/22/e3d922eef2b08e34e5581b390ba816682c10537e.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/gavi-neemt-opvallend-standpunt-in-paredes-moet-niet-geschorst-worden"
+  },
+  {
+    "title": "Tesla-rijders met AMD-chip krijgen Grok in Nederland en België",
+    "summary": "Grok is vanaf nu beschikbaar voor Nederlandse en Belgische Tesla's. De AI-assistent van Elon Musks bedrijf xAI is opgenomen in de nieuwste Summer Release-update. Grok is beschikbaar op in aanmerking komende uitvoeringen...",
+    "source": "Tweakers",
+    "published": "2026-07-22T06:56:12Z",
+    "category": "Gadgets",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/250272/tesla-rijders-met-amd-chip-krijgen-grok-in-nederland-en-belgie.html"
+  },
+  {
+    "title": "Minder aanslagen met explosieven na jaren van stijging, focus op opdrachtgevers",
+    "summary": "Het aantal aanslagen met explosieven in Nederland is in de eerste helft van dit jaar afgenomen. In totaal waren er 581 aanslagen of pogingen daartoe met explosieven, 124 minder dan in dezelfde periode vorig jaar. Dat is...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-22T06:53:48Z",
+    "category": "Algemeen",
+    "image": "https://cdn.nos.nl/image/2026/07/22/1388917/1024x576a.jpg",
+    "url": "https://nos.nl/l/2623950"
+  },
+  {
+    "title": "Curaçao deelt verschrikkelijk nieuws: bondsvoorzitter is ziek en moet opstappen",
+    "summary": "De voetbalbond van Curaçao heeft verschrikkelijk nieuws gedeeld na het WK. Bondsvoorzitter Gilbert Martina is ziek en moet opstappen vanwege gezondheidsredenen.",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T06:51:46Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/22/dc44a8434553a219c01ccdb6d4f7ae77e8ca61dd.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114771/bondsvoorzitter-curacao-stapt-op-door-gezondheidsredenen.html"
+  },
+  {
+    "title": "Ferrari bekritiseert stewards na straf Hamilton",
+    "summary": "Lewis Hamilton kreeg na zijn incident met George Russell in de openingsronde van de GP van België een tijdstraf van vijf seconden. Volgens teambaas Fred Vasseur was de straf veel te zwaar voor het vergrijp.",
+    "source": "RacingNews365.nl",
+    "published": "2026-07-22T06:45:00Z",
     "category": "Formule 1",
-    "image": "https://www.formule1.nl/app/uploads/2026/07/GettyImages-2283726054-600x400.jpg",
-    "url": "https://www.formule1.nl/nieuws/tt-circuit-assen-zet-streep-door-formule-1-plannen/"
+    "image": "",
+    "url": "https://racingnews365.nl/ferrari-bekritiseert-stewards-na-straf-hamilton"
   },
   {
-    "title": "Excelsior incasseert 'miljoenen' met mooie transfer van aanvaller",
-    "summary": "Excelsior heeft Derensili Sanches Fernandes verkocht. De Rotterdammers hebben zaken gedaan met Huddersfield Town en incasseren volgens bronnen miljoenen euro’s aan transfergeld.",
+    "title": "Mokio heeft groot doel met Ajax: 'En dus moeten we dit seizoen kampioen worden'",
+    "summary": "Jorthy Mokio ziet de kwalificatieduels voor de Conference League als extra motivatie voor Ajax. Dat vertelt de middenvelder aan De Telegraaf . Volgens de middenvelder kan plaatsing voor het hoofdtoernooi een 'extra...",
     "source": "VoetbalPrimeur",
-    "published": "2026-07-21T07:40:12Z",
+    "published": "2026-07-22T06:45:00Z",
     "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/14/63fa1a241bb622bf245afe09ae9e7c5779e2b0e2.png?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114470/excelsior-verkoopt-sanches-fernandes-aan-huddersfield.html"
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/05/01/06fca564b00f2ae76ef669061f452eebbd6b79d2.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114769/jorthy-mokio-over-doelstellingen-met-ajax.html"
   },
   {
-    "title": "Ajax dient Europese selectie in: Godts op B-lijst, Leonardo en Carrizo ontbreken",
-    "summary": "Ajax heeft de A-lijst voor het tweeluik met FK Vojvodina in de voorrondes van de Conference League ingediend bij de UEFA. Opvallend is dat zomeraanwinst Marcos Leonardo nog ontbreekt op de spelerslijst. Volgens meerdere...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T07:34:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/06/26/15c1e6f1d5e4b0f51da65378abb216f71efc4431.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114469/ajax-dient-europese-selectie-in-voor-conference-league-duels-met-vojvodina.html"
-  },
-  {
-    "title": "Lucratieve transfer voor Excelsior, NAC-verdediger Hillen in de wachtkkamer",
-    "summary": "Blijf via dit blog op de hoogte van alle transfers en transfergeruchten bij en rond clubs in de Eredivisie en de Keuken Kampioen Divisie. Bekijk hier ons blog voor de transferperikelen in het buitenland .",
+    "title": "Is Florentino Pérez om? 'Real Madrid toch in gesprek met Rodri'",
+    "summary": "Een transfer van Rodri naar Real Madrid is plotseling een stuk realistischer geworden. Real-president Florentino Pérez leek eerst geen fan van de beste speler van het afgelopen WK, maar lijkt zijn mening te hebben...",
     "source": "Voetbal International",
-    "published": "2026-07-21T07:33:04Z",
+    "published": "2026-07-22T06:33:00Z",
     "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/02/04/3565db48b43ee9ce01dfece23d9672d8f9a89606.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/lucratieve-transfer-voor-excelsior-nec-heeft-bischoff-bijna-binnen"
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/22/4e018b7bcefcb6c9317e22c71cbab0e764eb287e.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/is-florentino-perez-om-real-madrid-toch-in-gesprek-met-rodri"
+  },
+  {
+    "title": "Gewaardeerde Ajax-kracht stelt fans gerust: 'Ik zit hier voorlopig goed'",
+    "summary": "Youri Baas lijkt deze zomer gewoon bij Ajax te blijven. In gesprek met Voetbal International vertelt de verdediger dat er niets speelt wat betreft een transfer en dat hij zich goed voelt in Amsterdam.",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T06:32:51Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/22/17085a8383f83e2b0dc19807d289564211859e15.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114767/baas-lijkt-ajax-niet-te-verlaten-deze-zomer.html"
+  },
+  {
+    "title": "De wetenschap achter bosbranden: worden ze erger? Wat zijn de gevolgen? En wanneer spreek je van een zombiebrand?",
+    "summary": "De wereld staat letterlijk in de fik, zo lijkt het soms. Zeker in de zomer domineren bosbranden het nieuws. Van Canada tot Griekenland en van Californië tot Zuid-Frankrijk: enorme gebieden gaan in vlammen op. Daarbij...",
+    "source": "Scientias",
+    "published": "2026-07-22T06:30:43Z",
+    "category": "Wetenschap",
+    "image": "",
+    "url": "https://scientias.nl/de-wetenschap-achter-bosbranden-worden-ze-erger-wat-zijn-de-gevolgen-en-wanneer-spreek-je-van-een-zombiebrand/"
+  },
+  {
+    "title": "Software-update - OBS Studio 32.2.0",
+    "summary": "Versie 32.2.0 van OBS Studio is uitgekomen. Open Broadcaster Software Studio is opensource- en crossplatformsoftware bedoeld voor het opnemen en streamen van videobeelden van een of meer bronnen, zoals een webcam,...",
+    "source": "Tweakers",
+    "published": "2026-07-22T06:30:00Z",
+    "category": "Gadgets",
+    "image": "",
+    "url": "https://tweakers.net/downloads/77644/obs-studio-3220.html"
+  },
+  {
+    "title": "'Trump wil Infantino een bijzondere positie bij Verenigde Naties aanbieden na WK'",
+    "summary": "Donald Trump wil FIFA-baas Gianni Infantino een zeer bijzondere positie aanbieden. Dat meldt The New York Post . Trump ziet in Infantino de ideale nieuwe secretaris-generaal van de Verenigde Naties.",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T06:13:49Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/22/5c5e9c9d8c44ec6f2c688450d4a8a055ab3dfb96.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114762/trump-wil-infantino-als-secretaris-generaal-van-vn.html"
+  },
+  {
+    "title": "Transfers Ajax: Baas vertelt voorlopig goed te zitten in Amsterdam",
+    "summary": "VI volgt het transfernieuws bij Ajax op de voet, ook nu de zomerse transferwindow geopend is. De doelwitten van de Amsterdammers, duiding van de clubwatcher, of aandacht in buitenlandse media. We verzamelen alles hier.",
+    "source": "Voetbal International",
+    "published": "2026-07-22T06:12:04Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/02/02/72337f50631e66f027af605f1b8681ad73b235ab.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/transfers-ajax-cruijff-legt-uit-wat-marcos-leonardo-aan-ajax-moet-toevoegen"
+  },
+  {
+    "title": "Fabrizio Romano meldt 'verbeterd miljoenenbod' op uitblinker sc Heerenveen",
+    "summary": "SC Braga heeft een nieuw bod uitgebracht op Marcus Linday. Volgens transferjournalist Fabrizio Romano gaat het om een bod van zes miljoen euro inclusief bonussen. De Zweedse middenvelder zou sc Heerenveen hebben laten...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T06:08:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/06/18/9476d00040857d4da7b1b39041048f70e6323fbe.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114765/fabrizio-romano-meldt-verbeterd-miljoenenbod-op-marcus-linday.html"
+  },
+  {
+    "title": "Deze Europese robotmaker is meer dan 1 miljard euro waard",
+    "summary": "In een investeringsronde 130 miljoen euro ophalen, gebeurt niet zomaar. Het robotbedrijf Humanoid is in een rap tempo een robot-unicorn geworden. De waarde van het bedrijf wordt geschat op 1,1 miljard euro. Deze...",
+    "source": "Bright",
+    "published": "2026-07-22T06:07:54Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/22/be430024c813d1dad452c685307a918bb94d9f65.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2114758/deze-europese-robotmaker-is-meer-dan-1-miljard-euro-waard.html"
+  },
+  {
+    "title": "LIVE Transfers: Real gelinkt aan Barça-aanvaller, transfersom Summerville bekend",
+    "summary": "Welke aankopen doen PSV, Feyenoord en Ajax? Wie gaat in het buitenland voor vuurwerk zorgen? In dit liveblog houdt VoetbalPrimeur je op de hoogte van de laatste ontwikkelingen op de zomerse transfermarkt.",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T06:05:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/06/10/d17aad608ceb4bbf37a3c54795e1ad2df7fd08f8.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2099057/live-transfers-alle-ontwikkelingen-op-de-transfermarkt.html"
+  },
+  {
+    "title": "Verstappen lovend over Red Bull: \"En ik hield de auto op het circuit!\"",
+    "summary": "De afgelopen weken ging het nog weleens mis bij Max Verstappen en Red Bull, maar een drastische verandering maakte het in België mogelijk om op het podium te eindigen. De Nederlander is lovend over de stijgende lijn die...",
+    "source": "RacingNews365.nl",
+    "published": "2026-07-22T06:00:00Z",
+    "category": "Formule 1",
+    "image": "",
+    "url": "https://racingnews365.nl/verstappen-lovend-over-red-bull-en-ik-hield-de-auto-op-het-circuit"
+  },
+  {
+    "title": "Youri Baas over nieuwe start van Ajax: 'Wij willen weer domineren'",
+    "summary": "Youri Baas wil weer vooruit met Ajax, letterlijk en figuurlijk. De 23-jarige verdediger, die vorig seizoen werd verkozen tot Speler van het Jaar in Amsterdam, blikt uitgebreid vooruit op het nieuwe seizoen. Baas vertelt...",
+    "source": "Voetbal International",
+    "published": "2026-07-22T06:00:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/20/8918e1330f6d661b588ef35eaff7df4163afbd8b.jpg?width=1200",
+    "url": "https://www.vi.nl/pro/youri-baas-over-nieuwe-start-van-ajax-wij-willen-weer-domineren"
+  },
+  {
+    "title": "Feyenoord haalde specialist binnen na set pieces-drama: 'Het is net schaken'",
+    "summary": "Cornerspecialist Rody Hoegee moet bij Feyenoord gaan zorgen voor doelpunten uit de zogeheten set pieces. De afgelopen jaren leverde onder meer corners geen garantie voor succes bij de Rotterdammers, maar de term komt...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T05:55:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/06/30/d260848a9b571f164739571ffaa394c5334db961.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114761/feyenoord-haalde-specialist-binnen-na-set-pieces-drama.html"
+  },
+  {
+    "title": "Gewaardeerde PSV-kracht aast niet op transfer: 'Heeft gezegd dat hij wil blijven'",
+    "summary": "Ricardo Pepi lijkt ook komend seizoen speler van PSV te zijn. Volgens technisch directeur Earnest Stewart heeft de spits aangegeven dat hij in Eindhoven wil blijven.",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T05:47:09Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/22/555182ceeb975f9ba9a383d75460e25e3d91c41c.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114756/pepi-geeft-aan-bij-psv-te-willen-blijven.html"
+  },
+  {
+    "title": "Belgische media lopen stralend vooruit op aanstelling van 'voetbaldier' Van Bommel",
+    "summary": "Het lijkt er sterk op dat Mark van Bommel snel wordt gepresenteerd als nieuwe bondscoach van België, in de media van onze zuiderburen ging het veel over de Nederlander en de Rode Duivels .",
+    "source": "Voetbal International",
+    "published": "2026-07-22T05:36:12Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/22/09c98f4ce116425b1e9d411c5409a2de00aa2ac6.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/belgische-media-lopen-stralend-vooruit-op-aanstelling-van-voetbaldier-van-bommel"
+  },
+  {
+    "title": "Nog even geen 'Ever Change A Winning Team' bij PSV in Klosterpforte",
+    "summary": "Een ronkende docu over de vorige transferzomer van PSV kreeg de naam Ever Change A Winning Team . Na de derde titel op rij is van dat credo voorlopig nog geen sprake deze zomer. Wat zegt dat? Technisch directeur Earnest...",
+    "source": "Voetbal International",
+    "published": "2026-07-22T05:35:47Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/dcbe1b1d32dbf6487e6dbaadb12e4fc2f0172fc9.jpg?width=1200",
+    "url": "https://www.vi.nl/pro/nog-even-geen-ever-change-a-winning-team-bij-psv-in-klosterpforte"
+  },
+  {
+    "title": "Hangars, schepen, bruggen en tunnels: dit hebben Iran en de VS gebombardeerd",
+    "summary": "Ruim twee weken woedt in het Midden-Oosten nu weer een luchtoorlog tussen Iran en de VS. Dagelijks zijn er raket- en droneaanvallen, maar wat is bekend over getroffen doelwitten? \"Iran lijkt een duidelijkere strategie...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-22T05:30:31Z",
+    "category": "Algemeen",
+    "image": "https://images.cdn.nos.nl/8/C/F/R/a/x/AoNu3JFWdSB2anfZ1VZV39PYcMSH2HEFtvtL5ZY/375x1018x2928x1647-1024x576.webp",
+    "url": "https://nos.nl/l/2623948"
+  },
+  {
+    "title": "Toto Wolff onthult sleutel tot het succes van Kimi Antonelli: ‘En dat op zijn negentiende’",
+    "summary": "Ook voor Toto Wolff kwam het huidige succes van zijn coureur Andrea Kimi Antonelli als een verrassing. Hoewel de Mercedes-teambaas al vroeg het talent bij de Italiaan zag, en hem daarom opnam in het opleidingsprogramma...",
+    "source": "Formule1.nl",
+    "published": "2026-07-22T05:30:00Z",
+    "category": "Formule 1",
+    "image": "https://www.formule1.nl/app/uploads/2026/07/GettyImages-2280344450-600x416.jpg",
+    "url": "https://www.formule1.nl/nieuws/toto-wolff-onthult-sleutel-tot-het-succes-van-kimi-antonelli/"
+  },
+  {
+    "title": "Mokio lovend over Míchel en andere Ajacied: 'Dat kan een groot verschil maken'",
+    "summary": "Jorthy Mokio is blij met de kwaliteitsinjectie die Ajax deze zomer krijgt. De achttienjarige middenvelder denkt dat hij zich dankzij de ervaren spelers sneller kan ontwikkelen. Vooral met de komst van Daley Blind is hij...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T05:23:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2025/10/21/bf6da4159635becd0eee2d49689cbd6cb6e45dec.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114755/mokio-lovend-over-michel-en-blind.html"
+  },
+  {
+    "title": "PSV-verdediger kan na geklapte transfer alsnog vertrekken: 'Gaan een oplossing zoeken'",
+    "summary": "Technisch directeur Earnest Stewart van PSV heeft een update gegeven over de geklapte transfers van Armando Obispo en Adama Nagalo. Volgens de beleidsbepaler blijft eerstgenoemde bij PSV en wordt er voor Nagalo nog...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T05:12:20Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/22/19d8d778c7215f06e51009916bd08bdbcd5b9a38.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114750/stewart-geeft-update-over-nagalo-en-obispo-bij-psv.html"
+  },
+  {
+    "title": "De laatste trailer van Spider-Man: Brand New Day pakt het groots aan",
+    "summary": "De nieuwe trailer van Spider-Man: Brand New Day toont een heleboel bekende gezichten, waaronder een heel grote. Daarnaast kiest Sony voor een vrij emotionele inslag voor de trailer, waardoor het bepaalde theorieën over...",
+    "source": "Bright",
+    "published": "2026-07-22T05:01:47Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/22/bfeeaff88a4efb18e25694e6a464efe65fb1a7f3.png?width=1200",
+    "url": "https://www.bright.nl/nieuws/2114747/de-laatste-trailer-van-spider-man-brand-new-day-pakt-het-groots-aan.html"
+  },
+  {
+    "title": "Snap kiest er toch nog voor om te schikken in grote social media-rechtszaak",
+    "summary": "Snap, het bedrijf achter Snapchat, heeft besloten om te schikken in een zaak rondom social mediaverslaving. In de afgelopen tijd zijn er bij veel verschillende social media-bedrijven problemen geweest door jonge mensen...",
+    "source": "Bright",
+    "published": "2026-07-22T05:00:11Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/22/483e7fb5766d4d1097d03fbf2e2af81dc584ca7b.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2114748/snap-kiest-er-toch-nog-voor-om-te-schikken-in-grote-social-media-rechtszaak.html"
+  },
+  {
+    "title": "Software-update - Fan Control 272",
+    "summary": "Versie 272 van Fan Control is uitgekomen. Met dit programma kunnen de ventilators in de computer worden beheerd en in de gaten worden gehouden. Zo is het onder meer mogelijk om met verschillende profielen en...",
+    "source": "Tweakers",
+    "published": "2026-07-22T05:00:00Z",
+    "category": "Gadgets",
+    "image": "",
+    "url": "https://tweakers.net/downloads/77640/fan-control-272.html"
+  },
+  {
+    "title": "Is een van de bekendste Medici-complotten eindelijk opgelost? Nieuw DNA-onderzoek biedt antwoord",
+    "summary": "Eeuwenlang werd gedacht dat Francesco de’ Medici was vergiftigd. Nieuw DNA-onderzoek wijst nu op een heel andere doodsoorzaak.",
+    "source": "National Geographic Nederland",
+    "published": "2026-07-22T05:00:00Z",
+    "category": "Wetenschap",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/2e43430b-0b2f-404f-9493-373119675f82.jpeg",
+    "url": "https://www.nationalgeographic.nl/wetenschap/a73201990/nieuw-dna-onderzoek-medici-mysterie"
+  },
+  {
+    "title": "Man aangehouden voor dodelijk schietincident vlak bij Vierdaagsefeesten",
+    "summary": "De politie heeft vannacht een 18-jarige man uit Rotterdam aangehouden voor een dodelijk schietincident in Nijmegen. Net buiten het gebied waar de Vierdaagsefeesten waren, werd gisteravond rond 22.00 uur een andere...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-22T04:57:04Z",
+    "category": "Algemeen",
+    "image": "https://cdn.nos.nl/image/2026/07/22/1388903/1024x576a.jpg",
+    "url": "https://nos.nl/l/2623945"
+  },
+  {
+    "title": "Transparante Stewart neemt besluit over aanblijven van Boadu bij PSV",
+    "summary": "Earnest Stewart heeft een update gegeven over de situatie van Myron Boadu. De spits hoopte een nieuw contract bij PSV te verdienen, maar dat lijkt er waarschijnlijk niet in te zitten.",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T04:55:01Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/22/6a2e6639c7e40d67605a91deda3ce23a40a0ea93.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114749/stewart-hakt-knoop-door-over-aanblijven-boadu.html"
+  },
+  {
+    "title": "'Toekomst Memphis lijkt duidelijk: Oranje-spits nadert deal na financieel offer'",
+    "summary": "Memphis Depay stevent af op een contractverlenging bij Corinthians. Nu de 32-jarige aanvaller instemt met een salarisverlaging, zijn de onderhandelingen volgens Braziliaanse media in een stroomversnelling geraakt. Ook...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T04:50:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/06/22/c2c91798551b75f7ac3f1d592201fd4615fcbbb2.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114740/toekomst-memphis-duidelijk-aanvaller-nadert-akkoord.html"
+  },
+  {
+    "title": "Wekdienst 22/7: 15 jaar na aanslag op Noors Utøya • Tweede dag Nijmeegse Vierdaagse",
+    "summary": "Goedemorgen! Vandaag wordt een politiebureau geopend in het huis waar Adolf Hitler werd geboren in Oostenrijk. En lopers zijn begonnen aan de tweede dag van de Nijmeegse Vierdaagse. Eerst het weer: vandaag is het...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-22T04:46:45Z",
+    "category": "Algemeen",
+    "image": "https://cdn.nos.nl/image/2026/07/22/1388900/1024x576a.jpg",
+    "url": "https://nos.nl/l/2623944"
+  },
+  {
+    "title": "'Er moet echt nog wat gebeuren bij Ajax, de Spaanse hand is nog niet zichtbaar'",
+    "summary": "Valentijn Driessen twijfelt er niet aan dat Marcos Leonardo zijn doelpunten ook voor Ajax gaat maken. De chef voetbal van De Telegraaf vreest echter dat er nog wel wat meer moet gebeuren bij Ajax om klaar te zijn voor...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T04:40:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/04/223e687263592c2aa430eaec9ef864d74acaaca0.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114727/driessen-spaanse-hand-nog-niet-zichtbaar-bij-ajax.html"
+  },
+  {
+    "title": "'Groot nieuws uit België: Van Bommel nieuwe bondscoach Rode Duivels'",
+    "summary": "Het is zo goed als rond: Mark van Bommel wordt de nieuwe bondscoach van België. Met dat nieuws pakt onder meer Het Nieuwsblad dinsdagavond uit. De oud-trainer van PSV en Royal Antwerp FC is het eens geworden over een...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T04:30:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/21/d141a6438eed9051ebd83b44f08dc76e127982ff.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114709/van-bommel-wordt-nieuwe-bondscoach-rode-duivels.html"
+  },
+  {
+    "title": "Opsteker Ajax: aanwinst Leonardo en Carrizo tóch in Europese selectie",
+    "summary": "Ajax-aanwinst Marcos Leonardo en Maher Carrizo kunnen tóch in actie komen tegen FK Vojvodina. Het tweetal stond aanvankelijk niet op de A-lijst van de Amsterdammers voor het tweeluik in de voorrondes van de Conference...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T04:15:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/21/39ae174c3a6f09c2ef88392568f3a3d0916baf5f.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114694/leonardo-en-carrizo-op-a-lijst-ajax.html"
+  },
+  {
+    "title": "'Kaping succesvol: Summerville voor tachtig miljoen (!) naar Al Hilal'",
+    "summary": "Crysencio Summerville gaat zijn loopbaan voortzetten bij Al Hilal, meldt The Athletic . AS Roma zat op het vinkentouw en deed drie aanbiedingen voor de 24-jarige aanvaller van het Nederlands elftal en West Ham United,...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-22T04:05:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/21/889f2ef81eb09fde3633d2aac70264d8f236f07e.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114672/summerville-van-west-ham-naar-al-hilal.html"
+  },
+  {
+    "title": "Achtergrond - Online PS4-gamen zonder console: zo speelt shadNet dat klaar",
+    "summary": "Online gamen op de PS4 kan nog, maar Sony kan die ondersteuning ooit beëindigen. Daarom bouwen de makers van emulator shadPS4 aan shadNet.",
+    "source": "Tweakers",
+    "published": "2026-07-22T04:00:00Z",
+    "category": "Gadgets",
+    "image": "",
+    "url": "https://tweakers.net/reviews/15050/online-ps4-gamen-zonder-console-zo-speelt-shadnet-dat-klaar.html"
+  },
+  {
+    "title": "Vorig jaar flink minder Amazoneregenwoud afgebrand",
+    "summary": "Na jaren van alarmerende berichten over het Braziliaanse Amazoneregenwoud is er nu een beetje goed nieuws. Sinds het begin van de metingen, in 1985, brandde er nog nooit zo weinig bos af. Volgens MapBiomas , dat de...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-22T02:36:02Z",
+    "category": "Algemeen",
+    "image": "https://images.cdn.nos.nl/3/8/A/U/d/6/3EszLqJ5BguPdvNwCxFZVGKLgh3DDyvhr2Bpd5d/8x4x3984x2241-1024x576.webp",
+    "url": "https://nos.nl/l/2623941"
+  },
+  {
+    "title": "Man die uit vliegtuig gezogen werd: 'Hoofd en nek doen pijn, maar ik leef nog'",
+    "summary": "De man die eerder deze maand aan de dood ontsnapte nadat hij bijna door een kapot raam in een vliegtuig naar buiten werd gezogen, is uit het ziekenhuis. Ljubisa Karovic heeft verwondingen over zijn lichaam: \"Ik heb...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-22T00:43:59Z",
+    "category": "Algemeen",
+    "image": "https://cdn.nos.nl/image/2026/07/22/1388891/1024x576a.jpg",
+    "url": "https://nos.nl/l/2623940"
+  },
+  {
+    "title": "Reisadviezen Midden-Oosten aangescherpt vanwege opgelaaid geweld Iran en VS",
+    "summary": "Het ministerie van Buitenlandse Zaken heeft de reisadviezen voor een aantal landen in het Midden-Oosten aangescherpt. Volgens het ministerie is de situatie er verslechterd. Voor Qatar, Jordanië, Saudi-Arabië, Koeweit en...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-21T23:07:46Z",
+    "category": "Algemeen",
+    "image": "https://images.cdn.nos.nl/8/F/U/h/Z/2/9HTHAS1sUi4nygxKHD2e9ydabKmduty5DDLD31G/0x217x3728x2097-1024x576.webp",
+    "url": "https://nos.nl/l/2623939"
+  },
+  {
+    "title": "'Ex-Eredivisie-uitblinker na transfer van 42,8 miljoen op weg naar nieuwe club'",
+    "summary": "Voormalig Vitesse-uitblinker Loïs Openda staat open voor een transfer naar Olympique Lyon. De 26-jarige Rode Duivel is op zoek naar een nieuwe start na een moeilijk seizoen bij Juventus en zou volgens Foot Mercato...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-21T22:26:03Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/21/3486094a74c37db17b20f5926e080ea18f77bdb1.png?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114737/lois-openda-open-voor-transfer-van-juventus-naar-lyon.html"
+  },
+  {
+    "title": "Curaçaose bondsvoorzitter Martina stopt vanwege gezondheidsproblemen",
+    "summary": "Bondsvoorzitter van Curaçao, Gilbert Martina, stapt per direct op. De voetbalbond maakte bekend dat Martina zijn functie naast zich neerlegt vanwege gezondheidsredenen.",
+    "source": "Voetbal International",
+    "published": "2026-07-21T22:22:09Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/023724f872415b80c25710699bbc787abfc427d7.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/curacaose-bondsvoorzitter-martina-stopt-vanwege-gezondheidsproblemen"
+  },
+  {
+    "title": "‘Steenrijk Paris FC, Anderlecht én Rangers FC jagen op dezelfde aanvaller’",
+    "summary": "Brighton & Hove Albion heeft een bod van RSC Anderlecht op Amario Cozier-Duberry afgewezen, zo meldt het betrouwbare The Athletic. Paars-wit zou een aanbieding van vijf miljoen pond, omgerekend bijna zes miljoen euro,...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-21T22:01:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/21/9bda9e81e15226208c4bdc99d911bfd9f9341594.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114666/anderlecht-ziet-bod-op-brighton-aanvaller-afgewezen-worden.html"
+  },
+  {
+    "title": "Liverpool zonder Gakpo en Van Dijk naar Amerika: Gravenberch sluit wel aan",
+    "summary": "Cody Gakpo en Virgil van Dijk reizen niet mee naar de Verenigde Staten voor het trainingskamp van Liverpool. Dat vertelt Andoni Iraola op de persconferentie . Ryan Gravenberch sluit wel aan bij de selectie.",
+    "source": "VoetbalPrimeur",
+    "published": "2026-07-21T21:57:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/04/20/9be98fa286dc3bdf1de17f38664bc9ad5f1d8582.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2114745/liverpool-zonder-gakpo-en-van-dijk-naar-amerika-gravenberch-sluit-wel-aan.html"
+  },
+  {
+    "title": "Rogers duurste Engelse speler ooit: Chelsea betaalt 137 miljoen euro aan Aston Villa",
+    "summary": "De recordtransfer van Engels international Morgan Rogers naar Chelsea is afgerond. De aanvallende middenvelder komt over van Aston Villa voor een bedrag van naar verluidt 137 miljoen euro, een recordaankoop voor de...",
+    "source": "NOS Sport",
+    "published": "2026-07-21T21:47:28Z",
+    "category": "Sport",
+    "image": "https://images.cdn.nos.nl/2/4/t/R/v/C/wTWSDxHfAwAtFeYwKPHvGCqvFbYdKAURRLtydjR/8x147x3984x2241-1024x576.webp",
+    "url": "https://nos.nl/l/2623938"
+  },
+  {
+    "title": "'Het was een eer om deel uit te maken van de allerbeste Argentijnse selectie ooit'",
+    "summary": "Na de verloren WK-finale tegen Spanje laten de Argentijnse spelers van zich horen. Er was veel kritiek op de spelers, onder anderen op Leandro Paredes . De middenvelder van Boca Juniors luchtte zijn hart op sociale...",
+    "source": "Voetbal International",
+    "published": "2026-07-21T21:42:48Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/1c5e0d535f901394f3152b51f00e005301f14ac5.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/paredes-speelde-met-gebroken-rib-alles-gegeven-tot-de-allerlaatste-seconde"
+  },
+  {
+    "title": "Rogers gepresenteerd door Chelsea: 'Dit is de grootste club van Londen'",
+    "summary": "De meeste transferwindows zijn geopend en dus neemt het transfernieuws weer toe. Traditiegetrouw volgt Voetbal International de buitenlandse markt op de voet. Bekijk hier ons blog voor de transferperikelen in Nederland.",
+    "source": "Voetbal International",
+    "published": "2026-07-21T21:13:04Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/02/03/c3435c37b46c1432f7bdc81322cb05ea211247de.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/rogers-gepresenteerd-door-chelsea-dit-is-de-grootste-club-van-londen"
+  },
+  {
+    "title": "Jonge man doodgeschoten tijdens feesten Nijmeegse Vierdaagse",
+    "summary": "In Nijmegen is tijdens de Vierdaagsefeesten iemand doodgeschoten. Dat gebeurde gisteravond iets na 22.00 uur. Het slachtoffer overleed niet veel later in het ziekenhuis. Volgens de politie is het slachtoffer een jonge...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-21T20:53:25Z",
+    "category": "Algemeen",
+    "image": "https://images.cdn.nos.nl/5/A/R/r/K/o/XSCd5SCqSTjNZQXZ3FsKr3S1Ra4dtiELJJ1Bwt2/0x114x1280x720-1024x576.webp",
+    "url": "https://nos.nl/l/2623934"
+  },
+  {
+    "title": "135 miljoen euro: Chelsea rondt recordtransfer Engels international Rogers af",
+    "summary": "Chelsea heeft de komst van Morgan Rogers officieel gemaakt. De Engels international is voor naar verluidt liefst 135 miljoen euro overgenomen van Aston Villa. Daarmee is Rogers de duurste aankoop uit de clubgeschiedenis...",
+    "source": "Voetbal International",
+    "published": "2026-07-21T20:52:25Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/20/d95a4d4d0ac3ca00818ec97e0f42c1042c76a977.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/135-miljoen-euro-chelsea-rondt-recordtransfer-engels-international-rogers-af"
+  },
+  {
+    "title": "Iraola vertelt wanneer Van Dijk, Gakpo en Gravenberch zich moeten melden",
+    "summary": "Cody Gakpo en Virgil van Dijk reizen niet met de selectie van Liverpool naar de Verenigde Staten. Ryan Gravenberch zal wel aanwezig zijn op het trainingskamp.",
+    "source": "Voetbal International",
+    "published": "2026-07-21T20:45:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/40f535f66a360999f1f174d32c273de32e97b6d1.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/iraola-vertelt-wanneer-van-dijk-gakpo-en-gravenberch-zich-moeten-melden"
+  },
+  {
+    "title": "Zevenvoudig olympische roeier Tufte (50) plots overleden: 'Een van grootste Noorse sporthelden'",
+    "summary": "De Noorse roeier Olaf Tufte is op 50-jarige leeftijd overleden. Tufte kwam in actie op zeven Olympische Spelen en wordt gezien als een van de grootste atleten in de Noorse sportgeschiedenis. Hij won twee gouden...",
+    "source": "NOS Sport",
+    "published": "2026-07-21T20:42:04Z",
+    "category": "Sport",
+    "image": "https://images.cdn.nos.nl/7/4/f/a/4/K/arTRy1MbJeKE1ux7KNSa8i1xe7SUAB9LrmGthU9/8x177x3984x2241-1024x576.webp",
+    "url": "https://nos.nl/l/2623930"
+  },
+  {
+    "title": "Van Duijvenbode schakelt drievoudig winnaar Van Gerwen uit op World Matchplay",
+    "summary": "Dirk van Duijvenbode heeft ten koste van Michael van Gerwen de kwartfinales van de World Matchplay bereikt. Van Duijvenbode won het Nederlandse duel in Blackpool met 14-12 in legs. Later op de avond maakte topfavoriet...",
+    "source": "NOS Sport",
+    "published": "2026-07-21T20:33:59Z",
+    "category": "Sport",
+    "image": "https://images.cdn.nos.nl/6/9/z/u/p/Q/5Qiw9XycYsKShmXCrUHYUbLEXQLiDVXPhLAeaGz/308x63x3296x1854-1024x576.webp",
+    "url": "https://nos.nl/l/2623929"
+  },
+  {
+    "title": "'Modric (40) is er nog niet klaar mee en gaat door bij AC Milan'",
+    "summary": "Er was een tijdje vrees dat Luka Modric zijn schoenen aan de wilgen zou hangen na het teleurstellende WK, maar volgens Italiaanse media plakt de 40-jarige middenvelder er nog een jaartje aan vast. Daarbij blijft de...",
+    "source": "Voetbal International",
+    "published": "2026-07-21T20:31:31Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/12f3fd481e340f852416425ea5d4e9d57a2bf16e.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/modric-is-er-niet-klaar-mee-en-gaat-nog-een-jaar-door-bij-ac-milan"
+  },
+  {
+    "title": "Hoge energiekosten en concurrentie: Chemelot kijkt met zorg naar toekomst",
+    "summary": "Gordijnen, keukenkastjes, waterkokers, en ook afwasborstels. Allemaal bevatten ze materialen afkomstig van het kilometers grote industriecomplex Chemelot, in Geleen. Op Chemelot is te merken dat de chemische industrie...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-21T20:23:02Z",
+    "category": "Algemeen",
+    "image": "https://images.cdn.nos.nl/3/3/t/R/B/q/8kxcjRRnhwuqfPZnfu7AuqxbQnUSx8Hw5hzYYxg/8x156x3984x2241-1024x576.webp",
+    "url": "https://nos.nl/l/2623928"
+  },
+  {
+    "title": "Fenerbahçe zet eerste stap richting Champions League, FC Twente kijkt mee",
+    "summary": "Fenerbahçe is de jacht op een Champions League-ticket goed begonnen. De topclub uit Turkije won de eerste van twee wedstrijden van het Poolse Górnik Zabrze. De uitslag van het tweeluik is relevant voor FC Twente.",
+    "source": "Voetbal International",
+    "published": "2026-07-21T20:08:07Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/a05bafc39e62f44ce1bc44cb773581475d9e73eb.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/fenerbahce-zet-eerste-stap-richting-champions-league-fc-twente-kijkt-mee"
+  },
+  {
+    "title": "President Zelensky stuurt ook legerchef Syrsky weg",
+    "summary": "De Oekraïense commandant der strijdkrachten Oleksandr Syrsky wordt ontslagen. President Zelensky heeft dat bekendgemaakt op sociale media, zonder reden te geven. Syrsky's ontslag werd de afgelopen dagen meermaals geëist...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-21T20:00:11Z",
+    "category": "Algemeen",
+    "image": "https://images.cdn.nos.nl/8/6/N/7/a/Z/dYVhw2oZH2Nn8trsrEdKk5bSCWU648GnzFr3vaB/0x211x4000x2250-1024x576.webp",
+    "url": "https://nos.nl/l/2623927"
+  },
+  {
+    "title": "Smithsonian bijt van zich af na kritiek van Witte Huis: 'We moeten hele verhaal vertellen'",
+    "summary": "De directeur van het National Museum of American History in Washington wijst de scherpe kritiek van het Witte Huis op haar functioneren van de hand. Haar museum werd in een rapport weggezet als een bolwerk van \"radicale...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-21T19:54:33Z",
+    "category": "Algemeen",
+    "image": "https://images.cdn.nos.nl/5/8/s/U/n/Q/GE65AZvgAEp8kCSYUtX4Zz4iUvjnAYjo39sEMdj/75x167x752x423-752x423.webp",
+    "url": "https://nos.nl/l/2623926"
+  },
+  {
+    "title": "Arensman baalt na te late start in Tourtijdrit: 'Het is mijn eigen verantwoordelijkheid'",
+    "summary": "Thymen Arensman was zó geconcentreerd dat hij even vergat dat het al zo ver was. De Nederlander schrok wakker uit \"zijn focus\" toen hij ontdekte dat hij dinsdagmiddag aan het Meer van Genève al op het startpodium had...",
+    "source": "NOS Sport",
+    "published": "2026-07-21T19:20:08Z",
+    "category": "Sport",
+    "image": "https://images.cdn.nos.nl/5/9/M/T/8/m/aXLqYTLZ1DAqUbMELAFM8Nk6s9iQLLMzhsnSVSP/8x121x3824x2151-1024x576.webp",
+    "url": "https://nos.nl/l/2623925"
+  },
+  {
+    "title": "Franse parlement stemt in met verbod op sociale media voor kinderen onder 15",
+    "summary": "Het Franse parlement heeft ingestemd met een wet die kinderen onder de 15 jaar verbiedt sociale media te gebruiken. Daarmee is Frankrijk het eerste land in de Europese Unie dat een algemeen verbod op sociale media voor...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-21T19:18:54Z",
+    "category": "Algemeen",
+    "image": "https://images.cdn.nos.nl/3/9/D/W/h/X/cEUjKoqCDhtg7CJ1sCDXSr1YR3YwEDNt82NQibA/8x212x3984x2241-1024x576.webp",
+    "url": "https://nos.nl/l/2623924"
+  },
+  {
+    "title": "Marcos Leonardo en Carrizo toch ingeschreven voor Europees tweeluik",
+    "summary": "Marcos Leonardo en Maher Carrizo zijn toch opgenomen in de Europese lijst van Ajax voor de voorrondes van de Conference League tegen FK Vojvodina. Eerder op de dag ontbraken beiden nog. Dit gaat ten koste van Tristan...",
+    "source": "Voetbal International",
+    "published": "2026-07-21T19:13:23Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/2749dfa9b6b6ca34751dc250e5947abc2db7e267.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/marcos-leonardo-en-carrizo-toch-ingeschreven-voor-europees-tweeluik"
+  },
+  {
+    "title": "Zo wapen je je tegen het grote Avengers Doomsday-lek",
+    "summary": "Gisteren werd de eerste officiële trailer van Avengers Doomsday getoond aan de wereld. Fans legden de trailer naast een recent lek van het volledige verhaal en de gelekte stukken komen volledig overeen met het...",
+    "source": "Bright",
+    "published": "2026-07-21T19:11:00Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/20/a8864414cfbe31bd5d2339f241c026a640e683d7.jpeg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2114619/zo-wapen-je-je-tegen-het-grote-avengers-doomsday-lek.html"
+  },
+  {
+    "title": "Weer protest van 'Kakkerlakbeweging' India, oppositieleider aangehouden",
+    "summary": "Duizenden aanhangers van de zogenoemde Kakkerlakbeweging in India hebben opnieuw gedemonstreerd in hoofdstad New Delhi. Oppositieleider Rahul Gandhi deed ook mee aan het protest tegen de regering, maar werd door agenten...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-21T19:05:13Z",
+    "category": "Algemeen",
+    "image": "https://images.cdn.nos.nl/2/H/E/Z/A/k/4k7A6UnDYxSWgs4xeraFGJ3HN1q8XbxnfdNcbex/8x64x3984x2241-1024x576.webp",
+    "url": "https://nos.nl/l/2623922"
+  },
+  {
+    "title": "Belgische media: Van Bommel tot 2028 bondscoach België",
+    "summary": "Mark van Bommel (49) wordt de nieuwe bondscoach van België. Dat melden Belgische media dinsdagavond.",
+    "source": "Voetbal International",
+    "published": "2026-07-21T18:39:23Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/90c96aed1606caba86ecd0a9dfad097970e89744.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/belgische-media-van-bommel-nieuwe-bondscoach-belgie"
+  },
+  {
+    "title": "Odido verhoogt prijs en snelheid van zakelijke abonnementen",
+    "summary": "Odido verhoogt per 1 september de prijs en snelheid van zijn zakelijke Hello Business- en @Work-abonnementen. Daarnaast rekent de provider in meer landen geen aanvullende roamingkosten meer. Klanten gaan 1,50 euro per...",
+    "source": "Tweakers",
+    "published": "2026-07-21T18:38:24Z",
+    "category": "Gadgets",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/250268/odido-verhoogt-prijs-en-snelheid-van-zakelijke-abonnementen.html"
+  },
+  {
+    "title": "Ondanks 'dronisering' moeten in Polen ook tanks van de band blijven rollen",
+    "summary": "Tussen de bomen in het grensgebied van Polen en Rusland verschijnen de silhouetten van drie ronkende tanks. Zeven kilometer verderop ligt de Russische exclave Kaliningrad. Als een oorlog uitbreekt, dan wordt die...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-21T18:32:57Z",
+    "category": "Algemeen",
+    "image": "https://images.cdn.nos.nl/8/7/x/B/H/i/3jeTXa6T8RQNqGD8UXzPn5v5r8AroB1Wiu9jeA8/0x0x1920x1080-1024x576.webp",
+    "url": "https://nos.nl/l/2623921"
+  },
+  {
+    "title": "Oeroude Aboriginal rotskunst bedreigd door Australisch aardgasproject",
+    "summary": "Het Australische hooggerechtshof neemt deze week de verlenging en uitbreiding van een aardgasproject in het noordwesten van het land onder de loep. In september vorig jaar gaf de minister voor Natuur groen licht voor de...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-21T18:30:01Z",
+    "category": "Algemeen",
+    "image": "https://images.cdn.nos.nl/6/8/M/H/8/3/fVLKe2bpc5DMn8e4myuXf2yDeUPLk64dDhZvsLF/8x321x3984x2241-1024x576.webp",
+    "url": "https://nos.nl/l/2623920"
+  },
+  {
+    "title": "Software-update - VirtualBox 7.2.14",
+    "summary": "Oracle heeft versie 7.2.14 van VirtualBox uitgebracht. VirtualBox kan worden gebruikt om andere besturingssystemen als een virtuele machine op een computer te installeren. Daardoor is het mogelijk om verschillende...",
+    "source": "Tweakers",
+    "published": "2026-07-21T18:30:00Z",
+    "category": "Gadgets",
+    "image": "",
+    "url": "https://tweakers.net/downloads/77638/virtualbox-7214.html"
+  },
+  {
+    "title": "Politiebureau in geboortehuis Hitler, om 'nazi-toerisme' tegen te gaan",
+    "summary": "Na jaren renoveren opent een nieuw politiebureau in het Oostenrijkse dorpje Braunau am Inn morgen de deuren. Opvallend detail: het gaat om het huis waar Adolf Hitler in 1889 geboren werd. Na Hitlers dood was het drie...",
+    "source": "NOS Algemeen",
+    "published": "2026-07-21T18:25:02Z",
+    "category": "Algemeen",
+    "image": "https://images.cdn.nos.nl/5/o/v/F/e/D/jfZst9dNMh9t6BhSoYVEwSFQW4w7ZXXRkgqjeB/8x167x3984x2241-1024x576.webp",
+    "url": "https://nos.nl/l/2623923"
+  },
+  {
+    "title": "Nieuwe club voor Nederlandse verdediger na WK voor clubs en Marokkaans avontuur",
+    "summary": "Bart Meijers gaat aan de slag in Bosnië en Herzegovina. De verdediger vertrok transfervrij bij Wydad Casablanca en gaat nu spelen voor FK Borac Banja Luka. Hij tekent voor één seizoen.",
+    "source": "Voetbal International",
+    "published": "2026-07-21T18:17:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/318d34b405bb55bc8895a2b400289733b7d85a47.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/nieuwe-club-voor-nederlandse-verdediger-na-wk-voor-clubs-en-marokkaans-avontuur"
+  },
+  {
+    "title": "Google sloopt het open web: hoe AI zoekverkeer laat verdwijnen",
+    "summary": "Toen Google-oprichter Larry Page in 2004 de beursgang van het bedrijf voorbereidde, schreef hij een beroemde brief aan de aandeelhouders. Een goed werkende samenleving had volgens hem recht op overvloedige, gratis en...",
+    "source": "Bright",
+    "published": "2026-07-21T18:14:06Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/21/39ee167c292332b864e87994e005d426c8daeca1.jpg?width=1200",
+    "url": "https://www.bright.nl/plusplus/2114483/google-sloopt-het-open-web-hoe-ai-zoekverkeer-laat-verdwijnen.html"
+  },
+  {
+    "title": "Google brengt drie AI-modellen uit, waaronder model voor softwarelekken",
+    "summary": "Google heeft drie nieuwe AI-modellen geïntroduceerd. De zoekgigant komt onder meer met 3.5 Flash Cyber, een model op basis van Gemini 3.5 Flash dat is geoptimaliseerd voor het vinden van kwetsbaarheden in software.",
+    "source": "Tweakers",
+    "published": "2026-07-21T18:03:14Z",
+    "category": "Gadgets",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/250266/google-brengt-drie-ai-modellen-uit-waaronder-model-voor-softwarelekken.html"
+  },
+  {
+    "title": "Fortuna vergroot opties voorin met aantrekken Descotte",
+    "summary": "Fortuna Sittard huurt Anthony Descotte. De aanvaller (22) komt over van het Belgische Sporting Charleroi.",
+    "source": "Voetbal International",
+    "published": "2026-07-21T17:57:02Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/d78dc7a35c9c9d56bd6e6ceb3143dda3618a1b9a.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/fortuna-vergroot-opties-voorin-met-aantrekken-descotte"
+  },
+  {
+    "title": "Leonardo waarschuwt Hongaarse media voor FC Twente",
+    "summary": "Leonardo heeft in de Hongaarse media laten weten dat Ferencváros moet waken voor FC Twente in de voorronde van de Europa League. De Braziliaan, woonachtig in Nederland, was zowel in zijn spelersloopbaan als trainer...",
+    "source": "Voetbal International",
+    "published": "2026-07-21T17:52:55Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/01509c40d3ae7f5ffc3650fc02fa53e2488164b5.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/leonardo-waarschuwt-hongaarse-media-voor-fc-twente"
+  },
+  {
+    "title": "Racing Bulls gebruikt Verstappen als 'leidraad': \"Luister daar eens naar\"",
+    "summary": "Max Verstappen wordt veelvuldig als voorbeeld gebruikt bij Racing Bulls, zo vertelt teambaas Alan Permane in België. Liam Lawson en Arvid Lindblad luisteren naar de feedback van de viervoudig wereldkampioen.",
+    "source": "RacingNews365.nl",
+    "published": "2026-07-21T17:30:00Z",
+    "category": "Formule 1",
+    "image": "",
+    "url": "https://racingnews365.nl/racing-bulls-gebruikt-verstappen-als-leidraad-luister-daar-eens-naar"
+  },
+  {
+    "title": "Lewis Holtby kondigt einde van profcarrière aan",
+    "summary": "Lewis Holtby heeft een punt gezet achter zijn loopbaan als profvoetballer. De 35-jarige Duitser maakte maandag via Instagram bekend dat hij stopt, nadat eerder al duidelijk was geworden dat zijn contract bij NAC Breda...",
+    "source": "Voetbal International",
+    "published": "2026-07-21T17:21:15Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/afa9e99244b01cffbec5f0163a246979b8b337a7.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/lewis-holtby-beeindigt-loopbaan-dit-is-mijn-afscheid-van-het-voetbal"
   },
   {
     "title": "Zomertransfers Eredivisie seizoen 2026/27: alle clubs op een rij",
     "summary": "De transferperiode is weer losgebarsten. In dit overzicht van VI vind je alle afgeronde zomertransfers van de achttien Eredivisie-clubs. Transfers komen pas in dit overzicht als ze zijn bevestigd door de betreffende...",
     "source": "Voetbal International",
-    "published": "2026-07-21T07:30:00Z",
+    "published": "2026-07-21T17:13:01Z",
     "category": "Voetbal",
     "image": "https://webp.vi.cdn.pxr.nl/news/2026/06/08/eba412dead26cbdf67ec82003f878f124aafdf34.jpg?width=1200",
     "url": "https://www.vi.nl/nieuws/zomertransfers-eredivisie-seizoen-2026-27-alle-clubs-op-een-rij"
   },
   {
-    "title": "Na week van uitersten richt Vojvodina vizier op Ajax: 'Ik geloof in dit team'",
-    "summary": "FK Vojvodina werkt met hernieuwd vertrouwen toe naar de eerste ontmoeting met Ajax. De Conference League-opponent van de Amsterdammers verliet de Europa League vorige week met een kater, maar begon de Servische...",
-    "source": "Voetbal International",
-    "published": "2026-07-21T07:20:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/a0e123015b7e31cbf6f389a8324e04656381a5f8.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/na-week-van-uitersten-richt-vojvodina-vizier-op-ajax-ik-geloof-in-dit-team"
-  },
-  {
-    "title": "Spannende strijd: welke speler was volgens de VI-lezer de ster van het WK?",
-    "summary": "Nu het WK 2026 erop zit, is het tijd om de balans op te maken. De FIFA verkoos Rodri tot beste speler van het toernooi, maar wij zijn vooral benieuwd wie volgens de VI-lezers de allerbeste was. De uitblinkende Lionel...",
-    "source": "Voetbal International",
-    "published": "2026-07-21T07:20:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/20/0d60ee0c61b4ab4e9cf22d276a0f41e4a2a46afc.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/stembussen-geopend-welke-speler-was-volgens-de-vi-lezer-de-ster-van-het-wk"
-  },
-  {
-    "title": "'Gewilde Tadic komt met teleurstellende boodschap voor Eredivisie-teams'",
-    "summary": "Dusan Tadic wordt al enkele dagen gelinkt aan een terugkeer naar de Eredivisie, maar dat lijkt er niet van te komen. Lokale bronnen melden aan Voetbal International dat de Serviër een nieuwe club heeft in de Verenigde...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T07:17:11Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/21/ccdb4fdfa9c075f77b2ad35dc8019baae022d7cb.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114463/gewilde-tadic-blijft-nec-af-en-blijft-in-emiraten.html"
-  },
-  {
-    "title": "Sensationele VeeKay passeert IndyCar-grootheid richting 'onmogelijke' top tien",
-    "summary": "Rinus VeeKay heeft op de Nashville Superspeedway opnieuw indruk gemaakt, maar hield uiteindelijk minder over aan zijn sterke race dan verdiend.",
-    "source": "RacingNews365.nl",
-    "published": "2026-07-21T07:15:00Z",
-    "category": "Formule 1",
-    "image": "",
-    "url": "https://racingnews365.nl/sensationele-veekay-passeert-indycar-grootheid-richting-onmogelijke-top-tien"
-  },
-  {
-    "title": "'Paredes kreeg toch géén rood vanwege wangedrag na WK-finale'",
-    "summary": "Leandro Paredes heeft in tegenstelling tot eerdere berichtgeving toch geen rode kaart gekregen in de nasleep van de WK-finale tussen Spanje en Argentinië. Dat hebben bronnen binnen de FIFA aan meerdere Engelse media...",
-    "source": "Voetbal International",
-    "published": "2026-07-21T07:08:26Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/22d7ea3163bf641699d7f2c06f206b4d9069a434.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/paredes-kreeg-toch-geen-rood-vanwege-wangedrag-na-wk-finale"
-  },
-  {
-    "title": "Nederlands Defensie wil onderzeeboten opsporen met gesleepte glasvezelkabels",
-    "summary": "Het Nederlandse ministerie van Defensie wil vijandelijke onderzeeboten opsporen met glasvezelkabels. Het gaat niet om bestaande internetkabels, maar om een lange kabel die door een Nederlandse onderzeeboot wordt...",
-    "source": "Tweakers",
-    "published": "2026-07-21T07:07:19Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/250240/nederlands-defensie-wil-onderzeeboten-opsporen-met-gesleepte-glasvezelkabels.html"
-  },
-  {
-    "title": "Alderweireld schuift Nederlander naar voren: 'Steek mijn hand in het vuur'",
-    "summary": "De Belgische voetbalbond KBVB heeft afscheid genomen van bondscoach Rudi Garcia. De naam van Mark van Bommel wordt genoemd als opvolger, weet oud-voetballer Toby Alderweireld. De voormalige Ajacied is zeer te spreken...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T07:07:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/06/10/ab7ae62c7471784263d90353fb67534f04c91b21.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114459/alderweireld-ziet-van-bommel-als-ideale-bondscoach-van-belgie.html"
-  },
-  {
-    "title": "Prime Video krijgt er deze week een peperdure bioscoopflop bij",
-    "summary": "De nieuwe He-Man-film Masters of the Universe verschijnt deze week al op Prime Video. De peperdure productie draait momenteel pas een week of zeven in de bioscoop, maar is vanaf woensdag ook thuis te zien.",
+    "title": "Eindelijk is de Eredivisie belangrijk genoeg voor Apple Sports",
+    "summary": "Met het WK voetbal nog vers in ons collectief geheugen is het alweer aftellen naar de aftrap van onze eigen Eredivisie. Vanaf dit seizoen is het Nederlandse topvoetbal eindelijk ook interessant genoeg voor Apple, want...",
     "source": "Bright",
-    "published": "2026-07-21T07:05:48Z",
+    "published": "2026-07-21T17:09:00Z",
     "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/20/d71d0f422c717c9e1a33ac04b27f4cab7314a897.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2114355/geflopte-he-man-film-verschijnt-deze-week-al-op-prime-video.html"
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/21/ff6342b555ed07bafd51afc732fa79da5ef2cc46.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2114614/eindelijk-is-de-eredivisie-belangrijk-genoeg-voor-apple-sports.html"
   },
   {
-    "title": "Software-update - NAPS2 8.3.0",
-    "summary": "NAPS2 is een opensource- en crossplatformprogramma om documenten te scannen. Het staat voor Not Another PDF Scanner, maar dat dekt de lading niet helemaal. Het kan niet alleen naar pdf scannen, maar ook naar tiff, jpg...",
+    "title": "Software-update - Mozilla Firefox 153.0",
+    "summary": "Mozilla heeft versie 153 van zijn webbrowser Firefox uitgebracht. In deze uitgave is onder meer ondersteuning voor het afspelen van hdr-video's toegevoegd, kunnen bepaalde pagina's in containers worden gedraaid, zodat...",
     "source": "Tweakers",
-    "published": "2026-07-21T07:00:00Z",
+    "published": "2026-07-21T17:06:36Z",
     "category": "Gadgets",
     "image": "",
-    "url": "https://tweakers.net/downloads/77634/naps2-830.html"
+    "url": "https://tweakers.net/downloads/77630/mozilla-firefox-1530.html"
   },
   {
-    "title": "Viergever pakt de leidersrol bij PEC: 'Ik wist dat ik niet wilde stoppen'",
-    "summary": "Stoppen wilde hij deze zomer zeker nog niet. Bij PEC Zwolle wil Nick Viergever laten zien wat hij nog in zich heeft. En, niet geheel onbelangrijk, wil de 36-jarige verdediger gewoon nog 'lekker voetballen'. Viergever...",
-    "source": "Voetbal International",
-    "published": "2026-07-21T07:00:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/18/f49f3b59b9edfc935884ab03e035f63fa69b355e.jpg?width=1200",
-    "url": "https://www.vi.nl/pro/viergever-pakt-de-leidersrol-bij-pec-ik-wist-dat-ik-niet-wilde-stoppen"
-  },
-  {
-    "title": "'Zidane slaat compleet nieuwe weg in na aanstelling bij Franse nationale elftal'",
-    "summary": "Zinedine Zidane wordt spoedig gepresenteerd als bondscoach van de Fransen. Volgens L’Équipe wordt de oud-international eind juli gepresenteerd en heeft hij een duidelijke werkwijze op het oog.",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T06:55:31Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/21/290be28ea7e2bd8a10f5e8b87555554d6aca5aca.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114456/zidane-volgende-week-gepresenteerd-bij-frankrijk.html"
-  },
-  {
-    "title": "'Aan NEC gelinkte Tadic tekent in Emiraten, Modric (40) gaat langer door'",
-    "summary": "De meeste transferwindows zijn geopend en dus neemt het transfernieuws weer toe. Traditiegetrouw volgt Voetbal International de buitenlandse markt op de voet. Bekijk hier ons blog voor de transferperikelen in Nederland.",
-    "source": "Voetbal International",
-    "published": "2026-07-21T06:47:07Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/02/03/c3435c37b46c1432f7bdc81322cb05ea211247de.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/aan-nec-gelinkte-tadic-tekent-in-emiraten-modric-40-gaat-langer-door"
-  },
-  {
-    "title": "Hwang verlaat Feyenoord en tekent voor Farioli's Porto",
-    "summary": "Hwang In-beom verlaat Feyenoord voor het FC Porto van Francesco Farioli. De 29-jarige Zuid Koreaan tekent in Portugal voor drie seizoenen en levert de club uit Rotterdam naar verluidt een bedrag op van ongeveer 4,5...",
-    "source": "NOS Sport",
-    "published": "2026-07-21T06:43:37Z",
-    "category": "Sport",
-    "image": "https://images.cdn.nos.nl/6/D/m/o/e/7/W8yW7Zd7UyAMMZ5AdJWDSMd3jk8hw3eoUGMpPNG/659x101x3264x1836-1024x576.webp",
-    "url": "https://nos.nl/l/2623832"
-  },
-  {
-    "title": "Rijkswaterstaat plaatst camera's op Merwedebrug, vrachtverkeer riskeert boete",
-    "summary": "Rijkswaterstaat verwacht binnen twee weken te handhaven op het verbod voor vrachtverkeer op de Merwedebrug. Daarvoor worden bij de brug camera's geplaatst. De boete bij een overtreding bedraagt 500 euro. Hoewel de...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-21T06:40:50Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/2/E/b/G/s/M/tXeds4uVpyc4BFXigEfUAendaiCcmtYudgQ2qs5/8x385x3984x2241-1024x576.webp",
-    "url": "https://nos.nl/l/2623831"
-  },
-  {
-    "title": "Twijfels over Weghorst als Twente-spits: 'Vind hem voetballend ongelofelijk matig'",
-    "summary": "Anco Jansen denkt dat FC Twente een groot risico neemt met Wout Weghorst. De oud-voetballer vindt de spits ‘voetballend ongelofelijk matig’ en denkt dat de Tukkers de speelstijl enorm aan moeten passen aan de targetman.",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T06:40:03Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/18/494d287d570249d484c1d804e3824b841e619fb5.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114453/jansen-twijfelt-over-weghorst-als-twente-spits.html"
-  },
-  {
-    "title": "Bijna twee miljoen (!) Spanjaarden vieren wereldtitel in Madrid",
-    "summary": "De spelers van Spanje lieten een dag na de gewonnen WK-finale tegen Argentinië al de wereldbeker zien aan het eigen volk. Volgens de Spaanse regering vierden ruim 1,8 miljoen mensen feest in Madrid.",
-    "source": "Voetbal International",
-    "published": "2026-07-21T06:38:07Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/20/82f42a98356b2f4e045a02d5b3ce57236722f2c9.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/bijna-twee-miljoen-spanjaarden-vieren-wereldtitel-in-madrid"
-  },
-  {
-    "title": "Lof voor Weghorst na kritiek op 'Oranje-leiders': 'Een van de grootste schandalen'",
-    "summary": "Kenneth Perez en Tijmen van Wissing loven de houding van Wout Weghorst binnen de selectie van het Nederlands elftal afgelopen WK. Weghorst gaf tijdens het eindtoernooi kritiek op de lakse houding van de ploeg.",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T06:31:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/06/11/c657aad812a93d94a186628e7f3df6de78fcec90.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114452/snoeiharde-kritiek-op-oranje-na-wk-bij-voetbalpraat.html"
-  },
-  {
-    "title": "Waarom sommige leeuwenbekken geel worden en anderen magenta",
-    "summary": "Leeuwenbekken stemmen hun kleuren heel precies af: zelfs kleine kleurverschillen kunnen bepalen of een bij een bloem bezoekt. Schrijf je in voor de nieuwsbrief! Ook elke dag vers het laatste wetenschapsnieuws in je...",
+    "title": "Zijn chatbots een bedreiging voor de democratie? Onderzoek toont aan hoe overtuigend ze zijn",
+    "summary": "Een gesprekje met een chatbot is minder onschuldig dan je denkt. ChatGPT en consorten, het lijken vriendelijke meepraters maar ongemerkt kunnen ze sturend zijn. In hoeverre vormen ze daardoor een bedreiging voor de...",
     "source": "Scientias",
-    "published": "2026-07-21T06:30:37Z",
+    "published": "2026-07-21T17:00:21Z",
     "category": "Wetenschap",
     "image": "",
-    "url": "https://scientias.nl/waarom-sommige-leeuwenbekken-geel-worden-en-anderen-magenta/"
+    "url": "https://scientias.nl/zijn-chatbots-een-bedreiging-voor-de-democratie-onderzoek-toont-aan-hoe-overtuigend-ze-zijn/"
   },
   {
-    "title": "Assen zet definitief streep door GP na 'eerlijk antwoord' F1",
-    "summary": "De TT Circuit Assen zal in de nabije toekomst geen Formule 1-race organiseren. De directie van het Drentse circuit heeft definitief besloten om niet te investeren in de miljoenen kostende aanpassingen die nodig zijn...",
+    "title": "Politie haalt servers van Motherless offline om beelden van seksueel misbruik",
+    "summary": "De Nederlandse politie heeft na een inval de servers van de website Motherless in beslag genomen. Op die website stond reguliere porno, maar uit onderzoek van verschillende media bleek dat de site ook video's van...",
+    "source": "Tweakers",
+    "published": "2026-07-21T16:50:38Z",
+    "category": "Gadgets",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/250264/politie-haalt-servers-van-motherless-offline-om-beelden-van-seksueel-misbruik.html"
+  },
+  {
+    "title": "Hadjar ontvangt serieuze complimenten: \"Soms gelijkwaardig aan Verstappen!\"",
+    "summary": "Isack Hadjar is pas bezig met zijn tweede jaar in de Formule 1 en zijn eerste bij Red Bull. Toch weet hij Max Verstappen prima bij te houden. En dat levert hem de nodige complimenten op, zeker na zijn inhaalrace op...",
     "source": "RacingNews365.nl",
-    "published": "2026-07-21T06:30:00Z",
+    "published": "2026-07-21T16:45:00Z",
     "category": "Formule 1",
     "image": "",
-    "url": "https://racingnews365.nl/assen-zet-definitief-streep-door-gp-na-eerlijk-antwoord-f1"
+    "url": "https://racingnews365.nl/hadjar-ontvangt-serieuze-complimenten-soms-gelijkwaardig-aan-verstappen"
   },
   {
-    "title": "CONMEBOL-baas krabbelt terug na bericht over WK met 64 teams",
-    "summary": "CONMEBOL-voorzitter Alejandro Domínguez lijkt iets te voorbarig geweest met zijn post op sociale media dat het WK 2030 met 64 teams zal worden gespeeld. De Paraguayaanse voetbalbestuurder heeft zijn bericht...",
-    "source": "Voetbal International",
-    "published": "2026-07-21T06:27:14Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/7556dd2999a8de8433eaaf7170a5f2643e263f24.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/conmebol-baas-krabbelt-terug-na-bericht-over-wk-met-64-teams"
-  },
-  {
-    "title": "GAE-captain krijgt ruimte om transfer te maken: 'Heeft tot 1 augustus de tijd'",
-    "summary": "Jan Willem van Dop heeft complete openheid van zaken gegeven wat betreft de situatie van Go Ahead Eagles-aanvoerder Joris Kramer. De captain krijgt van de club de ruimte om een transfer te maken, maar er is nog geen...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T06:13:28Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/21/b89c7c0c9f7d84d7e4ae222cf451c1ebecc56943.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114446/van-dop-bevestigt-dat-kramer-ruimte-voor-transfer-krijgt.html"
-  },
-  {
-    "title": "Tate-broers verzetten zich tegen uitlevering aan Verenigd Koninkrijk",
-    "summary": "De influencerbroers Andrew en Tristan Tate willen hun uitlevering aan het Verenigd Koninkrijk aanvechten. Ze verschenen voor het eerst sinds hun aanhouding van dit weekend voor de Amerikaanse rechter, in...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-21T06:12:02Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/2/A/G/J/v/T/oYL4Zgg9rRTNSBdct16XymbGX5ZGHJDeCmLqQVZ/8x419x3984x2241-1024x576.webp",
-    "url": "https://nos.nl/l/2623830"
-  },
-  {
-    "title": "Alderweireld pleit voor Van Bommel: 'Hij gaf mij het beste gevoel ooit'",
-    "summary": "Toby Alderweireld ziet Mark van Bommel graag als bondscoach van België. De voormalige verdediger werkte twee seizoenen met de Nederlandse trainer samen bij Antwerp FC. 'Hij weet hoe het is om op grote toernooien te...",
-    "source": "Voetbal International",
-    "published": "2026-07-21T06:11:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/fe536c9c0eac52bfef87ae6ffbcb70c6e8751a91.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/alderweireld-pleit-voor-van-bommel-hij-gaf-mij-het-beste-gevoel-ooit"
-  },
-  {
-    "title": "Showrunner House of the Dragon: de echte drakenstrijd moet nog beginnen",
-    "summary": "Als er één ding is waar House of the Dragon niet op bezuinigt, dan is het wel zendtijd voor vuurspuwende reuzen. Niet zo gek natuurlijk, want de populaire HBO-serie draait om de beruchte burgeroorlog van de Targaryens:...",
-    "source": "Bright",
-    "published": "2026-07-21T06:03:30Z",
-    "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/20/132ca4c424fbfbdf7a0b2181297cc93fdabebf34.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2114276/showrunner-house-of-the-dragon-de-echte-drakenstrijd-moet-nog-beginnen.html"
-  },
-  {
-    "title": ".Adv - Bij Rabobank vindt Sybren collega's die zijn homelab begrijpen",
-    "summary": "Wie aan IT bij een bank denkt, ziet misschien niet meteen een werkplaats vol oscilloscopen, 3d-printers, Raspberry Pi's, Arduino's, cnc-frezen en zelfgebouwde interfaces voor een lokale omroep voor zich. Toch is dat...",
-    "source": "Tweakers",
-    "published": "2026-07-21T06:00:00Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/plan/4744/bij-rabobank-vindt-sybren-collegas-die-zijn-homelab-begrijpen.html"
-  },
-  {
-    "title": "Op citytrip met een elektrische auto? Deze drie leuke Europese steden bereik je met één laadstop",
-    "summary": "Met een volle accu, één laadstop en het Europese snellaadnetwerk van Fastned liggen de leukste steden deze zomer binnen handbereik.",
-    "source": "National Geographic Nederland",
-    "published": "2026-07-21T06:00:00Z",
-    "category": "Wetenschap",
-    "image": "https://hips.hearstapps.com/hmg-prod/images/849c6671-5706-45f6-ac28-bda7e12ec1d5.jpg",
-    "url": "https://www.nationalgeographic.nl/reizen/a71779387/stedentrip-electrische-auto"
-  },
-  {
-    "title": "'Papa' Verstappen: \"Shit, dat is minder leuk om te zien\"",
-    "summary": "Max Verstappen is de trotse vader van dochter Lily en stiefvader van Penelope, de dochter van Kelly Piquet. Ondanks dat er weinig is veranderd in de structuur van zijn dagelijks leven, moet de Nederlander toch erkennen...",
-    "source": "RacingNews365.nl",
-    "published": "2026-07-21T06:00:00Z",
-    "category": "Formule 1",
-    "image": "",
-    "url": "https://racingnews365.nl/papa-verstappen-shit-dat-is-minder-leuk-om-te-zien"
-  },
-  {
-    "title": "Dit kan FC Twente verwachten van Ferencváros",
-    "summary": "FC Twente treft donderdag Ferencváros in de tweede voorronde van de Europa League. Tactische analyse van de Hongaarse tegenstander van de Tukkers, die voor het eerst sinds jaren geen kampioen is geworden.",
-    "source": "Voetbal International",
-    "published": "2026-07-21T06:00:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/20/f70978d307a573dbe67cd632550f81c9c086dc8c.jpg?width=1200",
-    "url": "https://www.vi.nl/pro/dit-kan-fc-twente-verwachten-van-ferencvaros"
-  },
-  {
-    "title": "Correia schudt dekens flink op bij FC Utrecht: 'Geen heilige huisjes meer veilig'",
-    "summary": "Anthony Correia schudt de dekens flink op in Utrecht. Dat schrijft De Telegraaf over de kersverse trainer van FC Utrecht. Zo zou hij onder meer 'geen heilige huisjes veilig stellen'.",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T05:54:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/06/21/1f9efb0a9bb266c70dd5a561941e1e770613b561.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114444/nieuwe-wind-bij-fc-utrecht-onder-correia.html"
-  },
-  {
-    "title": "Hwang biedt in emotionele post excuses aan aan Feyenoord-fans: 'Sorry allemaal'",
-    "summary": "Hwang In-Beom heeft in een post op zijn eigen Instagram nogmaals gereageerd op zijn transfer van Feyenoord naar FC Porto. Opvallend genoeg bood de Zuid-Koreaan ook zijn excuses aan richting de supporters.",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T05:48:07Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/21/fe8f0149a76d1314890e1a540d0e39fa9b788234.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114435/hwang-zegt-na-vertrek-sorry-tegen-feyenoord-fans.html"
-  },
-  {
-    "title": "Transfers PSV: Turkse transfer Nagalo dreigt in het water te vallen",
-    "summary": "VI volgt het transfernieuws bij PSV op de voet. De doelwitten van de Eindhovenaren, duiding van de clubwatcher, of aandacht in buitenlandse media. We verzamelen alles hier.",
-    "source": "Voetbal International",
-    "published": "2026-07-21T05:34:26Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2025/08/02/ca11a6e4-7865-41dd-b98b-a3e0b8e278bb.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/transfers-psv-turkse-transfer-nagalo-dreigt-in-het-water-te-vallen"
-  },
-  {
-    "title": "Voor de tiende nacht op rij aanvallen tussen Iran en VS",
-    "summary": "Voor de tiende nacht op rij hebben de Verenigde Staten doelen in Iran aangevallen. Het ging volgens het Amerikaanse leger om militaire doelen zoals commandocentra, lanceerinstallaties, luchtverdedigingssystemen en...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-21T05:31:37Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/1/G/g/5/P/q/2cbompAHN2ZP6FMU1Q28CuQXjxiiBhUbKFLrYnR/8x115x3984x2241-1024x576.webp",
-    "url": "https://nos.nl/l/2623828"
-  },
-  {
-    "title": "Software-update - Media Player Classic - Home Cinema 2.7.4",
-    "summary": "Media Player Classic - Home Cinema is een kleine en uitgebreide opensourcemediaspeler voor Windows, waarmee audio en video kunnen worden afgespeeld. Het is klein, maakt gebruik van de LAV-filters en kan daardoor overweg...",
-    "source": "Tweakers",
-    "published": "2026-07-21T05:30:00Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/downloads/77632/media-player-classic-home-cinema-274.html"
-  },
-  {
-    "title": "Twijfels over prominente rol bij FC Twente: 'Dat kan ook benauwend werken'",
-    "summary": "De komst van Erik ten Hag als technisch directeur heeft voor een nieuwe dynamiek gezorgd bij FC Twente. Volgens RTV Oost -journalist Tijmen van Wissing is de invloed van de voormalig trainer duidelijk merkbaar, al...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T05:24:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/06/18/a933f4572ccbafc1f972aee270bcd20a2eb91684.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114434/prominent-rol-ten-hag-bij-fc-twente.html"
-  },
-  {
-    "title": "Vrouw Hwang gaf doorslag: 'Ik had veertig procent van de beslissingsbevoegdheid'",
-    "summary": "De vrouw van Inbeom Hwang speelde een doorslaggevende rol in zijn transfer van Feyenoord naar FC Porto. Dat zegt de Zuid-Koreaanse middenvelder op de officiële kanalen van zijn nieuwe werkgever. 'Ze zei meteen dat ze...",
-    "source": "Voetbal International",
-    "published": "2026-07-21T05:23:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/21/d40fbd567f03b973ed3546a65810b9e1e7f04b1c.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/vrouw-hwang-gaf-doorslag-ik-had-veertig-procent-van-de-beslissingsbevoegdheid"
-  },
-  {
-    "title": "Maaskant heeft begrip voor specifieke Argentijn na WK-finale: 'Snap dit volledig'",
-    "summary": "Robert Maaskant vindt de tranen van Lionel Scaloni na de WK-finale compleet begrijpelijk. De oud-coach ‘snapt het volledig’ dat de hoofdtrainer in huilen uitbarstte op de persconferentie na het verliezen van de...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T05:20:41Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/21/4bdfacd5668e8aa670f0190f126ccbad4d1252fd.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114433/maaskant-steunt-scaloni-en-zijn-tranen-na-wk-finale.html"
-  },
-  {
-    "title": "Netflix wil nog meer succes uit One Piece halen en lost dat zo op",
-    "summary": "De manga One Piece was al een succesvolle animeserie, maar op Netflix is de live action-reeks helemaal populair. Het is één van de grootste hits die Netflix wereldwijd heeft gehad. Maar, hoe kan Netflix er meer...",
-    "source": "Bright",
-    "published": "2026-07-21T05:03:04Z",
-    "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/21/0e3fbef165adc75bf7d0abc5325eec4052c5cab5.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2114426/netflix-wil-nog-meer-succes-uit-one-piece-halen-en-lost-dat-zo-op.html"
-  },
-  {
-    "title": "Gasgeneratoren moeten stroomnet Utrecht ook op piektijden betrouwbaar houden",
-    "summary": "Er is een fundering gelegd en een verbinding met het stroomnet, maar verder is het nog een leeg stuk grond naast de Utrechtse wijk Strijkviertel. Binnenkort begint hier de plaatsing van gasgeneratoren. Deze apparaten...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-21T05:00:18Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/3/F/B/y/k/n/JeWcLtnZGYg7dLTBY4tjYrUKLRiSyCChMn9ZzZA/0x0x1920x1080-1024x576.webp",
-    "url": "https://nos.nl/l/2623826"
-  },
-  {
-    "title": "Van militaire mars tot volksfeest: de geschiedenis van de Nijmeegse Vierdaagse",
-    "summary": "Deze week vindt de 108ste editie van de Nijmeegse Vierdaagse plaats en verschijnen tienduizenden deelnemers aan de start. De allereerste editie begon in 1909 echter met enkele honderden wandelaars en maar liefst...",
-    "source": "National Geographic Nederland",
-    "published": "2026-07-21T05:00:00Z",
-    "category": "Wetenschap",
-    "image": "https://hips.hearstapps.com/hmg-prod/images/bd4e7d3d-fb3e-4c7c-89c5-d35bbc6ea293.jpg",
-    "url": "https://www.nationalgeographic.nl/geschiedenis-archeologie/a73189466/geschiedenis-nijmeegse-vierdaagse"
-  },
-  {
-    "title": "Toto Wolff trekt aan de bel: ‘Alle Mercedes-motoren kwamen tempo tekort’",
-    "summary": "Toto Wolff heeft bevestigd dat alle Formule 1-auto’s met een Mercedes-motor tijdens de start van de GP van België kampten met een gebrek aan energieafgifte. Vooral George Russell werd hard geraakt door het...",
+    "title": "Laurent Mekies reageert op claim Toto Wolff over sterkste motor: ‘Hij heeft gelijk’",
+    "summary": "Red Bull-teambaas Laurent Mekies heeft gereageerd op de uitspraak van Toto Wolff dat zijn Mercedes over ‘de sterkste motor’ van het veld beschikt. De krachtbron van Red Bull werd juist eerder door de FIA aangewezen als...",
     "source": "Formule1.nl",
-    "published": "2026-07-21T05:00:00Z",
+    "published": "2026-07-21T16:30:00Z",
     "category": "Formule 1",
-    "image": "https://www.formule1.nl/app/uploads/2026/07/GettyImages-2284069929-1-600x332.jpg",
-    "url": "https://www.formule1.nl/nieuws/toto-wolff-trekt-bel-mercedes-motoren-kwamen-tempo-tekort-gp-belgie/"
+    "image": "https://www.formule1.nl/app/uploads/2026/07/GettyImages-2286154315-600x400.jpg",
+    "url": "https://www.formule1.nl/nieuws/laurent-mekies-reageert-op-claim-toto-wolff-over-sterkste-motor/"
   },
   {
-    "title": "F1-tijden: Tijdschema F1 GP Hongarije 2026",
-    "summary": "Na de GP van België raast het F1-seizoen verder met de laatste race voor de zomerstop: de F1 Grand Prix van Hongarije. Hoe laat de sessies beginnen, lees je hier!",
-    "source": "RacingNews365.nl",
-    "published": "2026-07-21T05:00:00Z",
-    "category": "Formule 1",
-    "image": "",
-    "url": "https://racingnews365.nl/f1-tijden-tijdschema-f1-gp-hongarije-2026"
-  },
-  {
-    "title": "'Dat nu uitgerekend Wout en Theo over de grond rollen, doet pijn'",
-    "summary": "Columnist Nico Dijkshoorn vindt de woorden van Theo Janssen over Wout Weghorst pijnlijk.",
-    "source": "Voetbal International",
-    "published": "2026-07-21T05:00:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/20/cca78296ec8589ebf5173fcde8d6ddd657afb1e6.jpg?width=1200",
-    "url": "https://www.vi.nl/pro/dat-nu-uitgerekend-wout-en-theo-over-de-grond-rollen-doet-pijn"
-  },
-  {
-    "title": "Spaanse speler steelt show als DJ bij WK-viering, groot aantal mensen aanwezig",
-    "summary": "De Spaanse WK-viering in Madrid trok maandag miljoenen mensen. Het was een groot feest in de hoofdstad waar een opvallende speler de show stal.",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T04:53:46Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/21/4fd9b97d4040abf95a342401fb41b2f496761b68.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114427/borja-iglesias-steelt-show-als-dj-bij-spaanse-wk-viering.html"
-  },
-  {
-    "title": "FIFA start onderzoek naar WK-finale, BBC onthult opvallend detail over Paredes",
-    "summary": "De FIFA heeft een disciplinair onderzoek ingesteld naar de onaangename taferelen aan het einde van de WK-finale tussen Argentinië en Spanje. Dat bevestigt de wereldvoetbalbond. Na afloop ging het mis tussen spelers van...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T04:50:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/20/a5f09a5b48d1b85b4c7a426eb0446c7fb53aa637.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114423/fifa-start-onderzoek-naar-ongeregeldheden-na-wk-finale-argentinie-spanje.html"
-  },
-  {
-    "title": "Witte rook: Feyenoord zwaait middenvelder uit en ontvangt vijf miljoen euro",
-    "summary": "In-beom Hwang vervolgt zijn loopbaan bij FC Porto, zo maken de club van Francesco Farioli en Feyenoord bekend. De 29-jarige middenvelder, die de Rotterdammers 4,5 miljoen euro oplevert, een bedrag dat door bonussen kan...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T04:40:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/17/56fcf6e67c6dbdc480528ff0118aa37bf7d7fc23.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2113298/hwang-verlaat-feyenoord-voor-het-fc-porto-van-farioli.html"
-  },
-  {
-    "title": "Cruijff neemt 'gigantisch risico' bij Ajax: 'Deden ze toen ook met Blind en Tadic'",
-    "summary": "Kenneth Perez ziet dat Ajax en technisch directeur Jordi Cruijff een 'gigantisch risico' nemen door Marcos Leandro voor twintig miljoen euro naar Amsterdam te halen. Volgens de oud-voetballer is het daardoor...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T04:30:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/08/554bf3a7cc74e71a7949c2f0b3a3b2ec2b8dff7c.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114383/perez-ziet-dat-cruijff-gigantisch-risico-neemt-bij-ajax-met-dure-aankopen.html"
-  },
-  {
-    "title": "Wekdienst 21/7: Start Nijmeegse Vierdaagse • Libanese president in VS",
-    "summary": "Goedemorgen! Vandaag verschijnen ruim 45.000 deelnemers aan de start van de Nijmeegse Vierdaagse en in Washington gaat de president van Libanon bij Trump op bezoek. Eerst het weer: vandaag wisselen zon en wolken elkaar...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-21T04:25:55Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/7/3/4/W/b/y/LqJXextfAWT7a3xbJLd3d9DiPbWnTgXmxr4fZJm/0x0x1920x1080-1024x576.webp",
-    "url": "https://nos.nl/l/2623824"
-  },
-  {
-    "title": "Slot, Bosz of toch een grote verrassing? Hoe komt de KNVB tot een nieuwe bondscoach?",
-    "summary": "Nigel de Jong, technisch directeur van de KNVB, is druk met de zoektocht naar een opvolger Ronald Koeman. Maar hoe gaat dat eigenlijk in zijn werk, de invulling van de vacature van bondscoach? \"Met de start van de...",
+    "title": "Ex-winnares Rus uitgeschakeld in eerste ronde graveltoernooi Hamburg",
+    "summary": "Arantxa Rus is uitgeschakeld in de eerste ronde van het WTA-toernooi van Hamburg. De Russisch-Armeense Elina Avanesjan bleek veel te sterk: 2-6, 1-6. Rus won het graveltoernooi in de Duitse havenstad in 2023 en bereikte...",
     "source": "NOS Sport",
-    "published": "2026-07-21T04:20:18Z",
+    "published": "2026-07-21T16:16:16Z",
     "category": "Sport",
-    "image": "https://images.cdn.nos.nl/5/3/R/Y/t/K/pFzjX5n1EyowY4bvsrXbZPexqFWqdeVsRbyuvjH/180x313x2864x1611-1024x576.webp",
-    "url": "https://nos.nl/l/2623822"
+    "image": "https://images.cdn.nos.nl/3/7/e/V/9/L/sFaeqxSC6S1N1rjv5brR9SKEKwyzvgnKfMND5W3/0x113x2320x1305-1024x576.webp",
+    "url": "https://nos.nl/l/2623903"
   },
   {
-    "title": "Lionel Messi deelt emotioneel statement na verloren WK-finale: 'De pijn is immens'",
-    "summary": "Lionel Messi heeft voor het eerst gereageerd op de verloren WK-finale van Argentinië. De 39-jarige sterspeler is diep geraakt door de nederlaag tegen Spanje en feliciteert de nieuwe wereldkampioen met de titel.",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T04:20:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/20/d624d065ea8447cfbda54a2cfc97c3d68783ba7c.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114372/lionel-messi-reageert-emotioneel-na-verloren-wk-finale-tegen-spanje.html"
-  },
-  {
-    "title": "'Feyenoord-parel Sauer (20) bereikt plots persoonlijk akkoord met nieuwe club'",
-    "summary": "Leo Sauer heeft een persoonlijk akkoord bereikt met TSG Hoffenheim. Dat meldt de Duitse tak van Sky Sports . De onderhandelingen tussen Feyenoord en de Bundesliga-club over een transfer van de buitenspeler lopen echter...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-21T04:10:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/20/0261bde5f7c7c88ce881f0078857c65841bf34aa.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114366/leo-sauer-bereikt-persoonlijk-akkoord-met-tsg-hoffenheim-na-feyenoord-deal.html"
-  },
-  {
-    "title": "Review - Sony Xperia 1 VIII - Japans vlaggenschip uit een ander tijdperk",
-    "summary": "Sony maakt nog steeds smartphones, en hoe. De Xperia 1 VIII doet veel dingen net even anders dan topmodellen van andere merken.",
-    "source": "Tweakers",
-    "published": "2026-07-21T04:00:00Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/reviews/15008/sony-xperia-1-viii-japans-vlaggenschip-uit-een-ander-tijdperk.html"
-  },
-  {
-    "title": "Lopers onderweg op 'blauwe dinsdag' van de Nijmeegse Vierdaagse",
-    "summary": "De 108ste editie van de Nijmeegse Vierdaagse is vanochtend in alle vroegte van start gegaan. Om 04.00 uur vertrokken de eerste wandelaars voor de 50 kilometer vanuit het centrum van Nijmegen. Iets later in de ochtend...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-21T02:14:40Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/6/G/x/L/h/U/guL1mVr3umc3LxQkZS5HVSsb2JSbsR2NfazBUgk/8x173x3984x2241-1024x576.webp",
-    "url": "https://nos.nl/l/2623820"
-  },
-  {
-    "title": "Trump kondigt importheffingen op Canadese goederen aan",
-    "summary": "De Amerikaanse president Trump heeft importheffingen van 50 procent aangekondigd op een groot aantal goederen uit Canada. Volgens hem zijn de maatregelen een reactie op wat hij omschrijft als oneerlijke...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-21T00:44:43Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/2/B/s/3/L/9/jBfwUsLXF1ZP6xjBfk5NSknWw9BZvKRFnpxH75g/8x54x3984x2241-1024x576.webp",
-    "url": "https://nos.nl/l/2623819"
-  },
-  {
-    "title": "Van democratie naar dictatuur: president schaft verkiezingen in Nicaragua af",
-    "summary": "In Nicaragua zullen geen verkiezingen meer gehouden worden. Dat heeft Daniel Ortega, de leider van het Midden-Amerikaanse land, gezegd in een toespraak. Hoewel de autoritaire Ortega al jaren laat zien zich weinig van...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-20T22:50:20Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/7/C/E/G/d/V/AVzLYtj6N2y3P5ovpLS4XQL4S2LHNeczvEpYFos/8x8x1264x711-1024x576.webp",
-    "url": "https://nos.nl/l/2623818"
-  },
-  {
-    "title": "Bizarre video van Argentijnse acties in WK-finale gaat viral: 'Dit kan toch niet?'",
-    "summary": "De WK-finale tussen Argentinië en Spanje blijft de gemoederen bezighouden. Een dag na de eindstrijd duiken er nog altijd nieuwe beelden op die voor discussie zorgen. Op sociale media gaat momenteel een ruim dertien...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-20T22:02:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/20/8e8d8dfebc722f5ac587272d0ce3b9b4b46dc575.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114371/bizarre-compilatie-van-alle-overtredingen-bij-argentinie-tegen-spanje-in-wk-finale.html"
-  },
-  {
-    "title": "Paramount kan Warner Bros. voorlopig niet overnemen",
-    "summary": "Paramount dacht het te hebben gewonnen van Netflix in de overname van Warner Bros., maar nu blijkt een rechter te hebben besloten dat de overname wordt opgeschort. Dat komt omdat verschillende Amerikaanse staten...",
+    "title": "Komt deze Italiaanse e-bikemaker naar Nederland?",
+    "summary": "Het Italiaanse fietsmerk Tecnobike verkent momenteel mogelijkheden om de Nederlandse markt te betreden. De producent maakt zowel normale stadsfietsen als elektrische fietsen en stond eerder dit jaar op het B2B Festival...",
     "source": "Bright",
-    "published": "2026-07-20T21:51:09Z",
+    "published": "2026-07-21T16:08:00Z",
     "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/20/af8a837d064ffd6318155e773815f7230a867dd7.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2114424/paramount-kan-warner-bros-voorlopig-niet-overnemen.html"
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/21/f1515536a710cb390b9ce36e479cf765b8aa3d0d.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2114612/komt-deze-italiaanse-e-bikemaker-naar-nederland.html"
   },
   {
-    "title": "DJ Borja Iglesias steelt show, Spaanse spelers drijven spot met Paredes",
-    "summary": "38 dagen en 104 wedstrijden lang volgde VI het WK in de Verenigde Staten, Canada en Mexico, met als afsluiter een nagelbijter van een finale tussen Spanje en Argentini ë . De wereldkampioen werd onttroond en Spanje won...",
-    "source": "Voetbal International",
-    "published": "2026-07-20T21:35:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/16/fb426da39af1a19c60d15352612e6cde56920886.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/dj-borja-iglesias-steelt-show-spaanse-spelers-drijven-spot-met-paredes"
+    "title": "Acer Predator Atlas 8-gaminghandheld kost minimaal 1000 pond in het VK",
+    "summary": "Acer gaat minimaal 1000 pond vragen voor zijn Predator Atlas 8-handheld in het Verenigd Koninkrijk. Dat blijkt uit de Britse productpagina. De versie die 1000 pond kost, heeft 16GB ram, een Intel Arc G3-processor en...",
+    "source": "Tweakers",
+    "published": "2026-07-21T16:04:44Z",
+    "category": "Gadgets",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/250262/acer-predator-atlas-8-gaminghandheld-kost-minimaal-1000-pond-in-het-vk.html"
   },
   {
-    "title": "'Luka Modric (40) wil van geen stoppen weten en gaat nieuw contract tekenen'",
-    "summary": "Luka Modric gaat mogelijk een nieuw contract tekenen bij AC Milan. Dat meldt transferjournalist Gianluca Di Marzio. De veertigjarige Kroaat lijkt daarmee zijn verblijf bij de Rossoneri te verlengen.",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-20T21:34:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/06/24/6434903fbfc5e0c81dedcb644a75aa886cb367aa.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114419/luka-modric-dicht-bij-nieuw-contract-bij-ac-milan-na-wk-2026.html"
+    "title": "Slimme Verstappen blijft 'rotzooi' voor met slimme zet: \"Hij was al weg!\"",
+    "summary": "Max Verstappen rekende er voor de GP van België op dat hij vooral in zijn spiegels zou moeten kijken, maar uiteindelijk sloot hij het weekend af met een knappe derde plek. Mike Hezemans ziet in de nieuwste...",
+    "source": "RacingNews365.nl",
+    "published": "2026-07-21T16:00:00Z",
+    "category": "Formule 1",
+    "image": "",
+    "url": "https://racingnews365.nl/slimme-verstappen-blijft-rotzooi-voor-met-slimme-zet-hij-was-al-weg"
   },
   {
-    "title": "Naam van mogelijke nieuwe Feyenoord-aanvoerder valt: 'Hij is ook de beste speler'",
-    "summary": "Na het vertrek van Timon Wellenreuther moet Feyenoord ook op zoek naar een nieuwe aanvoerder. In #DoneDeal, de transferpodcast van VoetbalPrimeur, wordt het vraagstuk besproken. Daarbij komen twee favorieten naar voren.",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-20T21:30:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/videofeed/previews/2026-07-20t223441-mogelijk-nieuwe-feyenoord-aanvoerder-besproken-hij-is-ook-de-beste-speler.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/videos/2114410/feyenoord-zoekt-nieuwe-aanvoerder-valente-en-tsuyoshi-watanabe-favoriet.html"
-  },
-  {
-    "title": "FIFA met supporters op zoek naar Doelpunt van het WK",
-    "summary": "De FIFA heeft de stembussen geopend voor de zoektocht naar het mooiste doelpunt van het WK. Tussen de genomineerden staat geen Nederlandse treffer.",
-    "source": "Voetbal International",
-    "published": "2026-07-20T21:29:36Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/20/74f687408c6b160582f2018aadb0be3b4c06ad9f.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/fifa-met-supporters-op-zoek-naar-doelpunt-van-het-wk"
-  },
-  {
-    "title": "'Vertrekgolf bij Feyenoord: na Hwang lonken twee uitgaande transfers'",
-    "summary": "Chris-Kévin Nadje en Ismael Ka lijken allebei op weg naar de uitgang bij Feyenoord. Dat melden Feyenoord Youth Watcher en Feyenoord Transfermarkt . Doelman Ka ontbreekt in de selectie voor het trainingskamp en staat...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-07-20T21:25:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2025/10/20/400214198bf86ef9f04d6a10700ce03abd59292b.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2114417/chris-kevin-nadje-en-ismael-ka-op-weg-naar-vertrek-bij-feyenoord.html"
-  },
-  {
-    "title": "Spaanse voetballers in uitzinnig Madrid gehuldigd voor tweede wereldtitel",
-    "summary": "De Spaanse selectie is maandagavond in een uitzinnig Madrid gehuldigd voor het winnen van de tweede wereldtitel . Liefst twee miljoen mensen probeerden in de straten van de Spaanse hoofdstad een glimp op te vangen van...",
+    "title": "Ongenaakbare Evenepoel wint tijdrit, podiumkandidaat Lipowitz verlaat Tour",
+    "summary": "Aan de oever van het Meer van Genève heeft Remco Evenepoel de tijdrit op dag zestien van de Tour de France gewonnen. De wereldkampioen tijdrijden was over de 26 kilometer 28 seconden sneller dan nummer twee Tadej...",
     "source": "NOS Sport",
-    "published": "2026-07-20T21:12:27Z",
+    "published": "2026-07-21T15:48:13Z",
     "category": "Sport",
-    "image": "https://images.cdn.nos.nl/3/F/j/K/S/K/KLgPp2JU8ukFJz1LYkXtuzZ4hWRsjxXMjLwAFyN/0x0x4000x2250-1024x576.webp",
-    "url": "https://nos.nl/l/2623814"
+    "image": "https://images.cdn.nos.nl/5/F/J/S/M/U/6WcJZUh3JGZf3TNFCqzZzVhpL6Db8JsZoXY3125/8x488x3984x2241-1024x576.webp",
+    "url": "https://nos.nl/l/2623896"
   },
   {
-    "title": "Gakpo's emotionele doelpunt werd hét Oranje-moment van het WK",
-    "summary": "Spanje is de nieuwe wereldkampioen. In de WK-finale werd titelhouder Argentinië na verlenging met 1-0 verslagen. In de laatste aflevering van Rondje WK blikken Pieter Zwart en Freek Jansen bij presentator Kalum van...",
-    "source": "Voetbal International",
-    "published": "2026-07-20T21:00:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/videofeed/previews/2026-07-20t180058-gakpo-zorgde-voor-het-oranje--moment-van-het-wk.jpg?width=1200",
-    "url": "https://www.vi.nl/video/gakpo-s-emotionele-doelpunt-werd-het-oranje-moment-van-het-wk"
+    "title": "‘Red Bull doet er alles aan om Max Verstappen te behouden’ | Formule 1 Paddockpraat",
+    "summary": "Ook in België zegevierde Kimi Antonelli en de jonge Italiaan lijkt niet te stoppen. Behoort hij qua talent nu al in het rijtje van Senna, Schumacher en Verstappen? Verder doet Red Bull er alles aan om Max Verstappen aan...",
+    "source": "Formule1.nl",
+    "published": "2026-07-21T15:30:00Z",
+    "category": "Formule 1",
+    "image": "https://www.formule1.nl/app/uploads/2026/07/verstappen-red-bull-600x315.png",
+    "url": "https://www.formule1.nl/nieuws/red-bull-doet-er-alles-aan-om-max-verstappen-te-behouden-formule-1-paddockpraat/"
   },
   {
-    "title": "Reddingspoging in Ohio loopt uit op drama: vijf volwassenen verdronken",
-    "summary": "In de Scioto-rivier in de Amerikaanse staat Ohio zijn vijf mensen verdronken. Een van hen raakte tijdens het zwemmen in de problemen, waarna anderen uit de groep het water in gingen om te helpen. De sheriff van Delaware...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-20T20:37:40Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/6/C/f/v/q/J/FcwqhCy4NKYWXbEXucCuWGB4g5fBZwW5kquYM6C/4x2x1120x630-1024x576.webp",
-    "url": "https://nos.nl/l/2623810"
+    "title": "Suno-datalek legt creditcardgegevens van tienduizenden gebruikers bloot",
+    "summary": "De AI-muziekgenerator Suno heeft in november 2025 de gegevens van 55 miljoen gebruikers uitgelekt. Van alle gebruikers zijn in ieder geval e-mailadressen gelekt. Van sommige gebruikers kwamen ook telefoonnummers en...",
+    "source": "Tweakers",
+    "published": "2026-07-21T15:23:15Z",
+    "category": "Gadgets",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/250260/suno-datalek-legt-creditcardgegevens-van-tienduizenden-gebruikers-bloot.html"
+  },
+  {
+    "title": "Deze ambulance van TU-studenten werkt volledig op zonne-energie",
+    "summary": "Studenten aan de Technische Universiteit in Eindhoven (TU/e) hebben een ambulance gebouwd die op zonne-energie werkt. De auto rijdt en werkt volledig met behulp van zonnepanelen. Hij is ontworpen om medische zorg te...",
+    "source": "Bright",
+    "published": "2026-07-21T15:20:03Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/21/1144a9bc85cb49257282badfcde4d4b62593b93d.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2114622/deze-ambulance-van-tu-studenten-werkt-volledig-op-zonne-energie.html"
+  },
+  {
+    "title": "Piastri doet oproep na incident met Leclerc: \"Als we dat oké blijven vinden...\"",
+    "summary": "Oscar Piastri was goed op weg in de openingsfase van de GP van België, tot een incident met Charles Leclerc roet in het eten gooide. De McLaren-coureur vraagt zich af of de stewards wel juist oordeelden over het voorval.",
+    "source": "RacingNews365.nl",
+    "published": "2026-07-21T15:10:00Z",
+    "category": "Formule 1",
+    "image": "",
+    "url": "https://racingnews365.nl/piastri-doet-oproep-na-incident-met-leclerc-als-we-dat-oke-blijven-vinden"
+  },
+  {
+    "title": "Noordwest-Europa stond ooit tienduizenden jaren in brand",
+    "summary": "Zo’n 200 miljoen jaar geleden stond het gebied dat nu Noordwest-Europa heet tienduizenden jaren lang in brand. De planten die in dit helse landschap leefden, bleken daarbij niet helemaal onschuldig. Onderzoekers aan de...",
+    "source": "Scientias",
+    "published": "2026-07-21T15:00:44Z",
+    "category": "Wetenschap",
+    "image": "",
+    "url": "https://scientias.nl/noordwest-europa-stond-ooit-tienduizenden-jaren-in-brand/"
   },
   {
     "title": "IJzeren handboei in kindermaat verraadt duister hoofdstuk in de Keltische geschiedenis",
@@ -684,330 +1035,6 @@
     "url": "https://historianet.nl/cultuur/archeologie/ijzeren-handboei-in-kindermaat-verraadt-duister-hoofdstuk-in-de-keltische-geschiedenis"
   },
   {
-    "title": "Benfica heeft peperdure spits binnen",
-    "summary": "Jhon Durán keert per direct terug naar Europa. De Colombiaanse spits wordt door Benfica een jaar gehuurd van Al-Nassr. De Portugezen kunnen Durán volgens A Bola aan het einde van het seizoen voor 30 miljoen euro...",
-    "source": "Voetbal International",
-    "published": "2026-07-20T20:30:03Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/17/cf18c408e6552cad0da1744eb3906e649e893a4e.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/benfica-heeft-peperdure-spits-binnen"
-  },
-  {
-    "title": "Hwang vertrokken bij Feyenoord: 'Het was een voorrecht'",
-    "summary": "Feyenoord heeft het vertrek van Inbeom Hwang officieel gemaakt. De Zuid-Koreaanse middenvelder is, zoals VI eerder deze maandag al meldde , verkocht aan FC Porto. Feyenoord houdt maximaal vijf miljoen euro over aan de...",
-    "source": "Voetbal International",
-    "published": "2026-07-20T20:16:37Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/20/e8ae793b8ddbe3d9b5c71103f87d679476b9d1c6.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/hwang-vertrokken-bij-feyenoord-het-was-een-voorrecht"
-  },
-  {
-    "title": "Doets en Noppert allebei uitgeschakeld in eerste ronde World Matchplay",
-    "summary": "Darter Kevin Doets is er niet in geslaagd om de tweede ronde van de World Matchplay in Blackpool te bereiken. De 28-jarige Nederlander verloor met 6-10 van de Brit Ross Smith. Opmerkelijk genoeg scoorde Doets een hoger...",
-    "source": "NOS Sport",
-    "published": "2026-07-20T20:06:27Z",
-    "category": "Sport",
-    "image": "https://images.cdn.nos.nl/6/2/x/R/Z/R/oKiNxjdfSXsWVVr5hbMcmLF5akEg72ggpKBEJdi/0x139x4000x2250-1024x576.webp",
-    "url": "https://nos.nl/l/2623809"
-  },
-  {
-    "title": "FIFA onderzoekt clash tussen Spaanse en Argentijnse spelers na WK-finale",
-    "summary": "De confrontatie tussen Argentijnse en Spaanse spelers, na afloop van de WK-finale, krijgt - zoals verwacht kon worden - nog wel een staartje. De FIFA heeft maandagavond bevestigd dat er een onderzoek naar het gedrag van...",
-    "source": "Voetbal International",
-    "published": "2026-07-20T20:03:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/20/d24eeecceb971c2c998e03fb27ce306c100a86d6.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/fifa-onderzoekt-clash-tussen-spaanse-en-argentijnse-spelers-na-wk-finale"
-  },
-  {
-    "title": "FIFA gaat gebeurtenissen na WK-finale onderzoeken, maar noemt Paredes niet",
-    "summary": "De FIFA heeft in een korte verklaring aangekondigd dat het een onderzoek instelt naar gebeurtenissen die plaatsvonden na de WK-finale tussen Spanje en Argentinië. Hoewel de FIFA niet zegt om welk incident het gaat,...",
-    "source": "NOS Sport",
-    "published": "2026-07-20T19:54:09Z",
-    "category": "Sport",
-    "image": "https://images.cdn.nos.nl/7/E/t/j/n/Z/xnooZxvWoo6i1PkxFxcbtt6oVSTJHeF1aZ9UKco/4x100x768x432-768x432.webp",
-    "url": "https://nos.nl/l/2623808"
-  },
-  {
-    "title": "Douaniers mogen strafzaak over stelen informatie in vrijheid afwachten",
-    "summary": "Drie douaniers die in april werden aangehouden op verdenking van het stelen van informatie uit de computersystemen van hun werkgever, mogen hun strafzaak in vrijheid afwachten. Dat heeft de rechtbank in Rotterdam...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-20T19:49:05Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/8/E/R/H/1/g/hjPgDXRJgayhW5GTw7JBWqJbYfdN7VAEz1cEEbo/0x55x3136x1764-1024x576.webp",
-    "url": "https://nos.nl/l/2623806"
-  },
-  {
-    "title": "Winnares WK-pool met bijna anderhalf miljoen deelnemers liet de finale schieten",
-    "summary": "Nu het WK voorbij is, is het tijd om de balans op te maken: óók in de vele WK-pools die in vriendengroepen, op kantoren of landelijk zijn gespeeld. Sophie Kronenburg won de pool van Scorito, waar bijna anderhalf miljoen...",
-    "source": "Voetbal International",
-    "published": "2026-07-20T19:44:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/20/c1f19dc1417f7488561c6f35df3b96cd1d41cb68.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/winnares-wk-pool-met-bijna-anderhalf-miljoen-deelnemers-liet-de-finale-schieten"
-  },
-  {
-    "title": "Feyenoord met WK-gangers Ueda, Watanabe en Hadj Moussa op trainingskamp",
-    "summary": "Feyenoord is met 32 spelers aan het trainingskamp in het Belgische Tubize (Waals-Brabant) begonnen. WK-gangers Ayase Ueda, Tsuyoshi Watanabe en Anis Hadj Moussa zijn weer van de partij. De zeventienjarige Jivayno...",
-    "source": "Voetbal International",
-    "published": "2026-07-20T19:40:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/07/20/ccff594054a6c8ed85474acb7fc7a11ac9323cf8.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/feyenoord-met-wk-gangers-ueda-watanabe-en-hadj-moussa-op-trainingskamp"
-  },
-  {
-    "title": "Drukke eerste dag voor Britse premier Burnham: beëdiging, belletjes en benoemingen",
-    "summary": "De beëdiging door koning Charles, een speech, gesprekken met Trump en Von Der Leyen, en benoemingen van ministers. De nieuwe Britse premier Andy Burnham heeft een drukke eerste dag achter de rug. De 56-jarige Burnham...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-20T19:26:32Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/6/5/8/W/7/7/fUHcTUt2DpPGHgbxGpvQT8XBqcdavP5VJ1AQrg7/613x272x2272x1278-1024x576.webp",
-    "url": "https://nos.nl/l/2623803"
-  },
-  {
-    "title": "Deze tech maakt de dansvloer een sociaal mijnenveld",
-    "summary": "Vroeger kon je tijdens een avondje uit ongegeneerd losgaan op de dansvloer, maar die luxe heeft de jeugd van tegenwoordig steeds minder. Vooral smartphones en sociale media hebben het uitgaansgedrag van jongeren...",
-    "source": "Bright",
-    "published": "2026-07-20T19:06:04Z",
-    "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/20/fd482de71d550927a044f9e2af087278e2ac52e6.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2114309/deze-techontwikkelingen-verpesten-het-uitgaan-voor-gen-z.html"
-  },
-  {
-    "title": "Schaaklegende Judit Polgár ziet af van Hongaars presidentschap: 'Kracht niet voor'",
-    "summary": "De Hongaarse schaakgrootmeester Judit Polgár wil geen president van Hongarije worden. Dat maakte ze vandaag bekend, een dag nadat premier Péter Magyar had aangekondigd haar voor te dragen voor het grotendeels...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-20T18:59:58Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/2/H/m/b/S/Y/xw3UcmfUy3j7iCyJbfY9mpDWbpevNfFaEVmz7r6/8x107x3984x2241-1024x576.webp",
-    "url": "https://nos.nl/l/2623802"
-  },
-  {
-    "title": "Rechter schort overname Warner Bros. door Paramount voorlopig op",
-    "summary": "Een Amerikaanse federale rechter heeft de voorgenomen overname van Warner Bros. Discovery door Paramount Skydance voorlopig opgeschort. De deal mag de komende twee weken niet worden afgerond. Zo moet worden voorkomen...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-20T18:45:14Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/1/3/D/a/i/Z/XkJQ37HWib3Q3v8qcySWC5mwqpmBWAGDYdbtQvn/4x2x2992x1683-1024x576.webp",
-    "url": "https://nos.nl/l/2623801"
-  },
-  {
-    "title": "Rechter VS zet 111 miljard dollar kostende overname van Warner Bros. op pauze",
-    "summary": "Een Amerikaanse rechter heeft de overname van Warner Bros. door Paramount voor twee weken op pauze gezet. Dat gebeurt in een zaak die twaalf Amerikaanse staten hebben aangespannen tegen de overname.",
-    "source": "Tweakers",
-    "published": "2026-07-20T18:41:53Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/250236/rechter-vs-zet-111-miljard-dollar-kostende-overname-van-warner-bros-op-pauze.html"
-  },
-  {
-    "title": "Camera-app van Adobe gaat feedback geven tijdens het maken van een foto",
-    "summary": "Adobe gaat AI integreren in Project Indigo, zijn gratis app voor natuurlijkere smartphonefotografie. Zo kunnen gebruikers in de camera-app bijvoorbeeld feedback krijgen om de compositie te verbeteren.",
-    "source": "Tweakers",
-    "published": "2026-07-20T18:17:16Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/250234/camera-app-van-adobe-gaat-feedback-geven-tijdens-het-maken-van-een-foto.html"
-  },
-  {
-    "title": "Verstappen bezorgt Red Bull volgende indrukwekkende mijlpaal",
-    "summary": "Dankzij zijn derde plaats in België, heeft Max Verstappen ervoor gezorgd dat Red Bull weer een mijlpaal heeft bereikt. Het was namelijk de 300e podiumfinish van de Oostenrijkse renstal.",
-    "source": "RacingNews365.nl",
-    "published": "2026-07-20T18:15:00Z",
-    "category": "Formule 1",
-    "image": "",
-    "url": "https://racingnews365.nl/verstappen-bezorgt-red-bull-volgende-indrukwekkende-mijlpaal"
-  },
-  {
-    "title": "Deze rollende all-terrain camera is een enorme hit op Kickstarter",
-    "summary": "Beni is een vrolijk ogend robotje, dat zo uit een Star Wars-film lijkt te rollen en je over alle terreinen volgt om te filmen.",
-    "source": "Bright",
-    "published": "2026-07-20T18:13:37Z",
-    "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/20/f15b4c86e61ad569ab082ffa3dee71b2e7940f0f.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2114270/deze-rollende-all-terrain-camera-is-een-enorme-hit-op-kickstarter.html"
-  },
-  {
-    "title": "Mexicaanse drugsbaron El Mayo veroordeeld tot levenslang in VS",
-    "summary": "De Mexicaanse kartelbaas Ismael 'El Mayo' Zambada is in de VS veroordeeld tot een levenslange straf. De aanklagers zeggen dat hij als hoofd van het Sinaloakartel opdracht tot martelingen en moorden gaf. Hij moet ook een...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-20T18:13:15Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/5/5/b/w/d/J/s6bftg7txdok6EECoYoQy2cMWo9fRXRXs8NJdiS/0x0x4000x2250-1024x576.webp",
-    "url": "https://nos.nl/l/2623799"
-  },
-  {
-    "title": "Politieagent verdacht van verkrachting, OM eist 3 jaar celstraf",
-    "summary": "Het Openbaar Ministerie eist 3 jaar celstraf, waarvan 6 maanden voorwaardelijk, tegen een inmiddels ontslagen politieagent uit Roermond. De 36-jarige man wordt verdacht van verkrachting van een vrouw van 28. De ex-agent...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-20T17:56:41Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/8/D/u/Y/3/b/4GRuQ4p1M5mAGDpmCpNrFucNakJ3WSWqsBXdhVj/0x0x1920x1080-1024x576.webp",
-    "url": "https://nos.nl/l/2623797"
-  },
-  {
-    "title": "Gerucht: Google werkt aan chip met hardwarematig vastgelegd AI-model",
-    "summary": "Google zou werken aan een AI-chip waarin het bedrijf een AI-model hardwarematig vastlegt. Daarmee moet de chip AI-taken veel efficiënter uitvoeren dan traditionele processors. De chip zou over twee jaar klaar zijn.",
-    "source": "Tweakers",
-    "published": "2026-07-20T17:55:00Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/250232/gerucht-google-werkt-aan-chip-met-hardwarematig-vastgelegd-ai-model.html"
-  },
-  {
-    "title": "Justitie waarschuwt voor swatten: 'Opeens onterecht een arrestatieteam voor je deur'",
-    "summary": "De politie krijgt steeds vaker vergaande nepmeldingen, waardoor een zwaar gewapend arrestatieteam op iemands stoep staat. Het zogenoemde fenomeen swatten is overgekomen uit de Verenigde Staten. \"We zien nu dat het hier...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-20T17:41:48Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/3/9/m/i/z/T/mqiPiSGJVfKdehMDnz69zFXcykCkg8s5yXvCw3X/8x169x3984x2241-1024x576.webp",
-    "url": "https://nos.nl/l/2623795"
-  },
-  {
-    "title": "Red Bull wacht met smart op nieuwe motorresultaten FIA",
-    "summary": "Eén zinnetje van Toto Wolff in België deed de discussie over ADUO weer oplaaien. Red Bull wacht al met smart op de nasleep van de Grand Prix van Hongarije.",
-    "source": "RacingNews365.nl",
-    "published": "2026-07-20T17:30:00Z",
-    "category": "Formule 1",
-    "image": "",
-    "url": "https://racingnews365.nl/red-bull-wacht-met-smart-op-nieuwe-motorresultaten-fia"
-  },
-  {
-    "title": "Visma nog met vraagtekens over nachtelijke test, die door rechter werd goedgekeurd",
-    "summary": "Ploegleider Marc Reef van Visma-Lease a Bike zegt nog geen informatie te hebben gekregen waarom zijn kopman Jonas Vingegaard in de nacht van zaterdag op zondag een dopingcontroleur om 2.00 uur voor zijn hotelkamerdeur...",
-    "source": "NOS Sport",
-    "published": "2026-07-20T17:13:04Z",
-    "category": "Sport",
-    "image": "https://images.cdn.nos.nl/7/4/g/w/N/s/Bu1hp4bp1RX3z9w5Tx4UYPzNxPx1djmsMB6dNfQ/0x0x1920x1080-1024x576.webp",
-    "url": "https://nos.nl/l/2623790"
-  },
-  {
-    "title": "KPN verdeelt programma's bij terugkijken automatisch in hoofdstukken",
-    "summary": "De Nederlandse provider KPN voorziet tv-programma's automatisch van hoofdstukken bij het terugkijken. Dat gebeurt een half uur na de live-uitzending. Het gaat vooral om nieuwsuitzendingen en praatprogramma's.",
-    "source": "Tweakers",
-    "published": "2026-07-20T17:12:00Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/250230/kpn-verdeelt-programmas-bij-terugkijken-automatisch-in-hoofdstukken.html"
-  },
-  {
-    "title": "Frankrijk beschuldigt Iran van intimidatie en mishandeling ambassadepersoneel",
-    "summary": "Frankrijk beschuldigt de Iraanse veiligheidsdiensten van een \"ernstige intimidatieactie\" tegen twee medewerkers van de Franse ambassade in Iran. Volgens de Franse minister van Buitenlandse Zaken Jean-Noël Barrot werden...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-20T17:05:45Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/5/5/6/3/D/o/1NjW76N4cJ83p7oMyQmrAeCftaehPU52ZiSipnk/8x212x3984x2241-1024x576.webp",
-    "url": "https://nos.nl/l/2623788"
-  },
-  {
-    "title": "Hoe PlayStation-games de nieuwe Spider-Man-film inspireerden",
-    "summary": "Na de gigantische, multiversum-overschrijdende chaos van No Way Home keert Peter Parker in zijn volgende avontuur terug naar de basis. Regisseur Destin Daniel Cretton ook wel bekend van Shang-Chi and the Legend of the...",
-    "source": "Bright",
-    "published": "2026-07-20T17:00:42Z",
-    "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/20/75669fdae3f5a0be2a1d3f2e9f58a611cfa8936c.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2114245/hoe-de-playstation-games-de-actie-in-spider-man-brand-new-day-beinvloeden.html"
-  },
-  {
-    "title": "Te vroeg geboren, toch een goed leven: wat 34 jaar onderzoek ons leert over premature baby’s",
-    "summary": "Ze wogen soms nog geen anderhalve kilo en kwamen maanden te vroeg ter wereld. Decennia later blijkt: de meeste van deze te vroeg geboren baby’s groeien op tot volwassenen met een stabiel en tevreden leven. Ongeveer een...",
-    "source": "Scientias",
-    "published": "2026-07-20T17:00:40Z",
-    "category": "Wetenschap",
-    "image": "",
-    "url": "https://scientias.nl/te-vroeg-geboren-toch-een-goed-leven-wat-34-jaar-onderzoek-ons-leert-over-premature-babys/"
-  },
-  {
-    "title": "Carlos Sainz neemt architecten van F1-reglement op de korrel: ‘Wie heeft dit goedgekeurd?’",
-    "summary": "Carlos Sainz heeft zich na de GP van België bijzonder kritisch uitgelaten over het F1-reglement. De Spanjaard stelt dat de huidige reglementen tekortschieten, vooral op circuits als Spa-Francorchamps en Silverstone,...",
-    "source": "Formule1.nl",
-    "published": "2026-07-20T17:00:00Z",
-    "category": "Formule 1",
-    "image": "https://www.formule1.nl/app/uploads/2026/07/GettyImages-2265025337-600x362.jpg",
-    "url": "https://www.formule1.nl/nieuws/carlos-sainz-architecten-f1-reglement-op-de-korrel-wie-heeft-dit-goedgekeurd/"
-  },
-  {
-    "title": "Hoe raketten in Iran leiden tot duurdere rijst in Japan: 'Kwestie van overleven'",
-    "summary": "Norihito Morishima kijkt uit over zijn rijstvelden in Haga, zo'n twee uur ten noorden van hoofdstad Tokio. Zijn armen zijn gevouwen. \"De komende jaren worden heel moeilijk\", zegt hij. Na Amerikaanse luchtaanvallen op...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-20T16:59:26Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/1/B/E/q/L/C/5yMkgUkEsfEtAMhT8m4Xwaum6pvPmy7kCL2fcbw/0x0x1920x1080-1024x576.webp",
-    "url": "https://nos.nl/l/2623785"
-  },
-  {
-    "title": "Geen koopje: EU geeft AliExpress een boete van 550 miljoen euro",
-    "summary": "Bij AliExpress scoor je voor luttele bedragen allerlei producten, waaronder Chinese tech. Veel van deze producten zijn te gevaarlijk, dus krijgt de webwinkel een flinke boete.",
-    "source": "Bright",
-    "published": "2026-07-20T16:50:56Z",
-    "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/20/26c8f94c8bee02d7e27f8da13f98cdb4e5534609.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2114186/geen-koopje-eu-geeft-aliexpress-een-boete-van-550-miljoen-euro.html"
-  },
-  {
-    "title": "Software-update - IPFire 2.29 - Core Update 203",
-    "summary": "IPFire is een opensourcefirewall voor i586-, x86_64- en Arm-systemen. Het bevat onder andere een intrusion detection/prevention system, deelt het netwerk op in zones, doet stateful packet inspection en biedt...",
-    "source": "Tweakers",
-    "published": "2026-07-20T16:45:00Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/downloads/77628/ipfire-229-core.html"
-  },
-  {
-    "title": "Racing Bulls bevestigt eerste keuze voor mogelijk zitje",
-    "summary": "Racing Bulls-teambaas Alan Permane gaat het natuurlijk ook voelen als Max Verstappen tegen de verwachtingen in zou besluiten Red Bull te verlaten. Maar de vervanger staat al klaar bij het zusterteam van Red Bull.",
-    "source": "RacingNews365.nl",
-    "published": "2026-07-20T16:45:00Z",
-    "category": "Formule 1",
-    "image": "",
-    "url": "https://racingnews365.nl/racing-bulls-bevestigt-eerste-keuze-voor-mogelijk-zitje"
-  },
-  {
-    "title": "Aantal nieuwe apps in Apple App Store verdubbelt door vibecoden",
-    "summary": "Het aantal nieuwe apps in de Apple App Store verdubbelde afgelopen halfjaar, vermoedelijk als gevolg van vibecoden. Met AI kunnen ontwikkelaars in korte tijd meer apps maken. Het aantal downloads steeg niet mee.",
-    "source": "Tweakers",
-    "published": "2026-07-20T16:34:00Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/250228/aantal-nieuwe-apps-in-apple-app-store-verdubbelt-door-vibecoden.html"
-  },
-  {
-    "title": "Tijd voor gelijk speelveld: schrap de btw op de thuisbatterij",
-    "summary": "Met een thuisbatterij kun je het verbruik van je eigen zonne-energie flink verhogen. Maar dan moet je dat wel kunnen betalen: hoog tijd dus dat de overheid de btw op thuisbatterijen schrapt, voordat straks alleen de...",
-    "source": "Bright",
-    "published": "2026-07-20T16:32:12Z",
-    "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/04/21/8d5d7cd571c446e0e8a8b1124e209f4a533cd5da.jpg?width=1200",
-    "url": "https://www.bright.nl/plusplus/2114246/tijd-voor-gelijk-speelveld-schrap-de-btw-op-de-thuisbatterij.html"
-  },
-  {
-    "title": "Keverplaag teistert inwoners Twents dorp: 'Veeg er 100, 200 per keer op'",
-    "summary": "Een kopje koffie drinken in de tuin is er even niet meer bij voor een deel van de inwoners van het dorp Westerhaar-Vriezenveensewijk in Twente. De bewoners worden geteisterd door de coloradokever. \"Veel mensen worden er...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-20T16:17:16Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/3/H/t/g/h/f/SRU9zkiyGTefoqPJgFbRqoJiNPhqijsXfSQXJ58/8x4x1088x612-1024x576.webp",
-    "url": "https://nos.nl/l/2623783"
-  },
-  {
-    "title": "LG-monitoren installeren ongevraagd een app, met adware en tracking",
-    "summary": "Als je een LG-monitor aansluit op een Windows-pc, dan wordt er waarschijnlijk stiekem adware op je computer geïnstalleerd.",
-    "source": "Bright",
-    "published": "2026-07-20T16:11:52Z",
-    "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/20/aab01a68b0ec3fce6385879196635e48054eb2b0.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2114224/je-lg-monitor-installeert-mogelijk-stiekem-adware-op-je-pc.html"
-  },
-  {
-    "title": "Voorlopig geen boetes voor olie- en gasbedrijven die EU-regel voor methaan overtreden",
-    "summary": "De Europese Commissie adviseert EU-landen voorlopig geen boetes op te leggen aan bedrijven die nieuwe klimaatregels voor de uitstoot van methaan schenden. Die regels gaan in vanaf 2027. Volgens de Commissie mag de wet...",
-    "source": "NOS Algemeen",
-    "published": "2026-07-20T16:09:35Z",
-    "category": "Algemeen",
-    "image": "https://images.cdn.nos.nl/5/8/H/2/y/c/K6FosqrAU4gWxxx9UBVpbnW8mN2DpM96DACTn9j/8x212x3984x2241-1024x576.webp",
-    "url": "https://nos.nl/l/2623782"
-  },
-  {
     "title": "Een 1900 jaar oud toilet onthult nieuwe geheimen achter het indrukwekkende beton van de Romeinen",
     "summary": "Jarenlang dacht de wetenschap dat de duurzaamheid van Romeins beton te danken was aan een reactie tussen vulkanische as en kalk. Maar dat is lang niet de hele waarheid, zo blijkt uit onderzoek naar een eeuwenoude...",
     "source": "Historianet",
@@ -1015,33 +1042,6 @@
     "category": "Archeologie",
     "image": "",
     "url": "https://historianet.nl/beschavingen/romeinse-rijk/een-1900-jaar-oud-toilet-onthult-nieuwe-geheimen-achter-het-indrukwekkende-beton-van-de-romeinen"
-  },
-  {
-    "title": "Verstappen reageert veelzeggend op motoruitslag FIA: \"Zo ziet het er niet uit, he?\"",
-    "summary": "Max Verstappen pakte een derde plaats in Spa, maar had het gevoel dat er meer in zat als hij geen pech had gehad met de timing van de virtual safety car. Daarnaast sprak de race voor hem boekdelen over de verhoudingen...",
-    "source": "RacingNews365.nl",
-    "published": "2026-07-20T16:00:00Z",
-    "category": "Formule 1",
-    "image": "",
-    "url": "https://racingnews365.nl/verstappen-reageert-veelzeggend-op-motoruitslag-fia-zo-ziet-het-er-niet-uit-he"
-  },
-  {
-    "title": "Dit zijn de opmerkelijkste feiten en cijfers van het WK",
-    "summary": "Na 38 dagen waarin 48 landen in totaal 104 wedstrijden speelden en Spanje met de beker naar huis ging, zit het grootste WK voetbal aller tijden erop. Ook dit WK was weer goed voor een boel records en opmerkelijke...",
-    "source": "NOS Sport",
-    "published": "2026-07-20T15:59:44Z",
-    "category": "Sport",
-    "image": "https://images.cdn.nos.nl/7/B/8/J/7/d/ACUocc9K6wuEg4czHcQh17yQgVq82YSVa5o4B3n/2x447x1392x783-1024x576.webp",
-    "url": "https://nos.nl/l/2623779"
-  },
-  {
-    "title": "Een mini-lab op zakformaat: Hoe een luciferdoosje thuistesten revolutioneert",
-    "summary": "Onderzoekers van de University of Illinois Urbana-Champaign hebben de VPodDuo ontwikkeld: een analysator die er exact uitziet als het oplaaddoosje van een setje AirPods. Schijn bedriegt, want onder de kap zit een...",
-    "source": "Bright",
-    "published": "2026-07-20T15:17:14Z",
-    "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/07/20/d211c044803335faaf031f933e152f2067d0d482.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2114212/een-mini-lab-op-zakformaat-hoe-een-luciferdoosje-thuistesten-revolutioneert.html"
   },
   {
     "title": "The plaster casts of Pompeii",
