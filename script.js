@@ -63,7 +63,7 @@ const NAVIGATION_LINKS = {
 
 const DEFAULT_REFRESH_SERVICE = {
     localBaseUrl: "http://127.0.0.1:8787",
-    productionBaseUrl: "",
+    productionBaseUrl: "http://127.0.0.1:8787",
     timeoutMs: 15000,
 };
 
@@ -1806,15 +1806,11 @@ function getWorkflowFeedbackNode(targetKey) {
 }
 
 function getRefreshServiceUnavailableMessage() {
-    return isLocalRefreshContext()
-        ? "Verversservice niet gevonden. Start python refresh_proxy.py."
-        : "Verversservice nog niet geconfigureerd voor de live site.";
+    return "Verversservice niet gevonden. Start python refresh_proxy.py of configureer refreshServiceUrl.";
 }
 
 function getRefreshServiceUnreachableMessage() {
-    return isLocalRefreshContext()
-        ? "Verversservice niet bereikbaar. Start python refresh_proxy.py en probeer opnieuw."
-        : "Verversservice niet bereikbaar.";
+    return "Verversservice niet bereikbaar. Start python refresh_proxy.py of controleer refreshServiceUrl en probeer opnieuw.";
 }
 
 async function readWorkflowResponseMessage(response) {

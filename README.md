@@ -175,10 +175,11 @@ Lokaal werkt dat zo:
 1. start de static site zoals je al deed
 2. start daarnaast `python refresh_proxy.py`
 3. de knoppen op `index.html`, `news.html`, `sport.html`, `detectie.html` en `vissen.html` posten dan automatisch naar `http://127.0.0.1:8787`
+4. dat geldt ook als je BobOS via de live GitHub Pages-URL opent; de site probeert dan nog steeds je lokale refresh proxy op `127.0.0.1:8787` te gebruiken
 
 De refreshservice gebruikt eerst je bestaande `gh`-login. Als `gh auth status` al goed is, hoef je geen extra token in te vullen.
 
-Voor een externe HTTPS-omgeving kun je in `config.js` een eigen `refreshServiceUrl` invullen en die service laten draaien met `BOBOS_GITHUB_TOKEN` als server-side secret.
+Voor een externe HTTPS-omgeving kun je in `config.js` nog steeds een eigen `refreshServiceUrl` invullen en die service laten draaien met `BOBOS_GITHUB_TOKEN` als server-side secret. Zonder zo'n externe service valt BobOS live terug op de lokale refresh proxy op `127.0.0.1:8787`.
 
 ## Thema en versie
 
