@@ -32,6 +32,7 @@ const DASHBOARD_CONFIG = {
 
 const NEWS_CATEGORY_PREFERRED_ORDER = [
     "Alle",
+    "Tech",
     "Archeologie",
     "Wetenschap",
     "Sport",
@@ -114,6 +115,7 @@ const CATEGORY_ICON_MAP = {
     darts: "trophy",
     detectie: "map",
     gadgets: "cpu",
+    tech: "cpu",
     "formule 1": "flag",
     musea: "landmark",
     natuurkunde: "atom",
@@ -2157,7 +2159,7 @@ function iconNameForCategory(category) {
         return "landmark";
     }
 
-    if (normalized.includes("gadget") || normalized.includes("technologie")) {
+    if (normalized.includes("gadget") || normalized.includes("technologie") || normalized === "tech") {
         return "cpu";
     }
 

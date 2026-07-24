@@ -24,13 +24,40 @@ OUTPUT_PATH = ROOT_DIR / "data" / "news.json"
 MAX_ITEMS = 120
 MAX_SUMMARY_LENGTH = 220
 USER_AGENT = "Mozilla/5.0 (compatible; BobOS NewsAgent/0.3)"
-MIN_ITEMS_PER_CATEGORY = {
-    "Archeologie": 6,
+TARGET_CATEGORY_ORDER = (
+    "Tech",
+    "Archeologie",
+    "Wetenschap",
+    "Gadgets",
+    "Voetbal",
+)
+CATEGORY_TARGETS = {
+    "Tech": 24,
+    "Archeologie": 22,
+    "Wetenschap": 22,
+    "Gadgets": 22,
+    "Voetbal": 30,
 }
-MIN_ITEMS_PER_SOURCE = {
-    "Archeologie Online": 2,
-    "Historianet": 2,
-    "The Past": 2,
+CATEGORY_MAX_ITEMS = {
+    "Tech": 30,
+    "Archeologie": 28,
+    "Wetenschap": 28,
+    "Gadgets": 28,
+    "Voetbal": 40,
+}
+SOURCE_PRIORITY = {
+    "tweakers": 42,
+    "scientias": 38,
+    "archeologie online": 36,
+    "rijksdienst voor het cultureel erfgoed": 35,
+    "historianet": 34,
+    "the past": 32,
+    "national geographic nederland": 30,
+    "nos algemeen": 28,
+    "nos sport": 26,
+    "voetbal international": 24,
+    "bright": 18,
+    "voetbalprimeur": 10,
 }
 DUTCH_WORD_PATTERN = re.compile(r"[a-z\u00e0-\u00ff]+")
 DUTCH_STOPWORDS = {
@@ -113,6 +140,175 @@ ARCHAEOLOGY_KEYWORDS = (
     "urnenveld",
     "vondst",
 )
+SCIENCE_KEYWORDS = (
+    "astronomie",
+    "bacterie",
+    "biologie",
+    "brein",
+    "cel",
+    "climate",
+    "dna",
+    "evolutie",
+    "gen",
+    "genoom",
+    "klimaat",
+    "mars",
+    "natuur",
+    "onderzoek",
+    "opwarming",
+    "planeet",
+    "ruimte",
+    "satelliet",
+    "science",
+    "studie",
+    "universum",
+    "wetenschap",
+)
+TECH_KEYWORDS = (
+    "ai",
+    "api",
+    "app",
+    "beveilig",
+    "chip",
+    "cloud",
+    "data",
+    "datacenter",
+    "eu",
+    "internet",
+    "ios",
+    "linux",
+    "microsoft",
+    "open source",
+    "openai",
+    "privacy",
+    "server",
+    "software",
+    "sms",
+    "telecom",
+    "update",
+    "vodafone",
+)
+GADGET_KEYWORDS = (
+    "camera",
+    "console",
+    "controller",
+    "e-bike",
+    "fiets",
+    "gadget",
+    "gameconsole",
+    "headset",
+    "hp ",
+    "iphone",
+    "kindle",
+    "laptop",
+    "monitor",
+    "nothing",
+    "omnibook",
+    "playstation",
+    "nintendo",
+    "notitieblok",
+    "oled",
+    "phone",
+    "pixel",
+    "robot",
+    "smartphone",
+    "switch",
+    "tablet",
+    "telefoon",
+    "wearable",
+    "xbox",
+    "xtool",
+    "yubikey",
+)
+FOOTBALL_GENERAL_KEYWORDS = (
+    "ajax",
+    "arsenal",
+    "barcelona",
+    "bayern",
+    "chelsea",
+    "eredivisie",
+    "feyenoord",
+    "football",
+    "lfc",
+    "liverpool",
+    "manchester city",
+    "manchester united",
+    "man utd",
+    "oranje",
+    "premier league",
+    "psv",
+    "voetbal",
+    "wk",
+)
+FOOTBALL_FOCUS_KEYWORDS = (
+    "ajax",
+    "psv",
+    "feyenoord",
+    "manchester united",
+    "man utd",
+    "barcelona",
+    "fc barcelona",
+    "bayern",
+    "bayern munchen",
+    "bayern münchen",
+    "premier league",
+    "arsenal",
+    "chelsea",
+    "lfc",
+    "liverpool",
+    "manchester city",
+    "newcastle",
+    "tottenham",
+    "the reds",
+)
+LOW_VALUE_URL_FRAGMENTS = (
+    "/video/",
+    "/videos/",
+    "/live-",
+    "/live/",
+    "/podcast/",
+)
+GENERIC_LOW_VALUE_TITLE_KEYWORDS = (
+    ".geek -",
+    "alle ontwikkelingen",
+    "live ",
+    "live:",
+    "podcast",
+    "round-up",
+    "software-update -",
+    "wekdienst",
+)
+FOOTBALL_LOW_VALUE_KEYWORDS = (
+    "derksen",
+    "dijkshoorn",
+    "familie",
+    "hartverscheurend",
+    "helden",
+    "instagram",
+    "neefjes",
+    "oorlogsvoetbal",
+    "overlijden",
+    "roddel",
+    "schandaal",
+    "schrikt",
+    "social media",
+    "van der gijp",
+    "vriend'",
+    "vriend ",
+)
+GADGET_CLICKBAIT_KEYWORDS = (
+    ".geek",
+    "fascinerende",
+    "gaat op het punt",
+    "het beste",
+    "niet meer naar",
+    "nooit meer",
+    "raad het",
+    "waarom je",
+)
+SCIENCE_LOW_VALUE_KEYWORDS = (
+    "seksleven",
+)
 HTML_FEED_LINK_PATTERN = re.compile(
     r"""href=["']([^"']+)["'][^>]+type=["'](?:application/(?:rss|atom)\+xml|application/xml|text/xml)["']
     |type=["'](?:application/(?:rss|atom)\+xml|application/xml|text/xml)["'][^>]+href=["']([^"']+)["']""",
@@ -172,10 +368,12 @@ def fetch_feed_items(source: dict[str, Any]) -> tuple[list[dict[str, Any]], bool
             if not url or not title:
                 continue
 
-            keep_result = should_keep_entry(
+            keep_result, output_category, priority = classify_entry(
                 entry=entry,
+                source_name=source_name,
                 title=title,
                 summary=summary,
+                url=url,
                 feed_language=feed_language,
                 source_category=source_category,
             )
@@ -193,9 +391,10 @@ def fetch_feed_items(source: dict[str, Any]) -> tuple[list[dict[str, Any]], bool
                     "summary": summary,
                     "source": source_name,
                     "published": format_datetime(parse_entry_datetime(entry)),
-                    "category": source_category,
+                    "category": output_category,
                     "image": extract_image(entry),
                     "url": url,
+                    "_priority": priority,
                 }
             )
 
@@ -214,22 +413,34 @@ def fetch_feed_items(source: dict[str, Any]) -> tuple[list[dict[str, Any]], bool
     return [], False
 
 
-def should_keep_entry(
+def classify_entry(
     entry: dict[str, Any],
+    source_name: str,
     title: str,
     summary: str,
+    url: str,
     feed_language: str,
     source_category: str,
-) -> str:
-    """Laat alleen toegestane talen en relevante archeologie-items door."""
+) -> tuple[str, str, int]:
+    """Bepaal of een item bruikbaar is, inclusief categorie en prioriteit."""
     combined_text = " ".join(part for part in (title, summary) if part).strip()
     entry_language = extract_language(entry)
 
     if entry_language and not is_allowed_language(entry_language, source_category):
-        return "language"
+        return "language", "", 0
 
     if not entry_language and feed_language and not is_allowed_language(feed_language, source_category):
-        return "language"
+        return "language", "", 0
+
+    output_category = resolve_output_category(
+        source_name=source_name,
+        source_category=source_category,
+        title=title,
+        summary=summary,
+        url=url,
+    )
+    if not output_category:
+        return "topic", "", 0
 
     if is_archaeology_category(source_category):
         if not (
@@ -238,17 +449,233 @@ def should_keep_entry(
             or is_english_language(entry_language)
             or is_english_language(feed_language)
         ):
-            return "language"
+            return "language", "", 0
 
         if not looks_like_archaeology_story(combined_text):
-            return "topic"
+            return "topic", "", 0
 
-        return "keep"
+    elif entry_language or feed_language:
+        if not (
+            is_dutch_language(entry_language)
+            or is_dutch_language(feed_language)
+            or (
+                normalize_category(output_category) == "archeologie"
+                and (
+                    is_english_language(entry_language)
+                    or is_english_language(feed_language)
+                    or is_probably_english(combined_text)
+                )
+            )
+        ):
+            return "language", "", 0
 
-    if entry_language or feed_language:
-        return "keep"
+    elif normalize_category(output_category) == "archeologie":
+        if not (is_probably_dutch(combined_text) or is_probably_english(combined_text)):
+            return "language", "", 0
 
-    return "keep" if is_probably_dutch(combined_text) else "language"
+    elif not is_probably_dutch(combined_text):
+        return "language", "", 0
+
+    if is_low_value_story(
+        source_name=source_name,
+        output_category=output_category,
+        title=title,
+        summary=summary,
+        url=url,
+    ):
+        return "topic", "", 0
+
+    priority = compute_item_priority(
+        source_name=source_name,
+        output_category=output_category,
+        title=title,
+        summary=summary,
+    )
+    return "keep", output_category, priority
+
+
+def resolve_output_category(
+    *,
+    source_name: str,
+    source_category: str,
+    title: str,
+    summary: str,
+    url: str,
+) -> str:
+    """Map bron- en inhoudssignalen naar de gewenste BobOS-categorieen."""
+    normalized_source = normalize_source_name(source_name)
+    normalized_category = normalize_category(source_category)
+    combined_text = " ".join(part for part in (title, summary, url) if part).strip().lower()
+
+    if normalized_category == "archeologie":
+        return "Archeologie" if looks_like_archaeology_story(combined_text) else ""
+
+    if normalized_category == "wetenschap":
+        return "Wetenschap" if looks_like_science_story(combined_text) else ""
+
+    if normalized_category == "voetbal":
+        return "Voetbal" if looks_like_football_story(combined_text) else ""
+
+    if normalized_category == "gadgets":
+        if normalized_source == "tweakers":
+            return "Gadgets" if looks_like_gadget_story(combined_text) else "Tech"
+        return "Gadgets" if looks_like_gadget_story(combined_text) else "Tech" if looks_like_tech_story(combined_text) else ""
+
+    if normalized_category == "sport":
+        return "Voetbal" if looks_like_football_story(combined_text) else ""
+
+    if normalized_category in {"algemeen", "musea"}:
+        if looks_like_archaeology_story(combined_text):
+            return "Archeologie"
+        if looks_like_science_story(combined_text):
+            return "Wetenschap"
+        if looks_like_football_story(combined_text):
+            return "Voetbal"
+        if looks_like_gadget_story(combined_text):
+            return "Gadgets"
+        if looks_like_tech_story(combined_text):
+            return "Tech"
+
+    return ""
+
+
+def looks_like_science_story(text: str) -> bool:
+    """Herken wetenschapsverhalen grofmazig op inhoudssignalen."""
+    lowered = str(text or "").lower()
+    return contains_any_keyword(lowered, SCIENCE_KEYWORDS)
+
+
+def looks_like_tech_story(text: str) -> bool:
+    """Herken techverhalen die meer over platformen, software of infra gaan."""
+    lowered = str(text or "").lower()
+    return contains_any_keyword(lowered, TECH_KEYWORDS)
+
+
+def looks_like_gadget_story(text: str) -> bool:
+    """Herken gadgetverhalen die draaien om apparaten en consumentenhardware."""
+    lowered = str(text or "").lower()
+    if contains_any_keyword(lowered, GADGET_KEYWORDS):
+        return True
+
+    return lowered.startswith("quicktest -") and not contains_any_keyword(
+        lowered,
+        ("chip", "cpu", "gpu", "datacenter", "server", "epyc", "instinct"),
+    )
+
+
+def looks_like_football_story(text: str) -> bool:
+    """Herken voetbalverhalen via club-, competitie- en sporttermen."""
+    lowered = str(text or "").lower()
+    return contains_any_keyword(lowered, FOOTBALL_GENERAL_KEYWORDS)
+
+
+def contains_any_keyword(text: str, keywords: tuple[str, ...]) -> bool:
+    """Controleer of een van de opgegeven termen voorkomt in tekst."""
+    lowered = str(text or "").lower()
+    return any(keyword_in_text(lowered, keyword) for keyword in keywords)
+
+
+def keyword_in_text(text: str, keyword: str) -> bool:
+    """Match keywords woordbewust zodat korte termen geen ruis veroorzaken."""
+    lowered_text = str(text or "").lower()
+    lowered_keyword = str(keyword or "").strip().lower()
+    if not lowered_keyword:
+        return False
+
+    pattern = rf"(?<![a-z0-9]){re.escape(lowered_keyword)}(?![a-z0-9])"
+    return re.search(pattern, lowered_text) is not None
+
+
+def is_low_value_story(
+    *,
+    source_name: str,
+    output_category: str,
+    title: str,
+    summary: str,
+    url: str,
+) -> bool:
+    """Filter clickbait, liveblogs, roddel en andere lage-signaalitems."""
+    lowered_title = str(title or "").lower()
+    lowered_summary = str(summary or "").lower()
+    lowered_url = str(url or "").lower()
+    combined_text = f"{lowered_title} {lowered_summary}".strip()
+    normalized_source = normalize_source_name(source_name)
+    normalized_category = normalize_category(output_category)
+
+    if any(fragment in lowered_url for fragment in LOW_VALUE_URL_FRAGMENTS):
+        return True
+
+    if contains_any_keyword(lowered_title, GENERIC_LOW_VALUE_TITLE_KEYWORDS):
+        return True
+
+    if normalized_category == "voetbal":
+        if contains_any_keyword(combined_text, FOOTBALL_LOW_VALUE_KEYWORDS):
+            return True
+        if "reageert op" in combined_text and football_relevance_score(combined_text) == 0:
+            return True
+        if normalized_source == "voetbalprimeur" and football_relevance_score(combined_text) == 0:
+            return True
+
+    if normalized_category == "gadgets" and normalized_source == "bright":
+        if contains_any_keyword(lowered_title, GADGET_CLICKBAIT_KEYWORDS):
+            return True
+
+    if normalized_category == "wetenschap" and contains_any_keyword(combined_text, SCIENCE_LOW_VALUE_KEYWORDS):
+        return True
+
+    if normalized_category == "archeologie":
+        if re.search(r"\bcurrent archaeology\s+\d+\b", lowered_title):
+            return True
+        if "war graves commission memorial" in combined_text:
+            return True
+
+    return False
+
+
+def football_relevance_score(text: str) -> int:
+    """Geef hogere scores aan de expliciete voetbalfocus van BobOS."""
+    lowered = str(text or "").lower()
+    score = 0
+
+    for keyword in FOOTBALL_FOCUS_KEYWORDS:
+        if keyword in lowered:
+            score += 18
+
+    if "eredivisie" in lowered:
+        score += 8
+    if "champions league" in lowered or "europa league" in lowered:
+        score += 6
+    if "transfer" in lowered or "contract" in lowered or "coach" in lowered:
+        score += 4
+
+    return score
+
+
+def compute_item_priority(
+    *,
+    source_name: str,
+    output_category: str,
+    title: str,
+    summary: str,
+) -> int:
+    """Bereken een pragmatische prioriteit voor selectie en deduplicatie."""
+    normalized_source = normalize_source_name(source_name)
+    normalized_category = normalize_category(output_category)
+    combined_text = " ".join(part for part in (title, summary) if part).strip().lower()
+    score = SOURCE_PRIORITY.get(normalized_source, 0)
+
+    if normalized_category == "voetbal":
+        score += football_relevance_score(combined_text)
+    elif normalized_category == "archeologie":
+        score += 18 if contains_any_keyword(combined_text, ("steentijd", "opgraving", "romeins", "ancient dna", "neanderthal")) else 10
+    elif normalized_category == "wetenschap":
+        score += 16 if contains_any_keyword(combined_text, ("ruimte", "klimaat", "dna", "onderzoek", "planeet")) else 9
+    elif normalized_category == "tech":
+        score += 14 if contains_any_keyword(combined_text, ("openai", "apple", "microsoft", "datacenter", "telecom", "beveilig")) else 8
+    elif normalized_category == "gadgets":
+        score += 12 if contains_any_keyword(combined_text, ("iphone", "switch", "laptop", "camera", "robot", "tablet")) else 6
+
+    return score
 
 
 def extract_language(value: Any) -> str:
@@ -574,149 +1001,112 @@ def repair_mojibake(value: str) -> str:
 
 
 def dedupe_and_sort(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Verwijder dubbele links en sorteer nieuwste berichten bovenaan."""
+    """Dedupeer items en bouw daarna een gebalanceerde categorie-selectie."""
     unique_items: dict[str, dict[str, Any]] = {}
 
     for item in items:
         url = item["url"]
         current = unique_items.get(url)
 
-        if current is None or item["published"] > current["published"]:
+        if current is None or compare_item_priority(item, current):
             unique_items[url] = item
 
-    sorted_items = sorted(unique_items.values(), key=sort_key, reverse=True)
-    selected_items = sorted_items[:MAX_ITEMS]
-    balanced_items = rebalance_category_coverage(selected_items, sorted_items)
-    return rebalance_source_coverage(balanced_items, sorted_items)
+    ranked_items = sorted(unique_items.values(), key=sort_key, reverse=True)
+    selected_items = select_balanced_items(ranked_items)
+    return [strip_internal_fields(item) for item in selected_items]
 
 
-def rebalance_category_coverage(
-    selected_items: list[dict[str, Any]],
-    sorted_items: list[dict[str, Any]],
-) -> list[dict[str, Any]]:
-    """Bewaar een recente feed, maar reserveer ruimte voor ondervertegenwoordigde categorieen."""
-    if not selected_items:
-        return selected_items
+def compare_item_priority(candidate: dict[str, Any], current: dict[str, Any]) -> bool:
+    """Kies bij dubbele URLs het item met de sterkste prioriteit en recentste datum."""
+    candidate_priority = int(candidate.get("_priority", 0))
+    current_priority = int(current.get("_priority", 0))
 
-    protected_minimums = {
+    if candidate_priority != current_priority:
+        return candidate_priority > current_priority
+
+    return str(candidate.get("published", "")) > str(current.get("published", ""))
+
+
+def select_balanced_items(ranked_items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Verdeel de feed expliciet over de gewenste categorieen."""
+    if not ranked_items:
+        return []
+
+    normalized_targets = {
         normalize_category(category): minimum
-        for category, minimum in MIN_ITEMS_PER_CATEGORY.items()
+        for category, minimum in CATEGORY_TARGETS.items()
         if minimum > 0
     }
-    if not protected_minimums:
-        return selected_items
+    normalized_maxima = {
+        normalize_category(category): maximum
+        for category, maximum in CATEGORY_MAX_ITEMS.items()
+        if maximum > 0
+    }
+    buckets = {normalize_category(category): [] for category in TARGET_CATEGORY_ORDER}
 
-    balanced = list(selected_items)
-    selected_urls = {item["url"] for item in balanced}
+    for item in ranked_items:
+        category = normalize_category(item.get("category", ""))
+        if category in buckets:
+            buckets[category].append(item)
 
-    for category, minimum in protected_minimums.items():
-        current_count = sum(
-            1 for item in balanced if normalize_category(item.get("category", "")) == category
-        )
-        if current_count >= minimum:
+    selected: list[dict[str, Any]] = []
+    selected_urls: set[str] = set()
+    category_counts: Counter[str] = Counter()
+
+    for category_name in TARGET_CATEGORY_ORDER:
+        normalized_category = normalize_category(category_name)
+        target = normalized_targets.get(normalized_category, 0)
+
+        for item in buckets.get(normalized_category, []):
+            if category_counts[normalized_category] >= target or len(selected) >= MAX_ITEMS:
+                break
+            selected.append(item)
+            selected_urls.add(item["url"])
+            category_counts[normalized_category] += 1
+
+    remaining_items = [
+        item
+        for item in ranked_items
+        if item["url"] not in selected_urls and normalize_category(item.get("category", "")) in buckets
+    ]
+
+    for item in remaining_items:
+        if len(selected) >= MAX_ITEMS:
+            break
+
+        category = normalize_category(item.get("category", ""))
+        if category_counts[category] >= normalized_maxima.get(category, MAX_ITEMS):
             continue
 
-        extras = [
-            item
-            for item in sorted_items
-            if item["url"] not in selected_urls
-            and normalize_category(item.get("category", "")) == category
-        ][: minimum - current_count]
+        selected.append(item)
+        selected_urls.add(item["url"])
+        category_counts[category] += 1
 
-        for item in extras:
-            balanced.append(item)
+    if len(selected) < MAX_ITEMS:
+        for item in remaining_items:
+            if len(selected) >= MAX_ITEMS:
+                break
+            if item["url"] in selected_urls:
+                continue
+            selected.append(item)
             selected_urls.add(item["url"])
 
-    while len(balanced) > MAX_ITEMS:
-        removal_index = find_removable_index(balanced, protected_minimums, {})
-        if removal_index is None:
-            break
-        balanced.pop(removal_index)
-
-    return balanced[:MAX_ITEMS]
+    return sorted(selected, key=sort_key, reverse=True)
 
 
-def rebalance_source_coverage(
-    selected_items: list[dict[str, Any]],
-    sorted_items: list[dict[str, Any]],
-) -> list[dict[str, Any]]:
-    """Bewaar ook bronspreiding voor archeologie, zodat de categorie niet op een feed leunt."""
-    if not selected_items:
-        return selected_items
-
-    protected_categories = {
-        normalize_category(category): minimum
-        for category, minimum in MIN_ITEMS_PER_CATEGORY.items()
-        if minimum > 0
+def strip_internal_fields(item: dict[str, Any]) -> dict[str, Any]:
+    """Haal interne selectievelden uit het JSON-resultaat."""
+    return {
+        key: value
+        for key, value in item.items()
+        if not key.startswith("_")
     }
-    protected_sources = {
-        normalize_source_name(source): minimum
-        for source, minimum in MIN_ITEMS_PER_SOURCE.items()
-        if minimum > 0
-    }
-    if not protected_sources:
-        return selected_items
-
-    balanced = list(selected_items)
-    selected_urls = {item["url"] for item in balanced}
-
-    for source_name, minimum in protected_sources.items():
-        current_count = sum(
-            1 for item in balanced if normalize_source_name(item.get("source", "")) == source_name
-        )
-        if current_count >= minimum:
-            continue
-
-        extras = [
-            item
-            for item in sorted_items
-            if item["url"] not in selected_urls
-            and normalize_source_name(item.get("source", "")) == source_name
-        ][: minimum - current_count]
-
-        for item in extras:
-            balanced.append(item)
-            selected_urls.add(item["url"])
-
-    while len(balanced) > MAX_ITEMS:
-        removal_index = find_removable_index(balanced, protected_categories, protected_sources)
-        if removal_index is None:
-            break
-        balanced.pop(removal_index)
-
-    return balanced[:MAX_ITEMS]
-
-
-def find_removable_index(
-    items: list[dict[str, Any]],
-    protected_minimums: dict[str, int],
-    protected_sources: dict[str, int],
-) -> int | None:
-    """Verwijder bij voorkeur de oudste items buiten beschermde minima."""
-    category_counts = Counter(
-        normalize_category(item.get("category", ""))
-        for item in items
-    )
-    source_counts = Counter(
-        normalize_source_name(item.get("source", ""))
-        for item in items
-    )
-
-    for index in range(len(items) - 1, -1, -1):
-        category = normalize_category(items[index].get("category", ""))
-        source_name = normalize_source_name(items[index].get("source", ""))
-        category_minimum = protected_minimums.get(category, 0)
-        source_minimum = protected_sources.get(source_name, 0)
-        if category_counts[category] > category_minimum and source_counts[source_name] > source_minimum:
-            return index
-
-    return None
 
 
 def sort_key(item: dict[str, Any]) -> tuple[int, str]:
-    """Sorteer eerst op geldige datum en daarna op datumtekst."""
+    """Sorteer op prioriteit en daarna op datum."""
     published = item.get("published", "")
-    return (1 if published else 0, published)
+    return (int(item.get("_priority", 0)), 1 if published else 0, published)
 
 
 def save_items(items: list[dict[str, Any]]) -> bool:
