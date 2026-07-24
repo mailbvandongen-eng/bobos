@@ -10,7 +10,7 @@ BobOS is een persoonlijk, mobiel dashboard met losse advies-agents voor nieuws, 
 
 - mobile first
 - geschikt voor GitHub Pages
-- dashboard blijft statisch; de verversknoppen gebruiken optioneel een kleine refreshservice
+- dashboard blijft statisch; de verversknoppen gebruiken live een kleine Vercel-refreshservice
 - geen database
 - geen login
 - geen AI-kosten of betaalde API's
@@ -49,8 +49,16 @@ style.css
 config.js
 script.js
 refresh_proxy.py
+package.json
+vercel.json
 README.md
 requirements.txt
+api/
+|- health.js
+|- dispatch/
+|  \- [target].js
+|- _lib/
+   \- refresh.js
 .github/
 \- workflows/
    |- news.yml
@@ -168,18 +176,28 @@ Handmatig starten kan via:
 
 ## Tokenloze verversknoppen
 
-De verversknoppen in BobOS praten niet meer direct met GitHub. Ze sturen een request naar een kleine refreshservice, zodat de browser geen token hoeft te kennen.
+De verversknoppen in BobOS praten niet meer direct met GitHub. De browser roept een refreshservice aan, en die service start server-side de juiste GitHub Action. Daardoor hoeft er geen token in de browser te staan.
 
-Lokaal werkt dat zo:
+Live werkt dit via Vercel:
+
+1. deploy deze repo naar Vercel
+2. zet in Vercel de environment variable `BOBOS_GITHUB_TOKEN`
+3. gebruik een GitHub token met minimaal `repo` en `workflow`
+4. een Vercel-hosted BobOS gebruikt dan direct zijn eigen `api/health` en `api/dispatch/{target}`
+
+De GitHub Pages-versie van BobOS gebruikt daarvoor de ingestelde externe service-URL in `config.js`:
+
+`https://mailbvandongen-eng-bobos-refresh.vercel.app`
+
+Als je Vercel-project uiteindelijk een andere URL krijgt, pas alleen `refreshServiceUrl` in `config.js` aan.
+
+Lokaal blijft `refresh_proxy.py` bestaan voor development. Dan werkt het zo:
 
 1. start de static site zoals je al deed
 2. start daarnaast `python refresh_proxy.py`
 3. de knoppen op `index.html`, `news.html`, `sport.html`, `detectie.html` en `vissen.html` posten dan automatisch naar `http://127.0.0.1:8787`
-4. dat geldt ook als je BobOS via de live GitHub Pages-URL opent; de site probeert dan nog steeds je lokale refresh proxy op `127.0.0.1:8787` te gebruiken
 
-De refreshservice gebruikt eerst je bestaande `gh`-login. Als `gh auth status` al goed is, hoef je geen extra token in te vullen.
-
-Voor een externe HTTPS-omgeving kun je in `config.js` nog steeds een eigen `refreshServiceUrl` invullen en die service laten draaien met `BOBOS_GITHUB_TOKEN` als server-side secret. Zonder zo'n externe service valt BobOS live terug op de lokale refresh proxy op `127.0.0.1:8787`.
+De lokale proxy gebruikt eerst je bestaande `gh`-login. Als `gh auth status` al goed is, hoef je lokaal geen extra token in te vullen.
 
 ## Thema en versie
 

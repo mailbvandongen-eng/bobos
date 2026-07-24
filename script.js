@@ -63,7 +63,7 @@ const NAVIGATION_LINKS = {
 
 const DEFAULT_REFRESH_SERVICE = {
     localBaseUrl: "http://127.0.0.1:8787",
-    productionBaseUrl: "http://127.0.0.1:8787",
+    productionBaseUrl: "",
     timeoutMs: 15000,
 };
 
@@ -1779,14 +1779,23 @@ function isLocalRefreshContext() {
         && ["127.0.0.1", "localhost"].includes(window.location.hostname);
 }
 
+function isVercelHostedContext() {
+    return window.location.protocol === "https:"
+        && window.location.hostname.endsWith(".vercel.app");
+}
+
 function getRefreshServiceBaseUrl() {
+    if (isLocalRefreshContext()) {
+        return DEFAULT_REFRESH_SERVICE.localBaseUrl;
+    }
+
+    if (isVercelHostedContext()) {
+        return normalizeRefreshServiceUrl(window.location.origin);
+    }
+
     const configuredUrl = normalizeRefreshServiceUrl(RUNTIME_CONFIG.refreshServiceUrl);
     if (configuredUrl) {
         return configuredUrl;
-    }
-
-    if (isLocalRefreshContext()) {
-        return DEFAULT_REFRESH_SERVICE.localBaseUrl;
     }
 
     return normalizeRefreshServiceUrl(DEFAULT_REFRESH_SERVICE.productionBaseUrl);
@@ -1806,11 +1815,13 @@ function getWorkflowFeedbackNode(targetKey) {
 }
 
 function getRefreshServiceUnavailableMessage() {
-    return "Verversservice niet gevonden. Start python refresh_proxy.py of configureer refreshServiceUrl.";
+    return "Verversservice niet beschikbaar.";
 }
 
 function getRefreshServiceUnreachableMessage() {
-    return "Verversservice niet bereikbaar. Start python refresh_proxy.py of controleer refreshServiceUrl en probeer opnieuw.";
+    return isLocalRefreshContext()
+        ? "Verversservice niet bereikbaar op je lokale machine."
+        : "Verversservice niet bereikbaar.";
 }
 
 async function readWorkflowResponseMessage(response) {
