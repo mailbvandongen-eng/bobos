@@ -1,20 +1,30 @@
 {
-  "updated_at": "2026-07-25T07:32:15Z",
+  "updated_at": "2026-07-26T07:54:31Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "16:00",
-      "title": "Qualifying",
+      "time": "14:30",
+      "title": "{'participantID': '42633', 'firstName': 'Gemma', 'lastName': 'Hayter', 'nickname': None, 'countryCode': 'GB-ENG', 'media': {'image': '351a7e80-f87b-11f0-b441-3d6059df19cc.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '37010', 'firstName': 'Vicky', 'lastName': 'Pruim', 'nickname': '', 'countryCode': 'SE', 'media': {'image': '3c3d2970-7e9a-11f0-ba41-6bcd3855d5db.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Women's World Matchplay",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "15:00",
+      "title": "Race",
       "category": "GP Hungary",
       "source": "OpenF1",
       "score": 5,
       "must_watch": true,
-      "reason": "Formule 1 en kwalificatie",
+      "reason": "Formule 1 en race",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "22:45",
-      "title": "{'participantID': '40676', 'firstName': 'Luke', 'lastName': 'Littler', 'nickname': 'The Nuke', 'countryCode': 'GB-ENG', 'media': {'image': '7843dbf0-f21a-11f0-a2b2-337f630ef140.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '246', 'firstName': 'Dirk', 'lastName': 'van Duijvenbode', 'nickname': 'Aubergenius', 'countryCode': 'NL', 'media': {'image': 'f4f9a260-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "time": "21:05",
+      "title": "{'participantID': '40676', 'firstName': 'Luke', 'lastName': 'Littler', 'nickname': 'The Nuke', 'countryCode': 'GB-ENG', 'media': {'image': '7843dbf0-f21a-11f0-a2b2-337f630ef140.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '11788', 'firstName': 'Gerwyn', 'lastName': 'Price', 'nickname': 'The Iceman', 'countryCode': 'GB-WLS', 'media': {'image': 'f5a3ec20-f233-11f0-a1f6-49664dee8666.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 World Matchplay",
       "source": "PDC",
       "score": 5,
@@ -23,9 +33,9 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "21:05",
-      "title": "{'participantID': '11788', 'firstName': 'Gerwyn', 'lastName': 'Price', 'nickname': 'The Iceman', 'countryCode': 'GB-WLS', 'media': {'image': 'f5a3ec20-f233-11f0-a1f6-49664dee8666.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33091', 'firstName': 'Gian', 'lastName': 'van Veen', 'nickname': 'The Giant', 'countryCode': 'NL', 'media': {'image': 'f5b2b930-f233-11f0-9c7f-3f5eeb7c3f65.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 World Matchplay",
+      "time": "14:00",
+      "title": "{'participantID': '36640', 'firstName': 'Beau', 'lastName': 'Greaves', 'nickname': 'Beau & Arrow', 'countryCode': 'GB-ENG', 'media': {'image': '63a3fbe0-f2e1-11f0-b0b9-318ff8bc1aee.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '40679', 'firstName': 'Kirsi', 'lastName': 'Viinikainen', 'nickname': 'Kipa', 'countryCode': 'FI', 'media': {'image': '35542c20-f87b-11f0-ac64-03bb6a76eed4.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Women's World Matchplay",
       "source": "PDC",
       "score": 4,
       "must_watch": false,
@@ -33,20 +43,60 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "12:30",
-      "title": "Practice 3",
-      "category": "GP Hungary",
-      "source": "OpenF1",
-      "score": 3,
+      "time": "15:00",
+      "title": "{'participantID': '31491', 'firstName': 'Lisa', 'lastName': 'Ashton', 'nickname': 'The Lancashire Rose', 'countryCode': 'GB-ENG', 'media': {'image': '35233110-f87b-11f0-bc43-bd191c0dc453.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '37064', 'firstName': 'Rhian', 'lastName': \"O'Sullivan\", 'nickname': None, 'countryCode': 'GB-WLS', 'media': {'image': '3c3d2970-7e9a-11f0-ba41-6bcd3855d5db.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Women's World Matchplay",
+      "source": "PDC",
+      "score": 4,
       "must_watch": false,
-      "reason": "Formule 1",
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "15:30",
+      "title": "{'participantID': '31493', 'firstName': 'Fallon', 'lastName': 'Sherrock', 'nickname': 'Queen of the Palace', 'countryCode': 'GB-ENG', 'media': {'image': '35034d00-f87b-11f0-865f-17820d801466.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '258', 'firstName': 'Deta', 'lastName': 'Hedman', 'nickname': 'Caribbean Queen', 'countryCode': 'GB-ENG', 'media': {'image': '3c3d2970-7e9a-11f0-ba41-6bcd3855d5db.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Women's World Matchplay",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:10",
+      "title": "{'participantID': None, 'firstName': None, 'lastName': None, 'nickname': None, 'countryCode': None} - {'participantID': None, 'firstName': None, 'lastName': None, 'nickname': None, 'countryCode': None}",
+      "category": "2026 Women's World Matchplay",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:50",
+      "title": "{'participantID': None, 'firstName': None, 'lastName': None, 'nickname': None, 'countryCode': None} - {'participantID': None, 'firstName': None, 'lastName': None, 'nickname': None, 'countryCode': None}",
+      "category": "2026 Women's World Matchplay",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "17:35",
+      "title": "{'participantID': None, 'firstName': None, 'lastName': None, 'nickname': None, 'countryCode': None} - {'participantID': None, 'firstName': None, 'lastName': None, 'nickname': None, 'countryCode': None}",
+      "category": "2026 Women's World Matchplay",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     }
   ],
   "details": [
-    "Topkeuze vandaag: Qualifying (5/5) door formule 1 en kwalificatie.",
-    "2 must-see item(s) en 4 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: 2026 World Matchplay, GP Hungary.",
+    "Topkeuze vandaag: {'participantID': '42633', 'firstName': 'Gemma', 'lastName': 'Hayter', 'nickname': None, 'countryCode': 'GB-ENG', 'media': {'image': '351a7e80-f87b-11f0-b441-3d6059df19cc.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '37010', 'firstName': 'Vicky', 'lastName': 'Pruim', 'nickname': '', 'countryCode': 'SE', 'media': {'image': '3c3d2970-7e9a-11f0-ba41-6bcd3855d5db.png', 'type': 'profile', 'meta': {'side': ''}}} (5/5) door formule 1 en darts.",
+    "3 must-see item(s) en 9 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: 2026 Women's World Matchplay, 2026 World Matchplay, GP Hungary.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
