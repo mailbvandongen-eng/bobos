@@ -1,10 +1,30 @@
 {
-  "updated_at": "2026-08-06T08:00:05Z",
+  "updated_at": "2026-08-07T06:44:05Z",
   "status": "Vandaag interessant",
   "items": [
     {
       "time": "20:45",
-      "title": "Bristol City - Walsall",
+      "title": "Wolves - Port Vale",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "Wycombe - Stevenage",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "21:00",
+      "title": "Boro - Wrexham",
       "category": "League Cup",
       "source": "ESPN (League Cup)",
       "score": 1,
@@ -14,8 +34,8 @@
     }
   ],
   "details": [
-    "Topkeuze vandaag: Bristol City - Walsall (1/5) door vandaag bruikbaar.",
-    "0 must-see item(s) en 1 relevante sportitem(s) gevonden.",
+    "Topkeuze vandaag: Wolves - Port Vale (1/5) door vandaag bruikbaar.",
+    "0 must-see item(s) en 3 relevante sportitem(s) gevonden.",
     "Categorieen vandaag: League Cup.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
