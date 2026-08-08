@@ -1,10 +1,20 @@
 {
-  "updated_at": "2026-08-07T06:44:05Z",
+  "updated_at": "2026-08-08T06:04:45Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "20:45",
-      "title": "Wolves - Port Vale",
+      "time": "16:00",
+      "title": "Derby - Lincoln City",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 3,
+      "must_watch": false,
+      "reason": "derby",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "14:00",
+      "title": "Cambridge - Barnet",
       "category": "League Cup",
       "source": "ESPN (League Cup)",
       "score": 1,
@@ -13,8 +23,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "20:45",
-      "title": "Wycombe - Stevenage",
+      "time": "15:00",
+      "title": "QPR - Millwall",
       "category": "League Cup",
       "source": "ESPN (League Cup)",
       "score": 1,
@@ -23,8 +33,88 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "21:00",
-      "title": "Boro - Wrexham",
+      "time": "16:00",
+      "title": "Barnsley - Wigan",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:00",
+      "title": "Bradford - Rochdale",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:00",
+      "title": "Bristol Rovers - Peterborough",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:00",
+      "title": "Bromley - Reading",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:00",
+      "title": "Burnley - Notts County",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:00",
+      "title": "Burton Albion - Blackburn",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:00",
+      "title": "Cardiff - Swindon",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:00",
+      "title": "Crewe - Accrington",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:00",
+      "title": "Fleetwood Town - Chesterfield",
       "category": "League Cup",
       "source": "ESPN (League Cup)",
       "score": 1,
@@ -34,8 +124,8 @@
     }
   ],
   "details": [
-    "Topkeuze vandaag: Wolves - Port Vale (1/5) door vandaag bruikbaar.",
-    "0 must-see item(s) en 3 relevante sportitem(s) gevonden.",
+    "Topkeuze vandaag: Derby - Lincoln City (3/5) door derby.",
+    "0 must-see item(s) en 12 relevante sportitem(s) gevonden.",
     "Categorieen vandaag: League Cup.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
