@@ -1,20 +1,10 @@
 {
-  "updated_at": "2026-08-08T06:04:45Z",
+  "updated_at": "2026-08-09T06:07:08Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "16:00",
-      "title": "Derby - Lincoln City",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 3,
-      "must_watch": false,
-      "reason": "derby",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "14:00",
-      "title": "Cambridge - Barnet",
+      "time": "17:00",
+      "title": "Mansfield - Sheffield Utd",
       "category": "League Cup",
       "source": "ESPN (League Cup)",
       "score": 1,
@@ -23,100 +13,20 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "15:00",
-      "title": "QPR - Millwall",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
+      "time": "19:45",
+      "title": "Arezzo - Union Brescia",
+      "category": "Coppa Italia",
+      "source": "ESPN (Coppa Italia)",
       "score": 1,
       "must_watch": false,
       "reason": "Vandaag bruikbaar",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "16:00",
-      "title": "Barnsley - Wigan",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "16:00",
-      "title": "Bradford - Rochdale",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "16:00",
-      "title": "Bristol Rovers - Peterborough",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "16:00",
-      "title": "Bromley - Reading",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "16:00",
-      "title": "Burnley - Notts County",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "16:00",
-      "title": "Burton Albion - Blackburn",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "16:00",
-      "title": "Cardiff - Swindon",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "16:00",
-      "title": "Crewe - Accrington",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "16:00",
-      "title": "Fleetwood Town - Chesterfield",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
+      "time": "21:00",
+      "title": "Benevento - Ravenna",
+      "category": "Coppa Italia",
+      "source": "ESPN (Coppa Italia)",
       "score": 1,
       "must_watch": false,
       "reason": "Vandaag bruikbaar",
@@ -124,9 +34,9 @@
     }
   ],
   "details": [
-    "Topkeuze vandaag: Derby - Lincoln City (3/5) door derby.",
-    "0 must-see item(s) en 12 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: League Cup.",
+    "Topkeuze vandaag: Mansfield - Sheffield Utd (1/5) door vandaag bruikbaar.",
+    "0 must-see item(s) en 3 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: Coppa Italia, League Cup.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
