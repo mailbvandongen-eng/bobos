@@ -1,32 +1,12 @@
 {
-  "updated_at": "2026-08-09T06:07:08Z",
+  "updated_at": "2026-08-10T06:50:34Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "17:00",
-      "title": "Mansfield - Sheffield Utd",
+      "time": "21:00",
+      "title": "Plymouth - Exeter",
       "category": "League Cup",
       "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "19:45",
-      "title": "Arezzo - Union Brescia",
-      "category": "Coppa Italia",
-      "source": "ESPN (Coppa Italia)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "21:00",
-      "title": "Benevento - Ravenna",
-      "category": "Coppa Italia",
-      "source": "ESPN (Coppa Italia)",
       "score": 1,
       "must_watch": false,
       "reason": "Vandaag bruikbaar",
@@ -34,9 +14,9 @@
     }
   ],
   "details": [
-    "Topkeuze vandaag: Mansfield - Sheffield Utd (1/5) door vandaag bruikbaar.",
-    "0 must-see item(s) en 3 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: Coppa Italia, League Cup.",
+    "Topkeuze vandaag: Plymouth - Exeter (1/5) door vandaag bruikbaar.",
+    "0 must-see item(s) en 1 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: League Cup.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
