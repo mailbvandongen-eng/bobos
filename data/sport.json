@@ -1,23 +1,10 @@
 {
-  "updated_at": "2026-08-10T06:50:34Z",
-  "status": "Vandaag interessant",
-  "items": [
-    {
-      "time": "21:00",
-      "title": "Plymouth - Exeter",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    }
-  ],
+  "updated_at": "2026-08-11T06:13:35Z",
+  "status": "Geen sport gevonden voor vandaag",
+  "items": [],
   "details": [
-    "Topkeuze vandaag: Plymouth - Exeter (1/5) door vandaag bruikbaar.",
-    "0 must-see item(s) en 1 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: League Cup.",
-    "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
+    "Er zijn vandaag geen voetbal-, darts- of F1-items gevonden in de actieve bronnen.",
+    "Bronnen die tijdelijk niet reageren worden overgeslagen; later opnieuw draaien kan nieuwe items opleveren."
   ],
   "sources": [
     {
