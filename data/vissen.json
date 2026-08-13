@@ -1,72 +1,72 @@
 {
-  "updated_at": "2026-08-12T07:51:36Z",
+  "updated_at": "2026-08-13T07:52:26Z",
   "status": "Visadvies vandaag",
-  "score": 4,
+  "score": 2,
   "items": [
     {
       "label": "Wind",
-      "value": "10 km/u (2 Bft)"
+      "value": "8 km/u (2 Bft)"
     },
     {
       "label": "Luchtdruk",
-      "value": "1025 hPa (stabiele druk)"
+      "value": "1021 hPa (instabiele druk)"
     },
     {
       "label": "Beste tijd",
-      "value": "12:20-14:50 rond laagwater (zee)"
+      "value": "13:10-15:40 rond laagwater (zee)"
     },
     {
       "label": "Tip",
-      "value": "Richt je op schemer en nacht als hoofdvenster. Voor zout is 12:20-14:50 rond laagwater bij IJmuiden, buitenhaven extra interessant."
+      "value": "Richt je op schemer en nacht als hoofdvenster."
     }
   ],
   "details": [
     "Zomer: avond en nacht zijn vaak de interessantste vensters, vooral voor roofvis en meerval.",
-    "Stabiele luchtdruk is meestal gunstig voor voorspelbaar zoetwatervissen.",
+    "Sterk schommelende druk maakt het visbeeld onrustiger; kies daarom korter en gerichter.",
     "Geleidelijke opwarming kan vis actiever maken, zeker later op de dag.",
     "Rustig water maakt precies vissen makkelijker, maar het water kan ook stiller en minder actief ogen.",
     "Een grotendeels droge avond maakt langere sessies en actief zoeken makkelijker.",
-    "Luchtdruktrend over 48 uur: +1.9 hPa, schommeling circa 4.3 hPa.",
-    "Temperatuurtrend: +11.3 C; wind gemiddeld 10 km/u.",
+    "Luchtdruktrend over 48 uur: -6.9 hPa, schommeling circa 7.3 hPa.",
+    "Temperatuurtrend: +10.1 C; wind gemiddeld 8 km/u.",
     "Vanmiddag naar vanavond wordt circa 0.0 mm neerslag verwacht; CAPE-piek rond 0 J/kg.",
-    "RWS getij (IJmuiden, buitenhaven): laagwater wo 13:50 op -62 cm NAP.",
-    "Daarna volgt hoogwater wo 16:20; tijslag komende 24 uur circa 186 cm."
+    "RWS getij (IJmuiden, buitenhaven): laagwater do 14:40 op -71 cm NAP.",
+    "Daarna volgt hoogwater do 17:10; tijslag komende 24 uur circa 196 cm."
   ],
   "profiles": [
     {
       "name": "Roofvis",
-      "score": 5,
-      "advice": "Stabiele druk en structuurwater maken roofvis interessanter."
+      "score": 2,
+      "advice": "Roofvis vraagt nu om strakker kiezen van tijd en beschutting."
     },
     {
       "name": "Meerval",
-      "score": 5,
+      "score": 4,
       "advice": "Warme zomeravond en nacht blijven de beste kans voor meerval."
     },
     {
       "name": "Zee",
-      "score": 4,
-      "advice": "IJmuiden, buitenhaven geeft laagwater wo 13:50 (-62 cm NAP); vis vooral 12:20-14:50 rond laagwater."
+      "score": 3,
+      "advice": "IJmuiden, buitenhaven geeft laagwater do 14:40 (-71 cm NAP); vis vooral 13:10-15:40 rond laagwater."
     }
   ],
   "context": {
     "reference_location": "Midden-Nederland",
     "season": "zomer",
     "season_label": "Zomer",
-    "pressure_state": "stabiele_druk",
+    "pressure_state": "instabiele_druk",
     "temperature_state": "temperatuurstijging",
     "wind_state": "lage_wind",
     "rain_state": "droge_avond",
     "thunder_state": null,
-    "pressure_delta_48h_hpa": 1.9,
-    "pressure_range_48h_hpa": 4.3,
-    "temperature_delta_c": 11.3,
-    "wind_avg_kmh": 9.8,
-    "wind_direction_deg": 80.1,
-    "wind_direction_label": "O",
-    "pressure_avg_hpa": 1024.7,
+    "pressure_delta_48h_hpa": -6.9,
+    "pressure_range_48h_hpa": 7.3,
+    "temperature_delta_c": 10.1,
+    "wind_avg_kmh": 7.9,
+    "wind_direction_deg": 69.5,
+    "wind_direction_label": "ONO",
+    "pressure_avg_hpa": 1020.6,
     "evening_precipitation_mm": 0.0,
-    "evening_temperature_c": 28.2,
+    "evening_temperature_c": 31.0,
     "max_cape_j_kg": 0.0,
     "tide_available": true,
     "tide_error": null,
@@ -75,18 +75,18 @@
     "tide_reference_plane": "NAP",
     "tide_timezone": "CEST",
     "tide_range_value": "0,24",
-    "tide_amplitude_cm": 186.0,
-    "tide_active_window": "12:20-14:50 rond laagwater",
-    "tide_current_level_cm": -13.0,
+    "tide_amplitude_cm": 196.0,
+    "tide_active_window": "13:10-15:40 rond laagwater",
+    "tide_current_level_cm": 23.0,
     "tide_next_extreme": {
       "kind": "laagwater",
-      "time": "2026-08-12T13:50:00+02:00",
-      "level_cm": -62.0
+      "time": "2026-08-13T14:40:00+02:00",
+      "level_cm": -71.0
     },
     "tide_following_extreme": {
       "kind": "hoogwater",
-      "time": "2026-08-12T16:20:00+02:00",
-      "level_cm": 87.0
+      "time": "2026-08-13T17:10:00+02:00",
+      "level_cm": 92.0
     }
   },
   "sources": [
