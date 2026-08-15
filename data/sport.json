@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-15T05:50:41Z",
+  "updated_at": "2026-08-15T15:20:34Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "10:30",
+      "time": "10:37",
       "title": "{'participantID': '31498', 'firstName': 'Raymond', 'lastName': 'Smith', 'nickname': 'Guru', 'countryCode': 'AU'} - {'participantID': '47162', 'firstName': 'Adam', 'lastName': 'Leek', 'nickname': None, 'countryCode': 'AU', 'media': {'image': '15b81a00-2c62-11f1-8996-1f54684de03c.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 New Zealand Darts Masters",
       "source": "PDC",
@@ -13,7 +13,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "09:00",
+      "time": "09:14",
       "title": "{'participantID': '33091', 'firstName': 'Gian', 'lastName': 'van Veen', 'nickname': 'The Giant', 'countryCode': 'NL', 'media': {'image': 'f5b2b930-f233-11f0-9c7f-3f5eeb7c3f65.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '30859', 'firstName': 'Jonny', 'lastName': 'Clayton', 'nickname': 'The Ferret', 'countryCode': 'GB-WLS', 'media': {'image': 'f6647d00-f233-11f0-bdca-133e2e51708a.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 New Zealand Darts Masters",
       "source": "PDC",
@@ -23,7 +23,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "09:30",
+      "time": "09:39",
       "title": "{'participantID': '22', 'firstName': 'James', 'lastName': 'Wade', 'nickname': 'The Machine', 'countryCode': 'GB-ENG', 'media': {'image': 'f5e0ce10-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '38552', 'firstName': 'Josh', 'lastName': 'Rock', 'nickname': 'Rocky', 'countryCode': 'GB-NIR', 'media': {'image': 'f5db4fd0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 New Zealand Darts Masters",
       "source": "PDC",
@@ -33,7 +33,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "10:00",
+      "time": "10:10",
       "title": "{'participantID': '11788', 'firstName': 'Gerwyn', 'lastName': 'Price', 'nickname': 'The Iceman', 'countryCode': 'GB-WLS', 'media': {'image': 'f5a3ec20-f233-11f0-a1f6-49664dee8666.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36314', 'firstName': 'Damon', 'lastName': 'Heta', 'nickname': 'The Heat', 'countryCode': 'AU', 'media': {'image': 'f4c3ec60-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 New Zealand Darts Masters",
       "source": "PDC",
@@ -43,8 +43,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "11:00",
-      "title": "{'participantID': None, 'firstName': None, 'lastName': None, 'nickname': None, 'countryCode': None} - {'participantID': None, 'firstName': None, 'lastName': None, 'nickname': None, 'countryCode': None}",
+      "time": "11:09",
+      "title": "{'participantID': '30859', 'firstName': 'Jonny', 'lastName': 'Clayton', 'nickname': 'The Ferret', 'countryCode': 'GB-WLS', 'media': {'image': 'f6647d00-f233-11f0-bdca-133e2e51708a.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '22', 'firstName': 'James', 'lastName': 'Wade', 'nickname': 'The Machine', 'countryCode': 'GB-ENG', 'media': {'image': 'f5e0ce10-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 New Zealand Darts Masters",
       "source": "PDC",
       "score": 4,
@@ -54,7 +54,7 @@
     },
     {
       "time": "11:40",
-      "title": "{'participantID': None, 'firstName': None, 'lastName': None, 'nickname': None, 'countryCode': None} - {'participantID': None, 'firstName': None, 'lastName': None, 'nickname': None, 'countryCode': None}",
+      "title": "{'participantID': '11788', 'firstName': 'Gerwyn', 'lastName': 'Price', 'nickname': 'The Iceman', 'countryCode': 'GB-WLS', 'media': {'image': 'f5a3ec20-f233-11f0-a1f6-49664dee8666.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '31498', 'firstName': 'Raymond', 'lastName': 'Smith', 'nickname': 'Guru', 'countryCode': 'AU'}",
       "category": "2026 New Zealand Darts Masters",
       "source": "PDC",
       "score": 4,
@@ -63,8 +63,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "12:30",
-      "title": "{'participantID': None, 'firstName': None, 'lastName': None, 'nickname': None, 'countryCode': None} - {'participantID': None, 'firstName': None, 'lastName': None, 'nickname': None, 'countryCode': None}",
+      "time": "12:24",
+      "title": "{'participantID': '30859', 'firstName': 'Jonny', 'lastName': 'Clayton', 'nickname': 'The Ferret', 'countryCode': 'GB-WLS', 'media': {'image': 'f6647d00-f233-11f0-bdca-133e2e51708a.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '11788', 'firstName': 'Gerwyn', 'lastName': 'Price', 'nickname': 'The Iceman', 'countryCode': 'GB-WLS', 'media': {'image': 'f5a3ec20-f233-11f0-a1f6-49664dee8666.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 New Zealand Darts Masters",
       "source": "PDC",
       "score": 4,
