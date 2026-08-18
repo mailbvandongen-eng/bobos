@@ -1,53 +1,10 @@
 {
-  "updated_at": "2026-08-17T05:59:10Z",
-  "status": "Vandaag interessant",
-  "items": [
-    {
-      "time": "18:00",
-      "title": "Pisa - Empoli",
-      "category": "Coppa Italia",
-      "source": "ESPN (Coppa Italia)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "18:30",
-      "title": "Sassuolo - Cesena",
-      "category": "Coppa Italia",
-      "source": "ESPN (Coppa Italia)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:45",
-      "title": "Cremonese - Sampdoria",
-      "category": "Coppa Italia",
-      "source": "ESPN (Coppa Italia)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "21:15",
-      "title": "Palermo - Lecce",
-      "category": "Coppa Italia",
-      "source": "ESPN (Coppa Italia)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    }
-  ],
+  "updated_at": "2026-08-18T05:54:31Z",
+  "status": "Geen sport gevonden voor vandaag",
+  "items": [],
   "details": [
-    "Topkeuze vandaag: Pisa - Empoli (1/5) door vandaag bruikbaar.",
-    "0 must-see item(s) en 4 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: Coppa Italia.",
-    "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
+    "Er zijn vandaag geen voetbal-, darts- of F1-items gevonden in de actieve bronnen.",
+    "Bronnen die tijdelijk niet reageren worden overgeslagen; later opnieuw draaien kan nieuwe items opleveren."
   ],
   "sources": [
     {
