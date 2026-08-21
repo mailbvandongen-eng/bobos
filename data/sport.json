@@ -1,10 +1,73 @@
 {
-  "updated_at": "2026-08-18T05:54:31Z",
-  "status": "Geen sport gevonden voor vandaag",
-  "items": [],
+  "updated_at": "2026-08-21T05:57:31Z",
+  "status": "Vandaag interessant",
+  "items": [
+    {
+      "time": "16:30",
+      "title": "Sprint Qualifying",
+      "category": "GP Netherlands",
+      "source": "OpenF1",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en kwalificatie",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "12:30",
+      "title": "Practice 1",
+      "category": "GP Netherlands",
+      "source": "OpenF1",
+      "score": 3,
+      "must_watch": false,
+      "reason": "Formule 1",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "18:00",
+      "title": "Preußen Münster - Karlsruher",
+      "category": "DFB Pokal",
+      "source": "ESPN (DFB Pokal)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "18:00",
+      "title": "St. Tönis - Frankfurt",
+      "category": "DFB Pokal",
+      "source": "ESPN (DFB Pokal)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "18:00",
+      "title": "SV Waldhof - Kaiserslautern",
+      "category": "DFB Pokal",
+      "source": "ESPN (DFB Pokal)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "Hansa Rostock - Stuttgart",
+      "category": "DFB Pokal",
+      "source": "ESPN (DFB Pokal)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    }
+  ],
   "details": [
-    "Er zijn vandaag geen voetbal-, darts- of F1-items gevonden in de actieve bronnen.",
-    "Bronnen die tijdelijk niet reageren worden overgeslagen; later opnieuw draaien kan nieuwe items opleveren."
+    "Topkeuze vandaag: Sprint Qualifying (5/5) door formule 1 en kwalificatie.",
+    "1 must-see item(s) en 6 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: DFB Pokal, GP Netherlands.",
+    "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
     {
