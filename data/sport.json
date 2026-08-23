@@ -1,17 +1,7 @@
 {
-  "updated_at": "2026-08-23T05:54:14Z",
+  "updated_at": "2026-08-23T15:22:57Z",
   "status": "Vandaag interessant",
   "items": [
-    {
-      "time": "15:00",
-      "title": "Race",
-      "category": "GP Netherlands",
-      "source": "OpenF1",
-      "score": 5,
-      "must_watch": true,
-      "reason": "Formule 1 en race",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
     {
       "time": "13:00",
       "title": "Greuther Furth - Bochum",
@@ -124,9 +114,9 @@
     }
   ],
   "details": [
-    "Topkeuze vandaag: Race (5/5) door formule 1 en race.",
-    "1 must-see item(s) en 12 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: DFB Pokal, GP Netherlands.",
+    "Topkeuze vandaag: Greuther Furth - Bochum (1/5) door vandaag bruikbaar.",
+    "0 must-see item(s) en 11 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: DFB Pokal.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
