@@ -1,80 +1,10 @@
 {
-  "updated_at": "2026-08-23T15:22:57Z",
+  "updated_at": "2026-08-24T06:02:50Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "13:00",
-      "title": "Greuther Furth - Bochum",
-      "category": "DFB Pokal",
-      "source": "ESPN (DFB Pokal)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "13:00",
-      "title": "Jeddeloh - Heidenheim",
-      "category": "DFB Pokal",
-      "source": "ESPN (DFB Pokal)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "15:30",
-      "title": "Bahlinger SC - Magdeburg",
-      "category": "DFB Pokal",
-      "source": "ESPN (DFB Pokal)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "15:30",
-      "title": "Carl Zeiss Jena - Darmstadt",
-      "category": "DFB Pokal",
-      "source": "ESPN (DFB Pokal)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "15:30",
-      "title": "E Braunschweig - Union Berlin",
-      "category": "DFB Pokal",
-      "source": "ESPN (DFB Pokal)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "15:30",
-      "title": "Krieschow - Mainz",
-      "category": "DFB Pokal",
-      "source": "ESPN (DFB Pokal)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "15:30",
-      "title": "Schott - Gladbach",
-      "category": "DFB Pokal",
-      "source": "ESPN (DFB Pokal)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "15:30",
-      "title": "W Rhynern - D Dresden",
+      "time": "18:00",
+      "title": "Altglienicke - Wolfsburg",
       "category": "DFB Pokal",
       "source": "ESPN (DFB Pokal)",
       "score": 1,
@@ -84,7 +14,7 @@
     },
     {
       "time": "18:00",
-      "title": "Düsseldorf - Freiburg",
+      "title": "SC Verl 1924 - Hamburg",
       "category": "DFB Pokal",
       "source": "ESPN (DFB Pokal)",
       "score": 1,
@@ -94,7 +24,7 @@
     },
     {
       "time": "18:00",
-      "title": "Phönix Lübeck - Paderborn",
+      "title": "Würzburger K - Cologne",
       "category": "DFB Pokal",
       "source": "ESPN (DFB Pokal)",
       "score": 1,
@@ -103,8 +33,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "18:00",
-      "title": "Rot-Weiss Essen - St. Pauli",
+      "time": "20:45",
+      "title": "Hallescher - Schalke",
       "category": "DFB Pokal",
       "source": "ESPN (DFB Pokal)",
       "score": 1,
@@ -114,8 +44,8 @@
     }
   ],
   "details": [
-    "Topkeuze vandaag: Greuther Furth - Bochum (1/5) door vandaag bruikbaar.",
-    "0 must-see item(s) en 11 relevante sportitem(s) gevonden.",
+    "Topkeuze vandaag: Altglienicke - Wolfsburg (1/5) door vandaag bruikbaar.",
+    "0 must-see item(s) en 4 relevante sportitem(s) gevonden.",
     "Categorieen vandaag: DFB Pokal.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
