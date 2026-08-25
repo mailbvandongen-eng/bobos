@@ -1,32 +1,22 @@
 {
-  "updated_at": "2026-08-24T06:02:50Z",
+  "updated_at": "2026-08-25T05:57:25Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "18:00",
-      "title": "Altglienicke - Wolfsburg",
-      "category": "DFB Pokal",
-      "source": "ESPN (DFB Pokal)",
+      "time": "20:00",
+      "title": "Cardiff - Norwich City",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
       "score": 1,
       "must_watch": false,
       "reason": "Vandaag bruikbaar",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "18:00",
-      "title": "SC Verl 1924 - Hamburg",
-      "category": "DFB Pokal",
-      "source": "ESPN (DFB Pokal)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "18:00",
-      "title": "Würzburger K - Cologne",
-      "category": "DFB Pokal",
-      "source": "ESPN (DFB Pokal)",
+      "time": "20:30",
+      "title": "Doncaster - Boro",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
       "score": 1,
       "must_watch": false,
       "reason": "Vandaag bruikbaar",
@@ -34,9 +24,99 @@
     },
     {
       "time": "20:45",
-      "title": "Hallescher - Schalke",
-      "category": "DFB Pokal",
-      "source": "ESPN (DFB Pokal)",
+      "title": "Barnsley - Crewe",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "Blackburn - Sheffield Utd",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "Blackpool - Lincoln City",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "Cambridge - Millwall",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "Fleetwood Town - Shrewsbury",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "Ipswich - Leicester",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "Plymouth - Coventry",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "Sheffield Wed - Wolves",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "Southampton - West Ham",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "Stevenage - Reading",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
       "score": 1,
       "must_watch": false,
       "reason": "Vandaag bruikbaar",
@@ -44,9 +124,9 @@
     }
   ],
   "details": [
-    "Topkeuze vandaag: Altglienicke - Wolfsburg (1/5) door vandaag bruikbaar.",
-    "0 must-see item(s) en 4 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: DFB Pokal.",
+    "Topkeuze vandaag: Cardiff - Norwich City (1/5) door vandaag bruikbaar.",
+    "0 must-see item(s) en 12 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: League Cup.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
