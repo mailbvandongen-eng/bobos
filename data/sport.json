@@ -1,32 +1,132 @@
 {
-  "updated_at": "2026-08-27T16:38:03Z",
+  "updated_at": "2026-08-28T00:16:24Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "20:30",
-      "title": "Chelsea - Luton",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
+      "time": "13:00",
+      "title": "{'participantID': '32895', 'firstName': 'Kevin', 'lastName': 'Doets', 'nickname': 'Hawk Eye', 'countryCode': 'NL', 'media': {'image': 'f50ae070-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '39974', 'firstName': 'Jonas', 'lastName': 'Masalin', 'nickname': None, 'countryCode': 'FI'}",
+      "category": "2026 ET11 - Hungarian Darts Trophy",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "darts en WK-voetbal",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "21:00",
-      "title": "Fulham - Wimbledon",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
+      "time": "15:00",
+      "title": "{'participantID': '153', 'firstName': 'William', 'lastName': \"O'Connor\", 'nickname': 'The Magpie', 'countryCode': 'IE', 'media': {'image': 'f5eb0740-f233-11f0-ad9a-4f9b38b63926.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '44151', 'firstName': 'Samuel', 'lastName': 'Price', 'nickname': 'Pricey', 'countryCode': 'GB-ENG', 'media': {'image': '5eef8a50-2c62-11f1-8069-ed1f94464a0f.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 ET11 - Hungarian Darts Trophy",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:00",
+      "title": "{'participantID': '31501', 'firstName': 'Ryan', 'lastName': 'Joyce', 'nickname': 'Relentless', 'countryCode': 'GB-ENG', 'media': {'image': 'f648b7a0-f233-11f0-b6df-51058ea1fe5e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '30843', 'firstName': 'Cristo', 'lastName': 'Reyes', 'nickname': 'The Spartan', 'countryCode': 'ES', 'media': {'image': '1690c6c0-2c62-11f1-8996-1f54684de03c.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 ET11 - Hungarian Darts Trophy",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:30",
+      "title": "{'participantID': '81', 'firstName': 'Joe', 'lastName': 'Cullen', 'nickname': 'The Rockstar', 'countryCode': 'GB-ENG', 'media': {'image': 'f517ffd0-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '47162', 'firstName': 'Adam', 'lastName': 'Leek', 'nickname': None, 'countryCode': 'AU', 'media': {'image': '15b81a00-2c62-11f1-8996-1f54684de03c.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 ET11 - Hungarian Darts Trophy",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "22:30",
+      "title": "{'participantID': '36314', 'firstName': 'Damon', 'lastName': 'Heta', 'nickname': 'The Heat', 'countryCode': 'AU', 'media': {'image': 'f4c3ec60-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36373', 'firstName': 'James', 'lastName': 'Hurrell', 'nickname': 'Hillbilly', 'countryCode': 'GB-ENG', 'media': {'image': '3b90f990-2c62-11f1-8069-ed1f94464a0f.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 ET11 - Hungarian Darts Trophy",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "13:30",
+      "title": "{'participantID': '231', 'firstName': 'Andrew', 'lastName': 'Gilding', 'nickname': 'Goldfinger', 'countryCode': 'GB-ENG', 'media': {'image': 'f547e970-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '46420', 'firstName': 'Milan', 'lastName': 'Biro', 'nickname': 'Milu', 'countryCode': 'HU'}",
+      "category": "2026 ET11 - Hungarian Darts Trophy",
+      "source": "PDC",
+      "score": 4,
       "must_watch": false,
-      "reason": "Vandaag bruikbaar",
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "14:00",
+      "title": "{'participantID': '31028', 'firstName': 'Ritchie', 'lastName': 'Edhouse', 'nickname': 'Madhouse', 'countryCode': 'GB-ENG', 'media': {'image': 'f5c41e50-f233-11f0-9271-c5de74c014fe.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32081', 'firstName': 'Connor', 'lastName': 'Scutt', 'nickname': 'The Sniper', 'countryCode': 'GB-ENG', 'media': {'image': 'f58567a0-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 ET11 - Hungarian Darts Trophy",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "14:30",
+      "title": "{'participantID': '34874', 'firstName': 'Niko', 'lastName': 'Springer', 'nickname': 'Meenzer Bub', 'countryCode': 'DE', 'media': {'image': 'f54a5a70-f233-11f0-916f-9317f3943d29.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33630', 'firstName': 'Maik', 'lastName': 'Kuivenhoven', 'nickname': None, 'countryCode': 'NL', 'media': {'image': '63a5a990-f2e1-11f0-b1ca-27ea65c11a7d.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 ET11 - Hungarian Darts Trophy",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "15:30",
+      "title": "{'participantID': '11902', 'firstName': 'Martin', 'lastName': 'Schindler', 'nickname': 'The Wall', 'countryCode': 'DE', 'media': {'image': 'f57d9f70-f233-11f0-9987-f7a824897129.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33144', 'firstName': 'Keane', 'lastName': 'Barry', 'nickname': 'Dynamite', 'countryCode': 'IE', 'media': {'image': 'f5945bc0-f233-11f0-ac11-834d30e1892a.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 ET11 - Hungarian Darts Trophy",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:30",
+      "title": "{'participantID': '142', 'firstName': 'Dave', 'lastName': 'Chisnall', 'nickname': 'Chizzy', 'countryCode': 'GB-ENG', 'media': {'image': 'f58e8f60-f233-11f0-8f68-e98be9e2ec48.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '39583', 'firstName': 'Andras', 'lastName': 'Borbely', 'nickname': None, 'countryCode': 'HU'}",
+      "category": "2026 ET11 - Hungarian Darts Trophy",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "19:00",
+      "title": "{'participantID': '246', 'firstName': 'Dirk', 'lastName': 'van Duijvenbode', 'nickname': 'Aubergenius', 'countryCode': 'NL', 'media': {'image': 'f4f9a260-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '35208', 'firstName': 'David', 'lastName': 'Pisek', 'nickname': None, 'countryCode': 'CZ'}",
+      "category": "2026 ET11 - Hungarian Darts Trophy",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "19:30",
+      "title": "{'participantID': '2554', 'firstName': 'Daryl', 'lastName': 'Gurney', 'nickname': 'Superchin', 'countryCode': 'GB-NIR', 'media': {'image': 'f5dadaa0-f233-11f0-ac53-417814447ebc.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '41364', 'firstName': 'Laszlo', 'lastName': 'Kadar', 'nickname': 'The Teacher', 'countryCode': 'RO'}",
+      "category": "2026 ET11 - Hungarian Darts Trophy",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     }
   ],
   "details": [
-    "Topkeuze vandaag: Chelsea - Luton (1/5) door vandaag bruikbaar.",
-    "0 must-see item(s) en 2 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: League Cup.",
+    "Topkeuze vandaag: {'participantID': '32895', 'firstName': 'Kevin', 'lastName': 'Doets', 'nickname': 'Hawk Eye', 'countryCode': 'NL', 'media': {'image': 'f50ae070-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '39974', 'firstName': 'Jonas', 'lastName': 'Masalin', 'nickname': None, 'countryCode': 'FI'} (5/5) door darts en wk-voetbal.",
+    "5 must-see item(s) en 12 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: 2026 ET11 - Hungarian Darts Trophy.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
