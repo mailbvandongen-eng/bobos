@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-29T11:44:27Z",
+  "updated_at": "2026-08-29T18:12:28Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "19:00",
+      "time": "19:08",
       "title": "{'participantID': '876', 'firstName': 'Stephen', 'lastName': 'Bunting', 'nickname': 'The Bullet', 'countryCode': 'GB-ENG', 'media': {'image': '782f1b70-f21a-11f0-8e4e-4b7ed58fd19c.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '39974', 'firstName': 'Jonas', 'lastName': 'Masalin', 'nickname': None, 'countryCode': 'FI'}",
       "category": "2026 ET11 - Hungarian Darts Trophy",
       "source": "PDC",
@@ -13,7 +13,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "21:00",
+      "time": "21:05",
       "title": "{'participantID': '19', 'firstName': 'Michael', 'lastName': 'van Gerwen', 'nickname': 'Mighty Mike', 'countryCode': 'NL', 'media': {'image': 'f62e2ac0-f233-11f0-b992-c9679735a32e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36373', 'firstName': 'James', 'lastName': 'Hurrell', 'nickname': 'Hillbilly', 'countryCode': 'GB-ENG', 'media': {'image': '3b90f990-2c62-11f1-8069-ed1f94464a0f.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET11 - Hungarian Darts Trophy",
       "source": "PDC",
@@ -33,7 +33,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "13:35",
+      "time": "13:34",
       "title": "{'participantID': '32956', 'firstName': 'Wessel', 'lastName': 'Nijman', 'nickname': '', 'countryCode': 'NL', 'media': {'image': 'f5add730-f233-11f0-be26-73a99dbbe585.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '142', 'firstName': 'Dave', 'lastName': 'Chisnall', 'nickname': 'Chizzy', 'countryCode': 'GB-ENG', 'media': {'image': 'f58e8f60-f233-11f0-8f68-e98be9e2ec48.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET11 - Hungarian Darts Trophy",
       "source": "PDC",
@@ -43,7 +43,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "14:05",
+      "time": "14:03",
       "title": "{'participantID': '30844', 'firstName': 'Jermaine', 'lastName': 'Wattimena', 'nickname': 'The Machine Gun', 'countryCode': 'NL', 'media': {'image': 'f63ef3a0-f233-11f0-8a3d-fdaf0a5c6112.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '231', 'firstName': 'Andrew', 'lastName': 'Gilding', 'nickname': 'Goldfinger', 'countryCode': 'GB-ENG', 'media': {'image': 'f547e970-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET11 - Hungarian Darts Trophy",
       "source": "PDC",
@@ -53,7 +53,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "14:35",
+      "time": "14:33",
       "title": "{'participantID': '31356', 'firstName': 'Danny', 'lastName': 'Noppert', 'nickname': 'The Freeze', 'countryCode': 'NL', 'media': {'image': '7847d390-f21a-11f0-9fa0-0dd7c602545d.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '31028', 'firstName': 'Ritchie', 'lastName': 'Edhouse', 'nickname': 'Madhouse', 'countryCode': 'GB-ENG', 'media': {'image': 'f5c41e50-f233-11f0-9271-c5de74c014fe.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET11 - Hungarian Darts Trophy",
       "source": "PDC",
@@ -83,7 +83,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "16:05",
+      "time": "16:12",
       "title": "{'participantID': '4', 'firstName': 'Gary', 'lastName': 'Anderson', 'nickname': 'Flying Scotsman', 'countryCode': 'GB-SCT', 'media': {'image': 'f5b948e0-f233-11f0-8720-17283098ea9c.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '224', 'firstName': 'Krzysztof', 'lastName': 'Ratajski', 'nickname': 'The Polish Eagle', 'countryCode': 'PL', 'media': {'image': 'f6327080-f233-11f0-8d93-954f41e7832e.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET11 - Hungarian Darts Trophy",
       "source": "PDC",
@@ -93,7 +93,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "16:35",
+      "time": "16:38",
       "title": "{'participantID': '11843', 'firstName': 'Chris', 'lastName': 'Dobey', 'nickname': 'Hollywood', 'countryCode': 'GB-ENG', 'media': {'image': 'f5267ec0-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32627', 'firstName': 'Tom', 'lastName': 'Sykes', 'nickname': None, 'countryCode': 'GB-ENG', 'media': {'image': '64498ab0-f2e1-11f0-89a6-cf895119ee60.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET11 - Hungarian Darts Trophy",
       "source": "PDC",
@@ -103,7 +103,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "19:30",
+      "time": "19:34",
       "title": "{'participantID': '30859', 'firstName': 'Jonny', 'lastName': 'Clayton', 'nickname': 'The Ferret', 'countryCode': 'GB-WLS', 'media': {'image': 'f6647d00-f233-11f0-bdca-133e2e51708a.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '41364', 'firstName': 'Laszlo', 'lastName': 'Kadar', 'nickname': 'The Teacher', 'countryCode': 'HU'}",
       "category": "2026 ET11 - Hungarian Darts Trophy",
       "source": "PDC",
@@ -113,7 +113,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "20:00",
+      "time": "20:05",
       "title": "{'participantID': '32094', 'firstName': 'Madars', 'lastName': 'Razma', 'nickname': 'Latvian Razmatazz', 'countryCode': 'LV', 'media': {'image': 'f4dd67d0-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33144', 'firstName': 'Keane', 'lastName': 'Barry', 'nickname': 'Dynamite', 'countryCode': 'IE', 'media': {'image': 'f5945bc0-f233-11f0-ac11-834d30e1892a.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET11 - Hungarian Darts Trophy",
       "source": "PDC",
