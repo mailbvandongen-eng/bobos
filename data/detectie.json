@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-23T18:11:08Z",
+  "updated_at": "2026-08-30T20:10:15Z",
   "status": "Maandagadvies",
-  "score": 3,
+  "score": 2,
   "items": [
     {
       "label": "Beste keuze",
@@ -23,11 +23,10 @@
     "Richt je op hoger gelegen zandgronden, dekzandruggen, rivierduinen en hoge stroomruggen.",
     "Betuwe niet uitsluiten: hoge stroomruggen en oude oeverwallen kunnen juist goed zijn als ze droog genoeg blijven.",
     "Zomer: Zoek naar pas vrijgekomen graanpercelen, oude akkerkoppen en geroerde boomgaardstroken.",
-    "Afgelopen 7 dagen viel circa 48.1 mm regen (veel regen). Voor maandag 2026-08-24 wordt ongeveer 0.0 mm verwacht. Verwachte maxtemp: 22.4 C. Windpiek: 16 km/u.",
+    "Afgelopen 7 dagen viel circa 50.7 mm regen (veel regen). Voor maandag 2026-08-31 wordt ongeveer 3.7 mm verwacht. Verwachte maxtemp: 19.2 C. Windpiek: 26 km/u.",
     "Beste landschapstype nu: Hoger zand / droge stroomrug.",
     "Vermijden: Lage natte klei.",
-    "Betuwe niet uitsluiten: hoge stroomruggen en oude oeverwallen blijven interessant als ze hoog en droog genoeg zijn.",
-    "Maandag lijkt relatief droog, waardoor hoge stroomruggen en droge oeverwallen extra aantrekkelijk worden."
+    "Betuwe niet uitsluiten: hoge stroomruggen en oude oeverwallen blijven interessant als ze hoog en droog genoeg zijn."
   ],
   "profiles": [
     {
@@ -51,12 +50,12 @@
     "season": "zomer",
     "season_label": "Zomer",
     "field_access": "Zoek naar pas vrijgekomen graanpercelen, oude akkerkoppen en geroerde boomgaardstroken.",
-    "rain_last_7_days_mm": 48.1,
+    "rain_last_7_days_mm": 50.7,
     "week_condition": "veel_regen",
-    "monday_date": "2026-08-24",
-    "monday_precipitation_mm": 0.0,
-    "monday_temperature_max_c": 22.4,
-    "monday_wind_max_kmh": 15.5
+    "monday_date": "2026-08-31",
+    "monday_precipitation_mm": 3.7,
+    "monday_temperature_max_c": 19.2,
+    "monday_wind_max_kmh": 25.6
   },
   "sources": [
     {
