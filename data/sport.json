@@ -1,10 +1,133 @@
 {
-  "updated_at": "2026-08-31T11:44:02Z",
-  "status": "Geen sport gevonden voor vandaag",
-  "items": [],
+  "updated_at": "2026-09-01T10:19:12Z",
+  "status": "Vandaag interessant",
+  "items": [
+    {
+      "time": "20:00",
+      "title": "Achilles Veen - Poortugaal",
+      "category": "KNVB Beker",
+      "source": "ESPN (KNVB Beker)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:00",
+      "title": "ADO '20 - Maassluis",
+      "category": "KNVB Beker",
+      "source": "ESPN (KNVB Beker)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:00",
+      "title": "AFC '34 - Scherpenzeel",
+      "category": "KNVB Beker",
+      "source": "ESPN (KNVB Beker)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:00",
+      "title": "Be Quick 1887 - AFC",
+      "category": "KNVB Beker",
+      "source": "ESPN (KNVB Beker)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:00",
+      "title": "Elinkwijk - Eemdijk",
+      "category": "KNVB Beker",
+      "source": "ESPN (KNVB Beker)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:00",
+      "title": "Genemuiden - FC Lisse",
+      "category": "KNVB Beker",
+      "source": "ESPN (KNVB Beker)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:00",
+      "title": "Harkemase - Excelsior '31",
+      "category": "KNVB Beker",
+      "source": "ESPN (KNVB Beker)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:00",
+      "title": "HZVV - LAC Frisia",
+      "category": "KNVB Beker",
+      "source": "ESPN (KNVB Beker)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:00",
+      "title": "Longa '30 - Koninklijke",
+      "category": "KNVB Beker",
+      "source": "ESPN (KNVB Beker)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:00",
+      "title": "Numansdorp - Kloetinge",
+      "category": "KNVB Beker",
+      "source": "ESPN (KNVB Beker)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:00",
+      "title": "Sportlust '46 - Blauw Geel '38",
+      "category": "KNVB Beker",
+      "source": "ESPN (KNVB Beker)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:00",
+      "title": "TEC - VV Almkerk",
+      "category": "KNVB Beker",
+      "source": "ESPN (KNVB Beker)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    }
+  ],
   "details": [
-    "Er zijn vandaag geen voetbal-, darts- of F1-items gevonden in de actieve bronnen.",
-    "Bronnen die tijdelijk niet reageren worden overgeslagen; later opnieuw draaien kan nieuwe items opleveren."
+    "Topkeuze vandaag: Achilles Veen - Poortugaal (4/5) door topvoetbal.",
+    "0 must-see item(s) en 12 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: KNVB Beker.",
+    "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
     {
