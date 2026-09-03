@@ -1,132 +1,32 @@
 {
-  "updated_at": "2026-09-02T09:48:08Z",
+  "updated_at": "2026-09-03T09:59:46Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "20:00",
-      "title": "ACV - Westlandia",
-      "category": "KNVB Beker",
-      "source": "ESPN (KNVB Beker)",
-      "score": 4,
+      "time": "18:00",
+      "title": "Palermo - Mantova",
+      "category": "Coppa Italia",
+      "source": "ESPN (Coppa Italia)",
+      "score": 1,
       "must_watch": false,
-      "reason": "topvoetbal",
+      "reason": "Vandaag bruikbaar",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "20:00",
-      "title": "ATC '65 - DVS '33",
-      "category": "KNVB Beker",
-      "source": "ESPN (KNVB Beker)",
-      "score": 4,
+      "time": "21:00",
+      "title": "Cagliari - Verona",
+      "category": "Coppa Italia",
+      "source": "ESPN (Coppa Italia)",
+      "score": 1,
       "must_watch": false,
-      "reason": "topvoetbal",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:00",
-      "title": "Dongen - Watergraafsmeer",
-      "category": "KNVB Beker",
-      "source": "ESPN (KNVB Beker)",
-      "score": 4,
-      "must_watch": false,
-      "reason": "topvoetbal",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:00",
-      "title": "Groene Ster - Heerjansdam",
-      "category": "KNVB Beker",
-      "source": "ESPN (KNVB Beker)",
-      "score": 4,
-      "must_watch": false,
-      "reason": "topvoetbal",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:00",
-      "title": "GSV '28 - Roosendaal",
-      "category": "KNVB Beker",
-      "source": "ESPN (KNVB Beker)",
-      "score": 4,
-      "must_watch": false,
-      "reason": "topvoetbal",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:00",
-      "title": "Hollandia - Halsteren",
-      "category": "KNVB Beker",
-      "source": "ESPN (KNVB Beker)",
-      "score": 4,
-      "must_watch": false,
-      "reason": "topvoetbal",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:00",
-      "title": "Hoogeveen - Zwaluwen Wierden",
-      "category": "KNVB Beker",
-      "source": "ESPN (KNVB Beker)",
-      "score": 4,
-      "must_watch": false,
-      "reason": "topvoetbal",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:00",
-      "title": "Mierlo-Hout - Germania",
-      "category": "KNVB Beker",
-      "source": "ESPN (KNVB Beker)",
-      "score": 4,
-      "must_watch": false,
-      "reason": "topvoetbal",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:00",
-      "title": "Purmersteijn - RKVV Zwalu",
-      "category": "KNVB Beker",
-      "source": "ESPN (KNVB Beker)",
-      "score": 4,
-      "must_watch": false,
-      "reason": "topvoetbal",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:00",
-      "title": "Rijnvogels - Bennekom",
-      "category": "KNVB Beker",
-      "source": "ESPN (KNVB Beker)",
-      "score": 4,
-      "must_watch": false,
-      "reason": "topvoetbal",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:00",
-      "title": "s-Gravenzande - Gemert",
-      "category": "KNVB Beker",
-      "source": "ESPN (KNVB Beker)",
-      "score": 4,
-      "must_watch": false,
-      "reason": "topvoetbal",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:00",
-      "title": "Sparta Nijkerk - SV Venray",
-      "category": "KNVB Beker",
-      "source": "ESPN (KNVB Beker)",
-      "score": 4,
-      "must_watch": false,
-      "reason": "topvoetbal",
+      "reason": "Vandaag bruikbaar",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     }
   ],
   "details": [
-    "Topkeuze vandaag: ACV - Westlandia (4/5) door topvoetbal.",
-    "0 must-see item(s) en 12 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: KNVB Beker.",
+    "Topkeuze vandaag: Palermo - Mantova (1/5) door vandaag bruikbaar.",
+    "0 must-see item(s) en 2 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: Coppa Italia.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
