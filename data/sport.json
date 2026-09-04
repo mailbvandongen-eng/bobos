@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-04T09:50:17Z",
+  "updated_at": "2026-09-04T18:09:53Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "15:30",
+      "time": "15:33",
       "title": "{'participantID': '32895', 'firstName': 'Kevin', 'lastName': 'Doets', 'nickname': 'Hawk Eye', 'countryCode': 'NL', 'media': {'image': 'f50ae070-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '271', 'firstName': 'Ricky', 'lastName': 'Evans', 'nickname': 'Rapid', 'countryCode': 'GB-ENG', 'media': {'image': '1663ea60-2c62-11f1-8996-1f54684de03c.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET12 - Czech Darts Open",
       "source": "PDC",
@@ -13,7 +13,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "16:30",
+      "time": "16:25",
       "title": "{'participantID': '32079', 'firstName': 'Callan', 'lastName': 'Rydz', 'nickname': 'The Riot', 'countryCode': 'GB-ENG', 'media': {'image': 'f6424f00-f233-11f0-a501-53f8694d36c4.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '30843', 'firstName': 'Cristo', 'lastName': 'Reyes', 'nickname': 'The Spartan', 'countryCode': 'ES', 'media': {'image': '1690c6c0-2c62-11f1-8996-1f54684de03c.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET12 - Czech Darts Open",
       "source": "PDC",
@@ -23,7 +23,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "13:00",
+      "time": "13:07",
       "title": "{'participantID': '2040', 'firstName': 'Cameron', 'lastName': 'Menzies', 'nickname': 'Cammy', 'countryCode': 'GB-SCT', 'media': {'image': 'f659cea0-f233-11f0-9f86-5be6727c0d18.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33639', 'firstName': 'Johan', 'lastName': 'Engstrom', 'nickname': 'The Sweet Ferret', 'countryCode': 'SE'}",
       "category": "2026 ET12 - Czech Darts Open",
       "source": "PDC",
@@ -43,7 +43,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "14:00",
+      "time": "14:06",
       "title": "{'participantID': '31501', 'firstName': 'Ryan', 'lastName': 'Joyce', 'nickname': 'Relentless', 'countryCode': 'GB-ENG', 'media': {'image': 'f648b7a0-f233-11f0-b6df-51058ea1fe5e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '156', 'firstName': 'Kim', 'lastName': 'Huybrechts', 'nickname': 'The Hurricane', 'countryCode': 'BE', 'media': {'image': 'f56b01d0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET12 - Czech Darts Open",
       "source": "PDC",
@@ -53,7 +53,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "14:30",
+      "time": "14:42",
       "title": "{'participantID': '153', 'firstName': 'William', 'lastName': \"O'Connor\", 'nickname': 'The Magpie', 'countryCode': 'IE', 'media': {'image': 'f5eb0740-f233-11f0-ad9a-4f9b38b63926.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '35181', 'firstName': 'Jiri', 'lastName': 'Brejcha', 'nickname': 'Scorpion', 'countryCode': 'CZ'}",
       "category": "2026 ET12 - Czech Darts Open",
       "source": "PDC",
@@ -63,7 +63,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "15:00",
+      "time": "15:10",
       "title": "{'participantID': '34874', 'firstName': 'Niko', 'lastName': 'Springer', 'nickname': 'Meenzer Bub', 'countryCode': 'DE', 'media': {'image': 'f54a5a70-f233-11f0-916f-9317f3943d29.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '42897', 'firstName': 'Martin', 'lastName': 'Homola', 'nickname': None, 'countryCode': 'SK'}",
       "category": "2026 ET12 - Czech Darts Open",
       "source": "PDC",
@@ -73,7 +73,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "16:00",
+      "time": "15:57",
       "title": "{'participantID': '81', 'firstName': 'Joe', 'lastName': 'Cullen', 'nickname': 'The Rockstar', 'countryCode': 'GB-ENG', 'media': {'image': 'f517ffd0-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32040', 'firstName': 'Stephen', 'lastName': 'Burton', 'nickname': 'Bertie', 'countryCode': 'GB-ENG', 'media': {'image': 'f5a76e90-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET12 - Czech Darts Open",
       "source": "PDC",
@@ -83,7 +83,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "19:00",
+      "time": "19:07",
       "title": "{'participantID': '11804', 'firstName': 'Luke', 'lastName': 'Woodhouse', 'nickname': 'Woody', 'countryCode': 'GB-ENG', 'media': {'image': 'f5971ae0-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32081', 'firstName': 'Connor', 'lastName': 'Scutt', 'nickname': 'The Sniper', 'countryCode': 'GB-ENG', 'media': {'image': 'f58567a0-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET12 - Czech Darts Open",
       "source": "PDC",
@@ -93,7 +93,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "19:30",
+      "time": "19:37",
       "title": "{'participantID': '224', 'firstName': 'Krzysztof', 'lastName': 'Ratajski', 'nickname': 'The Polish Eagle', 'countryCode': 'PL', 'media': {'image': 'f6327080-f233-11f0-8d93-954f41e7832e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '35168', 'firstName': 'Adam', 'lastName': 'Gawlas', 'nickname': 'Flawlas', 'countryCode': 'CZ', 'media': {'image': '6360b150-f2e1-11f0-b0b9-318ff8bc1aee.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET12 - Czech Darts Open",
       "source": "PDC",
@@ -103,7 +103,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "20:00",
+      "time": "20:05",
       "title": "{'participantID': '246', 'firstName': 'Dirk', 'lastName': 'van Duijvenbode', 'nickname': 'Aubergenius', 'countryCode': 'NL', 'media': {'image': 'f4f9a260-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '31213', 'firstName': 'Mario', 'lastName': 'Vandenbogaerde', 'nickname': 'Super Mario', 'countryCode': 'BE', 'media': {'image': 'f4610be0-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET12 - Czech Darts Open",
       "source": "PDC",
@@ -113,7 +113,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "20:30",
+      "time": "20:35",
       "title": "{'participantID': '11902', 'firstName': 'Martin', 'lastName': 'Schindler', 'nickname': 'The Wall', 'countryCode': 'DE', 'media': {'image': 'f57d9f70-f233-11f0-9987-f7a824897129.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '11795', 'firstName': 'Rob', 'lastName': 'Owen', 'nickname': 'Stack Attack', 'countryCode': 'GB-WLS', 'media': {'image': 'f5be51f0-f233-11f0-916f-9317f3943d29.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET12 - Czech Darts Open",
       "source": "PDC",
