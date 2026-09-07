@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-09-06T10:55:58Z",
+  "updated_at": "2026-09-07T12:32:04Z",
   "status": "Visadvies vandaag",
-  "score": 3,
+  "score": 4,
   "items": [
     {
       "label": "Wind",
-      "value": "9 km/u (2 Bft)"
+      "value": "16 km/u (3 Bft)"
     },
     {
       "label": "Luchtdruk",
-      "value": "1022 hPa (instabiele druk)"
+      "value": "1016 hPa (instabiele druk)"
     },
     {
       "label": "Beste tijd",
@@ -24,18 +24,18 @@
     "Herfst: roofvis wordt vaak actiever en wisselvallig weer kan juist interessante pieken geven.",
     "Sterk schommelende druk maakt het visbeeld onrustiger; kies daarom korter en gerichter.",
     "Geleidelijke opwarming kan vis actiever maken, zeker later op de dag.",
-    "Rustig water maakt precies vissen makkelijker, maar het water kan ook stiller en minder actief ogen.",
+    "Matige wind geeft vaak net genoeg golfslag voor actieve roofvis zonder dat het onrustig wordt.",
     "Een grotendeels droge avond maakt langere sessies en actief zoeken makkelijker.",
-    "Luchtdruktrend over 48 uur: +5.6 hPa, schommeling circa 11.6 hPa.",
-    "Temperatuurtrend: +7.0 C; wind gemiddeld 9 km/u.",
-    "Vanmiddag naar vanavond wordt circa 0.0 mm neerslag verwacht; CAPE-piek rond 0 J/kg.",
-    "RWS getij (IJmuiden, buitenhaven): laagwater zo 19:10 op -43 cm NAP.",
-    "Daarna volgt hoogwater ma 00:40; tijslag komende 24 uur circa 123 cm."
+    "Luchtdruktrend over 48 uur: -11.2 hPa, schommeling circa 12.0 hPa.",
+    "Temperatuurtrend: +6.8 C; wind gemiddeld 16 km/u.",
+    "Vanmiddag naar vanavond wordt circa 0.0 mm neerslag verwacht; CAPE-piek rond 90 J/kg.",
+    "RWS getij (IJmuiden, buitenhaven): laagwater ma 21:00 op -44 cm NAP.",
+    "Daarna volgt hoogwater di 02:00; tijslag komende 24 uur circa 137 cm."
   ],
   "profiles": [
     {
       "name": "Roofvis",
-      "score": 4,
+      "score": 5,
       "advice": "Roofvis vraagt nu om strakker kiezen van tijd en beschutting."
     },
     {
@@ -46,7 +46,7 @@
     {
       "name": "Zee",
       "score": 2,
-      "advice": "IJmuiden, buitenhaven geeft laagwater zo 19:10 (-43 cm NAP); vis vooral 17:40-20:10 rond laagwater."
+      "advice": "IJmuiden, buitenhaven geeft laagwater ma 21:00 (-44 cm NAP); vis vooral 19:30-22:00 rond laagwater."
     }
   ],
   "context": {
@@ -55,19 +55,19 @@
     "season_label": "Herfst",
     "pressure_state": "instabiele_druk",
     "temperature_state": "temperatuurstijging",
-    "wind_state": "lage_wind",
+    "wind_state": "matige_wind",
     "rain_state": "droge_avond",
     "thunder_state": null,
-    "pressure_delta_48h_hpa": 5.6,
-    "pressure_range_48h_hpa": 11.6,
-    "temperature_delta_c": 7.0,
-    "wind_avg_kmh": 9.3,
-    "wind_direction_deg": 113.5,
-    "wind_direction_label": "OZO",
-    "pressure_avg_hpa": 1022.0,
+    "pressure_delta_48h_hpa": -11.2,
+    "pressure_range_48h_hpa": 12.0,
+    "temperature_delta_c": 6.8,
+    "wind_avg_kmh": 15.8,
+    "wind_direction_deg": 243.3,
+    "wind_direction_label": "WZW",
+    "pressure_avg_hpa": 1015.8,
     "evening_precipitation_mm": 0.0,
-    "evening_temperature_c": 19.9,
-    "max_cape_j_kg": 0.0,
+    "evening_temperature_c": 23.0,
+    "max_cape_j_kg": 90.0,
     "tide_available": true,
     "tide_error": null,
     "tide_location": "IJmuiden, buitenhaven",
@@ -75,18 +75,18 @@
     "tide_reference_plane": "NAP",
     "tide_timezone": "CEST",
     "tide_range_value": "0,24",
-    "tide_amplitude_cm": 123.0,
-    "tide_active_window": "17:40-20:10 rond laagwater",
-    "tide_current_level_cm": 47.0,
+    "tide_amplitude_cm": 137.0,
+    "tide_active_window": "19:30-22:00 rond laagwater",
+    "tide_current_level_cm": 41.0,
     "tide_next_extreme": {
       "kind": "laagwater",
-      "time": "2026-09-06T19:10:00+02:00",
-      "level_cm": -43.0
+      "time": "2026-09-07T21:00:00+02:00",
+      "level_cm": -44.0
     },
     "tide_following_extreme": {
       "kind": "hoogwater",
-      "time": "2026-09-07T00:40:00+02:00",
-      "level_cm": 80.0
+      "time": "2026-09-08T02:00:00+02:00",
+      "level_cm": 87.0
     }
   },
   "sources": [
