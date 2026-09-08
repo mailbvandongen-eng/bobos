@@ -1,10 +1,123 @@
 {
-  "updated_at": "2026-09-07T10:35:14Z",
-  "status": "Geen sport gevonden voor vandaag",
-  "items": [],
+  "updated_at": "2026-09-08T09:55:16Z",
+  "status": "Vandaag interessant",
+  "items": [
+    {
+      "time": "18:45",
+      "title": "AEK Athens - LASK Linz",
+      "category": "Champions League",
+      "source": "ESPN (Champions League)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "18:45",
+      "title": "Club Brugge - Aston Villa",
+      "category": "Champions League",
+      "source": "ESPN (Champions League)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "21:00",
+      "title": "Dortmund - Villarreal",
+      "category": "Champions League",
+      "source": "ESPN (Champions League)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "21:00",
+      "title": "FC Porto - Man City",
+      "category": "Champions League",
+      "source": "ESPN (Champions League)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "21:00",
+      "title": "Lille - Betis",
+      "category": "Champions League",
+      "source": "ESPN (Champions League)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "21:00",
+      "title": "Real Madrid - Inter Milan",
+      "category": "Champions League",
+      "source": "ESPN (Champions League)",
+      "score": 4,
+      "must_watch": false,
+      "reason": "topvoetbal",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "Bournemouth - Lincoln City",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "C Palace - Boro",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "Leyton Orient - Bradford",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "20:45",
+      "title": "Sunderland - Hull",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "21:00",
+      "title": "Millwall - Newcastle",
+      "category": "League Cup",
+      "source": "ESPN (League Cup)",
+      "score": 1,
+      "must_watch": false,
+      "reason": "Vandaag bruikbaar",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    }
+  ],
   "details": [
-    "Er zijn vandaag geen voetbal-, darts- of F1-items gevonden in de actieve bronnen.",
-    "Bronnen die tijdelijk niet reageren worden overgeslagen; later opnieuw draaien kan nieuwe items opleveren."
+    "Topkeuze vandaag: AEK Athens - LASK Linz (4/5) door topvoetbal.",
+    "0 must-see item(s) en 11 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: Champions League, League Cup.",
+    "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
     {
