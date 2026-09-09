@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-08T09:55:16Z",
+  "updated_at": "2026-09-09T09:58:19Z",
   "status": "Vandaag interessant",
   "items": [
     {
       "time": "18:45",
-      "title": "AEK Athens - LASK Linz",
+      "title": "Barcelona - Feyenoord",
       "category": "Champions League",
       "source": "ESPN (Champions League)",
       "score": 4,
@@ -14,7 +14,7 @@
     },
     {
       "time": "18:45",
-      "title": "Club Brugge - Aston Villa",
+      "title": "Stuttgart - Viking FK",
       "category": "Champions League",
       "source": "ESPN (Champions League)",
       "score": 4,
@@ -24,7 +24,7 @@
     },
     {
       "time": "21:00",
-      "title": "Dortmund - Villarreal",
+      "title": "Liverpool - Atlético",
       "category": "Champions League",
       "source": "ESPN (Champions League)",
       "score": 4,
@@ -34,7 +34,7 @@
     },
     {
       "time": "21:00",
-      "title": "FC Porto - Man City",
+      "title": "Napoli - Arsenal",
       "category": "Champions League",
       "source": "ESPN (Champions League)",
       "score": 4,
@@ -44,7 +44,7 @@
     },
     {
       "time": "21:00",
-      "title": "Lille - Betis",
+      "title": "PSG - S Bratislava",
       "category": "Champions League",
       "source": "ESPN (Champions League)",
       "score": 4,
@@ -54,7 +54,7 @@
     },
     {
       "time": "21:00",
-      "title": "Real Madrid - Inter Milan",
+      "title": "Sporting - Galatasaray",
       "category": "Champions League",
       "source": "ESPN (Champions League)",
       "score": 4,
@@ -63,40 +63,10 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "20:45",
-      "title": "Bournemouth - Lincoln City",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:45",
-      "title": "C Palace - Boro",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:45",
-      "title": "Leyton Orient - Bradford",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:45",
-      "title": "Sunderland - Hull",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
+      "time": "08:00",
+      "title": "China - Vietnam",
+      "category": "Vriendschappelijk Internationaal Vrouwen",
+      "source": "ESPN (Vriendschappelijk Internationaal Vrouwen)",
       "score": 1,
       "must_watch": false,
       "reason": "Vandaag bruikbaar",
@@ -104,7 +74,7 @@
     },
     {
       "time": "21:00",
-      "title": "Millwall - Newcastle",
+      "title": "Chelsea - Leeds",
       "category": "League Cup",
       "source": "ESPN (League Cup)",
       "score": 1,
@@ -114,9 +84,9 @@
     }
   ],
   "details": [
-    "Topkeuze vandaag: AEK Athens - LASK Linz (4/5) door topvoetbal.",
-    "0 must-see item(s) en 11 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: Champions League, League Cup.",
+    "Topkeuze vandaag: Barcelona - Feyenoord (4/5) door topvoetbal.",
+    "0 must-see item(s) en 8 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: Champions League, League Cup, Vriendschappelijk Internationaal Vrouwen.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
