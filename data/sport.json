@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-09T09:58:19Z",
+  "updated_at": "2026-09-10T09:56:26Z",
   "status": "Vandaag interessant",
   "items": [
     {
       "time": "18:45",
-      "title": "Barcelona - Feyenoord",
+      "title": "Fenerbahce - AS Roma",
       "category": "Champions League",
       "source": "ESPN (Champions League)",
       "score": 4,
@@ -14,7 +14,7 @@
     },
     {
       "time": "18:45",
-      "title": "Stuttgart - Viking FK",
+      "title": "PSV - Shakhtar",
       "category": "Champions League",
       "source": "ESPN (Champions League)",
       "score": 4,
@@ -24,7 +24,7 @@
     },
     {
       "time": "21:00",
-      "title": "Liverpool - Atlético",
+      "title": "Bayern - Bodo/Glimt",
       "category": "Champions League",
       "source": "ESPN (Champions League)",
       "score": 4,
@@ -34,7 +34,7 @@
     },
     {
       "time": "21:00",
-      "title": "Napoli - Arsenal",
+      "title": "Como - RB Leipzig",
       "category": "Champions League",
       "source": "ESPN (Champions League)",
       "score": 4,
@@ -44,7 +44,7 @@
     },
     {
       "time": "21:00",
-      "title": "PSG - S Bratislava",
+      "title": "Man United - Sabah",
       "category": "Champions League",
       "source": "ESPN (Champions League)",
       "score": 4,
@@ -54,39 +54,19 @@
     },
     {
       "time": "21:00",
-      "title": "Sporting - Galatasaray",
+      "title": "Slavia Prague - Lens",
       "category": "Champions League",
       "source": "ESPN (Champions League)",
       "score": 4,
       "must_watch": false,
       "reason": "topvoetbal",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "08:00",
-      "title": "China - Vietnam",
-      "category": "Vriendschappelijk Internationaal Vrouwen",
-      "source": "ESPN (Vriendschappelijk Internationaal Vrouwen)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "21:00",
-      "title": "Chelsea - Leeds",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     }
   ],
   "details": [
-    "Topkeuze vandaag: Barcelona - Feyenoord (4/5) door topvoetbal.",
-    "0 must-see item(s) en 8 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: Champions League, League Cup, Vriendschappelijk Internationaal Vrouwen.",
+    "Topkeuze vandaag: Fenerbahce - AS Roma (4/5) door topvoetbal.",
+    "0 must-see item(s) en 6 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: Champions League.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
