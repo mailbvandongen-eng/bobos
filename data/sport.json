@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-11T09:54:02Z",
+  "updated_at": "2026-09-11T18:12:33Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "13:30",
+      "time": "13:40",
       "title": "{'participantID': '162', 'firstName': 'Mickey', 'lastName': 'Mansell', 'nickname': 'Clonoe Cyclone', 'countryCode': 'IE', 'media': {'image': 'f5e89640-f233-11f0-b312-7b316f0e4c4f.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32078', 'firstName': 'Bradley', 'lastName': 'Brooks', 'nickname': 'Bam Bam', 'countryCode': 'GB-ENG', 'media': {'image': '168e07a0-2c62-11f1-b0da-37dc355bde8e.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET13 - Flanders Darts Trophy",
       "source": "PDC",
@@ -13,7 +13,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "14:30",
+      "time": "14:49",
       "title": "{'participantID': '32895', 'firstName': 'Kevin', 'lastName': 'Doets', 'nickname': 'Hawk Eye', 'countryCode': 'NL', 'media': {'image': 'f50ae070-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36373', 'firstName': 'James', 'lastName': 'Hurrell', 'nickname': 'Hillbilly', 'countryCode': 'GB-ENG', 'media': {'image': '3b90f990-2c62-11f1-8069-ed1f94464a0f.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET13 - Flanders Darts Trophy",
       "source": "PDC",
@@ -23,7 +23,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "19:00",
+      "time": "19:07",
       "title": "{'participantID': '31041', 'firstName': 'Rob', 'lastName': 'Cross', 'nickname': 'Voltage', 'countryCode': 'GB-ENG', 'media': {'image': 'f5de3600-f233-11f0-897c-cda35cd4c727.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '30843', 'firstName': 'Cristo', 'lastName': 'Reyes', 'nickname': 'The Spartan', 'countryCode': 'ES', 'media': {'image': '1690c6c0-2c62-11f1-8996-1f54684de03c.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET13 - Flanders Darts Trophy",
       "source": "PDC",
@@ -33,7 +33,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "13:00",
+      "time": "13:07",
       "title": "{'participantID': '33014', 'firstName': 'Niels', 'lastName': 'Zonneveld', 'nickname': 'Triple Z', 'countryCode': 'NL', 'media': {'image': 'f5607a80-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '46270', 'firstName': 'Petr', 'lastName': 'Tous', 'nickname': 'Mr.Pencil', 'countryCode': 'CZ'}",
       "category": "2026 ET13 - Flanders Darts Trophy",
       "source": "PDC",
@@ -43,7 +43,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "14:00",
+      "time": "14:14",
       "title": "{'participantID': '231', 'firstName': 'Andrew', 'lastName': 'Gilding', 'nickname': 'Goldfinger', 'countryCode': 'GB-ENG', 'media': {'image': 'f547e970-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36408', 'firstName': 'Chris', 'lastName': 'Landman', 'nickname': 'The Countryman', 'countryCode': 'NL', 'media': {'image': 'f5b662b0-f233-11f0-8f68-e98be9e2ec48.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET13 - Flanders Darts Trophy",
       "source": "PDC",
@@ -53,7 +53,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "15:00",
+      "time": "15:12",
       "title": "{'participantID': '2771', 'firstName': 'Karel', 'lastName': 'Sedlacek', 'nickname': 'Evil Charlie', 'countryCode': 'CZ', 'media': {'image': 'f5bc0800-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '49280', 'firstName': 'Michael', 'lastName': 'Hansen', 'nickname': None, 'countryCode': 'DK'}",
       "category": "2026 ET13 - Flanders Darts Trophy",
       "source": "PDC",
@@ -63,7 +63,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "15:30",
+      "time": "15:40",
       "title": "{'participantID': '31031', 'firstName': 'Jeffrey', 'lastName': 'De Graaf', 'nickname': None, 'countryCode': 'SE', 'media': {'image': 'f553a940-f233-11f0-ac11-834d30e1892a.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36607', 'firstName': 'Jeroen', 'lastName': 'Caron', 'nickname': '', 'countryCode': 'BE'}",
       "category": "2026 ET13 - Flanders Darts Trophy",
       "source": "PDC",
@@ -73,7 +73,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "16:00",
+      "time": "16:15",
       "title": "{'participantID': '31501', 'firstName': 'Ryan', 'lastName': 'Joyce', 'nickname': 'Relentless', 'countryCode': 'GB-ENG', 'media': {'image': 'f648b7a0-f233-11f0-b6df-51058ea1fe5e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32040', 'firstName': 'Stephen', 'lastName': 'Burton', 'nickname': 'Bertie', 'countryCode': 'GB-ENG', 'media': {'image': 'f5a76e90-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET13 - Flanders Darts Trophy",
       "source": "PDC",
@@ -83,7 +83,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "16:30",
+      "time": "16:46",
       "title": "{'participantID': '34874', 'firstName': 'Niko', 'lastName': 'Springer', 'nickname': 'Meenzer Bub', 'countryCode': 'DE', 'media': {'image': 'f54a5a70-f233-11f0-916f-9317f3943d29.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '43373', 'firstName': 'Jaimy', 'lastName': 'Jacobs', 'nickname': None, 'countryCode': 'BE'}",
       "category": "2026 ET13 - Flanders Darts Trophy",
       "source": "PDC",
@@ -93,7 +93,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "19:30",
+      "time": "19:38",
       "title": "{'participantID': '81', 'firstName': 'Joe', 'lastName': 'Cullen', 'nickname': 'The Rockstar', 'countryCode': 'GB-ENG', 'media': {'image': 'f517ffd0-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33694', 'firstName': 'Andy', 'lastName': 'Baetens', 'nickname': 'The Beast from the East', 'countryCode': 'BE', 'media': {'image': 'fc690c50-9d76-11f0-aec8-0b83fbd5161f.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET13 - Flanders Darts Trophy",
       "source": "PDC",
