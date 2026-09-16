@@ -1,83 +1,10 @@
 {
-  "updated_at": "2026-09-15T10:16:31Z",
-  "status": "Vandaag interessant",
-  "items": [
-    {
-      "time": "18:00",
-      "title": "Genoa - Sudtirol",
-      "category": "Coppa Italia",
-      "source": "ESPN (Coppa Italia)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:30",
-      "title": "Peterborough - Barnsley",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:45",
-      "title": "West Ham - Fulham",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "21:00",
-      "title": "Fiorentina - Pisa",
-      "category": "Coppa Italia",
-      "source": "ESPN (Coppa Italia)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "21:00",
-      "title": "Ipswich - Arsenal",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "21:00",
-      "title": "Liverpool - Spurs",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "21:00",
-      "title": "Reading - Brentford",
-      "category": "League Cup",
-      "source": "ESPN (League Cup)",
-      "score": 1,
-      "must_watch": false,
-      "reason": "Vandaag bruikbaar",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    }
-  ],
+  "updated_at": "2026-09-16T10:10:05Z",
+  "status": "Geen sport gevonden voor vandaag",
+  "items": [],
   "details": [
-    "Topkeuze vandaag: Genoa - Sudtirol (1/5) door vandaag bruikbaar.",
-    "0 must-see item(s) en 7 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: Coppa Italia, League Cup.",
-    "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
+    "Er zijn vandaag geen voetbal-, darts- of F1-items gevonden in de actieve bronnen.",
+    "Bronnen die tijdelijk niet reageren worden overgeslagen; later opnieuw draaien kan nieuwe items opleveren."
   ],
   "sources": [
     {
