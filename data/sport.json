@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-19T09:39:51Z",
+  "updated_at": "2026-09-19T17:48:48Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "13:15",
+      "time": "13:18",
       "title": "{'participantID': '38552', 'firstName': 'Josh', 'lastName': 'Rock', 'nickname': 'Rocky', 'countryCode': 'GB-NIR', 'media': {'image': 'f5db4fd0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32037', 'firstName': 'Ryan', 'lastName': 'Searle', 'nickname': 'Heavy Metal', 'countryCode': 'GB-ENG', 'media': {'image': 'f6071ac0-f233-11f0-828f-515099993409.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 World Series of Darts Finals",
       "source": "PDC",
@@ -13,7 +13,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "14:15",
+      "time": "14:08",
       "title": "{'participantID': '2554', 'firstName': 'Daryl', 'lastName': 'Gurney', 'nickname': 'Superchin', 'countryCode': 'GB-NIR', 'media': {'image': 'f5dadaa0-f233-11f0-ac53-417814447ebc.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '754', 'firstName': 'Ross', 'lastName': 'Smith', 'nickname': 'Smudger', 'countryCode': 'GB-ENG', 'media': {'image': 'f4fbec50-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 World Series of Darts Finals",
       "source": "PDC",
@@ -23,7 +23,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "15:15",
+      "time": "15:05",
       "title": "{'participantID': '33091', 'firstName': 'Gian', 'lastName': 'van Veen', 'nickname': 'The Giant', 'countryCode': 'NL', 'media': {'image': 'f5b2b930-f233-11f0-9c7f-3f5eeb7c3f65.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '2771', 'firstName': 'Karel', 'lastName': 'Sedlacek', 'nickname': 'Evil Charlie', 'countryCode': 'CZ', 'media': {'image': 'f5bc0800-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 World Series of Darts Finals",
       "source": "PDC",
@@ -33,7 +33,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "16:15",
+      "time": "15:59",
       "title": "{'participantID': '32102', 'firstName': 'Luke', 'lastName': 'Humphries', 'nickname': 'Cool Hand', 'countryCode': 'GB-ENG', 'media': {'image': 'f62be0d0-f233-11f0-b703-63c53945660f.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '246', 'firstName': 'Dirk', 'lastName': 'van Duijvenbode', 'nickname': 'Aubergenius', 'countryCode': 'NL', 'media': {'image': 'f4f9a260-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 World Series of Darts Finals",
       "source": "PDC",
@@ -43,7 +43,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "19:15",
+      "time": "19:19",
       "title": "{'participantID': '30859', 'firstName': 'Jonny', 'lastName': 'Clayton', 'nickname': 'The Ferret', 'countryCode': 'GB-WLS', 'media': {'image': 'f6647d00-f233-11f0-bdca-133e2e51708a.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '47144', 'firstName': 'Motomu', 'lastName': 'Sakai', 'nickname': 'The Creature', 'countryCode': 'JP'}",
       "category": "2026 World Series of Darts Finals",
       "source": "PDC",
