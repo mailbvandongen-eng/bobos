@@ -1,83 +1,10 @@
 {
-  "updated_at": "2026-09-20T18:02:11Z",
-  "status": "Vandaag interessant",
-  "items": [
-    {
-      "time": "13:19",
-      "title": "{'participantID': '754', 'firstName': 'Ross', 'lastName': 'Smith', 'nickname': 'Smudger', 'countryCode': 'GB-ENG', 'media': {'image': 'f4fbec50-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '38552', 'firstName': 'Josh', 'lastName': 'Rock', 'nickname': 'Rocky', 'countryCode': 'GB-NIR', 'media': {'image': 'f5db4fd0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 World Series of Darts Finals",
-      "source": "PDC",
-      "score": 5,
-      "must_watch": true,
-      "reason": "darts en finale",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "14:20",
-      "title": "{'participantID': '246', 'firstName': 'Dirk', 'lastName': 'van Duijvenbode', 'nickname': 'Aubergenius', 'countryCode': 'NL', 'media': {'image': 'f4f9a260-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33091', 'firstName': 'Gian', 'lastName': 'van Veen', 'nickname': 'The Giant', 'countryCode': 'NL', 'media': {'image': 'f5b2b930-f233-11f0-9c7f-3f5eeb7c3f65.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 World Series of Darts Finals",
-      "source": "PDC",
-      "score": 5,
-      "must_watch": true,
-      "reason": "darts en finale",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "15:16",
-      "title": "{'participantID': '11788', 'firstName': 'Gerwyn', 'lastName': 'Price', 'nickname': 'The Iceman', 'countryCode': 'GB-WLS', 'media': {'image': 'f5a3ec20-f233-11f0-a1f6-49664dee8666.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '22', 'firstName': 'James', 'lastName': 'Wade', 'nickname': 'The Machine', 'countryCode': 'GB-ENG', 'media': {'image': 'f5e0ce10-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 World Series of Darts Finals",
-      "source": "PDC",
-      "score": 5,
-      "must_watch": true,
-      "reason": "darts en finale",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "16:12",
-      "title": "{'participantID': '40676', 'firstName': 'Luke', 'lastName': 'Littler', 'nickname': 'The Nuke', 'countryCode': 'GB-ENG', 'media': {'image': '7843dbf0-f21a-11f0-a2b2-337f630ef140.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '30859', 'firstName': 'Jonny', 'lastName': 'Clayton', 'nickname': 'The Ferret', 'countryCode': 'GB-WLS', 'media': {'image': 'f6647d00-f233-11f0-bdca-133e2e51708a.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 World Series of Darts Finals",
-      "source": "PDC",
-      "score": 5,
-      "must_watch": true,
-      "reason": "Formule 1 en darts",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "19:18",
-      "title": "{'participantID': '754', 'firstName': 'Ross', 'lastName': 'Smith', 'nickname': 'Smudger', 'countryCode': 'GB-ENG', 'media': {'image': 'f4fbec50-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33091', 'firstName': 'Gian', 'lastName': 'van Veen', 'nickname': 'The Giant', 'countryCode': 'NL', 'media': {'image': 'f5b2b930-f233-11f0-9c7f-3f5eeb7c3f65.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 World Series of Darts Finals",
-      "source": "PDC",
-      "score": 5,
-      "must_watch": true,
-      "reason": "darts en finale",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "20:15",
-      "title": "{'participantID': '11788', 'firstName': 'Gerwyn', 'lastName': 'Price', 'nickname': 'The Iceman', 'countryCode': 'GB-WLS', 'media': {'image': 'f5a3ec20-f233-11f0-a1f6-49664dee8666.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '30859', 'firstName': 'Jonny', 'lastName': 'Clayton', 'nickname': 'The Ferret', 'countryCode': 'GB-WLS', 'media': {'image': 'f6647d00-f233-11f0-bdca-133e2e51708a.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 World Series of Darts Finals",
-      "source": "PDC",
-      "score": 5,
-      "must_watch": true,
-      "reason": "darts en finale",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "21:30",
-      "title": "{'participantID': None, 'firstName': None, 'lastName': None, 'nickname': None, 'countryCode': None} - {'participantID': None, 'firstName': None, 'lastName': None, 'nickname': None, 'countryCode': None}",
-      "category": "2026 World Series of Darts Finals",
-      "source": "PDC",
-      "score": 5,
-      "must_watch": true,
-      "reason": "darts en finale",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    }
-  ],
+  "updated_at": "2026-09-21T10:57:01Z",
+  "status": "Geen sport gevonden voor vandaag",
+  "items": [],
   "details": [
-    "Topkeuze vandaag: {'participantID': '754', 'firstName': 'Ross', 'lastName': 'Smith', 'nickname': 'Smudger', 'countryCode': 'GB-ENG', 'media': {'image': 'f4fbec50-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '38552', 'firstName': 'Josh', 'lastName': 'Rock', 'nickname': 'Rocky', 'countryCode': 'GB-NIR', 'media': {'image': 'f5db4fd0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} (5/5) door darts en finale.",
-    "7 must-see item(s) en 7 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: 2026 World Series of Darts Finals.",
-    "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
+    "Er zijn vandaag geen voetbal-, darts- of F1-items gevonden in de actieve bronnen.",
+    "Bronnen die tijdelijk niet reageren worden overgeslagen; later opnieuw draaien kan nieuwe items opleveren."
   ],
   "sources": [
     {
