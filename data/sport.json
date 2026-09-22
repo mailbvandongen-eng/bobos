@@ -1,10 +1,93 @@
 {
-  "updated_at": "2026-09-21T10:57:01Z",
-  "status": "Geen sport gevonden voor vandaag",
-  "items": [],
+  "updated_at": "2026-09-22T10:10:57Z",
+  "status": "Vandaag interessant",
+  "items": [
+    {
+      "time": "14:15",
+      "title": "{'participantID': '32951', 'firstName': 'Shane', 'lastName': 'McGuirk', 'nickname': 'The Arrow', 'countryCode': 'IE', 'media': {'image': 'd5aec490-1181-11f1-8fc6-1d2a36a04b0d.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '31502', 'firstName': 'Darius', 'lastName': 'Labanauskas', 'nickname': 'Lucky D', 'countryCode': 'LT', 'media': {'image': '16d7bad0-2c62-11f1-b69e-0bbe5227adf3.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 29",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "14:15",
+      "title": "{'participantID': '33598', 'firstName': 'Darryl', 'lastName': 'Pilgrim', 'nickname': 'Mr P', 'countryCode': 'GB-ENG', 'media': {'image': 'ea1376b0-2c61-11f1-8996-1f54684de03c.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '271', 'firstName': 'Ricky', 'lastName': 'Evans', 'nickname': 'Rapid', 'countryCode': 'GB-ENG', 'media': {'image': '1663ea60-2c62-11f1-8996-1f54684de03c.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 29",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "13:00",
+      "title": "{'participantID': '33091', 'firstName': 'Gian', 'lastName': 'van Veen', 'nickname': 'The Giant', 'countryCode': 'NL', 'media': {'image': 'f5b2b930-f233-11f0-9c7f-3f5eeb7c3f65.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '38498', 'firstName': 'Tommy', 'lastName': 'Morris', 'nickname': 'The Gun', 'countryCode': 'GB-ENG'}",
+      "category": "2026 Players Championship 29",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "13:00",
+      "title": "{'participantID': '38552', 'firstName': 'Josh', 'lastName': 'Rock', 'nickname': 'Rocky', 'countryCode': 'GB-NIR', 'media': {'image': 'f5db4fd0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '37349', 'firstName': 'Alan', 'lastName': 'Soutar', 'nickname': 'Soots', 'countryCode': 'GB-SCT', 'media': {'image': 'f53a06c0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 29",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "13:25",
+      "title": "{'participantID': '136', 'firstName': 'Brendan', 'lastName': 'Dolan', 'nickname': 'The History Maker', 'countryCode': 'IE', 'media': {'image': 'f64905c0-f233-11f0-b2d6-31a38d16a83c.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36368', 'firstName': 'Dennie', 'lastName': 'Olde Kalter', 'nickname': None, 'countryCode': 'NL', 'media': {'image': '643bf620-f2e1-11f0-b0b9-318ff8bc1aee.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 29",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "13:25",
+      "title": "{'participantID': '32040', 'firstName': 'Stephen', 'lastName': 'Burton', 'nickname': 'Bertie', 'countryCode': 'GB-ENG', 'media': {'image': 'f5a76e90-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '34958', 'firstName': 'Daniel', 'lastName': 'Klose', 'nickname': 'Dan the man', 'countryCode': 'DE'}",
+      "category": "2026 Players Championship 29",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "13:50",
+      "title": "{'participantID': '11902', 'firstName': 'Martin', 'lastName': 'Schindler', 'nickname': 'The Wall', 'countryCode': 'DE', 'media': {'image': 'f57d9f70-f233-11f0-9987-f7a824897129.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32497', 'firstName': 'Thomas', 'lastName': 'Lovely', 'nickname': 'Simply', 'countryCode': 'GB-ENG', 'media': {'image': '64cd60b0-f2e1-11f0-a798-91ff7fdabd0d.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 29",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "13:50",
+      "title": "{'participantID': '36287', 'firstName': 'Sebastian', 'lastName': 'Bialecki', 'nickname': 'The Bolt', 'countryCode': 'PL', 'media': {'image': 'f4f29d80-f233-11f0-8f68-e98be9e2ec48.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '104', 'firstName': 'Michael', 'lastName': 'Smith', 'nickname': 'Bully Boy', 'countryCode': 'GB-ENG', 'media': {'image': 'f657f9e0-f233-11f0-b80f-217d371c8b79.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 29",
+      "source": "PDC",
+      "score": 4,
+      "must_watch": false,
+      "reason": "darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    }
+  ],
   "details": [
-    "Er zijn vandaag geen voetbal-, darts- of F1-items gevonden in de actieve bronnen.",
-    "Bronnen die tijdelijk niet reageren worden overgeslagen; later opnieuw draaien kan nieuwe items opleveren."
+    "Topkeuze vandaag: {'participantID': '32951', 'firstName': 'Shane', 'lastName': 'McGuirk', 'nickname': 'The Arrow', 'countryCode': 'IE', 'media': {'image': 'd5aec490-1181-11f1-8fc6-1d2a36a04b0d.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '31502', 'firstName': 'Darius', 'lastName': 'Labanauskas', 'nickname': 'Lucky D', 'countryCode': 'LT', 'media': {'image': '16d7bad0-2c62-11f1-b69e-0bbe5227adf3.png', 'type': 'profile', 'meta': {'side': ''}}} (5/5) door formule 1 en darts.",
+    "2 must-see item(s) en 8 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: 2026 Players Championship 29.",
+    "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
     {
