@@ -1,21 +1,39 @@
 [
   {
-    "title": "Merson schrok van hattrick Brobbey: 'Manchester City wordt geen kampioen'",
-    "summary": "Manchester City is volgens de voorspellingen van Opta de belangrijkste uitdager van Arsenal in de titelstrijd in de Premier League, maar Paul Merson ziet dat anders. De oud-speler van onder meer Arsenal en Aston Villa...",
-    "source": "Voetbal International",
-    "published": "2026-09-22T08:24:50Z",
+    "title": "Manchester City redt na blunder Casparij en gemiste penalty een punt tegen Bayern",
+    "summary": "Manchester City heeft door een doelpunt in de slotfase een punt gepakt tegen Bayern München in de eerste speelronde van de Champions League voor vrouwen. De Engelsen kwamen in Duitsland van een 2-0 achterstand terug tot...",
+    "source": "NOS Sport",
+    "published": "2026-09-22T18:57:41Z",
     "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/22/11a8011e878e6a41a2a67849dfcb8871eb28a5e4.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/brobbey-legt-kwetsbaarheden-city-bloot-zo-worden-ze-geen-kampioen"
+    "image": "https://images.cdn.nos.nl/8/B/B/N/i/8/mzexJVudUd4W4yx56JVjS8Kp1PaGJvXjukY4k3o/8x184x3984x2241-1024x576.webp",
+    "url": "https://nos.nl/l/2632095"
   },
   {
-    "title": "Engels gerucht: 'Engelse topclubs houden Feyenoord-uitblinker Zechiël in de gaten'",
-    "summary": "Feyenoord-uitblinker Gjivai Zechiël staat op de radar van Arsenal en Chelsea. Althans, dat beweert het Engelse CaughtOffside . De 22-jarige middenvelder zou door zijn prestaties in beeld zijn geraakt bij de Engelse...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-09-22T08:34:10Z",
+    "title": "Ajax-spits Dolberg loopt blessure op bij Deense ploeg, PSV weken zonder Pepi",
+    "summary": "Ajax en PSV moeten het voorlopig doen zonder spitsen Kasper Dolberg en Ricardo Pepi. Ajacied Dolberg heeft bij een training van het Deense nationale elftal een knieblessure opgelopen, die hem volgens de Deense bond...",
+    "source": "NOS Sport",
+    "published": "2026-09-22T14:39:26Z",
     "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/08/23/305d63700d9fa6e64d264c54a1aafecdf8b343f7.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2138450/feyenoord-uitblinker-zechiel-gelinkt-aan-arsenal-en-chelsea.html"
+    "image": "https://images.cdn.nos.nl/4/D/r/L/s/c/WWutcQvktRTJ8uKe8oeH7u9kJCSKL5NwQtt9fg/820x179x2464x1386-1024x576.webp",
+    "url": "https://nos.nl/l/2632053"
+  },
+  {
+    "title": "Apple toont plotseling promoties voor eigen diensten in instellingenmenu van iOS",
+    "summary": "Apple lijkt in iOS promotionele berichten toe te voegen aan het instellingenmenu. Het gaat bijvoorbeeld om een oproep om een AppleCare- of iCloud-abonnement af te sluiten. Het is niet duidelijk of dit een bewuste keuze...",
+    "source": "Tweakers",
+    "published": "2026-09-23T07:43:36Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252490/apple-toont-plotseling-promoties-voor-eigen-diensten-in-instellingenmenu-van-ios.html"
+  },
+  {
+    "title": "GPT-6 krijgt minder krachtige maar wel goedkopere Sol- en Luna-varianten",
+    "summary": "OpenAI heeft twee versies van GPT-6 uitgebracht: Sol en Luna. Dat zijn minder krachtige modellen dan het eerdere GPT-6 Astra. De modellen zijn vooral efficiënter, zegt OpenAI. Sol en Luna zijn alleen beschikbaar in Work...",
+    "source": "Tweakers",
+    "published": "2026-09-23T06:35:05Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252486/gpt-6-krijgt-minder-krachtige-maar-wel-goedkopere-sol-en-luna-varianten.html"
   },
   {
     "title": "Gebruikers klagen dat Apple Watch 12 en Ultra 4 door bug onverwacht herstarten",
@@ -27,40 +45,40 @@
     "url": "https://tweakers.net/nieuws/252438/gebruikers-klagen-dat-apple-watch-12-en-ultra-4-door-bug-onverwacht-herstarten.html"
   },
   {
-    "title": "Gerucht: Apple brengt 'HomePad' volgende maand uit",
-    "summary": "Apple zou zijn 'HomePad', een scherm om smarthomeapparaten te bedienen, volgende maand willen uitbrengen. Dat meldt financieel persbureau Bloomberg. Het apparaat was al klaar, maar moest wachten op de AI-upgrade van...",
+    "title": "Motorola Signature 27 krijgt Snapdragon 8 Elite Extreme-soc en extra camera",
+    "summary": "Motorola heeft zijn tweede Signature-telefoon aangekondigd. Deze premiumtelefoon is voorzien van de nieuwste high-end soc van Qualcomm, de Snapdragon 8 Elite Extreme. Ook heeft het toestel een nieuw ontwerp met een...",
     "source": "Tweakers",
-    "published": "2026-09-21T15:52:00Z",
-    "category": "Tech",
+    "published": "2026-09-22T20:00:00Z",
+    "category": "Gadgets",
     "image": "",
-    "url": "https://tweakers.net/nieuws/252422/gerucht-apple-brengt-homepad-volgende-maand-uit.html"
+    "url": "https://tweakers.net/nieuws/252444/motorola-signature-27-krijgt-snapdragon-8-elite-extreme-soc-en-extra-camera.html"
   },
   {
-    "title": "Claude Code krijgt ondersteuning voor instructiebestand Agents.md",
-    "summary": "Claude Code ondersteunt vanaf versie 2.1.277 Agents.md van OpenAI. Daarin staan instructies voor bijvoorbeeld verwacht gedrag en voorkeurstools. De ondersteuning voor Agents.md maakt het voor ontwikkelaars gemakkelijker...",
-    "source": "Tweakers",
-    "published": "2026-09-21T11:30:47Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252400/claude-code-krijgt-ondersteuning-voor-instructiebestand-agents-punt-md.html"
+    "title": "Weer kunnen praten mét gebaren: nieuwe neuroprothese kan helpen bij verlamming",
+    "summary": "Taal spreken we niet alleen uit, we gebruiken er ook gebaren bij. Deze combinatie is haast onmisbaar bij communicatie tussen mensen. En als je verlamd bent, is juist dat lastig. Een recent onderzoek richtte zich op...",
+    "source": "Scientias",
+    "published": "2026-09-22T17:00:35Z",
+    "category": "Wetenschap",
+    "image": "https://scientias.nl/wp-content/uploads/2026/09/8777860.jpeg",
+    "url": "https://scientias.nl/weer-kunnen-praten-met-gebaren-nieuwe-neuroprothese-kan-helpen-bij-verlamming/"
   },
   {
-    "title": "'Anthropic overweegt om nieuw model uit te brengen ondanks oproep tot AI-rem'",
-    "summary": "Claude-maker Anthropic overweegt om nog vóór zijn verwachte beursgang een nieuw AI-model uit te brengen en zo te concurreren met GPT-6 Astra van OpenAI. Dat stellen ingewijden tegenover Reuters. De timing is...",
+    "title": "Apple verandert bewoording: fotofuncties komen toch niet naar iPhone 16 en 17",
+    "summary": "Apple brengt de nieuwe fotofuncties om texturen en korrels te regelen voor Fotografische Stijlen toch niet uit voor de iPhone 17 en ouder. In eerste instantie zei het bedrijf dat de functies wel voor deze modellen...",
     "source": "Tweakers",
-    "published": "2026-09-21T06:38:29Z",
-    "category": "Tech",
+    "published": "2026-09-22T15:19:41Z",
+    "category": "Gadgets",
     "image": "",
-    "url": "https://tweakers.net/nieuws/252386/anthropic-overweegt-om-nieuw-model-uit-te-brengen-ondanks-oproep-tot-ai-rem.html"
+    "url": "https://tweakers.net/nieuws/252470/apple-verandert-bewoording-fotofuncties-komen-toch-niet-naar-iphone-16-en-17.html"
   },
   {
-    "title": "Microsoft vraagt patent aan voor in-gamereclames tijdens 'pauzemomenten'",
-    "summary": "Microsoft heeft een patent aangevraagd voor een systeem dat reclames toont tijdens 'pauzemomenten' in games. Het systeem gebruikt gamedata om te bepalen wanneer een natuurlijke pauze plaatsvindt, zoals net na een...",
-    "source": "Tweakers",
-    "published": "2026-09-21T05:44:13Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252384/microsoft-vraagt-patent-aan-voor-in-gamereclames-tijdens-pauzemomenten.html"
+    "title": "Nature of nurture: experiment toont geslachtsverschillen al vlak na de geboorte",
+    "summary": "Verschillen tussen het gedrag van vrouwen en mannen houden sociale wetenschappers al decennialang bezig: is het onderscheid aangeboren of het gevolg van culturele verwachtingen? Nieuw onderzoek laat zien dat de...",
+    "source": "Scientias",
+    "published": "2026-09-22T11:00:14Z",
+    "category": "Wetenschap",
+    "image": "https://scientias.nl/wp-content/uploads/2026/09/photo-1661347257861-e3e4fb542541-scaled.jpg",
+    "url": "https://scientias.nl/nature-of-nurture-experiment-toont-geslachtsverschillen-al-vlak-na-de-geboorte/"
   },
   {
     "title": "Deze piepkleine drone voelt met kunstmatige snorharen zijn weg door het donker",
@@ -72,58 +90,193 @@
     "url": "https://scientias.nl/deze-piepkleine-drone-voelt-met-kunstmatige-snorharen-zijn-weg-door-het-donker/"
   },
   {
-    "title": "Apple iPhone 18 Pro Max heeft oplaadlimiet voor transport en verzending",
-    "summary": "Apple heeft voor de iPhone 18 Pro Max een oplaadlimiet ingesteld voor transport of verzending voor reparatie. Dat is volgens de fabrikant nodig, omdat Apple de iPhones anders niet naar bijvoorbeeld Nederland of België...",
+    "title": "Webhoster Site.nl verhoogt prijzen vanaf 1 december met 2 of 3 euro per maand",
+    "summary": "De webhostingdienst Site.nl verhoogt vanaf 1 december 2026 de prijzen van zijn pakketten met 2 of 3 euro exclusief btw per maand. Vooral de goedkoopste abonnementen worden daardoor relatief veel duurder. De Sitebuilder-...",
     "source": "Tweakers",
-    "published": "2026-09-21T18:02:55Z",
-    "category": "Gadgets",
+    "published": "2026-09-23T09:47:09Z",
+    "category": "Tech",
     "image": "",
-    "url": "https://tweakers.net/nieuws/252428/apple-iphone-18-pro-max-heeft-oplaadlimiet-voor-transport-en-verzending.html"
+    "url": "https://tweakers.net/nieuws/252500/webhoster-site-punt-nl-verhoogt-prijzen-vanaf-1-december-met-2-of-3-euro-per-maand.html"
   },
   {
-    "title": "MediaTek kondigt Googlebook-soc aan, onbekend welke laptop de chip krijgt",
-    "summary": "MediaTek heeft de Dimensity CX C10 Max aangekondigd, een soc die is ontworpen voor Googlebook-laptops. Vijf fabrikanten hebben zulke laptops maandag aangekondigd, maar geen daarvan heeft de MediaTek-soc.",
+    "title": "ShinyHunters zegt data van FBI-werknemers te hebben gestolen",
+    "summary": "Ransomwarebende ShinyHunters zegt dat ze gegevens van een groot aantal agenten en werknemers van de Amerikaanse FBI heeft gestolen. Het zou gaan om data van nagenoeg alle werknemers en iedereen die er ooit heeft...",
     "source": "Tweakers",
-    "published": "2026-09-21T17:22:58Z",
-    "category": "Gadgets",
+    "published": "2026-09-23T09:06:06Z",
+    "category": "Tech",
     "image": "",
-    "url": "https://tweakers.net/nieuws/252426/mediatek-kondigt-googlebook-soc-aan-onbekend-welke-laptop-de-chip-krijgt.html"
+    "url": "https://tweakers.net/nieuws/252498/shinyhunters-zegt-data-van-fbi-werknemers-te-hebben-gestolen.html"
   },
   {
-    "title": "Onderzoek laat zien hoe de pest zich zo hard kon verspreiden: dit kunnen we ervan leren",
-    "summary": "We weten allemaal nog hoe de coronapandemie onze wereld ontwrichtte, maar dit was natuurlijk niet de eerste heftige pandemie in de menselijke geschiedenis. Tussen de veertiende en achttiende eeuw hield de pest huis in...",
-    "source": "Scientias",
-    "published": "2026-09-21T14:00:43Z",
-    "category": "Wetenschap",
-    "image": "https://scientias.nl/wp-content/uploads/2026/09/photo-1552580185-86c7596a9063-scaled.jpg",
-    "url": "https://scientias.nl/onderzoek-laat-zien-hoe-de-pest-zich-zo-hard-kon-verspreiden-dit-kunnen-we-ervan-leren/"
-  },
-  {
-    "title": ".Community - Poll: Meer dan de helft van de tweakers wil geen vouwtelefoon",
-    "summary": "85 procent van de tweakers heeft volgens onze poll geen interesse in de iPhone Duo.",
+    "title": "Samsung brengt Android 17-update met One UI 9 pas later deze maand uit",
+    "summary": "Samsung brengt Android 17 voorlopig niet uit. Het bedrijf zou One UI 9, gebaseerd op het nieuwe OS, deze week internationaal uitbrengen voor de Galaxy S26. Volgens SammyGuru is dat niet gebeurd. De update komt nu 'in...",
     "source": "Tweakers",
-    "published": "2026-09-21T12:43:59Z",
-    "category": "Gadgets",
+    "published": "2026-09-23T08:36:48Z",
+    "category": "Tech",
     "image": "",
-    "url": "https://tweakers.net/reviews/15328/poll-meer-dan-de-helft-van-de-tweakers-wil-geen-vouwtelefoon.html"
+    "url": "https://tweakers.net/nieuws/252494/samsung-brengt-android-17-update-met-one-ui-9-pas-later-deze-maand-uit.html"
   },
   {
-    "title": "Archeologen ontdekken een geheim netwerk van gangen in een beroemde zoutmijn uit de steentijd",
-    "summary": "Al eeuwenlang halen mijnwerkers gereedschap en andere prehistorische voorwerpen uit de zoutmijnen van Hallstatt. Maar de grond onder deze Oostenrijkse stad zit nog steeds vol verrassingen.",
-    "source": "Historianet",
-    "published": "2026-09-18T16:00:25Z",
-    "category": "Archeologie",
-    "image": "",
-    "url": "https://historianet.nl/steentijd/archeologen-ontdekken-een-uitgebreid-netwerk-van-gangen-in-een-beroemde-zoutmijn-uit-de-steentijd"
-  },
-  {
-    "title": "Brobbey groeit uit tot Premier League-ster: 'Bij Ajax was hij al na één uur op'",
-    "summary": "Brian Brobbey is 'veel efficiënter' gaan spelen sinds zijn transfer naar Sunderland. Dat vertelt zijn performancecoach Patrick Woerst, die inmiddels ruim een jaar nauw samenwerkt met de Oranje-spits, tegenover ESPN ....",
-    "source": "VoetbalPrimeur",
-    "published": "2026-09-22T09:56:00Z",
+    "title": "Toch clubvoetbal tijdens interlandperiode: dit is het KKD-programma",
+    "summary": "De topcompetities liggen een kleine drie weken stil door de interlandperiode. Dat betekent dat fans niet kunnen genieten van bijvoorbeeld de Eredivisie, Premier League, Bundesliga of La Liga. Gelukkig is er wel...",
+    "source": "Voetbal International",
+    "published": "2026-09-23T08:20:00Z",
     "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/09/17/2ee7546cb482f69ff716da30e55fa8dcac612780.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2138506/performancecoach-verklaart-positieve-ontwikkeling-van-brobbey.html"
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/23/06874c1a02ec2df08754a243647b18457b8fbebc.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/toch-clubvoetbal-tijdens-interlandperiode-dit-is-het-kkd-programma"
+  },
+  {
+    "title": "Opta publiceert xG-ranglijst: Feyenoord bovenaan, mega-afwijking Fortuna",
+    "summary": "Na zeven speelronden is AZ de koploper van de Eredivisie in de enige stand die er écht toe doet. Statistiekenbureau Opta kwam dinsdag met een alternatieve ranglijst, gebaseerd op xG (verwachte doelpunten). Daarin zijn...",
+    "source": "Voetbal International",
+    "published": "2026-09-23T07:24:16Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/23/55fdd6a33ee54d4b105c979a1328742370cb74d1.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/opta-publiceert-xg-ranglijst-feyenoord-bovenaan-mega-afwijking-fortuna"
+  },
+  {
+    "title": "ASML verkoopt helemaal niets meer in Europa",
+    "summary": "ASML heeft het afgelopen kwartaal geen enkele chipmachine verkocht in Europa. Vicevoorzitter Frank Heemskerk zegt dat de omzet die het bedrijf met verkopen aan Europese klanten behaalde 'naar nul procent' is gedaald. De...",
+    "source": "Tweakers",
+    "published": "2026-09-23T05:42:57Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252488/asml-verkoopt-helemaal-niets-meer-in-europa.html"
+  },
+  {
+    "title": "Driver-update - GeForce Game Ready Driver 617.14 WHQL",
+    "summary": "Nvidia heeft nieuwe stabiele GeForce-drivers uitgebracht. De drivers dragen versienummer 617.14 en zijn voorzien van een Windows Hardware Quality Labs-certificaat. Ze zijn geschikt voor Windows 10 en hoger, en kunnen...",
+    "source": "Tweakers",
+    "published": "2026-09-23T05:30:00Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/downloads/78348/geforce-game-ready-driver-61714-whql.html"
+  },
+  {
+    "title": "Xiaomi 18 Pro en Pro Max met privacydisplay komen voor het eerst naar Europa",
+    "summary": "Xiaomi gaat de 18 Pro- en 18 Pro Max later dit jaar wereldwijd uitbrengen, onder meer in Europa. Dat liet Xiaomi-afdelingshoofd Adam Zeng weten tijdens de Snapdragon Summit in Maui. Het is de eerste keer dat Xiaomi zijn...",
+    "source": "Tweakers",
+    "published": "2026-09-22T20:59:00Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252484/xiaomi-18-pro-en-pro-max-met-privacydisplay-komen-voor-het-eerst-naar-europa.html"
+  },
+  {
+    "title": "Snapdragon 8 Elite krijgt naast Gen 6-versie ook geavanceerdere Extreme-variant",
+    "summary": "Qualcomm kondigt tijdens een eigen evenement de Snapdragon 8 Elite Gen 6-serie aan. Naast de Gen 5-opvolger Gen 6 komt er ook een Extreme-variant. Deze biedt ondersteuning voor uiteenlopende nieuwe AI-functies. De...",
+    "source": "Tweakers",
+    "published": "2026-09-22T20:00:00Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252458/snapdragon-8-elite-krijgt-naast-gen-6-versie-ook-geavanceerdere-extreme-variant.html"
+  },
+  {
+    "title": "Adobe brengt Premiere-app voor videobewerking uit op Android",
+    "summary": "Adobe heeft zijn app voor videobewerking Premiere uitgebracht voor Android. Premiere verscheen vorig jaar voor iOS. De app werkt op reguliere smartphones en heeft een aangepaste interface voor grotere schermen van...",
+    "source": "Tweakers",
+    "published": "2026-09-22T19:05:00Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252482/adobe-brengt-premiere-app-voor-videobewerking-uit-op-android.html"
+  },
+  {
+    "title": "Regering VS noemt AI vanaf nu 'superintelligentie'",
+    "summary": "De regering van de Verenigde Staten gaat in officiële documenten vanaf nu de term kunstmatige intelligentie vervangen door 'superintelligentie'. Dat heeft president Donald Trump gezegd in zijn speech bij een bijeenkomst...",
+    "source": "Tweakers",
+    "published": "2026-09-22T18:47:00Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252480/regering-vs-noemt-ai-vanaf-nu-superintelligentie.html"
+  },
+  {
+    "title": "Anthropic brengt Claude Opus 5.5 uit, goedkoper dan voorganger",
+    "summary": "Anthropic heeft Claude Opus 5.5 uitgebracht. De nieuwe versie moet vooral goedkoper zijn dan zijn voorganger, Opus 5.0, zo claimt het bedrijf. De prijs van input- en outputtokens is 20 procent lager dan bij Opus 5.0.",
+    "source": "Tweakers",
+    "published": "2026-09-22T18:15:00Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252478/anthropic-brengt-claude-opus-55-uit-goedkoper-dan-voorganger.html"
+  },
+  {
+    "title": "ASUS Googlebook 14 kost bij release 1349 euro, iets duurder dan die van Acer",
+    "summary": "ASUS brengt zijn Googlebook 14 begin december in Nederland en België uit voor 1349 euro. Daarmee is die iets duurder dan de Acer Googlebook 14. Die komt ook begin december uit en kost dan 1299 euro.",
+    "source": "Tweakers",
+    "published": "2026-09-22T17:45:38Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252476/asus-googlebook-14-kost-bij-release-1349-euro-iets-duurder-dan-die-van-acer.html"
+  },
+  {
+    "title": "Pakketjes uit China worden weer duurder, maar het is onbekend hoeveel",
+    "summary": "Pakketjes uit China worden vanaf november weer duurder. Vanaf dat moment brengt de EU definitief kosten in rekening voor de afhandeling door de douane. Hoe hoog die kosten zullen zijn, stelt de Europese Commissie later...",
+    "source": "Tweakers",
+    "published": "2026-09-22T17:25:00Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252468/pakketjes-uit-china-worden-weer-duurder-maar-het-is-onbekend-hoeveel.html"
+  },
+  {
+    "title": "Vivo brengt X500-telefoons begin november in Europa uit",
+    "summary": "Het Chinese smartphonemerk vivo brengt zijn X500-telefoons begin november uit in Europa. Dat heeft de fabrikant bekendgemaakt. Het bedrijf kondigde zijn X500-telefoons maandag aan voor de Chinese markt.",
+    "source": "Tweakers",
+    "published": "2026-09-22T16:32:00Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252472/vivo-brengt-x500-telefoons-begin-november-in-europa-uit.html"
+  },
+  {
+    "title": "NPO waarschuwt voor nepmail die kinderen seksuele 'auditievideo' laat insturen",
+    "summary": "De Nederlandse Publieke Omroep waarschuwt op de eigen sites voor een nepmail die de ronde doet. Daarin lijkt NPO Zapp kinderen op te roepen om voor een jeugdserie een video in te sturen waarin ze praten over seksuele...",
+    "source": "Tweakers",
+    "published": "2026-09-22T15:33:45Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252474/npo-waarschuwt-voor-nepmail-die-kinderen-seksuele-auditievideo-laat-insturen.html"
+  },
+  {
+    "title": "Na 'laatste update' haalt Bungie verwijderde Destiny 2-content terug",
+    "summary": "Gameontwikkelaar Bungie zegt in een videoboodschap dat het 'nog niet klaar is' met Destiny. Daarnaast gaat Bungie verwijderde content uit Destiny 2 terugbrengen. Er is nog geen concrete datum voor de plannen.",
+    "source": "Tweakers",
+    "published": "2026-09-22T14:39:59Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252436/na-laatste-update-haalt-bungie-verwijderde-destiny-2-content-terug.html"
+  },
+  {
+    "title": "EA Sports FC 27 heeft glitch waardoor spelers bal niet passen, maar opwippen",
+    "summary": "Een glitch in EA Sports FC 27 zorgt ervoor dat spelers de bal af en toe hooghouden in plaats van hem te passen. Daardoor krijgt de tegenstander de kans om de bal af te pakken. Het is niet bekend wat de glitch...",
+    "source": "Tweakers",
+    "published": "2026-09-22T14:23:57Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252462/ea-sports-fc-27-heeft-glitch-waardoor-spelers-bal-niet-passen-maar-opwippen.html"
+  },
+  {
+    "title": "Bambu Lab R1-lasersnijder heeft vermogen van 55W en kost 2541 euro - update",
+    "summary": "Bambu Lab brengt de R1-lasersnijder uit. Het apparaat heeft een vermogen van 55W en kan volgens de fabrikant onder meer hout, acryl en leer snijden. Ook kan de R1 glas, steen en gecoate metalen graveren. De lasersnijder...",
+    "source": "Tweakers",
+    "published": "2026-09-22T14:00:00Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252440/bambu-lab-r1-lasersnijder-heeft-vermogen-van-55w-en-kost-2541-euro.html"
+  },
+  {
+    "title": "'Gokbedrijf Polymarket lobbyt in Europa om gokregels te omzeilen'",
+    "summary": "Polymarket dringt er naar verluidt bij Europese en Britse toezichthouders op aan om zijn weddenschappen als financiële producten te behandelen. Het gokbedrijf wil gezien worden als een financiële dienstverlener om onder...",
+    "source": "Tweakers",
+    "published": "2026-09-22T12:27:12Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252456/gokbedrijf-polymarket-lobbyt-in-europa-om-gokregels-te-omzeilen.html"
+  },
+  {
+    "title": "Europese cpu-ontwerper SiPearl levert eerste samples voor Jupiter-supercomputer",
+    "summary": "De Franse processorontwerper SiPearl levert deze week de eerste Rhea1-cpu-samples voor de Jupiter-supercomputer. Dit is een belangrijke stap in de levering van Europese hardware voor het systeem, die vooralsnog...",
+    "source": "Tweakers",
+    "published": "2026-09-22T11:02:36Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/252448/europese-cpu-ontwerper-sipearl-levert-eerste-samples-voor-jupiter-supercomputer.html"
   },
   {
     "title": "Paramount schikt met staten die overname van Warner Bros. wilden tegenhouden",
@@ -144,139 +297,40 @@
     "url": "https://tweakers.net/nieuws/252432/hyves-blijkt-niet-uitgekrabbeld-en-keert-na-dertien-jaar-terug.html"
   },
   {
-    "title": ".Actie - Ontdek de nieuwe Denon Home-speakers en win een Denon Home 200",
-    "summary": "Een goede speaker moet tegenwoordig veel meer kunnen dan een paar jaar geleden. Hij moet makkelijk streamen, mooi genoeg zijn voor de woonkamer, kunnen meegroeien met meerdere ruimtes en liefst ook nog ruimtelijk geluid...",
-    "source": "Tweakers",
-    "published": "2026-09-22T06:00:00Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/plan/4794/ontdek-de-nieuwe-denon-home-speakers-en-win-een-denon-home-200.html"
+    "title": "Reijnders goudeerlijk over Saudi-Arabië: 'Ik een zakkenvuller? Kan ik niet ontkennen'",
+    "summary": "Van AZ naar AC Milan. Van Milan naar Manchester City. En van City, op z'n 28ste - wanneer de gloriejaren moeten beginnen - naar het Saudische Al-Qadsiah. Nee, de zomerse transfer van Tijjani Reijnders zagen niet veel...",
+    "source": "NOS Sport",
+    "published": "2026-09-23T04:18:50Z",
+    "category": "Voetbal",
+    "image": "https://images.cdn.nos.nl/2/3/p/c/b/v/HR8nztdXr4hFtpyxhb46BVaEUePuvpBCvEMfNCr/8x237x3984x2241-1024x576.webp",
+    "url": "https://nos.nl/l/2632115"
   },
   {
-    "title": "Toezichthouder adviseert ziekenhuizen en organisaties camerabrillen te verbieden",
-    "summary": "De Nederlandse Autoriteit Persoonsgegevens (AP) adviseert ziekenhuizen, rechtbanken en andere organisaties om camerabrillen bij hen te verbieden. Het filmen op die locaties is vrijwel altijd in strijd met de Europese...",
+    "title": "XBOX ontslaat nog 268 werknemers, Activision gaat volgende Halo-game ontwikkelen",
+    "summary": "XBOX ontslaat opnieuw 268 werknemers, meldt het bedrijf. Die ontslagen treffen onder meer Halo Studios en managementlagen. Eerder dit jaar schrapte het dochterbedrijf van Microsoft al 1600 banen.",
     "source": "Tweakers",
-    "published": "2026-09-22T04:01:00Z",
-    "category": "Tech",
+    "published": "2026-09-22T15:10:32Z",
+    "category": "Gadgets",
     "image": "",
-    "url": "https://tweakers.net/nieuws/252420/toezichthouder-adviseert-ziekenhuizen-en-organisaties-camerabrillen-te-verbieden.html"
+    "url": "https://tweakers.net/nieuws/252466/xbox-ontslaat-nog-268-werknemers-activision-gaat-volgende-halo-game-ontwikkelen.html"
   },
   {
-    "title": "Achtergrond - Big tech verdient miljarden aan Europeanen, maar de digitaks blijft uit",
-    "summary": "Eens in de zoveel tijd komt een 'digitaks' op Big Tech-bedrijven ter sprake. Waar gaat het dan om en hoe staat het met deze heffingen?",
+    "title": "Google werkt aan functie om telefoon te ontgrendelen met Google-account",
+    "summary": "Google introduceert in de toekomst mogelijk een functie waarmee gebruikers hun Android-smartphone kunnen ontgrendelen met een Google-account, meldt Android Authority. Het medium vond verwijzingen naar die functie in de...",
     "source": "Tweakers",
-    "published": "2026-09-22T04:00:00Z",
-    "category": "Tech",
+    "published": "2026-09-22T11:51:23Z",
+    "category": "Gadgets",
     "image": "",
-    "url": "https://tweakers.net/reviews/15326/big-tech-verdient-miljarden-aan-europeanen-maar-de-digitaks-blijft-uit.html"
+    "url": "https://tweakers.net/nieuws/252454/google-werkt-aan-functie-om-telefoon-te-ontgrendelen-met-google-account.html"
   },
   {
-    "title": "DeepSeek: trainen van AI-modellen op Chinese chips 'moet gaan werken'",
-    "summary": "DeepSeek krijgt van Huawei vanaf het einde van het jaar meer chips om zijn AI-modellen te trainen. Het Chinese AI-bedrijf leunt tot nu toe veel op chips van Nvidia, maar het trainen van AI-modellen op Chinese hardware...",
-    "source": "Tweakers",
-    "published": "2026-09-21T16:35:00Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252424/deepseek-trainen-van-ai-modellen-op-chinese-chips-moet-gaan-werken.html"
-  },
-  {
-    "title": "Nederlanders met een laag inkomen kunnen 6000 euro krijgen bij koop EV",
-    "summary": "Nederlanders met een laag inkomen kunnen maximaal 6000 euro krijgen als zij een benzineauto verkopen en een elektrische auto aanschaffen. Deze subsidieregeling komt eraan, maar het is nog onbekend wanneer.",
-    "source": "Tweakers",
-    "published": "2026-09-21T15:01:00Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252418/nederlanders-met-een-laag-inkomen-kunnen-6000-euro-krijgen-bij-koop-ev.html"
-  },
-  {
-    "title": "Google-laptops met Android komen uit, in België en Nederland vanaf december",
-    "summary": "Laptopfabrikanten hebben laptops aangekondigd met Googlebook OS, een desktopversie van Android. De verkoop begint over twee weken in diverse Europese landen. Nederland en België volgen in december.",
-    "source": "Tweakers",
-    "published": "2026-09-21T14:47:43Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252416/google-laptops-met-android-komen-uit-in-belgie-en-nederland-vanaf-december.html"
-  },
-  {
-    "title": "Europese Commissie wil energie- en waterlabels voor datacenters invoeren",
-    "summary": "De Europese Commissie presenteert een voorstel om datacenters te beoordelen op hun energie- en watergebruik. Dit moet efficiëntie en duurzaamheid bevorderen, terwijl de Europese Unie haar datacentercapaciteit wil...",
-    "source": "Tweakers",
-    "published": "2026-09-21T14:43:24Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252412/europese-commissie-wil-energie-en-waterlabels-voor-datacenters-invoeren.html"
-  },
-  {
-    "title": "Leef.nl meldt klanten dat onbevoegden toegang kregen tot persoonsgegevens",
-    "summary": "Leef.nl e-mailt klanten dat hun gegevens zijn uitgelekt. Onbevoegden hebben op 4 september toegang gekregen tot een database met klantgegevens 'op een externe server'. De Nederlandse webwinkel levert gezondheids- en...",
-    "source": "Tweakers",
-    "published": "2026-09-21T13:29:49Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252414/leef-punt-nl-meldt-klanten-dat-onbevoegden-toegang-kregen-tot-persoonsgegevens.html"
-  },
-  {
-    "title": "Twee jaar AVG-schending met locatiedata levert Google 403 miljoen euro boete op",
-    "summary": "Google krijgt een boete van 403 miljoen euro van de Ierse privacytoezichthouder Data Protection Commission (DPC) voor schending van de databeschermingswet AVG met zijn vergaring van locatiedata. De boete is voor...",
-    "source": "Tweakers",
-    "published": "2026-09-21T12:50:59Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252402/twee-jaar-avg-schending-met-locatiedata-levert-google-403-miljoen-euro-boete-op.html"
-  },
-  {
-    "title": "Retroid brengt Lite Plus-versie van DS-achtige handheld Pocket Duo uit",
-    "summary": "Retroid Pocket brengt naast de onlangs aangekondigde Duo en Duo Lite nog een derde versie van zijn DS-achtige handheld uit. Het gaat om de Duo Lite Plus, een iets krachtigere versie van de Duo Lite. Deze versie is vanaf...",
-    "source": "Tweakers",
-    "published": "2026-09-21T12:35:51Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252404/retroid-brengt-lite-plus-versie-van-ds-achtige-handheld-pocket-duo-uit.html"
-  },
-  {
-    "title": "Nvidia-leaker: 'GeForce RTX 60-serie komt pas in 2028'",
-    "summary": "De GR20x-chipfamilie verschijnt pas in 2028. Dat stelt de doorgaans goed ingevoerde Nvidia-leaker Kopite7kimi. De chipfamilie zou de basis vormen voor de Rubin-architectuur en de komende GeForce RTX 60-serie.",
-    "source": "Tweakers",
-    "published": "2026-09-21T10:36:53Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252398/nvidia-leaker-geforce-rtx-60-serie-komt-pas-in-2028.html"
-  },
-  {
-    "title": "'Chinese toezichthouders remmen beursgangen van robotmakers af'",
-    "summary": "Chinese toezichthouders vertragen beursgangen van bedrijven die humanoïde robots maken. Dat stellen anonieme bronnen tegenover Reuters. De toezichthouders onderzoeken of de sterk gestegen waarderingen en de omzet uit...",
-    "source": "Tweakers",
-    "published": "2026-09-21T08:52:21Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252392/chinese-toezichthouders-remmen-beursgangen-van-robotmakers-af.html"
-  },
-  {
-    "title": "Acer-ceo: pc-prijzen pieken halverwege 2027, maar dalen daarna",
-    "summary": "De prijzen van pc's blijven aan het begin van 2027 stijgen en bereiken halverwege dat jaar een piek. In de tweede helft van 2027 dalen ze mogelijk weer wat door betere beschikbaarheid van componenten. Dat verwacht...",
-    "source": "Tweakers",
-    "published": "2026-09-21T07:50:52Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252390/acer-ceo-pc-prijzen-pieken-halverwege-2027-maar-dalen-daarna.html"
-  },
-  {
-    "title": "Japanse rpg Lufia maakt in 2027 na ruim dertig jaar zijn pc-debuut",
-    "summary": "Lufia, een Japanse rpg uit de jaren negentig, komt voor het eerst naar pc. De eerste game en de opvolger Lufia 2: Rise of the Sinistrals verschijnen in 2027 op Steam.",
-    "source": "Tweakers",
-    "published": "2026-09-21T06:53:14Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252388/japanse-rpg-lufia-maakt-in-2027-na-ruim-dertig-jaar-zijn-pc-debuut.html"
-  },
-  {
-    "title": "Achtergrond - Van stokoude code naar pc-port: zo moderniseren hobbyisten retrogames",
-    "summary": "Retrogaming is in opmars. Dat is onder meer te zien aan het groeiende aantal ports van klassieke games. Hoe zetten hobbyisten die spellen over naar moderne hardware?",
-    "source": "Tweakers",
-    "published": "2026-09-21T04:00:00Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/reviews/15316/van-stokoude-code-naar-pc-port-zo-moderniseren-hobbyisten-retrogames.html"
+    "title": "Jurriën Timber slaat in overleg met Arsenal ook tweede Oranje-training onder Xavi over",
+    "summary": "Jurriën Timber heeft ook de tweede training van het Nederlands elftal onder de nieuwe bondscoach Xavi Hernández overgeslagen. De 25-jarige verdediger is herstellende van een liesblessure en volgt, in overleg met zijn...",
+    "source": "NOS Sport",
+    "published": "2026-09-22T10:31:38Z",
+    "category": "Voetbal",
+    "image": "https://images.cdn.nos.nl/6/2/R/h/c/C/X2v6LHX8kHc7FwcRgaR791y9KUeN8JxJGEstHJW/3x192x3536x1989-1024x576.webp",
+    "url": "https://nos.nl/l/2632027"
   },
   {
     "title": "Gerucht: XBOX gaat nog een ontslagronde houden en studio's samenvoegen",
@@ -288,40 +342,31 @@
     "url": "https://tweakers.net/nieuws/252446/gerucht-xbox-gaat-nog-een-ontslagronde-houden-en-studios-samenvoegen.html"
   },
   {
-    "title": "Kojima hoort via Zoom-call dat Sony Physint laat vallen",
-    "summary": "Gamemaker Hideo Kojima zegt in een interview met IGN dat hij via een Zoom-call te horen kreeg dat PlayStation Physint niet langer zal financieren. Daarnaast zegt Kojima dat hij de reden voor de breuk met Sony nog steeds...",
-    "source": "Tweakers",
-    "published": "2026-09-21T14:39:06Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252408/kojima-hoort-via-zoom-call-dat-sony-physint-laat-vallen.html"
-  },
-  {
-    "title": "Nothing maakt submerk CMF tot zelfstandig Indiaas bedrijf",
-    "summary": "Nothing-submerk CMF wordt een zelfstandig Indiaas bedrijf. Dat maakt Nothing-ceo Carl Pei bekend in een brief op X. Nothing blijft wel aandeelhouder en partner van CMF.",
-    "source": "Tweakers",
-    "published": "2026-09-21T13:06:57Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/252410/nothing-maakt-submerk-cmf-tot-zelfstandig-indiaas-bedrijf.html"
-  },
-  {
-    "title": "Van Marspanorama tot maankrater: een blik op het ruimtenieuws",
-    "summary": "NASA’s Curiosity rover heeft zijn 5000e Sol op Mars gevierd met een bijzonder panorama. Tegelijkertijd is er nieuws en beeld vanuit het ISS, Tiangong, Artemis III en diverse satellieten. Het is 21 september, en in de...",
+    "title": "Oorspronkelijke Australiërs vermoedelijk nog harder getroffen door Europese kolonisatie dan gedacht",
+    "summary": "De Aboriginals, de oorspronkelijke bewoners van Australië, waren vroeger wellicht met een stuk meer dan gedacht. Dat blijkt uit een recente studie waarin het bevolkingsaantal opnieuw is berekend. Ook bleek dat het...",
     "source": "Scientias",
-    "published": "2026-09-21T09:00:04Z",
+    "published": "2026-09-22T15:00:18Z",
     "category": "Wetenschap",
-    "image": "https://scientias.nl/wp-content/uploads/2026/09/PIA26700_figA-scaled.png",
-    "url": "https://scientias.nl/ruimtenieuws-21-sept-26/"
+    "image": "https://scientias.nl/wp-content/uploads/2026/09/28840846.jpeg",
+    "url": "https://scientias.nl/oorspronkelijke-australiers-vermoedelijk-nog-harder-getroffen-door-europese-kolonisatie/"
   },
   {
-    "title": "Nieuw contract Kane bij Bayern laat niet lang meer op zich wachten",
-    "summary": "De zomerse transferwindow is in veel landen ten einde. Toch zijn er her en der nog markten open en ook de geruchtenstroom richting de winter is alweer op gang gekomen. Er zijn daarnaast ook nog genoeg transfervrije...",
-    "source": "Voetbal International",
-    "published": "2026-09-22T09:55:00Z",
+    "title": "'Geblesseerde De Jong zet belangrijke stap in zijn herstel bij FC Barcelona'",
+    "summary": "Frenkie de Jong heeft een belangrijke stap gezet in zijn herstel bij FC Barcelona. Dat meldt het Spaanse Sport . De Nederlander ligt al langere tijd uit de roulatie, maar er is nu positief nieuws naar buiten gekomen...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-09-23T08:51:14Z",
     "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/03/1a44c5cda8c92ce8eb8c4f91efe667c65050a968.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/volg-in-dit-liveblog-alle-transfers-en-geruchten-in-het-buitenland"
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/08/20/4f37e9a2ada88c8a056e55e11e6ee5b018226549.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2138860/frenkie-de-jong-zet-belangrijke-stap-in-herstel-bij-fc-barcelona.html"
+  },
+  {
+    "title": "'YouTube-grootheid reist voor Yamal naar Spanje, maar opnames plots afgeblazen'",
+    "summary": "Een bijzonder verhaal rond Lamine Yamal. De FC Barcelona-speler zou deelnemen aan een opname met MrBeast, maar de geplande samenwerking ging uiteindelijk op het laatste moment niet door. De Amerikaanse contentmaker was...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-09-23T07:54:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/09/08/ffa0d6cf26ef36bd8c42cb23997496b134d49486.png?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2137312/opnames-lamine-yamal-met-youtube-ster-mrbeast-op-laatste-moment-afgeblazen.html"
   },
   {
     "title": "Twintig zwarte neushoorns krijgen een nieuwe kans in Botswana. Deze fotograaf keek mee",
@@ -405,6 +450,24 @@
     "url": "https://archeologieonline.nl/nieuws/zeldzaam-houten-graf-ontdekt-in-centraal-rusland-noorse-elite-reikte-verder-dan-gedacht"
   },
   {
+    "title": "Werkschoenen of fiets: meer praktijkscholen krijgen geld om leerlingen te helpen",
+    "summary": "Nog eens 115 praktijkscholen krijgen dit jaar een subsidie om leerlingen die weinig geld hebben te helpen. Vorig schooljaar liep een pilot met 25 scholen en dat was een succes. Met het geld is ruimte om leerlingen te...",
+    "source": "NOS Algemeen",
+    "published": "2026-09-23T08:05:41Z",
+    "category": "Wetenschap",
+    "image": "https://images.cdn.nos.nl/7/2/V/X/o/t/Jo1mdqxfg1RzsmZbAMd8xPvmz3N6hy5fBpzCDnM/4x2x992x558-992x558.webp",
+    "url": "https://nos.nl/l/2632137"
+  },
+  {
+    "title": "Vóór Caesar: Hier werd het geld van de Galliërs in massa geproduceerd",
+    "summary": "Een nieuwe vondst op de Gallische heuvelrug Corent in Frankrijk laat zien dat de muntproductie vóór de Romeinse verovering veel omvangrijker was dan gedacht.",
+    "source": "Historianet",
+    "published": "2026-09-23T05:00:39Z",
+    "category": "Archeologie",
+    "image": "",
+    "url": "https://historianet.nl/cultuur/archeologie/voor-caesar-hier-werd-het-geld-van-de-galliers-in-massa-geproduceerd"
+  },
+  {
     "title": "Een Arabische sekte bouwde zijn vesting rechtstreeks in een steile Spaanse rotswand – met een truc die nog steeds wordt gebruikt",
     "summary": "Om haar heerschappij te versterken, liet een moslimdynastie een indrukwekkende vesting bouwen, rechtstreeks in een schuine rotswand – nu hebben archeologen deze indrukwekkende technische prestatie blootgelegd.",
     "source": "Historianet",
@@ -414,31 +477,40 @@
     "url": "https://historianet.nl/cultuur/archeologie/berberse-dynastie-bouwde-vesting-rechtstreeks-in-steile-spaanse-rotswand"
   },
   {
-    "title": "Canadese provincie klaagt OpenAI aan om rol bij dodelijke schietpartij",
-    "summary": "De Canadese provincie Brits-Columbia spant een rechtszaak aan tegen het Amerikaanse bedrijf achter ChatGPT, het technologiebedrijf OpenAI. De provincie stelt dat het bedrijf de dodelijke schietpartij in Tumbler Ridge...",
-    "source": "NOS Algemeen",
-    "published": "2026-09-22T03:35:02Z",
-    "category": "Tech",
-    "image": "https://images.cdn.nos.nl/4/G/J/7/X/u/h3VH5uV4GUnVV8rNhb1xZJbk2KYoetffUds66cw/0x353x4000x2250-1024x576.webp",
-    "url": "https://nos.nl/l/2631983"
+    "title": "CWA 139 crossword, and answers to crossword #138",
+    "summary": "Across 8 Greek island, location of the Loizos Cave archaeological site (6)9 ___ limestone, sedimentary rock made of small grains of calcium carbonate (7)10 Kathleen ___, British archaeologist, author of Ancient Sparta",
+    "source": "The Past",
+    "published": "2026-09-23T09:00:50Z",
+    "category": "Archeologie",
+    "image": "",
+    "url": "https://the-past.com/shorts/competitions/cwa-139-crossword-and-answers-to-crossword-138/"
   },
   {
-    "title": "Van den Brom geroemd: 'De trainer levert geweldig werk met ons'",
-    "summary": "Met zijn winnende goal tegen PSV was Daouda Weidmann zondag de man van het moment bij FC Twente, maar de matchwinner vergat na afloop niet om de complimenten die hij ontving te delen. Bijvoorbeeld met John van den Brom....",
+    "title": "Noodlossing? Raphinha als spits is een droomoplossing",
+    "summary": "Raphinha (29) ontpopte zich de afgelopen weken tot makkelijk scorende spits van Barcelona. Hansi Flick vond daarmee een oplossing voor een probleem dat er uiteindelijk niet blijkt te zijn.",
     "source": "Voetbal International",
-    "published": "2026-09-21T21:40:00Z",
+    "published": "2026-09-23T09:00:00Z",
     "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/21/16faa39bde5a33afdb5dc4bcbc28105a3eb60785.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/van-den-brom-geroemd-de-trainer-levert-geweldig-werk-met-ons"
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/21/bf9aa93e158df15b4cff0de276a8575695413152.jpg?width=1200",
+    "url": "https://www.vi.nl/pro/noodlossing-raphinha-als-spits-is-een-droomoplossing"
   },
   {
-    "title": "Een hattrick en tóch verliezen: Le Tissier heet Brobbey welkom in select clubje",
-    "summary": "Brian Brobbey kreeg van de BBC een 10 voor zijn optreden tegen Manchester City , en verzamelde nog wel meer lof, maar zijn hattrick in het Etihad Stadium leverde Sunderland geen punten op: 5-3. Daarmee meldde Brobbey...",
+    "title": "Ter Stegen bespreekt vreugde over terugkeer onder de Duitse lat",
+    "summary": "Marc ter Stegen is weer de eerste keeper van Duitsland. De keeper van Ajax heeft in gesprek met het Duitse Sky Sport verteld hoe vrolijk hem dat maakt.",
     "source": "Voetbal International",
-    "published": "2026-09-21T20:00:00Z",
+    "published": "2026-09-23T07:37:06Z",
     "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/21/7619ee02b22c5aba3c114767059f8d2d713e7150.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/een-hattrick-en-toch-verliezen-le-tissier-heet-brobbey-welkom-in-select-clubje"
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/23/13f916aec4fd8eb5145c6956293eed70472bc928.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/ter-stegen-bespreekt-vreugde-over-terugkeer-onder-de-duitse-lat"
+  },
+  {
+    "title": "Castles in the cliffs: Archaeology and myth in the Pyrenees.",
+    "summary": "In the 12th century, the counts of Foix began creating a unique network of fortifications using caves and other natural features in their part of the Pyrenees. Colin Duncan Taylor explores their origins and reveals how,...",
+    "source": "The Past",
+    "published": "2026-09-22T18:00:44Z",
+    "category": "Archeologie",
+    "image": "",
+    "url": "https://the-past.com/feature/castles-in-the-cliffs-archaeology-and-myth-in-the-pyrenees/"
   },
   {
     "title": "Byzantine city discovered in Egyptian oasis",
@@ -522,24 +594,6 @@
     "url": "https://the-past.com/feature/staffas-past-signatures-uncovering-the-hidden-human-history-of-a-celebrated-scottish-island/"
   },
   {
-    "title": "Excavating the CA archive: Monasteries of the high medieval period",
-    "summary": "One of the joys of the Current Archaeology archive is its ‘tales of the unexpected’. After last month’s column on early medieval monasteries, this and next month’s columns will be companion pieces exploring .",
-    "source": "The Past",
-    "published": "2026-09-03T04:00:00Z",
-    "category": "Archeologie",
-    "image": "",
-    "url": "https://the-past.com/comment/excavating-the-ca-archive-monasteries-of-the-high-medieval-period/"
-  },
-  {
-    "title": "Science Notes: Sensing the future of ceramic conservation",
-    "summary": "We often write in ‘Science Notes’ about how technology is revolutionising many aspects of archaeology, but this column rarely touches on conservation. This is one of the areas, however, where technological advances",
-    "source": "The Past",
-    "published": "2026-09-02T15:03:52Z",
-    "category": "Archeologie",
-    "image": "",
-    "url": "https://the-past.com/news/science-notes-sensing-the-future-of-ceramic-conservation/"
-  },
-  {
     "title": "Zonder eredivisieclubs, maar met 29 Nederlanders gaat Champions League van start",
     "summary": "De bal rolt vanaf dinsdagavond weer in de Champions League voor vrouwen, het meest prestigieuze clubtoernooi van Europa. Achttien teams, voor de tweede keer in de nieuwe opzet. Met dit jaar geen clubs uit de eredivisie,...",
     "source": "NOS Sport",
@@ -547,6 +601,24 @@
     "category": "Voetbal",
     "image": "https://images.cdn.nos.nl/3/9/F/5/M/2/PVfzDhdzVej1pyeqrzDTTYAbq33KnrcncNdPg7s/2x1x2928x1647-1024x576.webp",
     "url": "https://nos.nl/l/2631985"
+  },
+  {
+    "title": "Beluister hier alle podcasts van National Geographic",
+    "summary": "Luister naar alle podcasts van National Geographic. Ontdek series en afleveringen over natuur, wetenschap, geschiedenis, archeologie en reizen.",
+    "source": "National Geographic Nederland",
+    "published": "2026-09-22T14:58:00Z",
+    "category": "Wetenschap",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/150f163c-2e06-41c7-829c-9477b416a601.jpg",
+    "url": "https://www.nationalgeographic.nl/cultuur-samenleving/a71818269/podcasts"
+  },
+  {
+    "title": "Waarom de herfstequinox niet ieder jaar op dezelfde dag valt",
+    "summary": "Op 23 september begint de astronomische herfst. De aarde staat dan precies anders ten opzichte van de zon, maar dag en nacht zijn niet exact even lang.",
+    "source": "National Geographic Nederland",
+    "published": "2026-09-22T13:41:00Z",
+    "category": "Wetenschap",
+    "image": "",
+    "url": "https://www.nationalgeographic.nl/natuur-leefomgeving/a73830800/herfstequinox-2026-uitleg"
   },
   {
     "title": "Start de herfst op 1 of 23 september? De ene datum volgt de kalender, de andere de zon",
@@ -603,15 +675,6 @@
     "url": "https://www.nationalgeographic.nl/natuur-leefomgeving/a73735940/regenachtigste-landen-ter-wereld"
   },
   {
-    "title": "Beluister hier alle podcasts van National Geographic",
-    "summary": "Luister naar alle podcasts van National Geographic. Ontdek series en afleveringen over natuur, wetenschap, geschiedenis, archeologie en reizen.",
-    "source": "National Geographic Nederland",
-    "published": "2026-09-15T09:26:00Z",
-    "category": "Wetenschap",
-    "image": "https://hips.hearstapps.com/hmg-prod/images/150f163c-2e06-41c7-829c-9477b416a601.jpg",
-    "url": "https://www.nationalgeographic.nl/cultuur-samenleving/a71818269/podcasts"
-  },
-  {
     "title": "Deze boom in de Sahara gold als de eenzaamste ter wereld, maar werd aangereden door een truck",
     "summary": "Midden in de Ténéréwoestijn stond honderden jaren een eenzame acacia. Het was de enige overgebleven boom in een omtrek van vierhonderd kilometer en vormde een belangrijk herkenningspunt, totdat een vrachtwagenchauffeur...",
     "source": "National Geographic Nederland",
@@ -648,58 +711,58 @@
     "url": "https://www.nationalgeographic.nl/natuur-leefomgeving/a73637935/waarom-nederlanders-alpen-wandelpaden-onderhouden"
   },
   {
-    "title": "Hoe het laatste oerbos van Nederland in 1871 werd gekapt voor landbouwgrond en sigarenkistjes",
-    "summary": "De laatste bomen van het enige overgebleven oerbos van Nederland gingen in 1871 tegen de vlakte om plaats te maken voor een haverveld. Hoe kon het zover komen?",
-    "source": "National Geographic Nederland",
-    "published": "2026-09-09T14:00:00Z",
-    "category": "Wetenschap",
-    "image": "https://hips.hearstapps.com/hmg-prod/images/8d383f23-2460-4c76-a640-fc817b84958d.jpg",
-    "url": "https://www.nationalgeographic.nl/natuur-leefomgeving/a73640169/laatste-oerbos-nederland-beekbergerwoud"
-  },
-  {
-    "title": "Deze apen gaan op jacht naar vlees als fruit schaars wordt. Wat zegt dat over het dieet van onze voorouders?",
-    "summary": "Baardkapucijnapen eten vaker hagedissen, slangen en knaagdieren wanneer er minder fruit beschikbaar is. Dat kan aanwijzingen geven over de evolutie van het menselijke dieet.",
-    "source": "National Geographic Nederland",
-    "published": "2026-09-09T12:00:00Z",
-    "category": "Wetenschap",
-    "image": "https://hips.hearstapps.com/hmg-prod/images/044c2b65-aaca-4c0b-9bf1-a3985f7ae49f.jpeg",
-    "url": "https://www.nationalgeographic.nl/dieren/a73641253/apen-op-jacht-naar-vlees"
-  },
-  {
-    "title": "OM eist 7 jaar cel tegen Jalal O. voor dodelijke ontploffing Schammenkamp",
-    "summary": "Het Openbaar Ministerie heeft zeven jaar cel geëist tegen hoofdverdachte Jalal O. voor de verwoestende explosie in januari 2024 in een garagebox aan de Schammenkamp in Rotterdam. Daarbij kwamen drie mensen om het leven...",
+    "title": "Marokko vandaag naar de stembus, maar jongeren blijven thuis: 'Gen Z compleet genegeerd'",
+    "summary": "De straten van Marokkaanse steden en dorpen zijn bezaaid met folders van kandidaten van politieke partijen. Een duidelijk teken dat het weer tijd is voor de Marokkanen om 395 nieuwe leden voor het Huis van...",
     "source": "NOS Algemeen",
-    "published": "2026-09-22T09:45:21Z",
+    "published": "2026-09-23T06:17:08Z",
     "category": "Wetenschap",
-    "image": "https://images.cdn.nos.nl/4/H/u/R/Y/S/P5PuNWEXPyRzEk1qQFNU55fJsH4qaW6bEuygZoD/0x418x4000x2250-1024x576.webp",
-    "url": "https://nos.nl/l/2632020"
+    "image": "https://images.cdn.nos.nl/6/E/o/Y/w/B/chXoeV9jxAL1BaPvFmPCyZ1szGQMfGx8MA3btUr/0x152x4000x2250-1024x576.webp",
+    "url": "https://nos.nl/l/2632123"
   },
   {
-    "title": "'Misschien is dit het teken dat FC Twente mee kan doen om het kampioenschap'",
-    "summary": "Youri Mulder sluit niet uit dat FC Twente mee gaat doen om de landstitel. De analist ziet dat de Tukkers goed bezig zijn in de Eredivisie en genoot zondag van de 3-2 overwinning op PSV.",
+    "title": "Opta toont xG-cijfers uit Eredivisie: Feyenoord koploper, opvallende hekkensluiter",
+    "summary": "De eerste zeven speelrondes van de Eredivisie zitten erop en dat is voor statistiekenbureau Opta genoeg reden om de xG-cijfers (verwachte doelpunten) van alle clubs erbij te pakken. Daaruit komt Feyenoord naar boven als...",
     "source": "VoetbalPrimeur",
-    "published": "2026-09-22T10:09:24Z",
+    "published": "2026-09-23T07:37:00Z",
     "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/07/06/df228eb09ed3779792ab16355178fa16a9ab7d14.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2138518/mulder-ziet-titelkansen-fc-twente-na-overwinning-op-psv.html"
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/08/09/5ec0bea434085ca2060b1ffcbe4e1dc7b945cb8c.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2138827/opta-publiceert-xg-ranglijst-van-eredivisie-na-zeven-speelrondes.html"
   },
   {
-    "title": "Willem II moet rijpen in recordtempo: 'We zitten in de shit'",
-    "summary": "Met een selectie in aanbouw begon Willem II aan de terugkeer in de Eredivisie. Verklaringen genoeg voor de slechte seizoenstart, maar na slechts twee punten in zeven wedstrijden begint de druk toe te nemen bij de...",
+    "title": "Op deze datum worden Eredivisie en topcompetities weer hervat",
+    "summary": "Na een extra uitgebreide interlandperiode kijken veel fans reikhalzend uit naar de hervatting van het clubvoetbal. In dit artikel lees je wanneer de Eredivisie weer van start gaat.",
     "source": "Voetbal International",
-    "published": "2026-09-22T08:00:00Z",
+    "published": "2026-09-23T07:44:00Z",
     "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/21/83066bfbaefa351882b830fc86386b3696056361.jpg?width=1200",
-    "url": "https://www.vi.nl/pro/willem-ii-moet-rijpen-in-recordtempo-we-zitten-in-de-shit"
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/23/7c64999b0ba76db34a639498f4cda77dcf189165.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/wanneer-de-eredivisie-weer-begint"
   },
   {
-    "title": "Hoe Microsoft reclames in wil zetten tijdens het spelen van je games",
-    "summary": "Waar abonnementen de laatste jaren als paddenstoelen uit de grond zijn geschoten, maken reclames nu ook een keiharde comeback. Waar Disney+ eerder dit weekend al liet zien dat het betalen van een abonnement geen reden...",
+    "title": "PSV-belofte (18) wil doorbraak beleven: 'Hiervoor ben ik naar Nederland gekomen'",
+    "summary": "Philip Holseter-Karlsen (18) wil dit seizoen gaan doorbreken bij PSV. Dat vertelt het Noorse talent in een interview met het Eindhovens Dagblad . Zijn contract loopt af en dus moet de jonge middenvelder een langer...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-09-23T06:59:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/09/23/397f06761514abf57b2f81ed96d7291e4a86eeca.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2138808/philip-holseter-karlsen-18-wil-doorbreken-bij-psv.html"
+  },
+  {
+    "title": "OpenAI en Microsoft wisten al lang dat AI jatte en veel zou verpesten – maar gingen lekker door",
+    "summary": "OpenAI en Microsoft wisten al in de begindagen van de AI-doorbraak dat ze alles bij elkaar jatten, dat de gevolgen voor het open web desastreus zouden zijn – maar gingen gewoon lekker door.",
     "source": "Bright",
-    "published": "2026-09-21T13:59:23Z",
+    "published": "2026-09-23T06:37:33Z",
     "category": "Tech",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/21/966920a49a3f2f57e12a4da77c11120f2a78e24c.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2138021/hoe-microsoft-reclames-in-wil-zetten-tijdens-het-spelen-van-je-games.html"
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/08/25/b2417381d749586edb88e701dc937fae015d4661.jpg?width=1200",
+    "url": "https://www.bright.nl/plusplus/2138664/openai-en-microsoft-weten-al-lang-dat-ai-jat-en-veel-verpest-maar-gaan-door.html"
+  },
+  {
+    "title": "Deze problemen kwam Apple tegen tijdens productie iPhone Duo",
+    "summary": "John Ternus is bezig aan zijn eerste maand als grote baas bij Apple, hoog tijd dus voor een fatsoenlijk welkomstinterview, dachten ze bij Canal+. In de talkshow Clique wordt de CEO aan de tand gevoeld over de iPhone Duo...",
+    "source": "Bright",
+    "published": "2026-09-22T13:06:00Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/22/66adf0de0f31734c9a4002c51b87cf2d426eea47.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2138589/deze-problemen-kwam-apple-tegen-tijdens-productie-iphone-duo.html"
   },
   {
     "title": "Xavi eist van grotendeels hetzelfde Oranje wél ander voetbal en meer passie",
@@ -711,103 +774,94 @@
     "url": "https://nos.nl/l/2631984"
   },
   {
-    "title": "Advocaat met frisse energie terug bij Curaçao en looft Xavi als bondscoach Oranje",
-    "summary": "Dick Advocaat gaat met frisse energie een nieuwe cyclus in met Curaçao. Na het WK-avontuur van afgelopen zomer is plaatsing voor de Gold Cup in 2027 het volgende doel. \"Meer landen houden nu rekening met ons\", vertelde...",
-    "source": "NOS Sport",
-    "published": "2026-09-21T22:13:10Z",
-    "category": "Voetbal",
-    "image": "https://images.cdn.nos.nl/8/2/4/b/3/v/DTmWW5UuaZvkvMsfkhhwwen1FVAtfPsNcLFbYps/341x177x3200x1800-1024x576.webp",
-    "url": "https://nos.nl/l/2631978"
-  },
-  {
-    "title": "MacBook Neo is weer zo goedkoop als eerst - hier kost hij 699 euro",
-    "summary": "Apple zette de laptop-markt op zijn kop door de MacBook Neo te introduceren. Voor 699 euro kreeg je een vlotte MacOS-laptop met een volledig aluminium behuizing en goede batterijduur. Een uitstekende deal, tot Apple de...",
-    "source": "Bright",
-    "published": "2026-09-21T16:55:43Z",
-    "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/21/f53977412d351c4e114ca1ee548479d32e72c682.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2138306/macbook-neo-is-weer-zo-goedkoop-als-eerst-hier-kost-hij-699-euro.html"
-  },
-  {
-    "title": "iPhone 18 Pro is moeilijk te repareren - hier zit het euvel",
-    "summary": "Apple heeft een eigenaardige reputatie voor de repareerbaarheid van zijn iPhones. Op allerlei aspecten werden ze moeilijker te repareren en later weer makkelijker. Nu is de nieuwe iPhone 18 Pro door de specialisten van...",
-    "source": "Bright",
-    "published": "2026-09-21T16:05:02Z",
-    "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/21/0c1996923ef86f6e7a94a1262d0a008093f61b15.jpg?width=1200",
-    "url": "https://www.bright.nl/plusplus/2138272/iphone-18-pro-is-moeilijk-te-repareren-deze-telefoons-scoren-beter.html"
-  },
-  {
-    "title": "Scherm van iPhone 20 gelekt: weer een beetje groter?",
-    "summary": "Met Apples 20e verjaardag kan het weleens gebeuren dat de schermen van de iPhone groter gaan worden, volgens een nieuw lek dat op Weibo gedeeld wordt. In een recent artikel van Erwin speculeert hij ook al over hoe de...",
-    "source": "Bright",
-    "published": "2026-09-21T15:15:41Z",
-    "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/08/18/c867a7b18c94aacef045d3407137612557e4c6d0.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2138266/scherm-van-iphone-20-gelekt-weer-een-beetje-groter.html"
-  },
-  {
-    "title": "Thuislaten van Memphis was moeilijkste beslissing voor Xavi, deur blijft open voor spits",
-    "summary": "De interlandcarrière van Memphis Depay is nog niet voorbij. De topscorer aller tijden van Oranje werd niet opgeroepen door Xavi Hernández, maar de nieuwe bondscoach houdt de deur wel open voor de spits. \"De lastigste...",
-    "source": "NOS Sport",
-    "published": "2026-09-21T09:38:40Z",
-    "category": "Voetbal",
-    "image": "https://images.cdn.nos.nl/5/9/M/q/G/4/f7sWra9WA7kKsCAF9zXJ8qsYhb2SRJMQ95AbKsF/508x637x3488x1962-1024x576.webp",
-    "url": "https://nos.nl/l/2631888"
-  },
-  {
-    "title": "iPhone Duo ondersteunt de Apple Pencil, maar dat was niet het oorspronkelijke idee",
-    "summary": "Tijdens de aankondiging van de iPhone Duo, Apple’s eerste opvouwbare smartphone ooit, werd duidelijk dat de smartphone later dit jaar de bestaande Apple Pencil gaat ondersteunen. Handig, maar Apple had eigenlijk een...",
-    "source": "Bright",
-    "published": "2026-09-21T08:01:21Z",
-    "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/21/e1d40723fa30c7f9ce5e99c454376db4528d0130.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2138030/iphone-duo-ondersteunt-de-apple-pencil-maar-dat-was-niet-het-oorspronkelijke-idee.html"
-  },
-  {
-    "title": "Voormalig Feyenoord-aanvaller: 'Van Bronckhorst was een vaderfiguur voor mij'",
-    "summary": "Eljero Elia is lovend over Giovanni van Bronckhorst. De oud-Feyenoorder werkte in het verleden samen met de trainer en ziet dezelfde patronen terug bij de Rotterdammers, nu Van Bronckhorst is teruggekeerd.",
-    "source": "VoetbalPrimeur",
-    "published": "2026-09-22T08:08:51Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/09/05/3d1fb119277f7ea48a9dbf4ce11e259bbb4ed6a9.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2138452/eljero-elia-van-bronckhorst-was-vaderfiguur-voor-me-bij-feyenoord.html"
-  },
-  {
-    "title": "'Dat het niet lukte bij Feyenoord, vind ik wel vervelend voor Robin van Persie'",
-    "summary": "Jeremiah St. Juste vindt het nog altijd jammer dat Robin van Persie moest vertrekken bij Feyenoord. De verdediger ziet dat de komst van Giovanni van Bronckhorst voor meer rust heeft gezorgd in Rotterdam, maar wil zijn...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-09-22T07:45:03Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/03/22/8ce4f216eb0d20c3ece1054c613e6ab514f1cf5d.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2138445/st-juste-prijst-robin-van-persie-bij-na-halfjaar-bij-feyenoord.html"
-  },
-  {
-    "title": "Matthäus juicht werkwijze Klopp toe en voorspelt basiself tegen Oranje",
-    "summary": "Lothar Matthäus is ervan overtuigd dat Duitsland onder leiding van Jürgen Klopp de weg omhoog weer inzet. De Duitse recordinternational ziet al meteen een positief effect van de werkwijze van de nieuwe bondscoach en...",
+    "title": "Xavi deelt hiërarchie achter Van Dijk en kijkt uit naar Oranje-debuut",
+    "summary": "Xavi is blij met wat hij tot nu toe ziet in zijn eerste dagen als bondscoach van het Nederlands elftal. De Spaanse oud-international onthulde richting het Nations League-duel met Duitsland ook wie achter Virgil van Dijk...",
     "source": "Voetbal International",
-    "published": "2026-09-22T07:19:47Z",
+    "published": "2026-09-23T10:22:47Z",
     "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/22/57e2455723f80730c6b878bc79ef0eb06cc66aab.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/matthaus-juicht-werkwijze-klopp-toe-en-voorspelt-basiself-tegen-oranje"
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/23/957eab742f6b3062058d8efa7eaed78c15eb4c19.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/xavi-deelt-hierarchie-achter-van-dijk-en-kijkt-uit-naar-oranje-debuut"
   },
   {
-    "title": "Van Basten geeft spits ervanlangs: 'Zou contributie moeten betalen bij Ajax'",
-    "summary": "De spitsen van Ajax zorgen voor discussie bij Rondo van Ziggo Sport . Wim Kieft en Youri Mulder zien dat trainer Míchel Sanchez terugvalt op Kasper Dolberg, terwijl er deze zomer juist twee aanvalsleiders werden gehaald.",
+    "title": "Van der Vaart krijgt onverwachte vraag van ex-vrouw: 'Benieuwd naar je antwoord'",
+    "summary": "Bijzondere beelden vanuit Duitsland. In een podcast van BILD wordt Rafael van der Vaart plots geconfronteerd met een vraag van zijn ex-vrouw Sylvie Meis. Zij vraagt de oud-middenvelder van onder meer Ajax, Real Madrid...",
     "source": "VoetbalPrimeur",
-    "published": "2026-09-22T07:18:30Z",
+    "published": "2026-09-23T09:45:00Z",
     "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/08/21/4b0a5118574330aaea1da07b6942c1d375fa21ce.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2138429/van-basten-geeft-ajax-aanwinst-leonardo-ervanlangs.html"
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/08/31/9f4c52c35c26107dd5346073ad16377a458924b0.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2138884/rafael-van-der-vaart-verrast-door-vraag-van-ex-vrouw-sylvie-meis-over-zoon-damian.html"
   },
   {
-    "title": "Dit is het eerste Oranje-programma van bondscoach Xavi in XXL-interlandperiode",
-    "summary": "De eerste Oranje-selectie van Xavi Hernández is een feit en maandag lichtte hij zijn keuzes toe op een persmoment . De bondscoach begint in de XXL-interlandperiode aan zijn eerste wedstrijden als eindverantwoordelijke....",
-    "source": "Voetbal International",
-    "published": "2026-09-21T21:13:33Z",
+    "title": "Oud-PSV'er gooit het roer om na blessureleed: 'Ook de hersenen zijn onderzocht'",
+    "summary": "Jarrad Branthwaite heeft een moeilijke periode met blessureleed achter zich gelaten en is nu door Thomas Tuchel opgeroepen voor het Engelse nationale elftal. De verdediger van Everton zocht daarvoor zelfs hulp buiten...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-09-23T09:18:00Z",
     "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/18/f4b04e211f75c3d3e2b6fa0520af44f2484a913e.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/dit-is-het-eerste-oranje-programma-van-bondscoach-xavi-in-xxl-interlandperiode"
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/09/23/e78bd7ddd21f1aaaadd78b77452f5c3daa73b6ba.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2138858/jarrad-branthwaite-zocht-hulp-in-duitsland-na-aanhoudend-blessureleed.html"
+  },
+  {
+    "title": "Van Bommel: 'Eerst speel je wedstrijden tegen Ajax, maar daarna tegen Houten...'",
+    "summary": "Ruben van Bommel voelt zich momenteel fitter dan ooit. Dat vertelt de Oranje-debutant in een interview met De Telegraaf . De aanvaller liep vorig jaar een zware knieblessure op, maar is daar sterk van teruggekomen bij...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-09-23T07:58:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/09/22/9160fa28045e6349f4df6d7ee628e5a876d1f05c.png?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2138842/oranje-debutant-ruben-van-bommel-voelt-zich-fitter-dan-ooit.html"
+  },
+  {
+    "title": "Deze ideeën gaat Xavi implementeren bij Oranje",
+    "summary": "Xavi werkt achter gesloten deuren aan het inslijpen van een nieuw tactisch concept bij Oranje. ‘Intensiteit’ en ‘passie’ zijn de woorden die de 46-jarige bondscoach veelvuldig koppelt aan zijn ideeën. Aanleiding om te...",
+    "source": "Voetbal International",
+    "published": "2026-09-23T07:00:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/22/8e2b8a856d2d4e627a0c1e2e17b182a721df98d3.jpg?width=1200",
+    "url": "https://www.vi.nl/pro/analyse-deze-ideeen-gaat-xavi-implementeren-bij-oranje"
+  },
+  {
+    "title": "Je Chinese pakketjes worden weer duurder om te importeren",
+    "summary": "Voor de tweede keer dit jaar worden pakketjes van Shein, AliExpress en andere Chinese webwinkels duurder. Per november moet er nog eens 2 euro extra worden betaald voor spullen die vanuit locaties buiten de EU worden...",
+    "source": "Bright",
+    "published": "2026-09-23T09:47:26Z",
+    "category": "Tech",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/23/7928964a2bb3c9031793be5231a9cbf17dcf186d.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2138798/je-chinese-pakketjes-worden-weer-duurder-om-te-importeren.html"
+  },
+  {
+    "title": "Van Dijk wist 'na één seconde' in gesprek met Xavi dat hij door wilde bij Oranje",
+    "summary": "Virgil van Dijk was er \"na één seconde\" uit dat hij tot en met het Europees kampioenschap van 2028 door wil gaan bij het Nederlands elftal. Enigszins geïrriteerd blikte hij terug op het WK van afgelopen zomer:...",
+    "source": "NOS Sport",
+    "published": "2026-09-23T09:19:35Z",
+    "category": "Voetbal",
+    "image": "https://images.cdn.nos.nl/1/b/H/D/N/A/PM9tufENvUW9z54zCD1fqmQi2hBX51rHpXidwa/0x0x1920x1080-1024x576.webp",
+    "url": "https://nos.nl/l/2632145"
+  },
+  {
+    "title": "Mac Mini-opslag niet uitbreidbaar en langzamer op instapmodel",
+    "summary": "Wie een nieuwe Mac Mini met M5 Pro- of M6-chip koopt, kan achteraf niet meer opslagruimte inbouwen. Het is een limitatie ten opzichte van de M4 Mac Mini, waarbij gebruikers dat wel konden.",
+    "source": "Bright",
+    "published": "2026-09-23T06:59:16Z",
+    "category": "Tech",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/23/655baeb6a96381b61843bf3c78bb4e0459718fa8.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2138806/je-kunt-mac-mini-opslag-niet-meer-zelf-uitbreiden.html"
+  },
+  {
+    "title": "De Odido-hackers zeggen de FBI te hebben gehackt",
+    "summary": "De hackers van ShinyHunters beweren informatie te hebben over al het personeel van de FBI. Ze zouden enorm gevoelige data hebben gestolen, waaronder telefoonnummers, adresgegevens en soms zelfs informatie over partners...",
+    "source": "Bright",
+    "published": "2026-09-22T22:27:34Z",
+    "category": "Tech",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/23/83f9d51252136ee3081b69fc7c0d1fd4a299802c.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2138769/de-odido-hackers-zeggen-de-fbi-te-hebben-gehackt.html"
+  },
+  {
+    "title": "Meta’s AI-winkelmaatje is niet langer welkom bij Amazon",
+    "summary": "We kunnen er in Nederland geen gebruik van maken, maar Meta’s AI-shopassistent Muse is wereldwijd verbannen uit de webwinkel van Amazon. Het bedrijf van Jeff Bezos zet Zuckerbergs AI-agent buiten vanwege “privacy- en...",
+    "source": "Bright",
+    "published": "2026-09-22T15:03:00Z",
+    "category": "Tech",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/22/c5d4b170042655c51b9fadf2913d915c3f5a0db8.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2138609/meta-s-ai-winkelmaatje-is-niet-langer-welkom-bij-amazon.html"
   },
   {
     "title": "De EU wil dat datacenters duidelijk maken waarom ze zoveel water en energie gebruiken",
@@ -837,94 +891,121 @@
     "url": "https://www.bright.nl/nieuws/2138446/china-zet-in-op-een-ban-voor-ai-metgezellen-voor-mensen-onder-de-18.html"
   },
   {
-    "title": "Nogmaals enorme Europese boete voor Google: dit gaat er nu weer fout",
-    "summary": "Ierse privacywaakhond de Data Protection Commission (DPC) legt Google een boete van 403 miljoen euro op, omdat het bedrijf niet juist met de locatiedata van gebruikers is omgegaan.",
+    "title": "Getergde Van Dijk hekelt berichtgeving na uitschakeling op WK: 'Onzin'",
+    "summary": "Virgil van Dijk heeft in aanloop naar de start van de Nations League tegen Duitsland nog een keer teruggeblikt op het WK. De aanvoerder van Oranje erkent dat Nederland niet goed genoeg heeft gepresteerd, maar vond wel...",
+    "source": "Voetbal International",
+    "published": "2026-09-23T10:00:34Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/23/5c698a88fd6bbd2fb25d79070d4e65e6102ddba0.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/getergde-van-dijk-hekelt-berichtgeving-na-uitschakeling-op-wk-onzin"
+  },
+  {
+    "title": "'Infantino is een bankdirecteur die zijn eigen bank overvalt'",
+    "summary": "In de serie FC Bankzaken bespreekt Tom Knipping samen met presentator Bart Frouws de financiën in het binnen- en buitenlandse voetbal. In deze aflevering gaan de heren dieper in op het omstreden FIFA Forward...",
+    "source": "Voetbal International",
+    "published": "2026-09-23T10:00:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/22/0cdd03ac6a507606f026bd6c26558b5b7a002443.jpg?width=1200",
+    "url": "https://www.vi.nl/pro/infantino-is-een-bankdirecteur-die-zijn-eigen-bank-overvalt"
+  },
+  {
+    "title": "Teruglezen: Xavi en Virgil blikken vooruit op Nederland - Duitsland",
+    "summary": "Xavi Hernández en Virgil van Dijk schoven woensdag aan op een persconferentie. Die stond in het teken van het Nations League-duel van Oranje met Duitsland. donderdagavond in de Johan Cruijff Arena. VI volgde het...",
+    "source": "Voetbal International",
+    "published": "2026-09-23T09:42:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/23/9a2b4ecaa9e3cf7921507310a8771c21852526be.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/teruglezen-xavi-en-virgil-blikken-vooruit-op-nederland-duitsland"
+  },
+  {
+    "title": "Xavi krijgt bij Oranje-debuut landgenoot als scheidsrechter",
+    "summary": "Het Nederlands elftal krijgt donderdagavond te maken met een Spaanse scheidsrechter: de 43-jarige Alejandro Hernández Hernández is aangesteld om de wedstrijd met Duitsland in goede banen te leiden.",
+    "source": "Voetbal International",
+    "published": "2026-09-23T08:50:29Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/23/85450ea7e028c2c65cb39d4bea7e6a91cfd4f81d.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/spaanse-scheidsrechter-voor-oranje-in-duel-met-duitsland"
+  },
+  {
+    "title": "Curaçao achterna? Henk Fraser over zijn plannen met Suriname",
+    "summary": "Terwijl Curaçao en Kaapverdië zich manifesteerden op het WK, likte Suriname deze zomer de wonden van het gemiste eindtoernooi. Met de start van de Nations League deze week breekt een nieuw tijdperk aan, onder leiding...",
+    "source": "Voetbal International",
+    "published": "2026-09-23T08:00:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/21/0f6393696aaa88d3c4d73ad22888b9e7357ff56b.jpg?width=1200",
+    "url": "https://www.vi.nl/pro/curacao-achterna-henk-fraser-over-zijn-plannen-met-suriname"
+  },
+  {
+    "title": "Trainingen, persmomenten en reisdagen: dit is de planning van Oranje",
+    "summary": "Het Nederlands elftal werkt eind september en begin oktober een extra lange interlandperiode af. Dat vergt een uitgebreide planning. In dit artikel lees je hoe de interlandperiode er voor Oranje uitziet, van...",
+    "source": "Voetbal International",
+    "published": "2026-09-23T07:01:28Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/23/1f3b10824fc99f83fbe11baee3594fa898fe9362.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/trainingen-persmomenten-en-reisdagen-dit-is-de-planning-van-oranje"
+  },
+  {
+    "title": "De game Halo wordt straks gemaakt door Activision na grote ontslagronde bij Xbox",
+    "summary": "Xbox heeft een grote reorganisatie op poten gezet en hierbij sneuvelen 268 banen. Het heeft grote gevolgen voor onder andere het paradepaardje van de consolemaker: Halo. Dat wordt namelijk straks niet meer gemaakt door...",
     "source": "Bright",
-    "published": "2026-09-22T06:04:46Z",
-    "category": "Tech",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/21/a127da9baebc3d9889a538cdc30b1047d50c60d0.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2138175/boete-van-403-miljoen-euro-voor-google-vanwege-bewaren-en-gebruiken-locatiedata.html"
+    "published": "2026-09-22T22:47:55Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/23/685a70f080e9982ad86b79c138c14bbfb3daf5cb.jpeg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2138770/de-game-halo-wordt-straks-gemaakt-door-activision-na-grote-ontslagronde-bij-xbox.html"
   },
   {
-    "title": "Gmail maakt het kopiëren van je verificatiecode overbodig",
-    "summary": "Gmail rolt een nieuwe functie uit voor iOS en Android. Met deze nieuwe functie kun je straks direct je verificatiecodes vanuit je inbox kopiëren. Deze nieuwe functie maakt het omgaan met verificatiecodes veel...",
+    "title": "Motorola Signature 27 lijkt uniek en draait op snelste chip van het moment",
+    "summary": "Nee, het is geen macrofoto van een spin met vijf ogen, maar de nieuwe Motorola Signature 27. De telefoon is onthuld op het jaarlijkse Snapdragon Summit-evenement, samen met de snelste mobiele chip aller tijden. Ook die...",
     "source": "Bright",
-    "published": "2026-09-22T06:04:26Z",
-    "category": "Tech",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/01/08/2555a0db45b2c4a8ae4d96018d54ae92904ec2ac.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2138264/gmail-maakt-het-kopieren-van-je-verificatiecode-overbodig.html"
+    "published": "2026-09-22T20:00:00Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/22/c459f69b0014c9f60ae3f8479ffa55f8cbc96ad7.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2138597/vijf-camera-s-en-de-krachtigste-chip-van-het-moment-motorola-signature-27.html"
   },
   {
-    "title": "Goud voor belofte Gal bij WK tijdrijden, Vinke grijpt zilver bij de vrouwen",
-    "summary": "Ryan Gal heeft de gouden medaille veroverd bij het WK tijdrijden voor beloften. De 21-jarige Nederlander was zeven seconden sneller dan Italiaan Nicolas Milesi. Gal, rijdend bij het continentale Metec-Solarwatt, klopte...",
-    "source": "NOS Sport",
-    "published": "2026-09-21T18:56:30Z",
-    "category": "Voetbal",
-    "image": "https://images.cdn.nos.nl/4/9/H/C/c/w/D4u6TUBz9UYFyScut1G4b6TNgNncMQPQwLZeprH/8x4x3984x2241-1024x576.webp",
-    "url": "https://nos.nl/l/2631957"
-  },
-  {
-    "title": "Xiaomi 18 Pro heeft een Privacy Display zoals de Samsung Galaxy S26 Ultra",
-    "summary": "De Xiaomi 18 Pro heeft nu een eigen versie van het Privacy Display, zonder dat de kwaliteit van het beeld achteruit gaat.",
+    "title": "Of de volgende Xbox discs gaat ondersteunen hangt van jou af",
+    "summary": "Microsoft vraagt aan zijn Xbox-gebruikers of ze willen dat Project Helix, de volgende Xbox, gameschijfjes zou moeten ondersteunen. Daardoor lijkt het alsof de toekomst van het apparaat nog niet vaststaat én dat je daar...",
     "source": "Bright",
-    "published": "2026-09-21T13:54:12Z",
-    "category": "Tech",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/21/f97681522904d13e26c47018679b316853d9a73f.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2138221/niet-alleen-bij-samsung-ook-deze-smartphonemaker-heeft-nu-een-privacy-display.html"
+    "published": "2026-09-22T11:04:00Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/22/167ea01e9df9eb9a06c24c16d92e546dd10c694f.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2138464/de-toekomst-van-xbox-ligt-nog-niet-vast-gamediscs-kunnen-blijven.html"
   },
   {
-    "title": "Monstersolo Van der Poel maakt indruk in peloton: 'Op WK hoort hij ook bij favorieten'",
-    "summary": "Niet voor het eerst in zijn carrière verbaasde Mathieu van der Poel het wielerpeloton. Met een monstersolo van zo'n 175 kilometer won hij de slotetappe in de Ronde van Luxemburg. Pepijn Reinderink was van dichtbij...",
-    "source": "NOS Sport",
-    "published": "2026-09-21T09:19:08Z",
-    "category": "Voetbal",
-    "image": "https://images.cdn.nos.nl/8/9/2/C/5/d/kbEJ88wEGGbgU4QrBWdZ7CxEiuNrHgPPUhBNtr9/6x627x3616x2034-1024x576.webp",
-    "url": "https://nos.nl/l/2631886"
-  },
-  {
-    "title": "Oranje werkt zonder Jurriën Timber toe naar eerste interland onder Xavi",
-    "summary": "Het Nederlands elftal werkt dinsdag de tweede training onder Xavi af. In Zeist bereidt Oranje zich voor op de Nations League-clash met Duitsland. Jurriën Timber ontbrak als enige bij de groepstraining: hij werkt een...",
-    "source": "Voetbal International",
-    "published": "2026-09-22T10:22:17Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/22/5f3a9e2efa87c9aca189724b2855dd5f9e49fdc5.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/oranje-werkt-zonder-jurrien-timber-toe-naar-eerste-interland-onder-xavi"
-  },
-  {
-    "title": "Bierhoff wordt na felle kritiek op Oranje-opponent Duitsland zelf aangepakt",
-    "summary": "Voormalig algemeen directeur van de Duitse bond Oliver Bierhoff is behoorlijk kritisch op de nationale selectie, een paar dagen voor de start van de Nations League tegen het Nederlands elftal. De kritiek van Bierhoff...",
-    "source": "Voetbal International",
-    "published": "2026-09-22T10:05:42Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/22/1d1b6914211a6ea3fc6687bbc9d956feae22c575.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/kritisch-relaas-van-binnenuit-op-oranje-tegenstander-sprake-van-een-probleem"
-  },
-  {
-    "title": "Makélélé kapittelt Mourinho: 'Er zit geen idee in Real, helemaal niets'",
-    "summary": "Real Madrid krijgt ervan langs in Spaanse media nu het zondag een slechte indruk maakte in de derby tegen Atlético Madrid. Dat José Mourinho na de nederlaag naar de arbitrage wees, is volgens Javier Tebas en Claude...",
-    "source": "Voetbal International",
-    "published": "2026-09-22T09:40:30Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/22/cfd43e88b44398bbc9c1c7fdc596e543af3dbc0f.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/kritiek-op-real-en-lof-voor-barcelona-ze-spelen-een-andere-sport"
-  },
-  {
-    "title": "Meerdink met huiswerk naar Oranje: 'Ik vind zelf ook dat het beter moet'",
-    "summary": "Door de blessure van Donyell Malen mocht Mexx Meerdink zich maandag alsnog melden bij het Nederlands elftal. Een mooie beloning voor de spits van AZ, die kritisch is op zijn eigen spel. 'Mooi dat ik tegen Telstar een...",
-    "source": "Voetbal International",
-    "published": "2026-09-21T20:22:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/21/8276f4fafd63ea40d4cd385dc6a1b84ea4aaf48c.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/meerdink-met-huiswerk-naar-oranje-ik-vind-zelf-ook-dat-het-beter-moet"
-  },
-  {
-    "title": "Advocaat heeft vertrouwen in Oranje-bondscoach Xavi: 'Dat maakt indruk op spelers'",
-    "summary": "Dick Advocaat heeft zijn vertrouwen uitgesproken in Xavi Hernández, de nieuwe bondscoach van het Nederlands elftal. De Spaanse oefenmeester stond maandag voor de eerste keer op het veld met de spelers van Oranje....",
+    "title": "Xavi geeft duidelijkheid over Oranje-captain en wijst drie reserve-aanvoerders aan",
+    "summary": "Xavi heeft duidelijkheid gegeven over wie de aanvoerder is van het Nederlands elftal. Virgil van Dijk zal de captain blijven. Naast hem heeft de bondscoach van het Nederlands elftal drie spelers aangewezen als...",
     "source": "VoetbalPrimeur",
-    "published": "2026-09-22T07:26:00Z",
+    "published": "2026-09-23T10:12:00Z",
     "category": "Voetbal",
     "image": "https://webp.vp.cdn.pxr.nl/news/2026/09/21/214e148bea969ce19fffe70b99874494f01b970c.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2138433/advocaat-heeft-vertrouwen-in-oranje-bondscoach-xavi.html"
+    "url": "https://www.voetbalprimeur.nl/nieuws/2138894/virgil-van-dijk-blijft-aanvoerder-van-oranje-onder-xavi-hernandez.html"
+  },
+  {
+    "title": "Xavi komt met opvallende Oranje-regel: 'De spelers weten de opstelling nog niet'",
+    "summary": "Een opvallende onthulling van bondscoach Xavi Hernández. De Spaanse oefenmeester bij het Nederlands elftal maakt pas vlak voor de wedstrijd zijn basisopstelling bekend. Dit doet hij om iedereen betrokken te houden.",
+    "source": "VoetbalPrimeur",
+    "published": "2026-09-23T09:56:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/09/23/089f1905116f4f35de5bd8521c947e96dc4398ce.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2138886/xavi-maakt-opstelling-oranje-pas-vlak-voor-duel-met-duitsland-bekend.html"
+  },
+  {
+    "title": "Xavi heeft positief bericht: Oranje met fitte selectie richting duel met Duitsland",
+    "summary": "Alle 26 door Xavi Hernández opgeroepen spelers kunnen minuten maken tegen Duitsland. Dat bevestigt de bondscoach in aanloop naar zijn eerste wedstrijd langs de lijn bij het Nederlands elftal. Donderdag wordt er om 20.45...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-09-23T09:34:07Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/09/09/bdd82a21a84ac820402b735231845d0606090bf0.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2138877/xavi-heeft-positief-bericht-oranje-met-fitte-selectie-richting-duel-met-duitsland.html"
+  },
+  {
+    "title": "'Het grote doel voor ons is natuurlijk dat Suriname zich kwalificeert voor het WK'",
+    "summary": "Henk Fraser hoopt zich met Suriname te plaatsen voor het WK 2030. Dat vertelt de bondscoach van het land in gesprek met Voetbal International . Op het laatste moment liep Suriname het vorige WK mis. Landen als Curaçao...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-09-23T08:55:38Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/02/19/501540477d6ca47dc901681170f5b922e39e9de5.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2138859/henk-fraser-vertelt-over-plannen-met-suriname-grote-doel-is-natuurlijk-het-wk.html"
   },
   {
     "title": "Leven na de dood op het internet",
