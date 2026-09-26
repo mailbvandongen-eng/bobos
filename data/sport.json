@@ -1,31 +1,21 @@
 {
-  "updated_at": "2026-09-25T10:23:17Z",
+  "updated_at": "2026-09-26T10:03:37Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "14:00",
-      "title": "Qualifying",
+      "time": "13:00",
+      "title": "Race",
       "category": "GP Azerbaijan",
       "source": "OpenF1",
       "score": 5,
       "must_watch": true,
-      "reason": "Formule 1 en kwalificatie",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "10:30",
-      "title": "Practice 3",
-      "category": "GP Azerbaijan",
-      "source": "OpenF1",
-      "score": 3,
-      "must_watch": false,
-      "reason": "Formule 1",
+      "reason": "Formule 1 en race",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     }
   ],
   "details": [
-    "Topkeuze vandaag: Qualifying (5/5) door formule 1 en kwalificatie.",
-    "1 must-see item(s) en 2 relevante sportitem(s) gevonden.",
+    "Topkeuze vandaag: Race (5/5) door formule 1 en race.",
+    "1 must-see item(s) en 1 relevante sportitem(s) gevonden.",
     "Categorieen vandaag: GP Azerbaijan.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
