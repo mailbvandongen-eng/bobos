@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T19:53:37Z",
+  "updated_at": "2026-09-27T20:31:21Z",
   "status": "Maandagadvies",
   "score": 5,
   "items": [
@@ -22,7 +22,7 @@
     "Droog zand geeft vaak minder contrast, terwijl keiharde klei minder prettig blijft voor signalen en graven.",
     "Betuwe blijft interessant waar hoge stroomruggen, oude oeverwallen en droge akkerkoppen begaanbaar zijn.",
     "Herfst: Profiteer van vrijgekomen akkers, vooral op stroomruggen, oeverwallen en hoger zand.",
-    "Afgelopen 7 dagen viel circa 7.3 mm regen (droge week). Voor maandag 2026-09-21 wordt ongeveer 0.0 mm verwacht. Verwachte maxtemp: 20.2 C. Windpiek: 14 km/u.",
+    "Afgelopen 7 dagen viel circa 0.2 mm regen (droge week). Voor maandag 2026-09-28 wordt ongeveer 0.1 mm verwacht. Verwachte maxtemp: 20.8 C. Windpiek: 13 km/u.",
     "Beste landschapstype nu: Hoge oeverwal / klei-akker.",
     "Vermijden: Keiharde droge klei.",
     "Betuwe niet uitsluiten: hoge stroomruggen en oude oeverwallen blijven interessant als ze hoog en droog genoeg zijn.",
@@ -50,12 +50,12 @@
     "season": "herfst",
     "season_label": "Herfst",
     "field_access": "Profiteer van vrijgekomen akkers, vooral op stroomruggen, oeverwallen en hoger zand.",
-    "rain_last_7_days_mm": 7.3,
+    "rain_last_7_days_mm": 0.2,
     "week_condition": "droge_week",
-    "monday_date": "2026-09-21",
-    "monday_precipitation_mm": 0.0,
-    "monday_temperature_max_c": 20.2,
-    "monday_wind_max_kmh": 13.7
+    "monday_date": "2026-09-28",
+    "monday_precipitation_mm": 0.1,
+    "monday_temperature_max_c": 20.8,
+    "monday_wind_max_kmh": 13.3
   },
   "sources": [
     {
