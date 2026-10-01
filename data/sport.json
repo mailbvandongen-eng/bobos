@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-01T11:44:03Z",
+  "updated_at": "2026-10-01T20:10:13Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "20:15",
+      "time": "20:19",
       "title": "{'participantID': '33014', 'firstName': 'Niels', 'lastName': 'Zonneveld', 'nickname': 'Triple Z', 'countryCode': 'NL', 'media': {'image': 'f5607a80-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '4', 'firstName': 'Gary', 'lastName': 'Anderson', 'nickname': 'Flying Scotsman', 'countryCode': 'GB-SCT', 'media': {'image': 'f5b948e0-f233-11f0-8720-17283098ea9c.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 World Grand Prix",
       "source": "PDC",
@@ -13,7 +13,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "21:15",
+      "time": "21:20",
       "title": "{'participantID': '22', 'firstName': 'James', 'lastName': 'Wade', 'nickname': 'The Machine', 'countryCode': 'GB-ENG', 'media': {'image': 'f5e0ce10-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '876', 'firstName': 'Stephen', 'lastName': 'Bunting', 'nickname': 'The Bullet', 'countryCode': 'GB-ENG', 'media': {'image': '782f1b70-f21a-11f0-8e4e-4b7ed58fd19c.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 World Grand Prix",
       "source": "PDC",
