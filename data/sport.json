@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T10:31:05Z",
+  "updated_at": "2026-10-03T18:33:49Z",
   "status": "Vandaag interessant",
   "items": [
     {
@@ -10,26 +10,6 @@
       "score": 5,
       "must_watch": true,
       "reason": "Formule 1 en kwalificatie",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "21:15",
-      "title": "{'participantID': '11821', 'firstName': 'Nathan', 'lastName': 'Aspinall', 'nickname': 'The Asp', 'countryCode': 'GB-ENG', 'media': {'image': 'f6372b70-f233-11f0-9303-5182eef97cd9.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '11788', 'firstName': 'Gerwyn', 'lastName': 'Price', 'nickname': 'The Iceman', 'countryCode': 'GB-WLS', 'media': {'image': 'f5a3ec20-f233-11f0-a1f6-49664dee8666.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 World Grand Prix",
-      "source": "PDC",
-      "score": 5,
-      "must_watch": true,
-      "reason": "Formule 1 en darts",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "22:30",
-      "title": "{'participantID': '32102', 'firstName': 'Luke', 'lastName': 'Humphries', 'nickname': 'Cool Hand', 'countryCode': 'GB-ENG', 'media': {'image': 'f62be0d0-f233-11f0-b703-63c53945660f.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '22', 'firstName': 'James', 'lastName': 'Wade', 'nickname': 'The Machine', 'countryCode': 'GB-ENG', 'media': {'image': 'f5e0ce10-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 World Grand Prix",
-      "source": "PDC",
-      "score": 5,
-      "must_watch": true,
-      "reason": "Formule 1 en darts",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
@@ -45,8 +25,8 @@
   ],
   "details": [
     "Topkeuze vandaag: Qualifying (5/5) door formule 1 en kwalificatie.",
-    "3 must-see item(s) en 4 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: 2026 World Grand Prix, GP Bahrain.",
+    "1 must-see item(s) en 2 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: GP Bahrain.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
