@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-10-03T18:33:49Z",
+  "updated_at": "2026-10-04T11:12:11Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "10:00",
-      "title": "Qualifying",
+      "time": "09:00",
+      "title": "Race",
       "category": "GP Bahrain",
       "source": "OpenF1",
       "score": 5,
       "must_watch": true,
-      "reason": "Formule 1 en kwalificatie",
+      "reason": "Formule 1 en race",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "06:30",
-      "title": "Practice 3",
-      "category": "GP Bahrain",
-      "source": "OpenF1",
-      "score": 3,
-      "must_watch": false,
-      "reason": "Formule 1",
+      "time": "21:30",
+      "title": "{'participantID': '11788', 'firstName': 'Gerwyn', 'lastName': 'Price', 'nickname': 'The Iceman', 'countryCode': 'GB-WLS', 'media': {'image': 'f5a3ec20-f233-11f0-a1f6-49664dee8666.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32102', 'firstName': 'Luke', 'lastName': 'Humphries', 'nickname': 'Cool Hand', 'countryCode': 'GB-ENG', 'media': {'image': 'f62be0d0-f233-11f0-b703-63c53945660f.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 World Grand Prix",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     }
   ],
   "details": [
-    "Topkeuze vandaag: Qualifying (5/5) door formule 1 en kwalificatie.",
-    "1 must-see item(s) en 2 relevante sportitem(s) gevonden.",
-    "Categorieen vandaag: GP Bahrain.",
+    "Topkeuze vandaag: Race (5/5) door formule 1 en race.",
+    "2 must-see item(s) en 2 relevante sportitem(s) gevonden.",
+    "Categorieen vandaag: 2026 World Grand Prix, GP Bahrain.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
   "sources": [
