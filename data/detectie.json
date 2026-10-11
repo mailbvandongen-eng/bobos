@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-04T20:33:31Z",
+  "updated_at": "2026-10-11T21:08:29Z",
   "status": "Maandagadvies",
-  "score": 5,
+  "score": 4,
   "items": [
     {
       "label": "Beste keuze",
-      "value": "Hoger zand / stroomrug"
+      "value": "Hoger zand / droge stroomrug"
     },
     {
       "label": "Vermijd",
@@ -13,17 +13,17 @@
     },
     {
       "label": "Tip",
-      "value": "Steentijd op nat zand"
+      "value": "Zoek hoger en droger"
     }
   ],
   "details": [
     "Herfst: meer akkers komen vrij en dit is vaak een van de beste detectieperiodes van het jaar.",
-    "Een natte week maakt lage kleigronden minder aantrekkelijk en remt vooral slecht drainerende stukken.",
-    "Hoger zand, dekzandruggen, rivierduinen en hoge stroomruggen blijven dan de slimste keuze.",
-    "Voor steentijdzoeken kan nat zand juist helpen door extra glans en contrast in het oppervlak.",
+    "Door veel regen zijn lage kleigronden, komklei en slecht drainerende percelen minder aantrekkelijk.",
+    "Richt je op hoger gelegen zandgronden, dekzandruggen, rivierduinen en hoge stroomruggen.",
+    "Betuwe niet uitsluiten: hoge stroomruggen en oude oeverwallen kunnen juist goed zijn als ze droog genoeg blijven.",
     "Herfst: Profiteer van vrijgekomen akkers, vooral op stroomruggen, oeverwallen en hoger zand.",
-    "Afgelopen 7 dagen viel circa 19.1 mm regen (natte week). Voor maandag 2026-10-05 wordt ongeveer 0.0 mm verwacht. Verwachte maxtemp: 21.8 C. Windpiek: 15 km/u.",
-    "Beste landschapstype nu: Hoger zand / stroomrug.",
+    "Afgelopen 7 dagen viel circa 27.4 mm regen (veel regen). Voor maandag 2026-10-12 wordt ongeveer 0.1 mm verwacht. Verwachte maxtemp: 15.4 C. Windpiek: 16 km/u.",
+    "Beste landschapstype nu: Hoger zand / droge stroomrug.",
     "Vermijden: Lage natte klei.",
     "Betuwe niet uitsluiten: hoge stroomruggen en oude oeverwallen blijven interessant als ze hoog en droog genoeg zijn.",
     "Maandag lijkt relatief droog, waardoor hoge stroomruggen en droge oeverwallen extra aantrekkelijk worden."
@@ -32,17 +32,17 @@
     {
       "name": "Steentijd",
       "score": 5,
-      "advice": "Nat zand, dekzandruggen en rivierduinen zijn extra interessant door glans en contrast."
+      "advice": "Nat zand, dekzandruggen en rivierduinen zijn kansrijk voor steentijdmateriaal."
     },
     {
       "name": "Romeins",
       "score": 5,
-      "advice": "Hoge stroomruggen en oeverwallen in het rivierengebied blijven interessant."
+      "advice": "Hoge stroomruggen en oeverwallen blijven zoekbaar zolang ze niet dichtslibben of te nat worden."
     },
     {
       "name": "Middeleeuws",
       "score": 4,
-      "advice": "Akkers rond oude bewoning zijn pas echt goed als ze geoogst of goed begaanbaar zijn."
+      "advice": "Kies alleen begaanbare akkers rond oude bewoning; lage klei liever nog even laten liggen."
     }
   ],
   "context": {
@@ -50,12 +50,12 @@
     "season": "herfst",
     "season_label": "Herfst",
     "field_access": "Profiteer van vrijgekomen akkers, vooral op stroomruggen, oeverwallen en hoger zand.",
-    "rain_last_7_days_mm": 19.1,
-    "week_condition": "natte_week",
-    "monday_date": "2026-10-05",
-    "monday_precipitation_mm": 0.0,
-    "monday_temperature_max_c": 21.8,
-    "monday_wind_max_kmh": 15.1
+    "rain_last_7_days_mm": 27.4,
+    "week_condition": "veel_regen",
+    "monday_date": "2026-10-12",
+    "monday_precipitation_mm": 0.1,
+    "monday_temperature_max_c": 15.4,
+    "monday_wind_max_kmh": 15.8
   },
   "sources": [
     {
