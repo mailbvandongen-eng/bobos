@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-16T18:39:08Z",
+  "updated_at": "2026-10-17T09:34:18Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "16:45",
-      "title": "{'participantID': '246', 'firstName': 'Dirk', 'lastName': 'van Duijvenbode', 'nickname': 'Aubergenius', 'countryCode': 'NL', 'media': {'image': 'f4f9a260-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36373', 'firstName': 'James', 'lastName': 'Hurrell', 'nickname': 'Hillbilly', 'countryCode': 'GB-ENG', 'media': {'image': '3b90f990-2c62-11f1-8069-ed1f94464a0f.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "time": "20:00",
+      "title": "{'participantID': '876', 'firstName': 'Stephen', 'lastName': 'Bunting', 'nickname': 'The Bullet', 'countryCode': 'GB-ENG', 'media': {'image': '782f1b70-f21a-11f0-8e4e-4b7ed58fd19c.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '2040', 'firstName': 'Cameron', 'lastName': 'Menzies', 'nickname': 'Cammy', 'countryCode': 'GB-SCT', 'media': {'image': 'f659cea0-f233-11f0-9f86-5be6727c0d18.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET15 - Dutch Darts Championship",
       "source": "PDC",
       "score": 5,
@@ -13,8 +13,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "21:40",
-      "title": "{'participantID': '30843', 'firstName': 'Cristo', 'lastName': 'Reyes', 'nickname': 'The Spartan', 'countryCode': 'ES', 'media': {'image': '1690c6c0-2c62-11f1-8996-1f54684de03c.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '195', 'firstName': 'Krzysztof', 'lastName': 'Kciuk', 'nickname': 'The Thumb', 'countryCode': 'PL'}",
+      "time": "22:30",
+      "title": "{'participantID': '11843', 'firstName': 'Chris', 'lastName': 'Dobey', 'nickname': 'Hollywood', 'countryCode': 'GB-ENG', 'media': {'image': 'f5267ec0-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '30843', 'firstName': 'Cristo', 'lastName': 'Reyes', 'nickname': 'The Spartan', 'countryCode': 'ES', 'media': {'image': '1690c6c0-2c62-11f1-8996-1f54684de03c.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET15 - Dutch Darts Championship",
       "source": "PDC",
       "score": 5,
@@ -23,8 +23,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "13:06",
-      "title": "{'participantID': '2771', 'firstName': 'Karel', 'lastName': 'Sedlacek', 'nickname': 'Evil Charlie', 'countryCode': 'CZ', 'media': {'image': 'f5bc0800-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '32079', 'firstName': 'Callan', 'lastName': 'Rydz', 'nickname': 'The Riot', 'countryCode': 'GB-ENG', 'media': {'image': 'f6424f00-f233-11f0-a501-53f8694d36c4.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "time": "13:00",
+      "title": "{'participantID': '11902', 'firstName': 'Martin', 'lastName': 'Schindler', 'nickname': 'The Wall', 'countryCode': 'DE', 'media': {'image': 'f57d9f70-f233-11f0-9987-f7a824897129.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '2771', 'firstName': 'Karel', 'lastName': 'Sedlacek', 'nickname': 'Evil Charlie', 'countryCode': 'CZ', 'media': {'image': 'f5bc0800-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET15 - Dutch Darts Championship",
       "source": "PDC",
       "score": 4,
@@ -33,8 +33,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "13:35",
-      "title": "{'participantID': '2040', 'firstName': 'Cameron', 'lastName': 'Menzies', 'nickname': 'Cammy', 'countryCode': 'GB-SCT', 'media': {'image': 'f659cea0-f233-11f0-9f86-5be6727c0d18.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '570', 'firstName': 'Nick', 'lastName': 'Kenny', 'nickname': None, 'countryCode': 'GB-WLS', 'media': {'image': 'f5600550-f233-11f0-b49b-e50d4d607664.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "time": "13:30",
+      "title": "{'participantID': '32956', 'firstName': 'Wessel', 'lastName': 'Nijman', 'nickname': '', 'countryCode': 'NL', 'media': {'image': 'f5add730-f233-11f0-be26-73a99dbbe585.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '31031', 'firstName': 'Jeffrey', 'lastName': 'De Graaf', 'nickname': None, 'countryCode': 'SE', 'media': {'image': 'f553a940-f233-11f0-ac11-834d30e1892a.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET15 - Dutch Darts Championship",
       "source": "PDC",
       "score": 4,
@@ -43,8 +43,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "14:02",
-      "title": "{'participantID': '31031', 'firstName': 'Jeffrey', 'lastName': 'De Graaf', 'nickname': None, 'countryCode': 'SE', 'media': {'image': 'f553a940-f233-11f0-ac11-834d30e1892a.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '162', 'firstName': 'Mickey', 'lastName': 'Mansell', 'nickname': 'Clonoe Cyclone', 'countryCode': 'IE', 'media': {'image': 'f5e89640-f233-11f0-b312-7b316f0e4c4f.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "time": "14:00",
+      "title": "{'participantID': '11804', 'firstName': 'Luke', 'lastName': 'Woodhouse', 'nickname': 'Woody', 'countryCode': 'GB-ENG', 'media': {'image': 'f5971ae0-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '231', 'firstName': 'Andrew', 'lastName': 'Gilding', 'nickname': 'Goldfinger', 'countryCode': 'GB-ENG', 'media': {'image': 'f547e970-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET15 - Dutch Darts Championship",
       "source": "PDC",
       "score": 4,
@@ -53,8 +53,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "14:33",
-      "title": "{'participantID': '142', 'firstName': 'Dave', 'lastName': 'Chisnall', 'nickname': 'Chizzy', 'countryCode': 'GB-ENG', 'media': {'image': 'f58e8f60-f233-11f0-8f68-e98be9e2ec48.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '39974', 'firstName': 'Jonas', 'lastName': 'Masalin', 'nickname': None, 'countryCode': 'FI'}",
+      "time": "14:30",
+      "title": "{'participantID': '754', 'firstName': 'Ross', 'lastName': 'Smith', 'nickname': 'Smudger', 'countryCode': 'GB-ENG', 'media': {'image': 'f4fbec50-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '31501', 'firstName': 'Ryan', 'lastName': 'Joyce', 'nickname': 'Relentless', 'countryCode': 'GB-ENG', 'media': {'image': 'f648b7a0-f233-11f0-b6df-51058ea1fe5e.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET15 - Dutch Darts Championship",
       "source": "PDC",
       "score": 4,
@@ -63,8 +63,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "15:13",
-      "title": "{'participantID': '231', 'firstName': 'Andrew', 'lastName': 'Gilding', 'nickname': 'Goldfinger', 'countryCode': 'GB-ENG', 'media': {'image': 'f547e970-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '585', 'firstName': 'Max', 'lastName': 'Hopp', 'nickname': 'Maximiser', 'countryCode': 'DE', 'media': {'image': '632d9360-f2e1-11f0-87ab-6bf4b74de484.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "time": "15:00",
+      "title": "{'participantID': '31356', 'firstName': 'Danny', 'lastName': 'Noppert', 'nickname': 'The Freeze', 'countryCode': 'NL', 'media': {'image': '7847d390-f21a-11f0-9fa0-0dd7c602545d.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '142', 'firstName': 'Dave', 'lastName': 'Chisnall', 'nickname': 'Chizzy', 'countryCode': 'GB-ENG', 'media': {'image': 'f58e8f60-f233-11f0-8f68-e98be9e2ec48.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET15 - Dutch Darts Championship",
       "source": "PDC",
       "score": 4,
@@ -73,8 +73,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "15:51",
-      "title": "{'participantID': '31501', 'firstName': 'Ryan', 'lastName': 'Joyce', 'nickname': 'Relentless', 'countryCode': 'GB-ENG', 'media': {'image': 'f648b7a0-f233-11f0-b6df-51058ea1fe5e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '38149', 'firstName': 'Owen', 'lastName': 'Bates', 'nickname': 'N/A', 'countryCode': 'GB-ENG', 'media': {'image': '63478400-f2e1-11f0-9690-1f9ade26b30d.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "time": "15:30",
+      "title": "{'participantID': '32037', 'firstName': 'Ryan', 'lastName': 'Searle', 'nickname': 'Heavy Metal', 'countryCode': 'GB-ENG', 'media': {'image': 'f6071ac0-f233-11f0-828f-515099993409.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '246', 'firstName': 'Dirk', 'lastName': 'van Duijvenbode', 'nickname': 'Aubergenius', 'countryCode': 'NL', 'media': {'image': 'f4f9a260-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET15 - Dutch Darts Championship",
       "source": "PDC",
       "score": 4,
@@ -83,8 +83,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "16:12",
-      "title": "{'participantID': '33672', 'firstName': 'Ricardo', 'lastName': 'Pietreczko', 'nickname': 'Pikachu', 'countryCode': 'DE', 'media': {'image': 'f3b2ca80-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '49465', 'firstName': 'Heine', 'lastName': 'Uuldriks', 'nickname': '', 'countryCode': 'NL'}",
+      "time": "16:00",
+      "title": "{'participantID': '136', 'firstName': 'Brendan', 'lastName': 'Dolan', 'nickname': 'The History Maker', 'countryCode': 'IE', 'media': {'image': 'f64905c0-f233-11f0-b2d6-31a38d16a83c.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '49465', 'firstName': 'Heine', 'lastName': 'Uuldriks', 'nickname': '', 'countryCode': 'NL'}",
       "category": "2026 ET15 - Dutch Darts Championship",
       "source": "PDC",
       "score": 4,
@@ -93,8 +93,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "19:07",
-      "title": "{'participantID': '36287', 'firstName': 'Sebastian', 'lastName': 'Bialecki', 'nickname': 'The Bolt', 'countryCode': 'PL', 'media': {'image': 'f4f29d80-f233-11f0-8f68-e98be9e2ec48.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '2554', 'firstName': 'Daryl', 'lastName': 'Gurney', 'nickname': 'Superchin', 'countryCode': 'GB-NIR', 'media': {'image': 'f5dadaa0-f233-11f0-ac53-417814447ebc.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "time": "16:30",
+      "title": "{'participantID': '224', 'firstName': 'Krzysztof', 'lastName': 'Ratajski', 'nickname': 'The Polish Eagle', 'countryCode': 'PL', 'media': {'image': 'f6327080-f233-11f0-8d93-954f41e7832e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33014', 'firstName': 'Niels', 'lastName': 'Zonneveld', 'nickname': 'Triple Z', 'countryCode': 'NL', 'media': {'image': 'f5607a80-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET15 - Dutch Darts Championship",
       "source": "PDC",
       "score": 4,
@@ -103,8 +103,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "19:41",
-      "title": "{'participantID': '153', 'firstName': 'William', 'lastName': \"O'Connor\", 'nickname': 'The Magpie', 'countryCode': 'IE', 'media': {'image': 'f5eb0740-f233-11f0-ad9a-4f9b38b63926.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '31027', 'firstName': 'Richard', 'lastName': 'Veenstra', 'nickname': 'Flyers', 'countryCode': 'NL', 'media': {'image': 'f56646e0-f233-11f0-8f68-e98be9e2ec48.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "time": "19:00",
+      "title": "{'participantID': '11788', 'firstName': 'Gerwyn', 'lastName': 'Price', 'nickname': 'The Iceman', 'countryCode': 'GB-WLS', 'media': {'image': 'f5a3ec20-f233-11f0-a1f6-49664dee8666.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36712', 'firstName': 'Scott', 'lastName': 'Williams', 'nickname': 'Shaggy', 'countryCode': 'GB-ENG', 'media': {'image': 'f5f2cf70-f233-11f0-a1f6-49664dee8666.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET15 - Dutch Darts Championship",
       "source": "PDC",
       "score": 4,
@@ -113,8 +113,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "20:08",
-      "title": "{'participantID': '34874', 'firstName': 'Niko', 'lastName': 'Springer', 'nickname': 'Meenzer Bub', 'countryCode': 'DE', 'media': {'image': 'f54a5a70-f233-11f0-916f-9317f3943d29.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36712', 'firstName': 'Scott', 'lastName': 'Williams', 'nickname': 'Shaggy', 'countryCode': 'GB-ENG', 'media': {'image': 'f5f2cf70-f233-11f0-a1f6-49664dee8666.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "time": "19:30",
+      "title": "{'participantID': '30844', 'firstName': 'Jermaine', 'lastName': 'Wattimena', 'nickname': 'The Machine Gun', 'countryCode': 'NL', 'media': {'image': 'f63ef3a0-f233-11f0-8a3d-fdaf0a5c6112.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '2713', 'firstName': 'Jimmy', 'lastName': 'van Schie', 'nickname': 'The Dutch Sequoia', 'countryCode': 'NL', 'media': {'image': '644481a0-f2e1-11f0-9690-1f9ade26b30d.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 ET15 - Dutch Darts Championship",
       "source": "PDC",
       "score": 4,
@@ -124,7 +124,7 @@
     }
   ],
   "details": [
-    "Topkeuze vandaag: {'participantID': '246', 'firstName': 'Dirk', 'lastName': 'van Duijvenbode', 'nickname': 'Aubergenius', 'countryCode': 'NL', 'media': {'image': 'f4f9a260-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36373', 'firstName': 'James', 'lastName': 'Hurrell', 'nickname': 'Hillbilly', 'countryCode': 'GB-ENG', 'media': {'image': '3b90f990-2c62-11f1-8069-ed1f94464a0f.png', 'type': 'profile', 'meta': {'side': ''}}} (5/5) door formule 1 en darts.",
+    "Topkeuze vandaag: {'participantID': '876', 'firstName': 'Stephen', 'lastName': 'Bunting', 'nickname': 'The Bullet', 'countryCode': 'GB-ENG', 'media': {'image': '782f1b70-f21a-11f0-8e4e-4b7ed58fd19c.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '2040', 'firstName': 'Cameron', 'lastName': 'Menzies', 'nickname': 'Cammy', 'countryCode': 'GB-SCT', 'media': {'image': 'f659cea0-f233-11f0-9f86-5be6727c0d18.png', 'type': 'profile', 'meta': {'side': ''}}} (5/5) door formule 1 en darts.",
     "2 must-see item(s) en 12 relevante sportitem(s) gevonden.",
     "Categorieen vandaag: 2026 ET15 - Dutch Darts Championship.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
