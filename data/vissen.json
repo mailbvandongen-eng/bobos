@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-11-04T14:31:01Z",
+  "updated_at": "2026-11-05T14:38:33Z",
   "status": "Visadvies vandaag",
-  "score": 5,
+  "score": 4,
   "items": [
     {
       "label": "Wind",
-      "value": "18 km/u (3 Bft)"
+      "value": "10 km/u (2 Bft)"
     },
     {
       "label": "Luchtdruk",
-      "value": "1031 hPa (stabiele druk)"
+      "value": "1026 hPa (instabiele druk)"
     },
     {
       "label": "Beste tijd",
@@ -22,12 +22,12 @@
   ],
   "details": [
     "Herfst: roofvis wordt vaak actiever en wisselvallig weer kan juist interessante pieken geven.",
-    "Stabiele luchtdruk is meestal gunstig voor voorspelbaar zoetwatervissen.",
+    "Sterk schommelende druk maakt het visbeeld onrustiger; kies daarom korter en gerichter.",
     "Geleidelijke opwarming kan vis actiever maken, zeker later op de dag.",
     "Matige wind geeft vaak net genoeg golfslag voor actieve roofvis zonder dat het onrustig wordt.",
     "Een grotendeels droge avond maakt langere sessies en actief zoeken makkelijker.",
-    "Luchtdruktrend over 48 uur: -0.8 hPa, schommeling circa 3.0 hPa.",
-    "Temperatuurtrend: +1.9 C; wind gemiddeld 18 km/u.",
+    "Luchtdruktrend over 48 uur: -6.9 hPa, schommeling circa 7.2 hPa.",
+    "Temperatuurtrend: +3.0 C; wind gemiddeld 10 km/u.",
     "Vanmiddag naar vanavond wordt circa 0.0 mm neerslag verwacht; CAPE-piek rond 0 J/kg.",
     "Getijdata van Rijkswaterstaat was tijdelijk niet bereikbaar; zeeadvies draait nu alleen op weercondities."
   ],
@@ -35,16 +35,16 @@
     {
       "name": "Roofvis",
       "score": 5,
-      "advice": "Stabiele druk en structuurwater maken roofvis interessanter."
+      "advice": "Roofvis vraagt nu om strakker kiezen van tijd en beschutting."
     },
     {
       "name": "Meerval",
-      "score": 3,
+      "score": 2,
       "advice": "Meerval wordt interessanter zodra temperatuur en nachtactiviteit oplopen."
     },
     {
       "name": "Zee",
-      "score": 3,
+      "score": 2,
       "advice": "Getijbron tijdelijk niet bereikbaar; beoordeel zee later opnieuw rond kentering."
     }
   ],
@@ -52,20 +52,20 @@
     "reference_location": "Midden-Nederland",
     "season": "herfst",
     "season_label": "Herfst",
-    "pressure_state": "stabiele_druk",
+    "pressure_state": "instabiele_druk",
     "temperature_state": "temperatuurstijging",
     "wind_state": "matige_wind",
     "rain_state": "droge_avond",
     "thunder_state": null,
-    "pressure_delta_48h_hpa": -0.8,
-    "pressure_range_48h_hpa": 3.0,
-    "temperature_delta_c": 1.9,
-    "wind_avg_kmh": 17.7,
-    "wind_direction_deg": 73.3,
+    "pressure_delta_48h_hpa": -6.9,
+    "pressure_range_48h_hpa": 7.2,
+    "temperature_delta_c": 3.0,
+    "wind_avg_kmh": 10.5,
+    "wind_direction_deg": 71.9,
     "wind_direction_label": "ONO",
-    "pressure_avg_hpa": 1030.6,
+    "pressure_avg_hpa": 1026.4,
     "evening_precipitation_mm": 0.0,
-    "evening_temperature_c": 7.3,
+    "evening_temperature_c": 6.3,
     "max_cape_j_kg": 0.0,
     "tide_available": false,
     "tide_error": "HTTP Error 404: Not Found",
