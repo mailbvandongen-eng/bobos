@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-05T13:24:13Z",
+  "updated_at": "2026-11-05T21:20:40Z",
   "status": "Vandaag interessant",
   "items": [
     {
-      "time": "14:25",
+      "time": "14:22",
       "title": "{'participantID': '668', 'firstName': 'Jeffrey', 'lastName': 'De Zwaan', 'nickname': 'The Black Cobra', 'countryCode': 'NL', 'media': {'image': '183a5810-2c62-11f1-a92a-33f1adb513f9.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '39687', 'firstName': 'Henry', 'lastName': 'Coates', 'nickname': None, 'countryCode': 'GB-ENG'}",
       "category": "2026 Players Championship 34",
       "source": "PDC",
@@ -13,7 +13,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "14:50",
+      "time": "14:42",
       "title": "{'participantID': '32895', 'firstName': 'Kevin', 'lastName': 'Doets', 'nickname': 'Hawk Eye', 'countryCode': 'NL', 'media': {'image': 'f50ae070-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '33796', 'firstName': 'Stefan', 'lastName': 'Bellmont', 'nickname': 'Belli', 'countryCode': 'CH', 'media': {'image': '643d2ea0-f2e1-11f0-a549-e33be667e764.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 Players Championship 34",
       "source": "PDC",
@@ -23,17 +23,7 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "15:15",
-      "title": "{'participantID': '31502', 'firstName': 'Darius', 'lastName': 'Labanauskas', 'nickname': 'Lucky D', 'countryCode': 'LT', 'media': {'image': '16d7bad0-2c62-11f1-b69e-0bbe5227adf3.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '34609', 'firstName': 'Viktor', 'lastName': 'Tingstrom', 'nickname': None, 'countryCode': 'SE', 'media': {'image': '644ee1e0-f2e1-11f0-87ab-6bf4b74de484.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 Players Championship 34",
-      "source": "PDC",
-      "score": 5,
-      "must_watch": true,
-      "reason": "Formule 1 en darts",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "15:15",
+      "time": "15:12",
       "title": "{'participantID': '32078', 'firstName': 'Bradley', 'lastName': 'Brooks', 'nickname': 'Bam Bam', 'countryCode': 'GB-ENG', 'media': {'image': '168e07a0-2c62-11f1-b0da-37dc355bde8e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '11829', 'firstName': 'Rhys', 'lastName': 'Griffin', 'nickname': None, 'countryCode': 'GB-WLS', 'media': {'image': '63cb32f0-f2e1-11f0-a1a8-890a8a4f9ed0.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 Players Championship 34",
       "source": "PDC",
@@ -43,7 +33,67 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "14:05",
+      "time": "15:17",
+      "title": "{'participantID': '31502', 'firstName': 'Darius', 'lastName': 'Labanauskas', 'nickname': 'Lucky D', 'countryCode': 'LT', 'media': {'image': '16d7bad0-2c62-11f1-b69e-0bbe5227adf3.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '34609', 'firstName': 'Viktor', 'lastName': 'Tingstrom', 'nickname': None, 'countryCode': 'SE', 'media': {'image': '644ee1e0-f2e1-11f0-87ab-6bf4b74de484.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 34",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "15:43",
+      "title": "{'participantID': '876', 'firstName': 'Stephen', 'lastName': 'Bunting', 'nickname': 'The Bullet', 'countryCode': 'GB-ENG', 'media': {'image': '782f1b70-f21a-11f0-8e4e-4b7ed58fd19c.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '4', 'firstName': 'Gary', 'lastName': 'Anderson', 'nickname': 'Flying Scotsman', 'countryCode': 'GB-SCT', 'media': {'image': 'f5b948e0-f233-11f0-8720-17283098ea9c.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 34",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "16:08",
+      "title": "{'participantID': '34743', 'firstName': 'Marvin', 'lastName': 'Kraft', 'nickname': '', 'countryCode': 'DE', 'media': {'image': '164abd10-2c62-11f1-b0da-37dc355bde8e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '38149', 'firstName': 'Owen', 'lastName': 'Bates', 'nickname': 'N/A', 'countryCode': 'GB-ENG', 'media': {'image': '63478400-f2e1-11f0-9690-1f9ade26b30d.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 34",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "17:33",
+      "title": "{'participantID': '30844', 'firstName': 'Jermaine', 'lastName': 'Wattimena', 'nickname': 'The Machine Gun', 'countryCode': 'NL', 'media': {'image': 'f63ef3a0-f233-11f0-8a3d-fdaf0a5c6112.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '876', 'firstName': 'Stephen', 'lastName': 'Bunting', 'nickname': 'The Bullet', 'countryCode': 'GB-ENG', 'media': {'image': '782f1b70-f21a-11f0-8e4e-4b7ed58fd19c.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 34",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "18:08",
+      "title": "{'participantID': '156', 'firstName': 'Kim', 'lastName': 'Huybrechts', 'nickname': 'The Hurricane', 'countryCode': 'BE', 'media': {'image': 'f56b01d0-f233-11f0-a60f-19bb93e6fb80.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '30843', 'firstName': 'Cristo', 'lastName': 'Reyes', 'nickname': 'The Spartan', 'countryCode': 'ES', 'media': {'image': '1690c6c0-2c62-11f1-8996-1f54684de03c.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 34",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "18:45",
+      "title": "{'participantID': '38498', 'firstName': 'Tommy', 'lastName': 'Morris', 'nickname': 'The Gun', 'countryCode': 'GB-ENG'} - {'participantID': '30843', 'firstName': 'Cristo', 'lastName': 'Reyes', 'nickname': 'The Spartan', 'countryCode': 'ES', 'media': {'image': '1690c6c0-2c62-11f1-8996-1f54684de03c.png', 'type': 'profile', 'meta': {'side': ''}}}",
+      "category": "2026 Players Championship 34",
+      "source": "PDC",
+      "score": 5,
+      "must_watch": true,
+      "reason": "Formule 1 en darts",
+      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
+    },
+    {
+      "time": "14:04",
       "title": "{'participantID': '81', 'firstName': 'Joe', 'lastName': 'Cullen', 'nickname': 'The Rockstar', 'countryCode': 'GB-ENG', 'media': {'image': 'f517ffd0-f233-11f0-adbf-f569001aa27e.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '47320', 'firstName': 'Archie', 'lastName': 'Self', 'nickname': 'The Archer', 'countryCode': 'GB-ENG'}",
       "category": "2026 Players Championship 34",
       "source": "PDC",
@@ -63,18 +113,8 @@
       "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
     },
     {
-      "time": "14:25",
+      "time": "14:26",
       "title": "{'participantID': '32087', 'firstName': 'Greg', 'lastName': 'Ritchie', 'nickname': None, 'countryCode': 'GB-SCT', 'media': {'image': '63cae4d0-f2e1-11f0-8e5b-3301a72ac16a.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '36303', 'firstName': 'Justin', 'lastName': 'Hood', 'nickname': 'The Pocket Rocket', 'countryCode': 'GB-ENG', 'media': {'image': 'f4e8b270-f233-11f0-8be2-5d81ca77fe21.png', 'type': 'profile', 'meta': {'side': ''}}}",
-      "category": "2026 Players Championship 34",
-      "source": "PDC",
-      "score": 4,
-      "must_watch": false,
-      "reason": "darts",
-      "url": "https://mailbvandongen-eng.github.io/sport-op-tv/"
-    },
-    {
-      "time": "14:50",
-      "title": "{'participantID': '32102', 'firstName': 'Luke', 'lastName': 'Humphries', 'nickname': 'Cool Hand', 'countryCode': 'GB-ENG', 'media': {'image': 'f62be0d0-f233-11f0-b703-63c53945660f.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '30829', 'firstName': 'Mike', 'lastName': 'De Decker', 'nickname': 'Real Deal', 'countryCode': 'BE', 'media': {'image': 'f5e14340-f233-11f0-8f68-e98be9e2ec48.png', 'type': 'profile', 'meta': {'side': ''}}}",
       "category": "2026 Players Championship 34",
       "source": "PDC",
       "score": 4,
@@ -85,7 +125,7 @@
   ],
   "details": [
     "Topkeuze vandaag: {'participantID': '668', 'firstName': 'Jeffrey', 'lastName': 'De Zwaan', 'nickname': 'The Black Cobra', 'countryCode': 'NL', 'media': {'image': '183a5810-2c62-11f1-a92a-33f1adb513f9.png', 'type': 'profile', 'meta': {'side': ''}}} - {'participantID': '39687', 'firstName': 'Henry', 'lastName': 'Coates', 'nickname': None, 'countryCode': 'GB-ENG'} (5/5) door formule 1 en darts.",
-    "4 must-see item(s) en 8 relevante sportitem(s) gevonden.",
+    "9 must-see item(s) en 12 relevante sportitem(s) gevonden.",
     "Categorieen vandaag: 2026 Players Championship 34.",
     "Formule 1, darts, WK/topvoetbal en Manchester United krijgen extra prioriteit in de ranking."
   ],
