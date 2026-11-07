@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-11-06T14:15:26Z",
+  "updated_at": "2026-11-07T12:59:31Z",
   "status": "Visadvies vandaag",
-  "score": 3,
+  "score": 4,
   "items": [
     {
       "label": "Wind",
-      "value": "8 km/u (2 Bft)"
+      "value": "5 km/u (1 Bft)"
     },
     {
       "label": "Luchtdruk",
-      "value": "1024 hPa (instabiele druk)"
+      "value": "1022 hPa (dalende druk)"
     },
     {
       "label": "Beste tijd",
@@ -22,29 +22,29 @@
   ],
   "details": [
     "Herfst: roofvis wordt vaak actiever en wisselvallig weer kan juist interessante pieken geven.",
-    "Sterk schommelende druk maakt het visbeeld onrustiger; kies daarom korter en gerichter.",
+    "Licht dalende druk kan roofvis en meerval losmaken, maar houd de wisselvalligheid in de gaten.",
     "Geleidelijke opwarming kan vis actiever maken, zeker later op de dag.",
     "Rustig water maakt precies vissen makkelijker, maar het water kan ook stiller en minder actief ogen.",
     "Een grotendeels droge avond maakt langere sessies en actief zoeken makkelijker.",
-    "Luchtdruktrend over 48 uur: -6.2 hPa, schommeling circa 7.0 hPa.",
-    "Temperatuurtrend: +3.4 C; wind gemiddeld 8 km/u.",
-    "Vanmiddag naar vanavond wordt circa 0.0 mm neerslag verwacht; CAPE-piek rond 0 J/kg.",
+    "Luchtdruktrend over 48 uur: -3.4 hPa, schommeling circa 3.4 hPa.",
+    "Temperatuurtrend: +4.5 C; wind gemiddeld 5 km/u.",
+    "Vanmiddag naar vanavond wordt circa 0.0 mm neerslag verwacht; CAPE-piek rond 10 J/kg.",
     "Getijdata van Rijkswaterstaat was tijdelijk niet bereikbaar; zeeadvies draait nu alleen op weercondities."
   ],
   "profiles": [
     {
       "name": "Roofvis",
-      "score": 4,
-      "advice": "Roofvis vraagt nu om strakker kiezen van tijd en beschutting."
+      "score": 5,
+      "advice": "Licht dalende druk kan roofvis activeren, maar blijf mobiel."
     },
     {
       "name": "Meerval",
-      "score": 2,
+      "score": 3,
       "advice": "Meerval wordt interessanter zodra temperatuur en nachtactiviteit oplopen."
     },
     {
       "name": "Zee",
-      "score": 2,
+      "score": 3,
       "advice": "Getijbron tijdelijk niet bereikbaar; beoordeel zee later opnieuw rond kentering."
     }
   ],
@@ -52,21 +52,21 @@
     "reference_location": "Midden-Nederland",
     "season": "herfst",
     "season_label": "Herfst",
-    "pressure_state": "instabiele_druk",
+    "pressure_state": "dalende_druk",
     "temperature_state": "temperatuurstijging",
     "wind_state": "lage_wind",
     "rain_state": "droge_avond",
     "thunder_state": null,
-    "pressure_delta_48h_hpa": -6.2,
-    "pressure_range_48h_hpa": 7.0,
-    "temperature_delta_c": 3.4,
-    "wind_avg_kmh": 7.5,
-    "wind_direction_deg": 82.3,
-    "wind_direction_label": "O",
-    "pressure_avg_hpa": 1023.9,
+    "pressure_delta_48h_hpa": -3.4,
+    "pressure_range_48h_hpa": 3.4,
+    "temperature_delta_c": 4.5,
+    "wind_avg_kmh": 5.5,
+    "wind_direction_deg": 157.7,
+    "wind_direction_label": "ZZO",
+    "pressure_avg_hpa": 1022.4,
     "evening_precipitation_mm": 0.0,
-    "evening_temperature_c": 5.3,
-    "max_cape_j_kg": 0.0,
+    "evening_temperature_c": 6.2,
+    "max_cape_j_kg": 10.0,
     "tide_available": false,
     "tide_error": "HTTP Error 404: Not Found",
     "tide_location": "IJmuiden, buitenhaven",
