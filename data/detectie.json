@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-01T21:25:23Z",
+  "updated_at": "2026-11-08T21:25:05Z",
   "status": "Maandagadvies",
-  "score": 4,
+  "score": 5,
   "items": [
     {
       "label": "Beste keuze",
@@ -22,10 +22,11 @@
     "Droog zand geeft vaak minder contrast, terwijl keiharde klei minder prettig blijft voor signalen en graven.",
     "Betuwe blijft interessant waar hoge stroomruggen, oude oeverwallen en droge akkerkoppen begaanbaar zijn.",
     "Herfst: Profiteer van vrijgekomen akkers, vooral op stroomruggen, oeverwallen en hoger zand.",
-    "Afgelopen 7 dagen viel circa 3.7 mm regen (droge week). Voor maandag 2026-11-02 wordt ongeveer 4.2 mm verwacht. Verwachte maxtemp: 13.3 C. Windpiek: 19 km/u.",
+    "Afgelopen 7 dagen viel circa 2.5 mm regen (droge week). Voor maandag 2026-11-09 wordt ongeveer 0.0 mm verwacht. Verwachte maxtemp: 9.8 C. Windpiek: 9 km/u.",
     "Beste landschapstype nu: Hoge oeverwal / klei-akker.",
     "Vermijden: Keiharde droge klei.",
-    "Betuwe niet uitsluiten: hoge stroomruggen en oude oeverwallen blijven interessant als ze hoog en droog genoeg zijn."
+    "Betuwe niet uitsluiten: hoge stroomruggen en oude oeverwallen blijven interessant als ze hoog en droog genoeg zijn.",
+    "Maandag lijkt relatief droog, waardoor hoge stroomruggen en droge oeverwallen extra aantrekkelijk worden."
   ],
   "profiles": [
     {
@@ -49,12 +50,12 @@
     "season": "herfst",
     "season_label": "Herfst",
     "field_access": "Profiteer van vrijgekomen akkers, vooral op stroomruggen, oeverwallen en hoger zand.",
-    "rain_last_7_days_mm": 3.7,
+    "rain_last_7_days_mm": 2.5,
     "week_condition": "droge_week",
-    "monday_date": "2026-11-02",
-    "monday_precipitation_mm": 4.2,
-    "monday_temperature_max_c": 13.3,
-    "monday_wind_max_kmh": 18.7
+    "monday_date": "2026-11-09",
+    "monday_precipitation_mm": 0.0,
+    "monday_temperature_max_c": 9.8,
+    "monday_wind_max_kmh": 9.0
   },
   "sources": [
     {
