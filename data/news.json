@@ -1,5 +1,32 @@
 [
   {
+    "title": "Manchester City lijdt derde competitienederlaag op rij, koploper Arsenal profiteert",
+    "summary": "Manchester City heeft voor de derde keer op rij verloren in de Premier League. Na de zeperds tegen Aston Villa en Brighton & Hove Albion ging de omstreden grootmacht met 3-1 onderuit tegen het laag geklasseerde...",
+    "source": "NOS Sport",
+    "published": "2026-11-07T17:20:36Z",
+    "category": "Voetbal",
+    "image": "https://images.cdn.nos.nl/5/3/T/c/8/S/d4nEqCc5TxfXAZ86SdCssjxAHxbXnUSUbKsggaz/701x122x2080x1170-1024x576.webp",
+    "url": "https://nos.nl/l/2638471"
+  },
+  {
+    "title": "Bayern München en Borussia Dortmund maken geen fout, 'oudje' Neuer valt uit",
+    "summary": "Bayern München en Borussia Dortmund hebben zich gehandhaafd aan kop van de Bundesliga. Bayern klopte FSV Mainz 05 met 2-1. Dortmund had het moeilijk met promovendus Elversberg, maar won wel: 2-1. Beide clubs staan...",
+    "source": "NOS Sport",
+    "published": "2026-11-07T16:33:40Z",
+    "category": "Voetbal",
+    "image": "https://images.cdn.nos.nl/8/3/e/g/G/4/drKc9Z9s5ZHKCHEpQAcHw8NN2PZGQ8s5EQff293/703x213x3072x1728-1024x576.webp",
+    "url": "https://nos.nl/l/2638466"
+  },
+  {
+    "title": "Microsoft brengt patch uit voor rce-lek in Paint na eerdere mislukte uitrol",
+    "summary": "Microsoft heeft nu wél de nieuwe versie van Paint uitgebracht, die een remote-code-executionbug verhelpt. Het bedrijf zei dat het de update vorige maand al had uitgebracht, maar veel gebruikers kregen deze niet binnen.",
+    "source": "Tweakers",
+    "published": "2026-11-08T10:00:07Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/254286/microsoft-brengt-patch-uit-voor-rce-lek-in-paint-na-eerdere-mislukte-uitrol.html"
+  },
+  {
     "title": "Benchmark - Welke hardware is het snelst voor lokale AI? Apple, Nvidia en AMD getest",
     "summary": "Voor het draaien van lokale AI-modellen zoals Qwen 3.8 en GLM 5.3 komen steeds meer systemen met heel veel ram op de markt. Maar zijn ze ook een beetje snel?",
     "source": "Tweakers",
@@ -16,6 +43,15 @@
     "category": "Tech",
     "image": "",
     "url": "https://tweakers.net/nieuws/254240/gpt-6-cyber-vindt-948-kwetsbaarheden-in-linux.html"
+  },
+  {
+    "title": "Hera nadert Didymos: het ruimtelijk onderzoek naar de DART-inslag begint bijna",
+    "summary": "De Europese ruimtesonde Hera nadert het planetoïdesysteem Didymos en komt deze maand aan. Na de remmanoeuvres van oktober is de sonde klaar om te onderzoeken wat de DART-inslag van 2022 met het maantje Dimorphos heeft...",
+    "source": "Scientias",
+    "published": "2026-11-07T20:00:02Z",
+    "category": "Wetenschap",
+    "image": "https://scientias.nl/wp-content/uploads/2026/11/Hera_scans_Dimorphos_with_its_laser_altimeter.17c5064b.webp",
+    "url": "https://scientias.nl/hera-nadert-didymos-het-ruimtelijk-onderzoek-naar-de-dart-inslag-begint-bijna/"
   },
   {
     "title": "Kraaien kunnen supersnel een keuze maken: vergelijkbare reactietijd als mensen",
@@ -36,13 +72,49 @@
     "url": "https://tweakers.net/nieuws/254270/apple-laat-iphone-toetsenbord-woorden-als-dictator-trump-niet-voorspellen.html"
   },
   {
-    "title": "Waarom jouw hond weleens een onverwachte natuurheld kan worden",
-    "summary": "Uit een nieuw onderzoek blijkt dat huishonden getraind kunnen worden om invasieve planten op te sporen. Schrijf je in voor de nieuwsbrief! Ook elke dag vers het laatste wetenschapsnieuws in je inbox? Of elke week?...",
-    "source": "Scientias",
-    "published": "2026-11-06T14:00:47Z",
-    "category": "Wetenschap",
-    "image": "https://scientias.nl/wp-content/uploads/2026/11/4V1A4838_b-scaled.jpg",
-    "url": "https://scientias.nl/waarom-jouw-hond-weleens-een-onverwachte-natuurheld-kan-worden/"
+    "title": "Odido-klanten in buitenland kunnen door storing niet internetten en bellen",
+    "summary": "Odido heeft een storing op zijn mobiele netwerk. Daardoor ervaren veel klanten problemen met roamen in het buitenland. De provider zegt op zoek te zijn naar een oplossing.",
+    "source": "Tweakers",
+    "published": "2026-11-08T11:21:37Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/254290/odido-klanten-in-buitenland-kunnen-door-storing-niet-internetten-en-bellen.html"
+  },
+  {
+    "title": "'TSMC overweegt productie van geavanceerde geheugenchips op verzoek van Nvidia'",
+    "summary": "TSMC overweegt om zelf geheugenchips te fabriceren, meldt The Information. Nvidia zou de chipfabrikant gevraagd hebben om 3d-dramgeheugen te maken.",
+    "source": "Tweakers",
+    "published": "2026-11-08T11:08:41Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/254288/tsmc-overweegt-productie-van-geavanceerde-geheugenchips-op-verzoek-van-nvidia.html"
+  },
+  {
+    "title": "Nvidia-ceo moet zich verantwoorden voor 'liefdesrelatie' met Chinese spion",
+    "summary": "Nvidia-ceo Jensen Huang moet zich verantwoorden tegenover het Amerikaanse Congres over zijn vermeende band met Alice Huang. Volgens de Financial Times had de directeur van Nvidia een liefdesrelatie met haar. Alice zou...",
+    "source": "Tweakers",
+    "published": "2026-11-08T09:10:20Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/nieuws/254284/nvidia-ceo-moet-zich-verantwoorden-voor-liefdesrelatie-met-chinese-spion.html"
+  },
+  {
+    "title": "How-to - Het loont weer om externe schijven te 'shucken' nu harddisks duurder worden",
+    "summary": "Harde schijven zijn flink duurder geworden … Met deze truc kun je meer dan 100 euro per schijf besparen!",
+    "source": "Tweakers",
+    "published": "2026-11-08T05:00:00Z",
+    "category": "Tech",
+    "image": "",
+    "url": "https://tweakers.net/reviews/15550/het-loont-weer-om-externe-schijven-te-shucken-nu-harddisks-duurder-worden.html"
+  },
+  {
+    "title": "AS Roma blijft meedoen in top Serie A na eenvoudige zege op Sassuolo",
+    "summary": "AS Roma blijft meedoen in de top van de Serie A. Na de pijnlijke nederlaag in de Champions League bij Manchester United (3-2) had Roma geen kind aan het laag geklasseerde Sassuolo: 3-0. Door de zege wipt Roma over...",
+    "source": "NOS Sport",
+    "published": "2026-11-07T21:45:10Z",
+    "category": "Voetbal",
+    "image": "https://images.cdn.nos.nl/7/5/m/d/R/b/6FsRsL2guqdsyU6KSqpNKWYi1hFhsW3uwhWw6PK/325x60x1040x585-1024x576.webp",
+    "url": "https://nos.nl/l/2638501"
   },
   {
     "title": "Canadezen willen gesloten gamestudio BioWare met officiële petitie redden",
@@ -153,60 +225,6 @@
     "url": "https://tweakers.net/nieuws/254246/digicert-maakte-intern-systeem-per-ongeluk-openbaar-data-van-klanten-lekt-uit.html"
   },
   {
-    "title": "Achtergrond - Google mogelijk op juridisch glad ijs als het AI-functies aan Zoeken koppelt",
-    "summary": "Scholen die geen AI-diensten van Google willen, krijgen mogelijk ook geen toegang meer tot Google Zoeken. Die koppeling staat op gespannen voet met de mededingingswetgeving.",
-    "source": "Tweakers",
-    "published": "2026-11-06T10:00:00Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/reviews/15576/google-mogelijk-op-juridisch-glad-ijs-als-het-ai-functies-aan-zoeken-koppelt.html"
-  },
-  {
-    "title": "Preview - Motorola Signature 27 - Motorola trekt alles uit de kast",
-    "summary": "Motorola wil graag weer meedoen in het topsegment, bleek vorig jaar. Die wens is klaarblijkelijk nog groter geworden, want de Signature 27 lijkt op papier bijna té interessant.",
-    "source": "Tweakers",
-    "published": "2026-11-06T10:00:00Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/reviews/15570/motorola-signature-27-motorola-trekt-alles-uit-de-kast.html"
-  },
-  {
-    "title": "Gerucht: EA-kopers willen ook Unity overnemen voor 25 miljard dollar",
-    "summary": "Na de overname van Electronic Arts willen het Saoedi-Arabische staatsfonds Public Investment Fund (PIF) en het Amerikaanse investeringsbedrijf Silver Lake mogelijk ook game-enginemaker Unity overnemen. Het zou om een...",
-    "source": "Tweakers",
-    "published": "2026-11-06T08:42:29Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/254238/gerucht-ea-kopers-willen-ook-unity-overnemen-voor-25-miljard-dollar.html"
-  },
-  {
-    "title": "Dropbox voegt AI-tools voor zoeken en bewerken toe aan opslagdienst",
-    "summary": "Dropbox voegt verschillende AI-functies toe aan zijn opslagdienst, waarmee gebruikers hun opgeslagen gegevens via prompts kunnen doorzoeken en bewerken. De functies zijn in eerste instantie gericht op zakelijke klanten...",
-    "source": "Tweakers",
-    "published": "2026-11-06T07:50:48Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/254232/dropbox-voegt-ai-tools-voor-zoeken-en-bewerken-toe-aan-opslagdienst.html"
-  },
-  {
-    "title": "Google, Meta en TikTok vechten Californisch verbod op verslavende feeds aan",
-    "summary": "Google, TikTok en Meta verzetten zich in afzonderlijke rechtszaken tegen een Californische wet die verslavende elementen voor tieners tot 16 jaar verbiedt. Volgens de bedrijven achter de grootste sociale media is de wet...",
-    "source": "Tweakers",
-    "published": "2026-11-06T06:40:49Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/254228/google-meta-en-tiktok-vechten-californisch-verbod-op-verslavende-feeds-aan.html"
-  },
-  {
-    "title": "Bluetooth krijgt volgend jaar snelheidsboost van 2Mbit/s naar 7,5Mbit/s",
-    "summary": "De Bluetooth Special Interest Group heeft High Data Throughput (HDT) goedgekeurd als onderdeel van Bluetooth Core 7.0. Daarmee gaat de maximale doorvoersnelheid van 2Mbit/s naar 7,5Mbit/s. Volgend jaar verschijnen de...",
-    "source": "Tweakers",
-    "published": "2026-11-05T20:23:00Z",
-    "category": "Tech",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/254208/bluetooth-krijgt-volgend-jaar-snelheidsboost-van-2mbit-s-naar-7-komma-5mbit-s.html"
-  },
-  {
     "title": "Google Find Hub kan melding geven bij buitenshuis achterlaten tracker",
     "summary": "Google Find Hub krijgt een nieuwe functie waarmee gebruikers een melding kunnen ontvangen als een tracker zich te ver van hun smartphone bevindt. Dit kan voorkomen dat gebruikers een object kwijtraken. De concurrerende...",
     "source": "Tweakers",
@@ -214,51 +232,6 @@
     "category": "Gadgets",
     "image": "",
     "url": "https://tweakers.net/nieuws/254254/google-find-hub-kan-melding-geven-bij-buitenshuis-achterlaten-tracker.html"
-  },
-  {
-    "title": "Sony ziet verkoop PlayStation 5 teruglopen, gaat in volgende console investeren",
-    "summary": "Sony verkocht in het afgelopen kwartaal aanzienlijk minder PlayStation 5-consoles dan vorig jaar. Het aantal actieve gebruikers en de verkoop van games blijven wel groeien. Vanaf het volgende boekjaar gaat Sony...",
-    "source": "Tweakers",
-    "published": "2026-11-06T10:26:50Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/254234/sony-ziet-verkoop-playstation-5-teruglopen-gaat-in-volgende-console-investeren.html"
-  },
-  {
-    "title": "Microsoft test snellere en simpelere XBOX-app voor pc",
-    "summary": "Microsoft brengt voor Insiders een versimpelde versie van de XBOX-app voor pc uit. De app heeft minder kopjes op de landingspagina en haalt ook verschillende opties uit de keuzebalk. Daarnaast moet de app tot 60 procent...",
-    "source": "Tweakers",
-    "published": "2026-11-06T08:06:36Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/nieuws/254236/microsoft-test-snellere-en-simpelere-xbox-app-voor-pc.html"
-  },
-  {
-    "title": ".Adv - Oled of LED? TCL introduceert SQD-Mini LED televisies",
-    "summary": "Een neonreclame licht fel op boven een donkere straat. In een film, serie of videogame vraagt zo'n scène veel van een televisie.",
-    "source": "Tweakers",
-    "published": "2026-11-06T07:00:00Z",
-    "category": "Gadgets",
-    "image": "",
-    "url": "https://tweakers.net/plan/4890/oled-of-led-tcl-introduceert-sqd-mini-led-televisies.html"
-  },
-  {
-    "title": "Praat mee op VP: Van Hecke en Van de Ven met Spurs op bezoek bij Leeds",
-    "summary": "Leeds United en Tottenham Hotspur staan zaterdagmiddag tegenover elkaar in de Premier League. De wedstrijd begint om 13.30 uur, volg de wedstrijd hieronder in de live-omgeving van VoetbalPrimeur en praat mee!",
-    "source": "VoetbalPrimeur",
-    "published": "2026-11-07T11:30:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/10/31/d018f6b7f096defdbf5f1313f1cafb6e0dae171a.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2155037/praat-mee-op-vp-leeds-united-tottenham-hotspur.html"
-  },
-  {
-    "title": "De Zerbi haalt uit en geeft jonge spelers dringend advies: 'Verwijder alles'",
-    "summary": "Jonge spelers moeten ver weg blijven van sociale media. Dat stelt Tottenham Hotspur-manager Roberto De Zerbi in aanloop naar het Premier League-duel met Leeds United. De Zerbi kwam tot die conclusie na een opvallende...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-11-07T08:57:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/03/23/9b9b90e68ae290afe1decfc2a9faaad5a38dac2f.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2156126/roberto-de-zerbi-over-verwijderen-sociale-media-jonge-spelers.html"
   },
   {
     "title": "Er lekt een vreemde stof uit Mars. Is dat het bewijs voor actieve vulkanen op de rode planeet?",
@@ -351,22 +324,40 @@
     "url": "https://archeologieonline.nl/archeologie-magazine/2026-5"
   },
   {
-    "title": "Heracles overklast Roda JC en verstevigt koppositie, VVV verspeelt punten",
-    "summary": "Koploper Heracles Almelo heeft een overtuigende zege geboekt op Roda JC in de eerste divisie. In Almelo werd met 5-1 gewonnen, terwijl nummer twee VVV-Venlo met 1-1 gelijkspeelde tegen Jong PSV. Roda gaf de goals...",
+    "title": "Topscorer Tolu predikt liefde bij Ajax: 'In het stadion ben ik gelukkig'",
+    "summary": "Met zijn twaalf doelpunten is Tolu Arokodare niet alleen de topscorer van Ajax. De 1,97 meter lange spits heeft zich in mum van tijd ontpopt tot publiekslieveling van de Amsterdamse fans en is bovendien een van de...",
     "source": "NOS Sport",
-    "published": "2026-11-06T21:23:29Z",
+    "published": "2026-11-08T05:00:02Z",
     "category": "Voetbal",
-    "image": "https://images.cdn.nos.nl/5/3/S/V/C/B/2uENpWiVRT9UMLQwWeaFr3iLWqPhLLBn6G5TS4V/714x344x3280x1845-1024x576.webp",
-    "url": "https://nos.nl/l/2638364"
+    "image": "https://images.cdn.nos.nl/6/C/g/H/4/R/inDKhDHU2Z7T928crXKYuEjYV9AtEiYKr9Je4wk/361x574x2256x1269-1024x576.webp",
+    "url": "https://nos.nl/l/2638520"
   },
   {
-    "title": "Algemeen directeur Geelen vertrekt volgend jaar april bij Ajax",
-    "summary": "Ajax neemt volgend jaar afscheid van algemeen directeur Menno Geelen. Hij was bijna zeventien jaar in diverse functies werkzaam bij de club. Geelen volgde in 2024 Alex Kroes op als algemeen directeur. Kroes werd...",
+    "title": "Van Bronckhorst houdt vertrouwen in Feyenoord-keeper Ernst, maar cijfers liegen niet",
+    "summary": "De machine van Feyenoord hapert momenteel en opnieuw krijgt doelman Tjark Ernst veel kritiek. \"Daar moet hij mee leren omgaan\", stelt trainer Giovanni van Bronckhorst over de Duitser, die er cijfermatig ook niet lekker...",
     "source": "NOS Sport",
-    "published": "2026-11-06T13:15:08Z",
+    "published": "2026-11-08T05:00:01Z",
     "category": "Voetbal",
-    "image": "https://images.cdn.nos.nl/2/F/d/o/N/X/1SEGJ7pUFM5Qtqbx5mssiMPrSRqrWfJqiHG8qPp/3x334x3200x1800-1024x576.webp",
-    "url": "https://nos.nl/l/2638293"
+    "image": "https://images.cdn.nos.nl/8/7/Q/T/Y/2/mFwfi4JcN1TQtjaeGDyfEEFBo3P4S7aeart1wx3/6x181x3600x2025-1024x576.webp",
+    "url": "https://nos.nl/l/2638519"
+  },
+  {
+    "title": "IJsbaan in Leeuwarden opnieuw dicht vanwege ammoniaklek",
+    "summary": "De Elfstedenhal in Leeuwarden is opnieuw ontruimd vanwege een ammoniaklek, meldt Omrop Fryslân. Eerder deze week ging de ijsbaan ook al dicht vanwege een ammoniaklek. Ammoniak wordt gebruikt in de technische ruimte van...",
+    "source": "NOS Algemeen",
+    "published": "2026-11-07T22:34:24Z",
+    "category": "Wetenschap",
+    "image": "https://images.cdn.nos.nl/8/E/z/B/N/u/sdmNUXoNTTh2pVEvJansXN4hdh9gLKv6wZ47ttY/0x362x4000x2250-1024x576.webp",
+    "url": "https://nos.nl/l/2638509"
+  },
+  {
+    "title": "Real Madrid komt naast koploper Barcelona na eenvoudige zege op Valencia",
+    "summary": "Zonder zich overmatig in te spannen heeft Real Madrid met 3-0 gewonnen op bezoek bij Valencia. Door de zege komt Real op gelijke hoogte met koploper Barcelona, dat zondag op bezoek gaat bij nummer drie Atlético Madrid....",
+    "source": "NOS Sport",
+    "published": "2026-11-07T22:12:02Z",
+    "category": "Voetbal",
+    "image": "https://images.cdn.nos.nl/4/8/D/r/e/u/Mnkc73VdCFjnEaypScJ7ZVTBdYDixuAHPZMM2Ui/8x10x3984x2241-1024x576.webp",
+    "url": "https://nos.nl/l/2638506"
   },
   {
     "title": "1800 jaar oude houten boten duiken 7 meter onder Peking op",
@@ -387,31 +378,67 @@
     "url": "https://historianet.nl/beschavingen/romeinse-rijk/1800-jaar-oud-kindergraf-bevatte-speelgoed-dat-nog-steeds-kan-rammelen"
   },
   {
-    "title": "2000 jaar oude kledingkast in Pompeï bevatte ontroerende jeugdherinneringen",
-    "summary": "Sinds de uitbarsting van de Vesuvius liggen er allerlei spullen begraven onder vulkanisch materiaal. Een kleine verzameling hangertjes wekt de interesse van de onderzoekers.",
-    "source": "Historianet",
-    "published": "2026-11-04T16:00:34Z",
+    "title": "Ajax-huurling Ávila gaat over de schreef in kampioensduel Rosario Central",
+    "summary": "Gastón Ávila heeft zich bij Rosario Central van een minder goede kant laten zien. De huurling van Ajax kreeg in de wedstrijd tegen Estudiantes Río Cuarto de rode kaart vanwege een overtreding waar de honden geen brood...",
+    "source": "Voetbal International",
+    "published": "2026-11-08T11:44:38Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/11/08/4ff28fbf537df8cba337b84e9c7238b0e7d13aeb.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/ajax-huurling-avila-gaat-over-de-schreef-in-kampioensduel-rosario-central"
+  },
+  {
+    "title": "Konadu maakt indruk bij Lommel: 'De mentaliteit van een topspeler in wording'",
+    "summary": "Lommel SK-trainer Lee Johnson is zeer te spreken over de ontwikkeling van spits Don-Angelo Konadu. De huurling van Ajax nam de promovendus zaterdag op sleeptouw tegen Antwerp FC door liefst twee keer te scoren . Al...",
+    "source": "Voetbal International",
+    "published": "2026-11-08T10:30:39Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/11/08/889959bc0ca7f36e6fb98112cb6ebf11567df932.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/konadu-maakt-indruk-bij-lommel-de-mentaliteit-van-een-topspeler-in-wording"
+  },
+  {
+    "title": "Opstelling Feyenoord: Watanabe keert terug in basiself voor duel met Heerenveen",
+    "summary": "Giovanni van Bronckhorst heeft zijn opstelling voor het uitduel met SC Heerenveen bekendgemaakt. Tsuyoshi Watanabe keert terug in het hart van de defensie bij Feyenoord. Dat gaat ten koste van Thijs Kraaijeveld.",
+    "source": "Voetbal International",
+    "published": "2026-11-08T10:10:01Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/11/08/587211114845c2e48a431a89ce505a8af312bd7c.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/opstelling-feyenoord-watanabe-keert-terug-in-basiself-voor-duel-met-heerenveen"
+  },
+  {
+    "title": "Van der Sar denkt dat Ajax nog altijd de beste opleiding van Nederland heeft",
+    "summary": "Edwin van der Sar was afgelopen donderdag te gast bij de wedstrijd tussen AZ en Juventus, waar hij sprak over bijvoorbeeld de ontwikkeling van Donyell Malen en Kenneth Taylor. Ook denkt hij dat Ajax nog altijd de beste...",
+    "source": "Voetbal International",
+    "published": "2026-11-08T09:52:17Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/11/08/ec3d96cf49bcc072ddea2d2d9d35e51269b8e3fd.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/van-der-sar-denkt-dat-ajax-nog-altijd-de-beste-opleiding-van-nederland-heeft"
+  },
+  {
+    "title": "De gemengde PSV-gevoelens van Drommel: 'Jammer genoeg gaf Bosz me nooit de kans'",
+    "summary": "Joël Drommel (29) voelt zich sterker dan ooit bij FC Twente. Na vijf jaar bij PSV, waar hij voornamelijk genoegen moest nemen met een reserverol, is de doelman terug in Enschede. 'Ik ging als jonge jongen, nu staat er...",
+    "source": "Voetbal International",
+    "published": "2026-11-08T09:15:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/11/05/c0ab9ce9563ced389cc85a017c05e2477042eb8d.jpg?width=1200",
+    "url": "https://www.vi.nl/nieuws/de-gemengde-psv-gevoelens-van-drommel-jammer-genoeg-gaf-bosz-me-nooit-de-kans"
+  },
+  {
+    "title": "Tolu mikt in de Grolsch Veste op Ajax-record van Patrick Kluivert",
+    "summary": "Als Tolu Arokodare in de basis start tijdens het duel tussen Ajax en FC Twente én scoort, schiet hij zich de Amsterdamse boeken in. In de clubgeschiedenis lukte het alleen Patrick Kluivert om in zes van zijn eerste...",
+    "source": "Voetbal International",
+    "published": "2026-11-08T08:30:19Z",
+    "category": "Voetbal",
+    "image": "https://webp.vi.cdn.pxr.nl/news/2026/11/05/6755829e507e6dd30442d07eb6a922f547b0267d.png?width=1200",
+    "url": "https://www.vi.nl/nieuws/tolu-mikt-in-de-grolsch-veste-op-ajax-record-van-patrick-kluivert"
+  },
+  {
+    "title": "Medieval man killed by trebuchet",
+    "summary": "Researchers believe they have identified the earliest archaeological evidence of trauma caused by a trebuchet. The discovery was made during analysis of several skeletons unearthed beneath the chapel of Stirling Castle,...",
+    "source": "The Past",
+    "published": "2026-11-07T13:15:00Z",
     "category": "Archeologie",
     "image": "",
-    "url": "https://historianet.nl/beschavingen/romeinse-rijk/achtergelaten-kast-in-pompei-bevatte-kindersieraden-en-38-munten"
-  },
-  {
-    "title": "Trafford mikt op plek onder Engelse lat na pittig jaar bij Man City",
-    "summary": "James Trafford heeft met gemengde gevoelens teruggekeken op zijn laatste seizoen bij Manchester City. De 24-jarige doelman noemt zijn gebrek aan speeltijd 'een verschrikkelijk gevoel' en besloot afgelopen zomer naar...",
-    "source": "Voetbal International",
-    "published": "2026-11-07T10:35:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/11/07/292f37fb7a69bea8cf5121fbf64592cac7d9c336.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/trafford-mikt-op-plek-onder-engelse-lat-na-pittig-jaar-bij-man-city"
-  },
-  {
-    "title": "Op deze zender wordt La Liga-kraker Atlético – Barcelona uitgezonden",
-    "summary": "Zondag staat er een ware kraker op het programma in La Liga. De twee beste ploegen na elf speelronden staan tegenover elkaar: Atlético Madrid en Barcelona. In dit artikel lees je waar de topper wordt uitgezonden.",
-    "source": "Voetbal International",
-    "published": "2026-11-06T22:50:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/11/02/4d32d457d54bcf2a4bd0697b05c1309df87f0362.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/op-deze-zender-wordt-la-liga-kraker-atletico-barcelona-uitgezonden"
+    "url": "https://the-past.com/military-history/155/news/medieval-man-killed-by-trebuchet/"
   },
   {
     "title": "Verica Rex: Searching for a ‘lost’ queen of the British Iron Age",
@@ -531,42 +558,6 @@
     "url": "https://the-past.com/current-archaeology/441/news/anglo-saxon-hall-uncovered-near-gloucester/"
   },
   {
-    "title": "Woodstown Viking settlement reveals more secrets",
-    "summary": "A collaborative team of Irish and Norwegian archaeologists working at the Viking settlement of Woodstown, located on the banks of the River Suir, west of Waterford City, have uncovered the largest building yet found at...",
-    "source": "The Past",
-    "published": "2026-10-31T13:00:48Z",
-    "category": "Archeologie",
-    "image": "",
-    "url": "https://the-past.com/current-archaeology/441/news/woodstown-viking-settlement-reveals-more-secrets/"
-  },
-  {
-    "title": "Early medieval jewellery workshop at Govan Old",
-    "summary": "An excavation at the 1,500-year-old churchyard of Govan Old in Glasgow has revealed evidence of early medival craftworking, including two incomplete finger-rings, which were discarded before completion. While the church...",
-    "source": "The Past",
-    "published": "2026-10-31T12:45:47Z",
-    "category": "Archeologie",
-    "image": "",
-    "url": "https://the-past.com/current-archaeology/441/news/early-medieval-jewellery-workshop-at-govan-old/"
-  },
-  {
-    "title": "UK news in brief",
-    "summary": "Young Archaeologists take over York A new Young Archaeologists’ Club has been established in York, giving children aged 8-16 the opportunity to get hands-on experience of the history of their city. The club was set up...",
-    "source": "The Past",
-    "published": "2026-10-31T09:00:18Z",
-    "category": "Archeologie",
-    "image": "",
-    "url": "https://the-past.com/current-archaeology/441/news-in-brief/uk-news-in-brief-35/"
-  },
-  {
-    "title": "Boëtius: 'Met alle respect, KKD ga ik niet meer doen. Ik kan de Eredivisie aan'",
-    "summary": "Jean-Paul Boëtius hoopt razendsnel een contract bij een Eredivisie-club te tekenen. De voormalig vleugelaanvaller annex middenvelder van onder meer Feyenoord en RKC Waalwijk laat clubs uit de Keuken Kampioen Divisie...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-11-07T11:35:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/09/06/69b7b1b37fab3d807483fcee5860807a1991d398.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2156182/boetius-hoopt-snel-aan-de-slag-te-gaan-in-de-eredivisie.html"
-  },
-  {
     "title": "Een supermaan en tientallen vallende sterren: deze 8 hemelverschijnselen wil je in november niet missen",
     "summary": "Drie meteorenzwermen zorgen in november voor genoeg kansen om vallende sterren te spotten. En we sluiten de maand af met een supermaan. Dit zijn 8 hemelverschijnselen om niet te missen in november.",
     "source": "National Geographic Nederland",
@@ -594,58 +585,76 @@
     "url": "https://www.nationalgeographic.nl/wetenschap/a74246895/waarom-veroudert-je-lichaam"
   },
   {
-    "title": "PEC Zwolle stelt Pastoor aan: 'We hebben naar meerdere opties gekeken'",
-    "summary": "De transfermarkt is gesloten, maar nieuws is er altijd. In dit blog blijf je op de hoogte van alle transfers en transfergeruchten bij en rond clubs in de Eredivisie en de Keuken Kampioen Divisie. Bekijk hier ons blog...",
-    "source": "Voetbal International",
-    "published": "2026-11-07T09:51:09Z",
+    "title": "Praat mee op VP: Ajax treedt met opvallende wijziging aan tegen FC Twente",
+    "summary": "FC Twente en Ajax staan zondagmiddag tegenover elkaar in een belangrijke Eredivisie-topper. De wedstrijd begint om 14.30 uur, volg de wedstrijd hieronder in de live-omgeving van VoetbalPrimeur en praat mee!",
+    "source": "VoetbalPrimeur",
+    "published": "2026-11-08T12:21:02Z",
     "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/09/03/538b63bb53c134d01f6cd9b8c04841c0cdb84c56.jpg?width=1200",
-    "url": "https://www.vi.nl/nieuws/transfers-nederland-geruchten-en-nieuws"
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/11/01/ab76edc25ee18cb6974ef684c2cecba5da32f7af.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2155472/praat-mee-op-vp-fc-twente-ajax.html"
   },
   {
-    "title": "Steeds meer 35-plussers in de eredivisie: wat is hun geheim?",
-    "summary": "Geluk, genen en gezondheid. Het geheim om in je veertigste levensjaar nog in de eredivisie te spelen? Het is volgens FC Utrecht-aanvaller Nordin Amrabat een kwestie van drie G's. Zondag, als zijn ploeg het opneemt tegen...",
-    "source": "NOS Sport",
-    "published": "2026-11-07T11:06:55Z",
+    "title": "Praat mee op VP: Feyenoord slikt tegentreffer kort voor rust, Willemsen scoort",
+    "summary": "SC Heerenveen en Feyenoord staan zondagmiddag tegenover elkaar in de Eredivisie. De wedstrijd begint om 12.15 uur, volg de wedstrijd hieronder in de live-omgeving van VoetbalPrimeur en praat mee!",
+    "source": "VoetbalPrimeur",
+    "published": "2026-11-08T12:04:32Z",
     "category": "Voetbal",
-    "image": "https://images.cdn.nos.nl/2/9/h/r/n/U/gZxzvMEKa183a2r9SMgd17Z4WXiGEz7rUN1tTza/5x136x3776x2124-1024x576.webp",
-    "url": "https://nos.nl/l/2638416"
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/11/08/4fe471f322fd7960012f6d55829c8c2f2c4e0dcc.png?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2155466/praat-mee-op-vp-sc-heerenveen-feyenoord.html"
   },
   {
-    "title": "Willem II en PEC geven spectaculaire start geen vervolg in stroef gelijkspel",
-    "summary": "Willem II heeft voor de derde keer dit seizoen een punt gepakt in de eredivisie. De hekkensluiter hoopte thuis tegen PEC Zwolle eindelijk eens te kunnen winnen, maar dat is ook na de twaalfde wedstrijd van dit seizoen...",
-    "source": "NOS Sport",
-    "published": "2026-11-06T21:18:07Z",
+    "title": "Buijs ziet titelfavoriet in Eredivisie: 'Maar dat gaat strijd bovenin ook bepalen'",
+    "summary": "Danny Buijs vermoedt dat PSV ook dit seizoen de landstitel verovert, zo laat de trainer van Fortuna Sittard weten bij Goedemorgen Eredivisie van ESPN. Buijs denkt echter wel dat de Europese programma's van de...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-11-08T11:33:55Z",
     "category": "Voetbal",
-    "image": "https://images.cdn.nos.nl/1/9/c/n/9/3/wj8E79dfzymHMekRcJ3bXZ9j8t7ktwCbmqg7A7A/0x214x4000x2250-1024x576.webp",
-    "url": "https://nos.nl/l/2638363"
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/11/08/803ef23ac7615d576ad47eb446b3ba3543ef7e3d.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2156471/buijs-ziet-psv-als-titelfavoriet-in-de-eredivisie.html"
   },
   {
-    "title": "'Jongetje' Plat en oude rot De Jong hebben bij Cambuur de weg omhoog gevonden",
-    "summary": "Nieuwkomer SC Cambuur kende een beroerde start in de eredivisie met vier verliespartijen op rij. Maar de Leeuwarders, gepromoveerd als nummer twee in de eerste divisie, zijn inmiddels bezig aan een imposante reeks:...",
-    "source": "NOS Sport",
-    "published": "2026-11-06T18:22:25Z",
+    "title": "PSV heeft koppositie in zicht en treft Cambuur: pak tot 100x je inleg bij Eindhovense goal!",
+    "summary": "ADVERTORIAL - PSV gaat zondag op bezoek in Leeuwarden. De Eindhovenaren hebben de laatste weken de smaak te pakken en door de vorm van de andere ploegen in de Eredivisie-top, kan men de koppositie ruiken. BetCity staat...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-11-08T11:00:00Z",
     "category": "Voetbal",
-    "image": "https://images.cdn.nos.nl/2/7/3/G/C/3/xobt2LRnHAKAXgFykBHoqxLh6jEmYKpXKtNwkQy/180x104x3648x2052-1024x576.webp",
-    "url": "https://nos.nl/l/2638343"
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/11/08/6713109b65dfbc5bcc8dd8c27535cfb7622b1418.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2156429/psv-heeft-koppositie-in-zicht-en-treft-cambuur-pak-tot-100x-je-inleg-bij-eindhove.html"
   },
   {
-    "title": "Italiaanse degradatiekraker eindigt in mineur voor Udinese van Ekkelenkamp",
-    "summary": "Hekkensluiter Willem II nam het vrijdagavond op tegen PEC Zwolle. De ploeg van Jurgen Streppel hoopte op de eerste Eredivisie-zege van het seizoen, maar moest het doen met een gelijkspel. Ook werd er volop gevoetbald in...",
-    "source": "Voetbal International",
-    "published": "2026-11-06T21:58:18Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/11/02/2c6a2fb492086a46e0f82c92ca7226b33a59de6f.png?width=1200",
-    "url": "https://www.vi.nl/nieuws/italiaanse-degradatiekraker-eindigt-in-mineur-van-udinese-van-ekkelenkamp"
-  },
-  {
-    "title": "OpenAI belooft lokale bevolking meer te betrekken bij bouw datacenters",
-    "summary": "Als reactie op de uitslag van de Amerikaanse midtermverkiezingen, zegt OpenAI meer te willen samenwerken met de lokale bevolking bij het bouwen van datacenters.",
-    "source": "Bright",
-    "published": "2026-11-06T08:21:00Z",
+    "title": "In Liechtenstein is de publieke omroep ingeruild voor goedkopere AI-radio",
+    "summary": "Het is bijna als bij zoveel andere radiostations in Europa en in de rest van de wereld: elk uur of halfuur klinkt een deuntje en leest een presentator het radionieuws voor. Zo ook in het kleine Alpenland Liechtenstein....",
+    "source": "NOS Algemeen",
+    "published": "2026-11-07T19:50:29Z",
     "category": "Tech",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/11/06/8a8a1617a972560026c328d150566bc32d8879c8.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2155748/openai-belooft-lokale-bevolking-meer-te-betrekken-bij-bouw-datacenters.html"
+    "image": "https://images.cdn.nos.nl/4/5/2/o/Q/J/qsedPMMqHgY4MEVUo65rZj8T4xSdHnXSRxFzPU5/5x2x1648x927-1024x576.webp",
+    "url": "https://nos.nl/l/2638489"
+  },
+  {
+    "title": "Hiddink snapt helemaal niets van PSV: 'Hij stond voor de aanvallers in de zestien'",
+    "summary": "Guus Hiddink snapt weinig van de PSV-verdediging. De defensie van de Eindhovenaren stond in de Champions League-wedstrijd tegen Club Brugge veel voorin. Dat zorgt voor de nodige onbegrip.",
+    "source": "VoetbalPrimeur",
+    "published": "2026-11-08T10:12:00Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/04/28/7ed7711e9960fffe209b701dda029e1663d32f36.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2156443/hiddink-kritisch-op-psv-verdedigers-die-veel-aanvallen.html"
+  },
+  {
+    "title": "Review: Nintendo Switch Sports Resort verdient meer lof dan ik eerst gaf",
+    "summary": "Vanaf het eerste moment dat ik Nintendo Switch Sports Resort speel, heb ik er eigenlijk al een beetje ruzie mee. De bediening voelt niet goed, de personages reageren niet zoals ik wil – ik merk aan alles dat ik het niet...",
+    "source": "Bright",
+    "published": "2026-11-08T09:12:00Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/11/03/f43febee1d21fc5398b3f0c1867777539359b5ec.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2154574/review-nintendo-switch-sports-resort-verdient-meer-lof-dan-ik-eerst-gaf.html"
+  },
+  {
+    "title": "Vier keer zoveel schermen, vier keer zo productief? Deze Kickstarter denkt van wel",
+    "summary": "TobenONE heeft op Kickstarter speciaal voor de multitasker een nieuw product aangekondigd. Met de opstelling kan je je laptop aansluiten op drie schermen met één USB-C kabel. En de hele opstelling is modulair, dus je...",
+    "source": "Bright",
+    "published": "2026-11-07T13:26:51Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/11/07/3a7bf50fca5c142f1c3235371b536e55b59cc33a.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2156232/vier-keer-zoveel-schermen-vier-keer-zo-productief-deze-kickstarter-denkt-van-wel.html"
   },
   {
     "title": "'Apple verwijdert een fysieke knop van de iPhone 20'",
@@ -666,192 +675,111 @@
     "url": "https://www.bright.nl/nieuws/2156156/al-100-000-apps-geoptimaliseerd-voor-de-vouwbare-iphone-duo.html"
   },
   {
-    "title": "Oppo Find X10 Pro Max review: Oppo blinkt uit in Pro Max-topsegment",
-    "summary": "Met de Find X10 Pro Max bevindt Oppo zich in een segment waar weinig tekortkomingen gepermitteerd worden. De smartphone heeft indrukwekkende hardware, een gigantische batterij en een camera-setup die we niet eerder op...",
+    "title": "Tv-kijkers kraken Makkelie tijdens sc Heerenveen - Feyenoord: 'Wat een grap!'",
+    "summary": "Feyenoord kwam in de eerste helft op een 0-2 voorsprong tegen sc Heerenveen. Anis Hadj Moussa nam met een geweldige knal de openingsgoal voor zijn rekening, terwijl Nacho Ferri de voorsprong niet veel later verdubbelde...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-11-08T12:22:43Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/11/08/48619f216dae4a8ed2e8cc4c2c366c4bb5161f32.png?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2156486/tv-kijkers-boos-over-penalty-bij-sc-heerenveen-feyenoord.html"
+  },
+  {
+    "title": "Bruggink vol ongeloof over penaltymoment Feyenoord: 'Ik snap er geen bal van'",
+    "summary": "Arnold Bruggink is vol verbazing over het penaltymoment bij sc Heerenveen – Feyenoord . De Rotterdammers kregen een strafschop na een handsbal van Vasilios Zagaritis, die de bal tegen zijn arm kreeg terwijl hij een...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-11-08T12:21:36Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/08/23/9aa61b9a23c6a799e1662a372b467c81e70eaf02.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2156494/bruggink-over-penaltymoment-sc-heerenveen-feyenoord.html"
+  },
+  {
+    "title": "Arokodare zorgt voor verbazing met lovend interview: 'Hij gaat 60 minuten tekeer'",
+    "summary": "Hans Kraay jr. kijkt met grote verbazing naar de verstandshouding tussen Tolu Arokodare en trainer Míchel. De oud-voetballer was de afgelopen twee duels van Ajax aanwezig en zag van dichtbij hoe de Spaanse oefenmeester...",
+    "source": "VoetbalPrimeur",
+    "published": "2026-11-08T12:16:14Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/11/05/951498b335bee891eb1bdd369c4443ab24fda212.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2156463/kraay-jr-verbaasd-over-lovende-woorden-arokodare-voor-michel.html"
+  },
+  {
+    "title": "De Mos wordt 'misselijk' van PSV-huurling: 'Daar erger ik me wezenloos aan'",
+    "summary": "Aad de Mos heeft zich flink geërgerd aan Isaac Babadi. De Sparta-middenvelder, die wordt gehuurd van PSV, deed de wenkbrauwen van de oud-oefenmeester fronsen na de 3-1 nederlaag tegen ADO Den Haag.",
+    "source": "VoetbalPrimeur",
+    "published": "2026-11-08T11:56:40Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/08/25/46c1d042bebb215d7b2eeee3a0e6cdeffc86e562.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2156485/de-mos-haalt-hard-uit-naar-psv-huurling-babadi.html"
+  },
+  {
+    "title": "Bruggink helder over keeperskwestie Feyenoord: 'Die moet je gewoon hebben, punt'",
+    "summary": "Arnold Bruggink heeft zich uitgelaten over de keeperskwestie bij Feyenoord. De analist ziet een aantal duidelijke verbeterpunten voor doelman Tjark Ernst, die de afgelopen weken onderwerp van gesprek is.",
+    "source": "VoetbalPrimeur",
+    "published": "2026-11-08T11:35:11Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2025/05/27/c4f9c1fb6227cf69a4880bdf5ba83e2a0d82afd4.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2156476/bruggink-over-feyenoord-doelman-tjark-ernst.html"
+  },
+  {
+    "title": "Ten Hag ziet 'schrijnende' situatie bij Ajax: 'Dat is grotendeels verdwenen'",
+    "summary": "Erik ten Hag heeft teruggeblikt op zijn tijd bij Ajax. De oud-oefenmeester is inmiddels werkzaam als technisch directeur bij FC Twente, maar koestert nog altijd warme gevoelens voor de Amsterdammers.",
+    "source": "VoetbalPrimeur",
+    "published": "2026-11-08T11:12:30Z",
+    "category": "Voetbal",
+    "image": "https://webp.vp.cdn.pxr.nl/news/2026/10/21/fb9555dbb4ef5f87cfe91a2bde972218e72bb948.jpg?width=1200",
+    "url": "https://www.voetbalprimeur.nl/nieuws/2156469/ten-hag-blikt-terug-op-vertrek-bij-ajax.html"
+  },
+  {
+    "title": "Meta komt met Spaces om mensen met hun Muse te laten samenwerken",
+    "summary": "Meta’s koddige AI-agents zijn inmiddels twee maanden geleden geïntroduceerd in de Verenigde Staten. Het zijn AI-agents verpakt als schattige figuurtjes. Nu krijgen ze er iets nieuws bij in de vorm van Spaces. Dit zijn...",
     "source": "Bright",
-    "published": "2026-11-06T16:30:00Z",
+    "published": "2026-11-07T22:21:06Z",
+    "category": "Tech",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/11/07/bd77f42bbc9992f2abe2094cd5bdd46cbcf89d03.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2156383/meta-komt-met-spaces-om-mensen-met-hun-muse-te-laten-samenwerken.html"
+  },
+  {
+    "title": "Hoe denkt Anthropic-topman Dario Amodei over AI?",
+    "summary": "Dario Amodei, topman van AI-bedrijf Anthropic, is al bijna twintig jaar geobsedeerd door de risico's van AI. Zijn overtuiging dat AI uiteindelijk een bedreiging kan vormen voor de mensheid heeft hij al heel lang geleden...",
+    "source": "Bright",
+    "published": "2026-11-07T21:02:00Z",
+    "category": "Tech",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/09/19/7eb96b9397576c6d905f81ce22f50817fff084b8.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2156272/hoe-denkt-anthropic-topman-dario-amodei-over-ai.html"
+  },
+  {
+    "title": "Anthropic staat een moeilijke beursgang te wachten",
+    "summary": "Anthropic staat aan de vooravond van een moeilijke beursgang. Het sentiment rond AI is veranderd, en dat doet de beurs op zijn grondvesten trillen.",
+    "source": "Bright",
+    "published": "2026-11-07T19:02:00Z",
+    "category": "Tech",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/10/26/5fd431d00ecb199efa5bba6b5b6ca17d3b1bbc74.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2156254/anthropic-staat-een-moeilijke-beursgang-te-wachten.html"
+  },
+  {
+    "title": "Democraten VS gaan AI proberen aan banden te leggen met een 'vloedgolf' aan wetten",
+    "summary": "Het is mogelijk gedaan met de vrijheid van de AI-bedrijven in de VS. Zodra de Democratische partij in januari de controle over het Congres overneemt, wil ze AI aan banden leggen met een 'vloedgolf' aan wetten.",
+    "source": "Bright",
+    "published": "2026-11-07T17:02:00Z",
+    "category": "Tech",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/03/06/d94f0b534cb5e87ab5b32864b63c29f00b53482c.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2156252/democraten-vs-gaan-ai-proberen-aan-banden-te-leggen-met-een-vloedgolf-aan-wetten.html"
+  },
+  {
+    "title": "Pas op met de reparatiescore op je telefoon: zelfs een A zegt niet zo veel",
+    "summary": "Meer dan de helft van de smartphones in de Europese productdatabase geeft geen link naar reparatie-instructies, meer dan een jaar nadat die informatie verplicht werd. Dat blijkt uit een telling van Bright van 1.120...",
+    "source": "Bright",
+    "published": "2026-11-08T12:11:00Z",
     "category": "Gadgets",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/11/06/e2f363568763fc3533d11dd10a3afc8e705cac05.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2154937/oppo-find-x10-pro-max-review-oppo-blinkt-uit-in-pro-max-topsegment.html"
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/11/06/0eb1a2957595bc77d0f5a8133e485e4e5a22b2b2.jpg?width=1200",
+    "url": "https://www.bright.nl/plusplus/2155933/pas-op-met-de-reparatiescore-op-je-telefoon-zelfs-een-a-zegt-niet-zo-veel.html"
   },
   {
-    "title": "Selectie Oranje: Frenkie de Jong en Maatsen keren terug",
-    "summary": "Bondscoach Xavi Hernandez heeft zoals verwacht Frenkie de Jong opgeroepen voor de Nations League-wedstrijden tegen Griekenland en Duitsland. De middenvelder miste door een blessure de eerste interlandperiode van dit...",
-    "source": "NOS Sport",
-    "published": "2026-11-06T11:07:43Z",
-    "category": "Voetbal",
-    "image": "https://images.cdn.nos.nl/8/5/o/y/d/S/fbXNh6DkzAygfjr7nCEQXQfzJB1Dyj8Lq7BVdVp/3x314x3536x1989-1024x576.webp",
-    "url": "https://nos.nl/l/2638277"
-  },
-  {
-    "title": "Man of the match bij PSV - Club Brugge: 'We hadden er meer kunnen maken'",
-    "summary": "Joaquin Seys kijkt met een uitstekend gevoel terug op de 1-2 overwinning van Club Brugge op PSV. De 21-jarige vleugelverdediger was met twee assists van grote waarde voor de Belgen en werd na afloop uitgeroepen tot man...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-11-07T11:24:25Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/09/09/f30f6a76d60e8e89e48091f46ed425f6e9f0dba5.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2156185/joaquin-seys-geniet-na-zege-op-psv.html"
-  },
-  {
-    "title": "Groot Jong Ajax-talent krijgt rode kaart na wegtrappen bal: 'Niet slim'",
-    "summary": "Carlos García is blij met de 0-3 overwinning van zijn ploeg Jong Ajax op bezoek bij FC Eindhoven. Een klein smetje op de ruime zege van de Amsterdammers was de rode kaart van Pharell Nash.",
-    "source": "VoetbalPrimeur",
-    "published": "2026-11-07T11:04:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2025/10/17/2dacb958d54c9ded742b6f205bdcc048a990b244.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2156173/jong-ajax-trainer-over-domme-rode-kaart-pharell-nash.html"
-  },
-  {
-    "title": "Voormalig miljoenenaankoop Ajax krijgt volle laag: 'Slecht, stom en dom'",
-    "summary": "Ko Itakura heeft een slechte beurt gemaakt in Duitsland. De voormalig verdediger van onder meer Ajax en FC Groningen ontving een rode kaart namens Borussia Mönchengladbach in het uitduel met Hamburger SV. De bezoekers...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-11-07T10:49:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/11/07/4a2c30b89e71d0b656df123ed99560449fdb9b8e.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2156159/itakura-krijgt-volle-laag-na-rode-kaart-in-bundesliga.html"
-  },
-  {
-    "title": "Vermoedelijke opstelling PSV: Bosz beschikt over nagenoeg fitte selectie",
-    "summary": "Peter Bosz reist zondag met een behoorlijk fitte selectie af naar Friesland voor het uitduel met SC Cambuur. De trainer van PSV hoeft daarom in principe niets te wijzigen in zijn basisopstelling vergeleken met de...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-11-07T10:36:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/11/06/20fac1943d599c20e946d8d5732f9053d190021d.png?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2156049/de-vermoedelijke-opstelling-van-psv-tegen-sc-cambuur.html"
-  },
-  {
-    "title": "Vermoedelijke opstelling Ajax: houdt Míchel vast aan opvallende variant?",
-    "summary": "Ajax treft zondagmiddag FC Twente in een lastige uitwedstrijd. De Amsterdammers gaan in ieder geval met een goed gevoel richting Enschede na de grote overwinning op FC Midtjylland (1-6) in Denemarken. Dit is de...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-11-07T10:36:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/10/22/f9a073af99de6bd11a69d9ee46a7d7dce67a6890.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2156058/de-vermoedelijke-opstelling-van-ajax-tegen-fc-twente.html"
-  },
-  {
-    "title": "'Weghorst wil zichzelf laten zien tegen Ajax, aan iedereen die aan hem twijfelde'",
-    "summary": "Ronald de Boer verheugt zich enorm op de wedstrijd tussen Ajax en FC Twente van aankomende zondag . De voormalig voetballer van beide clubs kijkt met name uit naar Wout Weghorst, die voor het eerst tegenover zijn oude...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-11-07T09:42:38Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/11/05/6238ad5c16535d9b5486f4ae01b11c16450bcaa5.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2156128/ronald-de-boer-kijkt-uit-naar-weghorst-weerzien-met-ajax.html"
-  },
-  {
-    "title": "Driessen hekelt Obispo-optreden tegen Brugge: 'Daarom is hij niet goed genoeg'",
-    "summary": "Valentijn Driessen is van mening dat de tweede treffer van Club Brugge tegen PSV te wijten valt aan Armando Obispo. De journalist zegt dat de centrale verdediger met hele andere dingen bezig was, in plaats van het...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-11-07T09:24:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/11/03/ad010fd6a97064050933f37e2f1e2270d321cf7a.png?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2156122/driessen-wijst-psv-er-obispo-aan-als-schuldige-bij-de-club-brugge-goal-van-forbs.html"
-  },
-  {
-    "title": "Hiddink blikt terug op carrière: 'Hoe zou mijn leven dan gelopen zijn?'",
-    "summary": "Guus Hiddink viert zondag zijn tachtigste verjaardag en kijkt terug op een indrukwekkende voetbalcarrière. De voormalig trainer van onder meer PSV en Real Madrid staat stil bij de beslissende momenten in zijn leven,...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-11-07T09:20:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/04/28/2a2a485160d85b5b15d56be67c63e4e269c194d0.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2156127/hiddink-blikt-terug-op-carriere.html"
-  },
-  {
-    "title": "Franse trainer weigert Premier League wegens taal: 'Zit duizend dagen op Duolingo'",
-    "summary": "Stade Rennes-trainer Franck Haise heeft onthuld dat hij in zijn tijd bij RC Lens, tussen 2020 en 2024, een aantal mooie stappen had kunnen maken naar de Premier League. Echter koos de trainer ervoor om in zijn...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-11-07T09:11:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/11/07/0b7635aac298892bf49410b9b0fc92335eff1ca9.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2156114/franck-haise-liet-everton-en-brighton-schieten-vanwege-de-taalbarriere.html"
-  },
-  {
-    "title": "De EU tikt TikTok op de vingers om doomscroll-design",
-    "summary": "TikTok is op zijn design aangesproken door de EU. Techexperts binnen de Europese Unie komen tot de conclusie dat ByteDance zich met zijn videoplatform niet aan de regels houdt en dat heeft alles te maken met het...",
+    "title": "KTM lanceert fiets met achterwielmotor van Bosch en negen derailleurversnellingen",
+    "summary": "KTM heeft een fiets uitgebracht met de nieuwe achterwielmotor van Bosch. Het bedrijf zelf noemt de prijs-kwaliteitverhouding erg goed, maar is dat wel echt zo?",
     "source": "Bright",
-    "published": "2026-11-07T09:04:12Z",
-    "category": "Tech",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/11/07/f4e952d3554d7be83a4970e6d0402a54a8a1073d.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2156125/de-eu-tikt-tiktok-op-de-vingers-om-doomscroll-design.html"
-  },
-  {
-    "title": "Oranje-futsallers doen goede zaken in WK-kwalificatie met ruime zege op Andorra",
-    "summary": "De Nederlandse futsallers hebben uitstekende zaken gedaan in de kwalificatiecampagne voor het WK in 2028. In Andorra la Vella werd het stugge Andorra met 1-5 verslagen. Ayoub Boukhari en Mohamed Chih schoten voor rust...",
-    "source": "NOS Sport",
-    "published": "2026-11-06T21:28:55Z",
-    "category": "Voetbal",
-    "image": "https://images.cdn.nos.nl/4/G/r/Q/3/u/Fz9bqWCiKwb5WwSpzWeMyhCJGGn3DZUnDLo1Cdp/872x695x2368x1332-1024x576.webp",
-    "url": "https://nos.nl/l/2638365"
-  },
-  {
-    "title": "AI is naast Trump de grote verliezer van de Amerikaanse tussenverkiezingen",
-    "summary": "De Amerikaanse tussenverkiezingen hebben de Democraten een grotere overwinning opgeleverd dan vooraf verwacht. Die winst is ook een verlies voor big tech in het algemeen en AI in het bijzonder.",
-    "source": "Bright",
-    "published": "2026-11-06T18:41:00Z",
-    "category": "Tech",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/05/07/4f0a1b759198fcab777df0219e704c533fe922a3.jpg?width=1200",
-    "url": "https://www.bright.nl/plusplus/2156031/ai-is-naast-trump-de-grote-verliezer-van-de-amerikaanse-tussenverkiezingen.html"
-  },
-  {
-    "title": "Wat verbergt NASA? Dit mysterieuze AI-vliegtuig moet binnen twee jaar vliegen",
-    "summary": "NASA heeft een mysterieus nieuw experimenteel vliegtuig onthuld. Opvallend: dat gebeurde met een door AI gemaakt plaatje. De zogenoemde X-70 Fractal is daarop te zien als donker silhouet, half verscholen in rook. Wie...",
-    "source": "Bright",
-    "published": "2026-11-06T18:25:00Z",
-    "category": "Tech",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/11/06/aef6fc1898ea94a6c35a5580cc9388563c29ebfd.png?width=1200",
-    "url": "https://www.bright.nl/nieuws/2155853/wat-verbergt-nasa-dit-mysterieuze-ai-vliegtuig-moet-binnen-twee-jaar-vliegen.html"
-  },
-  {
-    "title": "Makers van slimme hoofdbanden trainen AI met je hersengolven, zonder het te zeggen",
-    "summary": "Makers van slimme hoofdbanden gebruiken de hersengolven van hun klanten om AI te trainen, zonder dat duidelijk te vermelden. Dat blijkt uit onderzoek in het wetenschappelijke vakblad Science. Geen enkel bedrijf dat aan...",
-    "source": "Bright",
-    "published": "2026-11-06T15:36:00Z",
-    "category": "Tech",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/11/06/ba5438b46db9f91a8ae72fe94dccb8728ea16a2f.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2155824/makers-van-slimme-hoofdbanden-trainen-ai-met-je-hersengolven-zonder-het-te-zeggen.html"
-  },
-  {
-    "title": "Infantino-uitdager Tashima: uitgesproken bestuurder die voetbal naar Japan haalde",
-    "summary": "Kohzo Tashima stapte gisteren naar voren als eerste serieuze rivaal voor Gianni Infantino in de strijd om het voorzitterschap van wereldvoetbalbond FIFA. Wie is deze 68-jarige voormalig international? \"Niet nóg harder...",
-    "source": "NOS Sport",
-    "published": "2026-11-06T15:28:19Z",
-    "category": "Voetbal",
-    "image": "https://images.cdn.nos.nl/7/z/p/n/V/6/PnVaMpVXh2Ft6R4SagjCSicP1wQwMfHvW8BCTY/1x272x3632x2043-1024x576.webp",
-    "url": "https://nos.nl/l/2638316"
-  },
-  {
-    "title": "Anthropic ontwikkelt AI twee keer zo snel, maar houdt het bewijs voorlopig geheim",
-    "summary": "AI-bedrijf Anthropic boekt nu in één jaar tijd ongeveer evenveel vooruitgang als het eerder in twee jaar boekte. Dat komt doordat de AI zelf een steeds groter deel van het werk doet. Dat concludeert de Amerikaanse...",
-    "source": "Bright",
-    "published": "2026-11-06T14:36:00Z",
-    "category": "Tech",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/11/06/1c620f69473263186ab96f8c5852aba7749c7d85.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2155790/anthropic-ontwikkelt-ai-twee-keer-zo-snel-maar-houdt-het-bewijs-voorlopig-geheim.html"
-  },
-  {
-    "title": "Airbnb krijgt zijn eigen AI-reisagent",
-    "summary": "Een vakantie boeken kan behoorlijk wat uitzoekwerk zijn. Airbnb wil dat proces een stuk eenvoudiger maken met een eigen AI-reisagent. Het bedrijf werkt aan een slimme assistent die niet alleen accommodaties voorstelt,...",
-    "source": "Bright",
-    "published": "2026-11-06T12:29:00Z",
-    "category": "Tech",
-    "image": "https://webp.br.cdn.pxr.nl/news/2026/11/06/3432cf761670cfec3bc3f6ca93b9701b2f002b7d.jpg?width=1200",
-    "url": "https://www.bright.nl/nieuws/2155835/airbnb-lanceert-ai-reisagent-die-vakanties-voor-je-plant.html"
-  },
-  {
-    "title": "De kroonprins en een Tuvaluaanse persco: 'Kiribati is de grote derby'",
-    "summary": "In Balverliefd aandacht voor de gang van zaken achter de schermen van het voetbal en opvallende gebeurtenissen aan de rand van het veld. Deze week over de Tuvaluaanse persconferentie van Robert Maaskant.",
-    "source": "Voetbal International",
-    "published": "2026-11-07T07:50:31Z",
-    "category": "Voetbal",
-    "image": "https://webp.vi.cdn.pxr.nl/news/2026/11/06/84895d3fcc9b1f3c4bd07b08568b141e38291d71.jpg?width=1200",
-    "url": "https://www.vi.nl/pro/de-kroonprins-en-een-tuvaluaanse-persco-kiribati-is-de-grote-derby"
-  },
-  {
-    "title": "Alex Pastoor (60) keert per direct terug in Eredivisie: 'Interessante uitdaging'",
-    "summary": "Alex Pastoor is de nieuwe trainer van PEC Zwolle. De zestigjarige oefenmeester is de opvolger van Henry van der Vegt, die werd ontslagen na tegenvallende resultaten. Pastoor tekent een contract tot het einde van het...",
-    "source": "VoetbalPrimeur",
-    "published": "2026-11-07T09:58:00Z",
-    "category": "Voetbal",
-    "image": "https://webp.vp.cdn.pxr.nl/news/2026/09/25/fc2a22803f3fd520891b4b6fd9f88a600d99f625.jpg?width=1200",
-    "url": "https://www.voetbalprimeur.nl/nieuws/2156132/alex-pastoor-nieuwe-trainer-pec-zwolle.html"
+    "published": "2026-11-07T12:33:36Z",
+    "category": "Gadgets",
+    "image": "https://webp.br.cdn.pxr.nl/news/2026/11/07/ce4fd5ea89313e63001469e87df5d8bdc7b009dc.jpg?width=1200",
+    "url": "https://www.bright.nl/nieuws/2156212/ktm-lanceert-fiets-met-achterwielmotor-van-bosch-en-negen-derailleurversnellingen.html"
   }
 ]
