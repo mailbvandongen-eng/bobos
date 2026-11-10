@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-11-09T16:16:55Z",
+  "updated_at": "2026-11-10T14:52:17Z",
   "status": "Visadvies vandaag",
-  "score": 3,
+  "score": 4,
   "items": [
     {
       "label": "Wind",
-      "value": "5 km/u (1 Bft)"
+      "value": "12 km/u (3 Bft)"
     },
     {
       "label": "Luchtdruk",
-      "value": "1016 hPa (instabiele druk)"
+      "value": "1010 hPa (instabiele druk)"
     },
     {
       "label": "Beste tijd",
@@ -24,17 +24,17 @@
     "Herfst: roofvis wordt vaak actiever en wisselvallig weer kan juist interessante pieken geven.",
     "Sterk schommelende druk maakt het visbeeld onrustiger; kies daarom korter en gerichter.",
     "Geleidelijke opwarming kan vis actiever maken, zeker later op de dag.",
-    "Rustig water maakt precies vissen makkelijker, maar het water kan ook stiller en minder actief ogen.",
+    "Matige wind geeft vaak net genoeg golfslag voor actieve roofvis zonder dat het onrustig wordt.",
     "Een grotendeels droge avond maakt langere sessies en actief zoeken makkelijker.",
-    "Luchtdruktrend over 48 uur: -6.0 hPa, schommeling circa 6.8 hPa.",
-    "Temperatuurtrend: +2.4 C; wind gemiddeld 5 km/u.",
+    "Luchtdruktrend over 48 uur: -13.7 hPa, schommeling circa 13.7 hPa.",
+    "Temperatuurtrend: +3.2 C; wind gemiddeld 12 km/u.",
     "Vanmiddag naar vanavond wordt circa 0.0 mm neerslag verwacht; CAPE-piek rond 0 J/kg.",
     "Getijdata van Rijkswaterstaat was tijdelijk niet bereikbaar; zeeadvies draait nu alleen op weercondities."
   ],
   "profiles": [
     {
       "name": "Roofvis",
-      "score": 4,
+      "score": 5,
       "advice": "Roofvis vraagt nu om strakker kiezen van tijd en beschutting."
     },
     {
@@ -54,18 +54,18 @@
     "season_label": "Herfst",
     "pressure_state": "instabiele_druk",
     "temperature_state": "temperatuurstijging",
-    "wind_state": "lage_wind",
+    "wind_state": "matige_wind",
     "rain_state": "droge_avond",
     "thunder_state": null,
-    "pressure_delta_48h_hpa": -6.0,
-    "pressure_range_48h_hpa": 6.8,
-    "temperature_delta_c": 2.4,
-    "wind_avg_kmh": 4.6,
-    "wind_direction_deg": 74.7,
-    "wind_direction_label": "ONO",
-    "pressure_avg_hpa": 1016.3,
+    "pressure_delta_48h_hpa": -13.7,
+    "pressure_range_48h_hpa": 13.7,
+    "temperature_delta_c": 3.2,
+    "wind_avg_kmh": 12.1,
+    "wind_direction_deg": 79.3,
+    "wind_direction_label": "O",
+    "pressure_avg_hpa": 1009.8,
     "evening_precipitation_mm": 0.0,
-    "evening_temperature_c": 5.3,
+    "evening_temperature_c": 4.5,
     "max_cape_j_kg": 0.0,
     "tide_available": false,
     "tide_error": "HTTP Error 404: Not Found",
