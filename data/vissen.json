@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-11-10T14:52:17Z",
+  "updated_at": "2026-11-11T14:21:33Z",
   "status": "Visadvies vandaag",
   "score": 4,
   "items": [
     {
       "label": "Wind",
-      "value": "12 km/u (3 Bft)"
+      "value": "7 km/u (2 Bft)"
     },
     {
       "label": "Luchtdruk",
-      "value": "1010 hPa (instabiele druk)"
+      "value": "1003 hPa (instabiele druk)"
     },
     {
       "label": "Beste tijd",
@@ -23,12 +23,12 @@
   "details": [
     "Herfst: roofvis wordt vaak actiever en wisselvallig weer kan juist interessante pieken geven.",
     "Sterk schommelende druk maakt het visbeeld onrustiger; kies daarom korter en gerichter.",
-    "Geleidelijke opwarming kan vis actiever maken, zeker later op de dag.",
-    "Matige wind geeft vaak net genoeg golfslag voor actieve roofvis zonder dat het onrustig wordt.",
+    "Een stabiel temperatuursverloop helpt om het visgedrag beter voorspelbaar te houden.",
+    "Rustig water maakt precies vissen makkelijker, maar het water kan ook stiller en minder actief ogen.",
     "Een grotendeels droge avond maakt langere sessies en actief zoeken makkelijker.",
-    "Luchtdruktrend over 48 uur: -13.7 hPa, schommeling circa 13.7 hPa.",
-    "Temperatuurtrend: +3.2 C; wind gemiddeld 12 km/u.",
-    "Vanmiddag naar vanavond wordt circa 0.0 mm neerslag verwacht; CAPE-piek rond 0 J/kg.",
+    "Luchtdruktrend over 48 uur: -12.6 hPa, schommeling circa 13.0 hPa.",
+    "Temperatuurtrend: +0.4 C; wind gemiddeld 7 km/u.",
+    "Vanmiddag naar vanavond wordt circa 0.0 mm neerslag verwacht; CAPE-piek rond 10 J/kg.",
     "Getijdata van Rijkswaterstaat was tijdelijk niet bereikbaar; zeeadvies draait nu alleen op weercondities."
   ],
   "profiles": [
@@ -53,20 +53,20 @@
     "season": "herfst",
     "season_label": "Herfst",
     "pressure_state": "instabiele_druk",
-    "temperature_state": "temperatuurstijging",
-    "wind_state": "matige_wind",
+    "temperature_state": "stabiele_temperatuur",
+    "wind_state": "lage_wind",
     "rain_state": "droge_avond",
     "thunder_state": null,
-    "pressure_delta_48h_hpa": -13.7,
-    "pressure_range_48h_hpa": 13.7,
-    "temperature_delta_c": 3.2,
-    "wind_avg_kmh": 12.1,
-    "wind_direction_deg": 79.3,
-    "wind_direction_label": "O",
-    "pressure_avg_hpa": 1009.8,
+    "pressure_delta_48h_hpa": -12.6,
+    "pressure_range_48h_hpa": 13.0,
+    "temperature_delta_c": 0.4,
+    "wind_avg_kmh": 6.8,
+    "wind_direction_deg": 20.0,
+    "wind_direction_label": "NNO",
+    "pressure_avg_hpa": 1003.1,
     "evening_precipitation_mm": 0.0,
-    "evening_temperature_c": 4.5,
-    "max_cape_j_kg": 0.0,
+    "evening_temperature_c": 3.7,
+    "max_cape_j_kg": 10.0,
     "tide_available": false,
     "tide_error": "HTTP Error 404: Not Found",
     "tide_location": "IJmuiden, buitenhaven",
